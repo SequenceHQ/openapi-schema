@@ -150,15 +150,6 @@
               "type": "string"
             },
             "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
             "name": "On-Behalf-Of",
             "required": false,
             "description": "The Sequence account that this request is made on behalf of."
@@ -244,15 +235,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -581,15 +563,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -895,15 +868,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -970,15 +934,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -1095,15 +1050,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -1269,15 +1215,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -1340,15 +1277,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -1461,15 +1389,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -1621,15 +1540,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -1704,15 +1614,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -1787,15 +1688,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -1870,15 +1762,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -1979,15 +1862,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -3430,15 +3304,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -3566,15 +3431,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -3822,15 +3678,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "responses": {
@@ -3903,15 +3750,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -3977,15 +3815,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -4096,15 +3925,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -4231,15 +4051,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "billingScheduleId",
             "required": true,
@@ -4309,15 +4120,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -4610,15 +4412,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -4745,15 +4538,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "responses": {
@@ -4823,15 +4607,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -5058,15 +4833,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -5195,15 +4961,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "responses": {
@@ -5274,15 +5031,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -5419,15 +5167,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -5592,15 +5331,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "responses": {
@@ -5693,15 +5423,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -5837,15 +5558,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "planId",
             "required": true,
@@ -5933,15 +5645,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -6124,15 +5827,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "responses": {
@@ -6208,15 +5902,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -6314,15 +5999,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -6473,15 +6149,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -6660,15 +6327,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -6803,15 +6461,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "id",
             "required": true,
@@ -6928,15 +6577,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "responses": {
@@ -7065,15 +6705,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -7300,15 +6931,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -7507,15 +7129,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "responses": {
@@ -7704,15 +7317,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -7767,15 +7371,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -7830,15 +7425,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -7893,15 +7479,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -8069,15 +7646,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "creditnote",
             "required": true,
@@ -8158,15 +7726,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "creditnote",
             "required": true,
@@ -8234,15 +7793,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -8456,15 +8006,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "creditnote",
             "required": true,
@@ -8569,15 +8110,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "creditnote",
             "required": true,
@@ -8657,15 +8189,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -8776,15 +8299,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -9162,15 +8676,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "id",
             "required": true,
@@ -9460,15 +8965,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "id",
             "required": true,
@@ -9619,15 +9115,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "id",
             "required": true,
@@ -9769,15 +9256,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "id",
             "required": true,
@@ -9842,15 +9320,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -9931,15 +9400,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "id",
             "required": true,
@@ -9998,15 +9458,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -10148,15 +9599,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -10321,15 +9763,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "id",
             "required": true,
@@ -10466,15 +9899,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -10538,15 +9962,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "responses": {
@@ -10659,15 +10074,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "id",
             "required": true,
@@ -10762,15 +10168,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "responses": {
@@ -10982,15 +10379,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "responses": {
@@ -11142,15 +10530,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -11394,15 +10773,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -11612,15 +10982,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "responses": {
@@ -11819,15 +11180,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -11882,15 +11234,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -11945,15 +11288,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -12009,15 +11343,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -12072,15 +11397,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -12135,15 +11451,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -12198,15 +11505,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -12604,15 +11902,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "id",
             "required": true,
@@ -12855,15 +12144,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -13175,15 +12455,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "id",
             "required": true,
@@ -13346,15 +12617,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "id",
             "required": true,
@@ -13508,15 +12770,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "id",
             "required": true,
@@ -13580,15 +12833,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -13675,15 +12919,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -13855,15 +13090,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "id",
             "required": true,
@@ -14012,15 +13238,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -14179,15 +13396,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "id",
             "required": true,
@@ -14336,15 +13544,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -14512,15 +13711,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "id",
             "required": true,
@@ -14599,15 +13789,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -14760,15 +13941,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -14966,15 +14138,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "invoice",
             "required": true,
@@ -15053,15 +14216,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "invoice",
             "required": true,
@@ -15128,15 +14282,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -15356,15 +14501,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "invoice",
             "required": true,
@@ -15483,15 +14619,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "invoice",
             "required": true,
@@ -15578,15 +14705,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -15711,15 +14829,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "responses": {
@@ -15859,15 +14968,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -16274,15 +15374,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "responses": {
@@ -16438,15 +15529,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "responses": {
@@ -16509,15 +15591,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -16694,15 +15767,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -16768,15 +15832,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -16898,15 +15953,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "id",
             "required": true,
@@ -16984,15 +16030,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "responses": {
@@ -17052,15 +16089,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "responses": {
@@ -17210,15 +16238,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "responses": {
@@ -17283,15 +16302,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -17369,15 +16379,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -17609,15 +16610,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -17718,15 +16710,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -17879,15 +16862,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -18099,15 +17073,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "usageMetricId",
             "required": true,
@@ -18191,15 +17156,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -18349,15 +17305,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -18429,15 +17376,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -18565,15 +17503,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "id",
             "required": true,
@@ -18652,15 +17581,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "id",
             "required": true,
@@ -18726,15 +17646,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -18820,15 +17731,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "id",
             "required": true,
@@ -18899,15 +17801,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "id",
             "required": true,
@@ -18973,15 +17866,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -19164,15 +18048,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -19257,15 +18132,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -19407,15 +18273,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "id",
             "required": true,
@@ -19510,15 +18367,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "id",
             "required": true,
@@ -19585,15 +18433,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -19671,15 +18510,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -19778,15 +18608,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "id",
             "required": true,
@@ -19864,15 +18685,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "id",
             "required": true,
@@ -19945,15 +18757,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
@@ -20145,15 +18948,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           }
         ],
         "requestBody": {
@@ -20364,15 +19158,6 @@
             "schema": {
               "type": "string"
             },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "path",
             "name": "id",
             "required": true,
@@ -20490,15 +19275,6 @@
             "name": "Authorization",
             "required": true,
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Idempotency-Key",
-            "required": false,
-            "description": "Specifying a unique ID for this request here lets you retry it without risk of performing the same operation twice."
           },
           {
             "schema": {
