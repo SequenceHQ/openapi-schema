@@ -2585,6 +2585,24 @@
               "type": "string"
             },
             "in": "query",
+            "name": "invoiceBefore",
+            "required": false,
+            "description": "Filter by invoice date before."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "invoiceAfter",
+            "required": false,
+            "description": "Filter by invoice date after."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
             "name": "paymentStatus",
             "required": false,
             "description": "Filter by payment status."
@@ -10937,6 +10955,24 @@
             "name": "sentAfter",
             "required": false,
             "description": "Filter by sent date after."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "invoiceBefore",
+            "required": false,
+            "description": "Filter by invoice date before."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "invoiceAfter",
+            "required": false,
+            "description": "Filter by invoice date after."
           },
           {
             "schema": {
