@@ -1,0 +1,16 @@
+{
+  "name": "@sequencehq/openapi-schema",
+  "version": "2023.10.19-1135-a0052318",
+  "author": "Sequence HQ",
+  "description": "Sequence Platform APIs Public OpenAPI Schema",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SequenceHQ/openapi-schema.git"
+  },
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/SequenceHQ/openapi-schema/issues"
+  },
+  "homepage": "https://github.com/SequenceHQ/openapi-schema#readme"
+}
