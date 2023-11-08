@@ -1,6 +1,6 @@
 {
   "name": "@sequencehq/openapi-schema",
-  "version": "2023.11.8-1054-fa33409b",
+  "version": "2023.11.8-1123-2aa6dd5d",
   "author": "Sequence HQ",
   "description": "Sequence Platform APIs Public OpenAPI Schema",
   "main": "index.js",

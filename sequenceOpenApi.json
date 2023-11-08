@@ -30661,6 +30661,7 @@
       "InvoiceStatus": {
         "example": "DRAFT",
         "enum": [
+          "IN_PROGRESS",
           "DRAFT",
           "FINAL",
           "SENT",
