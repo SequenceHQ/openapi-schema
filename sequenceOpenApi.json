@@ -3583,6 +3583,270 @@
         "deprecated": false
       }
     },
+    "/billing-runs": {
+      "get": {
+        "summary": "List all Billing Runs",
+        "description": "List all Billing Runs",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "integer"
+            },
+            "in": "query",
+            "name": "limit",
+            "required": false,
+            "description": "Maximum number of objects to return per-page."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "after",
+            "required": false,
+            "description": "Pagination offset. To page through items, omit this parameter to retrieve the first page, and then successively use the value you get from `pagination.after` or `pagination.before` to retrieve each page."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "before",
+            "required": false,
+            "description": "Pagination offset. To page through items, omit this parameter to retrieve the first page, and then successively use the value you get from `pagination.next` or `pagination.previous` to retrieve each page."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "example": {
+                  "items": [
+                    {
+                      "id": "53ff21c8-4872-46c4-83bf-517d54876945",
+                      "createdAt": "2022-10-07T14:12:08.826121Z",
+                      "status": "SCHEDULED",
+                      "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+                      "scheduledRunTime": "2023-02-01T12:00:00.000001Z",
+                      "billingStartDate": "2023-01-01",
+                      "billingEndDate": "2023-01-31",
+                      "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7"
+                    }
+                  ],
+                  "pagination": {
+                    "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
+                    "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
+                    "totalResultSize": 10
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/ListBillingRunEndpointProductListBillingRunPaginatedResponseModel"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "",
+            "content": {}
+          },
+          "401": {
+            "description": "",
+            "content": {}
+          },
+          "500": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "getApiBilling_runs",
+        "deprecated": false
+      }
+    },
+    "/billing-runs/filtered": {
+      "get": {
+        "summary": "List all Billing Runs by status",
+        "description": "List all Billing Runs by status",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "before",
+            "required": false,
+            "description": "Pagination cursor. To page through items, omit this parameter to retrieve the first page, and then successively use the value you get from `pagination.after` or `pagination.before` to retrieve each page."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "after",
+            "required": false,
+            "description": "Pagination cursor. To page through items, omit this parameter to retrieve the first page, and then successively use the value you get from `pagination.after` or `pagination.before` to retrieve each page."
+          },
+          {
+            "schema": {
+              "type": "integer"
+            },
+            "in": "query",
+            "name": "limit",
+            "required": false,
+            "description": "Maximum number of objects to return per-page."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "sortOrder",
+            "required": false,
+            "description": "Sort order. Default: DESC (descending, most often used for reverse chronological sorting)."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "status",
+            "required": true,
+            "description": "Billing Schedule Status"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "example": {
+                  "items": [
+                    {
+                      "id": "53ff21c8-4872-46c4-83bf-517d54876945",
+                      "createdAt": "2022-10-07T14:12:08.826121Z",
+                      "status": "SCHEDULED",
+                      "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+                      "scheduledRunTime": "2023-02-01T12:00:00.000001Z",
+                      "billingStartDate": "2023-01-01",
+                      "billingEndDate": "2023-01-31",
+                      "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7"
+                    }
+                  ],
+                  "pagination": {
+                    "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
+                    "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
+                    "totalResultSize": 10
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/BillingRunPageResponseModel"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "",
+            "content": {}
+          },
+          "401": {
+            "description": "",
+            "content": {}
+          },
+          "500": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "getApiBilling_runsFiltered",
+        "deprecated": false
+      }
+    },
+    "/billing-runs/{id}": {
+      "get": {
+        "summary": "Get a Billing Run by ID",
+        "description": "Get a Billing Run by ID",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "Unique billing run ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "example": {
+                  "id": "53ff21c8-4872-46c4-83bf-517d54876945",
+                  "createdAt": "2022-10-07T14:12:08.826121Z",
+                  "status": "SCHEDULED",
+                  "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+                  "scheduledRunTime": "2023-02-01T12:00:00.000001Z",
+                  "billingStartDate": "2023-01-01",
+                  "billingEndDate": "2023-01-31",
+                  "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7"
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/GetBillingRunEndpointProductGetBillingRunResponseModel"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "",
+            "content": {}
+          },
+          "401": {
+            "description": "",
+            "content": {}
+          },
+          "500": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "getApiBilling_runs_id",
+        "deprecated": false
+      }
+    },
     "/billing-schedules": {
       "get": {
         "summary": "List all Billing Schedules",
@@ -4160,6 +4424,115 @@
         },
         "security": [],
         "operationId": "putApiBilling_schedules_billingScheduleId_Activate",
+        "deprecated": false
+      }
+    },
+    "/billing-schedules/{billingScheduleId}/billing-runs": {
+      "get": {
+        "summary": "List all Billing Runs for a Billing Schedule",
+        "description": "List all Billing Runs for a Billing Schedule",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "before",
+            "required": false,
+            "description": "Pagination cursor. To page through items, omit this parameter to retrieve the first page, and then successively use the value you get from `pagination.after` or `pagination.before` to retrieve each page."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "after",
+            "required": false,
+            "description": "Pagination cursor. To page through items, omit this parameter to retrieve the first page, and then successively use the value you get from `pagination.after` or `pagination.before` to retrieve each page."
+          },
+          {
+            "schema": {
+              "type": "integer"
+            },
+            "in": "query",
+            "name": "limit",
+            "required": false,
+            "description": "Maximum number of objects to return per-page."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "sortOrder",
+            "required": false,
+            "description": "Sort order. Default: DESC (descending, most often used for reverse chronological sorting)."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "billingScheduleId",
+            "required": true,
+            "description": "Billing Schedule ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "example": {
+                  "items": [
+                    {
+                      "id": "53ff21c8-4872-46c4-83bf-517d54876945",
+                      "createdAt": "2022-10-07T14:12:08.826121Z",
+                      "status": "SCHEDULED",
+                      "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+                      "scheduledRunTime": "2023-02-01T12:00:00.000001Z",
+                      "billingStartDate": "2023-01-01",
+                      "billingEndDate": "2023-01-31",
+                      "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7"
+                    }
+                  ],
+                  "pagination": {
+                    "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
+                    "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
+                    "totalResultSize": 10
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/BillingRunPageResponseModel"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "",
+            "content": {}
+          },
+          "401": {
+            "description": "",
+            "content": {}
+          },
+          "500": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "getApiBilling_schedules_billingScheduleId_Billing_runs",
         "deprecated": false
       }
     },
@@ -27458,6 +27831,286 @@
           "metricId",
           "priceId",
           "usagePeriodType"
+        ]
+      },
+      "GetBillingRunEndpointProductGetBillingRunResponseModel": {
+        "properties": {
+          "id": {
+            "example": "53ff21c8-4872-46c4-83bf-517d54876945",
+            "type": "string"
+          },
+          "createdAt": {
+            "example": "2022-10-07T14:12:08.826121Z",
+            "type": "string"
+          },
+          "status": {
+            "$ref": "#/components/schemas/BillingRunStatus"
+          },
+          "billingScheduleId": {
+            "example": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+            "type": "string"
+          },
+          "scheduledRunTime": {
+            "example": "2023-02-01T12:00:00.000001Z",
+            "type": "string"
+          },
+          "billingStartDate": {
+            "example": "2023-01-01",
+            "format": "date",
+            "type": "string"
+          },
+          "billingEndDate": {
+            "example": "2023-01-31",
+            "format": "date",
+            "type": "string"
+          },
+          "invoiceId": {
+            "example": "af60cab3-812d-4250-a051-0fb7133a00c7",
+            "type": "string"
+          }
+        },
+        "example": {
+          "id": "53ff21c8-4872-46c4-83bf-517d54876945",
+          "createdAt": "2022-10-07T14:12:08.826121Z",
+          "status": "SCHEDULED",
+          "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+          "scheduledRunTime": "2023-02-01T12:00:00.000001Z",
+          "billingStartDate": "2023-01-01",
+          "billingEndDate": "2023-01-31",
+          "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7"
+        },
+        "type": "object",
+        "required": [
+          "billingEndDate",
+          "billingScheduleId",
+          "billingStartDate",
+          "createdAt",
+          "id",
+          "scheduledRunTime",
+          "status"
+        ]
+      },
+      "BillingRunStatus": {
+        "example": "SCHEDULED",
+        "enum": [
+          "SCHEDULED",
+          "COMPLETED",
+          "FAILED",
+          "DEPRECATED",
+          "IN_PROGRESS"
+        ],
+        "type": "string"
+      },
+      "ListBillingRunEndpointProductListBillingRunPaginatedResponseModel": {
+        "properties": {
+          "items": {
+            "items": {
+              "$ref": "#/components/schemas/ListBillingRunEndpointProductListBillingRunResponseModel"
+            },
+            "example": [
+              {
+                "id": "53ff21c8-4872-46c4-83bf-517d54876945",
+                "createdAt": "2022-10-07T14:12:08.826121Z",
+                "status": "SCHEDULED",
+                "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+                "scheduledRunTime": "2023-02-01T12:00:00.000001Z",
+                "billingStartDate": "2023-01-01",
+                "billingEndDate": "2023-01-31",
+                "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7"
+              }
+            ],
+            "type": "array"
+          },
+          "pagination": {
+            "$ref": "#/components/schemas/PaginationMeta"
+          }
+        },
+        "example": {
+          "items": [
+            {
+              "id": "53ff21c8-4872-46c4-83bf-517d54876945",
+              "createdAt": "2022-10-07T14:12:08.826121Z",
+              "status": "SCHEDULED",
+              "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+              "scheduledRunTime": "2023-02-01T12:00:00.000001Z",
+              "billingStartDate": "2023-01-01",
+              "billingEndDate": "2023-01-31",
+              "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7"
+            }
+          ],
+          "pagination": {
+            "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
+            "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
+            "totalResultSize": 10
+          }
+        },
+        "type": "object",
+        "required": [
+          "items",
+          "pagination"
+        ]
+      },
+      "ListBillingRunEndpointProductListBillingRunResponseModel": {
+        "properties": {
+          "id": {
+            "example": "53ff21c8-4872-46c4-83bf-517d54876945",
+            "type": "string"
+          },
+          "createdAt": {
+            "example": "2022-10-07T14:12:08.826121Z",
+            "type": "string"
+          },
+          "status": {
+            "$ref": "#/components/schemas/BillingRunStatus"
+          },
+          "billingScheduleId": {
+            "example": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+            "type": "string"
+          },
+          "scheduledRunTime": {
+            "example": "2023-02-01T12:00:00.000001Z",
+            "type": "string"
+          },
+          "billingStartDate": {
+            "example": "2023-01-01",
+            "format": "date",
+            "type": "string"
+          },
+          "billingEndDate": {
+            "example": "2023-01-31",
+            "format": "date",
+            "type": "string"
+          },
+          "invoiceId": {
+            "example": "af60cab3-812d-4250-a051-0fb7133a00c7",
+            "type": "string"
+          }
+        },
+        "example": {
+          "id": "53ff21c8-4872-46c4-83bf-517d54876945",
+          "createdAt": "2022-10-07T14:12:08.826121Z",
+          "status": "SCHEDULED",
+          "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+          "scheduledRunTime": "2023-02-01T12:00:00.000001Z",
+          "billingStartDate": "2023-01-01",
+          "billingEndDate": "2023-01-31",
+          "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7"
+        },
+        "type": "object",
+        "required": [
+          "billingEndDate",
+          "billingScheduleId",
+          "billingStartDate",
+          "createdAt",
+          "id",
+          "scheduledRunTime",
+          "status"
+        ]
+      },
+      "BillingRunPageResponseModel": {
+        "properties": {
+          "items": {
+            "items": {
+              "$ref": "#/components/schemas/BillingRunResponseModel"
+            },
+            "example": [
+              {
+                "id": "53ff21c8-4872-46c4-83bf-517d54876945",
+                "createdAt": "2022-10-07T14:12:08.826121Z",
+                "status": "SCHEDULED",
+                "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+                "scheduledRunTime": "2023-02-01T12:00:00.000001Z",
+                "billingStartDate": "2023-01-01",
+                "billingEndDate": "2023-01-31",
+                "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7"
+              }
+            ],
+            "type": "array"
+          },
+          "pagination": {
+            "$ref": "#/components/schemas/PaginationMeta"
+          }
+        },
+        "example": {
+          "items": [
+            {
+              "id": "53ff21c8-4872-46c4-83bf-517d54876945",
+              "createdAt": "2022-10-07T14:12:08.826121Z",
+              "status": "SCHEDULED",
+              "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+              "scheduledRunTime": "2023-02-01T12:00:00.000001Z",
+              "billingStartDate": "2023-01-01",
+              "billingEndDate": "2023-01-31",
+              "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7"
+            }
+          ],
+          "pagination": {
+            "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
+            "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
+            "totalResultSize": 10
+          }
+        },
+        "type": "object",
+        "required": [
+          "items",
+          "pagination"
+        ]
+      },
+      "BillingRunResponseModel": {
+        "properties": {
+          "id": {
+            "example": "53ff21c8-4872-46c4-83bf-517d54876945",
+            "type": "string"
+          },
+          "createdAt": {
+            "example": "2022-10-07T14:12:08.826121Z",
+            "type": "string"
+          },
+          "status": {
+            "$ref": "#/components/schemas/BillingRunStatus"
+          },
+          "billingScheduleId": {
+            "example": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+            "type": "string"
+          },
+          "scheduledRunTime": {
+            "example": "2023-02-01T12:00:00.000001Z",
+            "type": "string"
+          },
+          "billingStartDate": {
+            "example": "2023-01-01",
+            "format": "date",
+            "type": "string"
+          },
+          "billingEndDate": {
+            "example": "2023-01-31",
+            "format": "date",
+            "type": "string"
+          },
+          "invoiceId": {
+            "example": "af60cab3-812d-4250-a051-0fb7133a00c7",
+            "type": "string"
+          }
+        },
+        "example": {
+          "id": "53ff21c8-4872-46c4-83bf-517d54876945",
+          "createdAt": "2022-10-07T14:12:08.826121Z",
+          "status": "SCHEDULED",
+          "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+          "scheduledRunTime": "2023-02-01T12:00:00.000001Z",
+          "billingStartDate": "2023-01-01",
+          "billingEndDate": "2023-01-31",
+          "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7"
+        },
+        "type": "object",
+        "required": [
+          "billingEndDate",
+          "billingScheduleId",
+          "billingStartDate",
+          "createdAt",
+          "id",
+          "scheduledRunTime",
+          "status"
         ]
       },
       "ONE_TIME": {
