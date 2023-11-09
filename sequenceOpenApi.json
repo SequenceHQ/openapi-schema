@@ -11689,55 +11689,71 @@
                 "example": {
                   "sequenceAccountId": "ac4c5184-b282-40b6-862c-ac9de3859e27",
                   "currency": "GBP",
-                  "customers": {
-                    "4ecc7384-e25e-459d-b811-fb5f3ae73923": "Saas Corp",
-                    "a0bc49b1-8e9a-4995-af73-5db2f9bd494b": "Hermanos Cafeteros Inc."
-                  },
-                  "accountTotal": 1200,
-                  "accountMonthlyTotals": {
-                    "2023-09-01": 600,
-                    "2023-10-01": 600
-                  },
-                  "accountMonthlyInvoiceIds": {
-                    "2023-09-01": [
-                      "b78f0591-afcc-43bc-851f-2288aa25b07b",
-                      "12e4c680-a33d-4440-b01b-6e259e0a51d4"
-                    ],
-                    "2023-10-01": [
-                      "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8",
-                      "c82c7f82-2d76-49b4-832b-c9bb1969a5c6",
-                      "1b4d180d-ae8d-413c-9a97-08a7a85a2980"
-                    ]
-                  },
-                  "customerTotals": {
-                    "4ecc7384-e25e-459d-b811-fb5f3ae73923": 600,
-                    "a0bc49b1-8e9a-4995-af73-5db2f9bd494b": 600
-                  },
-                  "customerMonthlyTotals": {
-                    "4ecc7384-e25e-459d-b811-fb5f3ae73923": {
-                      "2023-09-01": 300,
-                      "2023-10-01": 300
-                    }
-                  },
-                  "customerMonthlyInvoiceIds": {
-                    "4ecc7384-e25e-459d-b811-fb5f3ae73923": {
-                      "2023-09-01": [
-                        "b78f0591-afcc-43bc-851f-2288aa25b07b"
-                      ],
-                      "2023-10-01": [
-                        "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8"
+                  "customerDetails": [
+                    {
+                      "customerId": "4ecc7384-e25e-459d-b811-fb5f3ae73923",
+                      "legalName": "Saas Corp",
+                      "total": "600",
+                      "monthDetails": [
+                        {
+                          "month": "2023-09-01",
+                          "total": "300",
+                          "invoiceIds": [
+                            "b78f0591-afcc-43bc-851f-2288aa25b07b"
+                          ]
+                        },
+                        {
+                          "month": "2023-10-01",
+                          "total": "300",
+                          "invoiceIds": [
+                            "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8"
+                          ]
+                        }
                       ]
                     },
-                    "a0bc49b1-8e9a-4995-af73-5db2f9bd494b": {
-                      "2023-09-01": [
+                    {
+                      "customerId": "a0bc49b1-8e9a-4995-af73-5db2f9bd494b",
+                      "legalName": "Hermanos Cafeteros Inc.",
+                      "total": "600",
+                      "monthDetails": [
+                        {
+                          "month": "2023-09-01",
+                          "total": "300",
+                          "invoiceIds": [
+                            "12e4c680-a33d-4440-b01b-6e259e0a51d4"
+                          ]
+                        },
+                        {
+                          "month": "2023-10-01",
+                          "total": "300",
+                          "invoiceIds": [
+                            "c82c7f82-2d76-49b4-832b-c9bb1969a5c6",
+                            "1b4d180d-ae8d-413c-9a97-08a7a85a2980"
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "accountTotal": "1200",
+                  "monthDetails": [
+                    {
+                      "month": "2023-09-01",
+                      "total": "600",
+                      "invoiceIds": [
+                        "b78f0591-afcc-43bc-851f-2288aa25b07b",
                         "12e4c680-a33d-4440-b01b-6e259e0a51d4"
-                      ],
-                      "2023-10-01": [
+                      ]
+                    },
+                    {
+                      "month": "2023-10-01",
+                      "total": "600",
+                      "invoiceIds": [
+                        "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8",
                         "c82c7f82-2d76-49b4-832b-c9bb1969a5c6",
                         "1b4d180d-ae8d-413c-9a97-08a7a85a2980"
                       ]
                     }
-                  }
+                  ]
                 },
                 "schema": {
                   "$ref": "#/components/schemas/InvoicesOverview"
@@ -34950,306 +34966,264 @@
           "currency": {
             "$ref": "#/components/schemas/Currency3"
           },
-          "customers": {
-            "additionalProperties": {
-              "properties": {
-                "4ecc7384-e25e-459d-b811-fb5f3ae73923": {
-                  "example": "Saas Corp",
-                  "type": "string"
-                },
-                "a0bc49b1-8e9a-4995-af73-5db2f9bd494b": {
-                  "example": "Hermanos Cafeteros Inc.",
-                  "type": "string"
-                }
-              },
-              "example": {
-                "4ecc7384-e25e-459d-b811-fb5f3ae73923": "Saas Corp",
-                "a0bc49b1-8e9a-4995-af73-5db2f9bd494b": "Hermanos Cafeteros Inc."
-              },
-              "type": "object"
+          "customerDetails": {
+            "items": {
+              "$ref": "#/components/schemas/CustomerDetails"
             },
-            "type": "object"
+            "example": [
+              {
+                "customerId": "4ecc7384-e25e-459d-b811-fb5f3ae73923",
+                "legalName": "Saas Corp",
+                "total": "600",
+                "monthDetails": [
+                  {
+                    "month": "2023-09-01",
+                    "total": "300",
+                    "invoiceIds": [
+                      "b78f0591-afcc-43bc-851f-2288aa25b07b"
+                    ]
+                  },
+                  {
+                    "month": "2023-10-01",
+                    "total": "300",
+                    "invoiceIds": [
+                      "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8"
+                    ]
+                  }
+                ]
+              },
+              {
+                "customerId": "a0bc49b1-8e9a-4995-af73-5db2f9bd494b",
+                "legalName": "Hermanos Cafeteros Inc.",
+                "total": "600",
+                "monthDetails": [
+                  {
+                    "month": "2023-09-01",
+                    "total": "300",
+                    "invoiceIds": [
+                      "12e4c680-a33d-4440-b01b-6e259e0a51d4"
+                    ]
+                  },
+                  {
+                    "month": "2023-10-01",
+                    "total": "300",
+                    "invoiceIds": [
+                      "c82c7f82-2d76-49b4-832b-c9bb1969a5c6",
+                      "1b4d180d-ae8d-413c-9a97-08a7a85a2980"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "type": "array"
           },
           "accountTotal": {
-            "example": 1200,
-            "type": "number"
+            "example": "1200",
+            "type": "string"
           },
-          "accountMonthlyTotals": {
-            "additionalProperties": {
-              "properties": {
-                "2023-09-01": {
-                  "example": 600,
-                  "type": "number"
-                },
-                "2023-10-01": {
-                  "example": 600,
-                  "type": "number"
-                }
-              },
-              "example": {
-                "2023-09-01": 600,
-                "2023-10-01": 600
-              },
-              "type": "object"
+          "monthDetails": {
+            "items": {
+              "$ref": "#/components/schemas/MonthDetails"
             },
-            "type": "object"
-          },
-          "accountMonthlyInvoiceIds": {
-            "additionalProperties": {
-              "properties": {
-                "2023-09-01": {
-                  "items": {
-                    "type": "string"
-                  },
-                  "example": [
-                    "b78f0591-afcc-43bc-851f-2288aa25b07b",
-                    "12e4c680-a33d-4440-b01b-6e259e0a51d4"
-                  ],
-                  "type": "array"
-                },
-                "2023-10-01": {
-                  "items": {
-                    "type": "string"
-                  },
-                  "example": [
-                    "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8",
-                    "c82c7f82-2d76-49b4-832b-c9bb1969a5c6",
-                    "1b4d180d-ae8d-413c-9a97-08a7a85a2980"
-                  ],
-                  "type": "array"
-                }
-              },
-              "example": {
-                "2023-09-01": [
+            "example": [
+              {
+                "month": "2023-09-01",
+                "total": "600",
+                "invoiceIds": [
                   "b78f0591-afcc-43bc-851f-2288aa25b07b",
                   "12e4c680-a33d-4440-b01b-6e259e0a51d4"
-                ],
-                "2023-10-01": [
+                ]
+              },
+              {
+                "month": "2023-10-01",
+                "total": "600",
+                "invoiceIds": [
                   "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8",
                   "c82c7f82-2d76-49b4-832b-c9bb1969a5c6",
                   "1b4d180d-ae8d-413c-9a97-08a7a85a2980"
                 ]
-              },
-              "type": "object"
-            },
-            "type": "object"
-          },
-          "customerTotals": {
-            "additionalProperties": {
-              "properties": {
-                "4ecc7384-e25e-459d-b811-fb5f3ae73923": {
-                  "example": 600,
-                  "type": "number"
-                },
-                "a0bc49b1-8e9a-4995-af73-5db2f9bd494b": {
-                  "example": 600,
-                  "type": "number"
-                }
-              },
-              "example": {
-                "4ecc7384-e25e-459d-b811-fb5f3ae73923": 600,
-                "a0bc49b1-8e9a-4995-af73-5db2f9bd494b": 600
-              },
-              "type": "object"
-            },
-            "type": "object"
-          },
-          "customerMonthlyTotals": {
-            "additionalProperties": {
-              "properties": {
-                "4ecc7384-e25e-459d-b811-fb5f3ae73923": {
-                  "additionalProperties": {
-                    "properties": {
-                      "2023-09-01": {
-                        "example": 300,
-                        "type": "number"
-                      },
-                      "2023-10-01": {
-                        "example": 300,
-                        "type": "number"
-                      }
-                    },
-                    "example": {
-                      "2023-09-01": 300,
-                      "2023-10-01": 300
-                    },
-                    "type": "object"
-                  },
-                  "type": "object"
-                }
-              },
-              "example": {
-                "4ecc7384-e25e-459d-b811-fb5f3ae73923": {
-                  "2023-09-01": 300,
-                  "2023-10-01": 300
-                }
-              },
-              "type": "object"
-            },
-            "type": "object"
-          },
-          "customerMonthlyInvoiceIds": {
-            "additionalProperties": {
-              "properties": {
-                "4ecc7384-e25e-459d-b811-fb5f3ae73923": {
-                  "additionalProperties": {
-                    "properties": {
-                      "2023-09-01": {
-                        "items": {
-                          "type": "string"
-                        },
-                        "example": [
-                          "b78f0591-afcc-43bc-851f-2288aa25b07b"
-                        ],
-                        "type": "array"
-                      },
-                      "2023-10-01": {
-                        "items": {
-                          "type": "string"
-                        },
-                        "example": [
-                          "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8"
-                        ],
-                        "type": "array"
-                      }
-                    },
-                    "example": {
-                      "2023-09-01": [
-                        "b78f0591-afcc-43bc-851f-2288aa25b07b"
-                      ],
-                      "2023-10-01": [
-                        "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8"
-                      ]
-                    },
-                    "type": "object"
-                  },
-                  "type": "object"
-                },
-                "a0bc49b1-8e9a-4995-af73-5db2f9bd494b": {
-                  "additionalProperties": {
-                    "properties": {
-                      "2023-09-01": {
-                        "items": {
-                          "type": "string"
-                        },
-                        "example": [
-                          "12e4c680-a33d-4440-b01b-6e259e0a51d4"
-                        ],
-                        "type": "array"
-                      },
-                      "2023-10-01": {
-                        "items": {
-                          "type": "string"
-                        },
-                        "example": [
-                          "c82c7f82-2d76-49b4-832b-c9bb1969a5c6",
-                          "1b4d180d-ae8d-413c-9a97-08a7a85a2980"
-                        ],
-                        "type": "array"
-                      }
-                    },
-                    "example": {
-                      "2023-09-01": [
-                        "12e4c680-a33d-4440-b01b-6e259e0a51d4"
-                      ],
-                      "2023-10-01": [
-                        "c82c7f82-2d76-49b4-832b-c9bb1969a5c6",
-                        "1b4d180d-ae8d-413c-9a97-08a7a85a2980"
-                      ]
-                    },
-                    "type": "object"
-                  },
-                  "type": "object"
-                }
-              },
-              "example": {
-                "4ecc7384-e25e-459d-b811-fb5f3ae73923": {
-                  "2023-09-01": [
-                    "b78f0591-afcc-43bc-851f-2288aa25b07b"
-                  ],
-                  "2023-10-01": [
-                    "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8"
-                  ]
-                },
-                "a0bc49b1-8e9a-4995-af73-5db2f9bd494b": {
-                  "2023-09-01": [
-                    "12e4c680-a33d-4440-b01b-6e259e0a51d4"
-                  ],
-                  "2023-10-01": [
-                    "c82c7f82-2d76-49b4-832b-c9bb1969a5c6",
-                    "1b4d180d-ae8d-413c-9a97-08a7a85a2980"
-                  ]
-                }
-              },
-              "type": "object"
-            },
-            "type": "object"
+              }
+            ],
+            "type": "array"
           }
         },
         "example": {
           "sequenceAccountId": "ac4c5184-b282-40b6-862c-ac9de3859e27",
           "currency": "GBP",
-          "customers": {
-            "4ecc7384-e25e-459d-b811-fb5f3ae73923": "Saas Corp",
-            "a0bc49b1-8e9a-4995-af73-5db2f9bd494b": "Hermanos Cafeteros Inc."
-          },
-          "accountTotal": 1200,
-          "accountMonthlyTotals": {
-            "2023-09-01": 600,
-            "2023-10-01": 600
-          },
-          "accountMonthlyInvoiceIds": {
-            "2023-09-01": [
-              "b78f0591-afcc-43bc-851f-2288aa25b07b",
-              "12e4c680-a33d-4440-b01b-6e259e0a51d4"
-            ],
-            "2023-10-01": [
-              "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8",
-              "c82c7f82-2d76-49b4-832b-c9bb1969a5c6",
-              "1b4d180d-ae8d-413c-9a97-08a7a85a2980"
-            ]
-          },
-          "customerTotals": {
-            "4ecc7384-e25e-459d-b811-fb5f3ae73923": 600,
-            "a0bc49b1-8e9a-4995-af73-5db2f9bd494b": 600
-          },
-          "customerMonthlyTotals": {
-            "4ecc7384-e25e-459d-b811-fb5f3ae73923": {
-              "2023-09-01": 300,
-              "2023-10-01": 300
-            }
-          },
-          "customerMonthlyInvoiceIds": {
-            "4ecc7384-e25e-459d-b811-fb5f3ae73923": {
-              "2023-09-01": [
-                "b78f0591-afcc-43bc-851f-2288aa25b07b"
-              ],
-              "2023-10-01": [
-                "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8"
+          "customerDetails": [
+            {
+              "customerId": "4ecc7384-e25e-459d-b811-fb5f3ae73923",
+              "legalName": "Saas Corp",
+              "total": "600",
+              "monthDetails": [
+                {
+                  "month": "2023-09-01",
+                  "total": "300",
+                  "invoiceIds": [
+                    "b78f0591-afcc-43bc-851f-2288aa25b07b"
+                  ]
+                },
+                {
+                  "month": "2023-10-01",
+                  "total": "300",
+                  "invoiceIds": [
+                    "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8"
+                  ]
+                }
               ]
             },
-            "a0bc49b1-8e9a-4995-af73-5db2f9bd494b": {
-              "2023-09-01": [
+            {
+              "customerId": "a0bc49b1-8e9a-4995-af73-5db2f9bd494b",
+              "legalName": "Hermanos Cafeteros Inc.",
+              "total": "600",
+              "monthDetails": [
+                {
+                  "month": "2023-09-01",
+                  "total": "300",
+                  "invoiceIds": [
+                    "12e4c680-a33d-4440-b01b-6e259e0a51d4"
+                  ]
+                },
+                {
+                  "month": "2023-10-01",
+                  "total": "300",
+                  "invoiceIds": [
+                    "c82c7f82-2d76-49b4-832b-c9bb1969a5c6",
+                    "1b4d180d-ae8d-413c-9a97-08a7a85a2980"
+                  ]
+                }
+              ]
+            }
+          ],
+          "accountTotal": "1200",
+          "monthDetails": [
+            {
+              "month": "2023-09-01",
+              "total": "600",
+              "invoiceIds": [
+                "b78f0591-afcc-43bc-851f-2288aa25b07b",
                 "12e4c680-a33d-4440-b01b-6e259e0a51d4"
-              ],
-              "2023-10-01": [
+              ]
+            },
+            {
+              "month": "2023-10-01",
+              "total": "600",
+              "invoiceIds": [
+                "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8",
                 "c82c7f82-2d76-49b4-832b-c9bb1969a5c6",
                 "1b4d180d-ae8d-413c-9a97-08a7a85a2980"
               ]
             }
-          }
+          ]
         },
         "type": "object",
         "required": [
-          "accountMonthlyInvoiceIds",
-          "accountMonthlyTotals",
           "accountTotal",
           "currency",
-          "customerMonthlyInvoiceIds",
-          "customerMonthlyTotals",
-          "customerTotals",
-          "customers",
+          "customerDetails",
+          "monthDetails",
           "sequenceAccountId"
+        ]
+      },
+      "CustomerDetails": {
+        "properties": {
+          "customerId": {
+            "example": "4ecc7384-e25e-459d-b811-fb5f3ae73923",
+            "type": "string"
+          },
+          "legalName": {
+            "example": "Saas Corp",
+            "type": "string"
+          },
+          "total": {
+            "example": "600",
+            "type": "string"
+          },
+          "monthDetails": {
+            "items": {
+              "$ref": "#/components/schemas/MonthDetails"
+            },
+            "example": [
+              {
+                "month": "2023-09-01",
+                "total": "300",
+                "invoiceIds": [
+                  "b78f0591-afcc-43bc-851f-2288aa25b07b"
+                ]
+              },
+              {
+                "month": "2023-10-01",
+                "total": "300",
+                "invoiceIds": [
+                  "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8"
+                ]
+              }
+            ],
+            "type": "array"
+          }
+        },
+        "example": {
+          "customerId": "4ecc7384-e25e-459d-b811-fb5f3ae73923",
+          "legalName": "Saas Corp",
+          "total": "600",
+          "monthDetails": [
+            {
+              "month": "2023-09-01",
+              "total": "300",
+              "invoiceIds": [
+                "b78f0591-afcc-43bc-851f-2288aa25b07b"
+              ]
+            },
+            {
+              "month": "2023-10-01",
+              "total": "300",
+              "invoiceIds": [
+                "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8"
+              ]
+            }
+          ]
+        },
+        "type": "object",
+        "required": [
+          "customerId",
+          "legalName",
+          "monthDetails",
+          "total"
+        ]
+      },
+      "MonthDetails": {
+        "properties": {
+          "month": {
+            "example": "2023-09-01",
+            "format": "date",
+            "type": "string"
+          },
+          "total": {
+            "example": "300",
+            "type": "string"
+          },
+          "invoiceIds": {
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "b78f0591-afcc-43bc-851f-2288aa25b07b"
+            ],
+            "type": "array"
+          }
+        },
+        "example": {
+          "month": "2023-09-01",
+          "total": "300",
+          "invoiceIds": [
+            "b78f0591-afcc-43bc-851f-2288aa25b07b"
+          ]
+        },
+        "type": "object",
+        "required": [
+          "invoiceIds",
+          "month",
+          "total"
         ]
       },
       "AddCreditNoteLineItemsFromInvoiceEndpointRequestModel": {
