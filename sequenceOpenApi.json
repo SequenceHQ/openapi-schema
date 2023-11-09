@@ -10835,6 +10835,15 @@
           },
           {
             "schema": {
+              "type": "boolean"
+            },
+            "in": "query",
+            "name": "excludeZeroQuantity",
+            "required": false,
+            "description": "Exclude invoices with zero quantity."
+          },
+          {
+            "schema": {
               "type": "string"
             },
             "in": "header",
