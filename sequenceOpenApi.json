@@ -3783,6 +3783,93 @@
         "deprecated": false
       }
     },
+    "/billing-runs/{billingRunId}/invoice-preview": {
+      "post": {
+        "summary": "Preview the current period invoice for a billing run",
+        "description": "Preview the current period invoice for a billing run",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "billingRunId",
+            "required": true,
+            "description": "Billing Run ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "example": {
+                  "currency": "GBP",
+                  "purchaseOrderNumber": "PO123",
+                  "customer": {
+                    "id": "cca32597-b6b0-4499-9669-128aef8702e4",
+                    "taxId": "123"
+                  },
+                  "billingPeriod": {
+                    "startDate": "2023-01-01",
+                    "endDate": "2023-01-31"
+                  },
+                  "lineItems": [
+                    {
+                      "title": "Some random value",
+                      "description": "",
+                      "quantity": 10,
+                      "rate": "100",
+                      "taxRate": "0",
+                      "servicePeriodStart": "2023-01-01",
+                      "servicePeriodEnd": "2023-01-31",
+                      "priceId": "e007e884-5100-4183-8355-4771865cb4d7",
+                      "rateDisplay": "ABSOLUTE",
+                      "externalIds": [
+                        {
+                          "key": "Xero",
+                          "value": "123"
+                        }
+                      ]
+                    }
+                  ],
+                  "lineItemGroups": [],
+                  "memo": "memo",
+                  "accountingDate": "2023-01-31",
+                  "paymentOptions": [
+                    "BANK_TRANSFER"
+                  ]
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/CurrentPeriodInvoicePreviewEndpointResponseModel"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "",
+            "content": {}
+          },
+          "500": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "postApiBilling_runs_billingRunId_Invoice_preview",
+        "deprecated": false
+      }
+    },
     "/billing-runs/{id}": {
       "get": {
         "summary": "Get a Billing Run by ID",
@@ -27492,19 +27579,19 @@
       "DateRange": {
         "properties": {
           "startDate": {
-            "example": "2022-01-01",
+            "example": "2023-01-01",
             "format": "date",
             "type": "string"
           },
           "endDate": {
-            "example": "2022-12-01",
+            "example": "2023-01-31",
             "format": "date",
             "type": "string"
           }
         },
         "example": {
-          "startDate": "2022-01-01",
-          "endDate": "2022-12-01"
+          "startDate": "2023-01-01",
+          "endDate": "2023-01-31"
         },
         "type": "object",
         "required": [
@@ -28239,6 +28326,216 @@
           "id",
           "scheduledRunTime",
           "status"
+        ]
+      },
+      "CurrentPeriodInvoicePreviewEndpointResponseModel": {
+        "properties": {
+          "currency": {
+            "$ref": "#/components/schemas/Currency2"
+          },
+          "purchaseOrderNumber": {
+            "example": "PO123",
+            "type": "string"
+          },
+          "customer": {
+            "$ref": "#/components/schemas/CurrentPeriodInvoicePreviewEndpointCustomer"
+          },
+          "billingPeriod": {
+            "$ref": "#/components/schemas/DateRange"
+          },
+          "lineItems": {
+            "items": {
+              "$ref": "#/components/schemas/CurrentPeriodInvoicePreviewEndpointLineItem"
+            },
+            "example": [
+              {
+                "title": "Some random value",
+                "description": "",
+                "quantity": 10,
+                "rate": "100",
+                "taxRate": "0",
+                "servicePeriodStart": "2023-01-01",
+                "servicePeriodEnd": "2023-01-31",
+                "priceId": "e007e884-5100-4183-8355-4771865cb4d7",
+                "rateDisplay": "ABSOLUTE",
+                "externalIds": [
+                  {
+                    "key": "Xero",
+                    "value": "123"
+                  }
+                ]
+              }
+            ],
+            "type": "array"
+          },
+          "lineItemGroups": {
+            "items": {},
+            "example": [],
+            "type": "array"
+          },
+          "memo": {
+            "example": "memo",
+            "type": "string"
+          },
+          "accountingDate": {
+            "example": "2023-01-31",
+            "format": "date",
+            "type": "string"
+          },
+          "paymentOptions": {
+            "items": {
+              "$ref": "#/components/schemas/InvoicePaymentOption"
+            },
+            "example": [
+              "BANK_TRANSFER"
+            ],
+            "type": "array"
+          }
+        },
+        "example": {
+          "currency": "GBP",
+          "purchaseOrderNumber": "PO123",
+          "customer": {
+            "id": "cca32597-b6b0-4499-9669-128aef8702e4",
+            "taxId": "123"
+          },
+          "billingPeriod": {
+            "startDate": "2023-01-01",
+            "endDate": "2023-01-31"
+          },
+          "lineItems": [
+            {
+              "title": "Some random value",
+              "description": "",
+              "quantity": 10,
+              "rate": "100",
+              "taxRate": "0",
+              "servicePeriodStart": "2023-01-01",
+              "servicePeriodEnd": "2023-01-31",
+              "priceId": "e007e884-5100-4183-8355-4771865cb4d7",
+              "rateDisplay": "ABSOLUTE",
+              "externalIds": [
+                {
+                  "key": "Xero",
+                  "value": "123"
+                }
+              ]
+            }
+          ],
+          "lineItemGroups": [],
+          "memo": "memo",
+          "accountingDate": "2023-01-31",
+          "paymentOptions": [
+            "BANK_TRANSFER"
+          ]
+        },
+        "type": "object",
+        "required": [
+          "accountingDate",
+          "billingPeriod",
+          "currency",
+          "customer",
+          "lineItemGroups",
+          "lineItems",
+          "paymentOptions"
+        ]
+      },
+      "CurrentPeriodInvoicePreviewEndpointCustomer": {
+        "properties": {
+          "id": {
+            "example": "cca32597-b6b0-4499-9669-128aef8702e4",
+            "type": "string"
+          },
+          "taxId": {
+            "example": "123",
+            "type": "string"
+          }
+        },
+        "example": {
+          "id": "cca32597-b6b0-4499-9669-128aef8702e4",
+          "taxId": "123"
+        },
+        "type": "object",
+        "required": [
+          "id"
+        ]
+      },
+      "CurrentPeriodInvoicePreviewEndpointLineItem": {
+        "properties": {
+          "title": {
+            "example": "Some random value",
+            "type": "string"
+          },
+          "description": {
+            "example": "",
+            "type": "string"
+          },
+          "quantity": {
+            "example": 10,
+            "type": "number"
+          },
+          "rate": {
+            "example": "100",
+            "type": "string"
+          },
+          "taxRate": {
+            "example": "0",
+            "type": "string"
+          },
+          "servicePeriodStart": {
+            "example": "2023-01-01",
+            "format": "date",
+            "type": "string"
+          },
+          "servicePeriodEnd": {
+            "example": "2023-01-31",
+            "format": "date",
+            "type": "string"
+          },
+          "priceId": {
+            "example": "e007e884-5100-4183-8355-4771865cb4d7",
+            "type": "string"
+          },
+          "rateDisplay": {
+            "$ref": "#/components/schemas/RateDisplay"
+          },
+          "externalIds": {
+            "items": {
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+            },
+            "example": [
+              {
+                "key": "Xero",
+                "value": "123"
+              }
+            ],
+            "type": "array"
+          }
+        },
+        "example": {
+          "title": "Some random value",
+          "description": "",
+          "quantity": 10,
+          "rate": "100",
+          "taxRate": "0",
+          "servicePeriodStart": "2023-01-01",
+          "servicePeriodEnd": "2023-01-31",
+          "priceId": "e007e884-5100-4183-8355-4771865cb4d7",
+          "rateDisplay": "ABSOLUTE",
+          "externalIds": [
+            {
+              "key": "Xero",
+              "value": "123"
+            }
+          ]
+        },
+        "type": "object",
+        "required": [
+          "externalIds",
+          "quantity",
+          "rate",
+          "taxRate",
+          "title"
         ]
       },
       "ONE_TIME": {
