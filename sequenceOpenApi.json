@@ -3639,6 +3639,7 @@
                       "status": "SCHEDULED",
                       "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
                       "scheduledRunTime": "2023-02-01T12:00:00.000001Z",
+                      "intendedDraftingDate": "2023-01-01",
                       "billingStartDate": "2023-01-01",
                       "billingEndDate": "2023-01-31",
                       "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7"
@@ -3906,6 +3907,7 @@
                   "status": "SCHEDULED",
                   "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
                   "scheduledRunTime": "2023-02-01T12:00:00.000001Z",
+                  "intendedDraftingDate": "2023-01-01",
                   "billingStartDate": "2023-01-01",
                   "billingEndDate": "2023-01-31",
                   "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7"
@@ -28086,6 +28088,11 @@
             "example": "2023-02-01T12:00:00.000001Z",
             "type": "string"
           },
+          "intendedDraftingDate": {
+            "example": "2023-01-01",
+            "format": "date",
+            "type": "string"
+          },
           "billingStartDate": {
             "example": "2023-01-01",
             "format": "date",
@@ -28107,6 +28114,7 @@
           "status": "SCHEDULED",
           "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
           "scheduledRunTime": "2023-02-01T12:00:00.000001Z",
+          "intendedDraftingDate": "2023-01-01",
           "billingStartDate": "2023-01-01",
           "billingEndDate": "2023-01-31",
           "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7"
@@ -28146,6 +28154,7 @@
                 "status": "SCHEDULED",
                 "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
                 "scheduledRunTime": "2023-02-01T12:00:00.000001Z",
+                "intendedDraftingDate": "2023-01-01",
                 "billingStartDate": "2023-01-01",
                 "billingEndDate": "2023-01-31",
                 "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7"
@@ -28165,6 +28174,7 @@
               "status": "SCHEDULED",
               "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
               "scheduledRunTime": "2023-02-01T12:00:00.000001Z",
+              "intendedDraftingDate": "2023-01-01",
               "billingStartDate": "2023-01-01",
               "billingEndDate": "2023-01-31",
               "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7"
@@ -28203,6 +28213,11 @@
             "example": "2023-02-01T12:00:00.000001Z",
             "type": "string"
           },
+          "intendedDraftingDate": {
+            "example": "2023-01-01",
+            "format": "date",
+            "type": "string"
+          },
           "billingStartDate": {
             "example": "2023-01-01",
             "format": "date",
@@ -28224,6 +28239,7 @@
           "status": "SCHEDULED",
           "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
           "scheduledRunTime": "2023-02-01T12:00:00.000001Z",
+          "intendedDraftingDate": "2023-01-01",
           "billingStartDate": "2023-01-01",
           "billingEndDate": "2023-01-31",
           "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7"
