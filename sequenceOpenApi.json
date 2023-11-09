@@ -11762,6 +11762,24 @@
             "schema": {
               "type": "string"
             },
+            "in": "query",
+            "name": "invoiceStatuses",
+            "required": false,
+            "description": "Filter invoices by one or many comma-separated statuses"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "paymentStatuses",
+            "required": false,
+            "description": "Filter invoices by one or many comma-separated payment statuses"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
             "in": "header",
             "name": "Authorization",
             "required": true,
@@ -11775,7 +11793,6 @@
               "application/json": {
                 "example": {
                   "sequenceAccountId": "ac4c5184-b282-40b6-862c-ac9de3859e27",
-                  "currency": "GBP",
                   "customerDetails": [
                     {
                       "customerId": "4ecc7384-e25e-459d-b811-fb5f3ae73923",
@@ -35260,9 +35277,6 @@
             "example": "ac4c5184-b282-40b6-862c-ac9de3859e27",
             "type": "string"
           },
-          "currency": {
-            "$ref": "#/components/schemas/Currency3"
-          },
           "customerDetails": {
             "items": {
               "$ref": "#/components/schemas/CustomerDetails"
@@ -35346,7 +35360,6 @@
         },
         "example": {
           "sequenceAccountId": "ac4c5184-b282-40b6-862c-ac9de3859e27",
-          "currency": "GBP",
           "customerDetails": [
             {
               "customerId": "4ecc7384-e25e-459d-b811-fb5f3ae73923",
@@ -35416,7 +35429,6 @@
         "type": "object",
         "required": [
           "accountTotal",
-          "currency",
           "customerDetails",
           "monthDetails",
           "sequenceAccountId"
