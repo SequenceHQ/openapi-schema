@@ -16886,6 +16886,86 @@
         "deprecated": false
       }
     },
+    "/usage-event-for-instant-charges": {
+      "post": {
+        "summary": "Create a new Usage Event and Instant Charge",
+        "description": "Create a new Usage Event and Instant Charge",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "example": {
+                "customerEventId": "event-id-H4twuTWpYx1rkd8OMTki2hTUcZ",
+                "customerAlias": "customer-id-2H4u5BBwBWsS5V2sroRFqJfTXpW",
+                "eventType": "message-sent",
+                "eventTimestamp": "2022-10-01T00:00:00Z",
+                "eventProperties": {
+                  "length": 500,
+                  "type": "text_message"
+                }
+              },
+              "schema": {
+                "$ref": "#/components/schemas/CreateUsageEventEndpointCreateUsageEventRequestModel"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "example": {
+                  "usageEvent": {
+                    "id": "0184421a-8202-70ea-a729-30308a40bbf7",
+                    "customerEventId": "event-id-H4twuTWpYx1rkd8OMTki2hTUcZ",
+                    "customerAlias": "customer-id-2H4u5BBwBWsS5V2sroRFqJfTXpW",
+                    "eventType": "message-sent",
+                    "sequenceAccountId": "0184421e-a9cc-711b-af93-bf0511d4d833",
+                    "eventTimestamp": "2022-10-01T00:00:00Z",
+                    "eventProperties": {
+                      "length": 500,
+                      "type": "text_message"
+                    }
+                  },
+                  "instantCharges": []
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/CreateUsageEventForInstantChargeEndpointCreateUsageEventForInstantChargeResponseModel"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "",
+            "content": {}
+          },
+          "401": {
+            "description": "",
+            "content": {}
+          },
+          "500": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "postApiUsage_event_for_instant_charges",
+        "deprecated": false
+      }
+    },
     "/usage-events": {
       "get": {
         "summary": "List all UsageEvents",
@@ -40923,6 +41003,92 @@
           "eventType"
         ]
       },
+      "CreateUsageEventForInstantChargeEndpointCreateUsageEventForInstantChargeResponseModel": {
+        "properties": {
+          "usageEvent": {
+            "$ref": "#/components/schemas/UsageEvent1"
+          },
+          "instantCharges": {
+            "items": {},
+            "example": [],
+            "type": "array"
+          }
+        },
+        "example": {
+          "usageEvent": {
+            "id": "0184421a-8202-70ea-a729-30308a40bbf7",
+            "customerEventId": "event-id-H4twuTWpYx1rkd8OMTki2hTUcZ",
+            "customerAlias": "customer-id-2H4u5BBwBWsS5V2sroRFqJfTXpW",
+            "eventType": "message-sent",
+            "sequenceAccountId": "0184421e-a9cc-711b-af93-bf0511d4d833",
+            "eventTimestamp": "2022-10-01T00:00:00Z",
+            "eventProperties": {
+              "length": 500,
+              "type": "text_message"
+            }
+          },
+          "instantCharges": []
+        },
+        "type": "object",
+        "required": [
+          "instantCharges",
+          "usageEvent"
+        ]
+      },
+      "UsageEvent1": {
+        "properties": {
+          "id": {
+            "example": "0184421a-8202-70ea-a729-30308a40bbf7",
+            "type": "string"
+          },
+          "customerEventId": {
+            "example": "event-id-H4twuTWpYx1rkd8OMTki2hTUcZ",
+            "type": "string"
+          },
+          "customerAlias": {
+            "example": "customer-id-2H4u5BBwBWsS5V2sroRFqJfTXpW",
+            "type": "string"
+          },
+          "eventType": {
+            "example": "message-sent",
+            "type": "string"
+          },
+          "sequenceAccountId": {
+            "example": "af9b5988-1d7b-45f6-a188-326df5e59b24",
+            "type": "string"
+          },
+          "eventTimestamp": {
+            "example": "2022-10-01T00:00:00Z",
+            "type": "string"
+          },
+          "eventProperties": {
+            "additionalProperties": {},
+            "type": "object"
+          }
+        },
+        "example": {
+          "id": "0184421a-8202-70ea-a729-30308a40bbf7",
+          "customerEventId": "event-id-H4twuTWpYx1rkd8OMTki2hTUcZ",
+          "customerAlias": "customer-id-2H4u5BBwBWsS5V2sroRFqJfTXpW",
+          "eventType": "message-sent",
+          "sequenceAccountId": "af9b5988-1d7b-45f6-a188-326df5e59b24",
+          "eventTimestamp": "2022-10-01T00:00:00Z",
+          "eventProperties": {
+            "length": 500,
+            "type": "text_message"
+          }
+        },
+        "type": "object",
+        "required": [
+          "customerAlias",
+          "customerEventId",
+          "eventProperties",
+          "eventTimestamp",
+          "eventType",
+          "id",
+          "sequenceAccountId"
+        ]
+      },
       "GetUsageEventEndpointProductGetUsageEventResponseModel": {
         "properties": {
           "id": {
@@ -41223,60 +41389,6 @@
         "required": [
           "items",
           "pagination"
-        ]
-      },
-      "UsageEvent1": {
-        "properties": {
-          "id": {
-            "example": "0184421a-8202-70ea-a729-30308a40bbf7",
-            "type": "string"
-          },
-          "customerEventId": {
-            "example": "event-id-H4twuTWpYx1rkd8OMTki2hTUcZ",
-            "type": "string"
-          },
-          "customerAlias": {
-            "example": "customer-id-2H4u5BBwBWsS5V2sroRFqJfTXpW",
-            "type": "string"
-          },
-          "eventType": {
-            "example": "message-sent",
-            "type": "string"
-          },
-          "sequenceAccountId": {
-            "example": "af9b5988-1d7b-45f6-a188-326df5e59b24",
-            "type": "string"
-          },
-          "eventTimestamp": {
-            "example": "2022-10-01T00:00:00Z",
-            "type": "string"
-          },
-          "eventProperties": {
-            "additionalProperties": {},
-            "type": "object"
-          }
-        },
-        "example": {
-          "id": "0184421a-8202-70ea-a729-30308a40bbf7",
-          "customerEventId": "event-id-H4twuTWpYx1rkd8OMTki2hTUcZ",
-          "customerAlias": "customer-id-2H4u5BBwBWsS5V2sroRFqJfTXpW",
-          "eventType": "message-sent",
-          "sequenceAccountId": "af9b5988-1d7b-45f6-a188-326df5e59b24",
-          "eventTimestamp": "2022-10-01T00:00:00Z",
-          "eventProperties": {
-            "length": 500,
-            "type": "text_message"
-          }
-        },
-        "type": "object",
-        "required": [
-          "customerAlias",
-          "customerEventId",
-          "eventProperties",
-          "eventTimestamp",
-          "eventType",
-          "id",
-          "sequenceAccountId"
         ]
       },
       "UsageMetricCalculation": {
