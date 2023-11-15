@@ -29032,11 +29032,11 @@
             "type": "string"
           },
           "email": {
-            "example": "finance@example.com",
+            "example": "donald@example.com",
             "type": "string"
           },
           "taxId": {
-            "example": "TAX60",
+            "example": "TAX",
             "type": "string"
           },
           "iban": {
@@ -29052,34 +29052,13 @@
           "usWireDetails": {
             "$ref": "#/components/schemas/UsWireDestination1"
           },
-          "caBankAccountDetails": {
-            "$ref": "#/components/schemas/CanadianBankAccountDestination"
-          },
-          "canadianInternationalDestination": {
-            "$ref": "#/components/schemas/CanadianInternationalDestination1"
-          },
-          "logoUrl": {
-            "example": "logo",
-            "type": "string"
-          },
           "legalCompanyName": {
             "example": "The Merchant",
             "type": "string"
           },
-          "primaryColour": {
-            "example": "#000000",
-            "type": "string"
-          },
           "customFields": {
-            "items": {
-              "$ref": "#/components/schemas/KeyValuePair"
-            },
-            "example": [
-              {
-                "key": "example-label",
-                "value": "label-value"
-              }
-            ],
+            "items": {},
+            "example": [],
             "type": "array"
           },
           "includeBeneficiaryAddressInPaymentDetails": {
@@ -29092,16 +29071,15 @@
             "line1": "The White House",
             "line2": "1600 Pennsylvania Avenue",
             "town": "Washington, D.C.",
-            "state": "CA",
             "postCode": "20500",
             "country": "US"
           },
           "phoneNumber": "0800001066",
-          "email": "finance@example.com",
-          "taxId": "TAX60",
+          "email": "donald@example.com",
+          "taxId": "TAX",
           "iban": "GB33BUKB20201555555555",
           "ukAccountDetails": {
-            "sortCode": "000000",
+            "sortCode": "123456",
             "accountNumber": "12345678"
           },
           "usAchDetails": {
@@ -29124,47 +29102,8 @@
               "country": "US"
             }
           },
-          "caBankAccountDetails": {
-            "transitNumber": "123",
-            "institutionNumber": "12345",
-            "accountNumber": "1234567"
-          },
-          "canadianInternationalDestination": {
-            "legalName": "John Doe",
-            "accountNumber": "12345678",
-            "transitNumber": "12345",
-            "bankName": "Chase",
-            "bankAddress": {
-              "line1": "JP Morgan Chase",
-              "town": "New York City",
-              "state": "NY",
-              "postCode": "10017",
-              "country": "US"
-            },
-            "institutionNumber": "123",
-            "swiftCode": "CHASUS33",
-            "intermediaryBank": {
-              "bankName": "Chase",
-              "bankAddress": {
-                "line1": "JP Morgan Chase",
-                "town": "New York City",
-                "state": "NY",
-                "postCode": "10017",
-                "country": "US"
-              },
-              "swiftCode": "CHASUS33",
-              "routingNumber": "123456789"
-            }
-          },
-          "logoUrl": "logo",
           "legalCompanyName": "The Merchant",
-          "primaryColour": "#000000",
-          "customFields": [
-            {
-              "key": "example-label",
-              "value": "label-value"
-            }
-          ],
+          "customFields": [],
           "includeBeneficiaryAddressInPaymentDetails": false
         },
         "type": "object",
@@ -29476,7 +29415,7 @@
       "SortCodeAccountNumber": {
         "properties": {
           "sortCode": {
-            "example": "000000",
+            "example": "123456",
             "type": "string"
           },
           "accountNumber": {
@@ -29485,7 +29424,7 @@
           }
         },
         "example": {
-          "sortCode": "000000",
+          "sortCode": "123456",
           "accountNumber": "12345678"
         },
         "type": "object",
@@ -31230,7 +31169,7 @@
       "LinkInfo": {
         "properties": {
           "externalId": {
-            "example": "123",
+            "example": "ID",
             "type": "string"
           },
           "externalService": {
@@ -31242,7 +31181,7 @@
           }
         },
         "example": {
-          "externalId": "123",
+          "externalId": "ID",
           "externalService": "Xero",
           "syncTime": "2022-06-28T16:47:00Z"
         },
@@ -35673,6 +35612,339 @@
           "total"
         ]
       },
+      "DeleteInvoiceEndpointProductDeleteInvoiceResponseModel": {
+        "properties": {
+          "id": {
+            "example": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+            "type": "string"
+          },
+          "sequenceAccountId": {
+            "example": "68233908-402a-43b4-8952-1c2ab0ef0b25",
+            "type": "string"
+          },
+          "billingScheduleId": {
+            "example": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+            "type": "string"
+          },
+          "status": {
+            "$ref": "#/components/schemas/InvoiceStatus"
+          },
+          "currency": {
+            "$ref": "#/components/schemas/Currency3"
+          },
+          "invoiceNumber": {
+            "example": "INV00001",
+            "type": "string"
+          },
+          "issueDate": {
+            "example": "2022-09-15",
+            "format": "date",
+            "type": "string"
+          },
+          "dueDate": {
+            "example": "2022-09-30",
+            "format": "date",
+            "type": "string"
+          },
+          "purchaseOrderNumber": {
+            "example": "PO123",
+            "type": "string"
+          },
+          "customerEmail": {
+            "example": "customer@example.com",
+            "type": "string"
+          },
+          "customerEmails": {
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "customer.user.a@example.com",
+              "customer.user.b@example.com"
+            ],
+            "type": "array"
+          },
+          "customerLegalCompanyName": {
+            "example": "Facebook",
+            "type": "string"
+          },
+          "customerBillingAddress": {
+            "$ref": "#/components/schemas/Address1"
+          },
+          "customerShippingAddress": {
+            "$ref": "#/components/schemas/Address1"
+          },
+          "memo": {
+            "example": "Thanks",
+            "type": "string"
+          },
+          "paymentOptions": {
+            "items": {
+              "$ref": "#/components/schemas/InvoicePaymentOption"
+            },
+            "example": [
+              "BANK_TRANSFER"
+            ],
+            "type": "array"
+          },
+          "billingPeriodStart": {
+            "example": "2022-10-01",
+            "format": "date",
+            "type": "string"
+          },
+          "billingPeriodEnd": {
+            "example": "2022-10-30",
+            "format": "date",
+            "type": "string"
+          },
+          "customerId": {
+            "example": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
+            "type": "string"
+          },
+          "totalTax": {
+            "example": "2.50",
+            "type": "string"
+          },
+          "netTotal": {
+            "example": "51.20",
+            "type": "string"
+          },
+          "grossTotal": {
+            "example": "101.23",
+            "type": "string"
+          },
+          "metadata": {
+            "items": {
+              "$ref": "#/components/schemas/KeyValuePair"
+            },
+            "example": [
+              {
+                "key": "example-label",
+                "value": "label-value"
+              }
+            ],
+            "type": "array"
+          },
+          "customerTaxId": {
+            "example": "TAX123",
+            "type": "string"
+          },
+          "paymentStatus": {
+            "$ref": "#/components/schemas/InvoicePaymentStatus"
+          },
+          "createdAt": {
+            "example": "2022-10-30T00:00:00Z",
+            "type": "string"
+          },
+          "creditNoteIds": {
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "af60cab3-812d-4250-a051-0fb7133a00c7"
+            ],
+            "type": "array"
+          },
+          "linkedServices": {
+            "items": {
+              "$ref": "#/components/schemas/LinkInfo"
+            },
+            "example": [
+              {
+                "externalId": "123",
+                "externalService": "Xero",
+                "syncTime": "2022-06-28T16:47:00Z"
+              }
+            ],
+            "type": "array"
+          },
+          "merchantDetails": {
+            "$ref": "#/components/schemas/InvoiceMerchantDetails"
+          },
+          "creditBalances": {
+            "example": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
+            "type": "string"
+          },
+          "dunningStatus": {
+            "$ref": "#/components/schemas/InvoiceDunningStatus"
+          },
+          "accountingDate": {
+            "example": "2022-09-30",
+            "format": "date",
+            "type": "string"
+          },
+          "calculatedAt": {
+            "example": "2022-09-30T00:00:00Z",
+            "type": "string"
+          }
+        },
+        "example": {
+          "id": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+          "sequenceAccountId": "68233908-402a-43b4-8952-1c2ab0ef0b25",
+          "billingScheduleId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+          "status": "DRAFT",
+          "currency": "GBP",
+          "invoiceNumber": "INV00001",
+          "issueDate": "2022-09-15",
+          "dueDate": "2022-09-30",
+          "purchaseOrderNumber": "PO123",
+          "customerEmail": "customer@example.com",
+          "customerEmails": [
+            "customer.user.a@example.com",
+            "customer.user.b@example.com"
+          ],
+          "customerLegalCompanyName": "Facebook",
+          "customerBillingAddress": {
+            "line1": "Flat 1",
+            "line2": "15 Yemen Road",
+            "town": "Yemen",
+            "state": "CA",
+            "postCode": "YE1 2YE",
+            "country": "YE"
+          },
+          "customerShippingAddress": {
+            "line1": "742 Evergreen Terrace",
+            "town": "Springfield",
+            "state": "CA",
+            "postCode": "12345",
+            "country": "US"
+          },
+          "memo": "Thanks",
+          "paymentOptions": [
+            "BANK_TRANSFER"
+          ],
+          "billingPeriodStart": "2022-10-01",
+          "billingPeriodEnd": "2022-10-30",
+          "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
+          "totalTax": "2.50",
+          "netTotal": "51.20",
+          "grossTotal": "101.23",
+          "metadata": [
+            {
+              "key": "example-label",
+              "value": "label-value"
+            }
+          ],
+          "customerTaxId": "TAX123",
+          "paymentStatus": "UNPAID",
+          "createdAt": "2022-10-30T00:00:00Z",
+          "creditNoteIds": [
+            "af60cab3-812d-4250-a051-0fb7133a00c7"
+          ],
+          "linkedServices": [
+            {
+              "externalId": "123",
+              "externalService": "Xero",
+              "syncTime": "2022-06-28T16:47:00Z"
+            }
+          ],
+          "merchantDetails": {
+            "address": {
+              "line1": "The White House",
+              "line2": "1600 Pennsylvania Avenue",
+              "town": "Washington, D.C.",
+              "state": "CA",
+              "postCode": "20500",
+              "country": "US"
+            },
+            "phoneNumber": "0800001066",
+            "email": "finance@example.com",
+            "taxId": "TAX60",
+            "iban": "GB33BUKB20201555555555",
+            "ukAccountDetails": {
+              "sortCode": "000000",
+              "accountNumber": "12345678"
+            },
+            "usAchDetails": {
+              "accountNumber": "12345678",
+              "accountName": "John Doe",
+              "bankName": "Chase",
+              "bankRoutingNumber": "123456789"
+            },
+            "usWireDetails": {
+              "accountNumber": "12345678",
+              "accountName": "John Doe",
+              "bankName": "Chase",
+              "bankRoutingNumber": "123456789",
+              "swiftCode": "CHASUS33",
+              "bankAddress": {
+                "line1": "JP Morgan Chase",
+                "town": "New York City",
+                "state": "NY",
+                "postCode": "10017",
+                "country": "US"
+              }
+            },
+            "caBankAccountDetails": {
+              "transitNumber": "123",
+              "institutionNumber": "12345",
+              "accountNumber": "1234567"
+            },
+            "canadianInternationalDestination": {
+              "legalName": "John Doe",
+              "accountNumber": "12345678",
+              "transitNumber": "12345",
+              "bankName": "Chase",
+              "bankAddress": {
+                "line1": "JP Morgan Chase",
+                "town": "New York City",
+                "state": "NY",
+                "postCode": "10017",
+                "country": "US"
+              },
+              "institutionNumber": "123",
+              "swiftCode": "CHASUS33",
+              "intermediaryBank": {
+                "bankName": "Chase",
+                "bankAddress": {
+                  "line1": "JP Morgan Chase",
+                  "town": "New York City",
+                  "state": "NY",
+                  "postCode": "10017",
+                  "country": "US"
+                },
+                "swiftCode": "CHASUS33",
+                "routingNumber": "123456789"
+              }
+            },
+            "logoUrl": "logo",
+            "legalCompanyName": "The Merchant",
+            "primaryColour": "#000000",
+            "customFields": [
+              {
+                "key": "example-label",
+                "value": "label-value"
+              }
+            ],
+            "includeBeneficiaryAddressInPaymentDetails": false
+          },
+          "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
+          "dunningStatus": "SCHEDULED",
+          "accountingDate": "2022-09-30",
+          "calculatedAt": "2022-09-30T00:00:00Z"
+        },
+        "type": "object",
+        "required": [
+          "accountingDate",
+          "creditNoteIds",
+          "currency",
+          "customerBillingAddress",
+          "customerEmail",
+          "customerEmails",
+          "customerId",
+          "customerLegalCompanyName",
+          "customerShippingAddress",
+          "grossTotal",
+          "id",
+          "linkedServices",
+          "metadata",
+          "netTotal",
+          "paymentStatus",
+          "sequenceAccountId",
+          "status",
+          "totalTax"
+        ]
+      },
       "AddCreditNoteLineItemsFromInvoiceEndpointRequestModel": {
         "properties": {
           "lineItemIds": {
@@ -39542,339 +39814,6 @@
         "type": "object",
         "required": [
           "creditNoteIds"
-        ]
-      },
-      "DeleteInvoiceEndpointProductDeleteInvoiceResponseModel": {
-        "properties": {
-          "id": {
-            "example": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
-            "type": "string"
-          },
-          "sequenceAccountId": {
-            "example": "68233908-402a-43b4-8952-1c2ab0ef0b25",
-            "type": "string"
-          },
-          "billingScheduleId": {
-            "example": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
-            "type": "string"
-          },
-          "status": {
-            "$ref": "#/components/schemas/InvoiceStatus"
-          },
-          "currency": {
-            "$ref": "#/components/schemas/Currency3"
-          },
-          "invoiceNumber": {
-            "example": "INV00001",
-            "type": "string"
-          },
-          "issueDate": {
-            "example": "2022-09-15",
-            "format": "date",
-            "type": "string"
-          },
-          "dueDate": {
-            "example": "2022-09-30",
-            "format": "date",
-            "type": "string"
-          },
-          "purchaseOrderNumber": {
-            "example": "PO123",
-            "type": "string"
-          },
-          "customerEmail": {
-            "example": "customer@example.com",
-            "type": "string"
-          },
-          "customerEmails": {
-            "items": {
-              "type": "string"
-            },
-            "example": [
-              "customer.user.a@example.com",
-              "customer.user.b@example.com"
-            ],
-            "type": "array"
-          },
-          "customerLegalCompanyName": {
-            "example": "Facebook",
-            "type": "string"
-          },
-          "customerBillingAddress": {
-            "$ref": "#/components/schemas/Address1"
-          },
-          "customerShippingAddress": {
-            "$ref": "#/components/schemas/Address1"
-          },
-          "memo": {
-            "example": "Thanks",
-            "type": "string"
-          },
-          "paymentOptions": {
-            "items": {
-              "$ref": "#/components/schemas/InvoicePaymentOption"
-            },
-            "example": [
-              "BANK_TRANSFER"
-            ],
-            "type": "array"
-          },
-          "billingPeriodStart": {
-            "example": "2022-10-01",
-            "format": "date",
-            "type": "string"
-          },
-          "billingPeriodEnd": {
-            "example": "2022-10-30",
-            "format": "date",
-            "type": "string"
-          },
-          "customerId": {
-            "example": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-            "type": "string"
-          },
-          "totalTax": {
-            "example": "2.50",
-            "type": "string"
-          },
-          "netTotal": {
-            "example": "51.20",
-            "type": "string"
-          },
-          "grossTotal": {
-            "example": "101.23",
-            "type": "string"
-          },
-          "metadata": {
-            "items": {
-              "$ref": "#/components/schemas/KeyValuePair"
-            },
-            "example": [
-              {
-                "key": "example-label",
-                "value": "label-value"
-              }
-            ],
-            "type": "array"
-          },
-          "customerTaxId": {
-            "example": "TAX123",
-            "type": "string"
-          },
-          "paymentStatus": {
-            "$ref": "#/components/schemas/InvoicePaymentStatus"
-          },
-          "createdAt": {
-            "example": "2022-10-30T00:00:00Z",
-            "type": "string"
-          },
-          "creditNoteIds": {
-            "items": {
-              "type": "string"
-            },
-            "example": [
-              "af60cab3-812d-4250-a051-0fb7133a00c7"
-            ],
-            "type": "array"
-          },
-          "linkedServices": {
-            "items": {
-              "$ref": "#/components/schemas/LinkInfo"
-            },
-            "example": [
-              {
-                "externalId": "123",
-                "externalService": "Xero",
-                "syncTime": "2022-06-28T16:47:00Z"
-              }
-            ],
-            "type": "array"
-          },
-          "merchantDetails": {
-            "$ref": "#/components/schemas/InvoiceMerchantDetails"
-          },
-          "creditBalances": {
-            "example": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
-            "type": "string"
-          },
-          "dunningStatus": {
-            "$ref": "#/components/schemas/InvoiceDunningStatus"
-          },
-          "accountingDate": {
-            "example": "2022-09-30",
-            "format": "date",
-            "type": "string"
-          },
-          "calculatedAt": {
-            "example": "2022-09-30T00:00:00Z",
-            "type": "string"
-          }
-        },
-        "example": {
-          "id": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
-          "sequenceAccountId": "68233908-402a-43b4-8952-1c2ab0ef0b25",
-          "billingScheduleId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
-          "status": "DRAFT",
-          "currency": "GBP",
-          "invoiceNumber": "INV00001",
-          "issueDate": "2022-09-15",
-          "dueDate": "2022-09-30",
-          "purchaseOrderNumber": "PO123",
-          "customerEmail": "customer@example.com",
-          "customerEmails": [
-            "customer.user.a@example.com",
-            "customer.user.b@example.com"
-          ],
-          "customerLegalCompanyName": "Facebook",
-          "customerBillingAddress": {
-            "line1": "Flat 1",
-            "line2": "15 Yemen Road",
-            "town": "Yemen",
-            "state": "CA",
-            "postCode": "YE1 2YE",
-            "country": "YE"
-          },
-          "customerShippingAddress": {
-            "line1": "742 Evergreen Terrace",
-            "town": "Springfield",
-            "state": "CA",
-            "postCode": "12345",
-            "country": "US"
-          },
-          "memo": "Thanks",
-          "paymentOptions": [
-            "BANK_TRANSFER"
-          ],
-          "billingPeriodStart": "2022-10-01",
-          "billingPeriodEnd": "2022-10-30",
-          "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-          "totalTax": "2.50",
-          "netTotal": "51.20",
-          "grossTotal": "101.23",
-          "metadata": [
-            {
-              "key": "example-label",
-              "value": "label-value"
-            }
-          ],
-          "customerTaxId": "TAX123",
-          "paymentStatus": "UNPAID",
-          "createdAt": "2022-10-30T00:00:00Z",
-          "creditNoteIds": [
-            "af60cab3-812d-4250-a051-0fb7133a00c7"
-          ],
-          "linkedServices": [
-            {
-              "externalId": "123",
-              "externalService": "Xero",
-              "syncTime": "2022-06-28T16:47:00Z"
-            }
-          ],
-          "merchantDetails": {
-            "address": {
-              "line1": "The White House",
-              "line2": "1600 Pennsylvania Avenue",
-              "town": "Washington, D.C.",
-              "state": "CA",
-              "postCode": "20500",
-              "country": "US"
-            },
-            "phoneNumber": "0800001066",
-            "email": "finance@example.com",
-            "taxId": "TAX60",
-            "iban": "GB33BUKB20201555555555",
-            "ukAccountDetails": {
-              "sortCode": "000000",
-              "accountNumber": "12345678"
-            },
-            "usAchDetails": {
-              "accountNumber": "12345678",
-              "accountName": "John Doe",
-              "bankName": "Chase",
-              "bankRoutingNumber": "123456789"
-            },
-            "usWireDetails": {
-              "accountNumber": "12345678",
-              "accountName": "John Doe",
-              "bankName": "Chase",
-              "bankRoutingNumber": "123456789",
-              "swiftCode": "CHASUS33",
-              "bankAddress": {
-                "line1": "JP Morgan Chase",
-                "town": "New York City",
-                "state": "NY",
-                "postCode": "10017",
-                "country": "US"
-              }
-            },
-            "caBankAccountDetails": {
-              "transitNumber": "123",
-              "institutionNumber": "12345",
-              "accountNumber": "1234567"
-            },
-            "canadianInternationalDestination": {
-              "legalName": "John Doe",
-              "accountNumber": "12345678",
-              "transitNumber": "12345",
-              "bankName": "Chase",
-              "bankAddress": {
-                "line1": "JP Morgan Chase",
-                "town": "New York City",
-                "state": "NY",
-                "postCode": "10017",
-                "country": "US"
-              },
-              "institutionNumber": "123",
-              "swiftCode": "CHASUS33",
-              "intermediaryBank": {
-                "bankName": "Chase",
-                "bankAddress": {
-                  "line1": "JP Morgan Chase",
-                  "town": "New York City",
-                  "state": "NY",
-                  "postCode": "10017",
-                  "country": "US"
-                },
-                "swiftCode": "CHASUS33",
-                "routingNumber": "123456789"
-              }
-            },
-            "logoUrl": "logo",
-            "legalCompanyName": "The Merchant",
-            "primaryColour": "#000000",
-            "customFields": [
-              {
-                "key": "example-label",
-                "value": "label-value"
-              }
-            ],
-            "includeBeneficiaryAddressInPaymentDetails": false
-          },
-          "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
-          "dunningStatus": "SCHEDULED",
-          "accountingDate": "2022-09-30",
-          "calculatedAt": "2022-09-30T00:00:00Z"
-        },
-        "type": "object",
-        "required": [
-          "accountingDate",
-          "creditNoteIds",
-          "currency",
-          "customerBillingAddress",
-          "customerEmail",
-          "customerEmails",
-          "customerId",
-          "customerLegalCompanyName",
-          "customerShippingAddress",
-          "grossTotal",
-          "id",
-          "linkedServices",
-          "metadata",
-          "netTotal",
-          "paymentStatus",
-          "sequenceAccountId",
-          "status",
-          "totalTax"
         ]
       },
       "CreateInvoiceAccountingDateSettingsEndpointProductCreateInvoiceAccountingDateSettingsResponseModel": {
