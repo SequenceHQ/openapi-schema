@@ -2106,8 +2106,7 @@
     },
     "/customer-portal/customers/{id}/billing-schedules/{billingScheduleId}/usage-data": {
       "post": {
-        "summary": "Get usage events for customer and event type for the given usage period",
-        "description": "List usage events for customer and event type for the given usage period",
+        "summary": "<unknown>",
         "tags": [],
         "parameters": [
           {
@@ -2139,7 +2138,7 @@
                 "priceId": "030a64dd-1d89-46a3-8043-580befdb011d"
               },
               "schema": {
-                "$ref": "#/components/schemas/GetUsageDataEndpointRequestModel"
+                "$ref": "#/components/schemas/GetUsageDataForBillingScheduleEndpointRequestModel"
               }
             }
           },
@@ -4654,7 +4653,7 @@
                 "customerId": "cf747d34-9497-42a8-8b28-d65523fbbadf"
               },
               "schema": {
-                "$ref": "#/components/schemas/GetUsageDataForBillingScheduleEndpointRequestModel"
+                "$ref": "#/components/schemas/GetUsageDataForBillingScheduleEndpointRequestModel1"
               }
             }
           },
@@ -22877,7 +22876,7 @@
           "periodStart"
         ]
       },
-      "GetUsageDataEndpointRequestModel": {
+      "GetUsageDataForBillingScheduleEndpointRequestModel": {
         "properties": {
           "metricId": {
             "example": "27ba4761-7573-41c5-b780-2993b2c254f7",
@@ -28111,7 +28110,7 @@
           "periodStart"
         ]
       },
-      "GetUsageDataForBillingScheduleEndpointRequestModel": {
+      "GetUsageDataForBillingScheduleEndpointRequestModel1": {
         "properties": {
           "usagePeriodType": {
             "$ref": "#/components/schemas/UsagePeriodType"
