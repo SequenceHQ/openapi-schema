@@ -7061,7 +7061,6 @@
                       "creditNoteNumber": "CN00001",
                       "purchaseOrderNumber": "PO123",
                       "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-                      "customerEmail": "customer@example.com",
                       "customerEmails": [
                         "customer@example.com"
                       ],
@@ -7178,7 +7177,6 @@
                 "billingPeriodEnd": "2022-10-30T00:00:00Z",
                 "purchaseOrderNumber": "PO123",
                 "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-                "customerEmail": "customer@example.com",
                 "customerEmails": [
                   "customer@example.com",
                   "customer.alias@example.com"
@@ -7234,7 +7232,6 @@
                   "creditNoteNumber": "CN00001",
                   "purchaseOrderNumber": "PO123",
                   "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-                  "customerEmail": "customer@example.com",
                   "customerEmails": [
                     "customer@example.com",
                     "customer.alias@example.com"
@@ -7613,7 +7610,6 @@
                       "creditNoteNumber": "CN00001",
                       "purchaseOrderNumber": "PO123",
                       "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-                      "customerEmail": "customer@example.com",
                       "customerEmails": [
                         "customer@example.com",
                         "customer.alias@example.com"
@@ -8790,7 +8786,6 @@
                   "creditNoteNumber": "CN00001",
                   "purchaseOrderNumber": "PO123",
                   "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-                  "customerEmail": "customer@example.com",
                   "customerEmails": [
                     "customer@example.com",
                     "customer.alias@example.com"
@@ -8976,7 +8971,6 @@
                   "creditNoteNumber": "CN00001",
                   "purchaseOrderNumber": "PO123",
                   "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-                  "customerEmail": "customer@example.com",
                   "customerEmails": [
                     "customer@example.com",
                     "customer.alias@example.com"
@@ -9150,7 +9144,6 @@
                 "billingPeriodStart": "2022-10-01T00:00:00Z",
                 "billingPeriodEnd": "2022-10-30T00:00:00Z",
                 "purchaseOrderNumber": "PO123",
-                "customerEmail": "customer@example.com",
                 "customerEmails": [
                   "customer@example.com",
                   "customer.alias@example.com"
@@ -9206,7 +9199,6 @@
                   "creditNoteNumber": "CN00001",
                   "purchaseOrderNumber": "PO123",
                   "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-                  "customerEmail": "customer@example.com",
                   "customerEmails": [
                     "customer@example.com",
                     "customer.alias@example.com"
@@ -9450,7 +9442,6 @@
                   "creditNoteNumber": "CN00001",
                   "purchaseOrderNumber": "PO123",
                   "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
-                  "customerEmail": "customer@example.com",
                   "customerEmails": [
                     "customer@example.com"
                   ],
@@ -9600,7 +9591,6 @@
                   "creditNoteNumber": "CN00001",
                   "purchaseOrderNumber": "PO123",
                   "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
-                  "customerEmail": "customer@example.com",
                   "customerEmails": [
                     "customer@example.com"
                   ],
@@ -9948,7 +9938,6 @@
                   "creditNoteNumber": "CN00001",
                   "purchaseOrderNumber": "PO123",
                   "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
-                  "customerEmail": "customer@example.com",
                   "customerEmails": [
                     "customer@example.com"
                   ],
@@ -10098,7 +10087,6 @@
                   "creditNoteNumber": "CN00001",
                   "purchaseOrderNumber": "PO123",
                   "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
-                  "customerEmail": "customer@example.com",
                   "customerEmails": [
                     "customer@example.com"
                   ],
@@ -10248,7 +10236,6 @@
                   "creditNoteNumber": "CN00001",
                   "purchaseOrderNumber": "PO123",
                   "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
-                  "customerEmail": "customer@example.com",
                   "customerEmails": [
                     "customer@example.com"
                   ],
@@ -10866,7 +10853,6 @@
                       "invoiceNumber": "INV2",
                       "dueDate": "2022-11-05",
                       "purchaseOrderNumber": "PO123",
-                      "customerEmail": "customer@example.com",
                       "customerEmails": [
                         "customer@example.com"
                       ],
@@ -11010,7 +10996,6 @@
                 "currency": "GBP",
                 "dueDate": "2022-09-30",
                 "purchaseOrderNumber": "PO123",
-                "customerEmail": "customer@example.com",
                 "customerEmails": [
                   "customer.user.a@example.com",
                   "customer.user.b@example.com"
@@ -11071,7 +11056,6 @@
                   "issueDate": "2022-09-15",
                   "dueDate": "2022-09-30",
                   "purchaseOrderNumber": "PO123",
-                  "customerEmail": "customer@example.com",
                   "customerEmails": [
                     "customer.user.a@example.com",
                     "customer.user.b@example.com"
@@ -11472,7 +11456,6 @@
                       "issueDate": "2022-09-15",
                       "dueDate": "2022-09-30",
                       "purchaseOrderNumber": "PO123",
-                      "customerEmail": "customer@example.com",
                       "customerEmails": [
                         "customer.user.a@example.com",
                         "customer.user.b@example.com"
@@ -12148,7 +12131,6 @@
                   "issueDate": "2022-09-15",
                   "dueDate": "2022-09-30",
                   "purchaseOrderNumber": "PO123",
-                  "customerEmail": "customer@example.com",
                   "customerEmails": [
                     "customer.user.a@example.com",
                     "customer.user.b@example.com"
@@ -12345,7 +12327,6 @@
                   "issueDate": "2022-09-15",
                   "dueDate": "2022-09-30",
                   "purchaseOrderNumber": "PO123",
-                  "customerEmail": "customer@example.com",
                   "customerEmails": [
                     "customer.user.a@example.com",
                     "customer.user.b@example.com"
@@ -12533,7 +12514,6 @@
               "example": {
                 "dueDate": "2022-09-30",
                 "purchaseOrderNumber": "PO123",
-                "customerEmail": "customer@example.com",
                 "customerEmails": [
                   "customer.user.a@example.com",
                   "customer.user.b@example.com"
@@ -12593,7 +12573,6 @@
                   "issueDate": "2022-09-15",
                   "dueDate": "2022-09-30",
                   "purchaseOrderNumber": "PO123",
-                  "customerEmail": "customer@example.com",
                   "customerEmails": [
                     "customer.user.a@example.com",
                     "customer.user.b@example.com"
@@ -12781,7 +12760,6 @@
               "example": {
                 "dueDate": "2022-09-30",
                 "purchaseOrderNumber": "PO123",
-                "customerEmail": "customer@example.com",
                 "customerEmails": [
                   "customer.user.a@example.com",
                   "customer.user.b@example.com"
@@ -12841,7 +12819,6 @@
                   "issueDate": "2022-09-15",
                   "dueDate": "2022-09-30",
                   "purchaseOrderNumber": "PO123",
-                  "customerEmail": "customer@example.com",
                   "customerEmails": [
                     "customer.user.a@example.com",
                     "customer.user.b@example.com"
@@ -13095,7 +13072,6 @@
                   "invoiceNumber": "INV2",
                   "dueDate": "2022-11-05",
                   "purchaseOrderNumber": "PO123",
-                  "customerEmail": "customer@example.com",
                   "customerEmails": [
                     "customer@example.com"
                   ],
@@ -13257,7 +13233,6 @@
                   "invoiceNumber": "INV2",
                   "dueDate": "2022-11-05",
                   "purchaseOrderNumber": "PO123",
-                  "customerEmail": "customer@example.com",
                   "customerEmails": [
                     "customer@example.com"
                   ],
@@ -13577,7 +13552,6 @@
                   "invoiceNumber": "INV2",
                   "dueDate": "2022-11-05",
                   "purchaseOrderNumber": "PO123",
-                  "customerEmail": "customer@example.com",
                   "customerEmails": [
                     "customer@example.com"
                   ],
@@ -13730,7 +13704,6 @@
                   "invoiceNumber": "INV2",
                   "dueDate": "2022-11-05",
                   "purchaseOrderNumber": "PO123",
-                  "customerEmail": "customer@example.com",
                   "customerEmails": [
                     "customer@example.com"
                   ],
@@ -13883,7 +13856,6 @@
                   "invoiceNumber": "INV2",
                   "dueDate": "2022-11-05",
                   "purchaseOrderNumber": "PO123",
-                  "customerEmail": "customer@example.com",
                   "customerEmails": [
                     "customer@example.com"
                   ],
@@ -14036,7 +14008,6 @@
                   "invoiceNumber": "INV2",
                   "dueDate": "2022-11-05",
                   "purchaseOrderNumber": "PO123",
-                  "customerEmail": "customer@example.com",
                   "customerEmails": [
                     "customer@example.com"
                   ],
@@ -14198,7 +14169,6 @@
                   "invoiceNumber": "INV2",
                   "dueDate": "2022-11-05",
                   "purchaseOrderNumber": "PO123",
-                  "customerEmail": "customer@example.com",
                   "customerEmails": [
                     "customer@example.com"
                   ],
@@ -14434,7 +14404,6 @@
                   "invoiceNumber": "INV2",
                   "dueDate": "2022-11-05",
                   "purchaseOrderNumber": "PO123",
-                  "customerEmail": "customer@example.com",
                   "customerEmails": [
                     "customer@example.com"
                   ],
@@ -30675,10 +30644,6 @@
             "example": "PO123",
             "type": "string"
           },
-          "customerEmail": {
-            "example": "customer@example.com",
-            "type": "string"
-          },
           "customerEmails": {
             "items": {
               "type": "string"
@@ -30813,7 +30778,6 @@
           "issueDate": "2022-09-15",
           "dueDate": "2022-09-30",
           "purchaseOrderNumber": "PO123",
-          "customerEmail": "customer@example.com",
           "customerEmails": [
             "customer.user.a@example.com",
             "customer.user.b@example.com"
@@ -30954,7 +30918,6 @@
           "creditNoteIds",
           "currency",
           "customerBillingAddress",
-          "customerEmail",
           "customerEmails",
           "customerId",
           "customerLegalCompanyName",
@@ -31033,10 +30996,6 @@
           },
           "purchaseOrderNumber": {
             "example": "PO123",
-            "type": "string"
-          },
-          "customerEmail": {
-            "example": "customer@example.com",
             "type": "string"
           },
           "customerEmails": {
@@ -31121,7 +31080,6 @@
           "currency": "GBP",
           "dueDate": "2022-09-30",
           "purchaseOrderNumber": "PO123",
-          "customerEmail": "customer@example.com",
           "customerEmails": [
             "customer.user.a@example.com",
             "customer.user.b@example.com"
@@ -31714,10 +31672,6 @@
             "example": "PO123",
             "type": "string"
           },
-          "customerEmail": {
-            "example": "customer@example.com",
-            "type": "string"
-          },
           "customerEmails": {
             "items": {
               "type": "string"
@@ -31834,7 +31788,6 @@
           "invoiceNumber": "INV2",
           "dueDate": "2022-11-05",
           "purchaseOrderNumber": "PO123",
-          "customerEmail": "customer@example.com",
           "customerEmails": [
             "customer@example.com"
           ],
@@ -31931,7 +31884,6 @@
           "creditNoteIds",
           "currency",
           "customerBillingAddress",
-          "customerEmail",
           "customerEmails",
           "customerId",
           "customerLegalCompanyName",
@@ -32027,10 +31979,6 @@
           },
           "purchaseOrderNumber": {
             "example": "PO123",
-            "type": "string"
-          },
-          "customerEmail": {
-            "example": "customer@example.com",
             "type": "string"
           },
           "customerEmails": {
@@ -32167,7 +32115,6 @@
           "issueDate": "2022-09-15",
           "dueDate": "2022-09-30",
           "purchaseOrderNumber": "PO123",
-          "customerEmail": "customer@example.com",
           "customerEmails": [
             "customer.user.a@example.com",
             "customer.user.b@example.com"
@@ -32308,7 +32255,6 @@
           "creditNoteIds",
           "currency",
           "customerBillingAddress",
-          "customerEmail",
           "customerEmails",
           "customerId",
           "customerLegalCompanyName",
@@ -32645,7 +32591,6 @@
                 "issueDate": "2022-09-15",
                 "dueDate": "2022-09-30",
                 "purchaseOrderNumber": "PO123",
-                "customerEmail": "customer@example.com",
                 "customerEmails": [
                   "customer.user.a@example.com",
                   "customer.user.b@example.com"
@@ -32799,7 +32744,6 @@
               "issueDate": "2022-09-15",
               "dueDate": "2022-09-30",
               "purchaseOrderNumber": "PO123",
-              "customerEmail": "customer@example.com",
               "customerEmails": [
                 "customer.user.a@example.com",
                 "customer.user.b@example.com"
@@ -32985,10 +32929,6 @@
             "example": "PO123",
             "type": "string"
           },
-          "customerEmail": {
-            "example": "customer@example.com",
-            "type": "string"
-          },
           "customerEmails": {
             "items": {
               "type": "string"
@@ -33123,7 +33063,6 @@
           "issueDate": "2022-09-15",
           "dueDate": "2022-09-30",
           "purchaseOrderNumber": "PO123",
-          "customerEmail": "customer@example.com",
           "customerEmails": [
             "customer.user.a@example.com",
             "customer.user.b@example.com"
@@ -33264,7 +33203,6 @@
           "creditNoteIds",
           "currency",
           "customerBillingAddress",
-          "customerEmail",
           "customerEmails",
           "customerId",
           "customerLegalCompanyName",
@@ -33295,7 +33233,6 @@
                 "invoiceNumber": "INV2",
                 "dueDate": "2022-11-05",
                 "purchaseOrderNumber": "PO123",
-                "customerEmail": "customer@example.com",
                 "customerEmails": [
                   "customer@example.com"
                 ],
@@ -33403,7 +33340,6 @@
               "invoiceNumber": "INV2",
               "dueDate": "2022-11-05",
               "purchaseOrderNumber": "PO123",
-              "customerEmail": "customer@example.com",
               "customerEmails": [
                 "customer@example.com"
               ],
@@ -33917,10 +33853,6 @@
             "example": "PO123",
             "type": "string"
           },
-          "customerEmail": {
-            "example": "customer@example.com",
-            "type": "string"
-          },
           "customerEmails": {
             "items": {
               "type": "string"
@@ -34055,7 +33987,6 @@
           "issueDate": "2022-09-15",
           "dueDate": "2022-09-30",
           "purchaseOrderNumber": "PO123",
-          "customerEmail": "customer@example.com",
           "customerEmails": [
             "customer.user.a@example.com",
             "customer.user.b@example.com"
@@ -34196,7 +34127,6 @@
           "creditNoteIds",
           "currency",
           "customerBillingAddress",
-          "customerEmail",
           "customerEmails",
           "customerId",
           "customerLegalCompanyName",
@@ -34221,10 +34151,6 @@
           },
           "purchaseOrderNumber": {
             "example": "PO123",
-            "type": "string"
-          },
-          "customerEmail": {
-            "example": "customer@example.com",
             "type": "string"
           },
           "customerEmails": {
@@ -34303,7 +34229,6 @@
         "example": {
           "dueDate": "2022-09-30",
           "purchaseOrderNumber": "PO123",
-          "customerEmail": "customer@example.com",
           "customerEmails": [
             "customer.user.a@example.com",
             "customer.user.b@example.com"
@@ -34381,10 +34306,6 @@
             "example": "PO123",
             "type": "string"
           },
-          "customerEmail": {
-            "example": "customer@example.com",
-            "type": "string"
-          },
           "customerEmails": {
             "items": {
               "type": "string"
@@ -34519,7 +34440,6 @@
           "issueDate": "2022-09-15",
           "dueDate": "2022-09-30",
           "purchaseOrderNumber": "PO123",
-          "customerEmail": "customer@example.com",
           "customerEmails": [
             "customer.user.a@example.com",
             "customer.user.b@example.com"
@@ -34660,7 +34580,6 @@
           "creditNoteIds",
           "currency",
           "customerBillingAddress",
-          "customerEmail",
           "customerEmails",
           "customerId",
           "customerLegalCompanyName",
@@ -34685,10 +34604,6 @@
           },
           "purchaseOrderNumber": {
             "example": "PO123",
-            "type": "string"
-          },
-          "customerEmail": {
-            "example": "customer@example.com",
             "type": "string"
           },
           "customerEmails": {
@@ -34767,7 +34682,6 @@
         "example": {
           "dueDate": "2022-09-30",
           "purchaseOrderNumber": "PO123",
-          "customerEmail": "customer@example.com",
           "customerEmails": [
             "customer.user.a@example.com",
             "customer.user.b@example.com"
@@ -35465,10 +35379,6 @@
             "example": "PO123",
             "type": "string"
           },
-          "customerEmail": {
-            "example": "customer@example.com",
-            "type": "string"
-          },
           "customerEmails": {
             "items": {
               "type": "string"
@@ -35603,7 +35513,6 @@
           "issueDate": "2022-09-15",
           "dueDate": "2022-09-30",
           "purchaseOrderNumber": "PO123",
-          "customerEmail": "customer@example.com",
           "customerEmails": [
             "customer.user.a@example.com",
             "customer.user.b@example.com"
@@ -35744,7 +35653,6 @@
           "creditNoteIds",
           "currency",
           "customerBillingAddress",
-          "customerEmail",
           "customerEmails",
           "customerId",
           "customerLegalCompanyName",
@@ -36105,10 +36013,6 @@
             "example": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
             "type": "string"
           },
-          "customerEmail": {
-            "example": "customer@example.com",
-            "type": "string"
-          },
           "customerEmails": {
             "items": {
               "type": "string"
@@ -36192,7 +36096,6 @@
           "creditNoteNumber": "CN00001",
           "purchaseOrderNumber": "PO123",
           "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-          "customerEmail": "customer@example.com",
           "customerEmails": [
             "customer@example.com",
             "customer.alias@example.com"
@@ -36316,7 +36219,6 @@
         "required": [
           "currency",
           "customerBillingAddress",
-          "customerEmail",
           "customerEmails",
           "customerId",
           "customerLegalCompanyName",
@@ -36364,10 +36266,6 @@
           },
           "customerId": {
             "example": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-            "type": "string"
-          },
-          "customerEmail": {
-            "example": "customer@example.com",
             "type": "string"
           },
           "customerEmails": {
@@ -36418,7 +36316,6 @@
           "billingPeriodEnd": "2022-10-30T00:00:00Z",
           "purchaseOrderNumber": "PO123",
           "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-          "customerEmail": "customer@example.com",
           "customerEmails": [
             "customer@example.com",
             "customer.alias@example.com"
@@ -36783,10 +36680,6 @@
             "example": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
             "type": "string"
           },
-          "customerEmail": {
-            "example": "customer@example.com",
-            "type": "string"
-          },
           "customerEmails": {
             "items": {
               "type": "string"
@@ -36870,7 +36763,6 @@
           "creditNoteNumber": "CN00001",
           "purchaseOrderNumber": "PO123",
           "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-          "customerEmail": "customer@example.com",
           "customerEmails": [
             "customer@example.com",
             "customer.alias@example.com"
@@ -36994,7 +36886,6 @@
         "required": [
           "currency",
           "customerBillingAddress",
-          "customerEmail",
           "customerEmails",
           "customerId",
           "customerLegalCompanyName",
@@ -37254,10 +37145,6 @@
             "example": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
             "type": "string"
           },
-          "customerEmail": {
-            "example": "customer@example.com",
-            "type": "string"
-          },
           "customerEmails": {
             "items": {
               "type": "string"
@@ -37328,7 +37215,6 @@
           "creditNoteNumber": "CN00001",
           "purchaseOrderNumber": "PO123",
           "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
-          "customerEmail": "customer@example.com",
           "customerEmails": [
             "customer@example.com"
           ],
@@ -37406,7 +37292,6 @@
         "required": [
           "currency",
           "customerBillingAddress",
-          "customerEmail",
           "customerEmails",
           "customerId",
           "customerLegalCompanyName",
@@ -37518,10 +37403,6 @@
             "example": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
             "type": "string"
           },
-          "customerEmail": {
-            "example": "customer@example.com",
-            "type": "string"
-          },
           "customerEmails": {
             "items": {
               "type": "string"
@@ -37605,7 +37486,6 @@
           "creditNoteNumber": "CN00001",
           "purchaseOrderNumber": "PO123",
           "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-          "customerEmail": "customer@example.com",
           "customerEmails": [
             "customer@example.com",
             "customer.alias@example.com"
@@ -37729,7 +37609,6 @@
         "required": [
           "currency",
           "customerBillingAddress",
-          "customerEmail",
           "customerEmails",
           "customerId",
           "customerLegalCompanyName",
@@ -37922,7 +37801,6 @@
                 "creditNoteNumber": "CN00001",
                 "purchaseOrderNumber": "PO123",
                 "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-                "customerEmail": "customer@example.com",
                 "customerEmails": [
                   "customer@example.com",
                   "customer.alias@example.com"
@@ -38065,7 +37943,6 @@
               "creditNoteNumber": "CN00001",
               "purchaseOrderNumber": "PO123",
               "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-              "customerEmail": "customer@example.com",
               "customerEmails": [
                 "customer@example.com",
                 "customer.alias@example.com"
@@ -38251,10 +38128,6 @@
             "example": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
             "type": "string"
           },
-          "customerEmail": {
-            "example": "customer@example.com",
-            "type": "string"
-          },
           "customerEmails": {
             "items": {
               "type": "string"
@@ -38338,7 +38211,6 @@
           "creditNoteNumber": "CN00001",
           "purchaseOrderNumber": "PO123",
           "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-          "customerEmail": "customer@example.com",
           "customerEmails": [
             "customer@example.com",
             "customer.alias@example.com"
@@ -38462,7 +38334,6 @@
         "required": [
           "currency",
           "customerBillingAddress",
-          "customerEmail",
           "customerEmails",
           "customerId",
           "customerLegalCompanyName",
@@ -38498,7 +38369,6 @@
                 "creditNoteNumber": "CN00001",
                 "purchaseOrderNumber": "PO123",
                 "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-                "customerEmail": "customer@example.com",
                 "customerEmails": [
                   "customer@example.com"
                 ],
@@ -38583,7 +38453,6 @@
               "creditNoteNumber": "CN00001",
               "purchaseOrderNumber": "PO123",
               "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-              "customerEmail": "customer@example.com",
               "customerEmails": [
                 "customer@example.com"
               ],
@@ -39033,10 +38902,6 @@
             "example": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
             "type": "string"
           },
-          "customerEmail": {
-            "example": "customer@example.com",
-            "type": "string"
-          },
           "customerEmails": {
             "items": {
               "type": "string"
@@ -39120,7 +38985,6 @@
           "creditNoteNumber": "CN00001",
           "purchaseOrderNumber": "PO123",
           "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-          "customerEmail": "customer@example.com",
           "customerEmails": [
             "customer@example.com",
             "customer.alias@example.com"
@@ -39244,7 +39108,6 @@
         "required": [
           "currency",
           "customerBillingAddress",
-          "customerEmail",
           "customerEmails",
           "customerId",
           "customerLegalCompanyName",
@@ -39271,10 +39134,6 @@
           },
           "purchaseOrderNumber": {
             "example": "PO123",
-            "type": "string"
-          },
-          "customerEmail": {
-            "example": "customer@example.com",
             "type": "string"
           },
           "customerEmails": {
@@ -39322,7 +39181,6 @@
           "billingPeriodStart": "2022-10-01T00:00:00Z",
           "billingPeriodEnd": "2022-10-30T00:00:00Z",
           "purchaseOrderNumber": "PO123",
-          "customerEmail": "customer@example.com",
           "customerEmails": [
             "customer@example.com",
             "customer.alias@example.com"
