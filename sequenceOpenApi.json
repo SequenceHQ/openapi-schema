@@ -2699,7 +2699,7 @@
                   }
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/GetUsageDataForLineItemGroupEndpointOptionalResponse"
+                  "$ref": "#/components/schemas/OptionalUsageDataResponse"
                 }
               }
             }
@@ -4685,7 +4685,7 @@
                   ]
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/GetUsageDataForBillingScheduleEndpointUsageDataResponse"
+                  "$ref": "#/components/schemas/UsageDataResponse"
                 }
               }
             }
@@ -14610,7 +14610,7 @@
                   }
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/GetUsageDataForLineItemGroupEndpointOptionalResponse"
+                  "$ref": "#/components/schemas/OptionalUsageDataResponse"
                 }
               }
             }
@@ -17705,7 +17705,7 @@
                   ]
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/GetUsageDataForUsageMetricEndpointUsageDataResponse"
+                  "$ref": "#/components/schemas/UsageDataResponse"
                 }
               }
             }
@@ -22918,10 +22918,10 @@
         ],
         "type": "string"
       },
-      "GetUsageDataForLineItemGroupEndpointOptionalResponse": {
+      "OptionalUsageDataResponse": {
         "properties": {
           "data": {
-            "$ref": "#/components/schemas/GetUsageDataForLineItemGroupEndpointUsageDataResponse"
+            "$ref": "#/components/schemas/UsageDataResponse"
           }
         },
         "example": {
@@ -22947,98 +22947,6 @@
           }
         },
         "type": "object"
-      },
-      "GetUsageDataForLineItemGroupEndpointUsageDataResponse": {
-        "properties": {
-          "usageStart": {
-            "example": "2023-02-01",
-            "format": "date",
-            "type": "string"
-          },
-          "usageEnd": {
-            "example": "2023-04-30",
-            "format": "date",
-            "type": "string"
-          },
-          "metricName": {
-            "example": "API Calls",
-            "type": "string"
-          },
-          "total": {
-            "example": "35",
-            "type": "string"
-          },
-          "usageData": {
-            "items": {
-              "$ref": "#/components/schemas/GetUsageDataForLineItemGroupEndpointUsageData"
-            },
-            "example": [
-              {
-                "periodStart": "2023-02-01",
-                "amount": "10"
-              },
-              {
-                "periodStart": "2023-03-01",
-                "amount": "15"
-              },
-              {
-                "periodStart": "2023-04-01",
-                "amount": "10"
-              }
-            ],
-            "type": "array"
-          }
-        },
-        "example": {
-          "usageStart": "2023-02-01",
-          "usageEnd": "2023-04-30",
-          "metricName": "API Calls",
-          "total": "35",
-          "usageData": [
-            {
-              "periodStart": "2023-02-01",
-              "amount": "10"
-            },
-            {
-              "periodStart": "2023-03-01",
-              "amount": "15"
-            },
-            {
-              "periodStart": "2023-04-01",
-              "amount": "10"
-            }
-          ]
-        },
-        "type": "object",
-        "required": [
-          "metricName",
-          "total",
-          "usageData",
-          "usageEnd",
-          "usageStart"
-        ]
-      },
-      "GetUsageDataForLineItemGroupEndpointUsageData": {
-        "properties": {
-          "periodStart": {
-            "example": "2023-02-01",
-            "format": "date",
-            "type": "string"
-          },
-          "amount": {
-            "example": "10",
-            "type": "string"
-          }
-        },
-        "example": {
-          "periodStart": "2023-02-01",
-          "amount": "10"
-        },
-        "type": "object",
-        "required": [
-          "amount",
-          "periodStart"
-        ]
       },
       "ListCreditBalancesEndpointResponseModel": {
         "properties": {
@@ -28016,98 +27924,6 @@
           "id",
           "name",
           "priceId"
-        ]
-      },
-      "GetUsageDataForBillingScheduleEndpointUsageDataResponse": {
-        "properties": {
-          "usageStart": {
-            "example": "2023-02-01",
-            "format": "date",
-            "type": "string"
-          },
-          "usageEnd": {
-            "example": "2023-04-30",
-            "format": "date",
-            "type": "string"
-          },
-          "metricName": {
-            "example": "API Calls",
-            "type": "string"
-          },
-          "total": {
-            "example": "35",
-            "type": "string"
-          },
-          "usageData": {
-            "items": {
-              "$ref": "#/components/schemas/GetUsageDataForBillingScheduleEndpointUsageData"
-            },
-            "example": [
-              {
-                "periodStart": "2023-02-01",
-                "amount": "10"
-              },
-              {
-                "periodStart": "2023-03-01",
-                "amount": "15"
-              },
-              {
-                "periodStart": "2023-04-01",
-                "amount": "10"
-              }
-            ],
-            "type": "array"
-          }
-        },
-        "example": {
-          "usageStart": "2023-02-01",
-          "usageEnd": "2023-04-30",
-          "metricName": "API Calls",
-          "total": "35",
-          "usageData": [
-            {
-              "periodStart": "2023-02-01",
-              "amount": "10"
-            },
-            {
-              "periodStart": "2023-03-01",
-              "amount": "15"
-            },
-            {
-              "periodStart": "2023-04-01",
-              "amount": "10"
-            }
-          ]
-        },
-        "type": "object",
-        "required": [
-          "metricName",
-          "total",
-          "usageData",
-          "usageEnd",
-          "usageStart"
-        ]
-      },
-      "GetUsageDataForBillingScheduleEndpointUsageData": {
-        "properties": {
-          "periodStart": {
-            "example": "2023-02-01",
-            "format": "date",
-            "type": "string"
-          },
-          "amount": {
-            "example": "10",
-            "type": "string"
-          }
-        },
-        "example": {
-          "periodStart": "2023-02-01",
-          "amount": "10"
-        },
-        "type": "object",
-        "required": [
-          "amount",
-          "periodStart"
         ]
       },
       "GetUsageDataForBillingScheduleEndpointRequestModel1": {
@@ -39953,98 +39769,6 @@
         "type": "object",
         "required": [
           "preference"
-        ]
-      },
-      "GetUsageDataForUsageMetricEndpointUsageDataResponse": {
-        "properties": {
-          "usageStart": {
-            "example": "2023-02-01",
-            "format": "date",
-            "type": "string"
-          },
-          "usageEnd": {
-            "example": "2023-04-30",
-            "format": "date",
-            "type": "string"
-          },
-          "metricName": {
-            "example": "API Calls",
-            "type": "string"
-          },
-          "total": {
-            "example": "35",
-            "type": "string"
-          },
-          "usageData": {
-            "items": {
-              "$ref": "#/components/schemas/GetUsageDataForUsageMetricEndpointUsageData"
-            },
-            "example": [
-              {
-                "periodStart": "2023-02-01",
-                "amount": "10"
-              },
-              {
-                "periodStart": "2023-03-01",
-                "amount": "15"
-              },
-              {
-                "periodStart": "2023-04-01",
-                "amount": "10"
-              }
-            ],
-            "type": "array"
-          }
-        },
-        "example": {
-          "usageStart": "2023-02-01",
-          "usageEnd": "2023-04-30",
-          "metricName": "API Calls",
-          "total": "35",
-          "usageData": [
-            {
-              "periodStart": "2023-02-01",
-              "amount": "10"
-            },
-            {
-              "periodStart": "2023-03-01",
-              "amount": "15"
-            },
-            {
-              "periodStart": "2023-04-01",
-              "amount": "10"
-            }
-          ]
-        },
-        "type": "object",
-        "required": [
-          "metricName",
-          "total",
-          "usageData",
-          "usageEnd",
-          "usageStart"
-        ]
-      },
-      "GetUsageDataForUsageMetricEndpointUsageData": {
-        "properties": {
-          "periodStart": {
-            "example": "2023-02-01",
-            "format": "date",
-            "type": "string"
-          },
-          "amount": {
-            "example": "10",
-            "type": "string"
-          }
-        },
-        "example": {
-          "periodStart": "2023-02-01",
-          "amount": "10"
-        },
-        "type": "object",
-        "required": [
-          "amount",
-          "periodStart"
         ]
       },
       "GetUsageDataForUsageMetricEndpointRequestModel": {
