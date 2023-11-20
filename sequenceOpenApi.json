@@ -2153,6 +2153,7 @@
                   "usageStart": "2023-02-01",
                   "usageEnd": "2023-04-30",
                   "metricName": "API Calls",
+                  "metricId": "27ba4761-7573-41c5-b780-2993b2c254f7",
                   "total": "35",
                   "usageData": [
                     {
@@ -2681,6 +2682,7 @@
                     "usageStart": "2023-02-01",
                     "usageEnd": "2023-04-30",
                     "metricName": "API Calls",
+                    "metricId": "27ba4761-7573-41c5-b780-2993b2c254f7",
                     "total": "35",
                     "usageData": [
                       {
@@ -4668,6 +4670,7 @@
                   "usageStart": "2023-02-01",
                   "usageEnd": "2023-04-30",
                   "metricName": "API Calls",
+                  "metricId": "27ba4761-7573-41c5-b780-2993b2c254f7",
                   "total": "35",
                   "usageData": [
                     {
@@ -14561,6 +14564,7 @@
                     "usageStart": "2023-02-01",
                     "usageEnd": "2023-04-30",
                     "metricName": "API Calls",
+                    "metricId": "27ba4761-7573-41c5-b780-2993b2c254f7",
                     "total": "35",
                     "usageData": [
                       {
@@ -17657,6 +17661,7 @@
                   "usageStart": "2023-02-01",
                   "usageEnd": "2023-04-30",
                   "metricName": "API Calls",
+                  "metricId": "030a64dd-1d89-46a3-8043-580befdb011d",
                   "total": "35",
                   "usageData": [
                     {
@@ -17674,7 +17679,7 @@
                   ]
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/UsageDataResponse"
+                  "$ref": "#/components/schemas/UsageDataResponse1"
                 }
               }
             }
@@ -22769,6 +22774,10 @@
             "example": "API Calls",
             "type": "string"
           },
+          "metricId": {
+            "example": "27ba4761-7573-41c5-b780-2993b2c254f7",
+            "type": "string"
+          },
           "total": {
             "example": "35",
             "type": "string"
@@ -22798,6 +22807,7 @@
           "usageStart": "2023-02-01",
           "usageEnd": "2023-04-30",
           "metricName": "API Calls",
+          "metricId": "27ba4761-7573-41c5-b780-2993b2c254f7",
           "total": "35",
           "usageData": [
             {
@@ -22816,6 +22826,7 @@
         },
         "type": "object",
         "required": [
+          "metricId",
           "metricName",
           "total",
           "usageData",
@@ -22898,6 +22909,7 @@
             "usageStart": "2023-02-01",
             "usageEnd": "2023-04-30",
             "metricName": "API Calls",
+            "metricId": "27ba4761-7573-41c5-b780-2993b2c254f7",
             "total": "35",
             "usageData": [
               {
@@ -39627,6 +39639,82 @@
         "type": "object",
         "required": [
           "preference"
+        ]
+      },
+      "UsageDataResponse1": {
+        "properties": {
+          "usageStart": {
+            "example": "2023-02-01",
+            "format": "date",
+            "type": "string"
+          },
+          "usageEnd": {
+            "example": "2023-04-30",
+            "format": "date",
+            "type": "string"
+          },
+          "metricName": {
+            "example": "API Calls",
+            "type": "string"
+          },
+          "metricId": {
+            "example": "030a64dd-1d89-46a3-8043-580befdb011d",
+            "type": "string"
+          },
+          "total": {
+            "example": "35",
+            "type": "string"
+          },
+          "usageData": {
+            "items": {
+              "$ref": "#/components/schemas/UsageData"
+            },
+            "example": [
+              {
+                "periodStart": "2023-02-01",
+                "amount": "10"
+              },
+              {
+                "periodStart": "2023-03-01",
+                "amount": "15"
+              },
+              {
+                "periodStart": "2023-04-01",
+                "amount": "10"
+              }
+            ],
+            "type": "array"
+          }
+        },
+        "example": {
+          "usageStart": "2023-02-01",
+          "usageEnd": "2023-04-30",
+          "metricName": "API Calls",
+          "metricId": "030a64dd-1d89-46a3-8043-580befdb011d",
+          "total": "35",
+          "usageData": [
+            {
+              "periodStart": "2023-02-01",
+              "amount": "10"
+            },
+            {
+              "periodStart": "2023-03-01",
+              "amount": "15"
+            },
+            {
+              "periodStart": "2023-04-01",
+              "amount": "10"
+            }
+          ]
+        },
+        "type": "object",
+        "required": [
+          "metricId",
+          "metricName",
+          "total",
+          "usageData",
+          "usageEnd",
+          "usageStart"
         ]
       },
       "GetUsageDataForUsageMetricEndpointRequestModel": {
