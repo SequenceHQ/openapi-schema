@@ -2106,7 +2106,8 @@
     },
     "/customer-portal/customers/{id}/billing-schedules/{billingScheduleId}/usage-data": {
       "post": {
-        "summary": "<unknown>",
+        "summary": "Get usage events for customer and event type for the given usage period",
+        "description": "List usage events for customer and event type for the given usage period",
         "tags": [],
         "parameters": [
           {
@@ -2645,6 +2646,7 @@
     "/customer-portal/customers/{id}/invoices/{invoiceId}/line-item-groups/{lineItemGroupId}/usage-data": {
       "get": {
         "summary": "Get usage data for a line item group",
+        "description": "Get usage data for a line item group",
         "tags": [],
         "parameters": [
           {
@@ -4635,6 +4637,7 @@
     "/billing-schedules/{billingScheduleId}/usage-data": {
       "post": {
         "summary": "Get usage events for billing schedule and event type for the given usage period",
+        "description": "List usage events for billing schedule and event type for the given usage period",
         "tags": [],
         "parameters": [
           {
@@ -14533,6 +14536,7 @@
     "/invoices/{invoiceId}/line-item-groups/{lineItemGroupId}/usage-data": {
       "get": {
         "summary": "Get usage data for a line item group",
+        "description": "Get usage data for a line item group",
         "tags": [],
         "parameters": [
           {
@@ -17632,6 +17636,7 @@
     "/usage-metrics/{id}/usage-data": {
       "post": {
         "summary": "Get usage events for usage metric and event type for the given usage period",
+        "description": "List usage events for usage metric and event type for the given usage period",
         "tags": [],
         "parameters": [
           {
