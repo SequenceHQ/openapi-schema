@@ -10895,9 +10895,9 @@
                       "billingPeriodStart": "2022-10-01",
                       "billingPeriodEnd": "2022-10-30",
                       "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
-                      "totalTax": "0",
-                      "netTotal": "0",
-                      "grossTotal": "0",
+                      "totalTax": "2",
+                      "netTotal": "12",
+                      "grossTotal": "10",
                       "metadata": [
                         {
                           "key": "example-label",
@@ -11266,9 +11266,9 @@
                     },
                     "index": 2,
                     "groupId": "befc8235-a295-4548-87bd-e9bcbbdf18b9",
-                    "netTotal": "0",
-                    "totalTax": "0",
-                    "grossTotal": "0",
+                    "netTotal": "40000.20",
+                    "totalTax": "8000.04",
+                    "grossTotal": "48000.24",
                     "rateDisplay": "ABSOLUTE",
                     "externalIds": [
                       {
@@ -13114,9 +13114,9 @@
                   "billingPeriodStart": "2022-10-01",
                   "billingPeriodEnd": "2022-10-30",
                   "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
-                  "totalTax": "0",
-                  "netTotal": "0",
-                  "grossTotal": "0",
+                  "totalTax": "2",
+                  "netTotal": "12",
+                  "grossTotal": "10",
                   "metadata": [
                     {
                       "key": "example-label",
@@ -13275,9 +13275,9 @@
                   "billingPeriodStart": "2022-10-01",
                   "billingPeriodEnd": "2022-10-30",
                   "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
-                  "totalTax": "0",
-                  "netTotal": "0",
-                  "grossTotal": "0",
+                  "totalTax": "2",
+                  "netTotal": "12",
+                  "grossTotal": "10",
                   "metadata": [
                     {
                       "key": "example-label",
@@ -13400,9 +13400,9 @@
                       "title": "Cars",
                       "description": "Charges for cars",
                       "index": 1,
-                      "netTotal": "0",
-                      "totalTax": "0",
-                      "grossTotal": "0"
+                      "netTotal": "200000",
+                      "totalTax": "10",
+                      "grossTotal": "22000"
                     }
                   ]
                 },
@@ -13478,9 +13478,9 @@
                       },
                       "index": 2,
                       "groupId": "befc8235-a295-4548-87bd-e9bcbbdf18b9",
-                      "netTotal": "0",
-                      "totalTax": "0",
-                      "grossTotal": "0",
+                      "netTotal": "40000.20",
+                      "totalTax": "8000.04",
+                      "grossTotal": "48000.24",
                       "rateDisplay": "ABSOLUTE",
                       "externalIds": [
                         {
@@ -13594,9 +13594,9 @@
                   "billingPeriodStart": "2022-10-01",
                   "billingPeriodEnd": "2022-10-30",
                   "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
-                  "totalTax": "0",
-                  "netTotal": "0",
-                  "grossTotal": "0",
+                  "totalTax": "2",
+                  "netTotal": "12",
+                  "grossTotal": "10",
                   "metadata": [
                     {
                       "key": "example-label",
@@ -13746,9 +13746,9 @@
                   "billingPeriodStart": "2022-10-01",
                   "billingPeriodEnd": "2022-10-30",
                   "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
-                  "totalTax": "0",
-                  "netTotal": "0",
-                  "grossTotal": "0",
+                  "totalTax": "2",
+                  "netTotal": "12",
+                  "grossTotal": "10",
                   "metadata": [
                     {
                       "key": "example-label",
@@ -13898,9 +13898,9 @@
                   "billingPeriodStart": "2022-10-01",
                   "billingPeriodEnd": "2022-10-30",
                   "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
-                  "totalTax": "0",
-                  "netTotal": "0",
-                  "grossTotal": "0",
+                  "totalTax": "2",
+                  "netTotal": "12",
+                  "grossTotal": "10",
                   "metadata": [
                     {
                       "key": "example-label",
@@ -14050,9 +14050,9 @@
                   "billingPeriodStart": "2022-10-01",
                   "billingPeriodEnd": "2022-10-30",
                   "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
-                  "totalTax": "0",
-                  "netTotal": "0",
-                  "grossTotal": "0",
+                  "totalTax": "2",
+                  "netTotal": "12",
+                  "grossTotal": "10",
                   "metadata": [
                     {
                       "key": "example-label",
@@ -14211,9 +14211,9 @@
                   "billingPeriodStart": "2022-10-01",
                   "billingPeriodEnd": "2022-10-30",
                   "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
-                  "totalTax": "0",
-                  "netTotal": "0",
-                  "grossTotal": "0",
+                  "totalTax": "2",
+                  "netTotal": "12",
+                  "grossTotal": "10",
                   "metadata": [
                     {
                       "key": "example-label",
@@ -14446,9 +14446,9 @@
                   "billingPeriodStart": "2022-10-01",
                   "billingPeriodEnd": "2022-10-30",
                   "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
-                  "totalTax": "0",
-                  "netTotal": "0",
-                  "grossTotal": "0",
+                  "totalTax": "2",
+                  "netTotal": "12",
+                  "grossTotal": "10",
                   "metadata": [
                     {
                       "key": "example-label",
@@ -30444,9 +30444,9 @@
                 },
                 "index": 2,
                 "groupId": "befc8235-a295-4548-87bd-e9bcbbdf18b9",
-                "netTotal": "0",
-                "totalTax": "0",
-                "grossTotal": "0",
+                "netTotal": "40000.20",
+                "totalTax": "8000.04",
+                "grossTotal": "48000.24",
                 "rateDisplay": "ABSOLUTE",
                 "externalIds": [
                   {
@@ -30478,9 +30478,9 @@
               },
               "index": 2,
               "groupId": "befc8235-a295-4548-87bd-e9bcbbdf18b9",
-              "netTotal": "0",
-              "totalTax": "0",
-              "grossTotal": "0",
+              "netTotal": "40000.20",
+              "totalTax": "8000.04",
+              "grossTotal": "48000.24",
               "rateDisplay": "ABSOLUTE",
               "externalIds": [
                 {
@@ -30547,15 +30547,15 @@
             "type": "string"
           },
           "netTotal": {
-            "example": "0",
+            "example": "40000.20",
             "type": "string"
           },
           "totalTax": {
-            "example": "0",
+            "example": "8000.04",
             "type": "string"
           },
           "grossTotal": {
-            "example": "0",
+            "example": "48000.24",
             "type": "string"
           },
           "rateDisplay": {
@@ -30593,9 +30593,9 @@
           },
           "index": 2,
           "groupId": "befc8235-a295-4548-87bd-e9bcbbdf18b9",
-          "netTotal": "0",
-          "totalTax": "0",
-          "grossTotal": "0",
+          "netTotal": "40000.20",
+          "totalTax": "8000.04",
+          "grossTotal": "48000.24",
           "rateDisplay": "ABSOLUTE",
           "externalIds": [
             {
@@ -31766,15 +31766,15 @@
             "type": "string"
           },
           "totalTax": {
-            "example": "0",
+            "example": "2",
             "type": "string"
           },
           "netTotal": {
-            "example": "0",
+            "example": "12",
             "type": "string"
           },
           "grossTotal": {
-            "example": "0",
+            "example": "10",
             "type": "string"
           },
           "metadata": {
@@ -31862,9 +31862,9 @@
           "billingPeriodStart": "2022-10-01",
           "billingPeriodEnd": "2022-10-30",
           "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
-          "totalTax": "0",
-          "netTotal": "0",
-          "grossTotal": "0",
+          "totalTax": "2",
+          "netTotal": "12",
+          "grossTotal": "10",
           "metadata": [
             {
               "key": "example-label",
@@ -32330,9 +32330,9 @@
                 "title": "Cars",
                 "description": "Charges for cars",
                 "index": 1,
-                "netTotal": "0",
-                "totalTax": "0",
-                "grossTotal": "0"
+                "netTotal": "200000",
+                "totalTax": "10",
+                "grossTotal": "22000"
               }
             ],
             "type": "array"
@@ -32346,9 +32346,9 @@
               "title": "Cars",
               "description": "Charges for cars",
               "index": 1,
-              "netTotal": "0",
-              "totalTax": "0",
-              "grossTotal": "0"
+              "netTotal": "200000",
+              "totalTax": "10",
+              "grossTotal": "22000"
             }
           ]
         },
@@ -32380,15 +32380,15 @@
             "type": "integer"
           },
           "netTotal": {
-            "example": "0",
+            "example": "200000",
             "type": "string"
           },
           "totalTax": {
-            "example": "0",
+            "example": "10",
             "type": "string"
           },
           "grossTotal": {
-            "example": "0",
+            "example": "22000",
             "type": "string"
           }
         },
@@ -32398,9 +32398,9 @@
           "title": "Cars",
           "description": "Charges for cars",
           "index": 1,
-          "netTotal": "0",
-          "totalTax": "0",
-          "grossTotal": "0"
+          "netTotal": "200000",
+          "totalTax": "10",
+          "grossTotal": "22000"
         },
         "type": "object",
         "required": [
@@ -32568,9 +32568,9 @@
                 },
                 "index": 2,
                 "groupId": "befc8235-a295-4548-87bd-e9bcbbdf18b9",
-                "netTotal": "0",
-                "totalTax": "0",
-                "grossTotal": "0",
+                "netTotal": "40000.20",
+                "totalTax": "8000.04",
+                "grossTotal": "48000.24",
                 "rateDisplay": "ABSOLUTE",
                 "externalIds": [
                   {
@@ -32602,9 +32602,9 @@
               },
               "index": 2,
               "groupId": "befc8235-a295-4548-87bd-e9bcbbdf18b9",
-              "netTotal": "0",
-              "totalTax": "0",
-              "grossTotal": "0",
+              "netTotal": "40000.20",
+              "totalTax": "8000.04",
+              "grossTotal": "48000.24",
               "rateDisplay": "ABSOLUTE",
               "externalIds": [
                 {
@@ -33307,9 +33307,9 @@
                 "billingPeriodStart": "2022-10-01",
                 "billingPeriodEnd": "2022-10-30",
                 "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
-                "totalTax": "0",
-                "netTotal": "0",
-                "grossTotal": "0",
+                "totalTax": "2",
+                "netTotal": "12",
+                "grossTotal": "10",
                 "metadata": [
                   {
                     "key": "example-label",
@@ -33414,9 +33414,9 @@
               "billingPeriodStart": "2022-10-01",
               "billingPeriodEnd": "2022-10-30",
               "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
-              "totalTax": "0",
-              "netTotal": "0",
-              "grossTotal": "0",
+              "totalTax": "2",
+              "netTotal": "12",
+              "grossTotal": "10",
               "metadata": [
                 {
                   "key": "example-label",
