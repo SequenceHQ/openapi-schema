@@ -1915,156 +1915,47 @@
         "deprecated": false
       }
     },
-    "/customer-portal/customers/{customerId}/credit-balances/{type}/{name}": {
+    "/customer-aliases": {
       "get": {
-        "summary": "List a Customer's Balance Details",
-        "description": "List a Customer's Balance Details",
+        "summary": "List all Customer Aliases",
+        "description": "List all Customer Aliases",
         "tags": [],
         "parameters": [
           {
             "schema": {
-              "type": "string"
+              "type": "integer"
             },
-            "in": "path",
-            "name": "customerId",
-            "required": true,
-            "description": "Customer ID"
+            "in": "query",
+            "name": "limit",
+            "required": false,
+            "description": "Maximum number of objects to return per-page."
           },
           {
             "schema": {
               "type": "string"
             },
-            "in": "path",
-            "name": "type",
-            "required": true,
-            "description": "Credit Type"
+            "in": "query",
+            "name": "after",
+            "required": false,
+            "description": "Pagination offset. To page through items, omit this parameter to retrieve the first page, and then successively use the value you get from `pagination.after` or `pagination.before` to retrieve each page."
           },
           {
             "schema": {
               "type": "string"
             },
-            "in": "path",
-            "name": "name",
-            "required": true,
-            "description": "Credit Name"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "example": {
-                  "balance": "50",
-                  "type": "CASH",
-                  "id": "6587e308-ab0d-4a58-8cc1-1d168490de7b",
-                  "name": "Credit",
-                  "grants": [
-                    {
-                      "id": "f7fda017-23d1-4ab5-a92a-a8bf2283a810",
-                      "type": "CASH",
-                      "name": "grant",
-                      "originalAmount": "80",
-                      "currentBalance": "50",
-                      "expiryDate": "2024-12-03"
-                    }
-                  ],
-                  "transactions": [
-                    {
-                      "grantId": "f7fda017-23d1-4ab5-a92a-a8bf2283a810",
-                      "date": "2024-03-03",
-                      "type": "DEBIT",
-                      "amount": "30",
-                      "reason": "spending"
-                    }
-                  ]
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/CreditBalanceDetails"
-                }
-              }
-            }
+            "in": "query",
+            "name": "before",
+            "required": false,
+            "description": "Pagination offset. To page through items, omit this parameter to retrieve the first page, and then successively use the value you get from `pagination.next` or `pagination.previous` to retrieve each page."
           },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "401": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "getApiCustomer_portalCustomers_customerId_Credit_balances_type__name",
-        "deprecated": false
-      }
-    },
-    "/customer-portal/customers/{id}": {
-      "get": {
-        "summary": "Get a Customer by ID",
-        "description": "Get a Customer by ID",
-        "tags": [],
-        "parameters": [
           {
             "schema": {
               "type": "string"
             },
-            "in": "path",
-            "name": "id",
+            "in": "header",
+            "name": "Authorization",
             "required": true,
-            "description": "Customer ID"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "example": {
-                  "legalName": "Acme Corp"
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/Customer"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "401": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "getApiCustomer_portalCustomers_id",
-        "deprecated": false
-      }
-    },
-    "/customer-portal/customers/{id}/billing-schedules": {
-      "get": {
-        "summary": "List billing schedules for customer",
-        "description": "List billing schedules for customer",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Customer ID"
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
           }
         ],
         "responses": {
@@ -2075,13 +1966,22 @@
                 "example": {
                   "items": [
                     {
-                      "id": "be927602-772e-4e0d-a14c-bfd30a68fc53",
-                      "name": "1 Apr 2023 to 30 Apr 2023"
+                      "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
+                      "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+                      "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
+                      "value": "external-customer-alias-123",
+                      "createdAt": "2022-10-01T00:00:00Z",
+                      "deletedAt": "2022-10-01T00:00:00Z"
                     }
-                  ]
+                  ],
+                  "pagination": {
+                    "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
+                    "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
+                    "totalResultSize": 10
+                  }
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/ListBillingSchedulesEndpointResponseModel"
+                  "$ref": "#/components/schemas/ListCustomerAliasEndpointProductListCustomerAliasPaginatedResponseModel"
                 }
               }
             }
@@ -2100,82 +2000,55 @@
           }
         },
         "security": [],
-        "operationId": "getApiCustomer_portalCustomers_id_Billing_schedules",
+        "operationId": "getApiCustomer_aliases",
         "deprecated": false
-      }
-    },
-    "/customer-portal/customers/{id}/billing-schedules/{billingScheduleId}/usage-data": {
+      },
       "post": {
-        "summary": "Get usage events for customer and event type for the given usage period",
-        "description": "List usage events for customer and event type for the given usage period",
+        "summary": "Create a new Customer Alias",
+        "description": "Create a new Customer Alias",
         "tags": [],
         "parameters": [
           {
             "schema": {
               "type": "string"
             },
-            "in": "path",
-            "name": "id",
+            "in": "header",
+            "name": "Authorization",
             "required": true,
-            "description": "Customer ID"
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "billingScheduleId",
-            "required": true,
-            "description": "Billing schedule ID"
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
           }
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "example": {
-                "metricId": "27ba4761-7573-41c5-b780-2993b2c254f7",
-                "usagePeriodType": "CURRENT",
-                "eventType": "event",
-                "priceId": "030a64dd-1d89-46a3-8043-580befdb011d"
+                "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+                "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
+                "value": "external-customer-alias-123",
+                "deletedAt": "2022-10-01T00:00:00Z"
               },
               "schema": {
-                "$ref": "#/components/schemas/GetUsageDataForBillingScheduleEndpointRequestModel"
+                "$ref": "#/components/schemas/CreateCustomerAliasEndpointCreateCustomerAliasRequestModel"
               }
             }
           },
           "required": true
         },
         "responses": {
-          "200": {
-            "description": "OK",
+          "201": {
+            "description": "Created",
             "content": {
               "application/json": {
                 "example": {
-                  "usageStart": "2023-02-01",
-                  "usageEnd": "2023-04-30",
-                  "metricName": "API Calls",
-                  "metricId": "27ba4761-7573-41c5-b780-2993b2c254f7",
-                  "total": "35",
-                  "usageData": [
-                    {
-                      "periodStart": "2023-02-01",
-                      "amount": "10",
-                      "cumulativeAmount": "10"
-                    },
-                    {
-                      "periodStart": "2023-03-01",
-                      "amount": "15",
-                      "cumulativeAmount": "25"
-                    },
-                    {
-                      "periodStart": "2023-04-01",
-                      "amount": "10",
-                      "cumulativeAmount": "35"
-                    }
-                  ]
+                  "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
+                  "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+                  "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
+                  "value": "external-customer-alias-123",
+                  "createdAt": "2022-10-01T00:00:00Z",
+                  "deletedAt": "2022-10-01T00:00:00Z"
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/UsageDataResponse"
+                  "$ref": "#/components/schemas/CreateCustomerAliasEndpointProductCreateCustomerAliasResponseModel"
                 }
               }
             }
@@ -2194,16 +2067,25 @@
           }
         },
         "security": [],
-        "operationId": "postApiCustomer_portalCustomers_id_Billing_schedules_billingScheduleId_Usage_data",
+        "operationId": "postApiCustomer_aliases",
         "deprecated": false
       }
     },
-    "/customer-portal/customers/{id}/billing-schedules/{billingScheduleId}/usage-metrics": {
-      "get": {
-        "summary": "List usage metrics for billing schedule",
-        "description": "List usage metrics for billing schedule",
+    "/customer-aliases/{id}": {
+      "delete": {
+        "summary": "Delete a Customer Alias",
+        "description": "Delete a Customer Alias",
         "tags": [],
         "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          },
           {
             "schema": {
               "type": "string"
@@ -2211,16 +2093,7 @@
             "in": "path",
             "name": "id",
             "required": true,
-            "description": "Customer ID"
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "billingScheduleId",
-            "required": true,
-            "description": "Billing schedule ID"
+            "description": "Unique ID"
           }
         ],
         "responses": {
@@ -2229,20 +2102,15 @@
             "content": {
               "application/json": {
                 "example": {
-                  "items": [
-                    {
-                      "id": "27ba4761-7573-41c5-b780-2993b2c254f7",
-                      "name": "Coffee",
-                      "description": "Coffee metric",
-                      "eventType": "coffee",
-                      "aggregationProperty": "Cost",
-                      "priceId": "030a64dd-1d89-46a3-8043-580befdb011d",
-                      "aggregationType": "COUNT"
-                    }
-                  ]
+                  "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
+                  "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+                  "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
+                  "value": "external-customer-alias-123",
+                  "createdAt": "2022-10-01T00:00:00Z",
+                  "deletedAt": "2022-10-01T00:00:00Z"
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/ListUsageMetricsForBillingScheduleEndpointResponseModel"
+                  "$ref": "#/components/schemas/DeleteCustomerAliasEndpointProductDeleteCustomerAliasResponseModel"
                 }
               }
             }
@@ -2261,120 +2129,14 @@
           }
         },
         "security": [],
-        "operationId": "getApiCustomer_portalCustomers_id_Billing_schedules_billingScheduleId_Usage_metrics",
+        "operationId": "deleteApiCustomer_aliases_id",
         "deprecated": false
       }
     },
-    "/customer-portal/customers/{id}/branding": {
+    "/customers": {
       "get": {
-        "summary": "Get merchant branding",
-        "description": "Get merchant branding",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Customer ID"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "example": {
-                  "logoUrl": "logo",
-                  "legalCompanyName": "Acme Corp",
-                  "primaryColour": "green",
-                  "url": "www.example.com"
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/Branding"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "401": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "getApiCustomer_portalCustomers_id_Branding",
-        "deprecated": false
-      }
-    },
-    "/customer-portal/customers/{id}/credit-balances": {
-      "get": {
-        "summary": "List a Customer's Credit Balances",
-        "description": "List a Customer's Credit Balances",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Customer ID"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "example": {
-                  "items": [
-                    {
-                      "type": "CASH",
-                      "id": "6587e308-ab0d-4a58-8cc1-1d168490de7b",
-                      "name": "Credits",
-                      "balance": "50"
-                    }
-                  ]
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/ListCreditBalancesEndpointResponseModel"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "401": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "getApiCustomer_portalCustomers_id_Credit_balances",
-        "deprecated": false
-      }
-    },
-    "/customer-portal/customers/{id}/invoices": {
-      "get": {
-        "summary": "List invoices for customer",
-        "description": "List invoices for customer",
+        "summary": "List Customers",
+        "description": "List all [Customers](/docs/customers) within one of your [Sequence Accounts](/docs/organisations-and-accounts).",
         "tags": [],
         "parameters": [
           {
@@ -2427,72 +2189,36 @@
               "type": "string"
             },
             "in": "query",
-            "name": "dueBefore",
+            "name": "legalName",
             "required": false,
-            "description": "Filter by due date before."
+            "description": "Filter by legal name"
           },
           {
             "schema": {
               "type": "string"
             },
             "in": "query",
-            "name": "dueAfter",
+            "name": "email",
             "required": false,
-            "description": "Filter by due date after."
+            "description": "Filter by email"
           },
           {
             "schema": {
               "type": "string"
             },
             "in": "query",
-            "name": "sentBefore",
+            "name": "alias",
             "required": false,
-            "description": "Filter by sent date before."
+            "description": "Filter by alias"
           },
           {
             "schema": {
               "type": "string"
             },
-            "in": "query",
-            "name": "sentAfter",
-            "required": false,
-            "description": "Filter by sent date after."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "query",
-            "name": "invoiceBefore",
-            "required": false,
-            "description": "Filter by invoice date before."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "query",
-            "name": "invoiceAfter",
-            "required": false,
-            "description": "Filter by invoice date after."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "query",
-            "name": "paymentStatus",
-            "required": false,
-            "description": "Filter by payment status."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "id",
+            "in": "header",
+            "name": "Authorization",
             "required": true,
-            "description": "Customer ID"
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
           }
         ],
         "responses": {
@@ -2503,302 +2229,36 @@
                 "example": {
                   "items": [
                     {
-                      "id": "ba37a392-7054-4dae-ab37-6fee9e23fe06",
-                      "currency": "GBP",
-                      "invoiceNumber": "INV2",
-                      "issueDate": "2022-10-05",
-                      "dueDate": "2022-11-05",
-                      "billingPeriodStart": "2022-10-01",
-                      "billingPeriodEnd": "2022-10-30",
-                      "grossTotal": "10",
-                      "paymentStatus": "UNPAID",
-                      "purchaseOrderNumber": "PO123",
-                      "customerLegalCompanyName": "Customer",
-                      "customerBillingAddress": {
-                        "line1": "123 Fake Street",
-                        "line2": "Line 2",
-                        "town": "Town",
-                        "postCode": "postCode",
+                      "id": "e309e948-088e-4d77-b654-cd85498f1555",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                      "legalName": "John Doe",
+                      "contactName": "John Doe",
+                      "address": {
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "London",
+                        "postCode": "AB1 2EF",
                         "country": "GB"
                       },
-                      "memo": "Memo",
-                      "paymentOptions": [
-                        "BANK_TRANSFER"
+                      "email": "john@example.com",
+                      "billingEmails": [
+                        "exampleCorpInvoices@example.com"
                       ],
-                      "customerTaxId": "GB123",
-                      "totalTax": "2",
-                      "netTotal": "8",
-                      "merchantDetails": {
-                        "address": {
-                          "line1": "The White House",
-                          "line2": "1600 Pennsylvania Avenue",
-                          "town": "Washington, D.C.",
-                          "state": "CA",
-                          "postCode": "20500",
-                          "country": "US"
-                        },
-                        "phoneNumber": "0800001066",
-                        "email": "donald@example.com",
-                        "taxId": "TAX60",
-                        "legalCompanyName": "The Merchant",
-                        "primaryColour": "#000000",
-                        "logoUrl": "logo",
-                        "customFields": [
-                          {
-                            "key": "example-label",
-                            "value": "label-value"
-                          }
-                        ],
-                        "usAchDestination": {
-                          "accountNumber": "12345678",
-                          "accountName": "John Doe",
-                          "bankName": "Chase",
-                          "bankRoutingNumber": "123456789"
-                        },
-                        "usWireDestination": {
-                          "accountNumber": "12345678",
-                          "accountName": "John Doe",
-                          "bankName": "Chase",
-                          "bankRoutingNumber": "123456789",
-                          "swiftCode": "CHASUS33",
-                          "bankAddress": {
-                            "line1": "JP Morgan Chase",
-                            "town": "New York City",
-                            "state": "NY",
-                            "postCode": "10017",
-                            "country": "US"
-                          }
-                        },
-                        "caBankAccountDestination": {
-                          "transitNumber": "123",
-                          "institutionNumber": "12345",
-                          "accountNumber": "1234567"
-                        },
-                        "canadianInternationalDestination": {
-                          "legalName": "John Doe",
-                          "accountNumber": "12345678",
-                          "transitNumber": "123",
-                          "bankName": "Chase",
-                          "bankAddress": {
-                            "line1": "JP Morgan Chase",
-                            "town": "New York City",
-                            "state": "NY",
-                            "postCode": "10017",
-                            "country": "US"
-                          },
-                          "institutionNumber": "123",
-                          "swiftCode": "CHASUS33",
-                          "intermediaryBank": {
-                            "bankName": "Chase",
-                            "bankAddress": {
-                              "line1": "JP Morgan Chase",
-                              "town": "New York City",
-                              "state": "NY",
-                              "postCode": "10017",
-                              "country": "US"
-                            },
-                            "swiftCode": "CHASUS33",
-                            "routingNumber": "123456789"
-                          }
-                        },
-                        "includeBeneficiaryAddressInPaymentDetails": true
-                      },
-                      "metadata": [
+                      "telephone": "02010001000",
+                      "url": "https://example.com/",
+                      "taxStatus": "TAXED",
+                      "label": "Example customer",
+                      "externalIds": [
                         {
-                          "key": "key",
-                          "value": "value"
-                        }
-                      ],
-                      "creditBalances": "balance",
-                      "accountingDate": "2023-11-02"
-                    }
-                  ],
-                  "pagination": {
-                    "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
-                    "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
-                    "totalResultSize": 10
-                  }
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/ListInvoicesEndpointResponseModel"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "401": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "getApiCustomer_portalCustomers_id_Invoices",
-        "deprecated": false
-      }
-    },
-    "/customer-portal/customers/{id}/invoices/{invoiceId}/line-item-groups/{lineItemGroupId}/usage-data": {
-      "get": {
-        "summary": "Get usage data for a line item group",
-        "description": "Get usage data for a line item group",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Customer ID"
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "invoiceId",
-            "required": true,
-            "description": "Invoice ID"
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "lineItemGroupId",
-            "required": true,
-            "description": "Line item group ID"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "example": {
-                  "data": {
-                    "usageStart": "2023-02-01",
-                    "usageEnd": "2023-04-30",
-                    "metricName": "API Calls",
-                    "metricId": "27ba4761-7573-41c5-b780-2993b2c254f7",
-                    "total": "35",
-                    "usageData": [
-                      {
-                        "periodStart": "2023-02-01",
-                        "amount": "10",
-                        "cumulativeAmount": "10"
-                      },
-                      {
-                        "periodStart": "2023-03-01",
-                        "amount": "15",
-                        "cumulativeAmount": "25"
-                      },
-                      {
-                        "periodStart": "2023-04-01",
-                        "amount": "10",
-                        "cumulativeAmount": "35"
-                      }
-                    ]
-                  }
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/OptionalUsageDataResponse"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "401": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "getApiCustomer_portalCustomers_id_Invoices_invoiceId_Line_item_groups_lineItemGroupId_Usage_data",
-        "deprecated": false
-      }
-    },
-    "/customer-portal/customers/{id}/usage-events/{eventType}": {
-      "get": {
-        "summary": "List usage events for customer and event type",
-        "description": "List usage events for customer and event type",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "query",
-            "name": "before",
-            "required": false,
-            "description": "Pagination cursor. To page through items, omit this parameter to retrieve the first page, and then successively use the value you get from `pagination.after` or `pagination.before` to retrieve each page."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "query",
-            "name": "after",
-            "required": false,
-            "description": "Pagination cursor. To page through items, omit this parameter to retrieve the first page, and then successively use the value you get from `pagination.after` or `pagination.before` to retrieve each page."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "query",
-            "name": "sortOrder",
-            "required": false,
-            "description": "Sort order. Default: DESC (descending, most often used for reverse chronological sorting)."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Customer ID"
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "eventType",
-            "required": true,
-            "description": "Event type"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "example": {
-                  "items": [
-                    {
-                      "id": "88135c9a-35af-47f6-81e9-3badf02734c9",
-                      "eventTimestamp": "2022-10-01T00:00:00Z",
-                      "eventType": "coffee",
-                      "properties": [
+                          "key": "Xero",
+                          "value": "ID",
+                          "syncTime": "2022-06-28T16:47:00Z"
+                        },
                         {
-                          "key": "cost",
-                          "value": "3.5"
+                          "key": "Stripe",
+                          "value": "cus_OCtCxqQDgu1uX9",
+                          "syncTime": "2022-06-28T16:47:00Z"
                         }
                       ]
                     }
@@ -2810,7 +2270,292 @@
                   }
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/ListUsageEventsEndpointResponseModel"
+                  "$ref": "#/components/schemas/ListCustomersResponse"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "",
+            "content": {}
+          },
+          "500": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "getApiCustomers",
+        "deprecated": false
+      },
+      "post": {
+        "summary": "Create Customer",
+        "description": "Create a new [Customer](/docs/customers), who you can send money to and receive money from.",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "example": {
+                "legalName": "John Doe",
+                "contactName": "John Doe",
+                "address": {
+                  "line1": "Flat 1",
+                  "line2": "123 Fake Street",
+                  "town": "London",
+                  "postCode": "AB1 2EF",
+                  "country": "GB"
+                },
+                "email": "john@example.com",
+                "billingEmails": [
+                  "exampleCorpInvoices@example.com"
+                ],
+                "telephone": "john@example.com",
+                "url": "https://example.com/",
+                "label": "Example customer",
+                "taxStatus": "TAXED",
+                "customerAliases": [
+                  "b1c87177-088a-40ec-8917-9809343f3f9c"
+                ],
+                "externalIds": [
+                  {
+                    "key": "Xero",
+                    "value": "123456789"
+                  },
+                  {
+                    "key": "Stripe",
+                    "value": "cus_OCtCxqQDgu1uX9"
+                  },
+                  {
+                    "key": "HubSpot",
+                    "value": "123456789"
+                  }
+                ]
+              },
+              "schema": {
+                "$ref": "#/components/schemas/CreateCustomerRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "example": {
+                  "customer": {
+                    "id": "e309e948-088e-4d77-b654-cd85498f1555",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                    "legalName": "John Doe",
+                    "contactName": "John Doe",
+                    "address": {
+                      "line1": "Flat 1",
+                      "line2": "123 Fake Street",
+                      "town": "London",
+                      "postCode": "AB1 2EF",
+                      "country": "GB"
+                    },
+                    "email": "john@example.com",
+                    "billingEmails": [
+                      "exampleCorpInvoices@example.com"
+                    ],
+                    "telephone": "02010001000",
+                    "url": "https://example.com/",
+                    "taxStatus": "TAXED",
+                    "label": "Example customer",
+                    "externalIds": [
+                      {
+                        "key": "Xero",
+                        "value": "ID",
+                        "syncTime": "2022-06-28T16:47:00Z"
+                      },
+                      {
+                        "key": "Stripe",
+                        "value": "cus_OCtCxqQDgu1uX9",
+                        "syncTime": "2022-06-28T16:47:00Z"
+                      }
+                    ]
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/CreateCustomerResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "postApiCustomers",
+        "deprecated": false
+      }
+    },
+    "/customers/by-alias/{alias}": {
+      "get": {
+        "summary": "Get Customer By Alias",
+        "description": "Retrieve the details of one of your [Customers](/docs/customers) using one of their aliases.",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "alias",
+            "required": true,
+            "description": "Customer Alias"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "example": {
+                  "id": "e309e948-088e-4d77-b654-cd85498f1555",
+                  "createdAt": "2022-06-28T16:47:00Z",
+                  "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                  "legalName": "John Doe",
+                  "contactName": "John Doe",
+                  "address": {
+                    "line1": "Flat 1",
+                    "line2": "123 Fake Street",
+                    "town": "London",
+                    "postCode": "AB1 2EF",
+                    "country": "GB"
+                  },
+                  "email": "john@example.com",
+                  "billingEmails": [
+                    "exampleCorpInvoices@example.com"
+                  ],
+                  "telephone": "02010001000",
+                  "url": "https://example.com/",
+                  "taxStatus": "TAXED",
+                  "label": "Example customer",
+                  "externalIds": [
+                    {
+                      "key": "Xero",
+                      "value": "ID",
+                      "syncTime": "2022-06-28T16:47:00Z"
+                    },
+                    {
+                      "key": "Stripe",
+                      "value": "cus_OCtCxqQDgu1uX9",
+                      "syncTime": "2022-06-28T16:47:00Z"
+                    }
+                  ]
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Customer"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "",
+            "content": {}
+          },
+          "404": {
+            "description": "",
+            "content": {}
+          },
+          "500": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "getApiCustomersBy_alias_alias",
+        "deprecated": false
+      }
+    },
+    "/customers/{customer}/contacts": {
+      "post": {
+        "summary": "Create a new Contact",
+        "description": "Create a new Contact",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "customer",
+            "required": true,
+            "description": "The Customer ID"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "example": {
+                "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                "customerId": "e309e948-088e-4d77-b654-cd85498f1555",
+                "email": "jane.smith@example.com",
+                "firstName": "Jane",
+                "lastName": "Smith",
+                "contactType": "QUOTE_RECIPIENT",
+                "deletedAt": "2022-06-28T16:47:00Z"
+              },
+              "schema": {
+                "$ref": "#/components/schemas/CreateContactEndpointCreateContactRequestModel"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "example": {
+                  "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+                  "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                  "customerId": "e309e948-088e-4d77-b654-cd85498f1555",
+                  "email": "jane.smith@example.com",
+                  "firstName": "Jane",
+                  "lastName": "Smith",
+                  "contactType": "QUOTE_RECIPIENT",
+                  "createdAt": "2022-06-28T16:47:00Z",
+                  "deletedAt": "2022-06-28T16:47:00Z"
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/CreateContactEndpointProductCreateContactResponseModel"
                 }
               }
             }
@@ -2829,16 +2574,493 @@
           }
         },
         "security": [],
-        "operationId": "getApiCustomer_portalCustomers_id_Usage_events_eventType",
+        "operationId": "postApiCustomers_customer_Contacts",
         "deprecated": false
       }
     },
-    "/customer-portal/customers/{id}/usage-metrics": {
-      "get": {
-        "summary": "List usage metrics for customer",
-        "description": "List usage metrics for customer",
+    "/customers/{customer}/contacts/{id}": {
+      "delete": {
+        "summary": "Delete a Contact",
+        "description": "Delete a Contact",
         "tags": [],
         "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "customer",
+            "required": true,
+            "description": "The Customer ID"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "Unique ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "example": {
+                  "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+                  "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                  "customerId": "e309e948-088e-4d77-b654-cd85498f1555",
+                  "email": "jane.smith@example.com",
+                  "firstName": "Jane",
+                  "lastName": "Smith",
+                  "contactType": "QUOTE_RECIPIENT",
+                  "createdAt": "2022-06-28T16:47:00Z",
+                  "deletedAt": "2022-06-28T16:47:00Z"
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/DeleteContactEndpointProductDeleteContactResponseModel"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "",
+            "content": {}
+          },
+          "401": {
+            "description": "",
+            "content": {}
+          },
+          "500": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "deleteApiCustomers_customer_Contacts_id",
+        "deprecated": false
+      },
+      "put": {
+        "summary": "Update a Contact",
+        "description": "Update a Contact",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "customer",
+            "required": true,
+            "description": "The Customer ID"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "Unique ID"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "example": {
+                "email": "jane.smith@example.com",
+                "firstName": "Jane",
+                "lastName": "Smith",
+                "contactType": "QUOTE_RECIPIENT"
+              },
+              "schema": {
+                "$ref": "#/components/schemas/UpdateContactEndpointUpdateContactRequestModel"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "example": {
+                  "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+                  "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                  "customerId": "e309e948-088e-4d77-b654-cd85498f1555",
+                  "email": "jane.smith@example.com",
+                  "firstName": "Jane",
+                  "lastName": "Smith",
+                  "contactType": "QUOTE_RECIPIENT",
+                  "createdAt": "2022-06-28T16:47:00Z",
+                  "deletedAt": "2022-06-28T16:47:00Z"
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/UpdateContactEndpointProductUpdateContactResponseModel"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "",
+            "content": {}
+          },
+          "401": {
+            "description": "",
+            "content": {}
+          },
+          "500": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "putApiCustomers_customer_Contacts_id",
+        "deprecated": false
+      }
+    },
+    "/customers/{id}": {
+      "delete": {
+        "summary": "Delete a Customer",
+        "description": "Delete one of your Customers",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "Customer ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "example": {
+                  "id": "e309e948-088e-4d77-b654-cd85498f1555",
+                  "createdAt": "2022-06-28T16:47:00Z",
+                  "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                  "legalName": "John Doe",
+                  "contactName": "John Doe",
+                  "address": {
+                    "line1": "Flat 1",
+                    "line2": "123 Fake Street",
+                    "town": "London",
+                    "postCode": "AB1 2EF",
+                    "country": "GB"
+                  },
+                  "email": "john@example.com",
+                  "billingEmails": [
+                    "exampleCorpInvoices@example.com"
+                  ],
+                  "telephone": "02010001000",
+                  "url": "https://example.com/",
+                  "taxStatus": "TAXED",
+                  "label": "Example customer",
+                  "externalIds": [
+                    {
+                      "key": "Xero",
+                      "value": "ID",
+                      "syncTime": "2022-06-28T16:47:00Z"
+                    },
+                    {
+                      "key": "Stripe",
+                      "value": "cus_OCtCxqQDgu1uX9",
+                      "syncTime": "2022-06-28T16:47:00Z"
+                    }
+                  ]
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Customer"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "",
+            "content": {}
+          },
+          "404": {
+            "description": "",
+            "content": {}
+          },
+          "500": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "deleteApiCustomers_id",
+        "deprecated": false
+      },
+      "get": {
+        "summary": "Get Customer",
+        "description": "Retrieve the details of one of your [Customers](/docs/customers).",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "Customer ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "example": {
+                  "id": "e309e948-088e-4d77-b654-cd85498f1555",
+                  "createdAt": "2022-06-28T16:47:00Z",
+                  "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                  "legalName": "John Doe",
+                  "contactName": "John Doe",
+                  "address": {
+                    "line1": "Flat 1",
+                    "line2": "123 Fake Street",
+                    "town": "London",
+                    "postCode": "AB1 2EF",
+                    "country": "GB"
+                  },
+                  "email": "john@example.com",
+                  "billingEmails": [
+                    "exampleCorpInvoices@example.com"
+                  ],
+                  "telephone": "02010001000",
+                  "url": "https://example.com/",
+                  "taxStatus": "TAXED",
+                  "label": "Example customer",
+                  "externalIds": [
+                    {
+                      "key": "Xero",
+                      "value": "ID",
+                      "syncTime": "2022-06-28T16:47:00Z"
+                    },
+                    {
+                      "key": "Stripe",
+                      "value": "cus_OCtCxqQDgu1uX9",
+                      "syncTime": "2022-06-28T16:47:00Z"
+                    }
+                  ]
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Customer"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "",
+            "content": {}
+          },
+          "404": {
+            "description": "",
+            "content": {}
+          },
+          "500": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "getApiCustomers_id",
+        "deprecated": false
+      },
+      "put": {
+        "summary": "Update Customer",
+        "description": "Update the details of one of your [Customers](/docs/customers).",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "Customer ID"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "example": {
+                "legalName": "John Doe",
+                "contactName": "John Doe",
+                "address": {
+                  "line1": "Flat 1",
+                  "line2": "123 Fake Street",
+                  "town": "London",
+                  "postCode": "AB1 2EF",
+                  "country": "GB"
+                },
+                "email": "john@example.com",
+                "billingEmails": [
+                  "exampleCorpInvoices@example.com"
+                ],
+                "telephone": "02010001000",
+                "url": "https://example.com/",
+                "label": "Example customer",
+                "externalIds": [
+                  {
+                    "key": "Xero",
+                    "value": "123456789"
+                  },
+                  {
+                    "key": "Stripe",
+                    "value": "cus_OCtCxqQDgu1uX9"
+                  },
+                  {
+                    "key": "HubSpot",
+                    "value": "123456789"
+                  }
+                ],
+                "taxStatus": "TAXED",
+                "customerAliases": [
+                  "b1c87177-088a-40ec-8917-9809343f3f9c"
+                ]
+              },
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCustomerRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "example": {
+                  "id": "e309e948-088e-4d77-b654-cd85498f1555",
+                  "createdAt": "2022-06-28T16:47:00Z",
+                  "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                  "legalName": "John Doe",
+                  "contactName": "John Doe",
+                  "address": {
+                    "line1": "Flat 1",
+                    "line2": "123 Fake Street",
+                    "town": "London",
+                    "postCode": "AB1 2EF",
+                    "country": "GB"
+                  },
+                  "email": "john@example.com",
+                  "billingEmails": [
+                    "exampleCorpInvoices@example.com"
+                  ],
+                  "telephone": "02010001000",
+                  "url": "https://example.com/",
+                  "taxStatus": "TAXED",
+                  "label": "Example customer",
+                  "externalIds": [
+                    {
+                      "key": "Xero",
+                      "value": "ID",
+                      "syncTime": "2022-06-28T16:47:00Z"
+                    },
+                    {
+                      "key": "Stripe",
+                      "value": "cus_OCtCxqQDgu1uX9",
+                      "syncTime": "2022-06-28T16:47:00Z"
+                    }
+                  ]
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Customer"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "",
+            "content": {}
+          },
+          "404": {
+            "description": "",
+            "content": {}
+          },
+          "500": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "putApiCustomers_id",
+        "deprecated": false
+      }
+    },
+    "/customers/{id}/aliases": {
+      "get": {
+        "summary": "Get Customer Aliases",
+        "description": "Retrieve the details of one of your [Customer's](/docs/customers) aliases.",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          },
           {
             "schema": {
               "type": "string"
@@ -2857,173 +3079,16 @@
                 "example": {
                   "items": [
                     {
-                      "id": "27ba4761-7573-41c5-b780-2993b2c254f7",
-                      "name": "Coffee",
-                      "description": "Coffee metric",
-                      "eventType": "coffee",
-                      "aggregationProperty": "Cost",
-                      "priceId": "030a64dd-1d89-46a3-8043-580befdb011d",
-                      "aggregationType": "COUNT"
+                      "id": "0185a140-194a-7e9d-9fae-6a034fd4a725",
+                      "sequenceAccountId": "cd243b67-7d8c-42ee-b19f-b4e41f584415",
+                      "customerId": "0185a142-54ff-7ce5-846a-fc188432da6e",
+                      "value": "customer-alias-123",
+                      "createdAt": "2022-10-01T00:00:00Z"
                     }
                   ]
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/ListUsageMetricsEndpointResponseModel"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "401": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "getApiCustomer_portalCustomers_id_Usage_metrics",
-        "deprecated": false
-      }
-    },
-    "/customer-portal/invoices/{id}": {
-      "get": {
-        "summary": "Get invoice",
-        "description": "Get invoice by ID",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Invoice Id"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "example": {
-                  "id": "ba37a392-7054-4dae-ab37-6fee9e23fe06",
-                  "currency": "GBP",
-                  "invoiceNumber": "INV2",
-                  "issueDate": "2022-10-05",
-                  "dueDate": "2022-11-05",
-                  "billingPeriodStart": "2022-10-01",
-                  "billingPeriodEnd": "2022-10-30",
-                  "grossTotal": "10",
-                  "paymentStatus": "UNPAID",
-                  "purchaseOrderNumber": "PO123",
-                  "customerLegalCompanyName": "Customer",
-                  "customerBillingAddress": {
-                    "line1": "123 Fake Street",
-                    "line2": "Line 2",
-                    "town": "Town",
-                    "postCode": "postCode",
-                    "country": "GB"
-                  },
-                  "memo": "Memo",
-                  "paymentOptions": [
-                    "BANK_TRANSFER"
-                  ],
-                  "customerTaxId": "GB123",
-                  "totalTax": "2",
-                  "netTotal": "8",
-                  "merchantDetails": {
-                    "address": {
-                      "line1": "The White House",
-                      "line2": "1600 Pennsylvania Avenue",
-                      "town": "Washington, D.C.",
-                      "state": "CA",
-                      "postCode": "20500",
-                      "country": "US"
-                    },
-                    "phoneNumber": "0800001066",
-                    "email": "donald@example.com",
-                    "taxId": "TAX60",
-                    "legalCompanyName": "The Merchant",
-                    "primaryColour": "#000000",
-                    "logoUrl": "logo",
-                    "customFields": [
-                      {
-                        "key": "example-label",
-                        "value": "label-value"
-                      }
-                    ],
-                    "usAchDestination": {
-                      "accountNumber": "12345678",
-                      "accountName": "John Doe",
-                      "bankName": "Chase",
-                      "bankRoutingNumber": "123456789"
-                    },
-                    "usWireDestination": {
-                      "accountNumber": "12345678",
-                      "accountName": "John Doe",
-                      "bankName": "Chase",
-                      "bankRoutingNumber": "123456789",
-                      "swiftCode": "CHASUS33",
-                      "bankAddress": {
-                        "line1": "JP Morgan Chase",
-                        "town": "New York City",
-                        "state": "NY",
-                        "postCode": "10017",
-                        "country": "US"
-                      }
-                    },
-                    "caBankAccountDestination": {
-                      "transitNumber": "123",
-                      "institutionNumber": "12345",
-                      "accountNumber": "1234567"
-                    },
-                    "canadianInternationalDestination": {
-                      "legalName": "John Doe",
-                      "accountNumber": "12345678",
-                      "transitNumber": "123",
-                      "bankName": "Chase",
-                      "bankAddress": {
-                        "line1": "JP Morgan Chase",
-                        "town": "New York City",
-                        "state": "NY",
-                        "postCode": "10017",
-                        "country": "US"
-                      },
-                      "institutionNumber": "123",
-                      "swiftCode": "CHASUS33",
-                      "intermediaryBank": {
-                        "bankName": "Chase",
-                        "bankAddress": {
-                          "line1": "JP Morgan Chase",
-                          "town": "New York City",
-                          "state": "NY",
-                          "postCode": "10017",
-                          "country": "US"
-                        },
-                        "swiftCode": "CHASUS33",
-                        "routingNumber": "123456789"
-                      }
-                    },
-                    "includeBeneficiaryAddressInPaymentDetails": true
-                  },
-                  "metadata": [
-                    {
-                      "key": "key",
-                      "value": "value"
-                    }
-                  ],
-                  "creditBalances": "balance",
-                  "accountingDate": "2023-11-02"
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/Invoice"
+                  "$ref": "#/components/schemas/GetCustomerAliasesEndpointEndpointResponse"
                 }
               }
             }
@@ -3042,173 +3107,7 @@
           }
         },
         "security": [],
-        "operationId": "getApiCustomer_portalInvoices_id",
-        "deprecated": false
-      }
-    },
-    "/customer-portal/invoices/{id}/download": {
-      "get": {
-        "summary": "Download invoice PDF",
-        "description": "Download invoice PDF",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Invoice Id"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "",
-            "content": {}
-          },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "404": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "getApiCustomer_portalInvoices_id_Download",
-        "deprecated": false
-      }
-    },
-    "/customer-portal/invoices/{id}/line-item-groups": {
-      "get": {
-        "summary": "List line item groups for invoice",
-        "description": "List line item groups for invoice",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Invoice ID"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "example": {
-                  "items": [
-                    {
-                      "id": "941272d1-f840-4e16-b698-0cd455c81e0e",
-                      "title": "Cars",
-                      "description": "Charges for cars",
-                      "index": 1,
-                      "netTotal": "0",
-                      "totalTax": "0",
-                      "grossTotal": "0"
-                    }
-                  ]
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/ListInvoiceLineItemGroupsEndpointResponseModel"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "401": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "getApiCustomer_portalInvoices_id_Line_item_groups",
-        "deprecated": false
-      }
-    },
-    "/customer-portal/invoices/{id}/line-items": {
-      "get": {
-        "summary": "List line items for invoice",
-        "description": "List line items for invoice",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Invoice ID"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "example": {
-                  "items": [
-                    {
-                      "id": "941272d1-f840-4e16-b698-0cd455c81e0e",
-                      "title": "Cars",
-                      "description": "Charges for cars",
-                      "quantity": "0",
-                      "rate": "0",
-                      "taxRate": "0",
-                      "servicePeriodStart": "2023-08-07",
-                      "servicePeriodEnd": "2023-08-07",
-                      "servicePeriod": {
-                        "start": "2023-08-07",
-                        "endInclusive": "2023-08-07"
-                      },
-                      "index": 1,
-                      "groupId": "941272d1-f840-4e16-b698-0cd455c81e0e",
-                      "netTotal": "0",
-                      "totalTax": "0",
-                      "grossTotal": "0",
-                      "rateDisplay": "ABSOLUTE"
-                    }
-                  ]
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/ListInvoiceLineItemsEndpointResponseModel"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "401": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "getApiCustomer_portalInvoices_id_Line_items",
+        "operationId": "getApiCustomers_id_Aliases",
         "deprecated": false
       }
     },
@@ -4673,7 +4572,7 @@
                 "customerId": "cf747d34-9497-42a8-8b28-d65523fbbadf"
               },
               "schema": {
-                "$ref": "#/components/schemas/GetUsageDataForBillingScheduleEndpointRequestModel1"
+                "$ref": "#/components/schemas/GetUsageDataForBillingScheduleEndpointRequestModel"
               }
             }
           },
@@ -4766,7 +4665,7 @@
                   ]
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/ListUsageMetricsForBillingScheduleEndpointResponseModel1"
+                  "$ref": "#/components/schemas/ListUsageMetricsForBillingScheduleEndpointResponseModel"
                 }
               }
             }
@@ -13187,7 +13086,7 @@
                   "accountingDate": "2022-10-05"
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/Invoice1"
+                  "$ref": "#/components/schemas/Invoice"
                 }
               }
             }
@@ -13348,7 +13247,7 @@
                   "accountingDate": "2022-10-05"
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/Invoice1"
+                  "$ref": "#/components/schemas/Invoice"
                 }
               }
             }
@@ -13667,7 +13566,7 @@
                   "accountingDate": "2022-10-05"
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/Invoice1"
+                  "$ref": "#/components/schemas/Invoice"
                 }
               }
             }
@@ -13819,7 +13718,7 @@
                   "accountingDate": "2022-10-05"
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/Invoice1"
+                  "$ref": "#/components/schemas/Invoice"
                 }
               }
             }
@@ -13971,7 +13870,7 @@
                   "accountingDate": "2022-10-05"
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/Invoice1"
+                  "$ref": "#/components/schemas/Invoice"
                 }
               }
             }
@@ -14123,7 +14022,7 @@
                   "accountingDate": "2022-10-05"
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/Invoice1"
+                  "$ref": "#/components/schemas/Invoice"
                 }
               }
             }
@@ -14284,7 +14183,7 @@
                   "accountingDate": "2022-10-05"
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/Invoice1"
+                  "$ref": "#/components/schemas/Invoice"
                 }
               }
             }
@@ -14519,7 +14418,7 @@
                   "accountingDate": "2022-10-05"
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/Invoice1"
+                  "$ref": "#/components/schemas/Invoice"
                 }
               }
             }
@@ -21467,540 +21366,139 @@
       },
       "Customer": {
         "properties": {
-          "legalName": {
-            "example": "Acme Corp",
-            "type": "string"
-          }
-        },
-        "example": {
-          "legalName": "Acme Corp"
-        },
-        "type": "object",
-        "required": [
-          "legalName"
-        ]
-      },
-      "ListInvoicesEndpointResponseModel": {
-        "properties": {
-          "items": {
-            "items": {
-              "$ref": "#/components/schemas/Invoice"
-            },
-            "example": [
-              {
-                "id": "ba37a392-7054-4dae-ab37-6fee9e23fe06",
-                "currency": "GBP",
-                "invoiceNumber": "INV2",
-                "issueDate": "2022-10-05",
-                "dueDate": "2022-11-05",
-                "billingPeriodStart": "2022-10-01",
-                "billingPeriodEnd": "2022-10-30",
-                "grossTotal": "10",
-                "paymentStatus": "UNPAID",
-                "purchaseOrderNumber": "PO123",
-                "customerLegalCompanyName": "Customer",
-                "customerBillingAddress": {
-                  "line1": "123 Fake Street",
-                  "line2": "Line 2",
-                  "town": "Town",
-                  "postCode": "postCode",
-                  "country": "GB"
-                },
-                "memo": "Memo",
-                "paymentOptions": [
-                  "BANK_TRANSFER"
-                ],
-                "customerTaxId": "GB123",
-                "totalTax": "2",
-                "netTotal": "8",
-                "merchantDetails": {
-                  "address": {
-                    "line1": "The White House",
-                    "line2": "1600 Pennsylvania Avenue",
-                    "town": "Washington, D.C.",
-                    "state": "CA",
-                    "postCode": "20500",
-                    "country": "US"
-                  },
-                  "phoneNumber": "0800001066",
-                  "email": "donald@example.com",
-                  "taxId": "TAX60",
-                  "legalCompanyName": "The Merchant",
-                  "primaryColour": "#000000",
-                  "logoUrl": "logo",
-                  "customFields": [
-                    {
-                      "key": "example-label",
-                      "value": "label-value"
-                    }
-                  ],
-                  "usAchDestination": {
-                    "accountNumber": "12345678",
-                    "accountName": "John Doe",
-                    "bankName": "Chase",
-                    "bankRoutingNumber": "123456789"
-                  },
-                  "usWireDestination": {
-                    "accountNumber": "12345678",
-                    "accountName": "John Doe",
-                    "bankName": "Chase",
-                    "bankRoutingNumber": "123456789",
-                    "swiftCode": "CHASUS33",
-                    "bankAddress": {
-                      "line1": "JP Morgan Chase",
-                      "town": "New York City",
-                      "state": "NY",
-                      "postCode": "10017",
-                      "country": "US"
-                    }
-                  },
-                  "caBankAccountDestination": {
-                    "transitNumber": "123",
-                    "institutionNumber": "12345",
-                    "accountNumber": "1234567"
-                  },
-                  "canadianInternationalDestination": {
-                    "legalName": "John Doe",
-                    "accountNumber": "12345678",
-                    "transitNumber": "123",
-                    "bankName": "Chase",
-                    "bankAddress": {
-                      "line1": "JP Morgan Chase",
-                      "town": "New York City",
-                      "state": "NY",
-                      "postCode": "10017",
-                      "country": "US"
-                    },
-                    "institutionNumber": "123",
-                    "swiftCode": "CHASUS33",
-                    "intermediaryBank": {
-                      "bankName": "Chase",
-                      "bankAddress": {
-                        "line1": "JP Morgan Chase",
-                        "town": "New York City",
-                        "state": "NY",
-                        "postCode": "10017",
-                        "country": "US"
-                      },
-                      "swiftCode": "CHASUS33",
-                      "routingNumber": "123456789"
-                    }
-                  },
-                  "includeBeneficiaryAddressInPaymentDetails": true
-                },
-                "metadata": [
-                  {
-                    "key": "key",
-                    "value": "value"
-                  }
-                ],
-                "creditBalances": "balance",
-                "accountingDate": "2023-11-02"
-              }
-            ],
-            "type": "array"
-          },
-          "pagination": {
-            "$ref": "#/components/schemas/PaginationMeta"
-          }
-        },
-        "example": {
-          "items": [
-            {
-              "id": "ba37a392-7054-4dae-ab37-6fee9e23fe06",
-              "currency": "GBP",
-              "invoiceNumber": "INV2",
-              "issueDate": "2022-10-05",
-              "dueDate": "2022-11-05",
-              "billingPeriodStart": "2022-10-01",
-              "billingPeriodEnd": "2022-10-30",
-              "grossTotal": "10",
-              "paymentStatus": "UNPAID",
-              "purchaseOrderNumber": "PO123",
-              "customerLegalCompanyName": "Customer",
-              "customerBillingAddress": {
-                "line1": "123 Fake Street",
-                "line2": "Line 2",
-                "town": "Town",
-                "postCode": "postCode",
-                "country": "GB"
-              },
-              "memo": "Memo",
-              "paymentOptions": [
-                "BANK_TRANSFER"
-              ],
-              "customerTaxId": "GB123",
-              "totalTax": "2",
-              "netTotal": "8",
-              "merchantDetails": {
-                "address": {
-                  "line1": "The White House",
-                  "line2": "1600 Pennsylvania Avenue",
-                  "town": "Washington, D.C.",
-                  "state": "CA",
-                  "postCode": "20500",
-                  "country": "US"
-                },
-                "phoneNumber": "0800001066",
-                "email": "donald@example.com",
-                "taxId": "TAX60",
-                "legalCompanyName": "The Merchant",
-                "primaryColour": "#000000",
-                "logoUrl": "logo",
-                "customFields": [
-                  {
-                    "key": "example-label",
-                    "value": "label-value"
-                  }
-                ],
-                "usAchDestination": {
-                  "accountNumber": "12345678",
-                  "accountName": "John Doe",
-                  "bankName": "Chase",
-                  "bankRoutingNumber": "123456789"
-                },
-                "usWireDestination": {
-                  "accountNumber": "12345678",
-                  "accountName": "John Doe",
-                  "bankName": "Chase",
-                  "bankRoutingNumber": "123456789",
-                  "swiftCode": "CHASUS33",
-                  "bankAddress": {
-                    "line1": "JP Morgan Chase",
-                    "town": "New York City",
-                    "state": "NY",
-                    "postCode": "10017",
-                    "country": "US"
-                  }
-                },
-                "caBankAccountDestination": {
-                  "transitNumber": "123",
-                  "institutionNumber": "12345",
-                  "accountNumber": "1234567"
-                },
-                "canadianInternationalDestination": {
-                  "legalName": "John Doe",
-                  "accountNumber": "12345678",
-                  "transitNumber": "123",
-                  "bankName": "Chase",
-                  "bankAddress": {
-                    "line1": "JP Morgan Chase",
-                    "town": "New York City",
-                    "state": "NY",
-                    "postCode": "10017",
-                    "country": "US"
-                  },
-                  "institutionNumber": "123",
-                  "swiftCode": "CHASUS33",
-                  "intermediaryBank": {
-                    "bankName": "Chase",
-                    "bankAddress": {
-                      "line1": "JP Morgan Chase",
-                      "town": "New York City",
-                      "state": "NY",
-                      "postCode": "10017",
-                      "country": "US"
-                    },
-                    "swiftCode": "CHASUS33",
-                    "routingNumber": "123456789"
-                  }
-                },
-                "includeBeneficiaryAddressInPaymentDetails": true
-              },
-              "metadata": [
-                {
-                  "key": "key",
-                  "value": "value"
-                }
-              ],
-              "creditBalances": "balance",
-              "accountingDate": "2023-11-02"
-            }
-          ],
-          "pagination": {
-            "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
-            "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
-            "totalResultSize": 10
-          }
-        },
-        "type": "object",
-        "required": [
-          "items",
-          "pagination"
-        ]
-      },
-      "Invoice": {
-        "properties": {
           "id": {
-            "example": "ba37a392-7054-4dae-ab37-6fee9e23fe06",
+            "example": "e309e948-088e-4d77-b654-cd85498f1555",
             "type": "string"
           },
-          "currency": {
-            "$ref": "#/components/schemas/Currency1"
-          },
-          "invoiceNumber": {
-            "example": "INV2",
+          "createdAt": {
+            "example": "2022-06-28T16:47:00Z",
             "type": "string"
           },
-          "issueDate": {
-            "example": "2022-10-05",
-            "format": "date",
+          "sequenceAccountId": {
+            "example": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
             "type": "string"
           },
-          "dueDate": {
-            "example": "2022-11-05",
-            "format": "date",
+          "legalName": {
+            "example": "John Doe",
             "type": "string"
           },
-          "billingPeriodStart": {
-            "example": "2022-10-01",
-            "format": "date",
+          "contactName": {
+            "example": "John Doe",
             "type": "string"
           },
-          "billingPeriodEnd": {
-            "example": "2022-10-30",
-            "format": "date",
-            "type": "string"
-          },
-          "grossTotal": {
-            "example": "10",
-            "type": "string"
-          },
-          "paymentStatus": {
-            "$ref": "#/components/schemas/InvoicePaymentStatus"
-          },
-          "purchaseOrderNumber": {
-            "example": "PO123",
-            "type": "string"
-          },
-          "customerLegalCompanyName": {
-            "example": "Customer",
-            "type": "string"
-          },
-          "customerBillingAddress": {
+          "address": {
             "$ref": "#/components/schemas/Address"
           },
-          "memo": {
-            "example": "Memo",
+          "email": {
+            "example": "john@example.com",
             "type": "string"
           },
-          "paymentOptions": {
+          "billingEmails": {
             "items": {
-              "$ref": "#/components/schemas/InvoicePaymentOption"
+              "type": "string"
             },
             "example": [
-              "BANK_TRANSFER"
+              "exampleCorpInvoices@example.com"
             ],
             "type": "array"
           },
-          "customerTaxId": {
-            "example": "GB123",
+          "telephone": {
+            "example": "02010001000",
             "type": "string"
           },
-          "totalTax": {
-            "example": "2",
+          "url": {
+            "example": "https://example.com/",
             "type": "string"
           },
-          "netTotal": {
-            "example": "8",
+          "taxStatus": {
+            "$ref": "#/components/schemas/TaxStatus"
+          },
+          "label": {
+            "example": "Example customer",
             "type": "string"
           },
-          "merchantDetails": {
-            "$ref": "#/components/schemas/MerchantDetails"
-          },
-          "metadata": {
+          "externalIds": {
             "items": {
-              "$ref": "#/components/schemas/KeyValuePair"
+              "$ref": "#/components/schemas/KeyValueLinkInfo"
             },
             "example": [
               {
-                "key": "key",
-                "value": "value"
+                "key": "Xero",
+                "value": "ID",
+                "syncTime": "2022-06-28T16:47:00Z"
+              },
+              {
+                "key": "Stripe",
+                "value": "cus_OCtCxqQDgu1uX9",
+                "syncTime": "2022-06-28T16:47:00Z"
               }
             ],
             "type": "array"
-          },
-          "creditBalances": {
-            "example": "balance",
-            "type": "string"
-          },
-          "accountingDate": {
-            "example": "2023-11-02",
-            "format": "date",
-            "type": "string"
           }
         },
         "example": {
-          "id": "ba37a392-7054-4dae-ab37-6fee9e23fe06",
-          "currency": "GBP",
-          "invoiceNumber": "INV2",
-          "issueDate": "2022-10-05",
-          "dueDate": "2022-11-05",
-          "billingPeriodStart": "2022-10-01",
-          "billingPeriodEnd": "2022-10-30",
-          "grossTotal": "10",
-          "paymentStatus": "UNPAID",
-          "purchaseOrderNumber": "PO123",
-          "customerLegalCompanyName": "Customer",
-          "customerBillingAddress": {
-            "line1": "123 Fake Street",
-            "line2": "Line 2",
-            "town": "Town",
-            "postCode": "postCode",
+          "id": "e309e948-088e-4d77-b654-cd85498f1555",
+          "createdAt": "2022-06-28T16:47:00Z",
+          "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+          "legalName": "John Doe",
+          "contactName": "John Doe",
+          "address": {
+            "line1": "Flat 1",
+            "line2": "123 Fake Street",
+            "town": "London",
+            "postCode": "AB1 2EF",
             "country": "GB"
           },
-          "memo": "Memo",
-          "paymentOptions": [
-            "BANK_TRANSFER"
+          "email": "john@example.com",
+          "billingEmails": [
+            "exampleCorpInvoices@example.com"
           ],
-          "customerTaxId": "GB123",
-          "totalTax": "2",
-          "netTotal": "8",
-          "merchantDetails": {
-            "address": {
-              "line1": "The White House",
-              "line2": "1600 Pennsylvania Avenue",
-              "town": "Washington, D.C.",
-              "state": "CA",
-              "postCode": "20500",
-              "country": "US"
-            },
-            "phoneNumber": "0800001066",
-            "email": "donald@example.com",
-            "taxId": "TAX60",
-            "legalCompanyName": "The Merchant",
-            "primaryColour": "#000000",
-            "logoUrl": "logo",
-            "customFields": [
-              {
-                "key": "example-label",
-                "value": "label-value"
-              }
-            ],
-            "usAchDestination": {
-              "accountNumber": "12345678",
-              "accountName": "John Doe",
-              "bankName": "Chase",
-              "bankRoutingNumber": "123456789"
-            },
-            "usWireDestination": {
-              "accountNumber": "12345678",
-              "accountName": "John Doe",
-              "bankName": "Chase",
-              "bankRoutingNumber": "123456789",
-              "swiftCode": "CHASUS33",
-              "bankAddress": {
-                "line1": "JP Morgan Chase",
-                "town": "New York City",
-                "state": "NY",
-                "postCode": "10017",
-                "country": "US"
-              }
-            },
-            "caBankAccountDestination": {
-              "transitNumber": "123",
-              "institutionNumber": "12345",
-              "accountNumber": "1234567"
-            },
-            "canadianInternationalDestination": {
-              "legalName": "John Doe",
-              "accountNumber": "12345678",
-              "transitNumber": "123",
-              "bankName": "Chase",
-              "bankAddress": {
-                "line1": "JP Morgan Chase",
-                "town": "New York City",
-                "state": "NY",
-                "postCode": "10017",
-                "country": "US"
-              },
-              "institutionNumber": "123",
-              "swiftCode": "CHASUS33",
-              "intermediaryBank": {
-                "bankName": "Chase",
-                "bankAddress": {
-                  "line1": "JP Morgan Chase",
-                  "town": "New York City",
-                  "state": "NY",
-                  "postCode": "10017",
-                  "country": "US"
-                },
-                "swiftCode": "CHASUS33",
-                "routingNumber": "123456789"
-              }
-            },
-            "includeBeneficiaryAddressInPaymentDetails": true
-          },
-          "metadata": [
+          "telephone": "02010001000",
+          "url": "https://example.com/",
+          "taxStatus": "TAXED",
+          "label": "Example customer",
+          "externalIds": [
             {
-              "key": "key",
-              "value": "value"
+              "key": "Xero",
+              "value": "ID",
+              "syncTime": "2022-06-28T16:47:00Z"
+            },
+            {
+              "key": "Stripe",
+              "value": "cus_OCtCxqQDgu1uX9",
+              "syncTime": "2022-06-28T16:47:00Z"
             }
-          ],
-          "creditBalances": "balance",
-          "accountingDate": "2023-11-02"
+          ]
         },
         "type": "object",
         "required": [
-          "accountingDate",
-          "currency",
-          "customerBillingAddress",
-          "customerLegalCompanyName",
-          "dueDate",
-          "grossTotal",
+          "address",
+          "billingEmails",
+          "createdAt",
+          "email",
+          "externalIds",
           "id",
-          "invoiceNumber",
-          "issueDate",
-          "merchantDetails",
-          "metadata",
-          "netTotal",
-          "paymentOptions",
-          "paymentStatus",
-          "totalTax"
+          "legalName",
+          "sequenceAccountId",
+          "taxStatus"
         ]
-      },
-      "Currency1": {
-        "example": "GBP",
-        "enum": [
-          "GBP",
-          "EUR",
-          "USD",
-          "CAD",
-          "ZAR",
-          "ARS",
-          "UYU",
-          "COP",
-          "MXN",
-          "AUD"
-        ],
-        "type": "string"
-      },
-      "InvoicePaymentStatus": {
-        "example": "UNPAID",
-        "enum": [
-          "UNPAID",
-          "PARTIALLY_PAID",
-          "PAID",
-          "UNCOLLECTIBLE"
-        ],
-        "type": "string"
       },
       "Address": {
         "properties": {
           "line1": {
-            "example": "123 Fake Street",
+            "example": "Flat 1",
             "type": "string"
           },
           "line2": {
-            "example": "Line 2",
+            "example": "123 Fake Street",
             "type": "string"
           },
           "town": {
-            "example": "Town",
+            "example": "London",
             "type": "string"
           },
           "postCode": {
-            "example": "postCode",
+            "example": "AB1 2EF",
             "type": "string"
           },
           "country": {
@@ -22008,10 +21506,10 @@
           }
         },
         "example": {
-          "line1": "123 Fake Street",
-          "line2": "Line 2",
-          "town": "Town",
-          "postCode": "postCode",
+          "line1": "Flat 1",
+          "line2": "123 Fake Street",
+          "town": "London",
+          "postCode": "AB1 2EF",
           "country": "GB"
         },
         "type": "object",
@@ -22022,610 +21520,96 @@
           "town"
         ]
       },
-      "InvoicePaymentOption": {
-        "example": "BANK_TRANSFER",
+      "TaxStatus": {
+        "example": "TAXED",
         "enum": [
-          "BANK_TRANSFER",
-          "LINK"
+          "TAXED",
+          "TAX_EXEMPT",
+          "REVERSE_CHARGED"
         ],
         "type": "string"
       },
-      "MerchantDetails": {
-        "properties": {
-          "address": {
-            "$ref": "#/components/schemas/Address"
-          },
-          "phoneNumber": {
-            "example": "0800001066",
-            "type": "string"
-          },
-          "email": {
-            "example": "donald@example.com",
-            "type": "string"
-          },
-          "taxId": {
-            "example": "TAX60",
-            "type": "string"
-          },
-          "legalCompanyName": {
-            "example": "The Merchant",
-            "type": "string"
-          },
-          "primaryColour": {
-            "example": "#000000",
-            "type": "string"
-          },
-          "logoUrl": {
-            "example": "logo",
-            "type": "string"
-          },
-          "customFields": {
-            "items": {
-              "$ref": "#/components/schemas/KeyValuePair"
-            },
-            "example": [
-              {
-                "key": "example-label",
-                "value": "label-value"
-              }
-            ],
-            "type": "array"
-          },
-          "usAchDestination": {
-            "$ref": "#/components/schemas/UsAchDestination"
-          },
-          "usWireDestination": {
-            "$ref": "#/components/schemas/UsWireDestination"
-          },
-          "caBankAccountDestination": {
-            "$ref": "#/components/schemas/CanadianBankAccountDestination"
-          },
-          "canadianInternationalDestination": {
-            "$ref": "#/components/schemas/CanadianInternationalDestination"
-          },
-          "includeBeneficiaryAddressInPaymentDetails": {
-            "example": true,
-            "type": "boolean"
-          }
-        },
-        "example": {
-          "address": {
-            "line1": "The White House",
-            "line2": "1600 Pennsylvania Avenue",
-            "town": "Washington, D.C.",
-            "state": "CA",
-            "postCode": "20500",
-            "country": "US"
-          },
-          "phoneNumber": "0800001066",
-          "email": "donald@example.com",
-          "taxId": "TAX60",
-          "legalCompanyName": "The Merchant",
-          "primaryColour": "#000000",
-          "logoUrl": "logo",
-          "customFields": [
-            {
-              "key": "example-label",
-              "value": "label-value"
-            }
-          ],
-          "usAchDestination": {
-            "accountNumber": "12345678",
-            "accountName": "John Doe",
-            "bankName": "Chase",
-            "bankRoutingNumber": "123456789"
-          },
-          "usWireDestination": {
-            "accountNumber": "12345678",
-            "accountName": "John Doe",
-            "bankName": "Chase",
-            "bankRoutingNumber": "123456789",
-            "swiftCode": "CHASUS33",
-            "bankAddress": {
-              "line1": "JP Morgan Chase",
-              "town": "New York City",
-              "state": "NY",
-              "postCode": "10017",
-              "country": "US"
-            }
-          },
-          "caBankAccountDestination": {
-            "transitNumber": "123",
-            "institutionNumber": "12345",
-            "accountNumber": "1234567"
-          },
-          "canadianInternationalDestination": {
-            "legalName": "John Doe",
-            "accountNumber": "12345678",
-            "transitNumber": "123",
-            "bankName": "Chase",
-            "bankAddress": {
-              "line1": "JP Morgan Chase",
-              "town": "New York City",
-              "state": "NY",
-              "postCode": "10017",
-              "country": "US"
-            },
-            "institutionNumber": "123",
-            "swiftCode": "CHASUS33",
-            "intermediaryBank": {
-              "bankName": "Chase",
-              "bankAddress": {
-                "line1": "JP Morgan Chase",
-                "town": "New York City",
-                "state": "NY",
-                "postCode": "10017",
-                "country": "US"
-              },
-              "swiftCode": "CHASUS33",
-              "routingNumber": "123456789"
-            }
-          },
-          "includeBeneficiaryAddressInPaymentDetails": true
-        },
-        "type": "object",
-        "required": [
-          "address",
-          "customFields",
-          "email",
-          "includeBeneficiaryAddressInPaymentDetails",
-          "legalCompanyName"
-        ]
-      },
-      "State": {
-        "example": "CA",
-        "enum": [
-          "AL",
-          "AK",
-          "AZ",
-          "AR",
-          "CA",
-          "CO",
-          "CT",
-          "DE",
-          "FL",
-          "GA",
-          "HI",
-          "ID",
-          "IL",
-          "IN",
-          "IA",
-          "KS",
-          "KY",
-          "LA",
-          "ME",
-          "MD",
-          "MA",
-          "MI",
-          "MN",
-          "MS",
-          "MO",
-          "MT",
-          "NE",
-          "NV",
-          "NH",
-          "NJ",
-          "NM",
-          "NY",
-          "NC",
-          "ND",
-          "OH",
-          "OK",
-          "OR",
-          "PA",
-          "RI",
-          "SC",
-          "SD",
-          "TN",
-          "TX",
-          "UT",
-          "VT",
-          "VA",
-          "WA",
-          "WV",
-          "WI",
-          "WY",
-          "AB",
-          "BC",
-          "MB",
-          "NB",
-          "NL",
-          "NS",
-          "ON",
-          "PE",
-          "QC",
-          "SK"
-        ],
-        "type": "string"
-      },
-      "KeyValuePair": {
+      "KeyValueLinkInfo": {
         "properties": {
           "key": {
-            "example": "example-label",
-            "type": "string"
+            "$ref": "#/components/schemas/IntegrationService"
           },
           "value": {
-            "example": "label-value",
+            "example": "ID",
+            "type": "string"
+          },
+          "syncTime": {
+            "example": "2022-06-28T16:47:00Z",
             "type": "string"
           }
         },
         "example": {
-          "key": "example-label",
-          "value": "label-value"
+          "key": "Xero",
+          "value": "ID",
+          "syncTime": "2022-06-28T16:47:00Z"
         },
         "type": "object",
         "required": [
           "key",
+          "syncTime",
           "value"
         ]
       },
-      "UsAchDestination": {
-        "properties": {
-          "accountNumber": {
-            "example": "12345678",
-            "type": "string"
-          },
-          "accountName": {
-            "example": "John Doe",
-            "type": "string"
-          },
-          "bankName": {
-            "example": "Chase",
-            "type": "string"
-          },
-          "bankRoutingNumber": {
-            "example": "123456789",
-            "type": "string"
-          }
-        },
-        "example": {
-          "accountNumber": "12345678",
-          "accountName": "John Doe",
-          "bankName": "Chase",
-          "bankRoutingNumber": "123456789"
-        },
-        "type": "object",
-        "required": [
-          "accountName",
-          "accountNumber",
-          "bankName",
-          "bankRoutingNumber"
-        ]
-      },
-      "UsWireDestination": {
-        "properties": {
-          "accountNumber": {
-            "example": "12345678",
-            "type": "string"
-          },
-          "accountName": {
-            "example": "John Doe",
-            "type": "string"
-          },
-          "bankName": {
-            "example": "Chase",
-            "type": "string"
-          },
-          "bankRoutingNumber": {
-            "example": "123456789",
-            "type": "string"
-          },
-          "swiftCode": {
-            "example": "CHASUS33",
-            "type": "string"
-          },
-          "bankAddress": {
-            "$ref": "#/components/schemas/Address"
-          }
-        },
-        "example": {
-          "accountNumber": "12345678",
-          "accountName": "John Doe",
-          "bankName": "Chase",
-          "bankRoutingNumber": "123456789",
-          "swiftCode": "CHASUS33",
-          "bankAddress": {
-            "line1": "JP Morgan Chase",
-            "town": "New York City",
-            "state": "NY",
-            "postCode": "10017",
-            "country": "US"
-          }
-        },
-        "type": "object",
-        "required": [
-          "accountName",
-          "accountNumber",
-          "bankAddress",
-          "bankName",
-          "bankRoutingNumber",
-          "swiftCode"
-        ]
-      },
-      "CanadianBankAccountDestination": {
-        "properties": {
-          "transitNumber": {
-            "example": "123",
-            "type": "string"
-          },
-          "institutionNumber": {
-            "example": "12345",
-            "type": "string"
-          },
-          "accountNumber": {
-            "example": "1234567",
-            "type": "string"
-          }
-        },
-        "example": {
-          "transitNumber": "123",
-          "institutionNumber": "12345",
-          "accountNumber": "1234567"
-        },
-        "type": "object",
-        "required": [
-          "accountNumber",
-          "institutionNumber",
-          "transitNumber"
-        ]
-      },
-      "CanadianInternationalDestination": {
-        "properties": {
-          "legalName": {
-            "example": "John Doe",
-            "type": "string"
-          },
-          "accountNumber": {
-            "example": "12345678",
-            "type": "string"
-          },
-          "transitNumber": {
-            "example": "123",
-            "type": "string"
-          },
-          "bankName": {
-            "example": "Chase",
-            "type": "string"
-          },
-          "bankAddress": {
-            "$ref": "#/components/schemas/Address"
-          },
-          "institutionNumber": {
-            "example": "123",
-            "type": "string"
-          },
-          "swiftCode": {
-            "example": "CHASUS33",
-            "type": "string"
-          },
-          "intermediaryBank": {
-            "$ref": "#/components/schemas/IntermediaryBank"
-          }
-        },
-        "example": {
-          "legalName": "John Doe",
-          "accountNumber": "12345678",
-          "transitNumber": "123",
-          "bankName": "Chase",
-          "bankAddress": {
-            "line1": "JP Morgan Chase",
-            "town": "New York City",
-            "state": "NY",
-            "postCode": "10017",
-            "country": "US"
-          },
-          "institutionNumber": "123",
-          "swiftCode": "CHASUS33",
-          "intermediaryBank": {
-            "bankName": "Chase",
-            "bankAddress": {
-              "line1": "JP Morgan Chase",
-              "town": "New York City",
-              "state": "NY",
-              "postCode": "10017",
-              "country": "US"
-            },
-            "swiftCode": "CHASUS33",
-            "routingNumber": "123456789"
-          }
-        },
-        "type": "object",
-        "required": [
-          "accountNumber",
-          "bankAddress",
-          "bankName",
-          "institutionNumber",
-          "legalName",
-          "swiftCode",
-          "transitNumber"
-        ]
-      },
-      "IntermediaryBank": {
-        "properties": {
-          "bankName": {
-            "example": "Chase",
-            "type": "string"
-          },
-          "bankAddress": {
-            "$ref": "#/components/schemas/Address1"
-          },
-          "swiftCode": {
-            "example": "CHASUS33",
-            "type": "string"
-          },
-          "routingNumber": {
-            "example": "123456789",
-            "type": "string"
-          }
-        },
-        "example": {
-          "bankName": "Chase",
-          "bankAddress": {
-            "line1": "JP Morgan Chase",
-            "town": "New York City",
-            "state": "NY",
-            "postCode": "10017",
-            "country": "US"
-          },
-          "swiftCode": "CHASUS33",
-          "routingNumber": "123456789"
-        },
-        "type": "object",
-        "required": [
-          "bankAddress",
-          "bankName",
-          "routingNumber",
-          "swiftCode"
-        ]
-      },
-      "ListUsageMetricsEndpointResponseModel": {
-        "properties": {
-          "items": {
-            "items": {
-              "$ref": "#/components/schemas/UsageMetric"
-            },
-            "example": [
-              {
-                "id": "27ba4761-7573-41c5-b780-2993b2c254f7",
-                "name": "Coffee",
-                "description": "Coffee metric",
-                "eventType": "coffee",
-                "aggregationProperty": "Cost",
-                "priceId": "030a64dd-1d89-46a3-8043-580befdb011d",
-                "aggregationType": "COUNT"
-              }
-            ],
-            "type": "array"
-          }
-        },
-        "example": {
-          "items": [
-            {
-              "id": "27ba4761-7573-41c5-b780-2993b2c254f7",
-              "name": "Coffee",
-              "description": "Coffee metric",
-              "eventType": "coffee",
-              "aggregationProperty": "Cost",
-              "priceId": "030a64dd-1d89-46a3-8043-580befdb011d",
-              "aggregationType": "COUNT"
-            }
-          ]
-        },
-        "type": "object",
-        "required": [
-          "items"
-        ]
-      },
-      "UsageMetric": {
-        "properties": {
-          "id": {
-            "example": "27ba4761-7573-41c5-b780-2993b2c254f7",
-            "type": "string"
-          },
-          "name": {
-            "example": "Coffee",
-            "type": "string"
-          },
-          "description": {
-            "example": "Coffee metric",
-            "type": "string"
-          },
-          "eventType": {
-            "example": "coffee",
-            "type": "string"
-          },
-          "aggregationProperty": {
-            "example": "Cost",
-            "type": "string"
-          },
-          "priceId": {
-            "example": "030a64dd-1d89-46a3-8043-580befdb011d",
-            "type": "string"
-          },
-          "aggregationType": {
-            "$ref": "#/components/schemas/AggregationType"
-          }
-        },
-        "example": {
-          "id": "27ba4761-7573-41c5-b780-2993b2c254f7",
-          "name": "Coffee",
-          "description": "Coffee metric",
-          "eventType": "coffee",
-          "aggregationProperty": "Cost",
-          "priceId": "030a64dd-1d89-46a3-8043-580befdb011d",
-          "aggregationType": "COUNT"
-        },
-        "type": "object",
-        "required": [
-          "aggregationType",
-          "eventType",
-          "id",
-          "name",
-          "priceId"
-        ]
-      },
-      "AggregationType": {
-        "example": "COUNT",
+      "IntegrationService": {
+        "example": "Xero",
         "enum": [
-          "COUNT",
-          "UNIQUE",
-          "SUM"
+          "Amazon_Redshift",
+          "Google_BigQuery",
+          "Google_Sheets",
+          "HubSpot",
+          "NetSuite",
+          "QuickBooks_Online",
+          "Salesforce",
+          "Slack",
+          "Snowflake",
+          "Stripe",
+          "Xero"
         ],
         "type": "string"
       },
-      "ListUsageMetricsForBillingScheduleEndpointResponseModel": {
+      "ListCustomersResponse": {
         "properties": {
           "items": {
             "items": {
-              "$ref": "#/components/schemas/UsageMetric"
+              "$ref": "#/components/schemas/Customer"
             },
             "example": [
               {
-                "id": "27ba4761-7573-41c5-b780-2993b2c254f7",
-                "name": "Coffee",
-                "description": "Coffee metric",
-                "eventType": "coffee",
-                "aggregationProperty": "Cost",
-                "priceId": "030a64dd-1d89-46a3-8043-580befdb011d",
-                "aggregationType": "COUNT"
-              }
-            ],
-            "type": "array"
-          }
-        },
-        "example": {
-          "items": [
-            {
-              "id": "27ba4761-7573-41c5-b780-2993b2c254f7",
-              "name": "Coffee",
-              "description": "Coffee metric",
-              "eventType": "coffee",
-              "aggregationProperty": "Cost",
-              "priceId": "030a64dd-1d89-46a3-8043-580befdb011d",
-              "aggregationType": "COUNT"
-            }
-          ]
-        },
-        "type": "object",
-        "required": [
-          "items"
-        ]
-      },
-      "ListUsageEventsEndpointResponseModel": {
-        "properties": {
-          "items": {
-            "items": {
-              "$ref": "#/components/schemas/UsageEvent"
-            },
-            "example": [
-              {
-                "id": "88135c9a-35af-47f6-81e9-3badf02734c9",
-                "eventTimestamp": "2022-10-01T00:00:00Z",
-                "eventType": "coffee",
-                "properties": [
+                "id": "e309e948-088e-4d77-b654-cd85498f1555",
+                "createdAt": "2022-06-28T16:47:00Z",
+                "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                "legalName": "John Doe",
+                "contactName": "John Doe",
+                "address": {
+                  "line1": "Flat 1",
+                  "line2": "123 Fake Street",
+                  "town": "London",
+                  "postCode": "AB1 2EF",
+                  "country": "GB"
+                },
+                "email": "john@example.com",
+                "billingEmails": [
+                  "exampleCorpInvoices@example.com"
+                ],
+                "telephone": "02010001000",
+                "url": "https://example.com/",
+                "taxStatus": "TAXED",
+                "label": "Example customer",
+                "externalIds": [
                   {
-                    "key": "cost",
-                    "value": "3.5"
+                    "key": "Xero",
+                    "value": "ID",
+                    "syncTime": "2022-06-28T16:47:00Z"
+                  },
+                  {
+                    "key": "Stripe",
+                    "value": "cus_OCtCxqQDgu1uX9",
+                    "syncTime": "2022-06-28T16:47:00Z"
                   }
                 ]
               }
@@ -22639,13 +21623,36 @@
         "example": {
           "items": [
             {
-              "id": "88135c9a-35af-47f6-81e9-3badf02734c9",
-              "eventTimestamp": "2022-10-01T00:00:00Z",
-              "eventType": "coffee",
-              "properties": [
+              "id": "e309e948-088e-4d77-b654-cd85498f1555",
+              "createdAt": "2022-06-28T16:47:00Z",
+              "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+              "legalName": "John Doe",
+              "contactName": "John Doe",
+              "address": {
+                "line1": "Flat 1",
+                "line2": "123 Fake Street",
+                "town": "London",
+                "postCode": "AB1 2EF",
+                "country": "GB"
+              },
+              "email": "john@example.com",
+              "billingEmails": [
+                "exampleCorpInvoices@example.com"
+              ],
+              "telephone": "02010001000",
+              "url": "https://example.com/",
+              "taxStatus": "TAXED",
+              "label": "Example customer",
+              "externalIds": [
                 {
-                  "key": "cost",
-                  "value": "3.5"
+                  "key": "Xero",
+                  "value": "ID",
+                  "syncTime": "2022-06-28T16:47:00Z"
+                },
+                {
+                  "key": "Stripe",
+                  "value": "cus_OCtCxqQDgu1uX9",
+                  "syncTime": "2022-06-28T16:47:00Z"
                 }
               ]
             }
@@ -22662,571 +21669,316 @@
           "pagination"
         ]
       },
-      "UsageEvent": {
+      "CreateCustomerResponse": {
         "properties": {
-          "id": {
-            "example": "88135c9a-35af-47f6-81e9-3badf02734c9",
-            "type": "string"
-          },
-          "eventTimestamp": {
-            "example": "2022-10-01T00:00:00Z",
-            "type": "string"
-          },
-          "eventType": {
-            "example": "coffee",
-            "type": "string"
-          },
-          "properties": {
-            "items": {
-              "$ref": "#/components/schemas/KeyValuePair"
+          "customer": {
+            "$ref": "#/components/schemas/Customer"
+          }
+        },
+        "example": {
+          "customer": {
+            "id": "e309e948-088e-4d77-b654-cd85498f1555",
+            "createdAt": "2022-06-28T16:47:00Z",
+            "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+            "legalName": "John Doe",
+            "contactName": "John Doe",
+            "address": {
+              "line1": "Flat 1",
+              "line2": "123 Fake Street",
+              "town": "London",
+              "postCode": "AB1 2EF",
+              "country": "GB"
             },
-            "example": [
-              {
-                "key": "cost",
-                "value": "3.5"
-              }
+            "email": "john@example.com",
+            "billingEmails": [
+              "exampleCorpInvoices@example.com"
             ],
-            "type": "array"
-          }
-        },
-        "example": {
-          "id": "88135c9a-35af-47f6-81e9-3badf02734c9",
-          "eventTimestamp": "2022-10-01T00:00:00Z",
-          "eventType": "coffee",
-          "properties": [
-            {
-              "key": "cost",
-              "value": "3.5"
-            }
-          ]
-        },
-        "type": "object",
-        "required": [
-          "eventTimestamp",
-          "eventType",
-          "id",
-          "properties"
-        ]
-      },
-      "Branding": {
-        "properties": {
-          "logoUrl": {
-            "example": "logo",
-            "type": "string"
-          },
-          "legalCompanyName": {
-            "example": "Acme Corp",
-            "type": "string"
-          },
-          "primaryColour": {
-            "example": "green",
-            "type": "string"
-          },
-          "url": {
-            "example": "www.example.com",
-            "type": "string"
-          }
-        },
-        "example": {
-          "logoUrl": "logo",
-          "legalCompanyName": "Acme Corp",
-          "primaryColour": "green",
-          "url": "www.example.com"
-        },
-        "type": "object",
-        "required": [
-          "legalCompanyName"
-        ]
-      },
-      "ListBillingSchedulesEndpointResponseModel": {
-        "properties": {
-          "items": {
-            "items": {
-              "$ref": "#/components/schemas/BillingSchedule"
-            },
-            "example": [
+            "telephone": "02010001000",
+            "url": "https://example.com/",
+            "taxStatus": "TAXED",
+            "label": "Example customer",
+            "externalIds": [
               {
-                "id": "be927602-772e-4e0d-a14c-bfd30a68fc53",
-                "name": "1 Apr 2023 to 30 Apr 2023"
-              }
-            ],
-            "type": "array"
-          }
-        },
-        "example": {
-          "items": [
-            {
-              "id": "be927602-772e-4e0d-a14c-bfd30a68fc53",
-              "name": "1 Apr 2023 to 30 Apr 2023"
-            }
-          ]
-        },
-        "type": "object",
-        "required": [
-          "items"
-        ]
-      },
-      "BillingSchedule": {
-        "properties": {
-          "id": {
-            "example": "be927602-772e-4e0d-a14c-bfd30a68fc53",
-            "type": "string"
-          },
-          "name": {
-            "example": "1 Apr 2023 to 30 Apr 2023",
-            "type": "string"
-          }
-        },
-        "example": {
-          "id": "be927602-772e-4e0d-a14c-bfd30a68fc53",
-          "name": "1 Apr 2023 to 30 Apr 2023"
-        },
-        "type": "object",
-        "required": [
-          "id",
-          "name"
-        ]
-      },
-      "UsageDataResponse": {
-        "properties": {
-          "usageStart": {
-            "example": "2023-02-01",
-            "format": "date",
-            "type": "string"
-          },
-          "usageEnd": {
-            "example": "2023-04-30",
-            "format": "date",
-            "type": "string"
-          },
-          "metricName": {
-            "example": "API Calls",
-            "type": "string"
-          },
-          "metricId": {
-            "example": "27ba4761-7573-41c5-b780-2993b2c254f7",
-            "type": "string"
-          },
-          "total": {
-            "example": "35",
-            "type": "string"
-          },
-          "usageData": {
-            "items": {
-              "$ref": "#/components/schemas/UsageData"
-            },
-            "example": [
-              {
-                "periodStart": "2023-02-01",
-                "amount": "10",
-                "cumulativeAmount": "10"
+                "key": "Xero",
+                "value": "ID",
+                "syncTime": "2022-06-28T16:47:00Z"
               },
               {
-                "periodStart": "2023-03-01",
-                "amount": "15",
-                "cumulativeAmount": "25"
-              },
-              {
-                "periodStart": "2023-04-01",
-                "amount": "10",
-                "cumulativeAmount": "35"
-              }
-            ],
-            "type": "array"
-          }
-        },
-        "example": {
-          "usageStart": "2023-02-01",
-          "usageEnd": "2023-04-30",
-          "metricName": "API Calls",
-          "metricId": "27ba4761-7573-41c5-b780-2993b2c254f7",
-          "total": "35",
-          "usageData": [
-            {
-              "periodStart": "2023-02-01",
-              "amount": "10",
-              "cumulativeAmount": "10"
-            },
-            {
-              "periodStart": "2023-03-01",
-              "amount": "15",
-              "cumulativeAmount": "25"
-            },
-            {
-              "periodStart": "2023-04-01",
-              "amount": "10",
-              "cumulativeAmount": "35"
-            }
-          ]
-        },
-        "type": "object",
-        "required": [
-          "metricId",
-          "metricName",
-          "total",
-          "usageData",
-          "usageEnd",
-          "usageStart"
-        ]
-      },
-      "UsageData": {
-        "properties": {
-          "periodStart": {
-            "example": "2023-02-01",
-            "format": "date",
-            "type": "string"
-          },
-          "amount": {
-            "example": "10",
-            "type": "string"
-          },
-          "cumulativeAmount": {
-            "example": "10",
-            "type": "string"
-          }
-        },
-        "example": {
-          "periodStart": "2023-02-01",
-          "amount": "10",
-          "cumulativeAmount": "10"
-        },
-        "type": "object",
-        "required": [
-          "amount",
-          "cumulativeAmount",
-          "periodStart"
-        ]
-      },
-      "GetUsageDataForBillingScheduleEndpointRequestModel": {
-        "properties": {
-          "metricId": {
-            "example": "27ba4761-7573-41c5-b780-2993b2c254f7",
-            "type": "string"
-          },
-          "usagePeriodType": {
-            "$ref": "#/components/schemas/UsagePeriodType"
-          },
-          "eventType": {
-            "example": "event",
-            "type": "string"
-          },
-          "priceId": {
-            "example": "030a64dd-1d89-46a3-8043-580befdb011d",
-            "type": "string"
-          }
-        },
-        "example": {
-          "metricId": "27ba4761-7573-41c5-b780-2993b2c254f7",
-          "usagePeriodType": "CURRENT",
-          "eventType": "event",
-          "priceId": "030a64dd-1d89-46a3-8043-580befdb011d"
-        },
-        "type": "object",
-        "required": [
-          "eventType",
-          "metricId",
-          "priceId",
-          "usagePeriodType"
-        ]
-      },
-      "UsagePeriodType": {
-        "example": "CURRENT",
-        "enum": [
-          "CURRENT",
-          "LAST",
-          "LAST_THREE",
-          "ALL"
-        ],
-        "type": "string"
-      },
-      "OptionalUsageDataResponse": {
-        "properties": {
-          "data": {
-            "$ref": "#/components/schemas/UsageDataResponse"
-          }
-        },
-        "example": {
-          "data": {
-            "usageStart": "2023-02-01",
-            "usageEnd": "2023-04-30",
-            "metricName": "API Calls",
-            "metricId": "27ba4761-7573-41c5-b780-2993b2c254f7",
-            "total": "35",
-            "usageData": [
-              {
-                "periodStart": "2023-02-01",
-                "amount": "10",
-                "cumulativeAmount": "10"
-              },
-              {
-                "periodStart": "2023-03-01",
-                "amount": "15",
-                "cumulativeAmount": "25"
-              },
-              {
-                "periodStart": "2023-04-01",
-                "amount": "10",
-                "cumulativeAmount": "35"
+                "key": "Stripe",
+                "value": "cus_OCtCxqQDgu1uX9",
+                "syncTime": "2022-06-28T16:47:00Z"
               }
             ]
           }
         },
-        "type": "object"
+        "type": "object",
+        "required": [
+          "customer"
+        ]
       },
-      "ListCreditBalancesEndpointResponseModel": {
+      "CreateCustomerRequest": {
         "properties": {
-          "items": {
+          "legalName": {
+            "example": "John Doe",
+            "type": "string"
+          },
+          "contactName": {
+            "example": "John Doe",
+            "type": "string"
+          },
+          "address": {
+            "$ref": "#/components/schemas/Address"
+          },
+          "email": {
+            "example": "john@example.com",
+            "type": "string"
+          },
+          "billingEmails": {
             "items": {
-              "$ref": "#/components/schemas/CreditBalance"
+              "type": "string"
+            },
+            "example": [
+              "exampleCorpInvoices@example.com"
+            ],
+            "type": "array"
+          },
+          "telephone": {
+            "example": "john@example.com",
+            "type": "string"
+          },
+          "url": {
+            "example": "https://example.com/",
+            "type": "string"
+          },
+          "label": {
+            "example": "Example customer",
+            "type": "string"
+          },
+          "taxStatus": {
+            "$ref": "#/components/schemas/TaxStatus"
+          },
+          "customerAliases": {
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "b1c87177-088a-40ec-8917-9809343f3f9c"
+            ],
+            "type": "array"
+          },
+          "externalIds": {
+            "items": {
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
             },
             "example": [
               {
-                "type": "CASH",
-                "id": "6587e308-ab0d-4a58-8cc1-1d168490de7b",
-                "name": "Credits",
-                "balance": "50"
+                "key": "Xero",
+                "value": "123456789"
+              },
+              {
+                "key": "Stripe",
+                "value": "cus_OCtCxqQDgu1uX9"
+              },
+              {
+                "key": "HubSpot",
+                "value": "123456789"
               }
             ],
             "type": "array"
           }
         },
         "example": {
-          "items": [
+          "legalName": "John Doe",
+          "contactName": "John Doe",
+          "address": {
+            "line1": "Flat 1",
+            "line2": "123 Fake Street",
+            "town": "London",
+            "postCode": "AB1 2EF",
+            "country": "GB"
+          },
+          "email": "john@example.com",
+          "billingEmails": [
+            "exampleCorpInvoices@example.com"
+          ],
+          "telephone": "john@example.com",
+          "url": "https://example.com/",
+          "label": "Example customer",
+          "taxStatus": "TAXED",
+          "customerAliases": [
+            "b1c87177-088a-40ec-8917-9809343f3f9c"
+          ],
+          "externalIds": [
             {
-              "type": "CASH",
-              "id": "6587e308-ab0d-4a58-8cc1-1d168490de7b",
-              "name": "Credits",
-              "balance": "50"
+              "key": "Xero",
+              "value": "123456789"
+            },
+            {
+              "key": "Stripe",
+              "value": "cus_OCtCxqQDgu1uX9"
+            },
+            {
+              "key": "HubSpot",
+              "value": "123456789"
             }
           ]
         },
         "type": "object",
         "required": [
-          "items"
+          "address",
+          "billingEmails",
+          "email",
+          "legalName"
         ]
       },
-      "CreditBalance": {
+      "IntegrationExternalIdentifier": {
         "properties": {
-          "type": {
-            "$ref": "#/components/schemas/CreditType"
+          "key": {
+            "$ref": "#/components/schemas/IntegrationService"
           },
-          "id": {
-            "example": "6587e308-ab0d-4a58-8cc1-1d168490de7b",
-            "type": "string"
-          },
-          "name": {
-            "example": "Credits",
-            "type": "string"
-          },
-          "balance": {
-            "example": "50",
+          "value": {
+            "example": "123456789",
             "type": "string"
           }
         },
         "example": {
-          "type": "CASH",
-          "id": "6587e308-ab0d-4a58-8cc1-1d168490de7b",
-          "name": "Credits",
-          "balance": "50"
+          "key": "Xero",
+          "value": "123456789"
         },
         "type": "object",
         "required": [
-          "balance",
-          "id",
-          "name",
-          "type"
+          "key",
+          "value"
         ]
       },
-      "CreditType": {
-        "example": "CASH",
-        "enum": [
-          "CASH",
-          "USAGE"
-        ],
-        "type": "string"
-      },
-      "CreditBalanceDetails": {
+      "UpdateCustomerRequest": {
         "properties": {
-          "balance": {
-            "example": "50",
+          "legalName": {
+            "example": "John Doe",
             "type": "string"
           },
-          "type": {
-            "$ref": "#/components/schemas/CreditType"
-          },
-          "id": {
-            "example": "6587e308-ab0d-4a58-8cc1-1d168490de7b",
+          "contactName": {
+            "example": "John Doe",
             "type": "string"
           },
-          "name": {
-            "example": "Credit",
+          "address": {
+            "$ref": "#/components/schemas/Address"
+          },
+          "email": {
+            "example": "john@example.com",
             "type": "string"
           },
-          "grants": {
+          "billingEmails": {
             "items": {
-              "$ref": "#/components/schemas/EmbeddedCreditGrant"
+              "type": "string"
+            },
+            "example": [
+              "exampleCorpInvoices@example.com"
+            ],
+            "type": "array"
+          },
+          "telephone": {
+            "example": "02010001000",
+            "type": "string"
+          },
+          "url": {
+            "example": "https://example.com/",
+            "type": "string"
+          },
+          "label": {
+            "example": "Example customer",
+            "type": "string"
+          },
+          "externalIds": {
+            "items": {
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
             },
             "example": [
               {
-                "id": "f7fda017-23d1-4ab5-a92a-a8bf2283a810",
-                "type": "CASH",
-                "name": "grant",
-                "originalAmount": "80",
-                "currentBalance": "50",
-                "expiryDate": "2024-12-03"
+                "key": "Xero",
+                "value": "123456789"
+              },
+              {
+                "key": "Stripe",
+                "value": "cus_OCtCxqQDgu1uX9"
+              },
+              {
+                "key": "HubSpot",
+                "value": "123456789"
               }
             ],
             "type": "array"
           },
-          "transactions": {
+          "taxStatus": {
+            "$ref": "#/components/schemas/TaxStatus"
+          },
+          "customerAliases": {
             "items": {
-              "$ref": "#/components/schemas/EmbeddedCreditTransaction"
+              "type": "string"
             },
             "example": [
-              {
-                "grantId": "f7fda017-23d1-4ab5-a92a-a8bf2283a810",
-                "date": "2024-03-03",
-                "type": "DEBIT",
-                "amount": "30",
-                "reason": "spending"
-              }
+              "b1c87177-088a-40ec-8917-9809343f3f9c"
             ],
             "type": "array"
           }
         },
         "example": {
-          "balance": "50",
-          "type": "CASH",
-          "id": "6587e308-ab0d-4a58-8cc1-1d168490de7b",
-          "name": "Credit",
-          "grants": [
+          "legalName": "John Doe",
+          "contactName": "John Doe",
+          "address": {
+            "line1": "Flat 1",
+            "line2": "123 Fake Street",
+            "town": "London",
+            "postCode": "AB1 2EF",
+            "country": "GB"
+          },
+          "email": "john@example.com",
+          "billingEmails": [
+            "exampleCorpInvoices@example.com"
+          ],
+          "telephone": "02010001000",
+          "url": "https://example.com/",
+          "label": "Example customer",
+          "externalIds": [
             {
-              "id": "f7fda017-23d1-4ab5-a92a-a8bf2283a810",
-              "type": "CASH",
-              "name": "grant",
-              "originalAmount": "80",
-              "currentBalance": "50",
-              "expiryDate": "2024-12-03"
+              "key": "Xero",
+              "value": "123456789"
+            },
+            {
+              "key": "Stripe",
+              "value": "cus_OCtCxqQDgu1uX9"
+            },
+            {
+              "key": "HubSpot",
+              "value": "123456789"
             }
           ],
-          "transactions": [
-            {
-              "grantId": "f7fda017-23d1-4ab5-a92a-a8bf2283a810",
-              "date": "2024-03-03",
-              "type": "DEBIT",
-              "amount": "30",
-              "reason": "spending"
-            }
+          "taxStatus": "TAXED",
+          "customerAliases": [
+            "b1c87177-088a-40ec-8917-9809343f3f9c"
           ]
         },
         "type": "object",
         "required": [
-          "balance",
-          "grants",
-          "id",
-          "name",
-          "transactions",
-          "type"
+          "address",
+          "email",
+          "legalName",
+          "taxStatus"
         ]
       },
-      "EmbeddedCreditGrant": {
-        "properties": {
-          "id": {
-            "example": "f7fda017-23d1-4ab5-a92a-a8bf2283a810",
-            "type": "string"
-          },
-          "type": {
-            "$ref": "#/components/schemas/CreditType"
-          },
-          "name": {
-            "example": "grant",
-            "type": "string"
-          },
-          "originalAmount": {
-            "example": "80",
-            "type": "string"
-          },
-          "currentBalance": {
-            "example": "50",
-            "type": "string"
-          },
-          "expiryDate": {
-            "example": "2024-12-03",
-            "format": "date",
-            "type": "string"
-          }
-        },
-        "example": {
-          "id": "f7fda017-23d1-4ab5-a92a-a8bf2283a810",
-          "type": "CASH",
-          "name": "grant",
-          "originalAmount": "80",
-          "currentBalance": "50",
-          "expiryDate": "2024-12-03"
-        },
-        "type": "object",
-        "required": [
-          "currentBalance",
-          "id",
-          "name",
-          "originalAmount",
-          "type"
-        ]
-      },
-      "EmbeddedCreditTransaction": {
-        "properties": {
-          "grantId": {
-            "example": "f7fda017-23d1-4ab5-a92a-a8bf2283a810",
-            "type": "string"
-          },
-          "date": {
-            "example": "2024-03-03",
-            "format": "date",
-            "type": "string"
-          },
-          "type": {
-            "example": "DEBIT",
-            "type": "string"
-          },
-          "amount": {
-            "example": "30",
-            "type": "string"
-          },
-          "reason": {
-            "example": "spending",
-            "type": "string"
-          }
-        },
-        "example": {
-          "grantId": "f7fda017-23d1-4ab5-a92a-a8bf2283a810",
-          "date": "2024-03-03",
-          "type": "DEBIT",
-          "amount": "30",
-          "reason": "spending"
-        },
-        "type": "object",
-        "required": [
-          "amount",
-          "date",
-          "grantId",
-          "type"
-        ]
-      },
-      "ListInvoiceLineItemGroupsEndpointResponseModel": {
+      "GetCustomerAliasesEndpointEndpointResponse": {
         "properties": {
           "items": {
             "items": {
-              "$ref": "#/components/schemas/LineItemGroup"
+              "$ref": "#/components/schemas/CustomerAlias"
             },
             "example": [
               {
-                "id": "941272d1-f840-4e16-b698-0cd455c81e0e",
-                "title": "Cars",
-                "description": "Charges for cars",
-                "index": 1,
-                "netTotal": "0",
-                "totalTax": "0",
-                "grossTotal": "0"
+                "id": "0185a140-194a-7e9d-9fae-6a034fd4a725",
+                "sequenceAccountId": "cd243b67-7d8c-42ee-b19f-b4e41f584415",
+                "customerId": "0185a142-54ff-7ce5-846a-fc188432da6e",
+                "value": "customer-alias-123",
+                "createdAt": "2022-10-01T00:00:00Z"
               }
             ],
             "type": "array"
@@ -23235,13 +21987,11 @@
         "example": {
           "items": [
             {
-              "id": "941272d1-f840-4e16-b698-0cd455c81e0e",
-              "title": "Cars",
-              "description": "Charges for cars",
-              "index": 1,
-              "netTotal": "0",
-              "totalTax": "0",
-              "grossTotal": "0"
+              "id": "0185a140-194a-7e9d-9fae-6a034fd4a725",
+              "sequenceAccountId": "cd243b67-7d8c-42ee-b19f-b4e41f584415",
+              "customerId": "0185a142-54ff-7ce5-846a-fc188432da6e",
+              "value": "customer-alias-123",
+              "createdAt": "2022-10-01T00:00:00Z"
             }
           ]
         },
@@ -23250,243 +22000,513 @@
           "items"
         ]
       },
-      "LineItemGroup": {
+      "CustomerAlias": {
         "properties": {
           "id": {
-            "example": "941272d1-f840-4e16-b698-0cd455c81e0e",
+            "example": "0185a140-194a-7e9d-9fae-6a034fd4a725",
             "type": "string"
           },
-          "title": {
-            "example": "Cars",
+          "sequenceAccountId": {
+            "example": "cd243b67-7d8c-42ee-b19f-b4e41f584415",
             "type": "string"
           },
-          "description": {
-            "example": "Charges for cars",
+          "customerId": {
+            "example": "0185a142-54ff-7ce5-846a-fc188432da6e",
             "type": "string"
           },
-          "index": {
-            "example": 1,
-            "type": "integer"
-          },
-          "netTotal": {
-            "example": "0",
+          "value": {
+            "example": "customer-alias-123",
             "type": "string"
           },
-          "totalTax": {
-            "example": "0",
-            "type": "string"
-          },
-          "grossTotal": {
-            "example": "0",
+          "createdAt": {
+            "example": "2022-10-01T00:00:00Z",
             "type": "string"
           }
         },
         "example": {
-          "id": "941272d1-f840-4e16-b698-0cd455c81e0e",
-          "title": "Cars",
-          "description": "Charges for cars",
-          "index": 1,
-          "netTotal": "0",
-          "totalTax": "0",
-          "grossTotal": "0"
+          "id": "0185a140-194a-7e9d-9fae-6a034fd4a725",
+          "sequenceAccountId": "cd243b67-7d8c-42ee-b19f-b4e41f584415",
+          "customerId": "0185a142-54ff-7ce5-846a-fc188432da6e",
+          "value": "customer-alias-123",
+          "createdAt": "2022-10-01T00:00:00Z"
         },
         "type": "object",
         "required": [
-          "grossTotal",
+          "customerId",
           "id",
-          "index",
-          "netTotal",
-          "title",
-          "totalTax"
+          "sequenceAccountId",
+          "value"
         ]
       },
-      "ListInvoiceLineItemsEndpointResponseModel": {
+      "DeleteCustomerAliasEndpointProductDeleteCustomerAliasResponseModel": {
+        "properties": {
+          "id": {
+            "example": "01849e70-0a0f-72ca-ba07-5557dd734d43",
+            "type": "string"
+          },
+          "sequenceAccountId": {
+            "example": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+            "type": "string"
+          },
+          "customerId": {
+            "example": "01849e70-703e-705a-b59a-d3fd575587e0",
+            "type": "string"
+          },
+          "value": {
+            "example": "external-customer-alias-123",
+            "type": "string"
+          },
+          "createdAt": {
+            "example": "2022-10-01T00:00:00Z",
+            "type": "string"
+          },
+          "deletedAt": {
+            "example": "2022-10-01T00:00:00Z",
+            "type": "string"
+          }
+        },
+        "example": {
+          "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
+          "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+          "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
+          "value": "external-customer-alias-123",
+          "createdAt": "2022-10-01T00:00:00Z",
+          "deletedAt": "2022-10-01T00:00:00Z"
+        },
+        "type": "object",
+        "required": [
+          "customerId",
+          "id",
+          "sequenceAccountId",
+          "value"
+        ]
+      },
+      "CreateCustomerAliasEndpointProductCreateCustomerAliasResponseModel": {
+        "properties": {
+          "id": {
+            "example": "01849e70-0a0f-72ca-ba07-5557dd734d43",
+            "type": "string"
+          },
+          "sequenceAccountId": {
+            "example": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+            "type": "string"
+          },
+          "customerId": {
+            "example": "01849e70-703e-705a-b59a-d3fd575587e0",
+            "type": "string"
+          },
+          "value": {
+            "example": "external-customer-alias-123",
+            "type": "string"
+          },
+          "createdAt": {
+            "example": "2022-10-01T00:00:00Z",
+            "type": "string"
+          },
+          "deletedAt": {
+            "example": "2022-10-01T00:00:00Z",
+            "type": "string"
+          }
+        },
+        "example": {
+          "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
+          "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+          "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
+          "value": "external-customer-alias-123",
+          "createdAt": "2022-10-01T00:00:00Z",
+          "deletedAt": "2022-10-01T00:00:00Z"
+        },
+        "type": "object",
+        "required": [
+          "customerId",
+          "id",
+          "sequenceAccountId",
+          "value"
+        ]
+      },
+      "CreateCustomerAliasEndpointCreateCustomerAliasRequestModel": {
+        "properties": {
+          "sequenceAccountId": {
+            "example": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+            "type": "string"
+          },
+          "customerId": {
+            "example": "01849e70-703e-705a-b59a-d3fd575587e0",
+            "type": "string"
+          },
+          "value": {
+            "example": "external-customer-alias-123",
+            "type": "string"
+          },
+          "deletedAt": {
+            "example": "2022-10-01T00:00:00Z",
+            "type": "string"
+          }
+        },
+        "example": {
+          "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+          "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
+          "value": "external-customer-alias-123",
+          "deletedAt": "2022-10-01T00:00:00Z"
+        },
+        "type": "object",
+        "required": [
+          "customerId",
+          "sequenceAccountId",
+          "value"
+        ]
+      },
+      "ListCustomerAliasEndpointProductListCustomerAliasPaginatedResponseModel": {
         "properties": {
           "items": {
             "items": {
-              "$ref": "#/components/schemas/LineItem"
+              "$ref": "#/components/schemas/ListCustomerAliasEndpointProductListCustomerAliasResponseModel"
             },
             "example": [
               {
-                "id": "941272d1-f840-4e16-b698-0cd455c81e0e",
-                "title": "Cars",
-                "description": "Charges for cars",
-                "quantity": "0",
-                "rate": "0",
-                "taxRate": "0",
-                "servicePeriodStart": "2023-08-07",
-                "servicePeriodEnd": "2023-08-07",
-                "servicePeriod": {
-                  "start": "2023-08-07",
-                  "endInclusive": "2023-08-07"
-                },
-                "index": 1,
-                "groupId": "941272d1-f840-4e16-b698-0cd455c81e0e",
-                "netTotal": "0",
-                "totalTax": "0",
-                "grossTotal": "0",
-                "rateDisplay": "ABSOLUTE"
+                "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
+                "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+                "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
+                "value": "external-customer-alias-123",
+                "createdAt": "2022-10-01T00:00:00Z",
+                "deletedAt": "2022-10-01T00:00:00Z"
               }
             ],
             "type": "array"
+          },
+          "pagination": {
+            "$ref": "#/components/schemas/PaginationMeta"
           }
         },
         "example": {
           "items": [
             {
-              "id": "941272d1-f840-4e16-b698-0cd455c81e0e",
-              "title": "Cars",
-              "description": "Charges for cars",
-              "quantity": "0",
-              "rate": "0",
-              "taxRate": "0",
-              "servicePeriodStart": "2023-08-07",
-              "servicePeriodEnd": "2023-08-07",
-              "servicePeriod": {
-                "start": "2023-08-07",
-                "endInclusive": "2023-08-07"
-              },
-              "index": 1,
-              "groupId": "941272d1-f840-4e16-b698-0cd455c81e0e",
-              "netTotal": "0",
-              "totalTax": "0",
-              "grossTotal": "0",
-              "rateDisplay": "ABSOLUTE"
+              "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
+              "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+              "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
+              "value": "external-customer-alias-123",
+              "createdAt": "2022-10-01T00:00:00Z",
+              "deletedAt": "2022-10-01T00:00:00Z"
             }
-          ]
+          ],
+          "pagination": {
+            "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
+            "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
+            "totalResultSize": 10
+          }
         },
         "type": "object",
         "required": [
-          "items"
+          "items",
+          "pagination"
         ]
       },
-      "LineItem": {
+      "ListCustomerAliasEndpointProductListCustomerAliasResponseModel": {
         "properties": {
           "id": {
-            "example": "941272d1-f840-4e16-b698-0cd455c81e0e",
+            "example": "01849e70-0a0f-72ca-ba07-5557dd734d43",
             "type": "string"
           },
-          "title": {
-            "example": "Cars",
+          "sequenceAccountId": {
+            "example": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
             "type": "string"
           },
-          "description": {
-            "example": "Charges for cars",
+          "customerId": {
+            "example": "01849e70-703e-705a-b59a-d3fd575587e0",
             "type": "string"
           },
-          "quantity": {
-            "example": "0",
+          "value": {
+            "example": "external-customer-alias-123",
             "type": "string"
           },
-          "rate": {
-            "example": "0",
+          "createdAt": {
+            "example": "2022-10-01T00:00:00Z",
             "type": "string"
           },
-          "taxRate": {
-            "example": "0",
+          "deletedAt": {
+            "example": "2022-10-01T00:00:00Z",
             "type": "string"
-          },
-          "servicePeriodStart": {
-            "example": "2023-08-07",
-            "format": "date",
-            "type": "string"
-          },
-          "servicePeriodEnd": {
-            "example": "2023-08-07",
-            "format": "date",
-            "type": "string"
-          },
-          "servicePeriod": {
-            "$ref": "#/components/schemas/InclusiveDateRange"
-          },
-          "index": {
-            "example": 1,
-            "type": "integer"
-          },
-          "groupId": {
-            "example": "941272d1-f840-4e16-b698-0cd455c81e0e",
-            "type": "string"
-          },
-          "netTotal": {
-            "example": "0",
-            "type": "string"
-          },
-          "totalTax": {
-            "example": "0",
-            "type": "string"
-          },
-          "grossTotal": {
-            "example": "0",
-            "type": "string"
-          },
-          "rateDisplay": {
-            "$ref": "#/components/schemas/RateDisplay"
           }
         },
         "example": {
-          "id": "941272d1-f840-4e16-b698-0cd455c81e0e",
-          "title": "Cars",
-          "description": "Charges for cars",
-          "quantity": "0",
-          "rate": "0",
-          "taxRate": "0",
-          "servicePeriodStart": "2023-08-07",
-          "servicePeriodEnd": "2023-08-07",
-          "servicePeriod": {
-            "start": "2023-08-07",
-            "endInclusive": "2023-08-07"
-          },
-          "index": 1,
-          "groupId": "941272d1-f840-4e16-b698-0cd455c81e0e",
-          "netTotal": "0",
-          "totalTax": "0",
-          "grossTotal": "0",
-          "rateDisplay": "ABSOLUTE"
+          "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
+          "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+          "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
+          "value": "external-customer-alias-123",
+          "createdAt": "2022-10-01T00:00:00Z",
+          "deletedAt": "2022-10-01T00:00:00Z"
         },
         "type": "object",
         "required": [
-          "grossTotal",
+          "customerId",
           "id",
-          "index",
-          "netTotal",
-          "quantity",
-          "rate",
-          "rateDisplay",
-          "taxRate",
-          "title",
-          "totalTax"
+          "sequenceAccountId",
+          "value"
         ]
       },
-      "InclusiveDateRange": {
+      "CreateContactEndpointProductCreateContactResponseModel": {
         "properties": {
-          "start": {
-            "example": "2023-08-07",
-            "format": "date",
+          "id": {
+            "example": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
             "type": "string"
           },
-          "endInclusive": {
-            "example": "2023-08-07",
-            "format": "date",
+          "sequenceAccountId": {
+            "example": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+            "type": "string"
+          },
+          "customerId": {
+            "example": "e309e948-088e-4d77-b654-cd85498f1555",
+            "type": "string"
+          },
+          "email": {
+            "example": "jane.smith@example.com",
+            "type": "string"
+          },
+          "firstName": {
+            "example": "Jane",
+            "type": "string"
+          },
+          "lastName": {
+            "example": "Smith",
+            "type": "string"
+          },
+          "contactType": {
+            "$ref": "#/components/schemas/ContactType"
+          },
+          "createdAt": {
+            "example": "2022-06-28T16:47:00Z",
+            "type": "string"
+          },
+          "deletedAt": {
+            "example": "2022-06-28T16:47:00Z",
             "type": "string"
           }
         },
         "example": {
-          "start": "2023-08-07",
-          "endInclusive": "2023-08-07"
+          "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+          "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+          "customerId": "e309e948-088e-4d77-b654-cd85498f1555",
+          "email": "jane.smith@example.com",
+          "firstName": "Jane",
+          "lastName": "Smith",
+          "contactType": "QUOTE_RECIPIENT",
+          "createdAt": "2022-06-28T16:47:00Z",
+          "deletedAt": "2022-06-28T16:47:00Z"
         },
         "type": "object",
         "required": [
-          "endInclusive",
-          "start"
+          "contactType",
+          "createdAt",
+          "customerId",
+          "email",
+          "id",
+          "sequenceAccountId"
         ]
       },
-      "RateDisplay": {
-        "example": "ABSOLUTE",
+      "ContactType": {
+        "example": "QUOTE_RECIPIENT",
         "enum": [
-          "ABSOLUTE",
-          "PERCENTAGE"
+          "BILLING_PRIMARY",
+          "BILLING",
+          "CUSTOMER_PRIMARY",
+          "QUOTE_RECIPIENT"
         ],
         "type": "string"
+      },
+      "CreateContactEndpointCreateContactRequestModel": {
+        "properties": {
+          "sequenceAccountId": {
+            "example": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+            "type": "string"
+          },
+          "customerId": {
+            "example": "e309e948-088e-4d77-b654-cd85498f1555",
+            "type": "string"
+          },
+          "email": {
+            "example": "jane.smith@example.com",
+            "type": "string"
+          },
+          "firstName": {
+            "example": "Jane",
+            "type": "string"
+          },
+          "lastName": {
+            "example": "Smith",
+            "type": "string"
+          },
+          "contactType": {
+            "$ref": "#/components/schemas/ContactType"
+          },
+          "deletedAt": {
+            "example": "2022-06-28T16:47:00Z",
+            "type": "string"
+          }
+        },
+        "example": {
+          "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+          "customerId": "e309e948-088e-4d77-b654-cd85498f1555",
+          "email": "jane.smith@example.com",
+          "firstName": "Jane",
+          "lastName": "Smith",
+          "contactType": "QUOTE_RECIPIENT",
+          "deletedAt": "2022-06-28T16:47:00Z"
+        },
+        "type": "object",
+        "required": [
+          "contactType",
+          "customerId",
+          "email",
+          "sequenceAccountId"
+        ]
+      },
+      "UpdateContactEndpointProductUpdateContactResponseModel": {
+        "properties": {
+          "id": {
+            "example": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+            "type": "string"
+          },
+          "sequenceAccountId": {
+            "example": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+            "type": "string"
+          },
+          "customerId": {
+            "example": "e309e948-088e-4d77-b654-cd85498f1555",
+            "type": "string"
+          },
+          "email": {
+            "example": "jane.smith@example.com",
+            "type": "string"
+          },
+          "firstName": {
+            "example": "Jane",
+            "type": "string"
+          },
+          "lastName": {
+            "example": "Smith",
+            "type": "string"
+          },
+          "contactType": {
+            "$ref": "#/components/schemas/ContactType"
+          },
+          "createdAt": {
+            "example": "2022-06-28T16:47:00Z",
+            "type": "string"
+          },
+          "deletedAt": {
+            "example": "2022-06-28T16:47:00Z",
+            "type": "string"
+          }
+        },
+        "example": {
+          "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+          "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+          "customerId": "e309e948-088e-4d77-b654-cd85498f1555",
+          "email": "jane.smith@example.com",
+          "firstName": "Jane",
+          "lastName": "Smith",
+          "contactType": "QUOTE_RECIPIENT",
+          "createdAt": "2022-06-28T16:47:00Z",
+          "deletedAt": "2022-06-28T16:47:00Z"
+        },
+        "type": "object",
+        "required": [
+          "contactType",
+          "createdAt",
+          "customerId",
+          "email",
+          "id",
+          "sequenceAccountId"
+        ]
+      },
+      "UpdateContactEndpointUpdateContactRequestModel": {
+        "properties": {
+          "email": {
+            "example": "jane.smith@example.com",
+            "type": "string"
+          },
+          "firstName": {
+            "example": "Jane",
+            "type": "string"
+          },
+          "lastName": {
+            "example": "Smith",
+            "type": "string"
+          },
+          "contactType": {
+            "$ref": "#/components/schemas/ContactType"
+          }
+        },
+        "example": {
+          "email": "jane.smith@example.com",
+          "firstName": "Jane",
+          "lastName": "Smith",
+          "contactType": "QUOTE_RECIPIENT"
+        },
+        "type": "object",
+        "required": [
+          "contactType",
+          "email"
+        ]
+      },
+      "DeleteContactEndpointProductDeleteContactResponseModel": {
+        "properties": {
+          "id": {
+            "example": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+            "type": "string"
+          },
+          "sequenceAccountId": {
+            "example": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+            "type": "string"
+          },
+          "customerId": {
+            "example": "e309e948-088e-4d77-b654-cd85498f1555",
+            "type": "string"
+          },
+          "email": {
+            "example": "jane.smith@example.com",
+            "type": "string"
+          },
+          "firstName": {
+            "example": "Jane",
+            "type": "string"
+          },
+          "lastName": {
+            "example": "Smith",
+            "type": "string"
+          },
+          "contactType": {
+            "$ref": "#/components/schemas/ContactType"
+          },
+          "createdAt": {
+            "example": "2022-06-28T16:47:00Z",
+            "type": "string"
+          },
+          "deletedAt": {
+            "example": "2022-06-28T16:47:00Z",
+            "type": "string"
+          }
+        },
+        "example": {
+          "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+          "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+          "customerId": "e309e948-088e-4d77-b654-cd85498f1555",
+          "email": "jane.smith@example.com",
+          "firstName": "Jane",
+          "lastName": "Smith",
+          "contactType": "QUOTE_RECIPIENT",
+          "createdAt": "2022-06-28T16:47:00Z",
+          "deletedAt": "2022-06-28T16:47:00Z"
+        },
+        "type": "object",
+        "required": [
+          "contactType",
+          "createdAt",
+          "customerId",
+          "email",
+          "id",
+          "sequenceAccountId"
+        ]
       },
       "CreateProductEndpointProductCreateProductResponseModel": {
         "properties": {
@@ -23873,7 +22893,7 @@
             "type": "string"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency2"
+            "$ref": "#/components/schemas/Currency1"
           },
           "structure": {
             "oneOf": [
@@ -23922,7 +22942,7 @@
           },
           "externalIds": {
             "items": {
-              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier1"
             },
             "example": [
               {
@@ -23970,7 +22990,7 @@
           "structure"
         ]
       },
-      "Currency2": {
+      "Currency1": {
         "example": "GBP",
         "enum": [
           "GBP",
@@ -24051,7 +23071,7 @@
         ],
         "type": "string"
       },
-      "IntegrationExternalIdentifier": {
+      "IntegrationExternalIdentifier1": {
         "properties": {
           "key": {
             "$ref": "#/components/schemas/IntegrationService"
@@ -24071,23 +23091,6 @@
           "value"
         ]
       },
-      "IntegrationService": {
-        "example": "Xero",
-        "enum": [
-          "Amazon_Redshift",
-          "Google_BigQuery",
-          "Google_Sheets",
-          "HubSpot",
-          "NetSuite",
-          "QuickBooks_Online",
-          "Salesforce",
-          "Slack",
-          "Snowflake",
-          "Stripe",
-          "Xero"
-        ],
-        "type": "string"
-      },
       "CreatePriceEndpointCreatePriceRequestModel": {
         "properties": {
           "productId": {
@@ -24099,7 +23102,7 @@
             "type": "string"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency2"
+            "$ref": "#/components/schemas/Currency1"
           },
           "structure": {
             "oneOf": [
@@ -24140,7 +23143,7 @@
           },
           "externalIds": {
             "items": {
-              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier1"
             },
             "example": [
               {
@@ -24200,7 +23203,7 @@
             "type": "string"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency2"
+            "$ref": "#/components/schemas/Currency1"
           },
           "structure": {
             "oneOf": [
@@ -24249,7 +23252,7 @@
           },
           "externalIds": {
             "items": {
-              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier1"
             },
             "example": [
               {
@@ -24316,7 +23319,7 @@
             "type": "string"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency2"
+            "$ref": "#/components/schemas/Currency1"
           },
           "structure": {
             "oneOf": [
@@ -24365,7 +23368,7 @@
           },
           "externalIds": {
             "items": {
-              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier1"
             },
             "example": [
               {
@@ -24522,7 +23525,7 @@
             "type": "string"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency2"
+            "$ref": "#/components/schemas/Currency1"
           },
           "structure": {
             "oneOf": [
@@ -24629,7 +23632,7 @@
             "type": "string"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency2"
+            "$ref": "#/components/schemas/Currency1"
           },
           "structure": {
             "oneOf": [
@@ -24678,7 +23681,7 @@
           },
           "externalIds": {
             "items": {
-              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier1"
             },
             "example": [
               {
@@ -24753,7 +23756,7 @@
             "type": "integer"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency2"
+            "$ref": "#/components/schemas/Currency1"
           },
           "minimum": {
             "example": "100.00",
@@ -24975,7 +23978,7 @@
             "$ref": "#/components/schemas/PlanType"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency2"
+            "$ref": "#/components/schemas/Currency1"
           },
           "minimum": {
             "example": "100.00",
@@ -25034,7 +24037,7 @@
             "type": "string"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency2"
+            "$ref": "#/components/schemas/Currency1"
           },
           "minimum": {
             "example": "100.00",
@@ -26296,7 +25299,7 @@
             "$ref": "#/components/schemas/CreditUnitType"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency2"
+            "$ref": "#/components/schemas/Currency1"
           },
           "metricId": {
             "example": "f092246c-6b90-4106-bcca-304ccf06bf45",
@@ -26376,7 +25379,7 @@
             "$ref": "#/components/schemas/CreditUnitType"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency2"
+            "$ref": "#/components/schemas/Currency1"
           },
           "metricId": {
             "example": "f092246c-6b90-4106-bcca-304ccf06bf45",
@@ -26445,7 +25448,7 @@
             "$ref": "#/components/schemas/CreditUnitType"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency2"
+            "$ref": "#/components/schemas/Currency1"
           },
           "metricId": {
             "example": "f092246c-6b90-4106-bcca-304ccf06bf45",
@@ -26587,7 +25590,7 @@
             "$ref": "#/components/schemas/CreditUnitType"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency2"
+            "$ref": "#/components/schemas/Currency1"
           },
           "metricId": {
             "example": "f092246c-6b90-4106-bcca-304ccf06bf45",
@@ -26811,7 +25814,7 @@
             "$ref": "#/components/schemas/CreditUnitType"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency2"
+            "$ref": "#/components/schemas/Currency1"
           },
           "metricId": {
             "example": "f092246c-6b90-4106-bcca-304ccf06bf45",
@@ -27872,7 +26875,7 @@
           "type"
         ]
       },
-      "ListUsageMetricsForBillingScheduleEndpointResponseModel1": {
+      "ListUsageMetricsForBillingScheduleEndpointResponseModel": {
         "properties": {
           "items": {
             "items": {
@@ -27951,7 +26954,126 @@
           "priceId"
         ]
       },
-      "GetUsageDataForBillingScheduleEndpointRequestModel1": {
+      "AggregationType": {
+        "example": "COUNT",
+        "enum": [
+          "COUNT",
+          "UNIQUE",
+          "SUM"
+        ],
+        "type": "string"
+      },
+      "UsageDataResponse": {
+        "properties": {
+          "usageStart": {
+            "example": "2023-02-01",
+            "format": "date",
+            "type": "string"
+          },
+          "usageEnd": {
+            "example": "2023-04-30",
+            "format": "date",
+            "type": "string"
+          },
+          "metricName": {
+            "example": "API Calls",
+            "type": "string"
+          },
+          "metricId": {
+            "example": "27ba4761-7573-41c5-b780-2993b2c254f7",
+            "type": "string"
+          },
+          "total": {
+            "example": "35",
+            "type": "string"
+          },
+          "usageData": {
+            "items": {
+              "$ref": "#/components/schemas/UsageData"
+            },
+            "example": [
+              {
+                "periodStart": "2023-02-01",
+                "amount": "10",
+                "cumulativeAmount": "10"
+              },
+              {
+                "periodStart": "2023-03-01",
+                "amount": "15",
+                "cumulativeAmount": "25"
+              },
+              {
+                "periodStart": "2023-04-01",
+                "amount": "10",
+                "cumulativeAmount": "35"
+              }
+            ],
+            "type": "array"
+          }
+        },
+        "example": {
+          "usageStart": "2023-02-01",
+          "usageEnd": "2023-04-30",
+          "metricName": "API Calls",
+          "metricId": "27ba4761-7573-41c5-b780-2993b2c254f7",
+          "total": "35",
+          "usageData": [
+            {
+              "periodStart": "2023-02-01",
+              "amount": "10",
+              "cumulativeAmount": "10"
+            },
+            {
+              "periodStart": "2023-03-01",
+              "amount": "15",
+              "cumulativeAmount": "25"
+            },
+            {
+              "periodStart": "2023-04-01",
+              "amount": "10",
+              "cumulativeAmount": "35"
+            }
+          ]
+        },
+        "type": "object",
+        "required": [
+          "metricId",
+          "metricName",
+          "total",
+          "usageData",
+          "usageEnd",
+          "usageStart"
+        ]
+      },
+      "UsageData": {
+        "properties": {
+          "periodStart": {
+            "example": "2023-02-01",
+            "format": "date",
+            "type": "string"
+          },
+          "amount": {
+            "example": "10",
+            "type": "string"
+          },
+          "cumulativeAmount": {
+            "example": "10",
+            "type": "string"
+          }
+        },
+        "example": {
+          "periodStart": "2023-02-01",
+          "amount": "10",
+          "cumulativeAmount": "10"
+        },
+        "type": "object",
+        "required": [
+          "amount",
+          "cumulativeAmount",
+          "periodStart"
+        ]
+      },
+      "GetUsageDataForBillingScheduleEndpointRequestModel": {
         "properties": {
           "usagePeriodType": {
             "$ref": "#/components/schemas/UsagePeriodType"
@@ -28001,6 +27123,16 @@
           "priceId",
           "usagePeriodType"
         ]
+      },
+      "UsagePeriodType": {
+        "example": "CURRENT",
+        "enum": [
+          "CURRENT",
+          "LAST",
+          "LAST_THREE",
+          "ALL"
+        ],
+        "type": "string"
       },
       "GetBillingRunEndpointProductGetBillingRunResponseModel": {
         "properties": {
@@ -28299,7 +27431,7 @@
       "CurrentPeriodInvoicePreviewEndpointResponseModel": {
         "properties": {
           "currency": {
-            "$ref": "#/components/schemas/Currency2"
+            "$ref": "#/components/schemas/Currency1"
           },
           "purchaseOrderNumber": {
             "example": "PO123",
@@ -28469,7 +27601,7 @@
           },
           "externalIds": {
             "items": {
-              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier1"
             },
             "example": [
               {
@@ -28505,6 +27637,22 @@
           "taxRate",
           "title"
         ]
+      },
+      "RateDisplay": {
+        "example": "ABSOLUTE",
+        "enum": [
+          "ABSOLUTE",
+          "PERCENTAGE"
+        ],
+        "type": "string"
+      },
+      "InvoicePaymentOption": {
+        "example": "BANK_TRANSFER",
+        "enum": [
+          "BANK_TRANSFER",
+          "LINK"
+        ],
+        "type": "string"
       },
       "ONE_TIME": {
         "properties": {
@@ -28890,7 +28038,7 @@
             "$ref": "#/components/schemas/UsAchDestination"
           },
           "usWireDetails": {
-            "$ref": "#/components/schemas/UsWireDestination1"
+            "$ref": "#/components/schemas/UsWireDestination"
           },
           "legalCompanyName": {
             "example": "The Merchant",
@@ -29273,7 +28421,40 @@
           "sortCode"
         ]
       },
-      "UsWireDestination1": {
+      "UsAchDestination": {
+        "properties": {
+          "accountNumber": {
+            "example": "12345678",
+            "type": "string"
+          },
+          "accountName": {
+            "example": "John Doe",
+            "type": "string"
+          },
+          "bankName": {
+            "example": "Chase",
+            "type": "string"
+          },
+          "bankRoutingNumber": {
+            "example": "123456789",
+            "type": "string"
+          }
+        },
+        "example": {
+          "accountNumber": "12345678",
+          "accountName": "John Doe",
+          "bankName": "Chase",
+          "bankRoutingNumber": "123456789"
+        },
+        "type": "object",
+        "required": [
+          "accountName",
+          "accountNumber",
+          "bankName",
+          "bankRoutingNumber"
+        ]
+      },
+      "UsWireDestination": {
         "properties": {
           "accountNumber": {
             "example": "12345678",
@@ -29322,6 +28503,72 @@
           "bankRoutingNumber",
           "swiftCode"
         ]
+      },
+      "State": {
+        "example": "CA",
+        "enum": [
+          "AL",
+          "AK",
+          "AZ",
+          "AR",
+          "CA",
+          "CO",
+          "CT",
+          "DE",
+          "FL",
+          "GA",
+          "HI",
+          "ID",
+          "IL",
+          "IN",
+          "IA",
+          "KS",
+          "KY",
+          "LA",
+          "ME",
+          "MD",
+          "MA",
+          "MI",
+          "MN",
+          "MS",
+          "MO",
+          "MT",
+          "NE",
+          "NV",
+          "NH",
+          "NJ",
+          "NM",
+          "NY",
+          "NC",
+          "ND",
+          "OH",
+          "OK",
+          "OR",
+          "PA",
+          "RI",
+          "SC",
+          "SD",
+          "TN",
+          "TX",
+          "UT",
+          "VT",
+          "VA",
+          "WA",
+          "WV",
+          "WI",
+          "WY",
+          "AB",
+          "BC",
+          "MB",
+          "NB",
+          "NL",
+          "NS",
+          "ON",
+          "PE",
+          "QC",
+          "SK"
+        ],
+        "type": "string"
       },
       "Merchant": {
         "properties": {
@@ -29574,7 +28821,7 @@
       "MerchantKeyValuePair": {
         "properties": {
           "key": {
-            "$ref": "#/components/schemas/Currency3"
+            "$ref": "#/components/schemas/Currency2"
           },
           "value": {
             "$ref": "#/components/schemas/BankPaymentDestinations"
@@ -29649,7 +28896,7 @@
           "value"
         ]
       },
-      "Currency3": {
+      "Currency2": {
         "example": "GBP",
         "enum": [
           "GBP",
@@ -29681,13 +28928,13 @@
             "$ref": "#/components/schemas/UsAchDestination"
           },
           "usWireDestination": {
-            "$ref": "#/components/schemas/UsWireDestination1"
+            "$ref": "#/components/schemas/UsWireDestination"
           },
           "canadianBankAccount": {
             "$ref": "#/components/schemas/CanadianBankAccountDestination"
           },
           "canadianInternationalDestination": {
-            "$ref": "#/components/schemas/CanadianInternationalDestination1"
+            "$ref": "#/components/schemas/CanadianInternationalDestination"
           }
         },
         "example": {
@@ -29767,7 +29014,34 @@
         ],
         "type": "string"
       },
-      "CanadianInternationalDestination1": {
+      "CanadianBankAccountDestination": {
+        "properties": {
+          "transitNumber": {
+            "example": "123",
+            "type": "string"
+          },
+          "institutionNumber": {
+            "example": "12345",
+            "type": "string"
+          },
+          "accountNumber": {
+            "example": "1234567",
+            "type": "string"
+          }
+        },
+        "example": {
+          "transitNumber": "123",
+          "institutionNumber": "12345",
+          "accountNumber": "1234567"
+        },
+        "type": "object",
+        "required": [
+          "accountNumber",
+          "institutionNumber",
+          "transitNumber"
+        ]
+      },
+      "CanadianInternationalDestination": {
         "properties": {
           "legalName": {
             "example": "John Doe",
@@ -29836,6 +29110,44 @@
           "legalName",
           "swiftCode",
           "transitNumber"
+        ]
+      },
+      "IntermediaryBank": {
+        "properties": {
+          "bankName": {
+            "example": "Chase",
+            "type": "string"
+          },
+          "bankAddress": {
+            "$ref": "#/components/schemas/Address1"
+          },
+          "swiftCode": {
+            "example": "CHASUS33",
+            "type": "string"
+          },
+          "routingNumber": {
+            "example": "123456789",
+            "type": "string"
+          }
+        },
+        "example": {
+          "bankName": "Chase",
+          "bankAddress": {
+            "line1": "JP Morgan Chase",
+            "town": "New York City",
+            "state": "NY",
+            "postCode": "10017",
+            "country": "US"
+          },
+          "swiftCode": "CHASUS33",
+          "routingNumber": "123456789"
+        },
+        "type": "object",
+        "required": [
+          "bankAddress",
+          "bankName",
+          "routingNumber",
+          "swiftCode"
         ]
       },
       "UpdateMerchantEndpointProductUpdateMerchantResponseModel": {
@@ -30434,7 +29746,7 @@
         "properties": {
           "lineItems": {
             "items": {
-              "$ref": "#/components/schemas/LineItem1"
+              "$ref": "#/components/schemas/LineItem"
             },
             "example": [
               {
@@ -30506,7 +29818,7 @@
           "lineItems"
         ]
       },
-      "LineItem1": {
+      "LineItem": {
         "properties": {
           "id": {
             "example": "af60cab3-812d-4250-a051-0fb7133a00c7",
@@ -30572,7 +29884,7 @@
           },
           "externalIds": {
             "items": {
-              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier2"
             },
             "example": [
               {
@@ -30653,6 +29965,26 @@
           "startDate"
         ]
       },
+      "IntegrationExternalIdentifier2": {
+        "properties": {
+          "key": {
+            "$ref": "#/components/schemas/IntegrationService"
+          },
+          "value": {
+            "example": "123",
+            "type": "string"
+          }
+        },
+        "example": {
+          "key": "Xero",
+          "value": "123"
+        },
+        "type": "object",
+        "required": [
+          "key",
+          "value"
+        ]
+      },
       "RevenueClassification": {
         "example": "EARNED",
         "enum": [
@@ -30680,7 +30012,7 @@
             "$ref": "#/components/schemas/InvoiceStatus"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency3"
+            "$ref": "#/components/schemas/Currency2"
           },
           "invoiceNumber": {
             "example": "INV00001",
@@ -31000,6 +30332,37 @@
         ],
         "type": "string"
       },
+      "KeyValuePair": {
+        "properties": {
+          "key": {
+            "example": "example-label",
+            "type": "string"
+          },
+          "value": {
+            "example": "label-value",
+            "type": "string"
+          }
+        },
+        "example": {
+          "key": "example-label",
+          "value": "label-value"
+        },
+        "type": "object",
+        "required": [
+          "key",
+          "value"
+        ]
+      },
+      "InvoicePaymentStatus": {
+        "example": "UNPAID",
+        "enum": [
+          "UNPAID",
+          "PARTIALLY_PAID",
+          "PAID",
+          "UNCOLLECTIBLE"
+        ],
+        "type": "string"
+      },
       "LinkInfo": {
         "properties": {
           "externalId": {
@@ -31043,7 +30406,7 @@
             "type": "string"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency3"
+            "$ref": "#/components/schemas/Currency2"
           },
           "dueDate": {
             "example": "2022-09-30",
@@ -31250,7 +30613,7 @@
           },
           "externalIds": {
             "items": {
-              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier2"
             },
             "example": [
               {
@@ -31360,7 +30723,7 @@
           },
           "externalIds": {
             "items": {
-              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier2"
             },
             "example": [
               {
@@ -31557,7 +30920,7 @@
           },
           "externalIds": {
             "items": {
-              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier2"
             },
             "example": [
               {
@@ -31699,7 +31062,7 @@
           "invoiceIds"
         ]
       },
-      "Invoice1": {
+      "Invoice": {
         "properties": {
           "id": {
             "example": "ba37a392-7054-4dae-ab37-6fee9e23fe06",
@@ -31713,7 +31076,7 @@
             "$ref": "#/components/schemas/InvoiceStatus"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency3"
+            "$ref": "#/components/schemas/Currency2"
           },
           "invoiceNumber": {
             "example": "INV2",
@@ -32017,7 +31380,7 @@
             "$ref": "#/components/schemas/InvoiceStatus"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency3"
+            "$ref": "#/components/schemas/Currency2"
           },
           "invoiceNumber": {
             "example": "INV00001",
@@ -32330,7 +31693,7 @@
         "properties": {
           "items": {
             "items": {
-              "$ref": "#/components/schemas/LineItemGroup1"
+              "$ref": "#/components/schemas/LineItemGroup"
             },
             "example": [
               {
@@ -32366,7 +31729,7 @@
           "items"
         ]
       },
-      "LineItemGroup1": {
+      "LineItemGroup": {
         "properties": {
           "id": {
             "example": "941272d1-f840-4e16-b698-0cd455c81e0e",
@@ -32558,7 +31921,7 @@
         "properties": {
           "items": {
             "items": {
-              "$ref": "#/components/schemas/LineItem1"
+              "$ref": "#/components/schemas/LineItem"
             },
             "example": [
               {
@@ -32965,7 +32328,7 @@
             "$ref": "#/components/schemas/InvoiceStatus"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency3"
+            "$ref": "#/components/schemas/Currency2"
           },
           "invoiceNumber": {
             "example": "INV00001",
@@ -33278,7 +32641,7 @@
         "properties": {
           "items": {
             "items": {
-              "$ref": "#/components/schemas/Invoice1"
+              "$ref": "#/components/schemas/Invoice"
             },
             "example": [
               {
@@ -33763,7 +33126,7 @@
           },
           "externalIds": {
             "items": {
-              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier2"
             },
             "example": [
               {
@@ -33889,7 +33252,7 @@
             "$ref": "#/components/schemas/InvoiceStatus"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency3"
+            "$ref": "#/components/schemas/Currency2"
           },
           "invoiceNumber": {
             "example": "INV00001",
@@ -34342,7 +33705,7 @@
             "$ref": "#/components/schemas/InvoiceStatus"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency3"
+            "$ref": "#/components/schemas/Currency2"
           },
           "invoiceNumber": {
             "example": "INV00001",
@@ -34861,7 +34224,7 @@
           },
           "externalIds": {
             "items": {
-              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier2"
             },
             "example": [
               {
@@ -34967,7 +34330,7 @@
           },
           "externalIds": {
             "items": {
-              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier2"
             },
             "example": [
               {
@@ -35132,6 +34495,40 @@
         "required": [
           "invoiceIds"
         ]
+      },
+      "OptionalUsageDataResponse": {
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/UsageDataResponse"
+          }
+        },
+        "example": {
+          "data": {
+            "usageStart": "2023-02-01",
+            "usageEnd": "2023-04-30",
+            "metricName": "API Calls",
+            "metricId": "27ba4761-7573-41c5-b780-2993b2c254f7",
+            "total": "35",
+            "usageData": [
+              {
+                "periodStart": "2023-02-01",
+                "amount": "10",
+                "cumulativeAmount": "10"
+              },
+              {
+                "periodStart": "2023-03-01",
+                "amount": "15",
+                "cumulativeAmount": "25"
+              },
+              {
+                "periodStart": "2023-04-01",
+                "amount": "10",
+                "cumulativeAmount": "35"
+              }
+            ]
+          }
+        },
+        "type": "object"
       },
       "InvoicesGrid": {
         "properties": {
@@ -35415,7 +34812,7 @@
             "$ref": "#/components/schemas/InvoiceStatus"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency3"
+            "$ref": "#/components/schemas/Currency2"
           },
           "invoiceNumber": {
             "example": "INV00001",
@@ -36042,7 +35439,7 @@
             "type": "string"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency3"
+            "$ref": "#/components/schemas/Currency2"
           },
           "issueDate": {
             "example": "2022-09-15",
@@ -36306,7 +35703,7 @@
             "type": "string"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency3"
+            "$ref": "#/components/schemas/Currency2"
           },
           "billingPeriodStart": {
             "example": "2022-10-01T00:00:00Z",
@@ -36470,7 +35867,7 @@
           },
           "externalIds": {
             "items": {
-              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier2"
             },
             "example": [
               {
@@ -36559,7 +35956,7 @@
           },
           "externalIds": {
             "items": {
-              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier2"
             },
             "example": [
               {
@@ -36709,7 +36106,7 @@
             "type": "string"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency3"
+            "$ref": "#/components/schemas/Currency2"
           },
           "issueDate": {
             "example": "2022-09-15",
@@ -37019,7 +36416,7 @@
           },
           "externalIds": {
             "items": {
-              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier2"
             },
             "example": [
               {
@@ -37174,7 +36571,7 @@
             "type": "string"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency3"
+            "$ref": "#/components/schemas/Currency2"
           },
           "issueDate": {
             "example": "2022-11-05",
@@ -37432,7 +36829,7 @@
             "type": "string"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency3"
+            "$ref": "#/components/schemas/Currency2"
           },
           "issueDate": {
             "example": "2022-09-15",
@@ -38157,7 +37554,7 @@
             "type": "string"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency3"
+            "$ref": "#/components/schemas/Currency2"
           },
           "issueDate": {
             "example": "2022-09-15",
@@ -38833,7 +38230,7 @@
           },
           "externalIds": {
             "items": {
-              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier2"
             },
             "example": [
               {
@@ -38931,7 +38328,7 @@
             "type": "string"
           },
           "currency": {
-            "$ref": "#/components/schemas/Currency3"
+            "$ref": "#/components/schemas/Currency2"
           },
           "issueDate": {
             "example": "2022-09-15",
@@ -39331,7 +38728,7 @@
           },
           "externalIds": {
             "items": {
-              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier2"
             },
             "example": [
               {
@@ -39408,7 +38805,7 @@
           },
           "externalIds": {
             "items": {
-              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier2"
             },
             "example": [
               {
@@ -40557,7 +39954,7 @@
       "CreateUsageEventForInstantChargeEndpointCreateUsageEventForInstantChargeResponseModel": {
         "properties": {
           "usageEvent": {
-            "$ref": "#/components/schemas/UsageEvent1"
+            "$ref": "#/components/schemas/UsageEvent"
           },
           "instantCharges": {
             "items": {},
@@ -40586,7 +39983,7 @@
           "usageEvent"
         ]
       },
-      "UsageEvent1": {
+      "UsageEvent": {
         "properties": {
           "id": {
             "example": "0184421a-8202-70ea-a729-30308a40bbf7",
@@ -40893,7 +40290,7 @@
         "properties": {
           "items": {
             "items": {
-              "$ref": "#/components/schemas/UsageEvent1"
+              "$ref": "#/components/schemas/UsageEvent"
             },
             "example": [
               {
