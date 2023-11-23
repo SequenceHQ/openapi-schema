@@ -3249,6 +3249,15 @@
             "schema": {
               "type": "string"
             },
+            "in": "query",
+            "name": "name",
+            "required": false,
+            "description": "Filter by name"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
             "in": "header",
             "name": "Authorization",
             "required": true,
@@ -3278,7 +3287,7 @@
                   }
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/ListProductEndpointProductListProductPaginatedResponseModel"
+                  "$ref": "#/components/schemas/ListProductEndpointResponseModel"
                 }
               }
             }
@@ -23656,7 +23665,7 @@
           "name"
         ]
       },
-      "ListProductEndpointProductListProductPaginatedResponseModel": {
+      "ListProductEndpointResponseModel": {
         "properties": {
           "items": {
             "items": {
