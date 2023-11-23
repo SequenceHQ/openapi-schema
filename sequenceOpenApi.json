@@ -15449,8 +15449,8 @@
                 "example": {
                   "id": "8252c275-80ce-4845-abe7-027f5b2daa8c",
                   "sequenceAccountId": "af9b5988-1d7b-45f6-a188-326df5e59b24",
-                  "invoiceNumberPrefix": "INV",
-                  "creditNoteNumberPrefix": "CN",
+                  "invoiceNumberPrefix": "SEQ",
+                  "creditNoteNumberPrefix": "SCN",
                   "legalCompanyName": "The Merchant",
                   "address": {
                     "line1": "The White House",
@@ -15593,8 +15593,8 @@
           "content": {
             "application/json": {
               "example": {
-                "invoiceNumberPrefix": "INV",
-                "creditNoteNumberPrefix": "CN",
+                "invoiceNumberPrefix": "SEQ",
+                "creditNoteNumberPrefix": "SCN",
                 "legalCompanyName": "The company",
                 "address": {
                   "line1": "15 The Shire",
@@ -15691,8 +15691,8 @@
                 "example": {
                   "id": "466e6610-dc7f-4d0c-a304-089ea473e1e3",
                   "sequenceAccountId": "683fe518-60c8-429f-9320-8aa7efc20bcc",
-                  "invoiceNumberPrefix": "INV",
-                  "creditNoteNumberPrefix": "CN",
+                  "invoiceNumberPrefix": "SEQ",
+                  "creditNoteNumberPrefix": "SCN",
                   "legalCompanyName": "The company",
                   "address": {
                     "line1": "15 The Shire",
@@ -29325,11 +29325,11 @@
             "type": "string"
           },
           "invoiceNumberPrefix": {
-            "example": "INV",
+            "example": "SEQ",
             "type": "string"
           },
           "creditNoteNumberPrefix": {
-            "example": "CN",
+            "example": "SCN",
             "type": "string"
           },
           "legalCompanyName": {
@@ -29453,8 +29453,8 @@
         "example": {
           "id": "8252c275-80ce-4845-abe7-027f5b2daa8c",
           "sequenceAccountId": "af9b5988-1d7b-45f6-a188-326df5e59b24",
-          "invoiceNumberPrefix": "INV",
-          "creditNoteNumberPrefix": "CN",
+          "invoiceNumberPrefix": "SEQ",
+          "creditNoteNumberPrefix": "SCN",
           "legalCompanyName": "The Merchant",
           "address": {
             "line1": "The White House",
@@ -29840,11 +29840,11 @@
             "type": "string"
           },
           "invoiceNumberPrefix": {
-            "example": "INV",
+            "example": "SEQ",
             "type": "string"
           },
           "creditNoteNumberPrefix": {
-            "example": "CN",
+            "example": "SCN",
             "type": "string"
           },
           "legalCompanyName": {
@@ -29965,8 +29965,8 @@
         "example": {
           "id": "466e6610-dc7f-4d0c-a304-089ea473e1e3",
           "sequenceAccountId": "683fe518-60c8-429f-9320-8aa7efc20bcc",
-          "invoiceNumberPrefix": "INV",
-          "creditNoteNumberPrefix": "CN",
+          "invoiceNumberPrefix": "SEQ",
+          "creditNoteNumberPrefix": "SCN",
           "legalCompanyName": "The company",
           "address": {
             "line1": "15 The Shire",
@@ -30072,11 +30072,11 @@
       "UpdateMerchantEndpointUpdateMerchantRequestModel": {
         "properties": {
           "invoiceNumberPrefix": {
-            "example": "INV",
+            "example": "SEQ",
             "type": "string"
           },
           "creditNoteNumberPrefix": {
-            "example": "CN",
+            "example": "SCN",
             "type": "string"
           },
           "legalCompanyName": {
@@ -30183,8 +30183,8 @@
           }
         },
         "example": {
-          "invoiceNumberPrefix": "INV",
-          "creditNoteNumberPrefix": "CN",
+          "invoiceNumberPrefix": "SEQ",
+          "creditNoteNumberPrefix": "SCN",
           "legalCompanyName": "The company",
           "address": {
             "line1": "15 The Shire",
