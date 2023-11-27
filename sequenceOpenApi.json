@@ -23055,8 +23055,6 @@
         "example": "QUARTERLY",
         "enum": [
           "ONE_TIME",
-          "DAILY",
-          "WEEKLY",
           "MONTHLY",
           "QUARTERLY",
           "YEARLY"
