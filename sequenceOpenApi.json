@@ -3788,6 +3788,66 @@
         "deprecated": false
       }
     },
+    "/billing-runs/{billingRunId}/process": {
+      "post": {
+        "summary": "Process a billing run",
+        "description": "Process a billing run",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "billingRunId",
+            "required": true,
+            "description": "Billing Run ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "example": {
+                  "id": "cbe82021-90bb-47cc-a665-eda41ec4ee5b",
+                  "createdAt": "2022-10-23T12:00:00Z",
+                  "status": "SCHEDULED",
+                  "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                  "scheduledRunTime": "2022-11-23T12:00:00Z",
+                  "intendedDraftingDate": "2022-11-23",
+                  "billingStartDate": "2022-10-23",
+                  "billingEndDate": "2022-11-22"
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/BillingRun"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "",
+            "content": {}
+          },
+          "500": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "postApiBilling_runs_billingRunId_Process",
+        "deprecated": false
+      }
+    },
     "/billing-runs/{id}": {
       "get": {
         "summary": "Get a Billing Run by ID",
@@ -27651,6 +27711,64 @@
           "LINK"
         ],
         "type": "string"
+      },
+      "BillingRun": {
+        "properties": {
+          "id": {
+            "example": "cbe82021-90bb-47cc-a665-eda41ec4ee5b",
+            "type": "string"
+          },
+          "createdAt": {
+            "example": "2022-10-23T12:00:00Z",
+            "type": "string"
+          },
+          "status": {
+            "$ref": "#/components/schemas/BillingRunStatus"
+          },
+          "billingScheduleId": {
+            "example": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+            "type": "string"
+          },
+          "scheduledRunTime": {
+            "example": "2022-11-23T12:00:00Z",
+            "type": "string"
+          },
+          "intendedDraftingDate": {
+            "example": "2022-11-23",
+            "format": "date",
+            "type": "string"
+          },
+          "billingStartDate": {
+            "example": "2022-10-23",
+            "format": "date",
+            "type": "string"
+          },
+          "billingEndDate": {
+            "example": "2022-11-22",
+            "format": "date",
+            "type": "string"
+          }
+        },
+        "example": {
+          "id": "cbe82021-90bb-47cc-a665-eda41ec4ee5b",
+          "createdAt": "2022-10-23T12:00:00Z",
+          "status": "SCHEDULED",
+          "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+          "scheduledRunTime": "2022-11-23T12:00:00Z",
+          "intendedDraftingDate": "2022-11-23",
+          "billingStartDate": "2022-10-23",
+          "billingEndDate": "2022-11-22"
+        },
+        "type": "object",
+        "required": [
+          "billingEndDate",
+          "billingScheduleId",
+          "billingStartDate",
+          "createdAt",
+          "id",
+          "scheduledRunTime",
+          "status"
+        ]
       },
       "ONE_TIME": {
         "properties": {
