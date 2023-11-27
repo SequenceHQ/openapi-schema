@@ -16785,8 +16785,8 @@
     },
     "/usage-events": {
       "get": {
-        "summary": "List all UsageEvents",
-        "description": "List all UsageEvents",
+        "summary": "List all Usage Events",
+        "description": "List all Usage Events",
         "tags": [],
         "parameters": [
           {
