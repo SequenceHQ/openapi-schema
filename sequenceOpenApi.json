@@ -4688,6 +4688,326 @@
         "deprecated": false
       }
     },
+    "/billing/execution/accounts/all": {
+      "post": {
+        "summary": "Execute all billing schedules for all accounts",
+        "description": "Execute all billing schedules for all accounts",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "",
+            "content": {}
+          },
+          "403": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "postApiBillingExecutionAccountsAll",
+        "deprecated": false
+      }
+    },
+    "/billing/execution/accounts/all/date/{date}": {
+      "post": {
+        "summary": "Execute all billing schedules for all accounts for a given date",
+        "description": "Execute all billing schedules for all accounts for a given date",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "date",
+            "required": true,
+            "description": "Date"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "",
+            "content": {}
+          },
+          "403": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "postApiBillingExecutionAccountsAllDate_date",
+        "deprecated": false
+      }
+    },
+    "/billing/execution/accounts/self": {
+      "post": {
+        "summary": "Execute all billing schedules for the current account",
+        "description": "Execute all billing schedules for the current account",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "",
+            "content": {}
+          },
+          "403": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "postApiBillingExecutionAccountsSelf",
+        "deprecated": false
+      }
+    },
+    "/billing/execution/accounts/self/date/{date}": {
+      "post": {
+        "summary": "Execute all billing schedules for the current account for a given date",
+        "description": "Execute all billing schedules for the current account for a given date",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "date",
+            "required": true,
+            "description": "Date"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "",
+            "content": {}
+          },
+          "403": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "postApiBillingExecutionAccountsSelfDate_date",
+        "deprecated": false
+      }
+    },
+    "/billing/execution/accounts/{accountId}": {
+      "post": {
+        "summary": "Execute all billing schedules for an account",
+        "description": "Execute all billing schedules for an account",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "accountId",
+            "required": true,
+            "description": "Account ID"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "",
+            "content": {}
+          },
+          "403": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "postApiBillingExecutionAccounts_accountId",
+        "deprecated": false
+      }
+    },
+    "/billing/execution/accounts/{accountId}/date/{date}": {
+      "post": {
+        "summary": "Execute all billing schedules for an account for a specific date",
+        "description": "Execute all billing schedules for an account for a specific date",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "accountId",
+            "required": true,
+            "description": "Account ID"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "date",
+            "required": true,
+            "description": "Date"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "",
+            "content": {}
+          },
+          "403": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "postApiBillingExecutionAccounts_accountId_Date_date",
+        "deprecated": false
+      }
+    },
+    "/billing/execution/billing-schedules/{billingScheduleId}": {
+      "post": {
+        "summary": "Execute a single billing schedule with today's date",
+        "description": "Execute a single billing schedule with today's date",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "billingScheduleId",
+            "required": true,
+            "description": "Billing Schedule ID"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "",
+            "content": {}
+          },
+          "403": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "postApiBillingExecutionBilling_schedules_billingScheduleId",
+        "deprecated": false
+      }
+    },
+    "/billing/execution/billing-schedules/{billingScheduleId}/date/{date}": {
+      "post": {
+        "summary": "Execute a single billing schedule at a given date",
+        "description": "Execute a single billing schedule ate a given date",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "billingScheduleId",
+            "required": true,
+            "description": "Billing Schedule ID"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "date",
+            "required": true,
+            "description": "Date"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "",
+            "content": {}
+          },
+          "403": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "postApiBillingExecutionBilling_schedules_billingScheduleId_Date_date",
+        "deprecated": false
+      }
+    },
     "/credits": {
       "get": {
         "summary": "List all Credit Grants",
