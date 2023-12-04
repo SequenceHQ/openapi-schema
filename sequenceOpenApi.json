@@ -4032,6 +4032,9 @@
                   },
                   {
                     "$ref": "#/components/schemas/CreateBillingScheduleRequestWithPrices"
+                  },
+                  {
+                    "$ref": "#/components/schemas/CreateBillingScheduleRequestWithPhases"
                   }
                 ]
               }
@@ -26648,6 +26651,187 @@
           "autoIssueInvoices",
           "createAsDraft",
           "customerId",
+          "endDate",
+          "priceIds",
+          "startDate"
+        ]
+      },
+      "CreateBillingScheduleRequestWithPhases": {
+        "properties": {
+          "customerId": {
+            "example": "cca32597-b6b0-4499-9669-128aef8702e4",
+            "type": "string"
+          },
+          "startDate": {
+            "example": "2022-01-01",
+            "format": "date",
+            "type": "string"
+          },
+          "endDate": {
+            "example": "2022-12-01",
+            "format": "date",
+            "type": "string"
+          },
+          "recurrenceDayOfMonth": {
+            "example": 1,
+            "format": "int32",
+            "type": "integer"
+          },
+          "taxRates": {
+            "items": {
+              "$ref": "#/components/schemas/ProductTaxRateRepresentation"
+            },
+            "example": [
+              {
+                "priceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                "taxRateId": "50c0d53b-8460-41e6-b4e9-a4e157fc1a64"
+              }
+            ],
+            "type": "array"
+          },
+          "autoIssueInvoices": {
+            "example": false,
+            "type": "boolean"
+          },
+          "purchaseOrderNumber": {
+            "example": "PO123",
+            "type": "string"
+          },
+          "discounts": {
+            "items": {
+              "$ref": "#/components/schemas/CreateDiscountInlineRequestModel"
+            },
+            "example": [
+              {
+                "priceIds": [
+                  "e007e884-5100-4183-8355-4771865cb4d7"
+                ],
+                "separateLineItem": false,
+                "amount": 25,
+                "discountCalculationType": "PERCENTAGE",
+                "message": "Loyalty Discount",
+                "validFrom": "2023-01-01",
+                "validTo": "2023-01-31"
+              }
+            ],
+            "type": "array"
+          },
+          "collectionPaymentProvider": {
+            "$ref": "#/components/schemas/PaymentProvider"
+          },
+          "createAsDraft": {
+            "example": false,
+            "type": "boolean"
+          },
+          "phases": {
+            "items": {
+              "$ref": "#/components/schemas/CreateBillingScheduleRequestPhase"
+            },
+            "example": [
+              {
+                "priceIds": [
+                  "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                ],
+                "startDate": "2022-01-01",
+                "endDate": "2022-06-30"
+              },
+              {
+                "priceIds": [
+                  "9fe9986b-e205-42b7-a58f-42845c91f03f"
+                ],
+                "startDate": "2022-07-01",
+                "endDate": "2022-12-31"
+              }
+            ],
+            "type": "array"
+          }
+        },
+        "example": {
+          "customerId": "cca32597-b6b0-4499-9669-128aef8702e4",
+          "startDate": "2022-01-01",
+          "endDate": "2022-12-01",
+          "recurrenceDayOfMonth": 1,
+          "taxRates": [
+            {
+              "priceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+              "taxRateId": "50c0d53b-8460-41e6-b4e9-a4e157fc1a64"
+            }
+          ],
+          "autoIssueInvoices": false,
+          "purchaseOrderNumber": "PO123",
+          "discounts": [
+            {
+              "priceIds": [
+                "e007e884-5100-4183-8355-4771865cb4d7"
+              ],
+              "separateLineItem": false,
+              "amount": 25,
+              "discountCalculationType": "PERCENTAGE",
+              "message": "Loyalty Discount",
+              "validFrom": "2023-01-01",
+              "validTo": "2023-01-31"
+            }
+          ],
+          "collectionPaymentProvider": "STRIPE",
+          "createAsDraft": false,
+          "phases": [
+            {
+              "priceIds": [
+                "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+              ],
+              "startDate": "2022-01-01",
+              "endDate": "2022-06-30"
+            },
+            {
+              "priceIds": [
+                "9fe9986b-e205-42b7-a58f-42845c91f03f"
+              ],
+              "startDate": "2022-07-01",
+              "endDate": "2022-12-31"
+            }
+          ]
+        },
+        "type": "object",
+        "required": [
+          "autoIssueInvoices",
+          "createAsDraft",
+          "customerId",
+          "endDate",
+          "phases",
+          "startDate"
+        ]
+      },
+      "CreateBillingScheduleRequestPhase": {
+        "properties": {
+          "priceIds": {
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+            ],
+            "type": "array"
+          },
+          "startDate": {
+            "example": "2022-01-01",
+            "format": "date",
+            "type": "string"
+          },
+          "endDate": {
+            "example": "2022-06-30",
+            "format": "date",
+            "type": "string"
+          }
+        },
+        "example": {
+          "priceIds": [
+            "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+          ],
+          "startDate": "2022-01-01",
+          "endDate": "2022-06-30"
+        },
+        "type": "object",
+        "required": [
           "endDate",
           "priceIds",
           "startDate"
