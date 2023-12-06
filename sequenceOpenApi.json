@@ -26389,6 +26389,9 @@
       },
       "CreateBillingScheduleRequestWithPlan": {
         "properties": {
+          "type": {
+            "$ref": "#/components/schemas/BillingScheduleRequestType"
+          },
           "planId": {
             "example": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
             "type": "string"
@@ -26460,6 +26463,7 @@
           }
         },
         "example": {
+          "type": "PLAN",
           "planId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
           "customerId": "cca32597-b6b0-4499-9669-128aef8702e4",
           "startDate": "2022-01-01",
@@ -26496,8 +26500,18 @@
           "customerId",
           "endDate",
           "planId",
-          "startDate"
+          "startDate",
+          "type"
         ]
+      },
+      "BillingScheduleRequestType": {
+        "example": "PHASES",
+        "enum": [
+          "PLAN",
+          "CUSTOM",
+          "PHASES"
+        ],
+        "type": "string"
       },
       "CreateDiscountInlineRequestModel": {
         "properties": {
@@ -26566,6 +26580,9 @@
       },
       "CreateBillingScheduleRequestWithPrices": {
         "properties": {
+          "type": {
+            "$ref": "#/components/schemas/BillingScheduleRequestType"
+          },
           "customerId": {
             "example": "cca32597-b6b0-4499-9669-128aef8702e4",
             "type": "string"
@@ -26642,6 +26659,7 @@
           }
         },
         "example": {
+          "type": "CUSTOM",
           "customerId": "cca32597-b6b0-4499-9669-128aef8702e4",
           "startDate": "2022-01-01",
           "endDate": "2022-12-01",
@@ -26680,11 +26698,15 @@
           "customerId",
           "endDate",
           "priceIds",
-          "startDate"
+          "startDate",
+          "type"
         ]
       },
       "CreateBillingScheduleRequestWithPhases": {
         "properties": {
+          "type": {
+            "$ref": "#/components/schemas/BillingScheduleRequestType"
+          },
           "customerId": {
             "example": "cca32597-b6b0-4499-9669-128aef8702e4",
             "type": "string"
@@ -26774,6 +26796,7 @@
           }
         },
         "example": {
+          "type": "PHASES",
           "customerId": "cca32597-b6b0-4499-9669-128aef8702e4",
           "startDate": "2022-01-01",
           "endDate": "2022-12-01",
@@ -26825,7 +26848,8 @@
           "customerId",
           "endDate",
           "phases",
-          "startDate"
+          "startDate",
+          "type"
         ]
       },
       "CreateBillingScheduleRequestPhase": {
