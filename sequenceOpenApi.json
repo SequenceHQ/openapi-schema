@@ -3973,6 +3973,7 @@
                       "firstBillingDate": "2022-02-02",
                       "autoIssueInvoices": false,
                       "purchaseOrderNumber": "PO123",
+                      "reference": "ref",
                       "recurrenceDayOfMonth": 1,
                       "planId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
                       "type": "PLAN",
@@ -4237,6 +4238,7 @@
                     "firstBillingDate": "2022-02-02",
                     "autoIssueInvoices": false,
                     "purchaseOrderNumber": "PO123",
+                    "reference": "ref",
                     "recurrenceDayOfMonth": 1,
                     "planId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
                     "type": "PLAN"
@@ -4260,6 +4262,7 @@
                       "firstBillingDate": "2022-02-02",
                       "autoIssueInvoices": false,
                       "purchaseOrderNumber": "PO123",
+                      "reference": "ref",
                       "recurrenceDayOfMonth": 1,
                       "priceIds": [
                         "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
@@ -4278,6 +4281,7 @@
                   "firstBillingDate": "2022-02-02",
                   "autoIssueInvoices": false,
                   "purchaseOrderNumber": "PO123",
+                  "reference": "ref",
                   "recurrenceDayOfMonth": 1,
                   "priceIds": [],
                   "prices": [],
@@ -11099,6 +11103,7 @@
                       "invoiceNumber": "INV2",
                       "dueDate": "2022-11-05",
                       "purchaseOrderNumber": "PO123",
+                      "reference": "ref",
                       "customerEmails": [
                         "customer@example.com"
                       ],
@@ -11242,6 +11247,7 @@
                 "currency": "GBP",
                 "dueDate": "2022-09-30",
                 "purchaseOrderNumber": "PO123",
+                "reference": "ref",
                 "customerEmails": [
                   "customer.user.a@example.com",
                   "customer.user.b@example.com"
@@ -11302,6 +11308,7 @@
                   "issueDate": "2022-09-15",
                   "dueDate": "2022-09-30",
                   "purchaseOrderNumber": "PO123",
+                  "reference": "ref",
                   "customerEmails": [
                     "customer.user.a@example.com",
                     "customer.user.b@example.com"
@@ -11702,6 +11709,7 @@
                       "issueDate": "2022-09-15",
                       "dueDate": "2022-09-30",
                       "purchaseOrderNumber": "PO123",
+                      "reference": "ref",
                       "customerEmails": [
                         "customer.user.a@example.com",
                         "customer.user.b@example.com"
@@ -12377,6 +12385,7 @@
                   "issueDate": "2022-09-15",
                   "dueDate": "2022-09-30",
                   "purchaseOrderNumber": "PO123",
+                  "reference": "ref",
                   "customerEmails": [
                     "customer.user.a@example.com",
                     "customer.user.b@example.com"
@@ -12573,6 +12582,7 @@
                   "issueDate": "2022-09-15",
                   "dueDate": "2022-09-30",
                   "purchaseOrderNumber": "PO123",
+                  "reference": "ref",
                   "customerEmails": [
                     "customer.user.a@example.com",
                     "customer.user.b@example.com"
@@ -12760,6 +12770,7 @@
               "example": {
                 "dueDate": "2022-09-30",
                 "purchaseOrderNumber": "PO123",
+                "reference": "ref",
                 "customerEmails": [
                   "customer.user.a@example.com",
                   "customer.user.b@example.com"
@@ -12819,6 +12830,7 @@
                   "issueDate": "2022-09-15",
                   "dueDate": "2022-09-30",
                   "purchaseOrderNumber": "PO123",
+                  "reference": "ref",
                   "customerEmails": [
                     "customer.user.a@example.com",
                     "customer.user.b@example.com"
@@ -13006,6 +13018,7 @@
               "example": {
                 "dueDate": "2022-09-30",
                 "purchaseOrderNumber": "PO123",
+                "reference": "ref",
                 "customerEmails": [
                   "customer.user.a@example.com",
                   "customer.user.b@example.com"
@@ -13065,6 +13078,7 @@
                   "issueDate": "2022-09-15",
                   "dueDate": "2022-09-30",
                   "purchaseOrderNumber": "PO123",
+                  "reference": "ref",
                   "customerEmails": [
                     "customer.user.a@example.com",
                     "customer.user.b@example.com"
@@ -13318,6 +13332,7 @@
                   "invoiceNumber": "INV2",
                   "dueDate": "2022-11-05",
                   "purchaseOrderNumber": "PO123",
+                  "reference": "ref",
                   "customerEmails": [
                     "customer@example.com"
                   ],
@@ -13479,6 +13494,7 @@
                   "invoiceNumber": "INV2",
                   "dueDate": "2022-11-05",
                   "purchaseOrderNumber": "PO123",
+                  "reference": "ref",
                   "customerEmails": [
                     "customer@example.com"
                   ],
@@ -13798,6 +13814,7 @@
                   "invoiceNumber": "INV2",
                   "dueDate": "2022-11-05",
                   "purchaseOrderNumber": "PO123",
+                  "reference": "ref",
                   "customerEmails": [
                     "customer@example.com"
                   ],
@@ -13950,6 +13967,7 @@
                   "invoiceNumber": "INV2",
                   "dueDate": "2022-11-05",
                   "purchaseOrderNumber": "PO123",
+                  "reference": "ref",
                   "customerEmails": [
                     "customer@example.com"
                   ],
@@ -14102,6 +14120,7 @@
                   "invoiceNumber": "INV2",
                   "dueDate": "2022-11-05",
                   "purchaseOrderNumber": "PO123",
+                  "reference": "ref",
                   "customerEmails": [
                     "customer@example.com"
                   ],
@@ -14254,6 +14273,7 @@
                   "invoiceNumber": "INV2",
                   "dueDate": "2022-11-05",
                   "purchaseOrderNumber": "PO123",
+                  "reference": "ref",
                   "customerEmails": [
                     "customer@example.com"
                   ],
@@ -14415,6 +14435,7 @@
                   "invoiceNumber": "INV2",
                   "dueDate": "2022-11-05",
                   "purchaseOrderNumber": "PO123",
+                  "reference": "ref",
                   "customerEmails": [
                     "customer@example.com"
                   ],
@@ -14650,6 +14671,7 @@
                   "invoiceNumber": "INV2",
                   "dueDate": "2022-11-05",
                   "purchaseOrderNumber": "PO123",
+                  "reference": "ref",
                   "customerEmails": [
                     "customer@example.com"
                   ],
@@ -26248,6 +26270,10 @@
             "example": "PO123",
             "type": "string"
           },
+          "reference": {
+            "example": "ref",
+            "type": "string"
+          },
           "recurrenceDayOfMonth": {
             "example": 1,
             "format": "int32",
@@ -26299,6 +26325,7 @@
           "firstBillingDate": "2022-02-02",
           "autoIssueInvoices": false,
           "purchaseOrderNumber": "PO123",
+          "reference": "ref",
           "recurrenceDayOfMonth": 1,
           "priceIds": [],
           "prices": [],
@@ -27082,6 +27109,10 @@
             "example": "PO123",
             "type": "string"
           },
+          "reference": {
+            "example": "ref",
+            "type": "string"
+          },
           "recurrenceDayOfMonth": {
             "example": 1,
             "format": "int32",
@@ -27113,6 +27144,7 @@
           "firstBillingDate": "2022-02-02",
           "autoIssueInvoices": false,
           "purchaseOrderNumber": "PO123",
+          "reference": "ref",
           "recurrenceDayOfMonth": 1,
           "planId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
           "type": "PLAN"
@@ -27173,6 +27205,7 @@
                 "firstBillingDate": "2022-02-02",
                 "autoIssueInvoices": false,
                 "purchaseOrderNumber": "PO123",
+                "reference": "ref",
                 "recurrenceDayOfMonth": 1,
                 "planId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
                 "type": "PLAN",
@@ -27206,6 +27239,7 @@
               "firstBillingDate": "2022-02-02",
               "autoIssueInvoices": false,
               "purchaseOrderNumber": "PO123",
+              "reference": "ref",
               "recurrenceDayOfMonth": 1,
               "planId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
               "type": "PLAN",
@@ -30534,6 +30568,10 @@
             "example": "PO123",
             "type": "string"
           },
+          "reference": {
+            "example": "ref",
+            "type": "string"
+          },
           "customerEmails": {
             "items": {
               "type": "string"
@@ -30668,6 +30706,7 @@
           "issueDate": "2022-09-15",
           "dueDate": "2022-09-30",
           "purchaseOrderNumber": "PO123",
+          "reference": "ref",
           "customerEmails": [
             "customer.user.a@example.com",
             "customer.user.b@example.com"
@@ -30919,6 +30958,10 @@
             "example": "PO123",
             "type": "string"
           },
+          "reference": {
+            "example": "ref",
+            "type": "string"
+          },
           "customerEmails": {
             "items": {
               "type": "string"
@@ -31001,6 +31044,7 @@
           "currency": "GBP",
           "dueDate": "2022-09-30",
           "purchaseOrderNumber": "PO123",
+          "reference": "ref",
           "customerEmails": [
             "customer.user.a@example.com",
             "customer.user.b@example.com"
@@ -31593,6 +31637,10 @@
             "example": "PO123",
             "type": "string"
           },
+          "reference": {
+            "example": "ref",
+            "type": "string"
+          },
           "customerEmails": {
             "items": {
               "type": "string"
@@ -31709,6 +31757,7 @@
           "invoiceNumber": "INV2",
           "dueDate": "2022-11-05",
           "purchaseOrderNumber": "PO123",
+          "reference": "ref",
           "customerEmails": [
             "customer@example.com"
           ],
@@ -31902,6 +31951,10 @@
             "example": "PO123",
             "type": "string"
           },
+          "reference": {
+            "example": "ref",
+            "type": "string"
+          },
           "customerEmails": {
             "items": {
               "type": "string"
@@ -32036,6 +32089,7 @@
           "issueDate": "2022-09-15",
           "dueDate": "2022-09-30",
           "purchaseOrderNumber": "PO123",
+          "reference": "ref",
           "customerEmails": [
             "customer.user.a@example.com",
             "customer.user.b@example.com"
@@ -32512,6 +32566,7 @@
                 "issueDate": "2022-09-15",
                 "dueDate": "2022-09-30",
                 "purchaseOrderNumber": "PO123",
+                "reference": "ref",
                 "customerEmails": [
                   "customer.user.a@example.com",
                   "customer.user.b@example.com"
@@ -32665,6 +32720,7 @@
               "issueDate": "2022-09-15",
               "dueDate": "2022-09-30",
               "purchaseOrderNumber": "PO123",
+              "reference": "ref",
               "customerEmails": [
                 "customer.user.a@example.com",
                 "customer.user.b@example.com"
@@ -32850,6 +32906,10 @@
             "example": "PO123",
             "type": "string"
           },
+          "reference": {
+            "example": "ref",
+            "type": "string"
+          },
           "customerEmails": {
             "items": {
               "type": "string"
@@ -32984,6 +33044,7 @@
           "issueDate": "2022-09-15",
           "dueDate": "2022-09-30",
           "purchaseOrderNumber": "PO123",
+          "reference": "ref",
           "customerEmails": [
             "customer.user.a@example.com",
             "customer.user.b@example.com"
@@ -33154,6 +33215,7 @@
                 "invoiceNumber": "INV2",
                 "dueDate": "2022-11-05",
                 "purchaseOrderNumber": "PO123",
+                "reference": "ref",
                 "customerEmails": [
                   "customer@example.com"
                 ],
@@ -33261,6 +33323,7 @@
               "invoiceNumber": "INV2",
               "dueDate": "2022-11-05",
               "purchaseOrderNumber": "PO123",
+              "reference": "ref",
               "customerEmails": [
                 "customer@example.com"
               ],
@@ -33774,6 +33837,10 @@
             "example": "PO123",
             "type": "string"
           },
+          "reference": {
+            "example": "ref",
+            "type": "string"
+          },
           "customerEmails": {
             "items": {
               "type": "string"
@@ -33908,6 +33975,7 @@
           "issueDate": "2022-09-15",
           "dueDate": "2022-09-30",
           "purchaseOrderNumber": "PO123",
+          "reference": "ref",
           "customerEmails": [
             "customer.user.a@example.com",
             "customer.user.b@example.com"
@@ -34074,6 +34142,10 @@
             "example": "PO123",
             "type": "string"
           },
+          "reference": {
+            "example": "ref",
+            "type": "string"
+          },
           "customerEmails": {
             "items": {
               "type": "string"
@@ -34150,6 +34222,7 @@
         "example": {
           "dueDate": "2022-09-30",
           "purchaseOrderNumber": "PO123",
+          "reference": "ref",
           "customerEmails": [
             "customer.user.a@example.com",
             "customer.user.b@example.com"
@@ -34225,6 +34298,10 @@
           },
           "purchaseOrderNumber": {
             "example": "PO123",
+            "type": "string"
+          },
+          "reference": {
+            "example": "ref",
             "type": "string"
           },
           "customerEmails": {
@@ -34361,6 +34438,7 @@
           "issueDate": "2022-09-15",
           "dueDate": "2022-09-30",
           "purchaseOrderNumber": "PO123",
+          "reference": "ref",
           "customerEmails": [
             "customer.user.a@example.com",
             "customer.user.b@example.com"
@@ -34527,6 +34605,10 @@
             "example": "PO123",
             "type": "string"
           },
+          "reference": {
+            "example": "ref",
+            "type": "string"
+          },
           "customerEmails": {
             "items": {
               "type": "string"
@@ -34603,6 +34685,7 @@
         "example": {
           "dueDate": "2022-09-30",
           "purchaseOrderNumber": "PO123",
+          "reference": "ref",
           "customerEmails": [
             "customer.user.a@example.com",
             "customer.user.b@example.com"
@@ -35334,6 +35417,10 @@
             "example": "PO123",
             "type": "string"
           },
+          "reference": {
+            "example": "ref",
+            "type": "string"
+          },
           "customerEmails": {
             "items": {
               "type": "string"
@@ -35468,6 +35555,7 @@
           "issueDate": "2022-09-15",
           "dueDate": "2022-09-30",
           "purchaseOrderNumber": "PO123",
+          "reference": "ref",
           "customerEmails": [
             "customer.user.a@example.com",
             "customer.user.b@example.com"
