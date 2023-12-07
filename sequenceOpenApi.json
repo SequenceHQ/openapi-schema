@@ -21512,10 +21512,12 @@
         "properties": {
           "after": {
             "example": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
+            "description": "Cursor for the page after this (if it exists)",
             "type": "string"
           },
           "before": {
             "example": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
+            "description": "Cursor for the page before this (if it exists)",
             "type": "string"
           },
           "totalResultSize": {
