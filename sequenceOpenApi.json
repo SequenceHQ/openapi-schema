@@ -11199,6 +11199,10 @@
                       ],
                       "billingPeriodStart": "2022-10-01",
                       "billingPeriodEnd": "2022-10-30",
+                      "billingPeriod": {
+                        "start": "2022-10-01",
+                        "endInclusive": "2022-10-30"
+                      },
                       "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
                       "totalTax": "2",
                       "netTotal": "12",
@@ -11347,6 +11351,10 @@
                 ],
                 "billingPeriodStart": "2022-10-01",
                 "billingPeriodEnd": "2022-10-30",
+                "billingPeriod": {
+                  "start": "2022-10-01",
+                  "endInclusive": "2022-10-30"
+                },
                 "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
                 "metadata": [
                   {
@@ -11410,6 +11418,10 @@
                   ],
                   "billingPeriodStart": "2022-10-01",
                   "billingPeriodEnd": "2022-10-30",
+                  "billingPeriod": {
+                    "start": "2022-10-01",
+                    "endInclusive": "2022-10-30"
+                  },
                   "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
                   "totalTax": "2.50",
                   "netTotal": "51.20",
@@ -12249,6 +12261,10 @@
                   ],
                   "billingPeriodStart": "2022-10-01",
                   "billingPeriodEnd": "2022-10-30",
+                  "billingPeriod": {
+                    "start": "2022-10-01",
+                    "endInclusive": "2022-10-30"
+                  },
                   "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
                   "totalTax": "2.50",
                   "netTotal": "51.20",
@@ -12452,6 +12468,10 @@
                   ],
                   "billingPeriodStart": "2022-10-01",
                   "billingPeriodEnd": "2022-10-30",
+                  "billingPeriod": {
+                    "start": "2022-10-01",
+                    "endInclusive": "2022-10-30"
+                  },
                   "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
                   "totalTax": "2.50",
                   "netTotal": "51.20",
@@ -12646,6 +12666,10 @@
                 ],
                 "billingPeriodStart": "2022-10-01",
                 "billingPeriodEnd": "2022-10-30",
+                "billingPeriod": {
+                  "start": "2022-10-01",
+                  "endInclusive": "2022-10-30"
+                },
                 "metadata": [
                   {
                     "key": "example-label",
@@ -12708,6 +12732,10 @@
                   ],
                   "billingPeriodStart": "2022-10-01",
                   "billingPeriodEnd": "2022-10-30",
+                  "billingPeriod": {
+                    "start": "2022-10-01",
+                    "endInclusive": "2022-10-30"
+                  },
                   "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
                   "totalTax": "2.50",
                   "netTotal": "51.20",
@@ -12902,6 +12930,10 @@
                 ],
                 "billingPeriodStart": "2022-10-01",
                 "billingPeriodEnd": "2022-10-30",
+                "billingPeriod": {
+                  "start": "2022-10-01",
+                  "endInclusive": "2022-10-30"
+                },
                 "metadata": [
                   {
                     "key": "example-label",
@@ -12964,6 +12996,10 @@
                   ],
                   "billingPeriodStart": "2022-10-01",
                   "billingPeriodEnd": "2022-10-30",
+                  "billingPeriod": {
+                    "start": "2022-10-01",
+                    "endInclusive": "2022-10-30"
+                  },
                   "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
                   "totalTax": "2.50",
                   "netTotal": "51.20",
@@ -13224,6 +13260,10 @@
                   ],
                   "billingPeriodStart": "2022-10-01",
                   "billingPeriodEnd": "2022-10-30",
+                  "billingPeriod": {
+                    "start": "2022-10-01",
+                    "endInclusive": "2022-10-30"
+                  },
                   "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
                   "totalTax": "2",
                   "netTotal": "12",
@@ -13390,6 +13430,10 @@
                   ],
                   "billingPeriodStart": "2022-10-01",
                   "billingPeriodEnd": "2022-10-30",
+                  "billingPeriod": {
+                    "start": "2022-10-01",
+                    "endInclusive": "2022-10-30"
+                  },
                   "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
                   "totalTax": "2",
                   "netTotal": "12",
@@ -13714,6 +13758,10 @@
                   ],
                   "billingPeriodStart": "2022-10-01",
                   "billingPeriodEnd": "2022-10-30",
+                  "billingPeriod": {
+                    "start": "2022-10-01",
+                    "endInclusive": "2022-10-30"
+                  },
                   "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
                   "totalTax": "2",
                   "netTotal": "12",
@@ -13871,6 +13919,10 @@
                   ],
                   "billingPeriodStart": "2022-10-01",
                   "billingPeriodEnd": "2022-10-30",
+                  "billingPeriod": {
+                    "start": "2022-10-01",
+                    "endInclusive": "2022-10-30"
+                  },
                   "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
                   "totalTax": "2",
                   "netTotal": "12",
@@ -14028,6 +14080,10 @@
                   ],
                   "billingPeriodStart": "2022-10-01",
                   "billingPeriodEnd": "2022-10-30",
+                  "billingPeriod": {
+                    "start": "2022-10-01",
+                    "endInclusive": "2022-10-30"
+                  },
                   "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
                   "totalTax": "2",
                   "netTotal": "12",
@@ -14185,6 +14241,10 @@
                   ],
                   "billingPeriodStart": "2022-10-01",
                   "billingPeriodEnd": "2022-10-30",
+                  "billingPeriod": {
+                    "start": "2022-10-01",
+                    "endInclusive": "2022-10-30"
+                  },
                   "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
                   "totalTax": "2",
                   "netTotal": "12",
@@ -14351,6 +14411,10 @@
                   ],
                   "billingPeriodStart": "2022-10-01",
                   "billingPeriodEnd": "2022-10-30",
+                  "billingPeriod": {
+                    "start": "2022-10-01",
+                    "endInclusive": "2022-10-30"
+                  },
                   "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
                   "totalTax": "2",
                   "netTotal": "12",
@@ -14591,6 +14655,10 @@
                   ],
                   "billingPeriodStart": "2022-10-01",
                   "billingPeriodEnd": "2022-10-30",
+                  "billingPeriod": {
+                    "start": "2022-10-01",
+                    "endInclusive": "2022-10-30"
+                  },
                   "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
                   "totalTax": "2",
                   "netTotal": "12",
@@ -31412,6 +31480,10 @@
             "format": "date",
             "type": "string"
           },
+          "billingPeriod": {
+            "$ref": "#/components/schemas/InclusiveDateRange",
+            "description": "Billing period"
+          },
           "customerId": {
             "example": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
             "description": "The ID of the Customer this invoice is linked to",
@@ -31547,6 +31619,10 @@
           ],
           "billingPeriodStart": "2022-10-01",
           "billingPeriodEnd": "2022-10-30",
+          "billingPeriod": {
+            "start": "2022-10-01",
+            "endInclusive": "2022-10-30"
+          },
           "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
           "totalTax": "2.50",
           "netTotal": "51.20",
@@ -31691,6 +31767,31 @@
           "VOIDED"
         ],
         "type": "string"
+      },
+      "InclusiveDateRange": {
+        "properties": {
+          "start": {
+            "example": "2022-10-01",
+            "description": "Start date, included in the whole range",
+            "format": "date",
+            "type": "string"
+          },
+          "endInclusive": {
+            "example": "2022-10-30",
+            "description": "End date, included in the whole range",
+            "format": "date",
+            "type": "string"
+          }
+        },
+        "example": {
+          "start": "2022-10-01",
+          "endInclusive": "2022-10-30"
+        },
+        "type": "object",
+        "required": [
+          "endInclusive",
+          "start"
+        ]
       },
       "KeyValuePair": {
         "properties": {
@@ -31840,6 +31941,10 @@
             "format": "date",
             "type": "string"
           },
+          "billingPeriod": {
+            "$ref": "#/components/schemas/InclusiveDateRange",
+            "description": "Billing period"
+          },
           "customerId": {
             "example": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
             "description": "The ID of the Customer this invoice is linked to",
@@ -31914,6 +32019,10 @@
           ],
           "billingPeriodStart": "2022-10-01",
           "billingPeriodEnd": "2022-10-30",
+          "billingPeriod": {
+            "start": "2022-10-01",
+            "endInclusive": "2022-10-30"
+          },
           "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
           "metadata": [
             {
@@ -32615,6 +32724,10 @@
             "format": "date",
             "type": "string"
           },
+          "billingPeriod": {
+            "$ref": "#/components/schemas/InclusiveDateRange",
+            "description": "Billing period"
+          },
           "customerId": {
             "example": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
             "description": "The ID of the Customer this invoice is linked to",
@@ -32729,6 +32842,10 @@
           ],
           "billingPeriodStart": "2022-10-01",
           "billingPeriodEnd": "2022-10-30",
+          "billingPeriod": {
+            "start": "2022-10-01",
+            "endInclusive": "2022-10-30"
+          },
           "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
           "totalTax": "2",
           "netTotal": "12",
@@ -32966,6 +33083,10 @@
             "format": "date",
             "type": "string"
           },
+          "billingPeriod": {
+            "$ref": "#/components/schemas/InclusiveDateRange",
+            "description": "Billing period"
+          },
           "customerId": {
             "example": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
             "description": "The ID of the Customer this invoice is linked to",
@@ -33101,6 +33222,10 @@
           ],
           "billingPeriodStart": "2022-10-01",
           "billingPeriodEnd": "2022-10-30",
+          "billingPeriod": {
+            "start": "2022-10-01",
+            "endInclusive": "2022-10-30"
+          },
           "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
           "totalTax": "2.50",
           "netTotal": "51.20",
@@ -33599,6 +33724,10 @@
                 ],
                 "billingPeriodStart": "2022-10-01",
                 "billingPeriodEnd": "2022-10-30",
+                "billingPeriod": {
+                  "start": "2022-10-01",
+                  "endInclusive": "2022-10-30"
+                },
                 "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
                 "totalTax": "2",
                 "netTotal": "12",
@@ -33713,6 +33842,10 @@
               ],
               "billingPeriodStart": "2022-10-01",
               "billingPeriodEnd": "2022-10-30",
+              "billingPeriod": {
+                "start": "2022-10-01",
+                "endInclusive": "2022-10-30"
+              },
               "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
               "totalTax": "2",
               "netTotal": "12",
@@ -34301,6 +34434,10 @@
             "format": "date",
             "type": "string"
           },
+          "billingPeriod": {
+            "$ref": "#/components/schemas/InclusiveDateRange",
+            "description": "Billing period"
+          },
           "customerId": {
             "example": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
             "description": "The ID of the Customer this invoice is linked to",
@@ -34436,6 +34573,10 @@
           ],
           "billingPeriodStart": "2022-10-01",
           "billingPeriodEnd": "2022-10-30",
+          "billingPeriod": {
+            "start": "2022-10-01",
+            "endInclusive": "2022-10-30"
+          },
           "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
           "totalTax": "2.50",
           "netTotal": "51.20",
@@ -34639,6 +34780,10 @@
             "format": "date",
             "type": "string"
           },
+          "billingPeriod": {
+            "$ref": "#/components/schemas/InclusiveDateRange",
+            "description": "Billing period"
+          },
           "metadata": {
             "items": {
               "$ref": "#/components/schemas/KeyValuePair"
@@ -34706,6 +34851,10 @@
           ],
           "billingPeriodStart": "2022-10-01",
           "billingPeriodEnd": "2022-10-30",
+          "billingPeriod": {
+            "start": "2022-10-01",
+            "endInclusive": "2022-10-30"
+          },
           "metadata": [
             {
               "key": "example-label",
@@ -34821,6 +34970,10 @@
             "description": "Billing period end",
             "format": "date",
             "type": "string"
+          },
+          "billingPeriod": {
+            "$ref": "#/components/schemas/InclusiveDateRange",
+            "description": "Billing period"
           },
           "customerId": {
             "example": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
@@ -34957,6 +35110,10 @@
           ],
           "billingPeriodStart": "2022-10-01",
           "billingPeriodEnd": "2022-10-30",
+          "billingPeriod": {
+            "start": "2022-10-01",
+            "endInclusive": "2022-10-30"
+          },
           "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
           "totalTax": "2.50",
           "netTotal": "51.20",
@@ -35160,6 +35317,10 @@
             "format": "date",
             "type": "string"
           },
+          "billingPeriod": {
+            "$ref": "#/components/schemas/InclusiveDateRange",
+            "description": "Billing period"
+          },
           "metadata": {
             "items": {
               "$ref": "#/components/schemas/KeyValuePair"
@@ -35227,6 +35388,10 @@
           ],
           "billingPeriodStart": "2022-10-01",
           "billingPeriodEnd": "2022-10-30",
+          "billingPeriod": {
+            "start": "2022-10-01",
+            "endInclusive": "2022-10-30"
+          },
           "metadata": [
             {
               "key": "example-label",
@@ -36053,6 +36218,10 @@
             "format": "date",
             "type": "string"
           },
+          "billingPeriod": {
+            "$ref": "#/components/schemas/InclusiveDateRange",
+            "description": "Billing period"
+          },
           "customerId": {
             "example": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
             "description": "The ID of the Customer this invoice is linked to",
@@ -36188,6 +36357,10 @@
           ],
           "billingPeriodStart": "2022-10-01",
           "billingPeriodEnd": "2022-10-30",
+          "billingPeriod": {
+            "start": "2022-10-01",
+            "endInclusive": "2022-10-30"
+          },
           "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
           "totalTax": "2.50",
           "netTotal": "51.20",
