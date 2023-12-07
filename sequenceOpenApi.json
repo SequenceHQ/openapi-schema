@@ -10986,7 +10986,7 @@
             "in": "query",
             "name": "sortBy",
             "required": false,
-            "description": "Sort column. Default: creation time."
+            "description": "Sort column. Default: creation time. Options: CUSTOMER_LEGAL_COMPANY_NAME, GROSS_TOTAL, ACCOUNTING_DATE"
           },
           {
             "schema": {
@@ -10995,7 +10995,7 @@
             "in": "query",
             "name": "invoiceStatus",
             "required": false,
-            "description": "Filter by invoice status."
+            "description": "Filter by invoice status. Options: IN_PROGRESS, DRAFT, FINAL, SENT, VOIDED"
           },
           {
             "schema": {
@@ -11004,7 +11004,7 @@
             "in": "query",
             "name": "invoicePaymentStatus",
             "required": false,
-            "description": "Filter by payment status."
+            "description": "Filter by payment status. Options: UNPAID, PARTIALLY_PAID, PAID, UNCOLLECTIBLE"
           },
           {
             "schema": {
@@ -11022,7 +11022,7 @@
             "in": "query",
             "name": "dueBefore",
             "required": false,
-            "description": "Filter by due date before."
+            "description": "Filter by due date before. Format: yyyy-MM-dd"
           },
           {
             "schema": {
@@ -11031,7 +11031,7 @@
             "in": "query",
             "name": "dueAfter",
             "required": false,
-            "description": "Filter by due date after."
+            "description": "Filter by due date after. Format: yyyy-MM-dd"
           },
           {
             "schema": {
@@ -11040,7 +11040,7 @@
             "in": "query",
             "name": "sentBefore",
             "required": false,
-            "description": "Filter by sent date before."
+            "description": "Filter by sent date before. Format: yyyy-MM-dd"
           },
           {
             "schema": {
@@ -11049,7 +11049,7 @@
             "in": "query",
             "name": "sentAfter",
             "required": false,
-            "description": "Filter by sent date after."
+            "description": "Filter by sent date after. Format: yyyy-MM-dd"
           },
           {
             "schema": {
@@ -11058,7 +11058,7 @@
             "in": "query",
             "name": "invoiceBefore",
             "required": false,
-            "description": "Filter by invoice date before."
+            "description": "Filter by invoice date before. Format: yyyy-MM-dd"
           },
           {
             "schema": {
@@ -11067,7 +11067,7 @@
             "in": "query",
             "name": "invoiceAfter",
             "required": false,
-            "description": "Filter by invoice date after."
+            "description": "Filter by invoice date after. Format: yyyy-MM-dd"
           },
           {
             "schema": {
@@ -31696,6 +31696,7 @@
         "type": "object",
         "required": [
           "accountingDate",
+          "createdAt",
           "creditNoteIds",
           "currency",
           "customerBillingAddress",
@@ -32825,6 +32826,7 @@
         "type": "object",
         "required": [
           "accountingDate",
+          "createdAt",
           "creditNoteIds",
           "currency",
           "customerBillingAddress",
@@ -33236,6 +33238,7 @@
         "type": "object",
         "required": [
           "accountingDate",
+          "createdAt",
           "creditNoteIds",
           "currency",
           "customerBillingAddress",
@@ -34242,6 +34245,7 @@
         "type": "object",
         "required": [
           "accountingDate",
+          "createdAt",
           "creditNoteIds",
           "currency",
           "customerBillingAddress",
@@ -35242,6 +35246,7 @@
         "type": "object",
         "required": [
           "accountingDate",
+          "createdAt",
           "creditNoteIds",
           "currency",
           "customerBillingAddress",
@@ -35754,6 +35759,7 @@
         "type": "object",
         "required": [
           "accountingDate",
+          "createdAt",
           "creditNoteIds",
           "currency",
           "customerBillingAddress",
@@ -36976,6 +36982,7 @@
         "type": "object",
         "required": [
           "accountingDate",
+          "createdAt",
           "creditNoteIds",
           "currency",
           "customerBillingAddress",
