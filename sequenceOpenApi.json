@@ -21968,7 +21968,7 @@
         "required": [
           "country",
           "line1",
-          "postCode",
+          "postcode",
           "town"
         ]
       },
@@ -29232,7 +29232,7 @@
         "required": [
           "country",
           "line1",
-          "postCode",
+          "postcode",
           "town"
         ]
       },
