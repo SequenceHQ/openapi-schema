@@ -4037,9 +4037,6 @@
               "schema": {
                 "oneOf": [
                   {
-                    "$ref": "#/components/schemas/CreateBillingScheduleRequestWithPlan"
-                  },
-                  {
                     "$ref": "#/components/schemas/CreateBillingScheduleRequestWithPrices"
                   },
                   {
@@ -4345,15 +4342,26 @@
         "requestBody": {
           "content": {
             "application/json": {
-              "schema": {
-                "oneOf": [
+              "example": {
+                "type": "CUSTOM",
+                "startDate": "2022-01-01",
+                "endDate": "2022-12-01",
+                "recurrenceDayOfMonth": 1,
+                "taxRates": [
                   {
-                    "$ref": "#/components/schemas/UpdateBillingScheduleRequestWithPlan"
-                  },
-                  {
-                    "$ref": "#/components/schemas/UpdateBillingScheduleRequestWithPrices"
+                    "priceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "taxRateId": "50c0d53b-8460-41e6-b4e9-a4e157fc1a64"
                   }
+                ],
+                "autoIssueInvoices": true,
+                "purchaseOrderNumber": "PO123",
+                "effectiveFrom": "2023-01-01",
+                "priceIds": [
+                  "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
                 ]
+              },
+              "schema": {
+                "$ref": "#/components/schemas/UpdateBillingScheduleRequestWithPrices"
               }
             }
           },
@@ -26950,205 +26958,6 @@
         ],
         "type": "string"
       },
-      "CreateBillingScheduleRequestWithPlan": {
-        "properties": {
-          "type": {
-            "$ref": "#/components/schemas/BillingScheduleRequestType",
-            "description": "Billing schedule type"
-          },
-          "planId": {
-            "example": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-            "type": "string"
-          },
-          "customerId": {
-            "example": "cca32597-b6b0-4499-9669-128aef8702e4",
-            "type": "string"
-          },
-          "startDate": {
-            "example": "2022-01-01",
-            "format": "date",
-            "type": "string"
-          },
-          "endDate": {
-            "example": "2022-12-01",
-            "format": "date",
-            "type": "string"
-          },
-          "recurrenceDayOfMonth": {
-            "example": 1,
-            "format": "int32",
-            "type": "integer"
-          },
-          "taxRates": {
-            "items": {
-              "$ref": "#/components/schemas/ProductTaxRateRepresentation"
-            },
-            "example": [
-              {
-                "priceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                "taxRateId": "50c0d53b-8460-41e6-b4e9-a4e157fc1a64"
-              }
-            ],
-            "type": "array"
-          },
-          "autoIssueInvoices": {
-            "example": false,
-            "type": "boolean"
-          },
-          "purchaseOrderNumber": {
-            "example": "PO123",
-            "type": "string"
-          },
-          "discounts": {
-            "items": {
-              "$ref": "#/components/schemas/CreateDiscountInlineRequestModel"
-            },
-            "example": [
-              {
-                "priceIds": [
-                  "e007e884-5100-4183-8355-4771865cb4d7"
-                ],
-                "separateLineItem": false,
-                "amount": 25,
-                "discountCalculationType": "PERCENTAGE",
-                "message": "Loyalty Discount",
-                "validFrom": "2023-01-01",
-                "validTo": "2023-01-31"
-              }
-            ],
-            "type": "array"
-          },
-          "collectionPaymentProvider": {
-            "$ref": "#/components/schemas/PaymentProvider"
-          },
-          "createAsDraft": {
-            "example": false,
-            "type": "boolean"
-          }
-        },
-        "example": {
-          "type": "PLAN",
-          "planId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-          "customerId": "cca32597-b6b0-4499-9669-128aef8702e4",
-          "startDate": "2022-01-01",
-          "endDate": "2022-12-01",
-          "recurrenceDayOfMonth": 1,
-          "taxRates": [
-            {
-              "priceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-              "taxRateId": "50c0d53b-8460-41e6-b4e9-a4e157fc1a64"
-            }
-          ],
-          "autoIssueInvoices": false,
-          "purchaseOrderNumber": "PO123",
-          "discounts": [
-            {
-              "priceIds": [
-                "e007e884-5100-4183-8355-4771865cb4d7"
-              ],
-              "separateLineItem": false,
-              "amount": 25,
-              "discountCalculationType": "PERCENTAGE",
-              "message": "Loyalty Discount",
-              "validFrom": "2023-01-01",
-              "validTo": "2023-01-31"
-            }
-          ],
-          "collectionPaymentProvider": "STRIPE",
-          "createAsDraft": false
-        },
-        "type": "object",
-        "required": [
-          "autoIssueInvoices",
-          "createAsDraft",
-          "customerId",
-          "endDate",
-          "planId",
-          "startDate",
-          "type"
-        ]
-      },
-      "BillingScheduleRequestType": {
-        "example": "PHASES",
-        "enum": [
-          "PLAN",
-          "CUSTOM",
-          "PHASES"
-        ],
-        "type": "string"
-      },
-      "CreateDiscountInlineRequestModel": {
-        "properties": {
-          "priceIds": {
-            "items": {
-              "type": "string"
-            },
-            "example": [
-              "e007e884-5100-4183-8355-4771865cb4d7"
-            ],
-            "description": "Price IDs this discount applies to. If not populated, the discount applies to all prices on the billing schedule",
-            "type": "array"
-          },
-          "separateLineItem": {
-            "example": false,
-            "description": "Indicates whether the discount should appear as a separate line item in the invoice",
-            "type": "boolean"
-          },
-          "amount": {
-            "example": 25,
-            "description": "Amount to be reduced",
-            "type": "number"
-          },
-          "discountCalculationType": {
-            "$ref": "#/components/schemas/DiscountCalculationType",
-            "description": "Indicates whether the discount amount is percentage or nominal"
-          },
-          "message": {
-            "example": "Loyalty Discount",
-            "description": "Message to appear on the Invoice",
-            "type": "string"
-          },
-          "validFrom": {
-            "example": "2023-01-01",
-            "description": "First Day Discount is Valid",
-            "format": "date",
-            "type": "string"
-          },
-          "validTo": {
-            "example": "2023-01-31",
-            "description": "Last Day Discount is Valid",
-            "format": "date",
-            "type": "string"
-          }
-        },
-        "example": {
-          "priceIds": [
-            "e007e884-5100-4183-8355-4771865cb4d7"
-          ],
-          "separateLineItem": false,
-          "amount": 25,
-          "discountCalculationType": "PERCENTAGE",
-          "message": "Loyalty Discount",
-          "validFrom": "2023-01-01",
-          "validTo": "2023-01-31"
-        },
-        "type": "object",
-        "required": [
-          "amount",
-          "discountCalculationType",
-          "message",
-          "priceIds",
-          "separateLineItem"
-        ]
-      },
-      "PaymentProvider": {
-        "example": "STRIPE",
-        "enum": [
-          "STRIPE",
-          "UNRECOGNIZED"
-        ],
-        "type": "string"
-      },
       "CreateBillingScheduleRequestWithPrices": {
         "properties": {
           "type": {
@@ -27273,6 +27082,87 @@
           "startDate",
           "type"
         ]
+      },
+      "BillingScheduleRequestType": {
+        "example": "PHASES",
+        "enum": [
+          "PLAN",
+          "CUSTOM",
+          "PHASES"
+        ],
+        "type": "string"
+      },
+      "CreateDiscountInlineRequestModel": {
+        "properties": {
+          "priceIds": {
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "e007e884-5100-4183-8355-4771865cb4d7"
+            ],
+            "description": "Price IDs this discount applies to. If not populated, the discount applies to all prices on the billing schedule",
+            "type": "array"
+          },
+          "separateLineItem": {
+            "example": false,
+            "description": "Indicates whether the discount should appear as a separate line item in the invoice",
+            "type": "boolean"
+          },
+          "amount": {
+            "example": 25,
+            "description": "Amount to be reduced",
+            "type": "number"
+          },
+          "discountCalculationType": {
+            "$ref": "#/components/schemas/DiscountCalculationType",
+            "description": "Indicates whether the discount amount is percentage or nominal"
+          },
+          "message": {
+            "example": "Loyalty Discount",
+            "description": "Message to appear on the Invoice",
+            "type": "string"
+          },
+          "validFrom": {
+            "example": "2023-01-01",
+            "description": "First Day Discount is Valid",
+            "format": "date",
+            "type": "string"
+          },
+          "validTo": {
+            "example": "2023-01-31",
+            "description": "Last Day Discount is Valid",
+            "format": "date",
+            "type": "string"
+          }
+        },
+        "example": {
+          "priceIds": [
+            "e007e884-5100-4183-8355-4771865cb4d7"
+          ],
+          "separateLineItem": false,
+          "amount": 25,
+          "discountCalculationType": "PERCENTAGE",
+          "message": "Loyalty Discount",
+          "validFrom": "2023-01-01",
+          "validTo": "2023-01-31"
+        },
+        "type": "object",
+        "required": [
+          "amount",
+          "discountCalculationType",
+          "message",
+          "priceIds",
+          "separateLineItem"
+        ]
+      },
+      "PaymentProvider": {
+        "example": "STRIPE",
+        "enum": [
+          "STRIPE",
+          "UNRECOGNIZED"
+        ],
+        "type": "string"
       },
       "CreateBillingScheduleRequestWithPhases": {
         "properties": {
@@ -27878,76 +27768,6 @@
         "required": [
           "items",
           "pagination"
-        ]
-      },
-      "UpdateBillingScheduleRequestWithPlan": {
-        "properties": {
-          "type": {
-            "$ref": "#/components/schemas/BillingScheduleType",
-            "description": "Billing schedule type"
-          },
-          "startDate": {
-            "example": "2022-01-01",
-            "format": "date",
-            "type": "string"
-          },
-          "endDate": {
-            "example": "2022-12-01",
-            "format": "date",
-            "type": "string"
-          },
-          "recurrenceDayOfMonth": {
-            "example": 1,
-            "format": "int32",
-            "type": "integer"
-          },
-          "taxRates": {
-            "items": {
-              "$ref": "#/components/schemas/ProductTaxRateRepresentation"
-            },
-            "example": [
-              {
-                "priceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                "taxRateId": "50c0d53b-8460-41e6-b4e9-a4e157fc1a64"
-              }
-            ],
-            "type": "array"
-          },
-          "autoIssueInvoices": {
-            "example": true,
-            "type": "boolean"
-          },
-          "purchaseOrderNumber": {
-            "example": "PO123",
-            "type": "string"
-          },
-          "effectiveFrom": {
-            "example": "2023-01-01",
-            "format": "date",
-            "type": "string"
-          }
-        },
-        "example": {
-          "type": "PLAN",
-          "startDate": "2022-01-01",
-          "endDate": "2022-12-01",
-          "recurrenceDayOfMonth": 1,
-          "taxRates": [
-            {
-              "priceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-              "taxRateId": "50c0d53b-8460-41e6-b4e9-a4e157fc1a64"
-            }
-          ],
-          "autoIssueInvoices": true,
-          "purchaseOrderNumber": "PO123",
-          "effectiveFrom": "2023-01-01"
-        },
-        "type": "object",
-        "required": [
-          "autoIssueInvoices",
-          "endDate",
-          "startDate",
-          "type"
         ]
       },
       "UpdateBillingScheduleRequestWithPrices": {
