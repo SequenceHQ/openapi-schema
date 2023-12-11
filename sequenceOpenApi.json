@@ -11095,6 +11095,15 @@
               "type": "string"
             },
             "in": "query",
+            "name": "billingScheduleId",
+            "required": false,
+            "description": "Filter by billing schedule id."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
             "name": "dueBefore",
             "required": false,
             "description": "Filter by due date before. Format: yyyy-MM-dd"
@@ -21968,7 +21977,7 @@
         "required": [
           "country",
           "line1",
-          "postcode",
+          "postCode",
           "town"
         ]
       },
@@ -29232,7 +29241,7 @@
         "required": [
           "country",
           "line1",
-          "postcode",
+          "postCode",
           "town"
         ]
       },
