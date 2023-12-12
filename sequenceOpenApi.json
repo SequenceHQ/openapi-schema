@@ -21977,7 +21977,6 @@
         "required": [
           "country",
           "line1",
-          "postCode",
           "town"
         ]
       },
@@ -29241,7 +29240,6 @@
         "required": [
           "country",
           "line1",
-          "postCode",
           "town"
         ]
       },
