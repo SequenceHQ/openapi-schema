@@ -3896,13 +3896,13 @@
             "description": "Filter by auto send invoices."
           },
           {
-            "schema": {
-              "type": "string"
-            },
             "in": "query",
             "name": "sortBy",
             "required": false,
-            "description": "Sort column. Default: creation time."
+            "description": "Sort column. Default: creation time.",
+            "schema": {
+              "$ref": "#/components/schemas/BillingScheduleDatabaseSortByColumn"
+            }
           },
           {
             "schema": {
@@ -3976,6 +3976,30 @@
                       "reference": "ref",
                       "recurrenceDayOfMonth": 1,
                       "planId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                      "priceIds": [
+                        "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+                      ],
+                      "prices": [
+                        {
+                          "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                          "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+                          "productId": "f409d651-c475-4142-aafd-a5d2bd74d4f9",
+                          "name": "Demo Product",
+                          "currency": "GBP",
+                          "structure": {
+                            "pricingType": "LINEAR",
+                            "pricePerUnit": "0.25",
+                            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                            "isPricePercentage": false
+                          },
+                          "billingFrequency": "MONTHLY",
+                          "billingType": "IN_ARREARS",
+                          "createdAt": "2022-06-28T16:47:00Z",
+                          "updatedAt": "2022-06-28T16:47:00Z",
+                          "deletedAt": "2022-06-28T16:47:00Z",
+                          "externalIds": []
+                        }
+                      ],
                       "type": "PLAN",
                       "createdAt": "2022-06-28T16:47:00Z",
                       "updatedAt": "2022-06-28T16:47:00Z",
@@ -23504,7 +23528,7 @@
         "type": "string"
       },
       "BillingFrequency": {
-        "example": "QUARTERLY",
+        "example": "MONTHLY",
         "enum": [
           "ONE_TIME",
           "MONTHLY",
@@ -24083,10 +24107,12 @@
           "name": "Demo Product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "FIXED",
-            "price": "20.00"
+            "pricingType": "LINEAR",
+            "pricePerUnit": "0.25",
+            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+            "isPricePercentage": false
           },
-          "billingFrequency": "QUARTERLY",
+          "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
           "createdAt": "2022-06-28T16:47:00Z",
           "updatedAt": "2022-06-28T16:47:00Z",
@@ -26753,12 +26779,15 @@
         "type": "object",
         "required": [
           "autoIssueInvoices",
+          "createdAt",
           "customerId",
+          "endDate",
           "id",
           "sequenceAccountId",
           "startDate",
           "status",
-          "type"
+          "type",
+          "updatedAt"
         ]
       },
       "GetBillingScheduleEndpointApiBillingScheduleStatus": {
@@ -27561,6 +27590,30 @@
                 "reference": "ref",
                 "recurrenceDayOfMonth": 1,
                 "planId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                "priceIds": [
+                  "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+                ],
+                "prices": [
+                  {
+                    "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+                    "productId": "f409d651-c475-4142-aafd-a5d2bd74d4f9",
+                    "name": "Demo Product",
+                    "currency": "GBP",
+                    "structure": {
+                      "pricingType": "LINEAR",
+                      "pricePerUnit": "0.25",
+                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                      "isPricePercentage": false
+                    },
+                    "billingFrequency": "MONTHLY",
+                    "billingType": "IN_ARREARS",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "updatedAt": "2022-06-28T16:47:00Z",
+                    "deletedAt": "2022-06-28T16:47:00Z",
+                    "externalIds": []
+                  }
+                ],
                 "type": "PLAN",
                 "createdAt": "2022-06-28T16:47:00Z",
                 "updatedAt": "2022-06-28T16:47:00Z",
@@ -27597,6 +27650,30 @@
               "reference": "ref",
               "recurrenceDayOfMonth": 1,
               "planId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+              "priceIds": [
+                "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+              ],
+              "prices": [
+                {
+                  "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                  "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+                  "productId": "f409d651-c475-4142-aafd-a5d2bd74d4f9",
+                  "name": "Demo Product",
+                  "currency": "GBP",
+                  "structure": {
+                    "pricingType": "LINEAR",
+                    "pricePerUnit": "0.25",
+                    "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                    "isPricePercentage": false
+                  },
+                  "billingFrequency": "MONTHLY",
+                  "billingType": "IN_ARREARS",
+                  "createdAt": "2022-06-28T16:47:00Z",
+                  "updatedAt": "2022-06-28T16:47:00Z",
+                  "deletedAt": "2022-06-28T16:47:00Z",
+                  "externalIds": []
+                }
+              ],
               "type": "PLAN",
               "createdAt": "2022-06-28T16:47:00Z",
               "updatedAt": "2022-06-28T16:47:00Z",
@@ -27615,6 +27692,14 @@
           "items",
           "pagination"
         ]
+      },
+      "BillingScheduleDatabaseSortByColumn": {
+        "example": "START_DATE",
+        "enum": [
+          "START_DATE",
+          "END_DATE"
+        ],
+        "type": "string"
       },
       "UpdateBillingScheduleRequestWithPrices": {
         "properties": {
