@@ -11182,8 +11182,6 @@
                       "paymentOptions": [
                         "BANK_TRANSFER"
                       ],
-                      "billingPeriodStart": "2022-10-01",
-                      "billingPeriodEnd": "2022-10-30",
                       "billingPeriod": {
                         "start": "2022-10-01",
                         "endInclusive": "2022-10-30"
@@ -11330,8 +11328,6 @@
                 "paymentOptions": [
                   "BANK_TRANSFER"
                 ],
-                "billingPeriodStart": "2022-10-01",
-                "billingPeriodEnd": "2022-10-30",
                 "billingPeriod": {
                   "start": "2022-10-01",
                   "endInclusive": "2022-10-30"
@@ -11395,8 +11391,6 @@
                   "paymentOptions": [
                     "BANK_TRANSFER"
                   ],
-                  "billingPeriodStart": "2022-10-01",
-                  "billingPeriodEnd": "2022-10-30",
                   "billingPeriod": {
                     "start": "2022-10-01",
                     "endInclusive": "2022-10-30"
@@ -12232,8 +12226,6 @@
                   "paymentOptions": [
                     "BANK_TRANSFER"
                   ],
-                  "billingPeriodStart": "2022-10-01",
-                  "billingPeriodEnd": "2022-10-30",
                   "billingPeriod": {
                     "start": "2022-10-01",
                     "endInclusive": "2022-10-30"
@@ -12433,8 +12425,6 @@
                   "paymentOptions": [
                     "BANK_TRANSFER"
                   ],
-                  "billingPeriodStart": "2022-10-01",
-                  "billingPeriodEnd": "2022-10-30",
                   "billingPeriod": {
                     "start": "2022-10-01",
                     "endInclusive": "2022-10-30"
@@ -12625,8 +12615,6 @@
                 "paymentOptions": [
                   "BANK_TRANSFER"
                 ],
-                "billingPeriodStart": "2022-10-01",
-                "billingPeriodEnd": "2022-10-30",
                 "billingPeriod": {
                   "start": "2022-10-01",
                   "endInclusive": "2022-10-30"
@@ -12689,8 +12677,6 @@
                   "paymentOptions": [
                     "BANK_TRANSFER"
                   ],
-                  "billingPeriodStart": "2022-10-01",
-                  "billingPeriodEnd": "2022-10-30",
                   "billingPeriod": {
                     "start": "2022-10-01",
                     "endInclusive": "2022-10-30"
@@ -12881,8 +12867,6 @@
                 "paymentOptions": [
                   "BANK_TRANSFER"
                 ],
-                "billingPeriodStart": "2022-10-01",
-                "billingPeriodEnd": "2022-10-30",
                 "billingPeriod": {
                   "start": "2022-10-01",
                   "endInclusive": "2022-10-30"
@@ -12945,8 +12929,6 @@
                   "paymentOptions": [
                     "BANK_TRANSFER"
                   ],
-                  "billingPeriodStart": "2022-10-01",
-                  "billingPeriodEnd": "2022-10-30",
                   "billingPeriod": {
                     "start": "2022-10-01",
                     "endInclusive": "2022-10-30"
@@ -13203,8 +13185,6 @@
                   "paymentOptions": [
                     "BANK_TRANSFER"
                   ],
-                  "billingPeriodStart": "2022-10-01",
-                  "billingPeriodEnd": "2022-10-30",
                   "billingPeriod": {
                     "start": "2022-10-01",
                     "endInclusive": "2022-10-30"
@@ -13369,8 +13349,6 @@
                   "paymentOptions": [
                     "BANK_TRANSFER"
                   ],
-                  "billingPeriodStart": "2022-10-01",
-                  "billingPeriodEnd": "2022-10-30",
                   "billingPeriod": {
                     "start": "2022-10-01",
                     "endInclusive": "2022-10-30"
@@ -13693,8 +13671,6 @@
                   "paymentOptions": [
                     "BANK_TRANSFER"
                   ],
-                  "billingPeriodStart": "2022-10-01",
-                  "billingPeriodEnd": "2022-10-30",
                   "billingPeriod": {
                     "start": "2022-10-01",
                     "endInclusive": "2022-10-30"
@@ -13850,8 +13826,6 @@
                   "paymentOptions": [
                     "BANK_TRANSFER"
                   ],
-                  "billingPeriodStart": "2022-10-01",
-                  "billingPeriodEnd": "2022-10-30",
                   "billingPeriod": {
                     "start": "2022-10-01",
                     "endInclusive": "2022-10-30"
@@ -14007,8 +13981,6 @@
                   "paymentOptions": [
                     "BANK_TRANSFER"
                   ],
-                  "billingPeriodStart": "2022-10-01",
-                  "billingPeriodEnd": "2022-10-30",
                   "billingPeriod": {
                     "start": "2022-10-01",
                     "endInclusive": "2022-10-30"
@@ -14164,8 +14136,6 @@
                   "paymentOptions": [
                     "BANK_TRANSFER"
                   ],
-                  "billingPeriodStart": "2022-10-01",
-                  "billingPeriodEnd": "2022-10-30",
                   "billingPeriod": {
                     "start": "2022-10-01",
                     "endInclusive": "2022-10-30"
@@ -14330,8 +14300,6 @@
                   "paymentOptions": [
                     "BANK_TRANSFER"
                   ],
-                  "billingPeriodStart": "2022-10-01",
-                  "billingPeriodEnd": "2022-10-30",
                   "billingPeriod": {
                     "start": "2022-10-01",
                     "endInclusive": "2022-10-30"
@@ -14570,8 +14538,6 @@
                   "paymentOptions": [
                     "BANK_TRANSFER"
                   ],
-                  "billingPeriodStart": "2022-10-01",
-                  "billingPeriodEnd": "2022-10-30",
                   "billingPeriod": {
                     "start": "2022-10-01",
                     "endInclusive": "2022-10-30"
@@ -31207,18 +31173,6 @@
             "description": "Invoice payment options",
             "type": "array"
           },
-          "billingPeriodStart": {
-            "example": "2022-10-01",
-            "description": "Billing period start",
-            "format": "date",
-            "type": "string"
-          },
-          "billingPeriodEnd": {
-            "example": "2022-10-30",
-            "description": "Billing period end",
-            "format": "date",
-            "type": "string"
-          },
           "billingPeriod": {
             "$ref": "#/components/schemas/InclusiveDateRange",
             "description": "Billing period"
@@ -31354,8 +31308,6 @@
           "paymentOptions": [
             "BANK_TRANSFER"
           ],
-          "billingPeriodStart": "2022-10-01",
-          "billingPeriodEnd": "2022-10-30",
           "billingPeriod": {
             "start": "2022-10-01",
             "endInclusive": "2022-10-30"
@@ -31662,18 +31614,6 @@
             "description": "Invoice payment options",
             "type": "array"
           },
-          "billingPeriodStart": {
-            "example": "2022-10-01",
-            "description": "Billing period start",
-            "format": "date",
-            "type": "string"
-          },
-          "billingPeriodEnd": {
-            "example": "2022-10-30",
-            "description": "Billing period end",
-            "format": "date",
-            "type": "string"
-          },
           "billingPeriod": {
             "$ref": "#/components/schemas/InclusiveDateRange",
             "description": "Billing period"
@@ -31748,8 +31688,6 @@
           "paymentOptions": [
             "BANK_TRANSFER"
           ],
-          "billingPeriodStart": "2022-10-01",
-          "billingPeriodEnd": "2022-10-30",
           "billingPeriod": {
             "start": "2022-10-01",
             "endInclusive": "2022-10-30"
@@ -32443,18 +32381,6 @@
             "description": "Invoice payment options",
             "type": "array"
           },
-          "billingPeriodStart": {
-            "example": "2022-10-01",
-            "description": "Billing period start",
-            "format": "date",
-            "type": "string"
-          },
-          "billingPeriodEnd": {
-            "example": "2022-10-30",
-            "description": "Billing period end",
-            "format": "date",
-            "type": "string"
-          },
           "billingPeriod": {
             "$ref": "#/components/schemas/InclusiveDateRange",
             "description": "Billing period"
@@ -32569,8 +32495,6 @@
           "paymentOptions": [
             "BANK_TRANSFER"
           ],
-          "billingPeriodStart": "2022-10-01",
-          "billingPeriodEnd": "2022-10-30",
           "billingPeriod": {
             "start": "2022-10-01",
             "endInclusive": "2022-10-30"
@@ -32798,18 +32722,6 @@
             "description": "Invoice payment options",
             "type": "array"
           },
-          "billingPeriodStart": {
-            "example": "2022-10-01",
-            "description": "Billing period start",
-            "format": "date",
-            "type": "string"
-          },
-          "billingPeriodEnd": {
-            "example": "2022-10-30",
-            "description": "Billing period end",
-            "format": "date",
-            "type": "string"
-          },
           "billingPeriod": {
             "$ref": "#/components/schemas/InclusiveDateRange",
             "description": "Billing period"
@@ -32945,8 +32857,6 @@
           "paymentOptions": [
             "BANK_TRANSFER"
           ],
-          "billingPeriodStart": "2022-10-01",
-          "billingPeriodEnd": "2022-10-30",
           "billingPeriod": {
             "start": "2022-10-01",
             "endInclusive": "2022-10-30"
@@ -33441,8 +33351,6 @@
                 "paymentOptions": [
                   "BANK_TRANSFER"
                 ],
-                "billingPeriodStart": "2022-10-01",
-                "billingPeriodEnd": "2022-10-30",
                 "billingPeriod": {
                   "start": "2022-10-01",
                   "endInclusive": "2022-10-30"
@@ -33555,8 +33463,6 @@
               "paymentOptions": [
                 "BANK_TRANSFER"
               ],
-              "billingPeriodStart": "2022-10-01",
-              "billingPeriodEnd": "2022-10-30",
               "billingPeriod": {
                 "start": "2022-10-01",
                 "endInclusive": "2022-10-30"
@@ -34135,18 +34041,6 @@
             "description": "Invoice payment options",
             "type": "array"
           },
-          "billingPeriodStart": {
-            "example": "2022-10-01",
-            "description": "Billing period start",
-            "format": "date",
-            "type": "string"
-          },
-          "billingPeriodEnd": {
-            "example": "2022-10-30",
-            "description": "Billing period end",
-            "format": "date",
-            "type": "string"
-          },
           "billingPeriod": {
             "$ref": "#/components/schemas/InclusiveDateRange",
             "description": "Billing period"
@@ -34282,8 +34176,6 @@
           "paymentOptions": [
             "BANK_TRANSFER"
           ],
-          "billingPeriodStart": "2022-10-01",
-          "billingPeriodEnd": "2022-10-30",
           "billingPeriod": {
             "start": "2022-10-01",
             "endInclusive": "2022-10-30"
@@ -34475,18 +34367,6 @@
             "description": "Invoice payment options",
             "type": "array"
           },
-          "billingPeriodStart": {
-            "example": "2022-10-01",
-            "description": "Billing period start",
-            "format": "date",
-            "type": "string"
-          },
-          "billingPeriodEnd": {
-            "example": "2022-10-30",
-            "description": "Billing period end",
-            "format": "date",
-            "type": "string"
-          },
           "billingPeriod": {
             "$ref": "#/components/schemas/InclusiveDateRange",
             "description": "Billing period"
@@ -34554,8 +34434,6 @@
           "paymentOptions": [
             "BANK_TRANSFER"
           ],
-          "billingPeriodStart": "2022-10-01",
-          "billingPeriodEnd": "2022-10-30",
           "billingPeriod": {
             "start": "2022-10-01",
             "endInclusive": "2022-10-30"
@@ -34663,18 +34541,6 @@
             ],
             "description": "Invoice payment options",
             "type": "array"
-          },
-          "billingPeriodStart": {
-            "example": "2022-10-01",
-            "description": "Billing period start",
-            "format": "date",
-            "type": "string"
-          },
-          "billingPeriodEnd": {
-            "example": "2022-10-30",
-            "description": "Billing period end",
-            "format": "date",
-            "type": "string"
           },
           "billingPeriod": {
             "$ref": "#/components/schemas/InclusiveDateRange",
@@ -34811,8 +34677,6 @@
           "paymentOptions": [
             "BANK_TRANSFER"
           ],
-          "billingPeriodStart": "2022-10-01",
-          "billingPeriodEnd": "2022-10-30",
           "billingPeriod": {
             "start": "2022-10-01",
             "endInclusive": "2022-10-30"
@@ -35004,18 +34868,6 @@
             "description": "Invoice payment options",
             "type": "array"
           },
-          "billingPeriodStart": {
-            "example": "2022-10-01",
-            "description": "Billing period start",
-            "format": "date",
-            "type": "string"
-          },
-          "billingPeriodEnd": {
-            "example": "2022-10-30",
-            "description": "Billing period end",
-            "format": "date",
-            "type": "string"
-          },
           "billingPeriod": {
             "$ref": "#/components/schemas/InclusiveDateRange",
             "description": "Billing period"
@@ -35083,8 +34935,6 @@
           "paymentOptions": [
             "BANK_TRANSFER"
           ],
-          "billingPeriodStart": "2022-10-01",
-          "billingPeriodEnd": "2022-10-30",
           "billingPeriod": {
             "start": "2022-10-01",
             "endInclusive": "2022-10-30"
@@ -35903,18 +35753,6 @@
             "description": "Invoice payment options",
             "type": "array"
           },
-          "billingPeriodStart": {
-            "example": "2022-10-01",
-            "description": "Billing period start",
-            "format": "date",
-            "type": "string"
-          },
-          "billingPeriodEnd": {
-            "example": "2022-10-30",
-            "description": "Billing period end",
-            "format": "date",
-            "type": "string"
-          },
           "billingPeriod": {
             "$ref": "#/components/schemas/InclusiveDateRange",
             "description": "Billing period"
@@ -36050,8 +35888,6 @@
           "paymentOptions": [
             "BANK_TRANSFER"
           ],
-          "billingPeriodStart": "2022-10-01",
-          "billingPeriodEnd": "2022-10-30",
           "billingPeriod": {
             "start": "2022-10-01",
             "endInclusive": "2022-10-30"
