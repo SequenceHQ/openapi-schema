@@ -3974,6 +3974,7 @@
                       "autoIssueInvoices": false,
                       "purchaseOrderNumber": "PO123",
                       "reference": "ref",
+                      "label": "label",
                       "recurrenceDayOfMonth": 1,
                       "planId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
                       "priceIds": [
@@ -4260,6 +4261,7 @@
                     "autoIssueInvoices": false,
                     "purchaseOrderNumber": "PO123",
                     "reference": "ref",
+                    "label": "label",
                     "recurrenceDayOfMonth": 1,
                     "planId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
                     "type": "PLAN"
@@ -4284,6 +4286,7 @@
                       "autoIssueInvoices": false,
                       "purchaseOrderNumber": "PO123",
                       "reference": "ref",
+                      "label": "label",
                       "recurrenceDayOfMonth": 1,
                       "priceIds": [
                         "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
@@ -4303,6 +4306,7 @@
                   "autoIssueInvoices": false,
                   "purchaseOrderNumber": "PO123",
                   "reference": "ref",
+                  "label": "label",
                   "recurrenceDayOfMonth": 1,
                   "priceIds": [],
                   "prices": [],
@@ -26707,6 +26711,11 @@
             "description": "Optional reference to be added to invoices",
             "type": "string"
           },
+          "label": {
+            "example": "label",
+            "description": "Optional label",
+            "type": "string"
+          },
           "recurrenceDayOfMonth": {
             "example": 1,
             "description": "Recurrence day of month",
@@ -26767,6 +26776,7 @@
           "autoIssueInvoices": false,
           "purchaseOrderNumber": "PO123",
           "reference": "ref",
+          "label": "label",
           "recurrenceDayOfMonth": 1,
           "priceIds": [],
           "prices": [],
@@ -27492,6 +27502,11 @@
             "description": "Optional reference to be added to invoices",
             "type": "string"
           },
+          "label": {
+            "example": "label",
+            "description": "Optional label",
+            "type": "string"
+          },
           "recurrenceDayOfMonth": {
             "example": 1,
             "description": "Recurrence day of month",
@@ -27527,6 +27542,7 @@
           "autoIssueInvoices": false,
           "purchaseOrderNumber": "PO123",
           "reference": "ref",
+          "label": "label",
           "recurrenceDayOfMonth": 1,
           "planId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
           "type": "PLAN"
@@ -27588,6 +27604,7 @@
                 "autoIssueInvoices": false,
                 "purchaseOrderNumber": "PO123",
                 "reference": "ref",
+                "label": "label",
                 "recurrenceDayOfMonth": 1,
                 "planId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
                 "priceIds": [
@@ -27648,6 +27665,7 @@
               "autoIssueInvoices": false,
               "purchaseOrderNumber": "PO123",
               "reference": "ref",
+              "label": "label",
               "recurrenceDayOfMonth": 1,
               "planId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
               "priceIds": [
