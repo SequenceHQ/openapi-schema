@@ -4131,40 +4131,12 @@
                 "recurrenceDayOfMonth": 1,
                 "prices": [
                   {
-                    "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                    "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-                    "productId": "f409d651-c475-4142-aafd-a5d2bd74d4f9",
-                    "name": "Demo Product",
-                    "currency": "GBP",
-                    "structure": {
-                      "pricingType": "FIXED",
-                      "price": "20.00"
-                    },
                     "billingFrequency": "QUARTERLY",
-                    "billingType": "IN_ARREARS",
-                    "createdAt": "2022-06-28T16:47:00Z",
-                    "updatedAt": "2022-06-28T16:47:00Z",
-                    "deletedAt": "2022-06-28T16:47:00Z",
-                    "externalIds": []
+                    "billingType": "IN_ADVANCE"
                   },
                   {
-                    "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                    "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-                    "productId": "f409d651-c475-4142-aafd-a5d2bd74d4f9",
-                    "name": "Demo Product",
-                    "currency": "GBP",
-                    "structure": {
-                      "pricingType": "LINEAR",
-                      "pricePerUnit": "0.25",
-                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                      "isPricePercentage": false
-                    },
                     "billingFrequency": "MONTHLY",
-                    "billingType": "IN_ARREARS",
-                    "createdAt": "2022-06-28T16:47:00Z",
-                    "updatedAt": "2022-06-28T16:47:00Z",
-                    "deletedAt": "2022-06-28T16:47:00Z",
-                    "externalIds": []
+                    "billingType": "IN_ARREARS"
                   }
                 ]
               },
@@ -27299,44 +27271,16 @@
           },
           "prices": {
             "items": {
-              "$ref": "#/components/schemas/Price"
+              "$ref": "#/components/schemas/CreateBillingSchedulePreviewEndpointPriceProperties"
             },
             "example": [
               {
-                "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-                "productId": "f409d651-c475-4142-aafd-a5d2bd74d4f9",
-                "name": "Demo Product",
-                "currency": "GBP",
-                "structure": {
-                  "pricingType": "FIXED",
-                  "price": "20.00"
-                },
                 "billingFrequency": "QUARTERLY",
-                "billingType": "IN_ARREARS",
-                "createdAt": "2022-06-28T16:47:00Z",
-                "updatedAt": "2022-06-28T16:47:00Z",
-                "deletedAt": "2022-06-28T16:47:00Z",
-                "externalIds": []
+                "billingType": "IN_ADVANCE"
               },
               {
-                "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-                "productId": "f409d651-c475-4142-aafd-a5d2bd74d4f9",
-                "name": "Demo Product",
-                "currency": "GBP",
-                "structure": {
-                  "pricingType": "LINEAR",
-                  "pricePerUnit": "0.25",
-                  "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                  "isPricePercentage": false
-                },
                 "billingFrequency": "MONTHLY",
-                "billingType": "IN_ARREARS",
-                "createdAt": "2022-06-28T16:47:00Z",
-                "updatedAt": "2022-06-28T16:47:00Z",
-                "deletedAt": "2022-06-28T16:47:00Z",
-                "externalIds": []
+                "billingType": "IN_ARREARS"
               }
             ],
             "description": "The prices available in this plan",
@@ -27349,40 +27293,12 @@
           "recurrenceDayOfMonth": 1,
           "prices": [
             {
-              "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-              "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-              "productId": "f409d651-c475-4142-aafd-a5d2bd74d4f9",
-              "name": "Demo Product",
-              "currency": "GBP",
-              "structure": {
-                "pricingType": "FIXED",
-                "price": "20.00"
-              },
               "billingFrequency": "QUARTERLY",
-              "billingType": "IN_ARREARS",
-              "createdAt": "2022-06-28T16:47:00Z",
-              "updatedAt": "2022-06-28T16:47:00Z",
-              "deletedAt": "2022-06-28T16:47:00Z",
-              "externalIds": []
+              "billingType": "IN_ADVANCE"
             },
             {
-              "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-              "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-              "productId": "f409d651-c475-4142-aafd-a5d2bd74d4f9",
-              "name": "Demo Product",
-              "currency": "GBP",
-              "structure": {
-                "pricingType": "LINEAR",
-                "pricePerUnit": "0.25",
-                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                "isPricePercentage": false
-              },
               "billingFrequency": "MONTHLY",
-              "billingType": "IN_ARREARS",
-              "createdAt": "2022-06-28T16:47:00Z",
-              "updatedAt": "2022-06-28T16:47:00Z",
-              "deletedAt": "2022-06-28T16:47:00Z",
-              "externalIds": []
+              "billingType": "IN_ARREARS"
             }
           ]
         },
@@ -27392,26 +27308,25 @@
           "startDate"
         ]
       },
-      "FixedPricingStructure": {
+      "CreateBillingSchedulePreviewEndpointPriceProperties": {
         "properties": {
-          "pricingType": {
-            "$ref": "#/components/schemas/PricingType",
-            "description": "The type of pricing"
+          "billingFrequency": {
+            "$ref": "#/components/schemas/BillingFrequency",
+            "description": "The recurrence of charging this price."
           },
-          "price": {
-            "example": "20.00",
-            "description": "Fixed price charged on each billing cycle",
-            "type": "string"
+          "billingType": {
+            "$ref": "#/components/schemas/BillingType",
+            "description": "How to bill this price: in-arrears or in-advance."
           }
         },
         "example": {
-          "pricingType": "FIXED",
-          "price": "20.00"
+          "billingFrequency": "QUARTERLY",
+          "billingType": "IN_ADVANCE"
         },
         "type": "object",
         "required": [
-          "price",
-          "pricingType"
+          "billingFrequency",
+          "billingType"
         ]
       },
       "BillingScheduleResponseVersion": {
