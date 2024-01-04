@@ -677,7 +677,8 @@
                       "companyName": "Acme Inc.",
                       "companyNumber": "GB123987",
                       "country": "GB",
-                      "sendCustomerNotifications": true
+                      "sendCustomerNotifications": true,
+                      "alertEmailAddress": "alerts@example.com"
                     }
                   ],
                   "pagination": {
@@ -747,7 +748,8 @@
                   "companyName": "Acme Inc.",
                   "companyNumber": "GB123987",
                   "country": "GB",
-                  "sendCustomerNotifications": true
+                  "sendCustomerNotifications": true,
+                  "alertEmailAddress": "alerts@example.com"
                 },
                 "schema": {
                   "$ref": "#/components/schemas/SequenceAccount"
@@ -20680,6 +20682,11 @@
             "example": true,
             "description": "True if Sequence should send customer notifications on customer's behalf",
             "type": "boolean"
+          },
+          "alertEmailAddress": {
+            "example": "alerts@example.com",
+            "description": "Email address to which alert notifications will be sent",
+            "type": "string"
           }
         },
         "example": {
@@ -20689,7 +20696,8 @@
           "companyName": "Acme Inc.",
           "companyNumber": "GB123987",
           "country": "GB",
-          "sendCustomerNotifications": true
+          "sendCustomerNotifications": true,
+          "alertEmailAddress": "alerts@example.com"
         },
         "type": "object",
         "required": [
@@ -20972,7 +20980,8 @@
                 "companyName": "Acme Inc.",
                 "companyNumber": "GB123987",
                 "country": "GB",
-                "sendCustomerNotifications": true
+                "sendCustomerNotifications": true,
+                "alertEmailAddress": "alerts@example.com"
               }
             ],
             "description": "Sequence Accounts",
@@ -20992,7 +21001,8 @@
               "companyName": "Acme Inc.",
               "companyNumber": "GB123987",
               "country": "GB",
-              "sendCustomerNotifications": true
+              "sendCustomerNotifications": true,
+              "alertEmailAddress": "alerts@example.com"
             }
           ],
           "pagination": {
