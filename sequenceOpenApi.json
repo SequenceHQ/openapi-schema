@@ -27062,6 +27062,7 @@
         "example": "STRIPE",
         "enum": [
           "STRIPE",
+          "NONE",
           "UNRECOGNIZED"
         ],
         "type": "string"
