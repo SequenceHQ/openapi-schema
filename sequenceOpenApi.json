@@ -678,7 +678,9 @@
                       "companyNumber": "GB123987",
                       "country": "GB",
                       "sendCustomerNotifications": true,
-                      "alertEmailAddress": "alerts@example.com"
+                      "alertEmailAddresses": [
+                        "alerts@example.com"
+                      ]
                     }
                   ],
                   "pagination": {
@@ -749,7 +751,9 @@
                   "companyNumber": "GB123987",
                   "country": "GB",
                   "sendCustomerNotifications": true,
-                  "alertEmailAddress": "alerts@example.com"
+                  "alertEmailAddresses": [
+                    "alerts@example.com"
+                  ]
                 },
                 "schema": {
                   "$ref": "#/components/schemas/SequenceAccount"
@@ -798,7 +802,9 @@
           "content": {
             "application/json": {
               "example": {
-                "alertEmailAddress": "alerts@example.com"
+                "alertEmailAddresses": [
+                  "alerts@example.com"
+                ]
               },
               "schema": {
                 "$ref": "#/components/schemas/UpdateSequenceAccountProductEndpointUpdateSequenceAccountRequest"
@@ -820,7 +826,9 @@
                   "companyNumber": "GB123988",
                   "country": "GB",
                   "sendCustomerNotifications": true,
-                  "alertEmailAddress": "alerts@example.com"
+                  "alertEmailAddresses": [
+                    "alerts@example.com"
+                  ]
                 },
                 "schema": {
                   "$ref": "#/components/schemas/SequenceAccount"
@@ -20277,10 +20285,15 @@
             "description": "True if Sequence should send customer notifications on customer's behalf",
             "type": "boolean"
           },
-          "alertEmailAddress": {
-            "example": "alerts@example.com",
+          "alertEmailAddresses": {
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "alerts@example.com"
+            ],
             "description": "Email address to which alert notifications will be sent",
-            "type": "string"
+            "type": "array"
           }
         },
         "example": {
@@ -20291,10 +20304,13 @@
           "companyNumber": "GB123987",
           "country": "GB",
           "sendCustomerNotifications": true,
-          "alertEmailAddress": "alerts@example.com"
+          "alertEmailAddresses": [
+            "alerts@example.com"
+          ]
         },
         "type": "object",
         "required": [
+          "alertEmailAddresses",
           "companyName",
           "companyNumber",
           "country",
@@ -20562,18 +20578,25 @@
       },
       "UpdateSequenceAccountProductEndpointUpdateSequenceAccountRequest": {
         "properties": {
-          "alertEmailAddress": {
-            "example": "alerts@example.com",
+          "alertEmailAddresses": {
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "alerts@example.com"
+            ],
             "description": "Email address to which alert notifications will be sent",
-            "type": "string"
+            "type": "array"
           }
         },
         "example": {
-          "alertEmailAddress": "alerts@example.com"
+          "alertEmailAddresses": [
+            "alerts@example.com"
+          ]
         },
         "type": "object",
         "required": [
-          "alertEmailAddress"
+          "alertEmailAddresses"
         ]
       },
       "ListSequenceUsersResponse": {
@@ -21068,7 +21091,9 @@
                 "companyNumber": "GB123987",
                 "country": "GB",
                 "sendCustomerNotifications": true,
-                "alertEmailAddress": "alerts@example.com"
+                "alertEmailAddresses": [
+                  "alerts@example.com"
+                ]
               }
             ],
             "description": "Sequence Accounts",
@@ -21089,7 +21114,9 @@
               "companyNumber": "GB123987",
               "country": "GB",
               "sendCustomerNotifications": true,
-              "alertEmailAddress": "alerts@example.com"
+              "alertEmailAddresses": [
+                "alerts@example.com"
+              ]
             }
           ],
           "pagination": {
