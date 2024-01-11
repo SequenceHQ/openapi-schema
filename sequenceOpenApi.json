@@ -26986,14 +26986,15 @@
         "example": "CUSTOM",
         "enum": [
           "CUSTOM",
-          "PLAN"
+          "PLAN",
+          "PHASES"
         ],
         "type": "string"
       },
       "CreateBillingScheduleRequestWithPrices": {
         "properties": {
           "type": {
-            "$ref": "#/components/schemas/BillingScheduleRequestType",
+            "$ref": "#/components/schemas/BillingScheduleType",
             "description": "Billing schedule type"
           },
           "customerId": {
@@ -27115,15 +27116,6 @@
           "type"
         ]
       },
-      "BillingScheduleRequestType": {
-        "example": "PHASES",
-        "enum": [
-          "PLAN",
-          "CUSTOM",
-          "PHASES"
-        ],
-        "type": "string"
-      },
       "CreateDiscountInlineRequestModel": {
         "properties": {
           "priceIds": {
@@ -27200,7 +27192,7 @@
       "CreateBillingScheduleRequestWithPhases": {
         "properties": {
           "type": {
-            "$ref": "#/components/schemas/BillingScheduleRequestType",
+            "$ref": "#/components/schemas/BillingScheduleType",
             "description": "Billing schedule type"
           },
           "customerId": {
