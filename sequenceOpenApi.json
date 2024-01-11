@@ -42067,8 +42067,6 @@
         "type": "object",
         "required": [
           "changeType",
-          "description",
-          "externalId",
           "id",
           "seatSnapshotId",
           "timestamp"
@@ -42188,8 +42186,6 @@
         "type": "object",
         "required": [
           "changeType",
-          "description",
-          "externalId",
           "timestamp"
         ]
       },
@@ -42421,8 +42417,6 @@
         "required": [
           "changeType",
           "customerAlias",
-          "description",
-          "externalId",
           "id",
           "seatSnapshotId",
           "seatType",
