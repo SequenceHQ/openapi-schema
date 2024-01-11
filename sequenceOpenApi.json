@@ -16542,7 +16542,10 @@
                       "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                       "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                       "key": "admin",
-                      "label": "Administrator"
+                      "label": "Administrator",
+                      "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "updatedAt": "2022-06-28T16:47:00Z"
                     }
                   ],
                   "pagination": {
@@ -16594,7 +16597,8 @@
             "application/json": {
               "example": {
                 "key": "admin",
-                "label": "Administrator"
+                "label": "Administrator",
+                "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da"
               },
               "schema": {
                 "$ref": "#/components/schemas/CreateSeatTypeEndpointCreateSeatTypeRequestModel"
@@ -16612,7 +16616,10 @@
                   "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                   "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                   "key": "admin",
-                  "label": "Administrator"
+                  "label": "Administrator",
+                  "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                  "createdAt": "2022-06-28T16:47:00Z",
+                  "updatedAt": "2022-06-28T16:47:00Z"
                 },
                 "schema": {
                   "$ref": "#/components/schemas/CreateSeatTypeEndpointProductCreateSeatTypeResponseModel"
@@ -16672,7 +16679,10 @@
                   "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                   "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                   "key": "admin",
-                  "label": "Administrator"
+                  "label": "Administrator",
+                  "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                  "createdAt": "2022-06-28T16:47:00Z",
+                  "updatedAt": "2022-06-28T16:47:00Z"
                 },
                 "schema": {
                   "$ref": "#/components/schemas/DeleteSeatTypeEndpointProductDeleteSeatTypeResponseModel"
@@ -16730,7 +16740,10 @@
                   "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                   "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                   "key": "admin",
-                  "label": "Administrator"
+                  "label": "Administrator",
+                  "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                  "createdAt": "2022-06-28T16:47:00Z",
+                  "updatedAt": "2022-06-28T16:47:00Z"
                 },
                 "schema": {
                   "$ref": "#/components/schemas/GetSeatTypeEndpointProductGetSeatTypeResponseModel"
@@ -16801,7 +16814,10 @@
                   "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                   "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                   "key": "admin",
-                  "label": "Administrator"
+                  "label": "Administrator",
+                  "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                  "createdAt": "2022-06-28T16:47:00Z",
+                  "updatedAt": "2022-06-28T16:47:00Z"
                 },
                 "schema": {
                   "$ref": "#/components/schemas/UpdateSeatTypeEndpointProductUpdateSeatTypeResponseModel"
@@ -42442,20 +42458,40 @@
             "example": "Administrator",
             "description": "Friendly, customer-facing name for seat type",
             "type": "string"
+          },
+          "sequenceUserId": {
+            "example": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+            "description": "The Sequence User who created this seat type",
+            "type": "string"
+          },
+          "createdAt": {
+            "example": "2022-06-28T16:47:00Z",
+            "description": "Created at",
+            "type": "string"
+          },
+          "updatedAt": {
+            "example": "2022-06-28T16:47:00Z",
+            "description": "Updated at",
+            "type": "string"
           }
         },
         "example": {
           "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
           "key": "admin",
-          "label": "Administrator"
+          "label": "Administrator",
+          "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+          "createdAt": "2022-06-28T16:47:00Z",
+          "updatedAt": "2022-06-28T16:47:00Z"
         },
         "type": "object",
         "required": [
+          "createdAt",
           "id",
           "key",
           "label",
-          "sequenceAccountId"
+          "sequenceAccountId",
+          "updatedAt"
         ]
       },
       "CreateSeatTypeEndpointCreateSeatTypeRequestModel": {
@@ -42469,11 +42505,17 @@
             "example": "Administrator",
             "description": "Friendly, customer-facing name for seat type",
             "type": "string"
+          },
+          "sequenceUserId": {
+            "example": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+            "description": "The Sequence User who created this seat type",
+            "type": "string"
           }
         },
         "example": {
           "key": "admin",
-          "label": "Administrator"
+          "label": "Administrator",
+          "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da"
         },
         "type": "object",
         "required": [
@@ -42502,20 +42544,40 @@
             "example": "Administrator",
             "description": "Friendly, customer-facing name for seat type",
             "type": "string"
+          },
+          "sequenceUserId": {
+            "example": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+            "description": "The Sequence User who created this seat type",
+            "type": "string"
+          },
+          "createdAt": {
+            "example": "2022-06-28T16:47:00Z",
+            "description": "Created at",
+            "type": "string"
+          },
+          "updatedAt": {
+            "example": "2022-06-28T16:47:00Z",
+            "description": "Updated at",
+            "type": "string"
           }
         },
         "example": {
           "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
           "key": "admin",
-          "label": "Administrator"
+          "label": "Administrator",
+          "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+          "createdAt": "2022-06-28T16:47:00Z",
+          "updatedAt": "2022-06-28T16:47:00Z"
         },
         "type": "object",
         "required": [
+          "createdAt",
           "id",
           "key",
           "label",
-          "sequenceAccountId"
+          "sequenceAccountId",
+          "updatedAt"
         ]
       },
       "ListSeatTypeEndpointProductListSeatTypePaginatedResponseModel": {
@@ -42529,7 +42591,10 @@
                 "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                 "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                 "key": "admin",
-                "label": "Administrator"
+                "label": "Administrator",
+                "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                "createdAt": "2022-06-28T16:47:00Z",
+                "updatedAt": "2022-06-28T16:47:00Z"
               }
             ],
             "description": "SeatTypes",
@@ -42546,7 +42611,10 @@
               "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
               "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
               "key": "admin",
-              "label": "Administrator"
+              "label": "Administrator",
+              "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+              "createdAt": "2022-06-28T16:47:00Z",
+              "updatedAt": "2022-06-28T16:47:00Z"
             }
           ],
           "pagination": {
@@ -42582,20 +42650,40 @@
             "example": "Administrator",
             "description": "Friendly, customer-facing name for seat type",
             "type": "string"
+          },
+          "sequenceUserId": {
+            "example": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+            "description": "The Sequence User who created this seat type",
+            "type": "string"
+          },
+          "createdAt": {
+            "example": "2022-06-28T16:47:00Z",
+            "description": "Created at",
+            "type": "string"
+          },
+          "updatedAt": {
+            "example": "2022-06-28T16:47:00Z",
+            "description": "Updated at",
+            "type": "string"
           }
         },
         "example": {
           "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
           "key": "admin",
-          "label": "Administrator"
+          "label": "Administrator",
+          "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+          "createdAt": "2022-06-28T16:47:00Z",
+          "updatedAt": "2022-06-28T16:47:00Z"
         },
         "type": "object",
         "required": [
+          "createdAt",
           "id",
           "key",
           "label",
-          "sequenceAccountId"
+          "sequenceAccountId",
+          "updatedAt"
         ]
       },
       "UpdateSeatTypeEndpointProductUpdateSeatTypeResponseModel": {
@@ -42619,20 +42707,40 @@
             "example": "Administrator",
             "description": "Friendly, customer-facing name for seat type",
             "type": "string"
+          },
+          "sequenceUserId": {
+            "example": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+            "description": "The Sequence User who created this seat type",
+            "type": "string"
+          },
+          "createdAt": {
+            "example": "2022-06-28T16:47:00Z",
+            "description": "Created at",
+            "type": "string"
+          },
+          "updatedAt": {
+            "example": "2022-06-28T16:47:00Z",
+            "description": "Updated at",
+            "type": "string"
           }
         },
         "example": {
           "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
           "key": "admin",
-          "label": "Administrator"
+          "label": "Administrator",
+          "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+          "createdAt": "2022-06-28T16:47:00Z",
+          "updatedAt": "2022-06-28T16:47:00Z"
         },
         "type": "object",
         "required": [
+          "createdAt",
           "id",
           "key",
           "label",
-          "sequenceAccountId"
+          "sequenceAccountId",
+          "updatedAt"
         ]
       },
       "UpdateSeatTypeEndpointUpdateSeatTypeRequestModel": {
@@ -42672,20 +42780,40 @@
             "example": "Administrator",
             "description": "Friendly, customer-facing name for seat type",
             "type": "string"
+          },
+          "sequenceUserId": {
+            "example": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+            "description": "The Sequence User who created this seat type",
+            "type": "string"
+          },
+          "createdAt": {
+            "example": "2022-06-28T16:47:00Z",
+            "description": "Created at",
+            "type": "string"
+          },
+          "updatedAt": {
+            "example": "2022-06-28T16:47:00Z",
+            "description": "Updated at",
+            "type": "string"
           }
         },
         "example": {
           "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
           "key": "admin",
-          "label": "Administrator"
+          "label": "Administrator",
+          "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+          "createdAt": "2022-06-28T16:47:00Z",
+          "updatedAt": "2022-06-28T16:47:00Z"
         },
         "type": "object",
         "required": [
+          "createdAt",
           "id",
           "key",
           "label",
-          "sequenceAccountId"
+          "sequenceAccountId",
+          "updatedAt"
         ]
       },
       "ListLatestSeatTotalsEndpointProductListLatestSeatTotalsPaginatedResponseModel": {
