@@ -27264,7 +27264,7 @@
           },
           "phases": {
             "items": {
-              "$ref": "#/components/schemas/CreateBillingScheduleRequestPhase"
+              "$ref": "#/components/schemas/Phase"
             },
             "example": [
               {
@@ -27342,7 +27342,7 @@
           "type"
         ]
       },
-      "CreateBillingScheduleRequestPhase": {
+      "Phase": {
         "properties": {
           "priceIds": {
             "items": {
