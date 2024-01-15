@@ -3749,6 +3749,7 @@
                       "scheduledRunTime": "2023-02-01T12:00:00.000001Z",
                       "billingStartDate": "2023-01-01",
                       "billingEndDate": "2023-01-31",
+                      "intendedDraftingDate": "2023-02-01",
                       "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7"
                     }
                   ],
@@ -4674,6 +4675,7 @@
                       "scheduledRunTime": "2023-02-01T12:00:00.000001Z",
                       "billingStartDate": "2023-01-01",
                       "billingEndDate": "2023-01-31",
+                      "intendedDraftingDate": "2023-02-01",
                       "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7"
                     }
                   ],
@@ -28383,6 +28385,7 @@
                 "scheduledRunTime": "2023-02-01T12:00:00.000001Z",
                 "billingStartDate": "2023-01-01",
                 "billingEndDate": "2023-01-31",
+                "intendedDraftingDate": "2023-02-01",
                 "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7"
               }
             ],
@@ -28404,6 +28407,7 @@
               "scheduledRunTime": "2023-02-01T12:00:00.000001Z",
               "billingStartDate": "2023-01-01",
               "billingEndDate": "2023-01-31",
+              "intendedDraftingDate": "2023-02-01",
               "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7"
             }
           ],
@@ -28457,6 +28461,12 @@
             "format": "date",
             "type": "string"
           },
+          "intendedDraftingDate": {
+            "example": "2023-02-01",
+            "description": "Intended end date",
+            "format": "date",
+            "type": "string"
+          },
           "invoiceId": {
             "example": "af60cab3-812d-4250-a051-0fb7133a00c7",
             "description": "Invoice ID created by the run",
@@ -28471,6 +28481,7 @@
           "scheduledRunTime": "2023-02-01T12:00:00.000001Z",
           "billingStartDate": "2023-01-01",
           "billingEndDate": "2023-01-31",
+          "intendedDraftingDate": "2023-02-01",
           "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7"
         },
         "type": "object",
