@@ -27289,7 +27289,7 @@
           },
           "phases": {
             "items": {
-              "$ref": "#/components/schemas/Phase"
+              "$ref": "#/components/schemas/PhaseRequest"
             },
             "example": [
               {
@@ -27367,7 +27367,7 @@
           "type"
         ]
       },
-      "Phase": {
+      "PhaseRequest": {
         "properties": {
           "priceIds": {
             "items": {
