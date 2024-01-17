@@ -108,7 +108,8 @@
                       "name": "Client",
                       "scopes": [
                         "product"
-                      ]
+                      ],
+                      "pinnedApiVersion": "2024-01-01"
                     }
                   ],
                   "pagination": {
@@ -163,7 +164,8 @@
                   "product"
                 ],
                 "accountId": "7e330949-a175-496a-a060-27821656ce34",
-                "clientName": "seqhq-7e330949-a175-496a-a060-27821656ce34"
+                "clientName": "seqhq-7e330949-a175-496a-a060-27821656ce34",
+                "pinApiVersion": false
               },
               "schema": {
                 "$ref": "#/components/schemas/CreateOAuthClientRequest"
@@ -257,7 +259,8 @@
                   "name": "Client",
                   "scopes": [
                     "product"
-                  ]
+                  ],
+                  "pinnedApiVersion": "2024-01-01"
                 },
                 "schema": {
                   "$ref": "#/components/schemas/OAuthClient"
@@ -20980,6 +20983,11 @@
             "example": "seqhq-7e330949-a175-496a-a060-27821656ce34",
             "description": "Optional Oauth Client Name. Defaults to accountId if not provided",
             "type": "string"
+          },
+          "pinApiVersion": {
+            "example": false,
+            "description": "Indicate whether the API Key should be pinned to an API Version or not",
+            "type": "boolean"
           }
         },
         "example": {
@@ -20987,7 +20995,8 @@
             "product"
           ],
           "accountId": "7e330949-a175-496a-a060-27821656ce34",
-          "clientName": "seqhq-7e330949-a175-496a-a060-27821656ce34"
+          "clientName": "seqhq-7e330949-a175-496a-a060-27821656ce34",
+          "pinApiVersion": false
         },
         "type": "object",
         "required": [
@@ -21175,6 +21184,10 @@
             ],
             "description": "OAuth client scope",
             "type": "array"
+          },
+          "pinnedApiVersion": {
+            "$ref": "#/components/schemas/Stable",
+            "description": "Pinned Sequence API version"
           }
         },
         "example": {
@@ -21183,7 +21196,8 @@
           "name": "Client",
           "scopes": [
             "product"
-          ]
+          ],
+          "pinnedApiVersion": "2024-01-01"
         },
         "type": "object",
         "required": [
@@ -21192,6 +21206,15 @@
           "scopes",
           "sequenceAccountId"
         ]
+      },
+      "Stable": {
+        "example": "2024-01-01",
+        "enum": [
+          "2022-01-01",
+          "2023-01-01",
+          "2024-01-01"
+        ],
+        "type": "string"
       },
       "GetSequenceAccountIdEndpointGetSequenceAccountIdResponse": {
         "properties": {
@@ -21222,7 +21245,8 @@
                 "name": "Client",
                 "scopes": [
                   "product"
-                ]
+                ],
+                "pinnedApiVersion": "2024-01-01"
               }
             ],
             "description": "OAuth Clients",
@@ -21241,7 +21265,8 @@
               "name": "Client",
               "scopes": [
                 "product"
-              ]
+              ],
+              "pinnedApiVersion": "2024-01-01"
             }
           ],
           "pagination": {
