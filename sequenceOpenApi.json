@@ -21186,8 +21186,9 @@
             "type": "array"
           },
           "pinnedApiVersion": {
-            "$ref": "#/components/schemas/Stable",
-            "description": "Pinned Sequence API version"
+            "example": "2024-01-01",
+            "description": "Pinned Sequence API version",
+            "type": "string"
           }
         },
         "example": {
@@ -21206,15 +21207,6 @@
           "scopes",
           "sequenceAccountId"
         ]
-      },
-      "Stable": {
-        "example": "2024-01-01",
-        "enum": [
-          "2022-01-01",
-          "2023-01-01",
-          "2024-01-01"
-        ],
-        "type": "string"
       },
       "GetSequenceAccountIdEndpointGetSequenceAccountIdResponse": {
         "properties": {
