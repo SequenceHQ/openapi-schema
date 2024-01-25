@@ -4858,6 +4858,117 @@
         "deprecated": false
       }
     },
+    "/billing/backfill-phases/accounts/{accountId}": {
+      "post": {
+        "summary": "Backfill phases for a single account",
+        "description": "Backfill phases for a single account",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "accountId",
+            "required": true,
+            "description": "Account ID"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "",
+            "content": {}
+          },
+          "403": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "postApiBillingBackfill_phasesAccounts_accountId",
+        "deprecated": false
+      }
+    },
+    "/billing/backfill-phases/all-accounts": {
+      "post": {
+        "summary": "Backfill phases for all accounts",
+        "description": "Backfill phases for all accounts",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "",
+            "content": {}
+          },
+          "403": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "postApiBillingBackfill_phasesAll_accounts",
+        "deprecated": false
+      }
+    },
+    "/billing/backfill-phases/billing-schedules/{billingScheduleId}": {
+      "post": {
+        "summary": "Backfill phases for a single billing schedule",
+        "description": "Backfill phases for a single billing schedule",
+        "tags": [],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "billingScheduleId",
+            "required": true,
+            "description": "Billing Schedule ID"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "",
+            "content": {}
+          },
+          "403": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "security": [],
+        "operationId": "postApiBillingBackfill_phasesBilling_schedules_billingScheduleId",
+        "deprecated": false
+      }
+    },
     "/billing/execution/accounts/all": {
       "post": {
         "summary": "Execute all billing schedules for all accounts",
