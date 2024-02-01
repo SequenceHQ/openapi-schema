@@ -6008,185 +6008,30 @@
         "deprecated": false
       }
     },
-    "/customer-aliases": {
+    "/customers/{id}": {
       "get": {
-        "summary": "List all Customer Aliases",
-        "description": "List all Customer Aliases",
         "tags": [],
+        "summary": "Get customer",
+        "description": "Retrieve the details of one of your [Customers](/docs/customers).",
+        "operationId": "getCustomersById",
         "parameters": [
           {
-            "schema": {
-              "type": "integer"
-            },
-            "in": "query",
-            "name": "limit",
-            "required": false,
-            "description": "Maximum number of objects to return per-page."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "query",
-            "name": "after",
-            "required": false,
-            "description": "Pagination offset. To page through items, omit this parameter to retrieve the first page, and then successively use the value you get from `pagination.after` or `pagination.before` to retrieve each page."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "query",
-            "name": "before",
-            "required": false,
-            "description": "Pagination offset. To page through items, omit this parameter to retrieve the first page, and then successively use the value you get from `pagination.next` or `pagination.previous` to retrieve each page."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "example": {
-                  "items": [
-                    {
-                      "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
-                      "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
-                      "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
-                      "value": "external-customer-alias-123",
-                      "createdAt": "2022-10-01T00:00:00Z",
-                      "deletedAt": "2022-10-01T00:00:00Z"
-                    }
-                  ],
-                  "pagination": {
-                    "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
-                    "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
-                    "totalResultSize": 10
-                  }
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/ListCustomerAliasEndpointProductListCustomerAliasPaginatedResponseModel"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "401": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "getApiCustomer_aliases",
-        "deprecated": false
-      },
-      "post": {
-        "summary": "Create a new Customer Alias",
-        "description": "Create a new Customer Alias",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "example": {
-                "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
-                "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
-                "value": "external-customer-alias-123",
-                "deletedAt": "2022-10-01T00:00:00Z"
-              },
-              "schema": {
-                "$ref": "#/components/schemas/CreateCustomerAliasEndpointCreateCustomerAliasRequestModel"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "201": {
-            "description": "Created",
-            "content": {
-              "application/json": {
-                "example": {
-                  "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
-                  "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
-                  "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
-                  "value": "external-customer-alias-123",
-                  "createdAt": "2022-10-01T00:00:00Z",
-                  "deletedAt": "2022-10-01T00:00:00Z"
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/CreateCustomerAliasEndpointProductCreateCustomerAliasResponseModel"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "401": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "postApiCustomer_aliases",
-        "deprecated": false
-      }
-    },
-    "/customer-aliases/{id}": {
-      "delete": {
-        "summary": "Delete a Customer Alias",
-        "description": "Delete a Customer Alias",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
             "name": "id",
+            "in": "path",
+            "description": "Customer ID",
             "required": true,
-            "description": "Unique ID"
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -6194,261 +6039,10 @@
             "description": "OK",
             "content": {
               "application/json": {
-                "example": {
-                  "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
-                  "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
-                  "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
-                  "value": "external-customer-alias-123",
-                  "createdAt": "2022-10-01T00:00:00Z",
-                  "deletedAt": "2022-10-01T00:00:00Z"
-                },
                 "schema": {
-                  "$ref": "#/components/schemas/DeleteCustomerAliasEndpointProductDeleteCustomerAliasResponseModel"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "401": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "deleteApiCustomer_aliases_id",
-        "deprecated": false
-      }
-    },
-    "/customers": {
-      "get": {
-        "summary": "List Customers",
-        "description": "List all [Customers](/docs/customers) within one of your [Sequence Accounts](/docs/organisations-and-accounts).",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "query",
-            "name": "before",
-            "required": false,
-            "description": "Pagination cursor. To page through items, omit this parameter to retrieve the first page, and then successively use the value you get from `pagination.after` or `pagination.before` to retrieve each page."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "query",
-            "name": "after",
-            "required": false,
-            "description": "Pagination cursor. To page through items, omit this parameter to retrieve the first page, and then successively use the value you get from `pagination.after` or `pagination.before` to retrieve each page."
-          },
-          {
-            "schema": {
-              "type": "integer"
-            },
-            "in": "query",
-            "name": "limit",
-            "required": false,
-            "description": "Maximum number of objects to return per-page."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "query",
-            "name": "sortOrder",
-            "required": false,
-            "description": "Sort order. Default: DESC (descending, most often used for reverse chronological sorting)."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "query",
-            "name": "sortBy",
-            "required": false,
-            "description": "Sort column. Default: creation time."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "query",
-            "name": "legalName",
-            "required": false,
-            "description": "Filter by legal name"
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "query",
-            "name": "email",
-            "required": false,
-            "description": "Filter by email"
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "query",
-            "name": "alias",
-            "required": false,
-            "description": "Filter by alias"
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "example": {
-                  "items": [
-                    {
-                      "id": "e309e948-088e-4d77-b654-cd85498f1555",
-                      "createdAt": "2022-06-28T16:47:00Z",
-                      "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
-                      "legalName": "John Doe",
-                      "contactName": "John Doe",
-                      "address": {
-                        "line1": "Flat 1",
-                        "line2": "123 Fake Street",
-                        "town": "London",
-                        "postcode": "AB1 2EF",
-                        "country": "GB"
-                      },
-                      "email": "john@example.com",
-                      "billingEmails": [
-                        "exampleCorpInvoices@example.com"
-                      ],
-                      "telephone": "02010001000",
-                      "url": "https://example.com/",
-                      "taxStatus": "TAXED",
-                      "label": "Example customer",
-                      "externalIds": [
-                        {
-                          "key": "Xero",
-                          "value": "ID",
-                          "syncTime": "2022-06-28T16:47:00Z"
-                        },
-                        {
-                          "key": "Stripe",
-                          "value": "cus_OCtCxqQDgu1uX9",
-                          "syncTime": "2022-06-28T16:47:00Z"
-                        }
-                      ]
-                    }
-                  ],
-                  "pagination": {
-                    "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
-                    "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
-                    "totalResultSize": 10
-                  }
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/ListCustomersResponse"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "getApiCustomers",
-        "deprecated": false
-      },
-      "post": {
-        "summary": "Create Customer",
-        "description": "Create a new [Customer](/docs/customers), who you can send money to and receive money from.",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "example": {
-                "legalName": "John Doe",
-                "contactName": "John Doe",
-                "address": {
-                  "line1": "Flat 1",
-                  "line2": "123 Fake Street",
-                  "town": "London",
-                  "postcode": "AB1 2EF",
-                  "country": "GB"
-                },
-                "email": "john@example.com",
-                "billingEmails": [
-                  "exampleCorpInvoices@example.com"
-                ],
-                "telephone": "john@example.com",
-                "url": "https://example.com/",
-                "label": "Example customer",
-                "taxStatus": "TAXED",
-                "customerAliases": [
-                  "b1c87177-088a-40ec-8917-9809343f3f9c"
-                ],
-                "externalIds": [
-                  {
-                    "key": "Xero",
-                    "value": "123456789"
-                  },
-                  {
-                    "key": "Stripe",
-                    "value": "cus_OCtCxqQDgu1uX9"
-                  },
-                  {
-                    "key": "HubSpot",
-                    "value": "123456789"
-                  }
-                ]
-              },
-              "schema": {
-                "$ref": "#/components/schemas/CreateCustomerRequest"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "201": {
-            "description": "Created",
-            "content": {
-              "application/json": {
-                "example": {
-                  "customer": {
+                  "description": "2024-01-01",
+                  "$ref": "#/components/schemas/Customer",
+                  "example": {
                     "id": "e309e948-088e-4d77-b654-cd85498f1555",
                     "createdAt": "2022-06-28T16:47:00Z",
                     "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
@@ -6483,56 +6077,85 @@
                     ]
                   }
                 },
-                "schema": {
-                  "$ref": "#/components/schemas/CreateCustomerResponse"
+                "examples": {
+                  "Customer": {
+                    "summary": "",
+                    "value": {
+                      "id": "e309e948-088e-4d77-b654-cd85498f1555",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                      "legalName": "John Doe",
+                      "contactName": "John Doe",
+                      "address": {
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "London",
+                        "postcode": "AB1 2EF",
+                        "country": "GB"
+                      },
+                      "email": "john@example.com",
+                      "billingEmails": [
+                        "exampleCorpInvoices@example.com"
+                      ],
+                      "telephone": "02010001000",
+                      "url": "https://example.com/",
+                      "taxStatus": "TAXED",
+                      "label": "Example customer",
+                      "externalIds": [
+                        {
+                          "key": "Xero",
+                          "value": "ID",
+                          "syncTime": "2022-06-28T16:47:00Z"
+                        },
+                        {
+                          "key": "Stripe",
+                          "value": "cus_OCtCxqQDgu1uX9",
+                          "syncTime": "2022-06-28T16:47:00Z"
+                        }
+                      ]
+                    }
+                  }
                 }
               }
             }
           },
           "400": {
-            "description": "",
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
             "content": {}
           }
-        },
-        "security": [],
-        "operationId": "postApiCustomers",
-        "deprecated": false
-      }
-    },
-    "/customers/by-alias/{alias}": {
-      "get": {
-        "summary": "Get Customer By Alias",
-        "description": "Retrieve the details of one of your [Customers](/docs/customers) using one of their aliases.",
+        }
+      },
+      "put": {
         "tags": [],
+        "summary": "Update customer",
+        "description": "Update the details of one of your [Customers](/docs/customers).",
+        "operationId": "putCustomersById",
         "parameters": [
           {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
+            "name": "id",
             "in": "path",
-            "name": "alias",
+            "description": "Customer ID",
             "required": true,
-            "description": "Customer Alias"
+            "schema": {
+              "type": "string"
+            }
           }
         ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "description": "2024-01-01",
+                "$ref": "#/components/schemas/UpdateCustomerRequest",
                 "example": {
-                  "id": "e309e948-088e-4d77-b654-cd85498f1555",
-                  "createdAt": "2022-06-28T16:47:00Z",
-                  "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
                   "legalName": "John Doe",
                   "contactName": "John Doe",
                   "address": {
@@ -6548,84 +6171,571 @@
                   ],
                   "telephone": "02010001000",
                   "url": "https://example.com/",
-                  "taxStatus": "TAXED",
                   "label": "Example customer",
                   "externalIds": [
                     {
                       "key": "Xero",
-                      "value": "ID",
-                      "syncTime": "2022-06-28T16:47:00Z"
+                      "value": "123456789"
                     },
                     {
                       "key": "Stripe",
-                      "value": "cus_OCtCxqQDgu1uX9",
-                      "syncTime": "2022-06-28T16:47:00Z"
+                      "value": "cus_OCtCxqQDgu1uX9"
+                    },
+                    {
+                      "key": "HubSpot",
+                      "value": "123456789"
                     }
+                  ],
+                  "taxStatus": "TAXED",
+                  "customerAliases": [
+                    "b1c87177-088a-40ec-8917-9809343f3f9c"
                   ]
-                },
+                }
+              },
+              "examples": {
+                "UpdateCustomerRequest": {
+                  "summary": "",
+                  "value": {
+                    "legalName": "John Doe",
+                    "contactName": "John Doe",
+                    "address": {
+                      "line1": "Flat 1",
+                      "line2": "123 Fake Street",
+                      "town": "London",
+                      "postcode": "AB1 2EF",
+                      "country": "GB"
+                    },
+                    "email": "john@example.com",
+                    "billingEmails": [
+                      "exampleCorpInvoices@example.com"
+                    ],
+                    "telephone": "02010001000",
+                    "url": "https://example.com/",
+                    "label": "Example customer",
+                    "externalIds": [
+                      {
+                        "key": "Xero",
+                        "value": "123456789"
+                      },
+                      {
+                        "key": "Stripe",
+                        "value": "cus_OCtCxqQDgu1uX9"
+                      },
+                      {
+                        "key": "HubSpot",
+                        "value": "123456789"
+                      }
+                    ],
+                    "taxStatus": "TAXED",
+                    "customerAliases": [
+                      "b1c87177-088a-40ec-8917-9809343f3f9c"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Customer"
+                  "description": "2024-01-01",
+                  "$ref": "#/components/schemas/Customer",
+                  "example": {
+                    "id": "e309e948-088e-4d77-b654-cd85498f1555",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                    "legalName": "John Doe",
+                    "contactName": "John Doe",
+                    "address": {
+                      "line1": "Flat 1",
+                      "line2": "123 Fake Street",
+                      "town": "London",
+                      "postcode": "AB1 2EF",
+                      "country": "GB"
+                    },
+                    "email": "john@example.com",
+                    "billingEmails": [
+                      "exampleCorpInvoices@example.com"
+                    ],
+                    "telephone": "02010001000",
+                    "url": "https://example.com/",
+                    "taxStatus": "TAXED",
+                    "label": "Example customer",
+                    "externalIds": [
+                      {
+                        "key": "Xero",
+                        "value": "ID",
+                        "syncTime": "2022-06-28T16:47:00Z"
+                      },
+                      {
+                        "key": "Stripe",
+                        "value": "cus_OCtCxqQDgu1uX9",
+                        "syncTime": "2022-06-28T16:47:00Z"
+                      }
+                    ]
+                  }
+                },
+                "examples": {
+                  "Customer": {
+                    "summary": "",
+                    "value": {
+                      "id": "e309e948-088e-4d77-b654-cd85498f1555",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                      "legalName": "John Doe",
+                      "contactName": "John Doe",
+                      "address": {
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "London",
+                        "postcode": "AB1 2EF",
+                        "country": "GB"
+                      },
+                      "email": "john@example.com",
+                      "billingEmails": [
+                        "exampleCorpInvoices@example.com"
+                      ],
+                      "telephone": "02010001000",
+                      "url": "https://example.com/",
+                      "taxStatus": "TAXED",
+                      "label": "Example customer",
+                      "externalIds": [
+                        {
+                          "key": "Xero",
+                          "value": "ID",
+                          "syncTime": "2022-06-28T16:47:00Z"
+                        },
+                        {
+                          "key": "Stripe",
+                          "value": "cus_OCtCxqQDgu1uX9",
+                          "syncTime": "2022-06-28T16:47:00Z"
+                        }
+                      ]
+                    }
+                  }
                 }
               }
             }
           },
           "400": {
-            "description": "",
+            "description": "Bad Request",
             "content": {}
           },
-          "404": {
-            "description": "",
+          "401": {
+            "description": "Unauthorized",
             "content": {}
           },
           "500": {
-            "description": "",
+            "description": "Internal Server Error",
             "content": {}
           }
-        },
-        "security": [],
-        "operationId": "getApiCustomersBy_alias_alias",
-        "deprecated": false
-      }
-    },
-    "/customers/{customer}/contacts": {
-      "post": {
-        "summary": "Create a new Contact",
-        "description": "Create a new Contact",
+        }
+      },
+      "delete": {
         "tags": [],
+        "summary": "Delete customer",
+        "description": "Delete one of your [Customers](/docs/customers).",
+        "operationId": "deleteCustomersById",
         "parameters": [
           {
+            "name": "id",
+            "in": "path",
+            "description": "Customer ID",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+            }
           },
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "path",
-            "name": "customer",
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "2024-01-01",
+                  "$ref": "#/components/schemas/Customer",
+                  "example": {
+                    "id": "e309e948-088e-4d77-b654-cd85498f1555",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                    "legalName": "John Doe",
+                    "contactName": "John Doe",
+                    "address": {
+                      "line1": "Flat 1",
+                      "line2": "123 Fake Street",
+                      "town": "London",
+                      "postcode": "AB1 2EF",
+                      "country": "GB"
+                    },
+                    "email": "john@example.com",
+                    "billingEmails": [
+                      "exampleCorpInvoices@example.com"
+                    ],
+                    "telephone": "02010001000",
+                    "url": "https://example.com/",
+                    "taxStatus": "TAXED",
+                    "label": "Example customer",
+                    "externalIds": [
+                      {
+                        "key": "Xero",
+                        "value": "ID",
+                        "syncTime": "2022-06-28T16:47:00Z"
+                      },
+                      {
+                        "key": "Stripe",
+                        "value": "cus_OCtCxqQDgu1uX9",
+                        "syncTime": "2022-06-28T16:47:00Z"
+                      }
+                    ]
+                  }
+                },
+                "examples": {
+                  "Customer": {
+                    "summary": "",
+                    "value": {
+                      "id": "e309e948-088e-4d77-b654-cd85498f1555",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                      "legalName": "John Doe",
+                      "contactName": "John Doe",
+                      "address": {
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "London",
+                        "postcode": "AB1 2EF",
+                        "country": "GB"
+                      },
+                      "email": "john@example.com",
+                      "billingEmails": [
+                        "exampleCorpInvoices@example.com"
+                      ],
+                      "telephone": "02010001000",
+                      "url": "https://example.com/",
+                      "taxStatus": "TAXED",
+                      "label": "Example customer",
+                      "externalIds": [
+                        {
+                          "key": "Xero",
+                          "value": "ID",
+                          "syncTime": "2022-06-28T16:47:00Z"
+                        },
+                        {
+                          "key": "Stripe",
+                          "value": "cus_OCtCxqQDgu1uX9",
+                          "syncTime": "2022-06-28T16:47:00Z"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
+    "/customers": {
+      "get": {
+        "tags": [],
+        "summary": "List Customers",
+        "description": "List all [Customers](/docs/customers) within one of your [Sequence Accounts](/docs/organisations-and-accounts).",
+        "operationId": "getCustomers",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
             "required": true,
-            "description": "The Customer ID"
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sortBy",
+            "in": "query",
+            "description": "Sort column. Default: creation time.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "legalName",
+            "in": "query",
+            "description": "Filter by legal name",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "email",
+            "in": "query",
+            "description": "Filter by email",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "alias",
+            "in": "query",
+            "description": "Filter by alias",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "2024-01-01",
+                  "$ref": "#/components/schemas/ListCustomersResponse",
+                  "example": {
+                    "items": [
+                      {
+                        "id": "e309e948-088e-4d77-b654-cd85498f1555",
+                        "createdAt": "2022-06-28T16:47:00Z",
+                        "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                        "legalName": "John Doe",
+                        "contactName": "John Doe",
+                        "address": {
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "London",
+                          "postcode": "AB1 2EF",
+                          "country": "GB"
+                        },
+                        "email": "john@example.com",
+                        "billingEmails": [
+                          "exampleCorpInvoices@example.com"
+                        ],
+                        "telephone": "02010001000",
+                        "url": "https://example.com/",
+                        "taxStatus": "TAXED",
+                        "label": "Example customer",
+                        "externalIds": [
+                          {
+                            "key": "Xero",
+                            "value": "ID",
+                            "syncTime": "2022-06-28T16:47:00Z"
+                          },
+                          {
+                            "key": "Stripe",
+                            "value": "cus_OCtCxqQDgu1uX9",
+                            "syncTime": "2022-06-28T16:47:00Z"
+                          }
+                        ]
+                      }
+                    ],
+                    "pagination": {
+                      "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
+                      "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
+                      "totalResultSize": 10
+                    }
+                  }
+                },
+                "examples": {
+                  "ListCustomersResponse": {
+                    "summary": "",
+                    "value": {
+                      "items": [
+                        {
+                          "id": "e309e948-088e-4d77-b654-cd85498f1555",
+                          "createdAt": "2022-06-28T16:47:00Z",
+                          "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                          "legalName": "John Doe",
+                          "contactName": "John Doe",
+                          "address": {
+                            "line1": "Flat 1",
+                            "line2": "123 Fake Street",
+                            "town": "London",
+                            "postcode": "AB1 2EF",
+                            "country": "GB"
+                          },
+                          "email": "john@example.com",
+                          "billingEmails": [
+                            "exampleCorpInvoices@example.com"
+                          ],
+                          "telephone": "02010001000",
+                          "url": "https://example.com/",
+                          "taxStatus": "TAXED",
+                          "label": "Example customer",
+                          "externalIds": [
+                            {
+                              "key": "Xero",
+                              "value": "ID",
+                              "syncTime": "2022-06-28T16:47:00Z"
+                            },
+                            {
+                              "key": "Stripe",
+                              "value": "cus_OCtCxqQDgu1uX9",
+                              "syncTime": "2022-06-28T16:47:00Z"
+                            }
+                          ]
+                        }
+                      ],
+                      "pagination": {
+                        "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
+                        "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
+                        "totalResultSize": 10
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "post": {
+        "tags": [],
+        "summary": "Create customer",
+        "description": "Create a new [Customer](/docs/customers), who you can send money to and receive money from.",
+        "operationId": "postCustomers",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
           "content": {
             "application/json": {
-              "example": {
-                "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
-                "customerId": "e309e948-088e-4d77-b654-cd85498f1555",
-                "email": "jane.smith@example.com",
-                "firstName": "Jane",
-                "lastName": "Smith",
-                "contactType": "QUOTE_RECIPIENT",
-                "deletedAt": "2022-06-28T16:47:00Z"
-              },
               "schema": {
-                "$ref": "#/components/schemas/CreateContactEndpointCreateContactRequestModel"
+                "description": "2024-01-01",
+                "$ref": "#/components/schemas/CreateCustomerRequest",
+                "example": {
+                  "legalName": "John Doe",
+                  "contactName": "John Doe",
+                  "address": {
+                    "line1": "Flat 1",
+                    "line2": "123 Fake Street",
+                    "town": "London",
+                    "postcode": "AB1 2EF",
+                    "country": "GB"
+                  },
+                  "email": "john@example.com",
+                  "billingEmails": [
+                    "exampleCorpInvoices@example.com"
+                  ],
+                  "telephone": "john@example.com",
+                  "url": "https://example.com/",
+                  "label": "Example customer",
+                  "taxStatus": "TAXED",
+                  "customerAliases": [
+                    "b1c87177-088a-40ec-8917-9809343f3f9c"
+                  ],
+                  "externalIds": [
+                    {
+                      "key": "Xero",
+                      "value": "123456789"
+                    },
+                    {
+                      "key": "Stripe",
+                      "value": "cus_OCtCxqQDgu1uX9"
+                    },
+                    {
+                      "key": "HubSpot",
+                      "value": "123456789"
+                    }
+                  ]
+                }
+              },
+              "examples": {
+                "CreateCustomerRequest": {
+                  "summary": "",
+                  "value": {
+                    "legalName": "John Doe",
+                    "contactName": "John Doe",
+                    "address": {
+                      "line1": "Flat 1",
+                      "line2": "123 Fake Street",
+                      "town": "London",
+                      "postcode": "AB1 2EF",
+                      "country": "GB"
+                    },
+                    "email": "john@example.com",
+                    "billingEmails": [
+                      "exampleCorpInvoices@example.com"
+                    ],
+                    "telephone": "john@example.com",
+                    "url": "https://example.com/",
+                    "label": "Example customer",
+                    "taxStatus": "TAXED",
+                    "customerAliases": [
+                      "b1c87177-088a-40ec-8917-9809343f3f9c"
+                    ],
+                    "externalIds": [
+                      {
+                        "key": "Xero",
+                        "value": "123456789"
+                      },
+                      {
+                        "key": "Stripe",
+                        "value": "cus_OCtCxqQDgu1uX9"
+                      },
+                      {
+                        "key": "HubSpot",
+                        "value": "123456789"
+                      }
+                    ]
+                  }
+                }
               }
             }
           },
@@ -6636,532 +6746,259 @@
             "description": "Created",
             "content": {
               "application/json": {
-                "example": {
-                  "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
-                  "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
-                  "customerId": "e309e948-088e-4d77-b654-cd85498f1555",
-                  "email": "jane.smith@example.com",
-                  "firstName": "Jane",
-                  "lastName": "Smith",
-                  "contactType": "QUOTE_RECIPIENT",
-                  "createdAt": "2022-06-28T16:47:00Z",
-                  "deletedAt": "2022-06-28T16:47:00Z"
-                },
                 "schema": {
-                  "$ref": "#/components/schemas/CreateContactEndpointProductCreateContactResponseModel"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "401": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "postApiCustomers_customer_Contacts",
-        "deprecated": false
-      }
-    },
-    "/customers/{customer}/contacts/{id}": {
-      "delete": {
-        "summary": "Delete a Contact",
-        "description": "Delete a Contact",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "customer",
-            "required": true,
-            "description": "The Customer ID"
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Unique ID"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "example": {
-                  "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
-                  "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
-                  "customerId": "e309e948-088e-4d77-b654-cd85498f1555",
-                  "email": "jane.smith@example.com",
-                  "firstName": "Jane",
-                  "lastName": "Smith",
-                  "contactType": "QUOTE_RECIPIENT",
-                  "createdAt": "2022-06-28T16:47:00Z",
-                  "deletedAt": "2022-06-28T16:47:00Z"
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/DeleteContactEndpointProductDeleteContactResponseModel"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "401": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "deleteApiCustomers_customer_Contacts_id",
-        "deprecated": false
-      },
-      "put": {
-        "summary": "Update a Contact",
-        "description": "Update a Contact",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "customer",
-            "required": true,
-            "description": "The Customer ID"
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Unique ID"
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "example": {
-                "email": "jane.smith@example.com",
-                "firstName": "Jane",
-                "lastName": "Smith",
-                "contactType": "QUOTE_RECIPIENT"
-              },
-              "schema": {
-                "$ref": "#/components/schemas/UpdateContactEndpointUpdateContactRequestModel"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "example": {
-                  "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
-                  "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
-                  "customerId": "e309e948-088e-4d77-b654-cd85498f1555",
-                  "email": "jane.smith@example.com",
-                  "firstName": "Jane",
-                  "lastName": "Smith",
-                  "contactType": "QUOTE_RECIPIENT",
-                  "createdAt": "2022-06-28T16:47:00Z",
-                  "deletedAt": "2022-06-28T16:47:00Z"
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/UpdateContactEndpointProductUpdateContactResponseModel"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "401": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "putApiCustomers_customer_Contacts_id",
-        "deprecated": false
-      }
-    },
-    "/customers/{id}": {
-      "delete": {
-        "summary": "Delete a Customer",
-        "description": "Delete one of your Customers",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Customer ID"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "example": {
-                  "id": "e309e948-088e-4d77-b654-cd85498f1555",
-                  "createdAt": "2022-06-28T16:47:00Z",
-                  "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
-                  "legalName": "John Doe",
-                  "contactName": "John Doe",
-                  "address": {
-                    "line1": "Flat 1",
-                    "line2": "123 Fake Street",
-                    "town": "London",
-                    "postcode": "AB1 2EF",
-                    "country": "GB"
-                  },
-                  "email": "john@example.com",
-                  "billingEmails": [
-                    "exampleCorpInvoices@example.com"
-                  ],
-                  "telephone": "02010001000",
-                  "url": "https://example.com/",
-                  "taxStatus": "TAXED",
-                  "label": "Example customer",
-                  "externalIds": [
-                    {
-                      "key": "Xero",
-                      "value": "ID",
-                      "syncTime": "2022-06-28T16:47:00Z"
-                    },
-                    {
-                      "key": "Stripe",
-                      "value": "cus_OCtCxqQDgu1uX9",
-                      "syncTime": "2022-06-28T16:47:00Z"
+                  "description": "2024-01-01",
+                  "$ref": "#/components/schemas/CreateCustomerResponse",
+                  "example": {
+                    "customer": {
+                      "id": "e309e948-088e-4d77-b654-cd85498f1555",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                      "legalName": "John Doe",
+                      "contactName": "John Doe",
+                      "address": {
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "London",
+                        "postcode": "AB1 2EF",
+                        "country": "GB"
+                      },
+                      "email": "john@example.com",
+                      "billingEmails": [
+                        "exampleCorpInvoices@example.com"
+                      ],
+                      "telephone": "02010001000",
+                      "url": "https://example.com/",
+                      "taxStatus": "TAXED",
+                      "label": "Example customer",
+                      "externalIds": [
+                        {
+                          "key": "Xero",
+                          "value": "ID",
+                          "syncTime": "2022-06-28T16:47:00Z"
+                        },
+                        {
+                          "key": "Stripe",
+                          "value": "cus_OCtCxqQDgu1uX9",
+                          "syncTime": "2022-06-28T16:47:00Z"
+                        }
+                      ]
                     }
-                  ]
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/Customer"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "404": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "deleteApiCustomers_id",
-        "deprecated": false
-      },
-      "get": {
-        "summary": "Get Customer",
-        "description": "Retrieve the details of one of your [Customers](/docs/customers).",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Customer ID"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "example": {
-                  "id": "e309e948-088e-4d77-b654-cd85498f1555",
-                  "createdAt": "2022-06-28T16:47:00Z",
-                  "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
-                  "legalName": "John Doe",
-                  "contactName": "John Doe",
-                  "address": {
-                    "line1": "Flat 1",
-                    "line2": "123 Fake Street",
-                    "town": "London",
-                    "postcode": "AB1 2EF",
-                    "country": "GB"
-                  },
-                  "email": "john@example.com",
-                  "billingEmails": [
-                    "exampleCorpInvoices@example.com"
-                  ],
-                  "telephone": "02010001000",
-                  "url": "https://example.com/",
-                  "taxStatus": "TAXED",
-                  "label": "Example customer",
-                  "externalIds": [
-                    {
-                      "key": "Xero",
-                      "value": "ID",
-                      "syncTime": "2022-06-28T16:47:00Z"
-                    },
-                    {
-                      "key": "Stripe",
-                      "value": "cus_OCtCxqQDgu1uX9",
-                      "syncTime": "2022-06-28T16:47:00Z"
-                    }
-                  ]
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/Customer"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "404": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "getApiCustomers_id",
-        "deprecated": false
-      },
-      "put": {
-        "summary": "Update Customer",
-        "description": "Update the details of one of your [Customers](/docs/customers).",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Customer ID"
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "example": {
-                "legalName": "John Doe",
-                "contactName": "John Doe",
-                "address": {
-                  "line1": "Flat 1",
-                  "line2": "123 Fake Street",
-                  "town": "London",
-                  "postcode": "AB1 2EF",
-                  "country": "GB"
-                },
-                "email": "john@example.com",
-                "billingEmails": [
-                  "exampleCorpInvoices@example.com"
-                ],
-                "telephone": "02010001000",
-                "url": "https://example.com/",
-                "label": "Example customer",
-                "externalIds": [
-                  {
-                    "key": "Xero",
-                    "value": "123456789"
-                  },
-                  {
-                    "key": "Stripe",
-                    "value": "cus_OCtCxqQDgu1uX9"
-                  },
-                  {
-                    "key": "HubSpot",
-                    "value": "123456789"
                   }
-                ],
-                "taxStatus": "TAXED",
-                "customerAliases": [
-                  "b1c87177-088a-40ec-8917-9809343f3f9c"
-                ]
-              },
-              "schema": {
-                "$ref": "#/components/schemas/UpdateCustomerRequest"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "example": {
-                  "id": "e309e948-088e-4d77-b654-cd85498f1555",
-                  "createdAt": "2022-06-28T16:47:00Z",
-                  "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
-                  "legalName": "John Doe",
-                  "contactName": "John Doe",
-                  "address": {
-                    "line1": "Flat 1",
-                    "line2": "123 Fake Street",
-                    "town": "London",
-                    "postcode": "AB1 2EF",
-                    "country": "GB"
-                  },
-                  "email": "john@example.com",
-                  "billingEmails": [
-                    "exampleCorpInvoices@example.com"
-                  ],
-                  "telephone": "02010001000",
-                  "url": "https://example.com/",
-                  "taxStatus": "TAXED",
-                  "label": "Example customer",
-                  "externalIds": [
-                    {
-                      "key": "Xero",
-                      "value": "ID",
-                      "syncTime": "2022-06-28T16:47:00Z"
-                    },
-                    {
-                      "key": "Stripe",
-                      "value": "cus_OCtCxqQDgu1uX9",
-                      "syncTime": "2022-06-28T16:47:00Z"
-                    }
-                  ]
                 },
-                "schema": {
-                  "$ref": "#/components/schemas/Customer"
+                "examples": {
+                  "CreateCustomerResponse": {
+                    "summary": "",
+                    "value": {
+                      "customer": {
+                        "id": "e309e948-088e-4d77-b654-cd85498f1555",
+                        "createdAt": "2022-06-28T16:47:00Z",
+                        "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                        "legalName": "John Doe",
+                        "contactName": "John Doe",
+                        "address": {
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "London",
+                          "postcode": "AB1 2EF",
+                          "country": "GB"
+                        },
+                        "email": "john@example.com",
+                        "billingEmails": [
+                          "exampleCorpInvoices@example.com"
+                        ],
+                        "telephone": "02010001000",
+                        "url": "https://example.com/",
+                        "taxStatus": "TAXED",
+                        "label": "Example customer",
+                        "externalIds": [
+                          {
+                            "key": "Xero",
+                            "value": "ID",
+                            "syncTime": "2022-06-28T16:47:00Z"
+                          },
+                          {
+                            "key": "Stripe",
+                            "value": "cus_OCtCxqQDgu1uX9",
+                            "syncTime": "2022-06-28T16:47:00Z"
+                          }
+                        ]
+                      }
+                    }
+                  }
                 }
               }
             }
           },
           "400": {
-            "description": "",
+            "description": "Bad Request",
             "content": {}
           },
-          "404": {
-            "description": "",
+          "401": {
+            "description": "Unauthorized",
             "content": {}
           },
           "500": {
-            "description": "",
+            "description": "Internal Server Error",
             "content": {}
           }
-        },
-        "security": [],
-        "operationId": "putApiCustomers_id",
-        "deprecated": false
-      }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
+    "/customers/by-alias/{alias}": {
+      "get": {
+        "tags": [],
+        "summary": "Get customer by alias",
+        "description": "Retrieve the details of one of your [Customers](/docs/customers) using one of their aliases.",
+        "operationId": "getCustomersByAliasByAlias",
+        "parameters": [
+          {
+            "name": "alias",
+            "in": "path",
+            "description": "Customer Alias",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "2024-01-01",
+                  "$ref": "#/components/schemas/Customer",
+                  "example": {
+                    "id": "e309e948-088e-4d77-b654-cd85498f1555",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                    "legalName": "John Doe",
+                    "contactName": "John Doe",
+                    "address": {
+                      "line1": "Flat 1",
+                      "line2": "123 Fake Street",
+                      "town": "London",
+                      "postcode": "AB1 2EF",
+                      "country": "GB"
+                    },
+                    "email": "john@example.com",
+                    "billingEmails": [
+                      "exampleCorpInvoices@example.com"
+                    ],
+                    "telephone": "02010001000",
+                    "url": "https://example.com/",
+                    "taxStatus": "TAXED",
+                    "label": "Example customer",
+                    "externalIds": [
+                      {
+                        "key": "Xero",
+                        "value": "ID",
+                        "syncTime": "2022-06-28T16:47:00Z"
+                      },
+                      {
+                        "key": "Stripe",
+                        "value": "cus_OCtCxqQDgu1uX9",
+                        "syncTime": "2022-06-28T16:47:00Z"
+                      }
+                    ]
+                  }
+                },
+                "examples": {
+                  "Customer": {
+                    "summary": "",
+                    "value": {
+                      "id": "e309e948-088e-4d77-b654-cd85498f1555",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                      "legalName": "John Doe",
+                      "contactName": "John Doe",
+                      "address": {
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "London",
+                        "postcode": "AB1 2EF",
+                        "country": "GB"
+                      },
+                      "email": "john@example.com",
+                      "billingEmails": [
+                        "exampleCorpInvoices@example.com"
+                      ],
+                      "telephone": "02010001000",
+                      "url": "https://example.com/",
+                      "taxStatus": "TAXED",
+                      "label": "Example customer",
+                      "externalIds": [
+                        {
+                          "key": "Xero",
+                          "value": "ID",
+                          "syncTime": "2022-06-28T16:47:00Z"
+                        },
+                        {
+                          "key": "Stripe",
+                          "value": "cus_OCtCxqQDgu1uX9",
+                          "syncTime": "2022-06-28T16:47:00Z"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
     },
     "/customers/{id}/aliases": {
       "get": {
+        "tags": [],
         "summary": "Get Customer Aliases",
         "description": "Retrieve the details of one of your [Customer's](/docs/customers) aliases.",
-        "tags": [],
+        "operationId": "getCustomersByIdAliases",
         "parameters": [
           {
+            "name": "id",
+            "in": "path",
+            "description": "Customer ID",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+            }
           },
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Customer ID"
+            }
           }
         ],
         "responses": {
@@ -7169,40 +7006,657 @@
             "description": "OK",
             "content": {
               "application/json": {
-                "example": {
-                  "items": [
-                    {
-                      "id": "0185a140-194a-7e9d-9fae-6a034fd4a725",
-                      "sequenceAccountId": "cd243b67-7d8c-42ee-b19f-b4e41f584415",
-                      "customerId": "0185a142-54ff-7ce5-846a-fc188432da6e",
-                      "value": "customer-alias-123",
-                      "createdAt": "2022-10-01T00:00:00Z"
-                    }
-                  ]
-                },
                 "schema": {
-                  "$ref": "#/components/schemas/GetCustomerAliasesEndpointEndpointResponse"
+                  "description": "2024-01-01",
+                  "$ref": "#/components/schemas/GetCustomerAliasesEndpointEndpointResponse",
+                  "example": {
+                    "items": [
+                      {
+                        "id": "0185a140-194a-7e9d-9fae-6a034fd4a725",
+                        "sequenceAccountId": "cd243b67-7d8c-42ee-b19f-b4e41f584415",
+                        "customerId": "0185a142-54ff-7ce5-846a-fc188432da6e",
+                        "value": "customer-alias-123",
+                        "createdAt": "2022-10-01T00:00:00Z"
+                      }
+                    ]
+                  }
+                },
+                "examples": {
+                  "GetCustomerAliasesEndpointEndpointResponse": {
+                    "summary": "",
+                    "value": {
+                      "items": [
+                        {
+                          "id": "0185a140-194a-7e9d-9fae-6a034fd4a725",
+                          "sequenceAccountId": "cd243b67-7d8c-42ee-b19f-b4e41f584415",
+                          "customerId": "0185a142-54ff-7ce5-846a-fc188432da6e",
+                          "value": "customer-alias-123",
+                          "createdAt": "2022-10-01T00:00:00Z"
+                        }
+                      ]
+                    }
+                  }
                 }
               }
             }
           },
           "400": {
-            "description": "",
+            "description": "Bad Request",
             "content": {}
           },
-          "404": {
-            "description": "",
+          "401": {
+            "description": "Unauthorized",
             "content": {}
           },
           "500": {
-            "description": "",
+            "description": "Internal Server Error",
             "content": {}
           }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
+    "/customer-aliases/{id}": {
+      "delete": {
+        "tags": [],
+        "summary": "Delete a Customer Alias",
+        "description": "Delete a Customer Alias",
+        "operationId": "deleteCustomerAliasesById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Unique ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "2024-01-01",
+                  "$ref": "#/components/schemas/DeleteCustomerAliasEndpointProductDeleteCustomerAliasResponseModel",
+                  "example": {
+                    "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
+                    "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+                    "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
+                    "value": "external-customer-alias-123",
+                    "createdAt": "2022-10-01T00:00:00Z",
+                    "deletedAt": "2022-10-01T00:00:00Z"
+                  }
+                },
+                "examples": {
+                  "DeleteCustomerAliasEndpointProductDeleteCustomerAliasResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
+                      "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+                      "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
+                      "value": "external-customer-alias-123",
+                      "createdAt": "2022-10-01T00:00:00Z",
+                      "deletedAt": "2022-10-01T00:00:00Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
+    "/customer-aliases": {
+      "get": {
+        "tags": [],
+        "summary": "List all Customer Aliases",
+        "description": "List all Customer Aliases",
+        "operationId": "getCustomerAliases",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Maximum number of objects to return per-page.",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "after",
+            "in": "query",
+            "description": "Pagination offset. To page through items, omit this parameter to retrieve the first page, and then successively use the value you get from `pagination.after` or `pagination.before` to retrieve each page.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "before",
+            "in": "query",
+            "description": "Pagination offset. To page through items, omit this parameter to retrieve the first page, and then successively use the value you get from `pagination.next` or `pagination.previous` to retrieve each page.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "2024-01-01",
+                  "$ref": "#/components/schemas/ListCustomerAliasEndpointProductListCustomerAliasPaginatedResponseModel",
+                  "example": {
+                    "items": [
+                      {
+                        "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
+                        "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+                        "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
+                        "value": "external-customer-alias-123",
+                        "createdAt": "2022-10-01T00:00:00Z",
+                        "deletedAt": "2022-10-01T00:00:00Z"
+                      }
+                    ],
+                    "pagination": {
+                      "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
+                      "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
+                      "totalResultSize": 10
+                    }
+                  }
+                },
+                "examples": {
+                  "ListCustomerAliasEndpointProductListCustomerAliasPaginatedResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "items": [
+                        {
+                          "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
+                          "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+                          "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
+                          "value": "external-customer-alias-123",
+                          "createdAt": "2022-10-01T00:00:00Z",
+                          "deletedAt": "2022-10-01T00:00:00Z"
+                        }
+                      ],
+                      "pagination": {
+                        "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
+                        "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
+                        "totalResultSize": 10
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "post": {
+        "tags": [],
+        "summary": "Create a new Customer Alias",
+        "description": "Create a new Customer Alias",
+        "operationId": "postCustomerAliases",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "description": "2024-01-01",
+                "$ref": "#/components/schemas/CreateCustomerAliasEndpointCreateCustomerAliasRequestModel",
+                "example": {
+                  "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+                  "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
+                  "value": "external-customer-alias-123",
+                  "deletedAt": "2022-10-01T00:00:00Z"
+                }
+              },
+              "examples": {
+                "CreateCustomerAliasEndpointCreateCustomerAliasRequestModel": {
+                  "summary": "",
+                  "value": {
+                    "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+                    "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
+                    "value": "external-customer-alias-123",
+                    "deletedAt": "2022-10-01T00:00:00Z"
+                  }
+                }
+              }
+            }
+          },
+          "required": true
         },
-        "security": [],
-        "operationId": "getApiCustomers_id_Aliases",
-        "deprecated": false
-      }
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "2024-01-01",
+                  "$ref": "#/components/schemas/CreateCustomerAliasEndpointProductCreateCustomerAliasResponseModel",
+                  "example": {
+                    "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
+                    "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+                    "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
+                    "value": "external-customer-alias-123",
+                    "createdAt": "2022-10-01T00:00:00Z",
+                    "deletedAt": "2022-10-01T00:00:00Z"
+                  }
+                },
+                "examples": {
+                  "CreateCustomerAliasEndpointProductCreateCustomerAliasResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
+                      "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+                      "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
+                      "value": "external-customer-alias-123",
+                      "createdAt": "2022-10-01T00:00:00Z",
+                      "deletedAt": "2022-10-01T00:00:00Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
+    "/customers/{customer}/contacts": {
+      "post": {
+        "tags": [],
+        "summary": "Create a new Contact",
+        "description": "Create a new Contact",
+        "operationId": "postCustomersByCustomerContacts",
+        "parameters": [
+          {
+            "name": "customer",
+            "in": "path",
+            "description": "The Customer ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "description": "2024-01-01",
+                "$ref": "#/components/schemas/CreateContactEndpointCreateContactRequestModel",
+                "example": {
+                  "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                  "customerId": "e309e948-088e-4d77-b654-cd85498f1555",
+                  "email": "jane.smith@example.com",
+                  "firstName": "Jane",
+                  "lastName": "Smith",
+                  "contactType": "QUOTE_RECIPIENT",
+                  "deletedAt": "2022-06-28T16:47:00Z"
+                }
+              },
+              "examples": {
+                "CreateContactEndpointCreateContactRequestModel": {
+                  "summary": "",
+                  "value": {
+                    "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                    "customerId": "e309e948-088e-4d77-b654-cd85498f1555",
+                    "email": "jane.smith@example.com",
+                    "firstName": "Jane",
+                    "lastName": "Smith",
+                    "contactType": "QUOTE_RECIPIENT",
+                    "deletedAt": "2022-06-28T16:47:00Z"
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "2024-01-01",
+                  "$ref": "#/components/schemas/CreateContactEndpointProductCreateContactResponseModel",
+                  "example": {
+                    "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+                    "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                    "customerId": "e309e948-088e-4d77-b654-cd85498f1555",
+                    "email": "jane.smith@example.com",
+                    "firstName": "Jane",
+                    "lastName": "Smith",
+                    "contactType": "QUOTE_RECIPIENT",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "deletedAt": "2022-06-28T16:47:00Z"
+                  }
+                },
+                "examples": {
+                  "CreateContactEndpointProductCreateContactResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+                      "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                      "customerId": "e309e948-088e-4d77-b654-cd85498f1555",
+                      "email": "jane.smith@example.com",
+                      "firstName": "Jane",
+                      "lastName": "Smith",
+                      "contactType": "QUOTE_RECIPIENT",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "deletedAt": "2022-06-28T16:47:00Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
+    "/customers/{customer}/contacts/{id}": {
+      "put": {
+        "tags": [],
+        "summary": "Update a Contact",
+        "description": "Update a Contact",
+        "operationId": "putCustomersByCustomerContactsById",
+        "parameters": [
+          {
+            "name": "customer",
+            "in": "path",
+            "description": "The Customer ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Unique ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "description": "2024-01-01",
+                "$ref": "#/components/schemas/UpdateContactEndpointUpdateContactRequestModel",
+                "example": {
+                  "email": "jane.smith@example.com",
+                  "firstName": "Jane",
+                  "lastName": "Smith",
+                  "contactType": "QUOTE_RECIPIENT"
+                }
+              },
+              "examples": {
+                "UpdateContactEndpointUpdateContactRequestModel": {
+                  "summary": "",
+                  "value": {
+                    "email": "jane.smith@example.com",
+                    "firstName": "Jane",
+                    "lastName": "Smith",
+                    "contactType": "QUOTE_RECIPIENT"
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "2024-01-01",
+                  "$ref": "#/components/schemas/UpdateContactEndpointProductUpdateContactResponseModel",
+                  "example": {
+                    "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+                    "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                    "customerId": "e309e948-088e-4d77-b654-cd85498f1555",
+                    "email": "jane.smith@example.com",
+                    "firstName": "Jane",
+                    "lastName": "Smith",
+                    "contactType": "QUOTE_RECIPIENT",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "deletedAt": "2022-06-28T16:47:00Z"
+                  }
+                },
+                "examples": {
+                  "UpdateContactEndpointProductUpdateContactResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+                      "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                      "customerId": "e309e948-088e-4d77-b654-cd85498f1555",
+                      "email": "jane.smith@example.com",
+                      "firstName": "Jane",
+                      "lastName": "Smith",
+                      "contactType": "QUOTE_RECIPIENT",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "deletedAt": "2022-06-28T16:47:00Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "delete": {
+        "tags": [],
+        "summary": "Delete a Contact",
+        "description": "Delete a Contact",
+        "operationId": "deleteCustomersByCustomerContactsById",
+        "parameters": [
+          {
+            "name": "customer",
+            "in": "path",
+            "description": "The Customer ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Unique ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "2024-01-01",
+                  "$ref": "#/components/schemas/DeleteContactEndpointProductDeleteContactResponseModel",
+                  "example": {
+                    "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+                    "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                    "customerId": "e309e948-088e-4d77-b654-cd85498f1555",
+                    "email": "jane.smith@example.com",
+                    "firstName": "Jane",
+                    "lastName": "Smith",
+                    "contactType": "QUOTE_RECIPIENT",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "deletedAt": "2022-06-28T16:47:00Z"
+                  }
+                },
+                "examples": {
+                  "DeleteContactEndpointProductDeleteContactResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+                      "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                      "customerId": "e309e948-088e-4d77-b654-cd85498f1555",
+                      "email": "jane.smith@example.com",
+                      "firstName": "Jane",
+                      "lastName": "Smith",
+                      "contactType": "QUOTE_RECIPIENT",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "deletedAt": "2022-06-28T16:47:00Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
     },
     "/credit-notes": {
       "get": {
@@ -16342,6 +16796,7 @@
           "content": {
             "application/json": {
               "schema": {
+                "description": "2024-01-01",
                 "$ref": "#/components/schemas/CreateTaxRateEndpointCreateTaxRateRequestModel",
                 "example": {
                   "isPublished": false,
@@ -16572,6 +17027,7 @@
           "content": {
             "application/json": {
               "schema": {
+                "description": "2024-01-01",
                 "$ref": "#/components/schemas/CreateTaxRateVersionEndpointCreateTaxRateVersionRequestModel",
                 "example": {
                   "isPublished": false,
@@ -16784,6 +17240,7 @@
           "content": {
             "application/json": {
               "schema": {
+                "description": "2024-01-01",
                 "$ref": "#/components/schemas/UpdateTaxRateEndpointUpdateTaxRateRequestModel",
                 "example": {
                   "id": "0373904e-0f24-4c19-bb0d-9b855f1ec3ca",
@@ -17104,6 +17561,7 @@
           "content": {
             "application/json": {
               "schema": {
+                "description": "2024-01-01",
                 "$ref": "#/components/schemas/UpdateTaxRateVersionEndpointUpdateTaxRateVersionRequestModel",
                 "example": {
                   "id": "d2aea732-19f5-4832-848d-f11b796e963e",
@@ -17531,6 +17989,7 @@
           "content": {
             "application/json": {
               "schema": {
+                "description": "2024-01-01",
                 "$ref": "#/components/schemas/CreateTaxRegistrationEndpointCreateTaxRegistrationRequestModel",
                 "example": {
                   "taxIdentifier": "GB123456789",
@@ -28473,90 +28932,19 @@
         "type": "string"
       },
       "Customer": {
-        "properties": {
-          "id": {
-            "example": "e309e948-088e-4d77-b654-cd85498f1555",
-            "description": "Unique ID",
-            "type": "string"
-          },
-          "createdAt": {
-            "example": "2022-06-28T16:47:00Z",
-            "description": "Created at",
-            "type": "string"
-          },
-          "sequenceAccountId": {
-            "example": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
-            "description": "SequenceHQ Account ID",
-            "type": "string"
-          },
-          "legalName": {
-            "example": "John Doe",
-            "description": "Legal name",
-            "type": "string"
-          },
-          "contactName": {
-            "example": "John Doe",
-            "description": "Contact Name",
-            "type": "string"
-          },
-          "address": {
-            "$ref": "#/components/schemas/Address",
-            "description": "Address"
-          },
-          "email": {
-            "example": "john@example.com",
-            "description": "Main contact email address",
-            "type": "string"
-          },
-          "billingEmails": {
-            "items": {
-              "type": "string"
-            },
-            "example": [
-              "exampleCorpInvoices@example.com"
-            ],
-            "description": "Billing email addresses",
-            "type": "array"
-          },
-          "telephone": {
-            "example": "02010001000",
-            "description": "Telephone",
-            "type": "string"
-          },
-          "url": {
-            "example": "https://example.com/",
-            "description": "URL",
-            "type": "string"
-          },
-          "taxStatus": {
-            "$ref": "#/components/schemas/TaxStatus",
-            "description": "Tax status applicable to customer. Can be one of TAXED, EXEMPT or REVERSE_CHARGED. The default is TAXED."
-          },
-          "label": {
-            "example": "Example customer",
-            "description": "Label",
-            "type": "string"
-          },
-          "externalIds": {
-            "items": {
-              "$ref": "#/components/schemas/KeyValueLinkInfo"
-            },
-            "example": [
-              {
-                "key": "Xero",
-                "value": "ID",
-                "syncTime": "2022-06-28T16:47:00Z"
-              },
-              {
-                "key": "Stripe",
-                "value": "cus_OCtCxqQDgu1uX9",
-                "syncTime": "2022-06-28T16:47:00Z"
-              }
-            ],
-            "description": "External services which are linked to this customer",
-            "type": "array"
-          }
-        },
+        "required": [
+          "address",
+          "billingEmails",
+          "createdAt",
+          "email",
+          "externalIds",
+          "id",
+          "legalName",
+          "sequenceAccountId",
+          "taxStatus"
+        ],
+        "type": "object",
+        "description": "2024-01-01",
         "example": {
           "id": "e309e948-088e-4d77-b654-cd85498f1555",
           "createdAt": "2022-06-28T16:47:00Z",
@@ -28591,46 +28979,99 @@
             }
           ]
         },
-        "type": "object",
-        "required": [
-          "address",
-          "billingEmails",
-          "createdAt",
-          "email",
-          "externalIds",
-          "id",
-          "legalName",
-          "sequenceAccountId",
-          "taxStatus"
-        ]
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique ID",
+            "example": "e309e948-088e-4d77-b654-cd85498f1555"
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "Created at",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "SequenceHQ Account ID",
+            "example": "25b3c342-6fa6-4375-9ed3-616f05abb77a"
+          },
+          "legalName": {
+            "type": "string",
+            "description": "Legal name",
+            "example": "John Doe"
+          },
+          "contactName": {
+            "type": "string",
+            "description": "Contact Name",
+            "example": "John Doe"
+          },
+          "address": {
+            "description": "Address",
+            "$ref": "#/components/schemas/Address"
+          },
+          "email": {
+            "type": "string",
+            "description": "Main contact email address",
+            "example": "john@example.com"
+          },
+          "billingEmails": {
+            "type": "array",
+            "description": "Billing email addresses",
+            "example": [
+              "exampleCorpInvoices@example.com"
+            ],
+            "items": {
+              "type": "string"
+            }
+          },
+          "telephone": {
+            "type": "string",
+            "description": "Telephone",
+            "example": "02010001000"
+          },
+          "url": {
+            "type": "string",
+            "description": "URL",
+            "example": "https://example.com/"
+          },
+          "taxStatus": {
+            "description": "Tax status applicable to customer. Can be one of TAXED, EXEMPT or REVERSE_CHARGED. The default is TAXED.",
+            "$ref": "#/components/schemas/TaxStatus"
+          },
+          "label": {
+            "type": "string",
+            "description": "Label",
+            "example": "Example customer"
+          },
+          "externalIds": {
+            "type": "array",
+            "description": "External services which are linked to this customer",
+            "example": [
+              {
+                "key": "Xero",
+                "value": "ID",
+                "syncTime": "2022-06-28T16:47:00Z"
+              },
+              {
+                "key": "Stripe",
+                "value": "cus_OCtCxqQDgu1uX9",
+                "syncTime": "2022-06-28T16:47:00Z"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/KeyValueLinkInfo"
+            }
+          }
+        }
       },
       "Address": {
-        "properties": {
-          "line1": {
-            "example": "Flat 1",
-            "description": "Address line 1",
-            "type": "string"
-          },
-          "line2": {
-            "example": "123 Fake Street",
-            "description": "Address line 2",
-            "type": "string"
-          },
-          "town": {
-            "example": "London",
-            "description": "Town or city",
-            "type": "string"
-          },
-          "postcode": {
-            "example": "AB1 2EF",
-            "description": "Postal code",
-            "type": "string"
-          },
-          "country": {
-            "$ref": "#/components/schemas/CountryCode",
-            "description": "Country code ([ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes))"
-          }
-        },
+        "required": [
+          "country",
+          "line1",
+          "postcode",
+          "town"
+        ],
+        "type": "object",
         "example": {
           "line1": "Flat 1",
           "line2": "123 Fake Street",
@@ -28638,102 +29079,78 @@
           "postcode": "AB1 2EF",
           "country": "GB"
         },
-        "type": "object",
-        "required": [
-          "country",
-          "line1",
-          "postcode",
-          "town"
-        ]
+        "properties": {
+          "line1": {
+            "type": "string",
+            "description": "Address line 1",
+            "example": "Flat 1"
+          },
+          "line2": {
+            "type": "string",
+            "description": "Address line 2",
+            "example": "123 Fake Street"
+          },
+          "town": {
+            "type": "string",
+            "description": "Town or city",
+            "example": "London"
+          },
+          "postcode": {
+            "type": "string",
+            "description": "Postal code",
+            "example": "AB1 2EF"
+          },
+          "country": {
+            "description": "Country code ([ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes))",
+            "$ref": "#/components/schemas/CountryCode"
+          }
+        }
       },
       "TaxStatus": {
+        "type": "string",
         "example": "TAXED",
         "enum": [
           "TAXED",
           "TAX_EXEMPT",
           "REVERSE_CHARGED"
-        ],
-        "type": "string"
+        ]
       },
       "KeyValueLinkInfo": {
-        "properties": {
-          "key": {
-            "$ref": "#/components/schemas/IntegrationService",
-            "description": "The connected service"
-          },
-          "value": {
-            "example": "ID",
-            "description": "The ID of the related entity in external system",
-            "type": "string"
-          },
-          "syncTime": {
-            "example": "2022-06-28T16:47:00Z",
-            "description": "The time that this was synced from the connected integration",
-            "type": "string"
-          }
-        },
+        "required": [
+          "key",
+          "syncTime",
+          "value"
+        ],
+        "type": "object",
         "example": {
           "key": "Xero",
           "value": "ID",
           "syncTime": "2022-06-28T16:47:00Z"
         },
-        "type": "object",
-        "required": [
-          "key",
-          "syncTime",
-          "value"
-        ]
+        "properties": {
+          "key": {
+            "description": "The connected service",
+            "$ref": "#/components/schemas/IntegrationService"
+          },
+          "value": {
+            "type": "string",
+            "description": "The ID of the related entity in external system",
+            "example": "ID"
+          },
+          "syncTime": {
+            "type": "string",
+            "description": "The time that this was synced from the connected integration",
+            "example": "2022-06-28T16:47:00Z"
+          }
+        }
       },
       "ListCustomersResponse": {
-        "properties": {
-          "items": {
-            "items": {
-              "$ref": "#/components/schemas/Customer"
-            },
-            "example": [
-              {
-                "id": "e309e948-088e-4d77-b654-cd85498f1555",
-                "createdAt": "2022-06-28T16:47:00Z",
-                "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
-                "legalName": "John Doe",
-                "contactName": "John Doe",
-                "address": {
-                  "line1": "Flat 1",
-                  "line2": "123 Fake Street",
-                  "town": "London",
-                  "postcode": "AB1 2EF",
-                  "country": "GB"
-                },
-                "email": "john@example.com",
-                "billingEmails": [
-                  "exampleCorpInvoices@example.com"
-                ],
-                "telephone": "02010001000",
-                "url": "https://example.com/",
-                "taxStatus": "TAXED",
-                "label": "Example customer",
-                "externalIds": [
-                  {
-                    "key": "Xero",
-                    "value": "ID",
-                    "syncTime": "2022-06-28T16:47:00Z"
-                  },
-                  {
-                    "key": "Stripe",
-                    "value": "cus_OCtCxqQDgu1uX9",
-                    "syncTime": "2022-06-28T16:47:00Z"
-                  }
-                ]
-              }
-            ],
-            "description": "Customers",
-            "type": "array"
-          },
-          "pagination": {
-            "$ref": "#/components/schemas/PaginationMeta",
-            "description": "Results pagination"
-          }
-        },
+        "required": [
+          "items",
+          "pagination"
+        ],
+        "type": "object",
+        "description": "2024-01-01",
         "example": {
           "items": [
             {
@@ -28777,142 +29194,65 @@
             "totalResultSize": 10
           }
         },
-        "type": "object",
-        "required": [
-          "items",
-          "pagination"
-        ]
-      },
-      "CreateCustomerResponse": {
         "properties": {
-          "customer": {
-            "$ref": "#/components/schemas/Customer",
-            "description": "Customer"
-          }
-        },
-        "example": {
-          "customer": {
-            "id": "e309e948-088e-4d77-b654-cd85498f1555",
-            "createdAt": "2022-06-28T16:47:00Z",
-            "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
-            "legalName": "John Doe",
-            "contactName": "John Doe",
-            "address": {
-              "line1": "Flat 1",
-              "line2": "123 Fake Street",
-              "town": "London",
-              "postcode": "AB1 2EF",
-              "country": "GB"
-            },
-            "email": "john@example.com",
-            "billingEmails": [
-              "exampleCorpInvoices@example.com"
-            ],
-            "telephone": "02010001000",
-            "url": "https://example.com/",
-            "taxStatus": "TAXED",
-            "label": "Example customer",
-            "externalIds": [
+          "items": {
+            "type": "array",
+            "description": "Customers",
+            "example": [
               {
-                "key": "Xero",
-                "value": "ID",
-                "syncTime": "2022-06-28T16:47:00Z"
-              },
-              {
-                "key": "Stripe",
-                "value": "cus_OCtCxqQDgu1uX9",
-                "syncTime": "2022-06-28T16:47:00Z"
+                "id": "e309e948-088e-4d77-b654-cd85498f1555",
+                "createdAt": "2022-06-28T16:47:00Z",
+                "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+                "legalName": "John Doe",
+                "contactName": "John Doe",
+                "address": {
+                  "line1": "Flat 1",
+                  "line2": "123 Fake Street",
+                  "town": "London",
+                  "postcode": "AB1 2EF",
+                  "country": "GB"
+                },
+                "email": "john@example.com",
+                "billingEmails": [
+                  "exampleCorpInvoices@example.com"
+                ],
+                "telephone": "02010001000",
+                "url": "https://example.com/",
+                "taxStatus": "TAXED",
+                "label": "Example customer",
+                "externalIds": [
+                  {
+                    "key": "Xero",
+                    "value": "ID",
+                    "syncTime": "2022-06-28T16:47:00Z"
+                  },
+                  {
+                    "key": "Stripe",
+                    "value": "cus_OCtCxqQDgu1uX9",
+                    "syncTime": "2022-06-28T16:47:00Z"
+                  }
+                ]
               }
-            ]
+            ],
+            "items": {
+              "$ref": "#/components/schemas/Customer"
+            }
+          },
+          "pagination": {
+            "description": "Results pagination",
+            "$ref": "#/components/schemas/PaginationMeta"
           }
-        },
-        "type": "object",
-        "required": [
-          "customer"
-        ]
+        }
       },
       "CreateCustomerRequest": {
-        "properties": {
-          "legalName": {
-            "example": "John Doe",
-            "description": "Legal name",
-            "type": "string"
-          },
-          "contactName": {
-            "example": "John Doe",
-            "description": "Contact name",
-            "type": "string"
-          },
-          "address": {
-            "$ref": "#/components/schemas/Address",
-            "description": "Address"
-          },
-          "email": {
-            "example": "john@example.com",
-            "description": "Email",
-            "type": "string"
-          },
-          "billingEmails": {
-            "items": {
-              "type": "string"
-            },
-            "example": [
-              "exampleCorpInvoices@example.com"
-            ],
-            "description": "Billing email addresses",
-            "type": "array"
-          },
-          "telephone": {
-            "example": "john@example.com",
-            "description": "Telephone",
-            "type": "string"
-          },
-          "url": {
-            "example": "https://example.com/",
-            "description": "URL",
-            "type": "string"
-          },
-          "label": {
-            "example": "Example customer",
-            "description": "Label",
-            "type": "string"
-          },
-          "taxStatus": {
-            "$ref": "#/components/schemas/TaxStatus",
-            "description": "Tax status applicable to customer. Can be one of TAXED, EXEMPT or REVERSE_CHARGED. The default is TAXED."
-          },
-          "customerAliases": {
-            "items": {
-              "type": "string"
-            },
-            "example": [
-              "b1c87177-088a-40ec-8917-9809343f3f9c"
-            ],
-            "description": "Customer aliases.",
-            "type": "array"
-          },
-          "externalIds": {
-            "items": {
-              "$ref": "#/components/schemas/IntegrationExternalIdentifier1"
-            },
-            "example": [
-              {
-                "key": "Xero",
-                "value": "123456789"
-              },
-              {
-                "key": "Stripe",
-                "value": "cus_OCtCxqQDgu1uX9"
-              },
-              {
-                "key": "HubSpot",
-                "value": "123456789"
-              }
-            ],
-            "description": "IDs in external integrations",
-            "type": "array"
-          }
-        },
+        "required": [
+          "address",
+          "billingEmails",
+          "email",
+          "legalName"
+        ],
+        "type": "object",
+        "description": "2024-01-01",
         "example": {
           "legalName": "John Doe",
           "contactName": "John Doe",
@@ -28949,84 +29289,68 @@
             }
           ]
         },
-        "type": "object",
-        "required": [
-          "address",
-          "billingEmails",
-          "email",
-          "legalName"
-        ]
-      },
-      "IntegrationExternalIdentifier1": {
-        "properties": {
-          "key": {
-            "$ref": "#/components/schemas/IntegrationService"
-          },
-          "value": {
-            "example": "123456789",
-            "type": "string"
-          }
-        },
-        "example": {
-          "key": "Xero",
-          "value": "123456789"
-        },
-        "type": "object",
-        "required": [
-          "key",
-          "value"
-        ]
-      },
-      "UpdateCustomerRequest": {
         "properties": {
           "legalName": {
-            "example": "John Doe",
+            "type": "string",
             "description": "Legal name",
-            "type": "string"
+            "example": "John Doe"
           },
           "contactName": {
-            "example": "John Doe",
-            "description": "Contact Name",
-            "type": "string"
+            "type": "string",
+            "description": "Contact name",
+            "example": "John Doe"
           },
           "address": {
-            "$ref": "#/components/schemas/Address",
-            "description": "Address"
+            "description": "Address",
+            "$ref": "#/components/schemas/Address"
           },
           "email": {
-            "example": "john@example.com",
+            "type": "string",
             "description": "Email",
-            "type": "string"
+            "example": "john@example.com"
           },
           "billingEmails": {
-            "items": {
-              "type": "string"
-            },
+            "type": "array",
+            "description": "Billing email addresses",
             "example": [
               "exampleCorpInvoices@example.com"
             ],
-            "description": "Billing email addresses",
-            "type": "array"
+            "items": {
+              "type": "string"
+            }
           },
           "telephone": {
-            "example": "02010001000",
+            "type": "string",
             "description": "Telephone",
-            "type": "string"
+            "example": "john@example.com"
           },
           "url": {
-            "example": "https://example.com/",
+            "type": "string",
             "description": "URL",
-            "type": "string"
+            "example": "https://example.com/"
           },
           "label": {
-            "example": "Example customer",
+            "type": "string",
             "description": "Label",
-            "type": "string"
+            "example": "Example customer"
+          },
+          "taxStatus": {
+            "description": "Tax status applicable to customer. Can be one of TAXED, EXEMPT or REVERSE_CHARGED. The default is TAXED.",
+            "$ref": "#/components/schemas/TaxStatus"
+          },
+          "customerAliases": {
+            "type": "array",
+            "description": "Customer aliases.",
+            "example": [
+              "b1c87177-088a-40ec-8917-9809343f3f9c"
+            ],
+            "items": {
+              "type": "string"
+            }
           },
           "externalIds": {
-            "items": {
-              "$ref": "#/components/schemas/IntegrationExternalIdentifier1"
-            },
+            "type": "array",
+            "description": "IDs in external integrations",
             "example": [
               {
                 "key": "Xero",
@@ -29041,24 +29365,90 @@
                 "value": "123456789"
               }
             ],
-            "description": "IDs in external integrations",
-            "type": "array"
-          },
-          "taxStatus": {
-            "$ref": "#/components/schemas/TaxStatus",
-            "description": "Tax status applicable to customer. Can be one of TAXED, EXEMPT or REVERSE_CHARGED. The default is TAXED."
-          },
-          "customerAliases": {
             "items": {
-              "type": "string"
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier1"
+            }
+          }
+        }
+      },
+      "IntegrationExternalIdentifier1": {
+        "required": [
+          "key",
+          "value"
+        ],
+        "type": "object",
+        "example": {
+          "key": "Xero",
+          "value": "123456789"
+        },
+        "properties": {
+          "key": {
+            "$ref": "#/components/schemas/IntegrationService"
+          },
+          "value": {
+            "type": "string",
+            "example": "123456789"
+          }
+        }
+      },
+      "CreateCustomerResponse": {
+        "required": [
+          "customer"
+        ],
+        "type": "object",
+        "description": "2024-01-01",
+        "example": {
+          "customer": {
+            "id": "e309e948-088e-4d77-b654-cd85498f1555",
+            "createdAt": "2022-06-28T16:47:00Z",
+            "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+            "legalName": "John Doe",
+            "contactName": "John Doe",
+            "address": {
+              "line1": "Flat 1",
+              "line2": "123 Fake Street",
+              "town": "London",
+              "postcode": "AB1 2EF",
+              "country": "GB"
             },
-            "example": [
-              "b1c87177-088a-40ec-8917-9809343f3f9c"
+            "email": "john@example.com",
+            "billingEmails": [
+              "exampleCorpInvoices@example.com"
             ],
-            "description": "Customer aliases.",
-            "type": "array"
+            "telephone": "02010001000",
+            "url": "https://example.com/",
+            "taxStatus": "TAXED",
+            "label": "Example customer",
+            "externalIds": [
+              {
+                "key": "Xero",
+                "value": "ID",
+                "syncTime": "2022-06-28T16:47:00Z"
+              },
+              {
+                "key": "Stripe",
+                "value": "cus_OCtCxqQDgu1uX9",
+                "syncTime": "2022-06-28T16:47:00Z"
+              }
+            ]
           }
         },
+        "properties": {
+          "customer": {
+            "description": "Customer",
+            "$ref": "#/components/schemas/Customer"
+          }
+        }
+      },
+      "UpdateCustomerRequest": {
+        "required": [
+          "address",
+          "email",
+          "legalName",
+          "taxStatus"
+        ],
+        "type": "object",
+        "description": "2024-01-01",
         "example": {
           "legalName": "John Doe",
           "contactName": "John Doe",
@@ -29095,32 +29485,94 @@
             "b1c87177-088a-40ec-8917-9809343f3f9c"
           ]
         },
-        "type": "object",
-        "required": [
-          "address",
-          "email",
-          "legalName",
-          "taxStatus"
-        ]
-      },
-      "GetCustomerAliasesEndpointEndpointResponse": {
         "properties": {
-          "items": {
+          "legalName": {
+            "type": "string",
+            "description": "Legal name",
+            "example": "John Doe"
+          },
+          "contactName": {
+            "type": "string",
+            "description": "Contact Name",
+            "example": "John Doe"
+          },
+          "address": {
+            "description": "Address",
+            "$ref": "#/components/schemas/Address"
+          },
+          "email": {
+            "type": "string",
+            "description": "Email",
+            "example": "john@example.com"
+          },
+          "billingEmails": {
+            "type": "array",
+            "description": "Billing email addresses",
+            "example": [
+              "exampleCorpInvoices@example.com"
+            ],
             "items": {
-              "$ref": "#/components/schemas/CustomerAlias"
-            },
+              "type": "string"
+            }
+          },
+          "telephone": {
+            "type": "string",
+            "description": "Telephone",
+            "example": "02010001000"
+          },
+          "url": {
+            "type": "string",
+            "description": "URL",
+            "example": "https://example.com/"
+          },
+          "label": {
+            "type": "string",
+            "description": "Label",
+            "example": "Example customer"
+          },
+          "externalIds": {
+            "type": "array",
+            "description": "IDs in external integrations",
             "example": [
               {
-                "id": "0185a140-194a-7e9d-9fae-6a034fd4a725",
-                "sequenceAccountId": "cd243b67-7d8c-42ee-b19f-b4e41f584415",
-                "customerId": "0185a142-54ff-7ce5-846a-fc188432da6e",
-                "value": "customer-alias-123",
-                "createdAt": "2022-10-01T00:00:00Z"
+                "key": "Xero",
+                "value": "123456789"
+              },
+              {
+                "key": "Stripe",
+                "value": "cus_OCtCxqQDgu1uX9"
+              },
+              {
+                "key": "HubSpot",
+                "value": "123456789"
               }
             ],
-            "type": "array"
+            "items": {
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier1"
+            }
+          },
+          "taxStatus": {
+            "description": "Tax status applicable to customer. Can be one of TAXED, EXEMPT or REVERSE_CHARGED. The default is TAXED.",
+            "$ref": "#/components/schemas/TaxStatus"
+          },
+          "customerAliases": {
+            "type": "array",
+            "description": "Customer aliases.",
+            "example": [
+              "b1c87177-088a-40ec-8917-9809343f3f9c"
+            ],
+            "items": {
+              "type": "string"
+            }
           }
-        },
+        }
+      },
+      "GetCustomerAliasesEndpointEndpointResponse": {
+        "required": [
+          "items"
+        ],
+        "type": "object",
+        "description": "2024-01-01",
         "example": {
           "items": [
             {
@@ -29132,39 +29584,32 @@
             }
           ]
         },
-        "type": "object",
-        "required": [
-          "items"
-        ]
+        "properties": {
+          "items": {
+            "type": "array",
+            "example": [
+              {
+                "id": "0185a140-194a-7e9d-9fae-6a034fd4a725",
+                "sequenceAccountId": "cd243b67-7d8c-42ee-b19f-b4e41f584415",
+                "customerId": "0185a142-54ff-7ce5-846a-fc188432da6e",
+                "value": "customer-alias-123",
+                "createdAt": "2022-10-01T00:00:00Z"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/CustomerAlias"
+            }
+          }
+        }
       },
       "CustomerAlias": {
-        "properties": {
-          "id": {
-            "example": "0185a140-194a-7e9d-9fae-6a034fd4a725",
-            "description": "Unique ID",
-            "type": "string"
-          },
-          "sequenceAccountId": {
-            "example": "cd243b67-7d8c-42ee-b19f-b4e41f584415",
-            "description": "Sequence Account ID",
-            "type": "string"
-          },
-          "customerId": {
-            "example": "0185a142-54ff-7ce5-846a-fc188432da6e",
-            "description": "Customer ID",
-            "type": "string"
-          },
-          "value": {
-            "example": "customer-alias-123",
-            "description": "Alias value",
-            "type": "string"
-          },
-          "createdAt": {
-            "example": "2022-10-01T00:00:00Z",
-            "description": "Created At",
-            "type": "string"
-          }
-        },
+        "required": [
+          "customerId",
+          "id",
+          "sequenceAccountId",
+          "value"
+        ],
+        "type": "object",
         "example": {
           "id": "0185a140-194a-7e9d-9fae-6a034fd4a725",
           "sequenceAccountId": "cd243b67-7d8c-42ee-b19f-b4e41f584415",
@@ -29172,47 +29617,43 @@
           "value": "customer-alias-123",
           "createdAt": "2022-10-01T00:00:00Z"
         },
-        "type": "object",
-        "required": [
-          "customerId",
-          "id",
-          "sequenceAccountId",
-          "value"
-        ]
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique ID",
+            "example": "0185a140-194a-7e9d-9fae-6a034fd4a725"
+          },
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Sequence Account ID",
+            "example": "cd243b67-7d8c-42ee-b19f-b4e41f584415"
+          },
+          "customerId": {
+            "type": "string",
+            "description": "Customer ID",
+            "example": "0185a142-54ff-7ce5-846a-fc188432da6e"
+          },
+          "value": {
+            "type": "string",
+            "description": "Alias value",
+            "example": "customer-alias-123"
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "Created At",
+            "example": "2022-10-01T00:00:00Z"
+          }
+        }
       },
       "DeleteCustomerAliasEndpointProductDeleteCustomerAliasResponseModel": {
-        "properties": {
-          "id": {
-            "example": "01849e70-0a0f-72ca-ba07-5557dd734d43",
-            "description": "Unique ID",
-            "type": "string"
-          },
-          "sequenceAccountId": {
-            "example": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
-            "description": "Sequence Account ID",
-            "type": "string"
-          },
-          "customerId": {
-            "example": "01849e70-703e-705a-b59a-d3fd575587e0",
-            "description": "Customer ID",
-            "type": "string"
-          },
-          "value": {
-            "example": "external-customer-alias-123",
-            "description": "Alias value",
-            "type": "string"
-          },
-          "createdAt": {
-            "example": "2022-10-01T00:00:00Z",
-            "description": "Created At",
-            "type": "string"
-          },
-          "deletedAt": {
-            "example": "2022-10-01T00:00:00Z",
-            "description": "Deleted At",
-            "type": "string"
-          }
-        },
+        "required": [
+          "customerId",
+          "id",
+          "sequenceAccountId",
+          "value"
+        ],
+        "type": "object",
+        "description": "2024-01-01",
         "example": {
           "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
           "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
@@ -29221,123 +29662,133 @@
           "createdAt": "2022-10-01T00:00:00Z",
           "deletedAt": "2022-10-01T00:00:00Z"
         },
-        "type": "object",
-        "required": [
-          "customerId",
-          "id",
-          "sequenceAccountId",
-          "value"
-        ]
-      },
-      "CreateCustomerAliasEndpointProductCreateCustomerAliasResponseModel": {
         "properties": {
           "id": {
-            "example": "01849e70-0a0f-72ca-ba07-5557dd734d43",
+            "type": "string",
             "description": "Unique ID",
-            "type": "string"
+            "example": "01849e70-0a0f-72ca-ba07-5557dd734d43"
           },
           "sequenceAccountId": {
-            "example": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+            "type": "string",
             "description": "Sequence Account ID",
-            "type": "string"
+            "example": "ec1479a2-6ba1-421f-a7de-0853a20d17a1"
           },
           "customerId": {
-            "example": "01849e70-703e-705a-b59a-d3fd575587e0",
+            "type": "string",
             "description": "Customer ID",
-            "type": "string"
+            "example": "01849e70-703e-705a-b59a-d3fd575587e0"
           },
           "value": {
-            "example": "external-customer-alias-123",
+            "type": "string",
             "description": "Alias value",
-            "type": "string"
+            "example": "external-customer-alias-123"
           },
           "createdAt": {
-            "example": "2022-10-01T00:00:00Z",
+            "type": "string",
             "description": "Created At",
-            "type": "string"
+            "example": "2022-10-01T00:00:00Z"
           },
           "deletedAt": {
-            "example": "2022-10-01T00:00:00Z",
+            "type": "string",
             "description": "Deleted At",
-            "type": "string"
+            "example": "2022-10-01T00:00:00Z"
           }
-        },
-        "example": {
-          "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
-          "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
-          "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
-          "value": "external-customer-alias-123",
-          "createdAt": "2022-10-01T00:00:00Z",
-          "deletedAt": "2022-10-01T00:00:00Z"
-        },
-        "type": "object",
-        "required": [
-          "customerId",
-          "id",
-          "sequenceAccountId",
-          "value"
-        ]
+        }
       },
       "CreateCustomerAliasEndpointCreateCustomerAliasRequestModel": {
-        "properties": {
-          "sequenceAccountId": {
-            "example": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
-            "description": "Sequence Account ID",
-            "type": "string"
-          },
-          "customerId": {
-            "example": "01849e70-703e-705a-b59a-d3fd575587e0",
-            "description": "Customer ID",
-            "type": "string"
-          },
-          "value": {
-            "example": "external-customer-alias-123",
-            "description": "Alias value",
-            "type": "string"
-          },
-          "deletedAt": {
-            "example": "2022-10-01T00:00:00Z",
-            "description": "Deleted At",
-            "type": "string"
-          }
-        },
+        "required": [
+          "customerId",
+          "sequenceAccountId",
+          "value"
+        ],
+        "type": "object",
+        "description": "2024-01-01",
         "example": {
           "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
           "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
           "value": "external-customer-alias-123",
           "deletedAt": "2022-10-01T00:00:00Z"
         },
-        "type": "object",
+        "properties": {
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Sequence Account ID",
+            "example": "ec1479a2-6ba1-421f-a7de-0853a20d17a1"
+          },
+          "customerId": {
+            "type": "string",
+            "description": "Customer ID",
+            "example": "01849e70-703e-705a-b59a-d3fd575587e0"
+          },
+          "value": {
+            "type": "string",
+            "description": "Alias value",
+            "example": "external-customer-alias-123"
+          },
+          "deletedAt": {
+            "type": "string",
+            "description": "Deleted At",
+            "example": "2022-10-01T00:00:00Z"
+          }
+        }
+      },
+      "CreateCustomerAliasEndpointProductCreateCustomerAliasResponseModel": {
         "required": [
           "customerId",
+          "id",
           "sequenceAccountId",
           "value"
-        ]
+        ],
+        "type": "object",
+        "description": "2024-01-01",
+        "example": {
+          "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
+          "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+          "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
+          "value": "external-customer-alias-123",
+          "createdAt": "2022-10-01T00:00:00Z",
+          "deletedAt": "2022-10-01T00:00:00Z"
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique ID",
+            "example": "01849e70-0a0f-72ca-ba07-5557dd734d43"
+          },
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Sequence Account ID",
+            "example": "ec1479a2-6ba1-421f-a7de-0853a20d17a1"
+          },
+          "customerId": {
+            "type": "string",
+            "description": "Customer ID",
+            "example": "01849e70-703e-705a-b59a-d3fd575587e0"
+          },
+          "value": {
+            "type": "string",
+            "description": "Alias value",
+            "example": "external-customer-alias-123"
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "Created At",
+            "example": "2022-10-01T00:00:00Z"
+          },
+          "deletedAt": {
+            "type": "string",
+            "description": "Deleted At",
+            "example": "2022-10-01T00:00:00Z"
+          }
+        }
       },
       "ListCustomerAliasEndpointProductListCustomerAliasPaginatedResponseModel": {
-        "properties": {
-          "items": {
-            "items": {
-              "$ref": "#/components/schemas/ListCustomerAliasEndpointProductListCustomerAliasResponseModel"
-            },
-            "example": [
-              {
-                "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
-                "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
-                "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
-                "value": "external-customer-alias-123",
-                "createdAt": "2022-10-01T00:00:00Z",
-                "deletedAt": "2022-10-01T00:00:00Z"
-              }
-            ],
-            "description": "CustomerAliass",
-            "type": "array"
-          },
-          "pagination": {
-            "$ref": "#/components/schemas/PaginationMeta",
-            "description": "Results pagination"
-          }
-        },
+        "required": [
+          "items",
+          "pagination"
+        ],
+        "type": "object",
+        "description": "2024-01-01",
         "example": {
           "items": [
             {
@@ -29355,45 +29806,38 @@
             "totalResultSize": 10
           }
         },
-        "type": "object",
-        "required": [
-          "items",
-          "pagination"
-        ]
+        "properties": {
+          "items": {
+            "type": "array",
+            "description": "CustomerAliass",
+            "example": [
+              {
+                "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
+                "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+                "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
+                "value": "external-customer-alias-123",
+                "createdAt": "2022-10-01T00:00:00Z",
+                "deletedAt": "2022-10-01T00:00:00Z"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/ListCustomerAliasEndpointProductListCustomerAliasResponseModel"
+            }
+          },
+          "pagination": {
+            "description": "Results pagination",
+            "$ref": "#/components/schemas/PaginationMeta"
+          }
+        }
       },
       "ListCustomerAliasEndpointProductListCustomerAliasResponseModel": {
-        "properties": {
-          "id": {
-            "example": "01849e70-0a0f-72ca-ba07-5557dd734d43",
-            "description": "Unique ID",
-            "type": "string"
-          },
-          "sequenceAccountId": {
-            "example": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
-            "description": "Sequence Account ID",
-            "type": "string"
-          },
-          "customerId": {
-            "example": "01849e70-703e-705a-b59a-d3fd575587e0",
-            "description": "Customer ID",
-            "type": "string"
-          },
-          "value": {
-            "example": "external-customer-alias-123",
-            "description": "Alias value",
-            "type": "string"
-          },
-          "createdAt": {
-            "example": "2022-10-01T00:00:00Z",
-            "description": "Created At",
-            "type": "string"
-          },
-          "deletedAt": {
-            "example": "2022-10-01T00:00:00Z",
-            "description": "Deleted At",
-            "type": "string"
-          }
-        },
+        "required": [
+          "customerId",
+          "id",
+          "sequenceAccountId",
+          "value"
+        ],
+        "type": "object",
         "example": {
           "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
           "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
@@ -29402,193 +29846,115 @@
           "createdAt": "2022-10-01T00:00:00Z",
           "deletedAt": "2022-10-01T00:00:00Z"
         },
-        "type": "object",
-        "required": [
-          "customerId",
-          "id",
-          "sequenceAccountId",
-          "value"
-        ]
-      },
-      "CreateContactEndpointProductCreateContactResponseModel": {
         "properties": {
           "id": {
-            "example": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+            "type": "string",
             "description": "Unique ID",
-            "type": "string"
+            "example": "01849e70-0a0f-72ca-ba07-5557dd734d43"
           },
           "sequenceAccountId": {
-            "example": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+            "type": "string",
             "description": "Sequence Account ID",
-            "type": "string"
+            "example": "ec1479a2-6ba1-421f-a7de-0853a20d17a1"
           },
           "customerId": {
-            "example": "e309e948-088e-4d77-b654-cd85498f1555",
+            "type": "string",
             "description": "Customer ID",
-            "type": "string"
+            "example": "01849e70-703e-705a-b59a-d3fd575587e0"
           },
-          "email": {
-            "example": "jane.smith@example.com",
-            "description": "Contact email address",
-            "type": "string"
-          },
-          "firstName": {
-            "example": "Jane",
-            "description": "Contact first name",
-            "type": "string"
-          },
-          "lastName": {
-            "example": "Smith",
-            "description": "Contact last name",
-            "type": "string"
-          },
-          "contactType": {
-            "$ref": "#/components/schemas/ContactType",
-            "description": "The type of contact"
+          "value": {
+            "type": "string",
+            "description": "Alias value",
+            "example": "external-customer-alias-123"
           },
           "createdAt": {
-            "example": "2022-06-28T16:47:00Z",
-            "description": "Created at",
-            "type": "string"
+            "type": "string",
+            "description": "Created At",
+            "example": "2022-10-01T00:00:00Z"
           },
           "deletedAt": {
-            "example": "2022-06-28T16:47:00Z",
-            "description": "Date and time the Customer was deleted",
-            "type": "string"
+            "type": "string",
+            "description": "Deleted At",
+            "example": "2022-10-01T00:00:00Z"
           }
-        },
+        }
+      },
+      "CreateContactEndpointCreateContactRequestModel": {
+        "required": [
+          "contactType",
+          "customerId",
+          "email",
+          "sequenceAccountId"
+        ],
+        "type": "object",
+        "description": "2024-01-01",
         "example": {
-          "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
           "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
           "customerId": "e309e948-088e-4d77-b654-cd85498f1555",
           "email": "jane.smith@example.com",
           "firstName": "Jane",
           "lastName": "Smith",
           "contactType": "QUOTE_RECIPIENT",
-          "createdAt": "2022-06-28T16:47:00Z",
           "deletedAt": "2022-06-28T16:47:00Z"
         },
-        "type": "object",
-        "required": [
-          "contactType",
-          "createdAt",
-          "customerId",
-          "email",
-          "id",
-          "sequenceAccountId"
-        ]
+        "properties": {
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Sequence Account ID",
+            "example": "25b3c342-6fa6-4375-9ed3-616f05abb77a"
+          },
+          "customerId": {
+            "type": "string",
+            "description": "Customer ID",
+            "example": "e309e948-088e-4d77-b654-cd85498f1555"
+          },
+          "email": {
+            "type": "string",
+            "description": "Contact email address",
+            "example": "jane.smith@example.com"
+          },
+          "firstName": {
+            "type": "string",
+            "description": "Contact first name",
+            "example": "Jane"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Contact last name",
+            "example": "Smith"
+          },
+          "contactType": {
+            "description": "The type of contact",
+            "$ref": "#/components/schemas/ContactType"
+          },
+          "deletedAt": {
+            "type": "string",
+            "description": "Date and time the Customer was deleted",
+            "example": "2022-06-28T16:47:00Z"
+          }
+        }
       },
       "ContactType": {
+        "type": "string",
         "example": "QUOTE_RECIPIENT",
         "enum": [
           "BILLING_PRIMARY",
           "BILLING",
           "CUSTOMER_PRIMARY",
           "QUOTE_RECIPIENT"
-        ],
-        "type": "string"
-      },
-      "CreateContactEndpointCreateContactRequestModel": {
-        "properties": {
-          "sequenceAccountId": {
-            "example": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
-            "description": "Sequence Account ID",
-            "type": "string"
-          },
-          "customerId": {
-            "example": "e309e948-088e-4d77-b654-cd85498f1555",
-            "description": "Customer ID",
-            "type": "string"
-          },
-          "email": {
-            "example": "jane.smith@example.com",
-            "description": "Contact email address",
-            "type": "string"
-          },
-          "firstName": {
-            "example": "Jane",
-            "description": "Contact first name",
-            "type": "string"
-          },
-          "lastName": {
-            "example": "Smith",
-            "description": "Contact last name",
-            "type": "string"
-          },
-          "contactType": {
-            "$ref": "#/components/schemas/ContactType",
-            "description": "The type of contact"
-          },
-          "deletedAt": {
-            "example": "2022-06-28T16:47:00Z",
-            "description": "Date and time the Customer was deleted",
-            "type": "string"
-          }
-        },
-        "example": {
-          "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
-          "customerId": "e309e948-088e-4d77-b654-cd85498f1555",
-          "email": "jane.smith@example.com",
-          "firstName": "Jane",
-          "lastName": "Smith",
-          "contactType": "QUOTE_RECIPIENT",
-          "deletedAt": "2022-06-28T16:47:00Z"
-        },
-        "type": "object",
-        "required": [
-          "contactType",
-          "customerId",
-          "email",
-          "sequenceAccountId"
         ]
       },
-      "UpdateContactEndpointProductUpdateContactResponseModel": {
-        "properties": {
-          "id": {
-            "example": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
-            "description": "Unique ID",
-            "type": "string"
-          },
-          "sequenceAccountId": {
-            "example": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
-            "description": "Sequence Account ID",
-            "type": "string"
-          },
-          "customerId": {
-            "example": "e309e948-088e-4d77-b654-cd85498f1555",
-            "description": "Customer ID",
-            "type": "string"
-          },
-          "email": {
-            "example": "jane.smith@example.com",
-            "description": "Contact email address",
-            "type": "string"
-          },
-          "firstName": {
-            "example": "Jane",
-            "description": "Contact first name",
-            "type": "string"
-          },
-          "lastName": {
-            "example": "Smith",
-            "description": "Contact last name",
-            "type": "string"
-          },
-          "contactType": {
-            "$ref": "#/components/schemas/ContactType",
-            "description": "The type of contact"
-          },
-          "createdAt": {
-            "example": "2022-06-28T16:47:00Z",
-            "description": "Created at",
-            "type": "string"
-          },
-          "deletedAt": {
-            "example": "2022-06-28T16:47:00Z",
-            "description": "Date and time the Customer was deleted",
-            "type": "string"
-          }
-        },
+      "CreateContactEndpointProductCreateContactResponseModel": {
+        "required": [
+          "contactType",
+          "createdAt",
+          "customerId",
+          "email",
+          "id",
+          "sequenceAccountId"
+        ],
+        "type": "object",
+        "description": "2024-01-01",
         "example": {
           "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
           "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
@@ -29600,97 +29966,99 @@
           "createdAt": "2022-06-28T16:47:00Z",
           "deletedAt": "2022-06-28T16:47:00Z"
         },
-        "type": "object",
-        "required": [
-          "contactType",
-          "createdAt",
-          "customerId",
-          "email",
-          "id",
-          "sequenceAccountId"
-        ]
-      },
-      "UpdateContactEndpointUpdateContactRequestModel": {
         "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique ID",
+            "example": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
+          },
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Sequence Account ID",
+            "example": "25b3c342-6fa6-4375-9ed3-616f05abb77a"
+          },
+          "customerId": {
+            "type": "string",
+            "description": "Customer ID",
+            "example": "e309e948-088e-4d77-b654-cd85498f1555"
+          },
           "email": {
-            "example": "jane.smith@example.com",
+            "type": "string",
             "description": "Contact email address",
-            "type": "string"
+            "example": "jane.smith@example.com"
           },
           "firstName": {
-            "example": "Jane",
+            "type": "string",
             "description": "Contact first name",
-            "type": "string"
+            "example": "Jane"
           },
           "lastName": {
-            "example": "Smith",
+            "type": "string",
             "description": "Contact last name",
-            "type": "string"
+            "example": "Smith"
           },
           "contactType": {
-            "$ref": "#/components/schemas/ContactType",
-            "description": "The type of contact"
+            "description": "The type of contact",
+            "$ref": "#/components/schemas/ContactType"
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "Created at",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "deletedAt": {
+            "type": "string",
+            "description": "Date and time the Customer was deleted",
+            "example": "2022-06-28T16:47:00Z"
           }
-        },
+        }
+      },
+      "UpdateContactEndpointUpdateContactRequestModel": {
+        "required": [
+          "contactType",
+          "email"
+        ],
+        "type": "object",
+        "description": "2024-01-01",
         "example": {
           "email": "jane.smith@example.com",
           "firstName": "Jane",
           "lastName": "Smith",
           "contactType": "QUOTE_RECIPIENT"
         },
-        "type": "object",
-        "required": [
-          "contactType",
-          "email"
-        ]
-      },
-      "DeleteContactEndpointProductDeleteContactResponseModel": {
         "properties": {
-          "id": {
-            "example": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
-            "description": "Unique ID",
-            "type": "string"
-          },
-          "sequenceAccountId": {
-            "example": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
-            "description": "Sequence Account ID",
-            "type": "string"
-          },
-          "customerId": {
-            "example": "e309e948-088e-4d77-b654-cd85498f1555",
-            "description": "Customer ID",
-            "type": "string"
-          },
           "email": {
-            "example": "jane.smith@example.com",
+            "type": "string",
             "description": "Contact email address",
-            "type": "string"
+            "example": "jane.smith@example.com"
           },
           "firstName": {
-            "example": "Jane",
+            "type": "string",
             "description": "Contact first name",
-            "type": "string"
+            "example": "Jane"
           },
           "lastName": {
-            "example": "Smith",
+            "type": "string",
             "description": "Contact last name",
-            "type": "string"
+            "example": "Smith"
           },
           "contactType": {
-            "$ref": "#/components/schemas/ContactType",
-            "description": "The type of contact"
-          },
-          "createdAt": {
-            "example": "2022-06-28T16:47:00Z",
-            "description": "Created at",
-            "type": "string"
-          },
-          "deletedAt": {
-            "example": "2022-06-28T16:47:00Z",
-            "description": "Date and time the Customer was deleted",
-            "type": "string"
+            "description": "The type of contact",
+            "$ref": "#/components/schemas/ContactType"
           }
-        },
+        }
+      },
+      "UpdateContactEndpointProductUpdateContactResponseModel": {
+        "required": [
+          "contactType",
+          "createdAt",
+          "customerId",
+          "email",
+          "id",
+          "sequenceAccountId"
+        ],
+        "type": "object",
+        "description": "2024-01-01",
         "example": {
           "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
           "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
@@ -29702,7 +30070,54 @@
           "createdAt": "2022-06-28T16:47:00Z",
           "deletedAt": "2022-06-28T16:47:00Z"
         },
-        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique ID",
+            "example": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
+          },
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Sequence Account ID",
+            "example": "25b3c342-6fa6-4375-9ed3-616f05abb77a"
+          },
+          "customerId": {
+            "type": "string",
+            "description": "Customer ID",
+            "example": "e309e948-088e-4d77-b654-cd85498f1555"
+          },
+          "email": {
+            "type": "string",
+            "description": "Contact email address",
+            "example": "jane.smith@example.com"
+          },
+          "firstName": {
+            "type": "string",
+            "description": "Contact first name",
+            "example": "Jane"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Contact last name",
+            "example": "Smith"
+          },
+          "contactType": {
+            "description": "The type of contact",
+            "$ref": "#/components/schemas/ContactType"
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "Created at",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "deletedAt": {
+            "type": "string",
+            "description": "Date and time the Customer was deleted",
+            "example": "2022-06-28T16:47:00Z"
+          }
+        }
+      },
+      "DeleteContactEndpointProductDeleteContactResponseModel": {
         "required": [
           "contactType",
           "createdAt",
@@ -29710,7 +30125,66 @@
           "email",
           "id",
           "sequenceAccountId"
-        ]
+        ],
+        "type": "object",
+        "description": "2024-01-01",
+        "example": {
+          "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+          "sequenceAccountId": "25b3c342-6fa6-4375-9ed3-616f05abb77a",
+          "customerId": "e309e948-088e-4d77-b654-cd85498f1555",
+          "email": "jane.smith@example.com",
+          "firstName": "Jane",
+          "lastName": "Smith",
+          "contactType": "QUOTE_RECIPIENT",
+          "createdAt": "2022-06-28T16:47:00Z",
+          "deletedAt": "2022-06-28T16:47:00Z"
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique ID",
+            "example": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
+          },
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Sequence Account ID",
+            "example": "25b3c342-6fa6-4375-9ed3-616f05abb77a"
+          },
+          "customerId": {
+            "type": "string",
+            "description": "Customer ID",
+            "example": "e309e948-088e-4d77-b654-cd85498f1555"
+          },
+          "email": {
+            "type": "string",
+            "description": "Contact email address",
+            "example": "jane.smith@example.com"
+          },
+          "firstName": {
+            "type": "string",
+            "description": "Contact first name",
+            "example": "Jane"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Contact last name",
+            "example": "Smith"
+          },
+          "contactType": {
+            "description": "The type of contact",
+            "$ref": "#/components/schemas/ContactType"
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "Created at",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "deletedAt": {
+            "type": "string",
+            "description": "Date and time the Customer was deleted",
+            "example": "2022-06-28T16:47:00Z"
+          }
+        }
       },
       "InvoiceMerchantDetails": {
         "properties": {
@@ -40643,6 +41117,7 @@
           "name"
         ],
         "type": "object",
+        "description": "2024-01-01",
         "example": {
           "isPublished": false,
           "name": "UK Sales Tax",
@@ -40830,6 +41305,7 @@
           "name"
         ],
         "type": "object",
+        "description": "2024-01-01",
         "example": {
           "isPublished": false,
           "name": "UK Sales Tax",
@@ -41232,6 +41708,7 @@
           "name"
         ],
         "type": "object",
+        "description": "2024-01-01",
         "example": {
           "id": "0373904e-0f24-4c19-bb0d-9b855f1ec3ca",
           "isPublished": false,
@@ -41427,6 +41904,7 @@
           "subRates"
         ],
         "type": "object",
+        "description": "2024-01-01",
         "example": {
           "id": "d2aea732-19f5-4832-848d-f11b796e963e",
           "isPublished": false,
@@ -42282,6 +42760,7 @@
           "taxIdentifier"
         ],
         "type": "object",
+        "description": "2024-01-01",
         "example": {
           "taxIdentifier": "GB123456789",
           "customerId": "06457f78-85cd-4140-9972-67c6cd8f6071",
