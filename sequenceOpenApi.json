@@ -3249,7 +3249,19 @@
                       "createdAt": "2022-06-28T16:47:00Z",
                       "updatedAt": "2022-06-28T16:47:00Z",
                       "lastInvoiceId": "bdbf78a5-b007-4d46-aa7d-d0417a649d64",
-                      "timeTravellerId": "43f3dad8-23b0-4141-8813-4260b86a7ebb"
+                      "timeTravellerId": "43f3dad8-23b0-4141-8813-4260b86a7ebb",
+                      "phases": [
+                        {
+                          "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                          "createdAt": "2022-06-28T16:47:00Z",
+                          "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                          "priceIds": [
+                            "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                          ],
+                          "startDate": "2022-01-01",
+                          "endDate": "2022-06-30"
+                        }
+                      ]
                     }
                   ],
                   "pagination": {
@@ -3339,7 +3351,19 @@
                   "createdAt": "2022-06-28T16:47:00Z",
                   "updatedAt": "2022-06-28T16:47:00Z",
                   "lastInvoiceId": "bdbf78a5-b007-4d46-aa7d-d0417a649d64",
-                  "timeTravellerId": "43f3dad8-23b0-4141-8813-4260b86a7ebb"
+                  "timeTravellerId": "43f3dad8-23b0-4141-8813-4260b86a7ebb",
+                  "phases": [
+                    {
+                      "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                      "priceIds": [
+                        "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                      ],
+                      "startDate": "2022-01-01",
+                      "endDate": "2022-06-30"
+                    }
+                  ]
                 },
                 "schema": {
                   "$ref": "#/components/schemas/BillingScheduleResponse"
@@ -3550,7 +3574,19 @@
                   "createdAt": "2022-06-28T16:47:00Z",
                   "updatedAt": "2022-06-28T16:47:00Z",
                   "lastInvoiceId": "bdbf78a5-b007-4d46-aa7d-d0417a649d64",
-                  "timeTravellerId": "43f3dad8-23b0-4141-8813-4260b86a7ebb"
+                  "timeTravellerId": "43f3dad8-23b0-4141-8813-4260b86a7ebb",
+                  "phases": [
+                    {
+                      "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                      "priceIds": [
+                        "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                      ],
+                      "startDate": "2022-01-01",
+                      "endDate": "2022-06-30"
+                    }
+                  ]
                 },
                 "schema": {
                   "$ref": "#/components/schemas/BillingScheduleResponse"
@@ -3653,7 +3689,19 @@
                   "createdAt": "2022-06-28T16:47:00Z",
                   "updatedAt": "2022-06-28T16:47:00Z",
                   "lastInvoiceId": "bdbf78a5-b007-4d46-aa7d-d0417a649d64",
-                  "timeTravellerId": "43f3dad8-23b0-4141-8813-4260b86a7ebb"
+                  "timeTravellerId": "43f3dad8-23b0-4141-8813-4260b86a7ebb",
+                  "phases": [
+                    {
+                      "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                      "priceIds": [
+                        "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                      ],
+                      "startDate": "2022-01-01",
+                      "endDate": "2022-06-30"
+                    }
+                  ]
                 },
                 "schema": {
                   "$ref": "#/components/schemas/BillingScheduleResponse"
@@ -3730,7 +3778,19 @@
                   "createdAt": "2022-06-28T16:47:00Z",
                   "updatedAt": "2022-06-28T16:47:00Z",
                   "lastInvoiceId": "bdbf78a5-b007-4d46-aa7d-d0417a649d64",
-                  "timeTravellerId": "43f3dad8-23b0-4141-8813-4260b86a7ebb"
+                  "timeTravellerId": "43f3dad8-23b0-4141-8813-4260b86a7ebb",
+                  "phases": [
+                    {
+                      "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                      "priceIds": [
+                        "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                      ],
+                      "startDate": "2022-01-01",
+                      "endDate": "2022-06-30"
+                    }
+                  ]
                 },
                 "schema": {
                   "$ref": "#/components/schemas/BillingScheduleResponse"
@@ -32716,6 +32776,25 @@
             "example": "43f3dad8-23b0-4141-8813-4260b86a7ebb",
             "description": "Time traveller ID",
             "type": "string"
+          },
+          "phases": {
+            "items": {
+              "$ref": "#/components/schemas/Phase"
+            },
+            "example": [
+              {
+                "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                "createdAt": "2022-06-28T16:47:00Z",
+                "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                "priceIds": [
+                  "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                ],
+                "startDate": "2022-01-01",
+                "endDate": "2022-06-30"
+              }
+            ],
+            "description": "Phases",
+            "type": "array"
           }
         },
         "example": {
@@ -32743,7 +32822,19 @@
           "createdAt": "2022-06-28T16:47:00Z",
           "updatedAt": "2022-06-28T16:47:00Z",
           "lastInvoiceId": "bdbf78a5-b007-4d46-aa7d-d0417a649d64",
-          "timeTravellerId": "43f3dad8-23b0-4141-8813-4260b86a7ebb"
+          "timeTravellerId": "43f3dad8-23b0-4141-8813-4260b86a7ebb",
+          "phases": [
+            {
+              "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+              "createdAt": "2022-06-28T16:47:00Z",
+              "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+              "priceIds": [
+                "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+              ],
+              "startDate": "2022-01-01",
+              "endDate": "2022-06-30"
+            }
+          ]
         },
         "type": "object",
         "required": [
@@ -32752,6 +32843,7 @@
           "customerId",
           "endDate",
           "id",
+          "phases",
           "sequenceAccountId",
           "startDate",
           "status",
@@ -32802,6 +32894,66 @@
           "PHASES"
         ],
         "type": "string"
+      },
+      "Phase": {
+        "properties": {
+          "id": {
+            "example": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+            "description": "Phase ID",
+            "type": "string"
+          },
+          "createdAt": {
+            "example": "2022-06-28T16:47:00Z",
+            "description": "Created at",
+            "type": "string"
+          },
+          "billingScheduleId": {
+            "example": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+            "description": "Billing Schedule ID",
+            "type": "string"
+          },
+          "priceIds": {
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+            ],
+            "description": "Price IDs",
+            "type": "array"
+          },
+          "startDate": {
+            "example": "2022-01-01",
+            "description": "Start Date",
+            "format": "date",
+            "type": "string"
+          },
+          "endDate": {
+            "example": "2022-06-30",
+            "description": "End date",
+            "format": "date",
+            "type": "string"
+          }
+        },
+        "example": {
+          "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+          "createdAt": "2022-06-28T16:47:00Z",
+          "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+          "priceIds": [
+            "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+          ],
+          "startDate": "2022-01-01",
+          "endDate": "2022-06-30"
+        },
+        "type": "object",
+        "required": [
+          "billingScheduleId",
+          "createdAt",
+          "endDate",
+          "id",
+          "priceIds",
+          "startDate"
+        ]
       },
       "CreateBillingScheduleRequestWithPrices": {
         "properties": {
@@ -33530,7 +33682,19 @@
                 "createdAt": "2022-06-28T16:47:00Z",
                 "updatedAt": "2022-06-28T16:47:00Z",
                 "lastInvoiceId": "bdbf78a5-b007-4d46-aa7d-d0417a649d64",
-                "timeTravellerId": "43f3dad8-23b0-4141-8813-4260b86a7ebb"
+                "timeTravellerId": "43f3dad8-23b0-4141-8813-4260b86a7ebb",
+                "phases": [
+                  {
+                    "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                    "priceIds": [
+                      "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                    ],
+                    "startDate": "2022-01-01",
+                    "endDate": "2022-06-30"
+                  }
+                ]
               }
             ],
             "description": "Billing Schedules",
@@ -33591,7 +33755,19 @@
               "createdAt": "2022-06-28T16:47:00Z",
               "updatedAt": "2022-06-28T16:47:00Z",
               "lastInvoiceId": "bdbf78a5-b007-4d46-aa7d-d0417a649d64",
-              "timeTravellerId": "43f3dad8-23b0-4141-8813-4260b86a7ebb"
+              "timeTravellerId": "43f3dad8-23b0-4141-8813-4260b86a7ebb",
+              "phases": [
+                {
+                  "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                  "createdAt": "2022-06-28T16:47:00Z",
+                  "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                  "priceIds": [
+                    "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                  ],
+                  "startDate": "2022-01-01",
+                  "endDate": "2022-06-30"
+                }
+              ]
             }
           ],
           "pagination": {
