@@ -23518,7 +23518,7 @@
               "application/json": {
                 "schema": {
                   "description": "2024-01-01",
-                  "$ref": "#/components/schemas/CreateProductEndpointProductCreateProductResponseModel",
+                  "$ref": "#/components/schemas/ProductResponse",
                   "example": {
                     "id": "994d23f7-47b6-43ee-af6b-cd27181196b6",
                     "name": "Fixed priced product",
@@ -23529,7 +23529,7 @@
                   }
                 },
                 "examples": {
-                  "CreateProductEndpointProductCreateProductResponseModel": {
+                  "ProductResponse": {
                     "summary": "",
                     "value": {
                       "id": "994d23f7-47b6-43ee-af6b-cd27181196b6",
@@ -23594,7 +23594,7 @@
               "application/json": {
                 "schema": {
                   "description": "2024-01-01",
-                  "$ref": "#/components/schemas/GetProductEndpointProductGetProductResponseModel",
+                  "$ref": "#/components/schemas/ProductResponse",
                   "example": {
                     "id": "994d23f7-47b6-43ee-af6b-cd27181196b6",
                     "name": "Fixed priced product",
@@ -23605,7 +23605,7 @@
                   }
                 },
                 "examples": {
-                  "GetProductEndpointProductGetProductResponseModel": {
+                  "ProductResponse": {
                     "summary": "",
                     "value": {
                       "id": "994d23f7-47b6-43ee-af6b-cd27181196b6",
@@ -23690,7 +23690,7 @@
               "application/json": {
                 "schema": {
                   "description": "2024-01-01",
-                  "$ref": "#/components/schemas/UpdateProductEndpointProductUpdateProductResponseModel",
+                  "$ref": "#/components/schemas/ProductResponse",
                   "example": {
                     "id": "994d23f7-47b6-43ee-af6b-cd27181196b6",
                     "name": "Fixed priced product",
@@ -23701,7 +23701,7 @@
                   }
                 },
                 "examples": {
-                  "UpdateProductEndpointProductUpdateProductResponseModel": {
+                  "ProductResponse": {
                     "summary": "",
                     "value": {
                       "id": "994d23f7-47b6-43ee-af6b-cd27181196b6",
@@ -48904,7 +48904,6 @@
       },
       "CreateProductEndpointCreateProductRequestModel": {
         "required": [
-          "label",
           "name"
         ],
         "type": "object",
@@ -48926,7 +48925,7 @@
           }
         }
       },
-      "CreateProductEndpointProductCreateProductResponseModel": {
+      "ProductResponse": {
         "required": [
           "createdAt",
           "id",
@@ -48936,59 +48935,6 @@
           "updatedAt"
         ],
         "type": "object",
-        "description": "2024-01-01",
-        "example": {
-          "id": "994d23f7-47b6-43ee-af6b-cd27181196b6",
-          "name": "Fixed priced product",
-          "label": "Fixed priced product - UK",
-          "sequenceAccountId": "683fe518-60c8-429f-9320-8aa7efc20bcc",
-          "createdAt": "2022-06-28T16:47:00Z",
-          "updatedAt": "2022-06-28T16:47:00Z"
-        },
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "Unique Product ID",
-            "example": "994d23f7-47b6-43ee-af6b-cd27181196b6"
-          },
-          "name": {
-            "type": "string",
-            "description": "The customer-facing name of this Product",
-            "example": "Fixed priced product"
-          },
-          "label": {
-            "type": "string",
-            "description": "The internal descriptive name of this item",
-            "example": "Fixed priced product - UK"
-          },
-          "sequenceAccountId": {
-            "type": "string",
-            "description": "Sequence Account ID",
-            "example": "683fe518-60c8-429f-9320-8aa7efc20bcc"
-          },
-          "createdAt": {
-            "type": "string",
-            "description": "Created at",
-            "example": "2022-06-28T16:47:00Z"
-          },
-          "updatedAt": {
-            "type": "string",
-            "description": "Updated At",
-            "example": "2022-06-28T16:47:00Z"
-          }
-        }
-      },
-      "GetProductEndpointProductGetProductResponseModel": {
-        "required": [
-          "createdAt",
-          "id",
-          "label",
-          "name",
-          "sequenceAccountId",
-          "updatedAt"
-        ],
-        "type": "object",
-        "description": "2024-01-01",
         "example": {
           "id": "994d23f7-47b6-43ee-af6b-cd27181196b6",
           "name": "Fixed priced product",
@@ -49032,7 +48978,6 @@
       },
       "UpdateProductEndpointUpdateProductRequestModel": {
         "required": [
-          "label",
           "name"
         ],
         "type": "object",
@@ -49051,58 +48996,6 @@
             "type": "string",
             "description": "The internal descriptive name of this item",
             "example": "Fixed priced product - UK"
-          }
-        }
-      },
-      "UpdateProductEndpointProductUpdateProductResponseModel": {
-        "required": [
-          "createdAt",
-          "id",
-          "label",
-          "name",
-          "sequenceAccountId",
-          "updatedAt"
-        ],
-        "type": "object",
-        "description": "2024-01-01",
-        "example": {
-          "id": "994d23f7-47b6-43ee-af6b-cd27181196b6",
-          "name": "Fixed priced product",
-          "label": "Fixed priced product - UK",
-          "sequenceAccountId": "683fe518-60c8-429f-9320-8aa7efc20bcc",
-          "createdAt": "2022-06-28T16:47:00Z",
-          "updatedAt": "2022-06-28T16:47:00Z"
-        },
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "Unique Product ID",
-            "example": "994d23f7-47b6-43ee-af6b-cd27181196b6"
-          },
-          "name": {
-            "type": "string",
-            "description": "The customer-facing name of this Product",
-            "example": "Fixed priced product"
-          },
-          "label": {
-            "type": "string",
-            "description": "The internal descriptive name of this item",
-            "example": "Fixed priced product - UK"
-          },
-          "sequenceAccountId": {
-            "type": "string",
-            "description": "Sequence Account ID",
-            "example": "683fe518-60c8-429f-9320-8aa7efc20bcc"
-          },
-          "createdAt": {
-            "type": "string",
-            "description": "Created at",
-            "example": "2022-06-28T16:47:00Z"
-          },
-          "updatedAt": {
-            "type": "string",
-            "description": "Updated At",
-            "example": "2022-06-28T16:47:00Z"
           }
         }
       },
@@ -49145,63 +49038,12 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/ListProductEndpointProductListProductResponseModel"
+              "$ref": "#/components/schemas/ProductResponse"
             }
           },
           "pagination": {
             "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
-          }
-        }
-      },
-      "ListProductEndpointProductListProductResponseModel": {
-        "required": [
-          "createdAt",
-          "id",
-          "label",
-          "name",
-          "sequenceAccountId",
-          "updatedAt"
-        ],
-        "type": "object",
-        "example": {
-          "id": "994d23f7-47b6-43ee-af6b-cd27181196b6",
-          "name": "Fixed priced product",
-          "label": "Fixed priced product - UK",
-          "sequenceAccountId": "683fe518-60c8-429f-9320-8aa7efc20bcc",
-          "createdAt": "2022-06-28T16:47:00Z",
-          "updatedAt": "2022-06-28T16:47:00Z"
-        },
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "Unique Product ID",
-            "example": "994d23f7-47b6-43ee-af6b-cd27181196b6"
-          },
-          "name": {
-            "type": "string",
-            "description": "The customer-facing name of this Product",
-            "example": "Fixed priced product"
-          },
-          "label": {
-            "type": "string",
-            "description": "The internal descriptive name of this item",
-            "example": "Fixed priced product - UK"
-          },
-          "sequenceAccountId": {
-            "type": "string",
-            "description": "Sequence Account ID",
-            "example": "683fe518-60c8-429f-9320-8aa7efc20bcc"
-          },
-          "createdAt": {
-            "type": "string",
-            "description": "Created at",
-            "example": "2022-06-28T16:47:00Z"
-          },
-          "updatedAt": {
-            "type": "string",
-            "description": "Updated At",
-            "example": "2022-06-28T16:47:00Z"
           }
         }
       },
