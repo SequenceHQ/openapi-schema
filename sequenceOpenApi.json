@@ -5850,6 +5850,60 @@
             }
           },
           {
+            "name": "planId",
+            "in": "query",
+            "description": "Filter by plan ID.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "customerId",
+            "in": "query",
+            "description": "Filter by customer ID.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "billingScheduleStatus",
+            "in": "query",
+            "description": "Filter by status.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "autoSendInvoices",
+            "in": "query",
+            "description": "Filter by auto send invoices.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sortBy",
+            "in": "query",
+            "description": "Sort column. Default: creation time.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "includeArchivedSchedules",
+            "in": "query",
+            "description": "Include archived schedules.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
             "name": "before",
             "in": "query",
             "description": "Pagination cursor. To page through items, omit this parameter to retrieve the first page, and then successively use the value you get from `pagination.after` or `pagination.before` to retrieve each page.",
@@ -5956,7 +6010,8 @@
                             "startDate": "2022-01-01",
                             "endDate": "2022-06-30"
                           }
-                        ]
+                        ],
+                        "archivedAt": "2022-06-28T16:47:00Z"
                       }
                     ],
                     "pagination": {
@@ -6031,7 +6086,8 @@
                               "startDate": "2022-01-01",
                               "endDate": "2022-06-30"
                             }
-                          ]
+                          ],
+                          "archivedAt": "2022-06-28T16:47:00Z"
                         }
                       ],
                       "pagination": {
@@ -6257,7 +6313,8 @@
                         "startDate": "2022-01-01",
                         "endDate": "2022-06-30"
                       }
-                    ]
+                    ],
+                    "archivedAt": "2022-06-28T16:47:00Z"
                   }
                 },
                 "examples": {
@@ -6300,7 +6357,8 @@
                           "startDate": "2022-01-01",
                           "endDate": "2022-06-30"
                         }
-                      ]
+                      ],
+                      "archivedAt": "2022-06-28T16:47:00Z"
                     }
                   }
                 }
@@ -6575,7 +6633,8 @@
                         "startDate": "2022-01-01",
                         "endDate": "2022-06-30"
                       }
-                    ]
+                    ],
+                    "archivedAt": "2022-06-28T16:47:00Z"
                   }
                 },
                 "examples": {
@@ -6670,7 +6729,8 @@
                           "startDate": "2022-01-01",
                           "endDate": "2022-06-30"
                         }
-                      ]
+                      ],
+                      "archivedAt": "2022-06-28T16:47:00Z"
                     }
                   }
                 }
@@ -6812,7 +6872,8 @@
                         "startDate": "2022-01-01",
                         "endDate": "2022-06-30"
                       }
-                    ]
+                    ],
+                    "archivedAt": "2022-06-28T16:47:00Z"
                   }
                 },
                 "examples": {
@@ -6855,7 +6916,8 @@
                           "startDate": "2022-01-01",
                           "endDate": "2022-06-30"
                         }
-                      ]
+                      ],
+                      "archivedAt": "2022-06-28T16:47:00Z"
                     }
                   }
                 }
@@ -6941,7 +7003,8 @@
                         "startDate": "2022-01-01",
                         "endDate": "2022-06-30"
                       }
-                    ]
+                    ],
+                    "archivedAt": "2022-06-28T16:47:00Z"
                   }
                 },
                 "examples": {
@@ -6984,7 +7047,139 @@
                           "startDate": "2022-01-01",
                           "endDate": "2022-06-30"
                         }
-                      ]
+                      ],
+                      "archivedAt": "2022-06-28T16:47:00Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
+    "/billing-schedules/{billingScheduleId}/archive": {
+      "put": {
+        "tags": [],
+        "summary": "Archive Billing Schedule",
+        "description": "Archive a [Billing Schedule](/docs/subscriptions) within one of your [Sequence Accounts](/docs/organisations-and-accounts).",
+        "operationId": "putBillingSchedulesByBillingScheduleIdArchive",
+        "parameters": [
+          {
+            "name": "billingScheduleId",
+            "in": "path",
+            "description": "Billing Schedule ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "2024-01-01",
+                  "$ref": "#/components/schemas/BillingScheduleResponse",
+                  "example": {
+                    "id": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                    "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+                    "customerId": "cca32597-b6b0-4499-9669-128aef8702e4",
+                    "status": "ACTIVE",
+                    "startDate": "2022-01-01",
+                    "endDate": "2022-12-01",
+                    "taxRates": [
+                      {
+                        "priceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                        "taxRateId": "50c0d53b-8460-41e6-b4e9-a4e157fc1a64"
+                      }
+                    ],
+                    "firstBillingDate": "2022-02-02",
+                    "autoIssueInvoices": false,
+                    "purchaseOrderNumber": "PO123",
+                    "reference": "ref",
+                    "label": "label",
+                    "recurrenceDayOfMonth": 1,
+                    "priceIds": [],
+                    "prices": [],
+                    "type": "CUSTOM",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "updatedAt": "2022-06-28T16:47:00Z",
+                    "lastInvoiceId": "bdbf78a5-b007-4d46-aa7d-d0417a649d64",
+                    "timeTravellerId": "43f3dad8-23b0-4141-8813-4260b86a7ebb",
+                    "phases": [
+                      {
+                        "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                        "createdAt": "2022-06-28T16:47:00Z",
+                        "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                        "priceIds": [
+                          "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                        ],
+                        "startDate": "2022-01-01",
+                        "endDate": "2022-06-30"
+                      }
+                    ],
+                    "archivedAt": "2022-06-28T16:47:00Z"
+                  }
+                },
+                "examples": {
+                  "BillingScheduleResponse": {
+                    "summary": "",
+                    "value": {
+                      "id": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                      "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+                      "customerId": "cca32597-b6b0-4499-9669-128aef8702e4",
+                      "status": "ACTIVE",
+                      "startDate": "2022-01-01",
+                      "endDate": "2022-12-01",
+                      "taxRates": [
+                        {
+                          "priceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                          "taxRateId": "50c0d53b-8460-41e6-b4e9-a4e157fc1a64"
+                        }
+                      ],
+                      "firstBillingDate": "2022-02-02",
+                      "autoIssueInvoices": false,
+                      "purchaseOrderNumber": "PO123",
+                      "reference": "ref",
+                      "label": "label",
+                      "recurrenceDayOfMonth": 1,
+                      "priceIds": [],
+                      "prices": [],
+                      "type": "CUSTOM",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "updatedAt": "2022-06-28T16:47:00Z",
+                      "lastInvoiceId": "bdbf78a5-b007-4d46-aa7d-d0417a649d64",
+                      "timeTravellerId": "43f3dad8-23b0-4141-8813-4260b86a7ebb",
+                      "phases": [
+                        {
+                          "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                          "createdAt": "2022-06-28T16:47:00Z",
+                          "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                          "priceIds": [
+                            "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                          ],
+                          "startDate": "2022-01-01",
+                          "endDate": "2022-06-30"
+                        }
+                      ],
+                      "archivedAt": "2022-06-28T16:47:00Z"
                     }
                   }
                 }
@@ -34822,7 +35017,8 @@
               "startDate": "2022-01-01",
               "endDate": "2022-06-30"
             }
-          ]
+          ],
+          "archivedAt": "2022-06-28T16:47:00Z"
         },
         "properties": {
           "id": {
@@ -34955,6 +35151,11 @@
             "items": {
               "$ref": "#/components/schemas/Phase"
             }
+          },
+          "archivedAt": {
+            "type": "string",
+            "description": "Archived at",
+            "example": "2022-06-28T16:47:00Z"
           }
         }
       },
@@ -35387,7 +35588,8 @@
                   "startDate": "2022-01-01",
                   "endDate": "2022-06-30"
                 }
-              ]
+              ],
+              "archivedAt": "2022-06-28T16:47:00Z"
             }
           ],
           "pagination": {
@@ -35461,7 +35663,8 @@
                     "startDate": "2022-01-01",
                     "endDate": "2022-06-30"
                   }
-                ]
+                ],
+                "archivedAt": "2022-06-28T16:47:00Z"
               }
             ],
             "items": {
