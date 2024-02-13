@@ -590,7 +590,8 @@
             "description": "Internal Server Error",
             "content": {}
           }
-        }
+        },
+        "deprecated": true
       },
       "delete": {
         "tags": [],
