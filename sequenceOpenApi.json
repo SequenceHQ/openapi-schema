@@ -6781,7 +6781,6 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateBillingScheduleRequestWithPrices",
                 "example": {
                   "type": "CUSTOM",
                   "startDate": "2022-01-01",
@@ -6799,7 +6798,15 @@
                   "priceIds": [
                     "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
                   ]
-                }
+                },
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/UpdateBillingScheduleRequestWithPrices"
+                  },
+                  {
+                    "$ref": "#/components/schemas/UpdateBillingScheduleRequestWithPhases"
+                  }
+                ]
               },
               "examples": {
                 "UpdateBillingScheduleRequestWithPrices": {
@@ -6820,6 +6827,32 @@
                     "effectiveFrom": "2023-01-01",
                     "priceIds": [
                       "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+                    ]
+                  }
+                },
+                "UpdateBillingScheduleRequestWithPhases": {
+                  "summary": "",
+                  "value": {
+                    "type": "CUSTOM",
+                    "startDate": "2022-01-01",
+                    "endDate": "2022-12-01",
+                    "recurrenceDayOfMonth": 1,
+                    "taxRates": [
+                      {
+                        "priceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                        "taxRateId": "50c0d53b-8460-41e6-b4e9-a4e157fc1a64"
+                      }
+                    ],
+                    "autoIssueInvoices": true,
+                    "purchaseOrderNumber": "PO123",
+                    "phases": [
+                      {
+                        "priceIds": [
+                          "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+                        ],
+                        "startDate": "2022-01-01",
+                        "endDate": "2022-12-01"
+                      }
                     ]
                   }
                 }
@@ -34938,16 +34971,16 @@
         "type": "object",
         "example": {
           "priceIds": [
-            "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+            "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
           ],
           "startDate": "2022-01-01",
-          "endDate": "2022-06-30"
+          "endDate": "2022-12-01"
         },
         "properties": {
           "priceIds": {
             "type": "array",
             "example": [
-              "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+              "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
             ],
             "items": {
               "type": "string"
@@ -34961,7 +34994,7 @@
           "endDate": {
             "type": "string",
             "format": "date",
-            "example": "2022-06-30"
+            "example": "2022-12-01"
           }
         }
       },
@@ -35757,6 +35790,95 @@
             ],
             "items": {
               "type": "string"
+            }
+          }
+        }
+      },
+      "UpdateBillingScheduleRequestWithPhases": {
+        "required": [
+          "autoIssueInvoices",
+          "endDate",
+          "phases",
+          "startDate",
+          "type"
+        ],
+        "type": "object",
+        "example": {
+          "type": "CUSTOM",
+          "startDate": "2022-01-01",
+          "endDate": "2022-12-01",
+          "recurrenceDayOfMonth": 1,
+          "taxRates": [
+            {
+              "priceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+              "taxRateId": "50c0d53b-8460-41e6-b4e9-a4e157fc1a64"
+            }
+          ],
+          "autoIssueInvoices": true,
+          "purchaseOrderNumber": "PO123",
+          "phases": [
+            {
+              "priceIds": [
+                "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+              ],
+              "startDate": "2022-01-01",
+              "endDate": "2022-12-01"
+            }
+          ]
+        },
+        "properties": {
+          "type": {
+            "description": "Billing schedule type",
+            "$ref": "#/components/schemas/BillingScheduleType"
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date",
+            "example": "2022-01-01"
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date",
+            "example": "2022-12-01"
+          },
+          "recurrenceDayOfMonth": {
+            "type": "integer",
+            "format": "int32",
+            "example": 1
+          },
+          "taxRates": {
+            "type": "array",
+            "example": [
+              {
+                "priceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                "taxRateId": "50c0d53b-8460-41e6-b4e9-a4e157fc1a64"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/ProductTaxRateRepresentation"
+            }
+          },
+          "autoIssueInvoices": {
+            "type": "boolean",
+            "example": true
+          },
+          "purchaseOrderNumber": {
+            "type": "string",
+            "example": "PO123"
+          },
+          "phases": {
+            "type": "array",
+            "example": [
+              {
+                "priceIds": [
+                  "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+                ],
+                "startDate": "2022-01-01",
+                "endDate": "2022-12-01"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/PhaseRequest"
             }
           }
         }
