@@ -35976,7 +35976,8 @@
         "enum": [
           "COUNT",
           "UNIQUE",
-          "SUM"
+          "SUM",
+          "CUSTOM"
         ]
       },
       "GetUsageDataForBillingScheduleEndpointRequestModel": {
@@ -52623,7 +52624,8 @@
         "enum": [
           "COUNT",
           "UNIQUE",
-          "SUM"
+          "SUM",
+          "CUSTOM"
         ]
       },
       "CreateUsageMetricEndpointProductCreateUsageMetricResponseModel": {
