@@ -27353,6 +27353,114 @@
       "servers": [],
       "parameters": []
     },
+    "/custom-usage-metrics": {
+      "post": {
+        "tags": [],
+        "summary": "Create a custom usage metric",
+        "description": "Create a custom usage metric",
+        "operationId": "postCustomUsageMetrics",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCustomUsageMetricRequest",
+                "example": {
+                  "name": "Total length of sent messages.",
+                  "description": "Total length of sent messages.",
+                  "expression": "MAX(0, 1)",
+                  "unit": "bytes"
+                }
+              },
+              "examples": {
+                "CreateCustomUsageMetricRequest": {
+                  "summary": "",
+                  "value": {
+                    "name": "Total length of sent messages.",
+                    "description": "Total length of sent messages.",
+                    "expression": "MAX(0, 1)",
+                    "unit": "bytes"
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "2024-01-01",
+                  "$ref": "#/components/schemas/UsageMetric",
+                  "example": {
+                    "id": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                    "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+                    "name": "Total length of sent messages.",
+                    "description": "Total length of sent messages.",
+                    "metricType": "SIMPLE",
+                    "eventType": "N/A",
+                    "aggregationType": "CUSTOM",
+                    "unit": "bytes",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "deletedAt": "2022-06-28T16:47:00Z",
+                    "propertyFilters": {},
+                    "caseSensitive": false,
+                    "propertiesToNegate": []
+                  }
+                },
+                "examples": {
+                  "UsageMetric": {
+                    "summary": "",
+                    "value": {
+                      "id": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                      "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+                      "name": "Total length of sent messages.",
+                      "description": "Total length of sent messages.",
+                      "metricType": "SIMPLE",
+                      "eventType": "N/A",
+                      "aggregationType": "CUSTOM",
+                      "unit": "bytes",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "deletedAt": "2022-06-28T16:47:00Z",
+                      "propertyFilters": {},
+                      "caseSensitive": false,
+                      "propertiesToNegate": []
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/usage-metrics/{id}": {
       "get": {
         "tags": [],
@@ -52906,6 +53014,136 @@
             "items": {
               "type": "string"
             }
+          }
+        }
+      },
+      "CreateCustomUsageMetricRequest": {
+        "required": [
+          "description",
+          "expression",
+          "name",
+          "unit"
+        ],
+        "type": "object",
+        "example": {
+          "name": "Total length of sent messages.",
+          "description": "Total length of sent messages.",
+          "expression": "MAX(0, 1)",
+          "unit": "bytes"
+        },
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Human-readable name for this metric, which should be unique",
+            "example": "Total length of sent messages."
+          },
+          "description": {
+            "type": "string",
+            "description": "Description for this metric",
+            "example": "Total length of sent messages."
+          },
+          "expression": {
+            "type": "string",
+            "description": "Expression to use for calculation",
+            "example": "MAX(0, 1)"
+          },
+          "unit": {
+            "type": "string",
+            "description": "Human-readable unit of the aggregated metric, eg. API calls)",
+            "example": "bytes"
+          }
+        }
+      },
+      "UsageMetric": {
+        "required": [
+          "aggregationType",
+          "eventType",
+          "id",
+          "metricType",
+          "name",
+          "propertyFilters",
+          "sequenceAccountId"
+        ],
+        "type": "object",
+        "description": "2024-01-01",
+        "example": {
+          "id": "f092246c-6b90-4106-bcca-304ccf06bf45",
+          "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+          "name": "Total length of sent messages.",
+          "description": "Total length of sent messages.",
+          "metricType": "SIMPLE",
+          "eventType": "N/A",
+          "aggregationType": "CUSTOM",
+          "unit": "bytes",
+          "createdAt": "2022-06-28T16:47:00Z",
+          "deletedAt": "2022-06-28T16:47:00Z",
+          "propertyFilters": {},
+          "caseSensitive": false,
+          "propertiesToNegate": []
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique ID",
+            "example": "f092246c-6b90-4106-bcca-304ccf06bf45"
+          },
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Sequence Account ID",
+            "example": "ec1479a2-6ba1-421f-a7de-0853a20d17a1"
+          },
+          "name": {
+            "type": "string",
+            "description": "Human-readable name for this metric, which should be unique",
+            "example": "Total length of sent messages."
+          },
+          "description": {
+            "type": "string",
+            "description": "Description for this metric",
+            "example": "Total length of sent messages."
+          },
+          "metricType": {
+            "description": "Type of metric (simple or grouped)",
+            "$ref": "#/components/schemas/MetricType"
+          },
+          "eventType": {
+            "type": "string",
+            "description": "The `eventType` of the Usage Event to be aggregated",
+            "example": "N/A"
+          },
+          "aggregationType": {
+            "description": "Type of aggregation to perform",
+            "$ref": "#/components/schemas/AggregationType1"
+          },
+          "unit": {
+            "type": "string",
+            "description": "Human-readable unit of the aggregated metric, eg. API calls)",
+            "example": "bytes"
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "Created at",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "deletedAt": {
+            "type": "string",
+            "description": "Created at",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "propertyFilters": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object"
+            }
+          },
+          "caseSensitive": {
+            "type": "boolean",
+            "example": false
+          },
+          "propertiesToNegate": {
+            "type": "array",
+            "example": [],
+            "items": {}
           }
         }
       },
