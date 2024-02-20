@@ -28595,6 +28595,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "customParameters",
+            "in": "query",
+            "description": "Custom parameter values",
+            "required": false,
+            "schema": {
+              "type": "object"
+            }
           }
         ],
         "responses": {
