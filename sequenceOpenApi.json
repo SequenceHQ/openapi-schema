@@ -27379,7 +27379,15 @@
                   "name": "Total length of sent messages.",
                   "description": "Total length of sent messages.",
                   "expression": "MAX(0, 1)",
-                  "unit": "bytes"
+                  "unit": "bytes",
+                  "parameters": [
+                    {
+                      "name": "ratio",
+                      "type": "POSITIVE_INTEGER",
+                      "description": "Ratio of A to B",
+                      "defaultValue": "10"
+                    }
+                  ]
                 }
               },
               "examples": {
@@ -27389,7 +27397,15 @@
                     "name": "Total length of sent messages.",
                     "description": "Total length of sent messages.",
                     "expression": "MAX(0, 1)",
-                    "unit": "bytes"
+                    "unit": "bytes",
+                    "parameters": [
+                      {
+                        "name": "ratio",
+                        "type": "POSITIVE_INTEGER",
+                        "description": "Ratio of A to B",
+                        "defaultValue": "10"
+                      }
+                    ]
                   }
                 }
               }
@@ -53022,6 +53038,7 @@
           "description",
           "expression",
           "name",
+          "parameters",
           "unit"
         ],
         "type": "object",
@@ -53029,7 +53046,15 @@
           "name": "Total length of sent messages.",
           "description": "Total length of sent messages.",
           "expression": "MAX(0, 1)",
-          "unit": "bytes"
+          "unit": "bytes",
+          "parameters": [
+            {
+              "name": "ratio",
+              "type": "POSITIVE_INTEGER",
+              "description": "Ratio of A to B",
+              "defaultValue": "10"
+            }
+          ]
         },
         "properties": {
           "name": {
@@ -53051,8 +53076,63 @@
             "type": "string",
             "description": "Human-readable unit of the aggregated metric, eg. API calls)",
             "example": "bytes"
+          },
+          "parameters": {
+            "type": "array",
+            "description": "Required parameters",
+            "example": [
+              {
+                "name": "ratio",
+                "type": "POSITIVE_INTEGER",
+                "description": "Ratio of A to B",
+                "defaultValue": "10"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/CreateCustomMetricParameterRequest"
+            }
           }
         }
+      },
+      "CreateCustomMetricParameterRequest": {
+        "required": [
+          "defaultValue",
+          "description",
+          "name",
+          "type"
+        ],
+        "type": "object",
+        "example": {
+          "name": "ratio",
+          "type": "POSITIVE_INTEGER",
+          "description": "Ratio of A to B",
+          "defaultValue": "10"
+        },
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "ratio"
+          },
+          "type": {
+            "$ref": "#/components/schemas/CustomParameterType"
+          },
+          "description": {
+            "type": "string",
+            "example": "Ratio of A to B"
+          },
+          "defaultValue": {
+            "type": "string",
+            "example": "10"
+          }
+        }
+      },
+      "CustomParameterType": {
+        "type": "string",
+        "example": "POSITIVE_INTEGER",
+        "enum": [
+          "INTEGER",
+          "POSITIVE_INTEGER"
+        ]
       },
       "UsageMetric": {
         "required": [
