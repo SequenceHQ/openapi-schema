@@ -28854,7 +28854,7 @@
             "description": "Custom parameter values",
             "required": false,
             "schema": {
-              "type": "object"
+              "type": "string"
             }
           }
         ],
