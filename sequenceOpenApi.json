@@ -2870,6 +2870,12 @@
                             "key": "Xero",
                             "value": "123"
                           }
+                        ],
+                        "parameters": [
+                          {
+                            "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                            "value": "10"
+                          }
                         ]
                       }
                     ],
@@ -2905,6 +2911,12 @@
                             {
                               "key": "Xero",
                               "value": "123"
+                            }
+                          ],
+                          "parameters": [
+                            {
+                              "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                              "value": "10"
                             }
                           ]
                         }
@@ -2973,6 +2985,12 @@
                       "key": "Xero",
                       "value": "123"
                     }
+                  ],
+                  "parameters": [
+                    {
+                      "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                      "value": "10"
+                    }
                   ]
                 }
               },
@@ -2995,6 +3013,12 @@
                       {
                         "key": "Xero",
                         "value": "123"
+                      }
+                    ],
+                    "parameters": [
+                      {
+                        "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                        "value": "10"
                       }
                     ]
                   }
@@ -3033,6 +3057,12 @@
                         "key": "Xero",
                         "value": "123"
                       }
+                    ],
+                    "parameters": [
+                      {
+                        "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                        "value": "10"
+                      }
                     ]
                   }
                 },
@@ -3059,6 +3089,12 @@
                         {
                           "key": "Xero",
                           "value": "123"
+                        }
+                      ],
+                      "parameters": [
+                        {
+                          "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                          "value": "10"
                         }
                       ]
                     }
@@ -3139,6 +3175,12 @@
                         "key": "Xero",
                         "value": "123"
                       }
+                    ],
+                    "parameters": [
+                      {
+                        "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                        "value": "10"
+                      }
                     ]
                   }
                 },
@@ -3165,6 +3207,12 @@
                         {
                           "key": "Xero",
                           "value": "123"
+                        }
+                      ],
+                      "parameters": [
+                        {
+                          "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                          "value": "10"
                         }
                       ]
                     }
@@ -3263,6 +3311,12 @@
                         "key": "Xero",
                         "value": "123"
                       }
+                    ],
+                    "parameters": [
+                      {
+                        "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                        "value": "10"
+                      }
                     ]
                   }
                 },
@@ -3289,6 +3343,12 @@
                         {
                           "key": "Xero",
                           "value": "123"
+                        }
+                      ],
+                      "parameters": [
+                        {
+                          "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                          "value": "10"
                         }
                       ]
                     }
@@ -3365,6 +3425,12 @@
                         "key": "Xero",
                         "value": "123"
                       }
+                    ],
+                    "parameters": [
+                      {
+                        "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                        "value": "10"
+                      }
                     ]
                   }
                 },
@@ -3391,6 +3457,12 @@
                         {
                           "key": "Xero",
                           "value": "123"
+                        }
+                      ],
+                      "parameters": [
+                        {
+                          "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                          "value": "10"
                         }
                       ]
                     }
@@ -3547,6 +3619,12 @@
                                 "key": "Xero",
                                 "value": "123"
                               }
+                            ],
+                            "parameters": [
+                              {
+                                "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                                "value": "10"
+                              }
                             ]
                           }
                         ],
@@ -3603,6 +3681,12 @@
                                 {
                                   "key": "Xero",
                                   "value": "123"
+                                }
+                              ],
+                              "parameters": [
+                                {
+                                  "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                                  "value": "10"
                                 }
                               ]
                             }
@@ -3740,6 +3824,12 @@
                             "key": "Xero",
                             "value": "123"
                           }
+                        ],
+                        "parameters": [
+                          {
+                            "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                            "value": "10"
+                          }
                         ]
                       }
                     ],
@@ -3787,6 +3877,12 @@
                             {
                               "key": "Xero",
                               "value": "123"
+                            }
+                          ],
+                          "parameters": [
+                            {
+                              "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                              "value": "10"
                             }
                           ]
                         }
@@ -3916,6 +4012,12 @@
                             "key": "Xero",
                             "value": "123"
                           }
+                        ],
+                        "parameters": [
+                          {
+                            "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                            "value": "10"
+                          }
                         ]
                       }
                     ],
@@ -3963,6 +4065,12 @@
                             {
                               "key": "Xero",
                               "value": "123"
+                            }
+                          ],
+                          "parameters": [
+                            {
+                              "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                              "value": "10"
                             }
                           ]
                         }
@@ -4106,6 +4214,12 @@
                             "key": "Xero",
                             "value": "123"
                           }
+                        ],
+                        "parameters": [
+                          {
+                            "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                            "value": "10"
+                          }
                         ]
                       }
                     ],
@@ -4153,6 +4267,12 @@
                             {
                               "key": "Xero",
                               "value": "123"
+                            }
+                          ],
+                          "parameters": [
+                            {
+                              "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                              "value": "10"
                             }
                           ]
                         }
@@ -5992,7 +6112,13 @@
                             "createdAt": "2022-06-28T16:47:00Z",
                             "updatedAt": "2022-06-28T16:47:00Z",
                             "deletedAt": "2022-06-28T16:47:00Z",
-                            "externalIds": []
+                            "externalIds": [],
+                            "parameters": [
+                              {
+                                "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                                "value": "10"
+                              }
+                            ]
                           }
                         ],
                         "type": "PLAN",
@@ -6068,7 +6194,13 @@
                               "createdAt": "2022-06-28T16:47:00Z",
                               "updatedAt": "2022-06-28T16:47:00Z",
                               "deletedAt": "2022-06-28T16:47:00Z",
-                              "externalIds": []
+                              "externalIds": [],
+                              "parameters": [
+                                {
+                                  "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                                  "value": "10"
+                                }
+                              ]
                             }
                           ],
                           "type": "PLAN",
@@ -27294,6 +27426,16 @@
                         "caseSensitive": true,
                         "propertiesToNegate": [
                           "channels"
+                        ],
+                        "parameters": [
+                          {
+                            "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                            "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                            "name": "myParam",
+                            "type": "INTEGER",
+                            "description": "My parameter",
+                            "defaultValue": "10"
+                          }
                         ]
                       }
                     ],
@@ -27331,6 +27473,16 @@
                           "caseSensitive": true,
                           "propertiesToNegate": [
                             "channels"
+                          ],
+                          "parameters": [
+                            {
+                              "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                              "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                              "name": "myParam",
+                              "type": "INTEGER",
+                              "description": "My parameter",
+                              "defaultValue": "10"
+                            }
                           ]
                         }
                       ],
@@ -27463,6 +27615,16 @@
                     "caseSensitive": true,
                     "propertiesToNegate": [
                       "channels"
+                    ],
+                    "parameters": [
+                      {
+                        "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                        "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                        "name": "myParam",
+                        "type": "INTEGER",
+                        "description": "My parameter",
+                        "defaultValue": "10"
+                      }
                     ]
                   }
                 },
@@ -27491,6 +27653,16 @@
                       "caseSensitive": true,
                       "propertiesToNegate": [
                         "channels"
+                      ],
+                      "parameters": [
+                        {
+                          "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                          "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                          "name": "myParam",
+                          "type": "INTEGER",
+                          "description": "My parameter",
+                          "defaultValue": "10"
+                        }
                       ]
                     }
                   }
@@ -27596,7 +27768,17 @@
                     "deletedAt": "2022-06-28T16:47:00Z",
                     "propertyFilters": {},
                     "caseSensitive": false,
-                    "propertiesToNegate": []
+                    "propertiesToNegate": [],
+                    "parameters": [
+                      {
+                        "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                        "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                        "name": "ratio",
+                        "type": "POSITIVE_INTEGER",
+                        "description": "Ratio of A to B",
+                        "defaultValue": "10"
+                      }
+                    ]
                   }
                 },
                 "examples": {
@@ -27615,7 +27797,17 @@
                       "deletedAt": "2022-06-28T16:47:00Z",
                       "propertyFilters": {},
                       "caseSensitive": false,
-                      "propertiesToNegate": []
+                      "propertiesToNegate": [],
+                      "parameters": [
+                        {
+                          "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                          "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                          "name": "ratio",
+                          "type": "POSITIVE_INTEGER",
+                          "description": "Ratio of A to B",
+                          "defaultValue": "10"
+                        }
+                      ]
                     }
                   }
                 }
@@ -27695,6 +27887,16 @@
                     "caseSensitive": true,
                     "propertiesToNegate": [
                       "channels"
+                    ],
+                    "parameters": [
+                      {
+                        "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                        "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                        "name": "myParam",
+                        "type": "INTEGER",
+                        "description": "My parameter",
+                        "defaultValue": "10"
+                      }
                     ]
                   }
                 },
@@ -27723,6 +27925,16 @@
                       "caseSensitive": true,
                       "propertiesToNegate": [
                         "channels"
+                      ],
+                      "parameters": [
+                        {
+                          "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                          "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                          "name": "myParam",
+                          "type": "INTEGER",
+                          "description": "My parameter",
+                          "defaultValue": "10"
+                        }
                       ]
                     }
                   }
@@ -27829,6 +28041,16 @@
                     "caseSensitive": true,
                     "propertiesToNegate": [
                       "channels"
+                    ],
+                    "parameters": [
+                      {
+                        "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                        "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                        "name": "myParam",
+                        "type": "INTEGER",
+                        "description": "My parameter",
+                        "defaultValue": "10"
+                      }
                     ]
                   }
                 },
@@ -27857,6 +28079,16 @@
                       "caseSensitive": true,
                       "propertiesToNegate": [
                         "channels"
+                      ],
+                      "parameters": [
+                        {
+                          "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                          "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                          "name": "myParam",
+                          "type": "INTEGER",
+                          "description": "My parameter",
+                          "defaultValue": "10"
+                        }
                       ]
                     }
                   }
@@ -27933,6 +28165,16 @@
                     "caseSensitive": true,
                     "propertiesToNegate": [
                       "channels"
+                    ],
+                    "parameters": [
+                      {
+                        "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                        "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                        "name": "myParam",
+                        "type": "INTEGER",
+                        "description": "My parameter",
+                        "defaultValue": "10"
+                      }
                     ]
                   }
                 },
@@ -27961,6 +28203,16 @@
                       "caseSensitive": true,
                       "propertiesToNegate": [
                         "channels"
+                      ],
+                      "parameters": [
+                        {
+                          "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                          "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                          "name": "myParam",
+                          "type": "INTEGER",
+                          "description": "My parameter",
+                          "defaultValue": "10"
+                        }
                       ]
                     }
                   }
@@ -31699,6 +31951,12 @@
               "key": "Xero",
               "value": "123"
             }
+          ],
+          "parameters": [
+            {
+              "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+              "value": "10"
+            }
           ]
         },
         "properties": {
@@ -31767,6 +32025,19 @@
             ],
             "items": {
               "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+            }
+          },
+          "parameters": {
+            "type": "array",
+            "description": "Parameters required for usage calculation",
+            "example": [
+              {
+                "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                "value": "10"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/PriceParameter"
             }
           }
         }
@@ -31906,6 +32177,27 @@
           "Xero"
         ]
       },
+      "PriceParameter": {
+        "required": [
+          "parameterId",
+          "value"
+        ],
+        "type": "object",
+        "example": {
+          "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+          "value": "10"
+        },
+        "properties": {
+          "parameterId": {
+            "type": "string",
+            "example": "94703530-1293-479b-bd37-ccad42fd9c8b"
+          },
+          "value": {
+            "type": "string",
+            "example": "10"
+          }
+        }
+      },
       "CreatePriceEndpointProductCreatePriceResponseModel": {
         "required": [
           "billingFrequency",
@@ -31915,6 +32207,7 @@
           "externalIds",
           "id",
           "name",
+          "parameters",
           "productId",
           "sequenceAccountId",
           "structure"
@@ -31941,6 +32234,12 @@
             {
               "key": "Xero",
               "value": "123"
+            }
+          ],
+          "parameters": [
+            {
+              "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+              "value": "10"
             }
           ]
         },
@@ -32030,6 +32329,19 @@
             ],
             "items": {
               "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+            }
+          },
+          "parameters": {
+            "type": "array",
+            "description": "Parameters required for usage calculation",
+            "example": [
+              {
+                "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                "value": "10"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/PriceParameter"
             }
           }
         }
@@ -32043,6 +32355,7 @@
           "externalIds",
           "id",
           "name",
+          "parameters",
           "productId",
           "sequenceAccountId",
           "structure"
@@ -32069,6 +32382,12 @@
             {
               "key": "Xero",
               "value": "123"
+            }
+          ],
+          "parameters": [
+            {
+              "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+              "value": "10"
             }
           ]
         },
@@ -32158,6 +32477,19 @@
             ],
             "items": {
               "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+            }
+          },
+          "parameters": {
+            "type": "array",
+            "description": "Parameters required for usage calculation",
+            "example": [
+              {
+                "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                "value": "10"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/PriceParameter"
             }
           }
         }
@@ -32188,6 +32520,7 @@
           "externalIds",
           "id",
           "name",
+          "parameters",
           "productId",
           "sequenceAccountId",
           "structure"
@@ -32214,6 +32547,12 @@
             {
               "key": "Xero",
               "value": "123"
+            }
+          ],
+          "parameters": [
+            {
+              "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+              "value": "10"
             }
           ]
         },
@@ -32303,6 +32642,19 @@
             ],
             "items": {
               "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+            }
+          },
+          "parameters": {
+            "type": "array",
+            "description": "Parameters required for usage calculation",
+            "example": [
+              {
+                "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                "value": "10"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/PriceParameter"
             }
           }
         }
@@ -32336,6 +32688,12 @@
                 {
                   "key": "Xero",
                   "value": "123"
+                }
+              ],
+              "parameters": [
+                {
+                  "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                  "value": "10"
                 }
               ]
             }
@@ -32372,6 +32730,12 @@
                     "key": "Xero",
                     "value": "123"
                   }
+                ],
+                "parameters": [
+                  {
+                    "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                    "value": "10"
+                  }
                 ]
               }
             ],
@@ -32394,6 +32758,7 @@
           "externalIds",
           "id",
           "name",
+          "parameters",
           "productId",
           "sequenceAccountId",
           "structure"
@@ -32416,7 +32781,13 @@
           "createdAt": "2022-06-28T16:47:00Z",
           "updatedAt": "2022-06-28T16:47:00Z",
           "deletedAt": "2022-06-28T16:47:00Z",
-          "externalIds": []
+          "externalIds": [],
+          "parameters": [
+            {
+              "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+              "value": "10"
+            }
+          ]
         },
         "properties": {
           "id": {
@@ -32503,6 +32874,19 @@
             "description": "IDs in external integrations",
             "example": [],
             "items": {}
+          },
+          "parameters": {
+            "type": "array",
+            "description": "Parameters required for usage calculation",
+            "example": [
+              {
+                "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                "value": "10"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/PriceParameter"
+            }
           }
         }
       },
@@ -32515,6 +32899,7 @@
           "externalIds",
           "id",
           "name",
+          "parameters",
           "productId",
           "sequenceAccountId",
           "structure"
@@ -32541,6 +32926,12 @@
             {
               "key": "Xero",
               "value": "123"
+            }
+          ],
+          "parameters": [
+            {
+              "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+              "value": "10"
             }
           ]
         },
@@ -32630,6 +33021,19 @@
             ],
             "items": {
               "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+            }
+          },
+          "parameters": {
+            "type": "array",
+            "description": "Parameters required for usage calculation",
+            "example": [
+              {
+                "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                "value": "10"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/PriceParameter"
             }
           }
         }
@@ -32763,6 +33167,12 @@
                   "key": "Xero",
                   "value": "123"
                 }
+              ],
+              "parameters": [
+                {
+                  "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                  "value": "10"
+                }
               ]
             }
           ],
@@ -32840,6 +33250,12 @@
                   {
                     "key": "Xero",
                     "value": "123"
+                  }
+                ],
+                "parameters": [
+                  {
+                    "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                    "value": "10"
                   }
                 ]
               }
@@ -33083,6 +33499,12 @@
                       "key": "Xero",
                       "value": "123"
                     }
+                  ],
+                  "parameters": [
+                    {
+                      "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                      "value": "10"
+                    }
                   ]
                 }
               ],
@@ -33138,6 +33560,12 @@
                       {
                         "key": "Xero",
                         "value": "123"
+                      }
+                    ],
+                    "parameters": [
+                      {
+                        "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                        "value": "10"
                       }
                     ]
                   }
@@ -36060,7 +36488,13 @@
                   "createdAt": "2022-06-28T16:47:00Z",
                   "updatedAt": "2022-06-28T16:47:00Z",
                   "deletedAt": "2022-06-28T16:47:00Z",
-                  "externalIds": []
+                  "externalIds": [],
+                  "parameters": [
+                    {
+                      "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                      "value": "10"
+                    }
+                  ]
                 }
               ],
               "type": "PLAN",
@@ -36135,7 +36569,13 @@
                     "createdAt": "2022-06-28T16:47:00Z",
                     "updatedAt": "2022-06-28T16:47:00Z",
                     "deletedAt": "2022-06-28T16:47:00Z",
-                    "externalIds": []
+                    "externalIds": [],
+                    "parameters": [
+                      {
+                        "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                        "value": "10"
+                      }
+                    ]
                   }
                 ],
                 "type": "PLAN",
@@ -53092,6 +53532,7 @@
           "id",
           "metricType",
           "name",
+          "parameters",
           "propertyFilters",
           "sequenceAccountId"
         ],
@@ -53119,6 +53560,16 @@
           "caseSensitive": true,
           "propertiesToNegate": [
             "channels"
+          ],
+          "parameters": [
+            {
+              "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+              "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+              "name": "myParam",
+              "type": "INTEGER",
+              "description": "My parameter",
+              "defaultValue": "10"
+            }
           ]
         },
         "properties": {
@@ -53201,8 +53652,77 @@
             "items": {
               "type": "string"
             }
+          },
+          "parameters": {
+            "type": "array",
+            "description": "Required parameters",
+            "example": [
+              {
+                "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                "name": "myParam",
+                "type": "INTEGER",
+                "description": "My parameter",
+                "defaultValue": "10"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/CustomMetricParameter"
+            }
           }
         }
+      },
+      "CustomMetricParameter": {
+        "required": [
+          "defaultValue",
+          "description",
+          "id",
+          "name",
+          "type",
+          "usageMetricId"
+        ],
+        "type": "object",
+        "example": {
+          "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+          "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+          "name": "myParam",
+          "type": "INTEGER",
+          "description": "My parameter",
+          "defaultValue": "10"
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": "2963e49a-c8e0-4673-89f5-7a805c0faf14"
+          },
+          "usageMetricId": {
+            "type": "string",
+            "example": "f092246c-6b90-4106-bcca-304ccf06bf45"
+          },
+          "name": {
+            "type": "string",
+            "example": "myParam"
+          },
+          "type": {
+            "$ref": "#/components/schemas/CustomParameterType"
+          },
+          "description": {
+            "type": "string",
+            "example": "My parameter"
+          },
+          "defaultValue": {
+            "type": "string",
+            "example": "10"
+          }
+        }
+      },
+      "CustomParameterType": {
+        "type": "string",
+        "example": "INTEGER",
+        "enum": [
+          "INTEGER",
+          "POSITIVE_INTEGER"
+        ]
       },
       "CreateCustomUsageMetricRequest": {
         "required": [
@@ -53297,14 +53817,6 @@
           }
         }
       },
-      "CustomParameterType": {
-        "type": "string",
-        "example": "POSITIVE_INTEGER",
-        "enum": [
-          "INTEGER",
-          "POSITIVE_INTEGER"
-        ]
-      },
       "UsageMetric": {
         "required": [
           "aggregationType",
@@ -53312,6 +53824,7 @@
           "id",
           "metricType",
           "name",
+          "parameters",
           "propertyFilters",
           "sequenceAccountId"
         ],
@@ -53330,7 +53843,17 @@
           "deletedAt": "2022-06-28T16:47:00Z",
           "propertyFilters": {},
           "caseSensitive": false,
-          "propertiesToNegate": []
+          "propertiesToNegate": [],
+          "parameters": [
+            {
+              "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+              "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+              "name": "ratio",
+              "type": "POSITIVE_INTEGER",
+              "description": "Ratio of A to B",
+              "defaultValue": "10"
+            }
+          ]
         },
         "properties": {
           "id": {
@@ -53395,6 +53918,23 @@
             "type": "array",
             "example": [],
             "items": {}
+          },
+          "parameters": {
+            "type": "array",
+            "description": "Required parameters",
+            "example": [
+              {
+                "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                "name": "ratio",
+                "type": "POSITIVE_INTEGER",
+                "description": "Ratio of A to B",
+                "defaultValue": "10"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/CustomMetricParameter"
+            }
           }
         }
       },
@@ -53405,6 +53945,7 @@
           "id",
           "metricType",
           "name",
+          "parameters",
           "propertyFilters",
           "sequenceAccountId"
         ],
@@ -53432,6 +53973,16 @@
           "caseSensitive": true,
           "propertiesToNegate": [
             "channels"
+          ],
+          "parameters": [
+            {
+              "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+              "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+              "name": "myParam",
+              "type": "INTEGER",
+              "description": "My parameter",
+              "defaultValue": "10"
+            }
           ]
         },
         "properties": {
@@ -53513,6 +54064,23 @@
             ],
             "items": {
               "type": "string"
+            }
+          },
+          "parameters": {
+            "type": "array",
+            "description": "Required parameters",
+            "example": [
+              {
+                "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                "name": "myParam",
+                "type": "INTEGER",
+                "description": "My parameter",
+                "defaultValue": "10"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/CustomMetricParameter"
             }
           }
         }
@@ -53566,6 +54134,7 @@
           "id",
           "metricType",
           "name",
+          "parameters",
           "propertyFilters",
           "sequenceAccountId"
         ],
@@ -53593,6 +54162,16 @@
           "caseSensitive": true,
           "propertiesToNegate": [
             "channels"
+          ],
+          "parameters": [
+            {
+              "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+              "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+              "name": "myParam",
+              "type": "INTEGER",
+              "description": "My parameter",
+              "defaultValue": "10"
+            }
           ]
         },
         "properties": {
@@ -53674,6 +54253,23 @@
             ],
             "items": {
               "type": "string"
+            }
+          },
+          "parameters": {
+            "type": "array",
+            "description": "Required parameters",
+            "example": [
+              {
+                "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                "name": "myParam",
+                "type": "INTEGER",
+                "description": "My parameter",
+                "defaultValue": "10"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/CustomMetricParameter"
             }
           }
         }
@@ -53685,6 +54281,7 @@
           "id",
           "metricType",
           "name",
+          "parameters",
           "propertyFilters",
           "sequenceAccountId"
         ],
@@ -53712,6 +54309,16 @@
           "caseSensitive": true,
           "propertiesToNegate": [
             "channels"
+          ],
+          "parameters": [
+            {
+              "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+              "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+              "name": "myParam",
+              "type": "INTEGER",
+              "description": "My parameter",
+              "defaultValue": "10"
+            }
           ]
         },
         "properties": {
@@ -53793,6 +54400,23 @@
             ],
             "items": {
               "type": "string"
+            }
+          },
+          "parameters": {
+            "type": "array",
+            "description": "Required parameters",
+            "example": [
+              {
+                "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                "name": "myParam",
+                "type": "INTEGER",
+                "description": "My parameter",
+                "defaultValue": "10"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/CustomMetricParameter"
             }
           }
         }
@@ -54088,6 +54712,16 @@
               "caseSensitive": true,
               "propertiesToNegate": [
                 "channels"
+              ],
+              "parameters": [
+                {
+                  "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                  "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                  "name": "myParam",
+                  "type": "INTEGER",
+                  "description": "My parameter",
+                  "defaultValue": "10"
+                }
               ]
             }
           ],
@@ -54124,6 +54758,16 @@
                 "caseSensitive": true,
                 "propertiesToNegate": [
                   "channels"
+                ],
+                "parameters": [
+                  {
+                    "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                    "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                    "name": "myParam",
+                    "type": "INTEGER",
+                    "description": "My parameter",
+                    "defaultValue": "10"
+                  }
                 ]
               }
             ],
@@ -54144,6 +54788,7 @@
           "id",
           "metricType",
           "name",
+          "parameters",
           "propertyFilters",
           "sequenceAccountId"
         ],
@@ -54170,6 +54815,16 @@
           "caseSensitive": true,
           "propertiesToNegate": [
             "channels"
+          ],
+          "parameters": [
+            {
+              "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+              "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+              "name": "myParam",
+              "type": "INTEGER",
+              "description": "My parameter",
+              "defaultValue": "10"
+            }
           ]
         },
         "properties": {
@@ -54249,6 +54904,23 @@
             ],
             "items": {
               "type": "string"
+            }
+          },
+          "parameters": {
+            "type": "array",
+            "description": "Required parameters",
+            "example": [
+              {
+                "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                "name": "myParam",
+                "type": "INTEGER",
+                "description": "My parameter",
+                "defaultValue": "10"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/CustomMetricParameter"
             }
           }
         }
