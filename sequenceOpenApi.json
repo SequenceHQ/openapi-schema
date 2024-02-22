@@ -35975,6 +35975,8 @@
           "endDate",
           "id",
           "phases",
+          "priceIds",
+          "prices",
           "sequenceAccountId",
           "startDate",
           "status",
