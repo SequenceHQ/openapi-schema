@@ -5563,7 +5563,7 @@
               "application/json": {
                 "schema": {
                   "description": "2024-01-01",
-                  "$ref": "#/components/schemas/ListCreditGrantsForCustomerEndpointBaseCreditGrantsResponse",
+                  "$ref": "#/components/schemas/ListCreditGrantsForCustomerEndpointCreditGrantsResponse",
                   "example": {
                     "items": [
                       {
@@ -5578,91 +5578,7 @@
                   }
                 },
                 "examples": {
-                  "ListCreditGrantsForCustomerEndpointBaseCreditGrantsResponse": {
-                    "summary": "",
-                    "value": {
-                      "items": [
-                        {
-                          "id": "22efb229-c474-407c-bbf7-f5e113ee8b20",
-                          "name": "API Calls",
-                          "grantAmount": 1000,
-                          "balance": 324,
-                          "issueDate": "2022-02-22",
-                          "expiryDate": "2030-03-03"
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Bad Request",
-            "content": {}
-          },
-          "401": {
-            "description": "Unauthorized",
-            "content": {}
-          },
-          "500": {
-            "description": "Internal Server Error",
-            "content": {}
-          }
-        }
-      },
-      "servers": [],
-      "parameters": []
-    },
-    "/credits/{customerId}/balances": {
-      "get": {
-        "tags": [],
-        "summary": "List Credit Grants for a customer",
-        "description": "List all Credit Grants and their outstanding balances where the balance is non-zero",
-        "operationId": "getCreditsByCustomerIdBalances",
-        "parameters": [
-          {
-            "name": "customerId",
-            "in": "path",
-            "description": "Customer ID",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "Authorization",
-            "in": "header",
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "description": "2024-01-01",
-                  "$ref": "#/components/schemas/ListCreditGrantsForCustomerEndpointBaseCreditGrantsResponse",
-                  "example": {
-                    "items": [
-                      {
-                        "id": "22efb229-c474-407c-bbf7-f5e113ee8b20",
-                        "name": "API Calls",
-                        "grantAmount": 1000,
-                        "balance": 324,
-                        "issueDate": "2022-02-22",
-                        "expiryDate": "2030-03-03"
-                      }
-                    ]
-                  }
-                },
-                "examples": {
-                  "ListCreditGrantsForCustomerEndpointBaseCreditGrantsResponse": {
+                  "ListCreditGrantsForCustomerEndpointCreditGrantsResponse": {
                     "summary": "",
                     "value": {
                       "items": [
@@ -35182,7 +35098,7 @@
           "METRIC"
         ]
       },
-      "ListCreditGrantsForCustomerEndpointBaseCreditGrantsResponse": {
+      "ListCreditGrantsForCustomerEndpointCreditGrantsResponse": {
         "required": [
           "items"
         ],
@@ -35215,12 +35131,12 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/ListCreditGrantsForCustomerEndpointBaseCreditGrantResponse"
+              "$ref": "#/components/schemas/ListCreditGrantsForCustomerEndpointCreditGrantResponse"
             }
           }
         }
       },
-      "ListCreditGrantsForCustomerEndpointBaseCreditGrantResponse": {
+      "ListCreditGrantsForCustomerEndpointCreditGrantResponse": {
         "required": [
           "balance",
           "grantAmount",
