@@ -28132,9 +28132,22 @@
                 "example": {
                   "name": "Total length of sent messages.",
                   "description": "Total length of sent messages.",
+                  "metricType": "GROUPED",
                   "eventType": "message_sent",
+                  "aggregationType": "COUNT",
                   "aggregationProperty": "message_length",
-                  "unit": "bytes"
+                  "groupingProperty": "channel",
+                  "unit": "bytes",
+                  "propertyFilters": {
+                    "channels": [
+                      "text",
+                      "email"
+                    ]
+                  },
+                  "caseSensitive": true,
+                  "propertiesToNegate": [
+                    "channels"
+                  ]
                 }
               },
               "examples": {
@@ -28143,9 +28156,22 @@
                   "value": {
                     "name": "Total length of sent messages.",
                     "description": "Total length of sent messages.",
+                    "metricType": "GROUPED",
                     "eventType": "message_sent",
+                    "aggregationType": "COUNT",
                     "aggregationProperty": "message_length",
-                    "unit": "bytes"
+                    "groupingProperty": "channel",
+                    "unit": "bytes",
+                    "propertyFilters": {
+                      "channels": [
+                        "text",
+                        "email"
+                      ]
+                    },
+                    "caseSensitive": true,
+                    "propertiesToNegate": [
+                      "channels"
+                    ]
                   }
                 }
               }
@@ -54240,7 +54266,9 @@
       },
       "UpdateUsageMetricEndpointUpdateUsageMetricRequestModel": {
         "required": [
+          "aggregationType",
           "eventType",
+          "metricType",
           "name"
         ],
         "type": "object",
@@ -54248,9 +54276,22 @@
         "example": {
           "name": "Total length of sent messages.",
           "description": "Total length of sent messages.",
+          "metricType": "GROUPED",
           "eventType": "message_sent",
+          "aggregationType": "COUNT",
           "aggregationProperty": "message_length",
-          "unit": "bytes"
+          "groupingProperty": "channel",
+          "unit": "bytes",
+          "propertyFilters": {
+            "channels": [
+              "text",
+              "email"
+            ]
+          },
+          "caseSensitive": true,
+          "propertiesToNegate": [
+            "channels"
+          ]
         },
         "properties": {
           "name": {
@@ -54263,20 +54304,55 @@
             "description": "Description for this metric",
             "example": "Total length of sent messages."
           },
+          "metricType": {
+            "description": "Type of metric (simple or grouped)",
+            "$ref": "#/components/schemas/MetricType"
+          },
           "eventType": {
             "type": "string",
             "description": "The `eventType` of the Usage Event to be aggregated",
             "example": "message_sent"
+          },
+          "aggregationType": {
+            "description": "Type of aggregation to perform",
+            "$ref": "#/components/schemas/AggregationType1"
           },
           "aggregationProperty": {
             "type": "string",
             "description": "Property within the event to aggregate",
             "example": "message_length"
           },
+          "groupingProperty": {
+            "type": "string",
+            "description": "Property within the event to group results by",
+            "example": "channel"
+          },
           "unit": {
             "type": "string",
             "description": "Human-readable unit of the aggregated metric, eg. API calls)",
             "example": "bytes"
+          },
+          "propertyFilters": {
+            "type": "object",
+            "description": "propertyFilters",
+            "additionalProperties": {
+              "type": "object"
+            }
+          },
+          "caseSensitive": {
+            "type": "boolean",
+            "description": "caseSensitive",
+            "example": true
+          },
+          "propertiesToNegate": {
+            "type": "array",
+            "description": "propertiesToNegate",
+            "example": [
+              "channels"
+            ],
+            "items": {
+              "type": "string"
+            }
           }
         }
       },
