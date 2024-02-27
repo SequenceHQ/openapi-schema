@@ -5537,6 +5537,123 @@
       "servers": [],
       "parameters": []
     },
+    "/credits/{customerId}/balances": {
+      "get": {
+        "tags": [],
+        "summary": "List Credit Balances for a customer",
+        "description": "List all Credit Balances including their grants and transactions",
+        "operationId": "getCreditsByCustomerIdBalances",
+        "parameters": [
+          {
+            "name": "customerId",
+            "in": "path",
+            "description": "Customer ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreditBalancesReply",
+                  "example": {
+                    "items": [
+                      {
+                        "id": "6587e308-ab0d-4a58-8cc1-1d168490de7b",
+                        "type": "CASH",
+                        "name": "Credits",
+                        "balance": "50",
+                        "grants": [
+                          {
+                            "id": "5a0faea3-7ad5-4a83-a420-09bb6576f7e6",
+                            "type": "CASH",
+                            "name": "GBP",
+                            "originalAmount": "10",
+                            "currentBalance": "1",
+                            "expiryDate": "2024-01-02"
+                          }
+                        ],
+                        "transactions": [
+                          {
+                            "grantId": "5a0faea3-7ad5-4a83-a420-09bb6576f7e6",
+                            "reason": "because",
+                            "type": "CREDIT",
+                            "amount": "10",
+                            "date": "2024-01-01"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "examples": {
+                  "CreditBalancesReply": {
+                    "summary": "",
+                    "value": {
+                      "items": [
+                        {
+                          "id": "6587e308-ab0d-4a58-8cc1-1d168490de7b",
+                          "type": "CASH",
+                          "name": "Credits",
+                          "balance": "50",
+                          "grants": [
+                            {
+                              "id": "5a0faea3-7ad5-4a83-a420-09bb6576f7e6",
+                              "type": "CASH",
+                              "name": "GBP",
+                              "originalAmount": "10",
+                              "currentBalance": "1",
+                              "expiryDate": "2024-01-02"
+                            }
+                          ],
+                          "transactions": [
+                            {
+                              "grantId": "5a0faea3-7ad5-4a83-a420-09bb6576f7e6",
+                              "reason": "because",
+                              "type": "CREDIT",
+                              "amount": "10",
+                              "date": "2024-01-01"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/credits": {
       "get": {
         "tags": [],
@@ -34871,6 +34988,268 @@
             "description": "Grant Expiry Date",
             "format": "date",
             "example": "2030-03-03"
+          }
+        }
+      },
+      "CreditBalancesReply": {
+        "required": [
+          "items"
+        ],
+        "type": "object",
+        "example": {
+          "items": [
+            {
+              "id": "6587e308-ab0d-4a58-8cc1-1d168490de7b",
+              "type": "CASH",
+              "name": "Credits",
+              "balance": "50",
+              "grants": [
+                {
+                  "id": "5a0faea3-7ad5-4a83-a420-09bb6576f7e6",
+                  "type": "CASH",
+                  "name": "GBP",
+                  "originalAmount": "10",
+                  "currentBalance": "1",
+                  "expiryDate": "2024-01-02"
+                }
+              ],
+              "transactions": [
+                {
+                  "grantId": "5a0faea3-7ad5-4a83-a420-09bb6576f7e6",
+                  "reason": "because",
+                  "type": "CREDIT",
+                  "amount": "10",
+                  "date": "2024-01-01"
+                }
+              ]
+            }
+          ]
+        },
+        "properties": {
+          "items": {
+            "type": "array",
+            "example": [
+              {
+                "id": "6587e308-ab0d-4a58-8cc1-1d168490de7b",
+                "type": "CASH",
+                "name": "Credits",
+                "balance": "50",
+                "grants": [
+                  {
+                    "id": "5a0faea3-7ad5-4a83-a420-09bb6576f7e6",
+                    "type": "CASH",
+                    "name": "GBP",
+                    "originalAmount": "10",
+                    "currentBalance": "1",
+                    "expiryDate": "2024-01-02"
+                  }
+                ],
+                "transactions": [
+                  {
+                    "grantId": "5a0faea3-7ad5-4a83-a420-09bb6576f7e6",
+                    "reason": "because",
+                    "type": "CREDIT",
+                    "amount": "10",
+                    "date": "2024-01-01"
+                  }
+                ]
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/CreditBalance"
+            }
+          }
+        }
+      },
+      "CreditBalance": {
+        "required": [
+          "balance",
+          "grants",
+          "id",
+          "name",
+          "transactions",
+          "type"
+        ],
+        "type": "object",
+        "example": {
+          "id": "6587e308-ab0d-4a58-8cc1-1d168490de7b",
+          "type": "CASH",
+          "name": "Credits",
+          "balance": "50",
+          "grants": [
+            {
+              "id": "5a0faea3-7ad5-4a83-a420-09bb6576f7e6",
+              "type": "CASH",
+              "name": "GBP",
+              "originalAmount": "10",
+              "currentBalance": "1",
+              "expiryDate": "2024-01-02"
+            }
+          ],
+          "transactions": [
+            {
+              "grantId": "5a0faea3-7ad5-4a83-a420-09bb6576f7e6",
+              "reason": "because",
+              "type": "CREDIT",
+              "amount": "10",
+              "date": "2024-01-01"
+            }
+          ]
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Indicates the ID of Credit target, either a currency code or a metric id",
+            "example": "6587e308-ab0d-4a58-8cc1-1d168490de7b"
+          },
+          "type": {
+            "description": "Type of the Credit - will either be CASH or USAGE",
+            "$ref": "#/components/schemas/CreditType"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name of the Credit - will either be the currency or name of the metric",
+            "example": "Credits"
+          },
+          "balance": {
+            "type": "string",
+            "description": "Amount remaining of Credits Granted",
+            "example": "50"
+          },
+          "grants": {
+            "type": "array",
+            "description": "Related credit grants",
+            "example": [
+              {
+                "id": "5a0faea3-7ad5-4a83-a420-09bb6576f7e6",
+                "type": "CASH",
+                "name": "GBP",
+                "originalAmount": "10",
+                "currentBalance": "1",
+                "expiryDate": "2024-01-02"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/CreditGrant"
+            }
+          },
+          "transactions": {
+            "type": "array",
+            "description": "Related credit transactions",
+            "example": [
+              {
+                "grantId": "5a0faea3-7ad5-4a83-a420-09bb6576f7e6",
+                "reason": "because",
+                "type": "CREDIT",
+                "amount": "10",
+                "date": "2024-01-01"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/CreditTransaction"
+            }
+          }
+        }
+      },
+      "CreditType": {
+        "type": "string",
+        "example": "CASH",
+        "enum": [
+          "CASH",
+          "USAGE"
+        ]
+      },
+      "CreditGrant": {
+        "required": [
+          "currentBalance",
+          "id",
+          "name",
+          "originalAmount",
+          "type"
+        ],
+        "type": "object",
+        "example": {
+          "id": "5a0faea3-7ad5-4a83-a420-09bb6576f7e6",
+          "type": "CASH",
+          "name": "GBP",
+          "originalAmount": "10",
+          "currentBalance": "1",
+          "expiryDate": "2024-01-02"
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Credit Grant ID",
+            "example": "5a0faea3-7ad5-4a83-a420-09bb6576f7e6"
+          },
+          "type": {
+            "description": "Type of the Credit - will either be CASH or USAGE",
+            "$ref": "#/components/schemas/CreditType"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name of the Credit - will either be the currency or name of the metric",
+            "example": "GBP"
+          },
+          "originalAmount": {
+            "type": "string",
+            "description": "Amount of credits originally granted",
+            "example": "10"
+          },
+          "currentBalance": {
+            "type": "string",
+            "description": "Amount remaining of Credits Granted",
+            "example": "1"
+          },
+          "expiryDate": {
+            "type": "string",
+            "description": "Last Day Credit Grant can be consumed",
+            "format": "date",
+            "example": "2024-01-02"
+          }
+        }
+      },
+      "CreditTransaction": {
+        "required": [
+          "amount",
+          "date",
+          "grantId",
+          "type"
+        ],
+        "type": "object",
+        "example": {
+          "grantId": "5a0faea3-7ad5-4a83-a420-09bb6576f7e6",
+          "reason": "because",
+          "type": "CREDIT",
+          "amount": "10",
+          "date": "2024-01-01"
+        },
+        "properties": {
+          "grantId": {
+            "type": "string",
+            "description": "Credit Grant ID",
+            "example": "5a0faea3-7ad5-4a83-a420-09bb6576f7e6"
+          },
+          "reason": {
+            "type": "string",
+            "description": "Transaction Reason",
+            "example": "because"
+          },
+          "type": {
+            "type": "string",
+            "description": "Credit Transaction Type",
+            "example": "CREDIT"
+          },
+          "amount": {
+            "type": "string",
+            "description": "Number of units added or consumed",
+            "example": "10"
+          },
+          "date": {
+            "type": "string",
+            "description": "Date of transaction",
+            "format": "date",
+            "example": "2024-01-01"
           }
         }
       },
