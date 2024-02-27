@@ -28746,7 +28746,7 @@
           {
             "name": "periodEnd",
             "in": "query",
-            "description": "Billing period end",
+            "description": "Billing period end (inclusive)",
             "required": true,
             "schema": {
               "type": "string"
@@ -28863,7 +28863,7 @@
           {
             "name": "periodEnd",
             "in": "query",
-            "description": "Billing period end",
+            "description": "Billing period end (inclusive)",
             "required": true,
             "schema": {
               "type": "string"
