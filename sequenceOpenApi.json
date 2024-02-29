@@ -30225,6 +30225,168 @@
       },
       "servers": [],
       "parameters": []
+    },
+    "/usage-events/backfill-is-latest/usage-event/{id}/backfill": {
+      "post": {
+        "tags": [],
+        "summary": "Backfill is latest for customer event ID flag for a single usage event",
+        "description": "Backfill is latest for customer event ID flag for a single usage event",
+        "operationId": "postUsageEventsBackfillIsLatestUsageEventByIdBackfill",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Usage Event ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "On-Behalf-Of",
+            "in": "header",
+            "description": "The Sequence account that this request is made on behalf of.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted",
+            "content": {}
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
+    "/usage-events/backfill-is-latest/account/{id}/backfill": {
+      "post": {
+        "tags": [],
+        "summary": "Backfill is latest for customer event ID flag for a single account",
+        "description": "Backfill is latest for customer event ID flag for a single account",
+        "operationId": "postUsageEventsBackfillIsLatestAccountByIdBackfill",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Sequence Account ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "On-Behalf-Of",
+            "in": "header",
+            "description": "The Sequence account that this request is made on behalf of.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted",
+            "content": {}
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
+    "/usage-events/backfill-is-latest/all/backfill": {
+      "post": {
+        "tags": [],
+        "summary": "Backfill is latest for customer event ID flag for all accounts",
+        "description": "Backfill is latest for customer event ID flag for all accounts",
+        "operationId": "postUsageEventsBackfillIsLatestAllBackfill",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "On-Behalf-Of",
+            "in": "header",
+            "description": "The Sequence account that this request is made on behalf of.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted",
+            "content": {}
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
     }
   },
   "components": {
