@@ -11965,7 +11965,8 @@
                           "customFields": [],
                           "includeBeneficiaryAddressInPaymentDetails": false
                         },
-                        "accountingDate": "2022-10-05"
+                        "accountingDate": "2022-10-05",
+                        "customerTaxStatus": "TAXED"
                       }
                     ],
                     "pagination": {
@@ -12079,7 +12080,8 @@
                             "customFields": [],
                             "includeBeneficiaryAddressInPaymentDetails": false
                           },
-                          "accountingDate": "2022-10-05"
+                          "accountingDate": "2022-10-05",
+                          "customerTaxStatus": "TAXED"
                         }
                       ],
                       "pagination": {
@@ -12382,7 +12384,8 @@
                     "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
                     "dunningStatus": "SCHEDULED",
                     "accountingDate": "2022-09-30",
-                    "calculatedAt": "2022-09-30T00:00:00Z"
+                    "calculatedAt": "2022-09-30T00:00:00Z",
+                    "customerTaxStatus": "TAXED"
                   }
                 },
                 "examples": {
@@ -12533,7 +12536,8 @@
                       "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
                       "dunningStatus": "SCHEDULED",
                       "accountingDate": "2022-09-30",
-                      "calculatedAt": "2022-09-30T00:00:00Z"
+                      "calculatedAt": "2022-09-30T00:00:00Z",
+                      "customerTaxStatus": "TAXED"
                     }
                   }
                 }
@@ -13317,7 +13321,8 @@
                     "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
                     "dunningStatus": "SCHEDULED",
                     "accountingDate": "2022-09-30",
-                    "calculatedAt": "2022-09-30T00:00:00Z"
+                    "calculatedAt": "2022-09-30T00:00:00Z",
+                    "customerTaxStatus": "TAXED"
                   }
                 },
                 "examples": {
@@ -13468,7 +13473,8 @@
                       "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
                       "dunningStatus": "SCHEDULED",
                       "accountingDate": "2022-09-30",
-                      "calculatedAt": "2022-09-30T00:00:00Z"
+                      "calculatedAt": "2022-09-30T00:00:00Z",
+                      "customerTaxStatus": "TAXED"
                     }
                   }
                 }
@@ -13767,7 +13773,8 @@
                     "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
                     "dunningStatus": "SCHEDULED",
                     "accountingDate": "2022-09-30",
-                    "calculatedAt": "2022-09-30T00:00:00Z"
+                    "calculatedAt": "2022-09-30T00:00:00Z",
+                    "customerTaxStatus": "TAXED"
                   }
                 },
                 "examples": {
@@ -13918,7 +13925,8 @@
                       "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
                       "dunningStatus": "SCHEDULED",
                       "accountingDate": "2022-09-30",
-                      "calculatedAt": "2022-09-30T00:00:00Z"
+                      "calculatedAt": "2022-09-30T00:00:00Z",
+                      "customerTaxStatus": "TAXED"
                     }
                   }
                 }
@@ -14116,7 +14124,8 @@
                     "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
                     "dunningStatus": "SCHEDULED",
                     "accountingDate": "2022-09-30",
-                    "calculatedAt": "2022-09-30T00:00:00Z"
+                    "calculatedAt": "2022-09-30T00:00:00Z",
+                    "customerTaxStatus": "TAXED"
                   }
                 },
                 "examples": {
@@ -14267,7 +14276,8 @@
                       "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
                       "dunningStatus": "SCHEDULED",
                       "accountingDate": "2022-09-30",
-                      "calculatedAt": "2022-09-30T00:00:00Z"
+                      "calculatedAt": "2022-09-30T00:00:00Z",
+                      "customerTaxStatus": "TAXED"
                     }
                   }
                 }
@@ -14566,7 +14576,8 @@
                     "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
                     "dunningStatus": "SCHEDULED",
                     "accountingDate": "2022-09-30",
-                    "calculatedAt": "2022-09-30T00:00:00Z"
+                    "calculatedAt": "2022-09-30T00:00:00Z",
+                    "customerTaxStatus": "TAXED"
                   }
                 },
                 "examples": {
@@ -14717,7 +14728,8 @@
                       "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
                       "dunningStatus": "SCHEDULED",
                       "accountingDate": "2022-09-30",
-                      "calculatedAt": "2022-09-30T00:00:00Z"
+                      "calculatedAt": "2022-09-30T00:00:00Z",
+                      "customerTaxStatus": "TAXED"
                     }
                   }
                 }
@@ -15498,7 +15510,8 @@
                       "customFields": [],
                       "includeBeneficiaryAddressInPaymentDetails": false
                     },
-                    "accountingDate": "2022-10-05"
+                    "accountingDate": "2022-10-05",
+                    "customerTaxStatus": "TAXED"
                   }
                 },
                 "examples": {
@@ -15603,7 +15616,8 @@
                         "customFields": [],
                         "includeBeneficiaryAddressInPaymentDetails": false
                       },
-                      "accountingDate": "2022-10-05"
+                      "accountingDate": "2022-10-05",
+                      "customerTaxStatus": "TAXED"
                     }
                   }
                 }
@@ -15832,7 +15846,8 @@
                       "customFields": [],
                       "includeBeneficiaryAddressInPaymentDetails": false
                     },
-                    "accountingDate": "2022-10-05"
+                    "accountingDate": "2022-10-05",
+                    "customerTaxStatus": "TAXED"
                   }
                 },
                 "examples": {
@@ -15937,7 +15952,8 @@
                         "customFields": [],
                         "includeBeneficiaryAddressInPaymentDetails": false
                       },
-                      "accountingDate": "2022-10-05"
+                      "accountingDate": "2022-10-05",
+                      "customerTaxStatus": "TAXED"
                     }
                   }
                 }
@@ -16799,7 +16815,8 @@
                       "customFields": [],
                       "includeBeneficiaryAddressInPaymentDetails": false
                     },
-                    "accountingDate": "2022-10-05"
+                    "accountingDate": "2022-10-05",
+                    "customerTaxStatus": "TAXED"
                   }
                 },
                 "examples": {
@@ -16904,7 +16921,8 @@
                         "customFields": [],
                         "includeBeneficiaryAddressInPaymentDetails": false
                       },
-                      "accountingDate": "2022-10-05"
+                      "accountingDate": "2022-10-05",
+                      "customerTaxStatus": "TAXED"
                     }
                   }
                 }
@@ -17124,7 +17142,8 @@
                       "customFields": [],
                       "includeBeneficiaryAddressInPaymentDetails": false
                     },
-                    "accountingDate": "2022-10-05"
+                    "accountingDate": "2022-10-05",
+                    "customerTaxStatus": "TAXED"
                   }
                 },
                 "examples": {
@@ -17229,7 +17248,8 @@
                         "customFields": [],
                         "includeBeneficiaryAddressInPaymentDetails": false
                       },
-                      "accountingDate": "2022-10-05"
+                      "accountingDate": "2022-10-05",
+                      "customerTaxStatus": "TAXED"
                     }
                   }
                 }
@@ -17385,7 +17405,8 @@
                       "customFields": [],
                       "includeBeneficiaryAddressInPaymentDetails": false
                     },
-                    "accountingDate": "2022-10-05"
+                    "accountingDate": "2022-10-05",
+                    "customerTaxStatus": "TAXED"
                   }
                 },
                 "examples": {
@@ -17490,7 +17511,8 @@
                         "customFields": [],
                         "includeBeneficiaryAddressInPaymentDetails": false
                       },
-                      "accountingDate": "2022-10-05"
+                      "accountingDate": "2022-10-05",
+                      "customerTaxStatus": "TAXED"
                     }
                   }
                 }
@@ -17719,7 +17741,8 @@
                       "customFields": [],
                       "includeBeneficiaryAddressInPaymentDetails": false
                     },
-                    "accountingDate": "2022-10-05"
+                    "accountingDate": "2022-10-05",
+                    "customerTaxStatus": "TAXED"
                   }
                 },
                 "examples": {
@@ -17824,7 +17847,8 @@
                         "customFields": [],
                         "includeBeneficiaryAddressInPaymentDetails": false
                       },
-                      "accountingDate": "2022-10-05"
+                      "accountingDate": "2022-10-05",
+                      "customerTaxStatus": "TAXED"
                     }
                   }
                 }
@@ -18001,7 +18025,8 @@
                       "customFields": [],
                       "includeBeneficiaryAddressInPaymentDetails": false
                     },
-                    "accountingDate": "2022-10-05"
+                    "accountingDate": "2022-10-05",
+                    "customerTaxStatus": "TAXED"
                   }
                 },
                 "examples": {
@@ -18106,7 +18131,8 @@
                         "customFields": [],
                         "includeBeneficiaryAddressInPaymentDetails": false
                       },
-                      "accountingDate": "2022-10-05"
+                      "accountingDate": "2022-10-05",
+                      "customerTaxStatus": "TAXED"
                     }
                   }
                 }
@@ -18337,7 +18363,8 @@
                       "customFields": [],
                       "includeBeneficiaryAddressInPaymentDetails": false
                     },
-                    "accountingDate": "2022-10-05"
+                    "accountingDate": "2022-10-05",
+                    "customerTaxStatus": "TAXED"
                   }
                 },
                 "examples": {
@@ -18442,7 +18469,8 @@
                         "customFields": [],
                         "includeBeneficiaryAddressInPaymentDetails": false
                       },
-                      "accountingDate": "2022-10-05"
+                      "accountingDate": "2022-10-05",
+                      "customerTaxStatus": "TAXED"
                     }
                   }
                 }
@@ -42205,7 +42233,8 @@
           "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
           "dunningStatus": "SCHEDULED",
           "accountingDate": "2022-09-30",
-          "calculatedAt": "2022-09-30T00:00:00Z"
+          "calculatedAt": "2022-09-30T00:00:00Z",
+          "customerTaxStatus": "TAXED"
         },
         "properties": {
           "id": {
@@ -42395,6 +42424,10 @@
             "type": "string",
             "description": "Time this invoice was last calculated (applicable for invoices generated by billing engine only)",
             "example": "2022-09-30T00:00:00Z"
+          },
+          "customerTaxStatus": {
+            "description": "Customer tax status",
+            "$ref": "#/components/schemas/TaxStatus"
           }
         }
       },
@@ -42805,7 +42838,8 @@
           "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
           "dunningStatus": "SCHEDULED",
           "accountingDate": "2022-09-30",
-          "calculatedAt": "2022-09-30T00:00:00Z"
+          "calculatedAt": "2022-09-30T00:00:00Z",
+          "customerTaxStatus": "TAXED"
         },
         "properties": {
           "id": {
@@ -42995,6 +43029,10 @@
             "type": "string",
             "description": "Time this invoice was last calculated (applicable for invoices generated by billing engine only)",
             "example": "2022-09-30T00:00:00Z"
+          },
+          "customerTaxStatus": {
+            "description": "Customer tax status",
+            "$ref": "#/components/schemas/TaxStatus"
           }
         }
       },
@@ -43206,7 +43244,8 @@
             "customFields": [],
             "includeBeneficiaryAddressInPaymentDetails": false
           },
-          "accountingDate": "2022-10-05"
+          "accountingDate": "2022-10-05",
+          "customerTaxStatus": "TAXED"
         },
         "properties": {
           "id": {
@@ -43365,6 +43404,10 @@
             "description": "Accounting date",
             "format": "date",
             "example": "2022-10-05"
+          },
+          "customerTaxStatus": {
+            "description": "Customer tax status",
+            "$ref": "#/components/schemas/TaxStatus"
           }
         }
       },
@@ -43856,7 +43899,8 @@
           "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
           "dunningStatus": "SCHEDULED",
           "accountingDate": "2022-09-30",
-          "calculatedAt": "2022-09-30T00:00:00Z"
+          "calculatedAt": "2022-09-30T00:00:00Z",
+          "customerTaxStatus": "TAXED"
         },
         "properties": {
           "id": {
@@ -44046,6 +44090,10 @@
             "type": "string",
             "description": "Time this invoice was last calculated (applicable for invoices generated by billing engine only)",
             "example": "2022-09-30T00:00:00Z"
+          },
+          "customerTaxStatus": {
+            "description": "Customer tax status",
+            "$ref": "#/components/schemas/TaxStatus"
           }
         }
       },
@@ -44476,7 +44524,8 @@
                 "customFields": [],
                 "includeBeneficiaryAddressInPaymentDetails": false
               },
-              "accountingDate": "2022-10-05"
+              "accountingDate": "2022-10-05",
+              "customerTaxStatus": "TAXED"
             }
           ],
           "pagination": {
@@ -44589,7 +44638,8 @@
                   "customFields": [],
                   "includeBeneficiaryAddressInPaymentDetails": false
                 },
-                "accountingDate": "2022-10-05"
+                "accountingDate": "2022-10-05",
+                "customerTaxStatus": "TAXED"
               }
             ],
             "items": {
@@ -45116,7 +45166,8 @@
           "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
           "dunningStatus": "SCHEDULED",
           "accountingDate": "2022-09-30",
-          "calculatedAt": "2022-09-30T00:00:00Z"
+          "calculatedAt": "2022-09-30T00:00:00Z",
+          "customerTaxStatus": "TAXED"
         },
         "properties": {
           "id": {
@@ -45306,6 +45357,10 @@
             "type": "string",
             "description": "Time this invoice was last calculated (applicable for invoices generated by billing engine only)",
             "example": "2022-09-30T00:00:00Z"
+          },
+          "customerTaxStatus": {
+            "description": "Customer tax status",
+            "$ref": "#/components/schemas/TaxStatus"
           }
         }
       },
@@ -45793,7 +45848,8 @@
           "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
           "dunningStatus": "SCHEDULED",
           "accountingDate": "2022-09-30",
-          "calculatedAt": "2022-09-30T00:00:00Z"
+          "calculatedAt": "2022-09-30T00:00:00Z",
+          "customerTaxStatus": "TAXED"
         },
         "properties": {
           "id": {
@@ -45983,6 +46039,10 @@
             "type": "string",
             "description": "Time this invoice was last calculated (applicable for invoices generated by billing engine only)",
             "example": "2022-09-30T00:00:00Z"
+          },
+          "customerTaxStatus": {
+            "description": "Customer tax status",
+            "$ref": "#/components/schemas/TaxStatus"
           }
         }
       },
