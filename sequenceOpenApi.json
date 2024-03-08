@@ -19796,7 +19796,21 @@
                               "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                             ],
                             "startDate": "2022-01-01",
-                            "endDate": "2022-06-30"
+                            "endDate": "2022-06-30",
+                            "minimums": [
+                              {
+                                "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                                "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+                                "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                                "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                                "amount": 100,
+                                "priceIds": [
+                                  "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                                ],
+                                "createdAt": "2022-06-28T16:47:00Z",
+                                "updatedAt": "2022-06-28T16:47:00Z"
+                              }
+                            ]
                           }
                         ],
                         "archivedAt": "2022-06-28T16:47:00Z"
@@ -19878,7 +19892,21 @@
                                 "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                               ],
                               "startDate": "2022-01-01",
-                              "endDate": "2022-06-30"
+                              "endDate": "2022-06-30",
+                              "minimums": [
+                                {
+                                  "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                                  "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+                                  "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                                  "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                                  "amount": 100,
+                                  "priceIds": [
+                                    "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                                  ],
+                                  "createdAt": "2022-06-28T16:47:00Z",
+                                  "updatedAt": "2022-06-28T16:47:00Z"
+                                }
+                              ]
                             }
                           ],
                           "archivedAt": "2022-06-28T16:47:00Z"
@@ -20132,7 +20160,21 @@
                           "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                         ],
                         "startDate": "2022-01-01",
-                        "endDate": "2022-06-30"
+                        "endDate": "2022-06-30",
+                        "minimums": [
+                          {
+                            "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                            "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+                            "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                            "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                            "amount": 100,
+                            "priceIds": [
+                              "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                            ],
+                            "createdAt": "2022-06-28T16:47:00Z",
+                            "updatedAt": "2022-06-28T16:47:00Z"
+                          }
+                        ]
                       }
                     ],
                     "archivedAt": "2022-06-28T16:47:00Z"
@@ -20176,7 +20218,21 @@
                             "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                           ],
                           "startDate": "2022-01-01",
-                          "endDate": "2022-06-30"
+                          "endDate": "2022-06-30",
+                          "minimums": [
+                            {
+                              "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                              "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+                              "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                              "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                              "amount": 100,
+                              "priceIds": [
+                                "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                              ],
+                              "createdAt": "2022-06-28T16:47:00Z",
+                              "updatedAt": "2022-06-28T16:47:00Z"
+                            }
+                          ]
                         }
                       ],
                       "archivedAt": "2022-06-28T16:47:00Z"
@@ -20450,7 +20506,21 @@
                           "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                         ],
                         "startDate": "2022-01-01",
-                        "endDate": "2022-06-30"
+                        "endDate": "2022-06-30",
+                        "minimums": [
+                          {
+                            "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                            "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+                            "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                            "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                            "amount": 100,
+                            "priceIds": [
+                              "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                            ],
+                            "createdAt": "2022-06-28T16:47:00Z",
+                            "updatedAt": "2022-06-28T16:47:00Z"
+                          }
+                        ]
                       }
                     ],
                     "archivedAt": "2022-06-28T16:47:00Z"
@@ -20546,7 +20616,21 @@
                             "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                           ],
                           "startDate": "2022-01-01",
-                          "endDate": "2022-06-30"
+                          "endDate": "2022-06-30",
+                          "minimums": [
+                            {
+                              "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                              "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+                              "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                              "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                              "amount": 100,
+                              "priceIds": [
+                                "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                              ],
+                              "createdAt": "2022-06-28T16:47:00Z",
+                              "updatedAt": "2022-06-28T16:47:00Z"
+                            }
+                          ]
                         }
                       ],
                       "archivedAt": "2022-06-28T16:47:00Z"
@@ -20723,7 +20807,21 @@
                           "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                         ],
                         "startDate": "2022-01-01",
-                        "endDate": "2022-06-30"
+                        "endDate": "2022-06-30",
+                        "minimums": [
+                          {
+                            "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                            "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+                            "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                            "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                            "amount": 100,
+                            "priceIds": [
+                              "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                            ],
+                            "createdAt": "2022-06-28T16:47:00Z",
+                            "updatedAt": "2022-06-28T16:47:00Z"
+                          }
+                        ]
                       }
                     ],
                     "archivedAt": "2022-06-28T16:47:00Z"
@@ -20767,7 +20865,21 @@
                             "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                           ],
                           "startDate": "2022-01-01",
-                          "endDate": "2022-06-30"
+                          "endDate": "2022-06-30",
+                          "minimums": [
+                            {
+                              "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                              "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+                              "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                              "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                              "amount": 100,
+                              "priceIds": [
+                                "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                              ],
+                              "createdAt": "2022-06-28T16:47:00Z",
+                              "updatedAt": "2022-06-28T16:47:00Z"
+                            }
+                          ]
                         }
                       ],
                       "archivedAt": "2022-06-28T16:47:00Z"
@@ -20853,7 +20965,21 @@
                           "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                         ],
                         "startDate": "2022-01-01",
-                        "endDate": "2022-06-30"
+                        "endDate": "2022-06-30",
+                        "minimums": [
+                          {
+                            "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                            "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+                            "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                            "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                            "amount": 100,
+                            "priceIds": [
+                              "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                            ],
+                            "createdAt": "2022-06-28T16:47:00Z",
+                            "updatedAt": "2022-06-28T16:47:00Z"
+                          }
+                        ]
                       }
                     ],
                     "archivedAt": "2022-06-28T16:47:00Z"
@@ -20897,7 +21023,21 @@
                             "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                           ],
                           "startDate": "2022-01-01",
-                          "endDate": "2022-06-30"
+                          "endDate": "2022-06-30",
+                          "minimums": [
+                            {
+                              "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                              "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+                              "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                              "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                              "amount": 100,
+                              "priceIds": [
+                                "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                              ],
+                              "createdAt": "2022-06-28T16:47:00Z",
+                              "updatedAt": "2022-06-28T16:47:00Z"
+                            }
+                          ]
                         }
                       ],
                       "archivedAt": "2022-06-28T16:47:00Z"
@@ -20983,7 +21123,21 @@
                           "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                         ],
                         "startDate": "2022-01-01",
-                        "endDate": "2022-06-30"
+                        "endDate": "2022-06-30",
+                        "minimums": [
+                          {
+                            "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                            "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+                            "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                            "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                            "amount": 100,
+                            "priceIds": [
+                              "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                            ],
+                            "createdAt": "2022-06-28T16:47:00Z",
+                            "updatedAt": "2022-06-28T16:47:00Z"
+                          }
+                        ]
                       }
                     ],
                     "archivedAt": "2022-06-28T16:47:00Z"
@@ -21027,7 +21181,21 @@
                             "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                           ],
                           "startDate": "2022-01-01",
-                          "endDate": "2022-06-30"
+                          "endDate": "2022-06-30",
+                          "minimums": [
+                            {
+                              "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                              "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+                              "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                              "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                              "amount": 100,
+                              "priceIds": [
+                                "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                              ],
+                              "createdAt": "2022-06-28T16:47:00Z",
+                              "updatedAt": "2022-06-28T16:47:00Z"
+                            }
+                          ]
                         }
                       ],
                       "archivedAt": "2022-06-28T16:47:00Z"
@@ -47541,7 +47709,21 @@
                 "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
               ],
               "startDate": "2022-01-01",
-              "endDate": "2022-06-30"
+              "endDate": "2022-06-30",
+              "minimums": [
+                {
+                  "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                  "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+                  "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                  "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                  "amount": 100,
+                  "priceIds": [
+                    "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                  ],
+                  "createdAt": "2022-06-28T16:47:00Z",
+                  "updatedAt": "2022-06-28T16:47:00Z"
+                }
+              ]
             }
           ],
           "archivedAt": "2022-06-28T16:47:00Z"
@@ -47671,7 +47853,21 @@
                   "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                 ],
                 "startDate": "2022-01-01",
-                "endDate": "2022-06-30"
+                "endDate": "2022-06-30",
+                "minimums": [
+                  {
+                    "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                    "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+                    "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                    "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                    "amount": 100,
+                    "priceIds": [
+                      "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                    ],
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "updatedAt": "2022-06-28T16:47:00Z"
+                  }
+                ]
               }
             ],
             "items": {
@@ -47703,6 +47899,7 @@
           "createdAt",
           "endDate",
           "id",
+          "minimums",
           "priceIds",
           "startDate"
         ],
@@ -47715,7 +47912,21 @@
             "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
           ],
           "startDate": "2022-01-01",
-          "endDate": "2022-06-30"
+          "endDate": "2022-06-30",
+          "minimums": [
+            {
+              "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+              "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+              "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+              "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+              "amount": 100,
+              "priceIds": [
+                "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+              ],
+              "createdAt": "2022-06-28T16:47:00Z",
+              "updatedAt": "2022-06-28T16:47:00Z"
+            }
+          ]
         },
         "properties": {
           "id": {
@@ -47754,6 +47965,98 @@
             "description": "End date",
             "format": "date",
             "example": "2022-06-30"
+          },
+          "minimums": {
+            "type": "array",
+            "example": [
+              {
+                "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+                "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                "amount": 100,
+                "priceIds": [
+                  "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                ],
+                "createdAt": "2022-06-28T16:47:00Z",
+                "updatedAt": "2022-06-28T16:47:00Z"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/Minimum"
+            }
+          }
+        }
+      },
+      "Minimum": {
+        "required": [
+          "amount",
+          "billingScheduleId",
+          "createdAt",
+          "id",
+          "phaseId",
+          "priceIds",
+          "sequenceAccountId",
+          "updatedAt"
+        ],
+        "type": "object",
+        "example": {
+          "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+          "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+          "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+          "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+          "amount": 100,
+          "priceIds": [
+            "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+          ],
+          "createdAt": "2022-06-28T16:47:00Z",
+          "updatedAt": "2022-06-28T16:47:00Z"
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Minimum ID",
+            "example": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+          },
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Sequence Account ID",
+            "example": "c4602d51-0fb4-4b48-b689-6ba28f540d1e"
+          },
+          "billingScheduleId": {
+            "type": "string",
+            "description": "Billing Schedule ID",
+            "example": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b"
+          },
+          "phaseId": {
+            "type": "string",
+            "description": "Phase ID",
+            "example": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+          },
+          "amount": {
+            "type": "number",
+            "description": "Minimum amount",
+            "example": 100
+          },
+          "priceIds": {
+            "type": "array",
+            "description": "Price IDs",
+            "example": [
+              "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+            ],
+            "items": {
+              "type": "string"
+            }
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "Created at",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "updatedAt": {
+            "type": "string",
+            "description": "Updated at",
+            "example": "2022-06-28T16:47:00Z"
           }
         }
       },
@@ -48116,7 +48419,21 @@
                     "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                   ],
                   "startDate": "2022-01-01",
-                  "endDate": "2022-06-30"
+                  "endDate": "2022-06-30",
+                  "minimums": [
+                    {
+                      "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                      "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+                      "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                      "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                      "amount": 100,
+                      "priceIds": [
+                        "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                      ],
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "updatedAt": "2022-06-28T16:47:00Z"
+                    }
+                  ]
                 }
               ],
               "archivedAt": "2022-06-28T16:47:00Z"
@@ -48197,7 +48514,21 @@
                       "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                     ],
                     "startDate": "2022-01-01",
-                    "endDate": "2022-06-30"
+                    "endDate": "2022-06-30",
+                    "minimums": [
+                      {
+                        "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                        "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+                        "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
+                        "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                        "amount": 100,
+                        "priceIds": [
+                          "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                        ],
+                        "createdAt": "2022-06-28T16:47:00Z",
+                        "updatedAt": "2022-06-28T16:47:00Z"
+                      }
+                    ]
                   }
                 ],
                 "archivedAt": "2022-06-28T16:47:00Z"
