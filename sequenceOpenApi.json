@@ -18279,6 +18279,7 @@
                         "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
                         "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                         "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+                        "phaseId": "220e1878-b70a-4dfd-9c55-7651424b12d6",
                         "priceIds": [
                           "e007e884-5100-4183-8355-4771865cb4d7"
                         ],
@@ -18308,6 +18309,7 @@
                           "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
                           "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                           "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+                          "phaseId": "220e1878-b70a-4dfd-9c55-7651424b12d6",
                           "priceIds": [
                             "e007e884-5100-4183-8355-4771865cb4d7"
                           ],
@@ -18369,6 +18371,7 @@
                 "$ref": "#/components/schemas/CreateDiscountEndpointCreateDiscountRequestModel",
                 "example": {
                   "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+                  "phaseId": "220e1878-b70a-4dfd-9c55-7651424b12d6",
                   "priceIds": [
                     "e007e884-5100-4183-8355-4771865cb4d7"
                   ],
@@ -18385,6 +18388,7 @@
                   "summary": "",
                   "value": {
                     "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+                    "phaseId": "220e1878-b70a-4dfd-9c55-7651424b12d6",
                     "priceIds": [
                       "e007e884-5100-4183-8355-4771865cb4d7"
                     ],
@@ -18412,6 +18416,7 @@
                     "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
                     "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                     "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+                    "phaseId": "220e1878-b70a-4dfd-9c55-7651424b12d6",
                     "priceIds": [
                       "e007e884-5100-4183-8355-4771865cb4d7"
                     ],
@@ -18432,6 +18437,7 @@
                       "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
                       "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                       "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+                      "phaseId": "220e1878-b70a-4dfd-9c55-7651424b12d6",
                       "priceIds": [
                         "e007e884-5100-4183-8355-4771865cb4d7"
                       ],
@@ -18648,6 +18654,7 @@
                     "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
                     "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                     "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+                    "phaseId": "220e1878-b70a-4dfd-9c55-7651424b12d6",
                     "priceIds": [
                       "e007e884-5100-4183-8355-4771865cb4d7"
                     ],
@@ -18668,6 +18675,7 @@
                       "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
                       "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                       "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+                      "phaseId": "220e1878-b70a-4dfd-9c55-7651424b12d6",
                       "priceIds": [
                         "e007e884-5100-4183-8355-4771865cb4d7"
                       ],
@@ -18774,6 +18782,7 @@
                     "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
                     "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                     "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+                    "phaseId": "220e1878-b70a-4dfd-9c55-7651424b12d6",
                     "priceIds": [
                       "e007e884-5100-4183-8355-4771865cb4d7"
                     ],
@@ -18794,6 +18803,7 @@
                       "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
                       "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                       "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+                      "phaseId": "220e1878-b70a-4dfd-9c55-7651424b12d6",
                       "priceIds": [
                         "e007e884-5100-4183-8355-4771865cb4d7"
                       ],
@@ -18861,6 +18871,7 @@
                     "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
                     "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                     "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+                    "phaseId": "220e1878-b70a-4dfd-9c55-7651424b12d6",
                     "priceIds": [
                       "e007e884-5100-4183-8355-4771865cb4d7"
                     ],
@@ -18881,6 +18892,7 @@
                       "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
                       "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                       "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+                      "phaseId": "220e1878-b70a-4dfd-9c55-7651424b12d6",
                       "priceIds": [
                         "e007e884-5100-4183-8355-4771865cb4d7"
                       ],
@@ -20076,7 +20088,7 @@
                         "endDate": "2022-06-30",
                         "discounts": [
                           {
-                            "priceIds": [
+                            "restrictToPrices": [
                               "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                             ],
                             "type": "PERCENTAGE",
@@ -45194,6 +45206,7 @@
         "type": "object",
         "example": {
           "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+          "phaseId": "220e1878-b70a-4dfd-9c55-7651424b12d6",
           "priceIds": [
             "e007e884-5100-4183-8355-4771865cb4d7"
           ],
@@ -45209,6 +45222,11 @@
             "type": "string",
             "description": "Billing Schedule ID",
             "example": "08a76ddb-230e-4700-a5e2-70f6edaf7d50"
+          },
+          "phaseId": {
+            "type": "string",
+            "description": "Phase ID",
+            "example": "220e1878-b70a-4dfd-9c55-7651424b12d6"
           },
           "priceIds": {
             "type": "array",
@@ -45279,6 +45297,7 @@
           "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
           "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
           "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+          "phaseId": "220e1878-b70a-4dfd-9c55-7651424b12d6",
           "priceIds": [
             "e007e884-5100-4183-8355-4771865cb4d7"
           ],
@@ -45306,6 +45325,11 @@
             "type": "string",
             "description": "Billing Schedule ID",
             "example": "08a76ddb-230e-4700-a5e2-70f6edaf7d50"
+          },
+          "phaseId": {
+            "type": "string",
+            "description": "Phase ID",
+            "example": "220e1878-b70a-4dfd-9c55-7651424b12d6"
           },
           "priceIds": {
             "type": "array",
@@ -45372,6 +45396,7 @@
               "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
               "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
               "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+              "phaseId": "220e1878-b70a-4dfd-9c55-7651424b12d6",
               "priceIds": [
                 "e007e884-5100-4183-8355-4771865cb4d7"
               ],
@@ -45400,6 +45425,7 @@
                 "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
                 "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                 "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+                "phaseId": "220e1878-b70a-4dfd-9c55-7651424b12d6",
                 "priceIds": [
                   "e007e884-5100-4183-8355-4771865cb4d7"
                 ],
@@ -45441,6 +45467,7 @@
           "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
           "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
           "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+          "phaseId": "220e1878-b70a-4dfd-9c55-7651424b12d6",
           "priceIds": [
             "e007e884-5100-4183-8355-4771865cb4d7"
           ],
@@ -45468,6 +45495,11 @@
             "type": "string",
             "description": "Billing Schedule ID",
             "example": "08a76ddb-230e-4700-a5e2-70f6edaf7d50"
+          },
+          "phaseId": {
+            "type": "string",
+            "description": "Phase ID",
+            "example": "220e1878-b70a-4dfd-9c55-7651424b12d6"
           },
           "priceIds": {
             "type": "array",
@@ -45702,6 +45734,7 @@
           "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
           "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
           "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+          "phaseId": "220e1878-b70a-4dfd-9c55-7651424b12d6",
           "priceIds": [
             "e007e884-5100-4183-8355-4771865cb4d7"
           ],
@@ -45729,6 +45762,11 @@
             "type": "string",
             "description": "Billing Schedule ID",
             "example": "08a76ddb-230e-4700-a5e2-70f6edaf7d50"
+          },
+          "phaseId": {
+            "type": "string",
+            "description": "Phase ID",
+            "example": "220e1878-b70a-4dfd-9c55-7651424b12d6"
           },
           "priceIds": {
             "type": "array",
@@ -45872,6 +45910,7 @@
           "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
           "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
           "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+          "phaseId": "220e1878-b70a-4dfd-9c55-7651424b12d6",
           "priceIds": [
             "e007e884-5100-4183-8355-4771865cb4d7"
           ],
@@ -45899,6 +45938,11 @@
             "type": "string",
             "description": "Billing Schedule ID",
             "example": "08a76ddb-230e-4700-a5e2-70f6edaf7d50"
+          },
+          "phaseId": {
+            "type": "string",
+            "description": "Phase ID",
+            "example": "220e1878-b70a-4dfd-9c55-7651424b12d6"
           },
           "priceIds": {
             "type": "array",
@@ -45971,6 +46015,7 @@
           "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
           "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
           "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+          "phaseId": "220e1878-b70a-4dfd-9c55-7651424b12d6",
           "priceIds": [
             "e007e884-5100-4183-8355-4771865cb4d7"
           ],
@@ -45998,6 +46043,11 @@
             "type": "string",
             "description": "Billing Schedule ID",
             "example": "08a76ddb-230e-4700-a5e2-70f6edaf7d50"
+          },
+          "phaseId": {
+            "type": "string",
+            "description": "Phase ID",
+            "example": "220e1878-b70a-4dfd-9c55-7651424b12d6"
           },
           "priceIds": {
             "type": "array",
@@ -47378,7 +47428,7 @@
               "endDate": "2022-06-30",
               "discounts": [
                 {
-                  "priceIds": [
+                  "restrictToPrices": [
                     "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                   ],
                   "type": "PERCENTAGE",
@@ -47495,7 +47545,7 @@
                 "endDate": "2022-06-30",
                 "discounts": [
                   {
-                    "priceIds": [
+                    "restrictToPrices": [
                       "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                     ],
                     "type": "PERCENTAGE",
@@ -47588,13 +47638,12 @@
         "required": [
           "amount",
           "message",
-          "priceIds",
           "separateLineItem",
           "type"
         ],
         "type": "object",
         "example": {
-          "priceIds": [
+          "restrictToPrices": [
             "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
           ],
           "type": "PERCENTAGE",
@@ -47603,7 +47652,7 @@
           "separateLineItem": false
         },
         "properties": {
-          "priceIds": {
+          "restrictToPrices": {
             "type": "array",
             "example": [
               "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
