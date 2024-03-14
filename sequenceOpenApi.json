@@ -19848,7 +19848,7 @@
                                 "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                                 "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
                                 "amount": 100,
-                                "priceIds": [
+                                "restrictToPrices": [
                                   "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                                 ],
                                 "createdAt": "2022-06-28T16:47:00Z",
@@ -19944,7 +19944,7 @@
                                   "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                                   "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
                                   "amount": 100,
-                                  "priceIds": [
+                                  "restrictToPrices": [
                                     "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                                   ],
                                   "createdAt": "2022-06-28T16:47:00Z",
@@ -20131,7 +20131,7 @@
                         ],
                         "minimums": [
                           {
-                            "priceIds": [
+                            "restrictToPrices": [
                               "9fe9986b-e205-42b7-a58f-42845c91f03f"
                             ],
                             "amount": 100
@@ -20147,7 +20147,7 @@
                         "discounts": [],
                         "minimums": [
                           {
-                            "priceIds": [
+                            "restrictToPrices": [
                               "9fe9986b-e205-42b7-a58f-42845c91f03f"
                             ],
                             "amount": 100
@@ -20212,7 +20212,7 @@
                             "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                             "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
                             "amount": 100,
-                            "priceIds": [
+                            "restrictToPrices": [
                               "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                             ],
                             "createdAt": "2022-06-28T16:47:00Z",
@@ -20270,7 +20270,7 @@
                               "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                               "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
                               "amount": 100,
-                              "priceIds": [
+                              "restrictToPrices": [
                                 "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                               ],
                               "createdAt": "2022-06-28T16:47:00Z",
@@ -20558,7 +20558,7 @@
                             "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                             "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
                             "amount": 100,
-                            "priceIds": [
+                            "restrictToPrices": [
                               "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                             ],
                             "createdAt": "2022-06-28T16:47:00Z",
@@ -20668,7 +20668,7 @@
                               "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                               "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
                               "amount": 100,
-                              "priceIds": [
+                              "restrictToPrices": [
                                 "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                               ],
                               "createdAt": "2022-06-28T16:47:00Z",
@@ -20859,7 +20859,7 @@
                             "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                             "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
                             "amount": 100,
-                            "priceIds": [
+                            "restrictToPrices": [
                               "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                             ],
                             "createdAt": "2022-06-28T16:47:00Z",
@@ -20917,7 +20917,7 @@
                               "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                               "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
                               "amount": 100,
-                              "priceIds": [
+                              "restrictToPrices": [
                                 "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                               ],
                               "createdAt": "2022-06-28T16:47:00Z",
@@ -21017,7 +21017,7 @@
                             "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                             "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
                             "amount": 100,
-                            "priceIds": [
+                            "restrictToPrices": [
                               "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                             ],
                             "createdAt": "2022-06-28T16:47:00Z",
@@ -21075,7 +21075,7 @@
                               "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                               "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
                               "amount": 100,
-                              "priceIds": [
+                              "restrictToPrices": [
                                 "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                               ],
                               "createdAt": "2022-06-28T16:47:00Z",
@@ -21175,7 +21175,7 @@
                             "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                             "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
                             "amount": 100,
-                            "priceIds": [
+                            "restrictToPrices": [
                               "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                             ],
                             "createdAt": "2022-06-28T16:47:00Z",
@@ -21233,7 +21233,7 @@
                               "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                               "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
                               "amount": 100,
-                              "priceIds": [
+                              "restrictToPrices": [
                                 "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                               ],
                               "createdAt": "2022-06-28T16:47:00Z",
@@ -47494,7 +47494,7 @@
               ],
               "minimums": [
                 {
-                  "priceIds": [
+                  "restrictToPrices": [
                     "9fe9986b-e205-42b7-a58f-42845c91f03f"
                   ],
                   "amount": 100
@@ -47510,7 +47510,7 @@
               "discounts": [],
               "minimums": [
                 {
-                  "priceIds": [
+                  "restrictToPrices": [
                     "9fe9986b-e205-42b7-a58f-42845c91f03f"
                   ],
                   "amount": 100
@@ -47611,7 +47611,7 @@
                 ],
                 "minimums": [
                   {
-                    "priceIds": [
+                    "restrictToPrices": [
                       "9fe9986b-e205-42b7-a58f-42845c91f03f"
                     ],
                     "amount": 100
@@ -47627,7 +47627,7 @@
                 "discounts": [],
                 "minimums": [
                   {
-                    "priceIds": [
+                    "restrictToPrices": [
                       "9fe9986b-e205-42b7-a58f-42845c91f03f"
                     ],
                     "amount": 100
@@ -47735,18 +47735,17 @@
       },
       "MinimumRequest": {
         "required": [
-          "amount",
-          "priceIds"
+          "amount"
         ],
         "type": "object",
         "example": {
-          "priceIds": [
+          "restrictToPrices": [
             "9fe9986b-e205-42b7-a58f-42845c91f03f"
           ],
           "amount": 100
         },
         "properties": {
-          "priceIds": {
+          "restrictToPrices": {
             "type": "array",
             "example": [
               "9fe9986b-e205-42b7-a58f-42845c91f03f"
@@ -47821,7 +47820,7 @@
                   "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                   "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
                   "amount": 100,
-                  "priceIds": [
+                  "restrictToPrices": [
                     "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                   ],
                   "createdAt": "2022-06-28T16:47:00Z",
@@ -47965,7 +47964,7 @@
                     "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                     "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
                     "amount": 100,
-                    "priceIds": [
+                    "restrictToPrices": [
                       "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                     ],
                     "createdAt": "2022-06-28T16:47:00Z",
@@ -48024,7 +48023,7 @@
               "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
               "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
               "amount": 100,
-              "priceIds": [
+              "restrictToPrices": [
                 "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
               ],
               "createdAt": "2022-06-28T16:47:00Z",
@@ -48079,7 +48078,7 @@
                 "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                 "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
                 "amount": 100,
-                "priceIds": [
+                "restrictToPrices": [
                   "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                 ],
                 "createdAt": "2022-06-28T16:47:00Z",
@@ -48099,7 +48098,7 @@
           "createdAt",
           "id",
           "phaseId",
-          "priceIds",
+          "restrictToPrices",
           "sequenceAccountId",
           "updatedAt"
         ],
@@ -48110,7 +48109,7 @@
           "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
           "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
           "amount": 100,
-          "priceIds": [
+          "restrictToPrices": [
             "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
           ],
           "createdAt": "2022-06-28T16:47:00Z",
@@ -48142,9 +48141,9 @@
             "description": "Minimum amount",
             "example": 100
           },
-          "priceIds": {
+          "restrictToPrices": {
             "type": "array",
-            "description": "Price IDs",
+            "description": "Price IDs the minimum is restricted to",
             "example": [
               "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
             ],
@@ -48531,7 +48530,7 @@
                       "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                       "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
                       "amount": 100,
-                      "priceIds": [
+                      "restrictToPrices": [
                         "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                       ],
                       "createdAt": "2022-06-28T16:47:00Z",
@@ -48626,7 +48625,7 @@
                         "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                         "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
                         "amount": 100,
-                        "priceIds": [
+                        "restrictToPrices": [
                           "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                         ],
                         "createdAt": "2022-06-28T16:47:00Z",
