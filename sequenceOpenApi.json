@@ -439,10 +439,11 @@
                   "$ref": "#/components/schemas/InvoiceMerchantDetails",
                   "example": {
                     "address": {
-                      "line1": "The White House",
-                      "line2": "1600 Pennsylvania Avenue",
-                      "town": "Washington, D.C.",
-                      "postcode": "20500",
+                      "line1": "Flat 1",
+                      "line2": "123 Fake Street",
+                      "town": "New York",
+                      "state": "NY",
+                      "postcode": "AB1 2EF",
                       "country": "US"
                     },
                     "phoneNumber": "0800001066",
@@ -483,10 +484,11 @@
                     "summary": "",
                     "value": {
                       "address": {
-                        "line1": "The White House",
-                        "line2": "1600 Pennsylvania Avenue",
-                        "town": "Washington, D.C.",
-                        "postcode": "20500",
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "New York",
+                        "state": "NY",
+                        "postcode": "AB1 2EF",
                         "country": "US"
                       },
                       "phoneNumber": "0800001066",
@@ -574,10 +576,11 @@
                     "creditNoteNumberPrefix": "SCN",
                     "legalCompanyName": "The Merchant",
                     "address": {
-                      "line1": "The White House",
-                      "line2": "1600 Pennsylvania Avenue",
-                      "town": "Washington, D.C.",
-                      "postcode": "20500",
+                      "line1": "Flat 1",
+                      "line2": "123 Fake Street",
+                      "town": "New York",
+                      "state": "NY",
+                      "postcode": "AB1 2EF",
                       "country": "US"
                     },
                     "phoneNumber": "0800001066",
@@ -672,10 +675,11 @@
                       "creditNoteNumberPrefix": "SCN",
                       "legalCompanyName": "The Merchant",
                       "address": {
-                        "line1": "The White House",
-                        "line2": "1600 Pennsylvania Avenue",
-                        "town": "Washington, D.C.",
-                        "postcode": "20500",
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "New York",
+                        "state": "NY",
+                        "postcode": "AB1 2EF",
                         "country": "US"
                       },
                       "phoneNumber": "0800001066",
@@ -1615,10 +1619,11 @@
                         ],
                         "merchantDetails": {
                           "address": {
-                            "line1": "The White House",
-                            "line2": "1600 Pennsylvania Avenue",
-                            "town": "Washington, D.C.",
-                            "postcode": "20500",
+                            "line1": "Flat 1",
+                            "line2": "123 Fake Street",
+                            "town": "New York",
+                            "state": "NY",
+                            "postcode": "AB1 2EF",
                             "country": "US"
                           },
                           "phoneNumber": "0800001066",
@@ -1730,10 +1735,11 @@
                           ],
                           "merchantDetails": {
                             "address": {
-                              "line1": "The White House",
-                              "line2": "1600 Pennsylvania Avenue",
-                              "town": "Washington, D.C.",
-                              "postcode": "20500",
+                              "line1": "Flat 1",
+                              "line2": "123 Fake Street",
+                              "town": "New York",
+                              "state": "NY",
+                              "postcode": "AB1 2EF",
                               "country": "US"
                             },
                             "phoneNumber": "0800001066",
@@ -5154,10 +5160,11 @@
                     ],
                     "merchantDetails": {
                       "address": {
-                        "line1": "The White House",
-                        "line2": "1600 Pennsylvania Avenue",
-                        "town": "Washington, D.C.",
-                        "postcode": "20500",
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "New York",
+                        "state": "NY",
+                        "postcode": "AB1 2EF",
                         "country": "US"
                       },
                       "phoneNumber": "0800001066",
@@ -5260,10 +5267,11 @@
                       ],
                       "merchantDetails": {
                         "address": {
-                          "line1": "The White House",
-                          "line2": "1600 Pennsylvania Avenue",
-                          "town": "Washington, D.C.",
-                          "postcode": "20500",
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "New York",
+                          "state": "NY",
+                          "postcode": "AB1 2EF",
                           "country": "US"
                         },
                         "phoneNumber": "0800001066",
@@ -5490,10 +5498,11 @@
                     ],
                     "merchantDetails": {
                       "address": {
-                        "line1": "The White House",
-                        "line2": "1600 Pennsylvania Avenue",
-                        "town": "Washington, D.C.",
-                        "postcode": "20500",
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "New York",
+                        "state": "NY",
+                        "postcode": "AB1 2EF",
                         "country": "US"
                       },
                       "phoneNumber": "0800001066",
@@ -5596,10 +5605,11 @@
                       ],
                       "merchantDetails": {
                         "address": {
-                          "line1": "The White House",
-                          "line2": "1600 Pennsylvania Avenue",
-                          "town": "Washington, D.C.",
-                          "postcode": "20500",
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "New York",
+                          "state": "NY",
+                          "postcode": "AB1 2EF",
                           "country": "US"
                         },
                         "phoneNumber": "0800001066",
@@ -6459,10 +6469,11 @@
                     ],
                     "merchantDetails": {
                       "address": {
-                        "line1": "The White House",
-                        "line2": "1600 Pennsylvania Avenue",
-                        "town": "Washington, D.C.",
-                        "postcode": "20500",
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "New York",
+                        "state": "NY",
+                        "postcode": "AB1 2EF",
                         "country": "US"
                       },
                       "phoneNumber": "0800001066",
@@ -6565,10 +6576,11 @@
                       ],
                       "merchantDetails": {
                         "address": {
-                          "line1": "The White House",
-                          "line2": "1600 Pennsylvania Avenue",
-                          "town": "Washington, D.C.",
-                          "postcode": "20500",
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "New York",
+                          "state": "NY",
+                          "postcode": "AB1 2EF",
                           "country": "US"
                         },
                         "phoneNumber": "0800001066",
@@ -6786,10 +6798,11 @@
                     ],
                     "merchantDetails": {
                       "address": {
-                        "line1": "The White House",
-                        "line2": "1600 Pennsylvania Avenue",
-                        "town": "Washington, D.C.",
-                        "postcode": "20500",
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "New York",
+                        "state": "NY",
+                        "postcode": "AB1 2EF",
                         "country": "US"
                       },
                       "phoneNumber": "0800001066",
@@ -6892,10 +6905,11 @@
                       ],
                       "merchantDetails": {
                         "address": {
-                          "line1": "The White House",
-                          "line2": "1600 Pennsylvania Avenue",
-                          "town": "Washington, D.C.",
-                          "postcode": "20500",
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "New York",
+                          "state": "NY",
+                          "postcode": "AB1 2EF",
                           "country": "US"
                         },
                         "phoneNumber": "0800001066",
@@ -7049,10 +7063,11 @@
                     ],
                     "merchantDetails": {
                       "address": {
-                        "line1": "The White House",
-                        "line2": "1600 Pennsylvania Avenue",
-                        "town": "Washington, D.C.",
-                        "postcode": "20500",
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "New York",
+                        "state": "NY",
+                        "postcode": "AB1 2EF",
                         "country": "US"
                       },
                       "phoneNumber": "0800001066",
@@ -7155,10 +7170,11 @@
                       ],
                       "merchantDetails": {
                         "address": {
-                          "line1": "The White House",
-                          "line2": "1600 Pennsylvania Avenue",
-                          "town": "Washington, D.C.",
-                          "postcode": "20500",
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "New York",
+                          "state": "NY",
+                          "postcode": "AB1 2EF",
                           "country": "US"
                         },
                         "phoneNumber": "0800001066",
@@ -7385,10 +7401,11 @@
                     ],
                     "merchantDetails": {
                       "address": {
-                        "line1": "The White House",
-                        "line2": "1600 Pennsylvania Avenue",
-                        "town": "Washington, D.C.",
-                        "postcode": "20500",
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "New York",
+                        "state": "NY",
+                        "postcode": "AB1 2EF",
                         "country": "US"
                       },
                       "phoneNumber": "0800001066",
@@ -7491,10 +7508,11 @@
                       ],
                       "merchantDetails": {
                         "address": {
-                          "line1": "The White House",
-                          "line2": "1600 Pennsylvania Avenue",
-                          "town": "Washington, D.C.",
-                          "postcode": "20500",
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "New York",
+                          "state": "NY",
+                          "postcode": "AB1 2EF",
                           "country": "US"
                         },
                         "phoneNumber": "0800001066",
@@ -7669,10 +7687,11 @@
                     ],
                     "merchantDetails": {
                       "address": {
-                        "line1": "The White House",
-                        "line2": "1600 Pennsylvania Avenue",
-                        "town": "Washington, D.C.",
-                        "postcode": "20500",
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "New York",
+                        "state": "NY",
+                        "postcode": "AB1 2EF",
                         "country": "US"
                       },
                       "phoneNumber": "0800001066",
@@ -7775,10 +7794,11 @@
                       ],
                       "merchantDetails": {
                         "address": {
-                          "line1": "The White House",
-                          "line2": "1600 Pennsylvania Avenue",
-                          "town": "Washington, D.C.",
-                          "postcode": "20500",
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "New York",
+                          "state": "NY",
+                          "postcode": "AB1 2EF",
                           "country": "US"
                         },
                         "phoneNumber": "0800001066",
@@ -8007,10 +8027,11 @@
                     ],
                     "merchantDetails": {
                       "address": {
-                        "line1": "The White House",
-                        "line2": "1600 Pennsylvania Avenue",
-                        "town": "Washington, D.C.",
-                        "postcode": "20500",
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "New York",
+                        "state": "NY",
+                        "postcode": "AB1 2EF",
                         "country": "US"
                       },
                       "phoneNumber": "0800001066",
@@ -8113,10 +8134,11 @@
                       ],
                       "merchantDetails": {
                         "address": {
-                          "line1": "The White House",
-                          "line2": "1600 Pennsylvania Avenue",
-                          "town": "Washington, D.C.",
-                          "postcode": "20500",
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "New York",
+                          "state": "NY",
+                          "postcode": "AB1 2EF",
                           "country": "US"
                         },
                         "phoneNumber": "0800001066",
@@ -11397,10 +11419,11 @@
                     ],
                     "merchantDetails": {
                       "address": {
-                        "line1": "The White House",
-                        "line2": "1600 Pennsylvania Avenue",
-                        "town": "Washington, D.C.",
-                        "postcode": "20500",
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "New York",
+                        "state": "NY",
+                        "postcode": "AB1 2EF",
                         "country": "US"
                       },
                       "phoneNumber": "0800001066",
@@ -11487,10 +11510,11 @@
                       ],
                       "merchantDetails": {
                         "address": {
-                          "line1": "The White House",
-                          "line2": "1600 Pennsylvania Avenue",
-                          "town": "Washington, D.C.",
-                          "postcode": "20500",
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "New York",
+                          "state": "NY",
+                          "postcode": "AB1 2EF",
                           "country": "US"
                         },
                         "phoneNumber": "0800001066",
@@ -11701,10 +11725,11 @@
                     ],
                     "merchantDetails": {
                       "address": {
-                        "line1": "The White House",
-                        "line2": "1600 Pennsylvania Avenue",
-                        "town": "Washington, D.C.",
-                        "postcode": "20500",
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "New York",
+                        "state": "NY",
+                        "postcode": "AB1 2EF",
                         "country": "US"
                       },
                       "phoneNumber": "0800001066",
@@ -11791,10 +11816,11 @@
                       ],
                       "merchantDetails": {
                         "address": {
-                          "line1": "The White House",
-                          "line2": "1600 Pennsylvania Avenue",
-                          "town": "Washington, D.C.",
-                          "postcode": "20500",
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "New York",
+                          "state": "NY",
+                          "postcode": "AB1 2EF",
                           "country": "US"
                         },
                         "phoneNumber": "0800001066",
@@ -12565,10 +12591,11 @@
                     ],
                     "merchantDetails": {
                       "address": {
-                        "line1": "The White House",
-                        "line2": "1600 Pennsylvania Avenue",
-                        "town": "Washington, D.C.",
-                        "postcode": "20500",
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "New York",
+                        "state": "NY",
+                        "postcode": "AB1 2EF",
                         "country": "US"
                       },
                       "phoneNumber": "0800001066",
@@ -12655,10 +12682,11 @@
                       ],
                       "merchantDetails": {
                         "address": {
-                          "line1": "The White House",
-                          "line2": "1600 Pennsylvania Avenue",
-                          "town": "Washington, D.C.",
-                          "postcode": "20500",
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "New York",
+                          "state": "NY",
+                          "postcode": "AB1 2EF",
                           "country": "US"
                         },
                         "phoneNumber": "0800001066",
@@ -12865,10 +12893,11 @@
                     ],
                     "merchantDetails": {
                       "address": {
-                        "line1": "The White House",
-                        "line2": "1600 Pennsylvania Avenue",
-                        "town": "Washington, D.C.",
-                        "postcode": "20500",
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "New York",
+                        "state": "NY",
+                        "postcode": "AB1 2EF",
                         "country": "US"
                       },
                       "phoneNumber": "0800001066",
@@ -12955,10 +12984,11 @@
                       ],
                       "merchantDetails": {
                         "address": {
-                          "line1": "The White House",
-                          "line2": "1600 Pennsylvania Avenue",
-                          "town": "Washington, D.C.",
-                          "postcode": "20500",
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "New York",
+                          "state": "NY",
+                          "postcode": "AB1 2EF",
                           "country": "US"
                         },
                         "phoneNumber": "0800001066",
@@ -13105,10 +13135,11 @@
                     ],
                     "merchantDetails": {
                       "address": {
-                        "line1": "The White House",
-                        "line2": "1600 Pennsylvania Avenue",
-                        "town": "Washington, D.C.",
-                        "postcode": "20500",
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "New York",
+                        "state": "NY",
+                        "postcode": "AB1 2EF",
                         "country": "US"
                       },
                       "phoneNumber": "0800001066",
@@ -13195,10 +13226,11 @@
                       ],
                       "merchantDetails": {
                         "address": {
-                          "line1": "The White House",
-                          "line2": "1600 Pennsylvania Avenue",
-                          "town": "Washington, D.C.",
-                          "postcode": "20500",
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "New York",
+                          "state": "NY",
+                          "postcode": "AB1 2EF",
                           "country": "US"
                         },
                         "phoneNumber": "0800001066",
@@ -28834,9 +28866,10 @@
                     "address": {
                       "line1": "Flat 1",
                       "line2": "123 Fake Street",
-                      "town": "London",
+                      "town": "New York",
+                      "state": "NY",
                       "postcode": "AB1 2EF",
-                      "country": "GB"
+                      "country": "US"
                     },
                     "email": "john@example.com",
                     "billingEmails": [
@@ -28873,9 +28906,10 @@
                       "address": {
                         "line1": "Flat 1",
                         "line2": "123 Fake Street",
-                        "town": "London",
+                        "town": "New York",
+                        "state": "NY",
                         "postcode": "AB1 2EF",
-                        "country": "GB"
+                        "country": "US"
                       },
                       "email": "john@example.com",
                       "billingEmails": [
@@ -28945,9 +28979,10 @@
                   "address": {
                     "line1": "Flat 1",
                     "line2": "123 Fake Street",
-                    "town": "London",
+                    "town": "New York",
+                    "state": "NY",
                     "postcode": "AB1 2EF",
-                    "country": "GB"
+                    "country": "US"
                   },
                   "email": "john@example.com",
                   "billingEmails": [
@@ -28985,9 +29020,10 @@
                     "address": {
                       "line1": "Flat 1",
                       "line2": "123 Fake Street",
-                      "town": "London",
+                      "town": "New York",
+                      "state": "NY",
                       "postcode": "AB1 2EF",
-                      "country": "GB"
+                      "country": "US"
                     },
                     "email": "john@example.com",
                     "billingEmails": [
@@ -29037,9 +29073,10 @@
                     "address": {
                       "line1": "Flat 1",
                       "line2": "123 Fake Street",
-                      "town": "London",
+                      "town": "New York",
+                      "state": "NY",
                       "postcode": "AB1 2EF",
-                      "country": "GB"
+                      "country": "US"
                     },
                     "email": "john@example.com",
                     "billingEmails": [
@@ -29076,9 +29113,10 @@
                       "address": {
                         "line1": "Flat 1",
                         "line2": "123 Fake Street",
-                        "town": "London",
+                        "town": "New York",
+                        "state": "NY",
                         "postcode": "AB1 2EF",
-                        "country": "GB"
+                        "country": "US"
                       },
                       "email": "john@example.com",
                       "billingEmails": [
@@ -29162,9 +29200,10 @@
                     "address": {
                       "line1": "Flat 1",
                       "line2": "123 Fake Street",
-                      "town": "London",
+                      "town": "New York",
+                      "state": "NY",
                       "postcode": "AB1 2EF",
-                      "country": "GB"
+                      "country": "US"
                     },
                     "email": "john@example.com",
                     "billingEmails": [
@@ -29201,9 +29240,10 @@
                       "address": {
                         "line1": "Flat 1",
                         "line2": "123 Fake Street",
-                        "town": "London",
+                        "town": "New York",
+                        "state": "NY",
                         "postcode": "AB1 2EF",
-                        "country": "GB"
+                        "country": "US"
                       },
                       "email": "john@example.com",
                       "billingEmails": [
@@ -29365,9 +29405,10 @@
                         "address": {
                           "line1": "Flat 1",
                           "line2": "123 Fake Street",
-                          "town": "London",
+                          "town": "New York",
+                          "state": "NY",
                           "postcode": "AB1 2EF",
-                          "country": "GB"
+                          "country": "US"
                         },
                         "email": "john@example.com",
                         "billingEmails": [
@@ -29413,9 +29454,10 @@
                           "address": {
                             "line1": "Flat 1",
                             "line2": "123 Fake Street",
-                            "town": "London",
+                            "town": "New York",
+                            "state": "NY",
                             "postcode": "AB1 2EF",
-                            "country": "GB"
+                            "country": "US"
                           },
                           "email": "john@example.com",
                           "billingEmails": [
@@ -29496,9 +29538,10 @@
                   "address": {
                     "line1": "Flat 1",
                     "line2": "123 Fake Street",
-                    "town": "London",
+                    "town": "New York",
+                    "state": "NY",
                     "postcode": "AB1 2EF",
-                    "country": "GB"
+                    "country": "US"
                   },
                   "email": "john@example.com",
                   "billingEmails": [
@@ -29536,9 +29579,10 @@
                     "address": {
                       "line1": "Flat 1",
                       "line2": "123 Fake Street",
-                      "town": "London",
+                      "town": "New York",
+                      "state": "NY",
                       "postcode": "AB1 2EF",
-                      "country": "GB"
+                      "country": "US"
                     },
                     "email": "john@example.com",
                     "billingEmails": [
@@ -29589,9 +29633,10 @@
                       "address": {
                         "line1": "Flat 1",
                         "line2": "123 Fake Street",
-                        "town": "London",
+                        "town": "New York",
+                        "state": "NY",
                         "postcode": "AB1 2EF",
-                        "country": "GB"
+                        "country": "US"
                       },
                       "email": "john@example.com",
                       "billingEmails": [
@@ -29630,9 +29675,10 @@
                         "address": {
                           "line1": "Flat 1",
                           "line2": "123 Fake Street",
-                          "town": "London",
+                          "town": "New York",
+                          "state": "NY",
                           "postcode": "AB1 2EF",
-                          "country": "GB"
+                          "country": "US"
                         },
                         "email": "john@example.com",
                         "billingEmails": [
@@ -29712,9 +29758,10 @@
                     "address": {
                       "line1": "Flat 1",
                       "line2": "123 Fake Street",
-                      "town": "London",
+                      "town": "New York",
+                      "state": "NY",
                       "postcode": "AB1 2EF",
-                      "country": "GB"
+                      "country": "US"
                     },
                     "email": "john@example.com",
                     "billingEmails": [
@@ -29751,9 +29798,10 @@
                       "address": {
                         "line1": "Flat 1",
                         "line2": "123 Fake Street",
-                        "town": "London",
+                        "town": "New York",
+                        "state": "NY",
                         "postcode": "AB1 2EF",
-                        "country": "GB"
+                        "country": "US"
                       },
                       "email": "john@example.com",
                       "billingEmails": [
@@ -29841,9 +29889,10 @@
                     "address": {
                       "line1": "Flat 1",
                       "line2": "123 Fake Street",
-                      "town": "London",
+                      "town": "New York",
+                      "state": "NY",
                       "postcode": "AB1 2EF",
-                      "country": "GB"
+                      "country": "US"
                     },
                     "email": "john@example.com",
                     "billingEmails": [
@@ -29880,9 +29929,10 @@
                       "address": {
                         "line1": "Flat 1",
                         "line2": "123 Fake Street",
-                        "town": "London",
+                        "town": "New York",
+                        "state": "NY",
                         "postcode": "AB1 2EF",
-                        "country": "GB"
+                        "country": "US"
                       },
                       "email": "john@example.com",
                       "billingEmails": [
@@ -30988,6 +31038,73 @@
           }
         }
       },
+      "State": {
+        "type": "string",
+        "example": "CA",
+        "enum": [
+          "AL",
+          "AK",
+          "AZ",
+          "AR",
+          "CA",
+          "CO",
+          "CT",
+          "DC",
+          "DE",
+          "FL",
+          "GA",
+          "HI",
+          "ID",
+          "IL",
+          "IN",
+          "IA",
+          "KS",
+          "KY",
+          "LA",
+          "ME",
+          "MD",
+          "MA",
+          "MI",
+          "MN",
+          "MS",
+          "MO",
+          "MT",
+          "NE",
+          "NV",
+          "NH",
+          "NJ",
+          "NM",
+          "NY",
+          "NC",
+          "ND",
+          "OH",
+          "OK",
+          "OR",
+          "PA",
+          "RI",
+          "SC",
+          "SD",
+          "TN",
+          "TX",
+          "UT",
+          "VT",
+          "VA",
+          "WA",
+          "WV",
+          "WI",
+          "WY",
+          "AB",
+          "BC",
+          "MB",
+          "NB",
+          "NL",
+          "NS",
+          "ON",
+          "PE",
+          "QC",
+          "SK"
+        ]
+      },
       "CountryCode": {
         "type": "string",
         "example": "YE",
@@ -31350,73 +31467,6 @@
           }
         }
       },
-      "State": {
-        "type": "string",
-        "example": "CA",
-        "enum": [
-          "AL",
-          "AK",
-          "AZ",
-          "AR",
-          "CA",
-          "CO",
-          "CT",
-          "DC",
-          "DE",
-          "FL",
-          "GA",
-          "HI",
-          "ID",
-          "IL",
-          "IN",
-          "IA",
-          "KS",
-          "KY",
-          "LA",
-          "ME",
-          "MD",
-          "MA",
-          "MI",
-          "MN",
-          "MS",
-          "MO",
-          "MT",
-          "NE",
-          "NV",
-          "NH",
-          "NJ",
-          "NM",
-          "NY",
-          "NC",
-          "ND",
-          "OH",
-          "OK",
-          "OR",
-          "PA",
-          "RI",
-          "SC",
-          "SD",
-          "TN",
-          "TX",
-          "UT",
-          "VT",
-          "VA",
-          "WA",
-          "WV",
-          "WI",
-          "WY",
-          "AB",
-          "BC",
-          "MB",
-          "NB",
-          "NL",
-          "NS",
-          "ON",
-          "PE",
-          "QC",
-          "SK"
-        ]
-      },
       "Merchant": {
         "required": [
           "address",
@@ -31442,10 +31492,11 @@
           "creditNoteNumberPrefix": "SCN",
           "legalCompanyName": "The Merchant",
           "address": {
-            "line1": "The White House",
-            "line2": "1600 Pennsylvania Avenue",
-            "town": "Washington, D.C.",
-            "postcode": "20500",
+            "line1": "Flat 1",
+            "line2": "123 Fake Street",
+            "town": "New York",
+            "state": "NY",
+            "postcode": "AB1 2EF",
             "country": "US"
           },
           "phoneNumber": "0800001066",
@@ -34330,10 +34381,11 @@
           ],
           "merchantDetails": {
             "address": {
-              "line1": "The White House",
-              "line2": "1600 Pennsylvania Avenue",
-              "town": "Washington, D.C.",
-              "postcode": "20500",
+              "line1": "Flat 1",
+              "line2": "123 Fake Street",
+              "town": "New York",
+              "state": "NY",
+              "postcode": "AB1 2EF",
               "country": "US"
             },
             "phoneNumber": "0800001066",
@@ -35763,10 +35815,11 @@
               ],
               "merchantDetails": {
                 "address": {
-                  "line1": "The White House",
-                  "line2": "1600 Pennsylvania Avenue",
-                  "town": "Washington, D.C.",
-                  "postcode": "20500",
+                  "line1": "Flat 1",
+                  "line2": "123 Fake Street",
+                  "town": "New York",
+                  "state": "NY",
+                  "postcode": "AB1 2EF",
                   "country": "US"
                 },
                 "phoneNumber": "0800001066",
@@ -35877,10 +35930,11 @@
                 ],
                 "merchantDetails": {
                   "address": {
-                    "line1": "The White House",
-                    "line2": "1600 Pennsylvania Avenue",
-                    "town": "Washington, D.C.",
-                    "postcode": "20500",
+                    "line1": "Flat 1",
+                    "line2": "123 Fake Street",
+                    "town": "New York",
+                    "state": "NY",
+                    "postcode": "AB1 2EF",
                     "country": "US"
                   },
                   "phoneNumber": "0800001066",
@@ -38978,10 +39032,11 @@
           ],
           "merchantDetails": {
             "address": {
-              "line1": "The White House",
-              "line2": "1600 Pennsylvania Avenue",
-              "town": "Washington, D.C.",
-              "postcode": "20500",
+              "line1": "Flat 1",
+              "line2": "123 Fake Street",
+              "town": "New York",
+              "state": "NY",
+              "postcode": "AB1 2EF",
               "country": "US"
             },
             "phoneNumber": "0800001066",
@@ -55949,9 +56004,10 @@
           "address": {
             "line1": "Flat 1",
             "line2": "123 Fake Street",
-            "town": "London",
+            "town": "New York",
+            "state": "NY",
             "postcode": "AB1 2EF",
-            "country": "GB"
+            "country": "US"
           },
           "email": "john@example.com",
           "billingEmails": [
@@ -56076,9 +56132,10 @@
         "example": {
           "line1": "Flat 1",
           "line2": "123 Fake Street",
-          "town": "London",
+          "town": "New York",
+          "state": "NY",
           "postcode": "AB1 2EF",
-          "country": "GB"
+          "country": "US"
         },
         "properties": {
           "line1": {
@@ -56094,7 +56151,11 @@
           "town": {
             "type": "string",
             "description": "Town or city",
-            "example": "London"
+            "example": "New York"
+          },
+          "state": {
+            "description": "State (required for USA only)",
+            "$ref": "#/components/schemas/State1"
           },
           "postcode": {
             "type": "string",
@@ -56107,9 +56168,76 @@
           }
         }
       },
+      "State1": {
+        "type": "string",
+        "example": "NY",
+        "enum": [
+          "AL",
+          "AK",
+          "AZ",
+          "AR",
+          "CA",
+          "CO",
+          "CT",
+          "DC",
+          "DE",
+          "FL",
+          "GA",
+          "HI",
+          "ID",
+          "IL",
+          "IN",
+          "IA",
+          "KS",
+          "KY",
+          "LA",
+          "ME",
+          "MD",
+          "MA",
+          "MI",
+          "MN",
+          "MS",
+          "MO",
+          "MT",
+          "NE",
+          "NV",
+          "NH",
+          "NJ",
+          "NM",
+          "NY",
+          "NC",
+          "ND",
+          "OH",
+          "OK",
+          "OR",
+          "PA",
+          "RI",
+          "SC",
+          "SD",
+          "TN",
+          "TX",
+          "UT",
+          "VT",
+          "VA",
+          "WA",
+          "WV",
+          "WI",
+          "WY",
+          "AB",
+          "BC",
+          "MB",
+          "NB",
+          "NL",
+          "NS",
+          "ON",
+          "PE",
+          "QC",
+          "SK"
+        ]
+      },
       "CountryCode3": {
         "type": "string",
-        "example": "GB",
+        "example": "US",
         "enum": [
           "AD",
           "AE",
@@ -56409,9 +56537,10 @@
               "address": {
                 "line1": "Flat 1",
                 "line2": "123 Fake Street",
-                "town": "London",
+                "town": "New York",
+                "state": "NY",
                 "postcode": "AB1 2EF",
-                "country": "GB"
+                "country": "US"
               },
               "email": "john@example.com",
               "billingEmails": [
@@ -56456,9 +56585,10 @@
                 "address": {
                   "line1": "Flat 1",
                   "line2": "123 Fake Street",
-                  "town": "London",
+                  "town": "New York",
+                  "state": "NY",
                   "postcode": "AB1 2EF",
-                  "country": "GB"
+                  "country": "US"
                 },
                 "email": "john@example.com",
                 "billingEmails": [
@@ -56507,9 +56637,10 @@
           "address": {
             "line1": "Flat 1",
             "line2": "123 Fake Street",
-            "town": "London",
+            "town": "New York",
+            "state": "NY",
             "postcode": "AB1 2EF",
-            "country": "GB"
+            "country": "US"
           },
           "email": "john@example.com",
           "billingEmails": [
@@ -56654,9 +56785,10 @@
             "address": {
               "line1": "Flat 1",
               "line2": "123 Fake Street",
-              "town": "London",
+              "town": "New York",
+              "state": "NY",
               "postcode": "AB1 2EF",
-              "country": "GB"
+              "country": "US"
             },
             "email": "john@example.com",
             "billingEmails": [
@@ -56702,9 +56834,10 @@
           "address": {
             "line1": "Flat 1",
             "line2": "123 Fake Street",
-            "town": "London",
+            "town": "New York",
+            "state": "NY",
             "postcode": "AB1 2EF",
-            "country": "GB"
+            "country": "US"
           },
           "email": "john@example.com",
           "billingEmails": [
