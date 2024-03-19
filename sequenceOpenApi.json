@@ -20896,6 +20896,161 @@
       "servers": [],
       "parameters": []
     },
+    "/invoices/{invoiceId}/usage-item-groups/{id}": {
+      "get": {
+        "tags": [],
+        "summary": "Get an Usage Item Group by ID",
+        "description": "Get an Usage Item Group by ID",
+        "operationId": "getInvoicesByInvoiceIdUsageItemGroupsById",
+        "parameters": [
+          {
+            "name": "invoiceId",
+            "in": "path",
+            "description": "invoiceId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetUsageItemGroupEndpointGetUsageItemGroupResponseModel",
+                  "example": {
+                    "id": "1aaeac35-cdc3-4adb-a741-5fa4816619ad",
+                    "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                    "title": "ACME Inc."
+                  }
+                },
+                "examples": {
+                  "GetUsageItemGroupEndpointGetUsageItemGroupResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "id": "1aaeac35-cdc3-4adb-a741-5fa4816619ad",
+                      "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                      "title": "ACME Inc."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
+    "/invoices/{invoiceId}/usage-item-groups": {
+      "get": {
+        "tags": [],
+        "summary": "Get an Usage Item Group by ID",
+        "description": "Get an Usage Item Group by ID",
+        "operationId": "getInvoicesByInvoiceIdUsageItemGroups",
+        "parameters": [
+          {
+            "name": "invoiceId",
+            "in": "path",
+            "description": "invoiceId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ListUsageItemGroupEndpointListUsageItemGroupResponseModel",
+                  "example": {
+                    "items": [
+                      {
+                        "id": "1aaeac35-cdc3-4adb-a741-5fa4816619ad",
+                        "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                        "title": "ACME Inc."
+                      }
+                    ]
+                  }
+                },
+                "examples": {
+                  "ListUsageItemGroupEndpointListUsageItemGroupResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "items": [
+                        {
+                          "id": "1aaeac35-cdc3-4adb-a741-5fa4816619ad",
+                          "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                          "title": "ACME Inc."
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/invoices/{id}/usage-items/all": {
       "get": {
         "tags": [],
@@ -50354,6 +50509,67 @@
             ],
             "items": {
               "$ref": "#/components/schemas/LineItemResponseModel"
+            }
+          }
+        }
+      },
+      "GetUsageItemGroupEndpointGetUsageItemGroupResponseModel": {
+        "required": [
+          "id",
+          "invoiceId",
+          "title"
+        ],
+        "type": "object",
+        "example": {
+          "id": "1aaeac35-cdc3-4adb-a741-5fa4816619ad",
+          "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+          "title": "ACME Inc."
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Usage Group Item ID",
+            "example": "1aaeac35-cdc3-4adb-a741-5fa4816619ad"
+          },
+          "invoiceId": {
+            "type": "string",
+            "description": "Invoice ID",
+            "example": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9"
+          },
+          "title": {
+            "type": "string",
+            "description": "Usage Group Item Title",
+            "example": "ACME Inc."
+          }
+        }
+      },
+      "ListUsageItemGroupEndpointListUsageItemGroupResponseModel": {
+        "required": [
+          "items"
+        ],
+        "type": "object",
+        "example": {
+          "items": [
+            {
+              "id": "1aaeac35-cdc3-4adb-a741-5fa4816619ad",
+              "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+              "title": "ACME Inc."
+            }
+          ]
+        },
+        "properties": {
+          "items": {
+            "type": "array",
+            "description": "Usage Item Groups",
+            "example": [
+              {
+                "id": "1aaeac35-cdc3-4adb-a741-5fa4816619ad",
+                "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                "title": "ACME Inc."
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/GetUsageItemGroupEndpointGetUsageItemGroupResponseModel"
             }
           }
         }
