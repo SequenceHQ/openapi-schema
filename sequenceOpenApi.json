@@ -3999,7 +3999,7 @@
                                 ],
                                 "type": "PERCENTAGE",
                                 "amount": 0.15,
-                                "message": "Discounted @ 0.15%",
+                                "message": "15% Discount",
                                 "separateLineItem": false
                               }
                             ],
@@ -4106,7 +4106,7 @@
                                   ],
                                   "type": "PERCENTAGE",
                                   "amount": 0.15,
-                                  "message": "Discounted @ 0.15%",
+                                  "message": "15% Discount",
                                   "separateLineItem": false
                                 }
                               ],
@@ -4298,7 +4298,7 @@
                             ],
                             "type": "PERCENTAGE",
                             "amount": 0.08,
-                            "message": "Discounted @ 0.08%",
+                            "message": "8% Discount",
                             "separateLineItem": false
                           }
                         ],
@@ -4385,7 +4385,7 @@
                             ],
                             "type": "PERCENTAGE",
                             "amount": 0.15,
-                            "message": "Discounted @ 0.15%",
+                            "message": "15% Discount",
                             "separateLineItem": false
                           }
                         ],
@@ -4454,7 +4454,7 @@
                               ],
                               "type": "PERCENTAGE",
                               "amount": 0.15,
-                              "message": "Discounted @ 0.15%",
+                              "message": "15% Discount",
                               "separateLineItem": false
                             }
                           ],
@@ -4753,7 +4753,7 @@
                             ],
                             "type": "PERCENTAGE",
                             "amount": 0.15,
-                            "message": "Discounted @ 0.15%",
+                            "message": "15% Discount",
                             "separateLineItem": false
                           }
                         ],
@@ -4874,7 +4874,7 @@
                               ],
                               "type": "PERCENTAGE",
                               "amount": 0.15,
-                              "message": "Discounted @ 0.15%",
+                              "message": "15% Discount",
                               "separateLineItem": false
                             }
                           ],
@@ -5076,7 +5076,7 @@
                             ],
                             "type": "PERCENTAGE",
                             "amount": 0.15,
-                            "message": "Discounted @ 0.15%",
+                            "message": "15% Discount",
                             "separateLineItem": false
                           }
                         ],
@@ -5145,7 +5145,7 @@
                               ],
                               "type": "PERCENTAGE",
                               "amount": 0.15,
-                              "message": "Discounted @ 0.15%",
+                              "message": "15% Discount",
                               "separateLineItem": false
                             }
                           ],
@@ -5256,7 +5256,7 @@
                             ],
                             "type": "PERCENTAGE",
                             "amount": 0.15,
-                            "message": "Discounted @ 0.15%",
+                            "message": "15% Discount",
                             "separateLineItem": false
                           }
                         ],
@@ -5325,7 +5325,7 @@
                               ],
                               "type": "PERCENTAGE",
                               "amount": 0.15,
-                              "message": "Discounted @ 0.15%",
+                              "message": "15% Discount",
                               "separateLineItem": false
                             }
                           ],
@@ -5436,7 +5436,7 @@
                             ],
                             "type": "PERCENTAGE",
                             "amount": 0.15,
-                            "message": "Discounted @ 0.15%",
+                            "message": "15% Discount",
                             "separateLineItem": false
                           }
                         ],
@@ -5505,7 +5505,7 @@
                               ],
                               "type": "PERCENTAGE",
                               "amount": 0.15,
-                              "message": "Discounted @ 0.15%",
+                              "message": "15% Discount",
                               "separateLineItem": false
                             }
                           ],
@@ -35429,7 +35429,7 @@
                   ],
                   "type": "PERCENTAGE",
                   "amount": 0.08,
-                  "message": "Discounted @ 0.08%",
+                  "message": "8% Discount",
                   "separateLineItem": false
                 }
               ],
@@ -35546,7 +35546,7 @@
                     ],
                     "type": "PERCENTAGE",
                     "amount": 0.08,
-                    "message": "Discounted @ 0.08%",
+                    "message": "8% Discount",
                     "separateLineItem": false
                   }
                 ],
@@ -35644,7 +35644,7 @@
           ],
           "type": "PERCENTAGE",
           "amount": 0.15,
-          "message": "Discounted @ 0.15%",
+          "message": "15% Discount",
           "separateLineItem": false
         },
         "properties": {
@@ -35666,7 +35666,7 @@
           },
           "message": {
             "type": "string",
-            "example": "Discounted @ 0.15%"
+            "example": "15% Discount"
           },
           "separateLineItem": {
             "type": "boolean",
@@ -35761,7 +35761,7 @@
                   ],
                   "type": "PERCENTAGE",
                   "amount": 0.15,
-                  "message": "Discounted @ 0.15%",
+                  "message": "15% Discount",
                   "separateLineItem": false
                 }
               ],
@@ -35916,7 +35916,7 @@
                     ],
                     "type": "PERCENTAGE",
                     "amount": 0.15,
-                    "message": "Discounted @ 0.15%",
+                    "message": "15% Discount",
                     "separateLineItem": false
                   }
                 ],
@@ -35987,7 +35987,7 @@
               ],
               "type": "PERCENTAGE",
               "amount": 0.15,
-              "message": "Discounted @ 0.15%",
+              "message": "15% Discount",
               "separateLineItem": false
             }
           ],
@@ -36054,7 +36054,7 @@
                 ],
                 "type": "PERCENTAGE",
                 "amount": 0.15,
-                "message": "Discounted @ 0.15%",
+                "message": "15% Discount",
                 "separateLineItem": false
               }
             ],
@@ -36523,7 +36523,7 @@
                       ],
                       "type": "PERCENTAGE",
                       "amount": 0.15,
-                      "message": "Discounted @ 0.15%",
+                      "message": "15% Discount",
                       "separateLineItem": false
                     }
                   ],
@@ -36629,7 +36629,7 @@
                         ],
                         "type": "PERCENTAGE",
                         "amount": 0.15,
-                        "message": "Discounted @ 0.15%",
+                        "message": "15% Discount",
                         "separateLineItem": false
                       }
                     ],
