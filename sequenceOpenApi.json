@@ -3994,19 +3994,13 @@
                             "endDate": "2022-06-30",
                             "discounts": [
                               {
-                                "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                                "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-                                "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
-                                "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                                "priceIds": [
+                                "restrictToPrices": [
                                   "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                                 ],
-                                "separateLineItem": false,
+                                "type": "PERCENTAGE",
                                 "amount": 0.15,
-                                "discountCalculationType": "PERCENTAGE",
                                 "message": "Discounted @ 0.15%",
-                                "createdAt": "2022-06-28T16:47:00Z",
-                                "updatedAt": "2022-06-28T16:47:00Z"
+                                "separateLineItem": false
                               }
                             ],
                             "minimums": [
@@ -4107,19 +4101,13 @@
                               "endDate": "2022-06-30",
                               "discounts": [
                                 {
-                                  "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                                  "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-                                  "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
-                                  "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                                  "priceIds": [
+                                  "restrictToPrices": [
                                     "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                                   ],
-                                  "separateLineItem": false,
+                                  "type": "PERCENTAGE",
                                   "amount": 0.15,
-                                  "discountCalculationType": "PERCENTAGE",
                                   "message": "Discounted @ 0.15%",
-                                  "createdAt": "2022-06-28T16:47:00Z",
-                                  "updatedAt": "2022-06-28T16:47:00Z"
+                                  "separateLineItem": false
                                 }
                               ],
                               "minimums": [
@@ -4392,19 +4380,13 @@
                         "endDate": "2022-06-30",
                         "discounts": [
                           {
-                            "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                            "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-                            "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
-                            "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                            "priceIds": [
+                            "restrictToPrices": [
                               "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                             ],
-                            "separateLineItem": false,
+                            "type": "PERCENTAGE",
                             "amount": 0.15,
-                            "discountCalculationType": "PERCENTAGE",
                             "message": "Discounted @ 0.15%",
-                            "createdAt": "2022-06-28T16:47:00Z",
-                            "updatedAt": "2022-06-28T16:47:00Z"
+                            "separateLineItem": false
                           }
                         ],
                         "minimums": [
@@ -4467,19 +4449,13 @@
                           "endDate": "2022-06-30",
                           "discounts": [
                             {
-                              "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                              "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-                              "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
-                              "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                              "priceIds": [
+                              "restrictToPrices": [
                                 "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                               ],
-                              "separateLineItem": false,
+                              "type": "PERCENTAGE",
                               "amount": 0.15,
-                              "discountCalculationType": "PERCENTAGE",
                               "message": "Discounted @ 0.15%",
-                              "createdAt": "2022-06-28T16:47:00Z",
-                              "updatedAt": "2022-06-28T16:47:00Z"
+                              "separateLineItem": false
                             }
                           ],
                           "minimums": [
@@ -4772,19 +4748,13 @@
                         "endDate": "2022-06-30",
                         "discounts": [
                           {
-                            "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                            "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-                            "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
-                            "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                            "priceIds": [
+                            "restrictToPrices": [
                               "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                             ],
-                            "separateLineItem": false,
+                            "type": "PERCENTAGE",
                             "amount": 0.15,
-                            "discountCalculationType": "PERCENTAGE",
                             "message": "Discounted @ 0.15%",
-                            "createdAt": "2022-06-28T16:47:00Z",
-                            "updatedAt": "2022-06-28T16:47:00Z"
+                            "separateLineItem": false
                           }
                         ],
                         "minimums": [
@@ -4899,19 +4869,13 @@
                           "endDate": "2022-06-30",
                           "discounts": [
                             {
-                              "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                              "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-                              "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
-                              "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                              "priceIds": [
+                              "restrictToPrices": [
                                 "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                               ],
-                              "separateLineItem": false,
+                              "type": "PERCENTAGE",
                               "amount": 0.15,
-                              "discountCalculationType": "PERCENTAGE",
                               "message": "Discounted @ 0.15%",
-                              "createdAt": "2022-06-28T16:47:00Z",
-                              "updatedAt": "2022-06-28T16:47:00Z"
+                              "separateLineItem": false
                             }
                           ],
                           "minimums": [
@@ -5107,19 +5071,13 @@
                         "endDate": "2022-06-30",
                         "discounts": [
                           {
-                            "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                            "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-                            "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
-                            "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                            "priceIds": [
+                            "restrictToPrices": [
                               "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                             ],
-                            "separateLineItem": false,
+                            "type": "PERCENTAGE",
                             "amount": 0.15,
-                            "discountCalculationType": "PERCENTAGE",
                             "message": "Discounted @ 0.15%",
-                            "createdAt": "2022-06-28T16:47:00Z",
-                            "updatedAt": "2022-06-28T16:47:00Z"
+                            "separateLineItem": false
                           }
                         ],
                         "minimums": [
@@ -5182,19 +5140,13 @@
                           "endDate": "2022-06-30",
                           "discounts": [
                             {
-                              "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                              "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-                              "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
-                              "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                              "priceIds": [
+                              "restrictToPrices": [
                                 "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                               ],
-                              "separateLineItem": false,
+                              "type": "PERCENTAGE",
                               "amount": 0.15,
-                              "discountCalculationType": "PERCENTAGE",
                               "message": "Discounted @ 0.15%",
-                              "createdAt": "2022-06-28T16:47:00Z",
-                              "updatedAt": "2022-06-28T16:47:00Z"
+                              "separateLineItem": false
                             }
                           ],
                           "minimums": [
@@ -5299,19 +5251,13 @@
                         "endDate": "2022-06-30",
                         "discounts": [
                           {
-                            "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                            "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-                            "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
-                            "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                            "priceIds": [
+                            "restrictToPrices": [
                               "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                             ],
-                            "separateLineItem": false,
+                            "type": "PERCENTAGE",
                             "amount": 0.15,
-                            "discountCalculationType": "PERCENTAGE",
                             "message": "Discounted @ 0.15%",
-                            "createdAt": "2022-06-28T16:47:00Z",
-                            "updatedAt": "2022-06-28T16:47:00Z"
+                            "separateLineItem": false
                           }
                         ],
                         "minimums": [
@@ -5374,19 +5320,13 @@
                           "endDate": "2022-06-30",
                           "discounts": [
                             {
-                              "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                              "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-                              "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
-                              "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                              "priceIds": [
+                              "restrictToPrices": [
                                 "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                               ],
-                              "separateLineItem": false,
+                              "type": "PERCENTAGE",
                               "amount": 0.15,
-                              "discountCalculationType": "PERCENTAGE",
                               "message": "Discounted @ 0.15%",
-                              "createdAt": "2022-06-28T16:47:00Z",
-                              "updatedAt": "2022-06-28T16:47:00Z"
+                              "separateLineItem": false
                             }
                           ],
                           "minimums": [
@@ -5491,19 +5431,13 @@
                         "endDate": "2022-06-30",
                         "discounts": [
                           {
-                            "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                            "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-                            "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
-                            "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                            "priceIds": [
+                            "restrictToPrices": [
                               "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                             ],
-                            "separateLineItem": false,
+                            "type": "PERCENTAGE",
                             "amount": 0.15,
-                            "discountCalculationType": "PERCENTAGE",
                             "message": "Discounted @ 0.15%",
-                            "createdAt": "2022-06-28T16:47:00Z",
-                            "updatedAt": "2022-06-28T16:47:00Z"
+                            "separateLineItem": false
                           }
                         ],
                         "minimums": [
@@ -5566,19 +5500,13 @@
                           "endDate": "2022-06-30",
                           "discounts": [
                             {
-                              "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                              "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-                              "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
-                              "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                              "priceIds": [
+                              "restrictToPrices": [
                                 "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                               ],
-                              "separateLineItem": false,
+                              "type": "PERCENTAGE",
                               "amount": 0.15,
-                              "discountCalculationType": "PERCENTAGE",
                               "message": "Discounted @ 0.15%",
-                              "createdAt": "2022-06-28T16:47:00Z",
-                              "updatedAt": "2022-06-28T16:47:00Z"
+                              "separateLineItem": false
                             }
                           ],
                           "minimums": [
@@ -35715,8 +35643,8 @@
             "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
           ],
           "type": "PERCENTAGE",
-          "amount": 0.08,
-          "message": "Discounted @ 0.08%",
+          "amount": 0.15,
+          "message": "Discounted @ 0.15%",
           "separateLineItem": false
         },
         "properties": {
@@ -35734,11 +35662,11 @@
           },
           "amount": {
             "type": "number",
-            "example": 0.08
+            "example": 0.15
           },
           "message": {
             "type": "string",
-            "example": "Discounted @ 0.08%"
+            "example": "Discounted @ 0.15%"
           },
           "separateLineItem": {
             "type": "boolean",
@@ -35828,19 +35756,13 @@
               "endDate": "2022-06-30",
               "discounts": [
                 {
-                  "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                  "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-                  "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
-                  "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                  "priceIds": [
+                  "restrictToPrices": [
                     "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                   ],
-                  "separateLineItem": false,
+                  "type": "PERCENTAGE",
                   "amount": 0.15,
-                  "discountCalculationType": "PERCENTAGE",
                   "message": "Discounted @ 0.15%",
-                  "createdAt": "2022-06-28T16:47:00Z",
-                  "updatedAt": "2022-06-28T16:47:00Z"
+                  "separateLineItem": false
                 }
               ],
               "minimums": [
@@ -35989,19 +35911,13 @@
                 "endDate": "2022-06-30",
                 "discounts": [
                   {
-                    "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                    "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-                    "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
-                    "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                    "priceIds": [
+                    "restrictToPrices": [
                       "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                     ],
-                    "separateLineItem": false,
+                    "type": "PERCENTAGE",
                     "amount": 0.15,
-                    "discountCalculationType": "PERCENTAGE",
                     "message": "Discounted @ 0.15%",
-                    "createdAt": "2022-06-28T16:47:00Z",
-                    "updatedAt": "2022-06-28T16:47:00Z"
+                    "separateLineItem": false
                   }
                 ],
                 "minimums": [
@@ -36066,19 +35982,13 @@
           "endDate": "2022-06-30",
           "discounts": [
             {
-              "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-              "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-              "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
-              "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-              "priceIds": [
+              "restrictToPrices": [
                 "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
               ],
-              "separateLineItem": false,
+              "type": "PERCENTAGE",
               "amount": 0.15,
-              "discountCalculationType": "PERCENTAGE",
               "message": "Discounted @ 0.15%",
-              "createdAt": "2022-06-28T16:47:00Z",
-              "updatedAt": "2022-06-28T16:47:00Z"
+              "separateLineItem": false
             }
           ],
           "minimums": [
@@ -36139,23 +36049,17 @@
             "description": "Discounts in Phase",
             "example": [
               {
-                "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-                "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
-                "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                "priceIds": [
+                "restrictToPrices": [
                   "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                 ],
-                "separateLineItem": false,
+                "type": "PERCENTAGE",
                 "amount": 0.15,
-                "discountCalculationType": "PERCENTAGE",
                 "message": "Discounted @ 0.15%",
-                "createdAt": "2022-06-28T16:47:00Z",
-                "updatedAt": "2022-06-28T16:47:00Z"
+                "separateLineItem": false
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/Discount"
+              "$ref": "#/components/schemas/EmbeddableDiscount"
             }
           },
           "minimums": {
@@ -36177,97 +36081,6 @@
             "items": {
               "$ref": "#/components/schemas/Minimum"
             }
-          }
-        }
-      },
-      "Discount": {
-        "required": [
-          "amount",
-          "billingScheduleId",
-          "createdAt",
-          "discountCalculationType",
-          "id",
-          "message",
-          "priceIds",
-          "separateLineItem",
-          "sequenceAccountId",
-          "updatedAt"
-        ],
-        "type": "object",
-        "example": {
-          "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-          "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-          "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
-          "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-          "priceIds": [
-            "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
-          ],
-          "separateLineItem": false,
-          "amount": 0.15,
-          "discountCalculationType": "PERCENTAGE",
-          "message": "Discounted @ 0.15%",
-          "createdAt": "2022-06-28T16:47:00Z",
-          "updatedAt": "2022-06-28T16:47:00Z"
-        },
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "Discount ID",
-            "example": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
-          },
-          "sequenceAccountId": {
-            "type": "string",
-            "description": "The Sequence Account to which this Discount belongs",
-            "example": "c4602d51-0fb4-4b48-b689-6ba28f540d1e"
-          },
-          "billingScheduleId": {
-            "type": "string",
-            "description": "Billing Schedule ID",
-            "example": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b"
-          },
-          "phaseId": {
-            "type": "string",
-            "description": "Phase ID",
-            "example": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
-          },
-          "priceIds": {
-            "type": "array",
-            "description": "Price IDs this discount applies to. If not populated, the discount applies to all prices on the billing schedule",
-            "example": [
-              "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
-            ],
-            "items": {
-              "type": "string"
-            }
-          },
-          "separateLineItem": {
-            "type": "boolean",
-            "description": "Indicates whether the discount should appear as a separate line item in the invoice",
-            "example": false
-          },
-          "amount": {
-            "type": "number",
-            "description": "Amount to be reduced",
-            "example": 0.15
-          },
-          "discountCalculationType": {
-            "description": "Indicates whether the discount amount is percentage or nominal",
-            "$ref": "#/components/schemas/DiscountCalculationType"
-          },
-          "message": {
-            "type": "string",
-            "description": "Message to appear on the Invoice",
-            "example": "Discounted @ 0.15%"
-          },
-          "createdAt": {
-            "type": "string",
-            "description": "Created at",
-            "example": "2022-06-28T16:47:00Z"
-          },
-          "updatedAt": {
-            "type": "string",
-            "description": "Updated At",
-            "example": "2022-06-28T16:47:00Z"
           }
         }
       },
@@ -36705,19 +36518,13 @@
                   "endDate": "2022-06-30",
                   "discounts": [
                     {
-                      "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                      "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-                      "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
-                      "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                      "priceIds": [
+                      "restrictToPrices": [
                         "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                       ],
-                      "separateLineItem": false,
+                      "type": "PERCENTAGE",
                       "amount": 0.15,
-                      "discountCalculationType": "PERCENTAGE",
                       "message": "Discounted @ 0.15%",
-                      "createdAt": "2022-06-28T16:47:00Z",
-                      "updatedAt": "2022-06-28T16:47:00Z"
+                      "separateLineItem": false
                     }
                   ],
                   "minimums": [
@@ -36817,19 +36624,13 @@
                     "endDate": "2022-06-30",
                     "discounts": [
                       {
-                        "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                        "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-                        "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
-                        "phaseId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                        "priceIds": [
+                        "restrictToPrices": [
                           "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                         ],
-                        "separateLineItem": false,
+                        "type": "PERCENTAGE",
                         "amount": 0.15,
-                        "discountCalculationType": "PERCENTAGE",
                         "message": "Discounted @ 0.15%",
-                        "createdAt": "2022-06-28T16:47:00Z",
-                        "updatedAt": "2022-06-28T16:47:00Z"
+                        "separateLineItem": false
                       }
                     ],
                     "minimums": [
