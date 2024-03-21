@@ -12945,6 +12945,117 @@
       "servers": [],
       "parameters": []
     },
+    "/seat-balances": {
+      "get": {
+        "tags": [],
+        "summary": "List Seat balances by Customer",
+        "description": "List Seat balances grouped by Customer and seat type.",
+        "operationId": "getSeatBalances",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "excludeZeroQuantity",
+            "in": "query",
+            "description": "Exclude customers with no seats usage. Defaults to false.",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ListCustomerSeatBalancesEndpointListCustomerSeatBalancesPaginatedResponseModel",
+                  "example": {
+                    "items": [
+                      {
+                        "id": "d82010a6-6835-41f8-9dd3-6f858f617f35",
+                        "sequenceAccountId": "806460ce-050d-45e4-8d22-b403a523b866",
+                        "legalName": "Acme Corp",
+                        "customerAliases": [
+                          "acme"
+                        ],
+                        "total": 10,
+                        "changeTimestamp": "2022-06-28T16:47:00Z",
+                        "balances": [
+                          {
+                            "seatType": "admin",
+                            "total": 10,
+                            "changeTimestamp": "2022-06-28T16:47:00Z"
+                          }
+                        ]
+                      }
+                    ],
+                    "pagination": {
+                      "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
+                      "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
+                      "totalResultSize": 10
+                    }
+                  }
+                },
+                "examples": {
+                  "ListCustomerSeatBalancesEndpointListCustomerSeatBalancesPaginatedResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "items": [
+                        {
+                          "id": "d82010a6-6835-41f8-9dd3-6f858f617f35",
+                          "sequenceAccountId": "806460ce-050d-45e4-8d22-b403a523b866",
+                          "legalName": "Acme Corp",
+                          "customerAliases": [
+                            "acme"
+                          ],
+                          "total": 10,
+                          "changeTimestamp": "2022-06-28T16:47:00Z",
+                          "balances": [
+                            {
+                              "seatType": "admin",
+                              "total": 10,
+                              "changeTimestamp": "2022-06-28T16:47:00Z"
+                            }
+                          ]
+                        }
+                      ],
+                      "pagination": {
+                        "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
+                        "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
+                        "totalResultSize": 10
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/usage-events/backfill-is-latest/usage-event/{id}/backfill": {
       "post": {
         "tags": [],
@@ -44257,6 +44368,180 @@
           "total": {
             "type": "integer",
             "description": "total",
+            "example": 10
+          },
+          "changeTimestamp": {
+            "type": "string",
+            "description": "Timestamp of change",
+            "example": "2022-06-28T16:47:00Z"
+          }
+        }
+      },
+      "ListCustomerSeatBalancesEndpointListCustomerSeatBalancesPaginatedResponseModel": {
+        "required": [
+          "items",
+          "pagination"
+        ],
+        "type": "object",
+        "example": {
+          "items": [
+            {
+              "id": "d82010a6-6835-41f8-9dd3-6f858f617f35",
+              "sequenceAccountId": "806460ce-050d-45e4-8d22-b403a523b866",
+              "legalName": "Acme Corp",
+              "customerAliases": [
+                "acme"
+              ],
+              "total": 10,
+              "changeTimestamp": "2022-06-28T16:47:00Z",
+              "balances": [
+                {
+                  "seatType": "admin",
+                  "total": 10,
+                  "changeTimestamp": "2022-06-28T16:47:00Z"
+                }
+              ]
+            }
+          ],
+          "pagination": {
+            "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
+            "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
+            "totalResultSize": 10
+          }
+        },
+        "properties": {
+          "items": {
+            "type": "array",
+            "description": "Seat balances",
+            "example": [
+              {
+                "id": "d82010a6-6835-41f8-9dd3-6f858f617f35",
+                "sequenceAccountId": "806460ce-050d-45e4-8d22-b403a523b866",
+                "legalName": "Acme Corp",
+                "customerAliases": [
+                  "acme"
+                ],
+                "total": 10,
+                "changeTimestamp": "2022-06-28T16:47:00Z",
+                "balances": [
+                  {
+                    "seatType": "admin",
+                    "total": 10,
+                    "changeTimestamp": "2022-06-28T16:47:00Z"
+                  }
+                ]
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/CustomerSeatBalances"
+            }
+          },
+          "pagination": {
+            "description": "Results pagination",
+            "$ref": "#/components/schemas/PaginationMeta"
+          }
+        }
+      },
+      "CustomerSeatBalances": {
+        "required": [
+          "balances",
+          "changeTimestamp",
+          "customerAliases",
+          "id",
+          "legalName",
+          "sequenceAccountId",
+          "total"
+        ],
+        "type": "object",
+        "example": {
+          "id": "d82010a6-6835-41f8-9dd3-6f858f617f35",
+          "sequenceAccountId": "806460ce-050d-45e4-8d22-b403a523b866",
+          "legalName": "Acme Corp",
+          "customerAliases": [
+            "acme"
+          ],
+          "total": 10,
+          "changeTimestamp": "2022-06-28T16:47:00Z",
+          "balances": [
+            {
+              "seatType": "admin",
+              "total": 10,
+              "changeTimestamp": "2022-06-28T16:47:00Z"
+            }
+          ]
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Customer ID",
+            "example": "d82010a6-6835-41f8-9dd3-6f858f617f35"
+          },
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Sequence Account ID",
+            "example": "806460ce-050d-45e4-8d22-b403a523b866"
+          },
+          "legalName": {
+            "type": "string",
+            "description": "Legal name",
+            "example": "Acme Corp"
+          },
+          "customerAliases": {
+            "type": "array",
+            "example": [
+              "acme"
+            ],
+            "items": {
+              "type": "string"
+            }
+          },
+          "total": {
+            "type": "integer",
+            "description": "Total seats balance",
+            "example": 10
+          },
+          "changeTimestamp": {
+            "type": "string",
+            "description": "Timestamp of when the customer seats last changed",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "balances": {
+            "type": "array",
+            "description": "Seat balance per seat type",
+            "example": [
+              {
+                "seatType": "admin",
+                "total": 10,
+                "changeTimestamp": "2022-06-28T16:47:00Z"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/SeatBalance"
+            }
+          }
+        }
+      },
+      "SeatBalance": {
+        "required": [
+          "changeTimestamp",
+          "seatType",
+          "total"
+        ],
+        "type": "object",
+        "example": {
+          "seatType": "admin",
+          "total": 10,
+          "changeTimestamp": "2022-06-28T16:47:00Z"
+        },
+        "properties": {
+          "seatType": {
+            "type": "string",
+            "description": "Seat type",
+            "example": "admin"
+          },
+          "total": {
+            "type": "integer",
+            "description": "Total seats for this seat type",
             "example": 10
           },
           "changeTimestamp": {
