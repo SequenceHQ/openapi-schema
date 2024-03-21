@@ -20988,7 +20988,25 @@
                   "example": {
                     "id": "1aaeac35-cdc3-4adb-a741-5fa4816619ad",
                     "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
-                    "title": "ACME Inc."
+                    "title": "ACME Inc.",
+                    "items": [
+                      {
+                        "id": "0186a182-5f3f-7ff0-8227-02d4e3999149",
+                        "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
+                        "title": "Number of messages sent",
+                        "value": "100",
+                        "groupedValues": [
+                          {
+                            "grouping": "sms",
+                            "value": 25
+                          },
+                          {
+                            "grouping": "email",
+                            "value": 75
+                          }
+                        ]
+                      }
+                    ]
                   }
                 },
                 "examples": {
@@ -20997,7 +21015,25 @@
                     "value": {
                       "id": "1aaeac35-cdc3-4adb-a741-5fa4816619ad",
                       "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
-                      "title": "ACME Inc."
+                      "title": "ACME Inc.",
+                      "items": [
+                        {
+                          "id": "0186a182-5f3f-7ff0-8227-02d4e3999149",
+                          "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
+                          "title": "Number of messages sent",
+                          "value": "100",
+                          "groupedValues": [
+                            {
+                              "grouping": "sms",
+                              "value": 25
+                            },
+                            {
+                              "grouping": "email",
+                              "value": 75
+                            }
+                          ]
+                        }
+                      ]
                     }
                   }
                 }
@@ -21059,7 +21095,25 @@
                       {
                         "id": "1aaeac35-cdc3-4adb-a741-5fa4816619ad",
                         "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
-                        "title": "ACME Inc."
+                        "title": "ACME Inc.",
+                        "items": [
+                          {
+                            "id": "0186a182-5f3f-7ff0-8227-02d4e3999149",
+                            "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
+                            "title": "Number of messages sent",
+                            "value": "100",
+                            "groupedValues": [
+                              {
+                                "grouping": "sms",
+                                "value": 25
+                              },
+                              {
+                                "grouping": "email",
+                                "value": 75
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ]
                   }
@@ -21072,7 +21126,25 @@
                         {
                           "id": "1aaeac35-cdc3-4adb-a741-5fa4816619ad",
                           "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
-                          "title": "ACME Inc."
+                          "title": "ACME Inc.",
+                          "items": [
+                            {
+                              "id": "0186a182-5f3f-7ff0-8227-02d4e3999149",
+                              "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
+                              "title": "Number of messages sent",
+                              "value": "100",
+                              "groupedValues": [
+                                {
+                                  "grouping": "sms",
+                                  "value": 25
+                                },
+                                {
+                                  "grouping": "email",
+                                  "value": 75
+                                }
+                              ]
+                            }
+                          ]
                         }
                       ]
                     }
@@ -50637,69 +50709,14 @@
         "required": [
           "id",
           "invoiceId",
+          "items",
           "title"
         ],
         "type": "object",
         "example": {
           "id": "1aaeac35-cdc3-4adb-a741-5fa4816619ad",
           "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
-          "title": "ACME Inc."
-        },
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "Usage Group Item ID",
-            "example": "1aaeac35-cdc3-4adb-a741-5fa4816619ad"
-          },
-          "invoiceId": {
-            "type": "string",
-            "description": "Invoice ID",
-            "example": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9"
-          },
-          "title": {
-            "type": "string",
-            "description": "Usage Group Item Title",
-            "example": "ACME Inc."
-          }
-        }
-      },
-      "ListUsageItemGroupEndpointListUsageItemGroupResponseModel": {
-        "required": [
-          "items"
-        ],
-        "type": "object",
-        "example": {
-          "items": [
-            {
-              "id": "1aaeac35-cdc3-4adb-a741-5fa4816619ad",
-              "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
-              "title": "ACME Inc."
-            }
-          ]
-        },
-        "properties": {
-          "items": {
-            "type": "array",
-            "description": "Usage Item Groups",
-            "example": [
-              {
-                "id": "1aaeac35-cdc3-4adb-a741-5fa4816619ad",
-                "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
-                "title": "ACME Inc."
-              }
-            ],
-            "items": {
-              "$ref": "#/components/schemas/GetUsageItemGroupEndpointGetUsageItemGroupResponseModel"
-            }
-          }
-        }
-      },
-      "ListAllUsageItemsUnpaginatedEndpointListAllUsageItemsResponseModel": {
-        "required": [
-          "items"
-        ],
-        "type": "object",
-        "example": {
+          "title": "ACME Inc.",
           "items": [
             {
               "id": "0186a182-5f3f-7ff0-8227-02d4e3999149",
@@ -50720,9 +50737,24 @@
           ]
         },
         "properties": {
+          "id": {
+            "type": "string",
+            "description": "Usage Group Item ID",
+            "example": "1aaeac35-cdc3-4adb-a741-5fa4816619ad"
+          },
+          "invoiceId": {
+            "type": "string",
+            "description": "Invoice ID",
+            "example": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9"
+          },
+          "title": {
+            "type": "string",
+            "description": "Usage Group Item Title",
+            "example": "ACME Inc."
+          },
           "items": {
             "type": "array",
-            "description": "LineItem Groups",
+            "description": "Usage Items",
             "example": [
               {
                 "id": "0186a182-5f3f-7ff0-8227-02d4e3999149",
@@ -50829,6 +50861,126 @@
           "value": {
             "type": "number",
             "example": 25
+          }
+        }
+      },
+      "ListUsageItemGroupEndpointListUsageItemGroupResponseModel": {
+        "required": [
+          "items"
+        ],
+        "type": "object",
+        "example": {
+          "items": [
+            {
+              "id": "1aaeac35-cdc3-4adb-a741-5fa4816619ad",
+              "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+              "title": "ACME Inc.",
+              "items": [
+                {
+                  "id": "0186a182-5f3f-7ff0-8227-02d4e3999149",
+                  "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
+                  "title": "Number of messages sent",
+                  "value": "100",
+                  "groupedValues": [
+                    {
+                      "grouping": "sms",
+                      "value": 25
+                    },
+                    {
+                      "grouping": "email",
+                      "value": 75
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "properties": {
+          "items": {
+            "type": "array",
+            "description": "Usage Item Groups",
+            "example": [
+              {
+                "id": "1aaeac35-cdc3-4adb-a741-5fa4816619ad",
+                "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                "title": "ACME Inc.",
+                "items": [
+                  {
+                    "id": "0186a182-5f3f-7ff0-8227-02d4e3999149",
+                    "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
+                    "title": "Number of messages sent",
+                    "value": "100",
+                    "groupedValues": [
+                      {
+                        "grouping": "sms",
+                        "value": 25
+                      },
+                      {
+                        "grouping": "email",
+                        "value": 75
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/GetUsageItemGroupEndpointGetUsageItemGroupResponseModel"
+            }
+          }
+        }
+      },
+      "ListAllUsageItemsUnpaginatedEndpointListAllUsageItemsResponseModel": {
+        "required": [
+          "items"
+        ],
+        "type": "object",
+        "example": {
+          "items": [
+            {
+              "id": "0186a182-5f3f-7ff0-8227-02d4e3999149",
+              "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
+              "title": "Number of messages sent",
+              "value": "100",
+              "groupedValues": [
+                {
+                  "grouping": "sms",
+                  "value": 25
+                },
+                {
+                  "grouping": "email",
+                  "value": 75
+                }
+              ]
+            }
+          ]
+        },
+        "properties": {
+          "items": {
+            "type": "array",
+            "description": "LineItem Groups",
+            "example": [
+              {
+                "id": "0186a182-5f3f-7ff0-8227-02d4e3999149",
+                "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
+                "title": "Number of messages sent",
+                "value": "100",
+                "groupedValues": [
+                  {
+                    "grouping": "sms",
+                    "value": 25
+                  },
+                  {
+                    "grouping": "email",
+                    "value": 75
+                  }
+                ]
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/UsageItem"
+            }
           }
         }
       },
