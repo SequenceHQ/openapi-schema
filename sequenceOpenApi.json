@@ -4205,7 +4205,8 @@
                   "priceIds": [
                     "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                   ],
-                  "createAsDraft": false
+                  "createAsDraft": false,
+                  "rollUpBilling": false
                 },
                 "oneOf": [
                   {
@@ -4250,7 +4251,8 @@
                     "priceIds": [
                       "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                     ],
-                    "createAsDraft": false
+                    "createAsDraft": false,
+                    "rollUpBilling": false
                   }
                 },
                 "CreateBillingScheduleRequestWithPhases": {
@@ -4284,6 +4286,7 @@
                     ],
                     "collectionPaymentProvider": "STRIPE",
                     "createAsDraft": false,
+                    "rollUpBilling": false,
                     "phases": [
                       {
                         "priceIds": [
@@ -4958,6 +4961,7 @@
                   "autoIssueInvoices": true,
                   "purchaseOrderNumber": "PO123",
                   "effectiveFrom": "2023-01-01",
+                  "rollUpBilling": false,
                   "priceIds": [
                     "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
                   ]
@@ -4988,6 +4992,7 @@
                     "autoIssueInvoices": true,
                     "purchaseOrderNumber": "PO123",
                     "effectiveFrom": "2023-01-01",
+                    "rollUpBilling": false,
                     "priceIds": [
                       "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
                     ]
@@ -5008,6 +5013,7 @@
                     ],
                     "autoIssueInvoices": true,
                     "purchaseOrderNumber": "PO123",
+                    "rollUpBilling": false,
                     "phases": [
                       {
                         "priceIds": [
@@ -35378,7 +35384,8 @@
           "priceIds": [
             "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
           ],
-          "createAsDraft": false
+          "createAsDraft": false,
+          "rollUpBilling": false
         },
         "properties": {
           "type": {
@@ -35456,6 +35463,10 @@
             }
           },
           "createAsDraft": {
+            "type": "boolean",
+            "example": false
+          },
+          "rollUpBilling": {
             "type": "boolean",
             "example": false
           }
@@ -35606,6 +35617,7 @@
           ],
           "collectionPaymentProvider": "STRIPE",
           "createAsDraft": false,
+          "rollUpBilling": false,
           "phases": [
             {
               "priceIds": [
@@ -35718,6 +35730,10 @@
             "$ref": "#/components/schemas/PaymentProvider"
           },
           "createAsDraft": {
+            "type": "boolean",
+            "example": false
+          },
+          "rollUpBilling": {
             "type": "boolean",
             "example": false
           },
@@ -36875,6 +36891,7 @@
           "autoIssueInvoices": true,
           "purchaseOrderNumber": "PO123",
           "effectiveFrom": "2023-01-01",
+          "rollUpBilling": false,
           "priceIds": [
             "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
           ]
@@ -36924,6 +36941,10 @@
             "format": "date",
             "example": "2023-01-01"
           },
+          "rollUpBilling": {
+            "type": "boolean",
+            "example": false
+          },
           "priceIds": {
             "type": "array",
             "description": "Price IDs",
@@ -36958,6 +36979,7 @@
           ],
           "autoIssueInvoices": true,
           "purchaseOrderNumber": "PO123",
+          "rollUpBilling": false,
           "phases": [
             {
               "priceIds": [
@@ -37009,6 +37031,10 @@
           "purchaseOrderNumber": {
             "type": "string",
             "example": "PO123"
+          },
+          "rollUpBilling": {
+            "type": "boolean",
+            "example": false
           },
           "phases": {
             "type": "array",
