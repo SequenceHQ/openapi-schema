@@ -20994,23 +20994,25 @@
                   "example": {
                     "id": "1aaeac35-cdc3-4adb-a741-5fa4816619ad",
                     "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
-                    "title": "ACME Inc.",
+                    "title": "Successful API Calls",
                     "items": [
                       {
-                        "id": "0186a182-5f3f-7ff0-8227-02d4e3999149",
-                        "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
-                        "title": "Number of messages sent",
-                        "value": "100",
-                        "groupedValues": [
-                          {
-                            "grouping": "sms",
-                            "value": 25
-                          },
-                          {
-                            "grouping": "email",
-                            "value": 75
-                          }
-                        ]
+                        "id": "cf8ad70f-f79a-4803-a41f-9a0b436c865a",
+                        "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                        "title": "Eldest Child",
+                        "value": "150",
+                        "groupedValues": [],
+                        "lineItemGroupId": "f4457a3c-a0f2-44ea-9c8d-548fa1298626",
+                        "usageItemGroupId": "1aaeac35-cdc3-4adb-a741-5fa4816619ad"
+                      },
+                      {
+                        "id": "f00fcb1a-76ff-44d9-b8c3-b444e554cc9c",
+                        "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                        "title": "Youngest Child",
+                        "value": "300",
+                        "groupedValues": [],
+                        "lineItemGroupId": "f4457a3c-a0f2-44ea-9c8d-548fa1298626",
+                        "usageItemGroupId": "1aaeac35-cdc3-4adb-a741-5fa4816619ad"
                       }
                     ]
                   }
@@ -21021,23 +21023,25 @@
                     "value": {
                       "id": "1aaeac35-cdc3-4adb-a741-5fa4816619ad",
                       "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
-                      "title": "ACME Inc.",
+                      "title": "Successful API Calls",
                       "items": [
                         {
-                          "id": "0186a182-5f3f-7ff0-8227-02d4e3999149",
-                          "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
-                          "title": "Number of messages sent",
-                          "value": "100",
-                          "groupedValues": [
-                            {
-                              "grouping": "sms",
-                              "value": 25
-                            },
-                            {
-                              "grouping": "email",
-                              "value": 75
-                            }
-                          ]
+                          "id": "cf8ad70f-f79a-4803-a41f-9a0b436c865a",
+                          "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                          "title": "Eldest Child",
+                          "value": "150",
+                          "groupedValues": [],
+                          "lineItemGroupId": "f4457a3c-a0f2-44ea-9c8d-548fa1298626",
+                          "usageItemGroupId": "1aaeac35-cdc3-4adb-a741-5fa4816619ad"
+                        },
+                        {
+                          "id": "f00fcb1a-76ff-44d9-b8c3-b444e554cc9c",
+                          "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                          "title": "Youngest Child",
+                          "value": "300",
+                          "groupedValues": [],
+                          "lineItemGroupId": "f4457a3c-a0f2-44ea-9c8d-548fa1298626",
+                          "usageItemGroupId": "1aaeac35-cdc3-4adb-a741-5fa4816619ad"
                         }
                       ]
                     }
@@ -21101,23 +21105,25 @@
                       {
                         "id": "1aaeac35-cdc3-4adb-a741-5fa4816619ad",
                         "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
-                        "title": "ACME Inc.",
+                        "title": "Successful API Calls",
                         "items": [
                           {
-                            "id": "0186a182-5f3f-7ff0-8227-02d4e3999149",
-                            "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
-                            "title": "Number of messages sent",
-                            "value": "100",
-                            "groupedValues": [
-                              {
-                                "grouping": "sms",
-                                "value": 25
-                              },
-                              {
-                                "grouping": "email",
-                                "value": 75
-                              }
-                            ]
+                            "id": "cf8ad70f-f79a-4803-a41f-9a0b436c865a",
+                            "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                            "title": "Eldest Child",
+                            "value": "150",
+                            "groupedValues": [],
+                            "lineItemGroupId": "f4457a3c-a0f2-44ea-9c8d-548fa1298626",
+                            "usageItemGroupId": "1aaeac35-cdc3-4adb-a741-5fa4816619ad"
+                          },
+                          {
+                            "id": "f00fcb1a-76ff-44d9-b8c3-b444e554cc9c",
+                            "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                            "title": "Youngest Child",
+                            "value": "300",
+                            "groupedValues": [],
+                            "lineItemGroupId": "f4457a3c-a0f2-44ea-9c8d-548fa1298626",
+                            "usageItemGroupId": "1aaeac35-cdc3-4adb-a741-5fa4816619ad"
                           }
                         ]
                       }
@@ -21132,23 +21138,25 @@
                         {
                           "id": "1aaeac35-cdc3-4adb-a741-5fa4816619ad",
                           "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
-                          "title": "ACME Inc.",
+                          "title": "Successful API Calls",
                           "items": [
                             {
-                              "id": "0186a182-5f3f-7ff0-8227-02d4e3999149",
-                              "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
-                              "title": "Number of messages sent",
-                              "value": "100",
-                              "groupedValues": [
-                                {
-                                  "grouping": "sms",
-                                  "value": 25
-                                },
-                                {
-                                  "grouping": "email",
-                                  "value": 75
-                                }
-                              ]
+                              "id": "cf8ad70f-f79a-4803-a41f-9a0b436c865a",
+                              "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                              "title": "Eldest Child",
+                              "value": "150",
+                              "groupedValues": [],
+                              "lineItemGroupId": "f4457a3c-a0f2-44ea-9c8d-548fa1298626",
+                              "usageItemGroupId": "1aaeac35-cdc3-4adb-a741-5fa4816619ad"
+                            },
+                            {
+                              "id": "f00fcb1a-76ff-44d9-b8c3-b444e554cc9c",
+                              "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                              "title": "Youngest Child",
+                              "value": "300",
+                              "groupedValues": [],
+                              "lineItemGroupId": "f4457a3c-a0f2-44ea-9c8d-548fa1298626",
+                              "usageItemGroupId": "1aaeac35-cdc3-4adb-a741-5fa4816619ad"
                             }
                           ]
                         }
@@ -50742,23 +50750,25 @@
         "example": {
           "id": "1aaeac35-cdc3-4adb-a741-5fa4816619ad",
           "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
-          "title": "ACME Inc.",
+          "title": "Successful API Calls",
           "items": [
             {
-              "id": "0186a182-5f3f-7ff0-8227-02d4e3999149",
-              "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
-              "title": "Number of messages sent",
-              "value": "100",
-              "groupedValues": [
-                {
-                  "grouping": "sms",
-                  "value": 25
-                },
-                {
-                  "grouping": "email",
-                  "value": 75
-                }
-              ]
+              "id": "cf8ad70f-f79a-4803-a41f-9a0b436c865a",
+              "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+              "title": "Eldest Child",
+              "value": "150",
+              "groupedValues": [],
+              "lineItemGroupId": "f4457a3c-a0f2-44ea-9c8d-548fa1298626",
+              "usageItemGroupId": "1aaeac35-cdc3-4adb-a741-5fa4816619ad"
+            },
+            {
+              "id": "f00fcb1a-76ff-44d9-b8c3-b444e554cc9c",
+              "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+              "title": "Youngest Child",
+              "value": "300",
+              "groupedValues": [],
+              "lineItemGroupId": "f4457a3c-a0f2-44ea-9c8d-548fa1298626",
+              "usageItemGroupId": "1aaeac35-cdc3-4adb-a741-5fa4816619ad"
             }
           ]
         },
@@ -50776,27 +50786,29 @@
           "title": {
             "type": "string",
             "description": "Usage Group Item Title",
-            "example": "ACME Inc."
+            "example": "Successful API Calls"
           },
           "items": {
             "type": "array",
             "description": "Usage Items",
             "example": [
               {
-                "id": "0186a182-5f3f-7ff0-8227-02d4e3999149",
-                "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
-                "title": "Number of messages sent",
-                "value": "100",
-                "groupedValues": [
-                  {
-                    "grouping": "sms",
-                    "value": 25
-                  },
-                  {
-                    "grouping": "email",
-                    "value": 75
-                  }
-                ]
+                "id": "cf8ad70f-f79a-4803-a41f-9a0b436c865a",
+                "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                "title": "Eldest Child",
+                "value": "150",
+                "groupedValues": [],
+                "lineItemGroupId": "f4457a3c-a0f2-44ea-9c8d-548fa1298626",
+                "usageItemGroupId": "1aaeac35-cdc3-4adb-a741-5fa4816619ad"
+              },
+              {
+                "id": "f00fcb1a-76ff-44d9-b8c3-b444e554cc9c",
+                "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                "title": "Youngest Child",
+                "value": "300",
+                "groupedValues": [],
+                "lineItemGroupId": "f4457a3c-a0f2-44ea-9c8d-548fa1298626",
+                "usageItemGroupId": "1aaeac35-cdc3-4adb-a741-5fa4816619ad"
               }
             ],
             "items": {
@@ -50870,26 +50882,6 @@
           }
         }
       },
-      "GroupedValue": {
-        "required": [
-          "value"
-        ],
-        "type": "object",
-        "example": {
-          "grouping": "sms",
-          "value": 25
-        },
-        "properties": {
-          "grouping": {
-            "type": "string",
-            "example": "sms"
-          },
-          "value": {
-            "type": "number",
-            "example": 25
-          }
-        }
-      },
       "ListUsageItemGroupEndpointListUsageItemGroupResponseModel": {
         "required": [
           "items"
@@ -50900,23 +50892,25 @@
             {
               "id": "1aaeac35-cdc3-4adb-a741-5fa4816619ad",
               "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
-              "title": "ACME Inc.",
+              "title": "Successful API Calls",
               "items": [
                 {
-                  "id": "0186a182-5f3f-7ff0-8227-02d4e3999149",
-                  "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
-                  "title": "Number of messages sent",
-                  "value": "100",
-                  "groupedValues": [
-                    {
-                      "grouping": "sms",
-                      "value": 25
-                    },
-                    {
-                      "grouping": "email",
-                      "value": 75
-                    }
-                  ]
+                  "id": "cf8ad70f-f79a-4803-a41f-9a0b436c865a",
+                  "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                  "title": "Eldest Child",
+                  "value": "150",
+                  "groupedValues": [],
+                  "lineItemGroupId": "f4457a3c-a0f2-44ea-9c8d-548fa1298626",
+                  "usageItemGroupId": "1aaeac35-cdc3-4adb-a741-5fa4816619ad"
+                },
+                {
+                  "id": "f00fcb1a-76ff-44d9-b8c3-b444e554cc9c",
+                  "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                  "title": "Youngest Child",
+                  "value": "300",
+                  "groupedValues": [],
+                  "lineItemGroupId": "f4457a3c-a0f2-44ea-9c8d-548fa1298626",
+                  "usageItemGroupId": "1aaeac35-cdc3-4adb-a741-5fa4816619ad"
                 }
               ]
             }
@@ -50930,23 +50924,25 @@
               {
                 "id": "1aaeac35-cdc3-4adb-a741-5fa4816619ad",
                 "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
-                "title": "ACME Inc.",
+                "title": "Successful API Calls",
                 "items": [
                   {
-                    "id": "0186a182-5f3f-7ff0-8227-02d4e3999149",
-                    "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
-                    "title": "Number of messages sent",
-                    "value": "100",
-                    "groupedValues": [
-                      {
-                        "grouping": "sms",
-                        "value": 25
-                      },
-                      {
-                        "grouping": "email",
-                        "value": 75
-                      }
-                    ]
+                    "id": "cf8ad70f-f79a-4803-a41f-9a0b436c865a",
+                    "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                    "title": "Eldest Child",
+                    "value": "150",
+                    "groupedValues": [],
+                    "lineItemGroupId": "f4457a3c-a0f2-44ea-9c8d-548fa1298626",
+                    "usageItemGroupId": "1aaeac35-cdc3-4adb-a741-5fa4816619ad"
+                  },
+                  {
+                    "id": "f00fcb1a-76ff-44d9-b8c3-b444e554cc9c",
+                    "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                    "title": "Youngest Child",
+                    "value": "300",
+                    "groupedValues": [],
+                    "lineItemGroupId": "f4457a3c-a0f2-44ea-9c8d-548fa1298626",
+                    "usageItemGroupId": "1aaeac35-cdc3-4adb-a741-5fa4816619ad"
                   }
                 ]
               }
@@ -51007,6 +51003,26 @@
             "items": {
               "$ref": "#/components/schemas/UsageItem"
             }
+          }
+        }
+      },
+      "GroupedValue": {
+        "required": [
+          "value"
+        ],
+        "type": "object",
+        "example": {
+          "grouping": "sms",
+          "value": 25
+        },
+        "properties": {
+          "grouping": {
+            "type": "string",
+            "example": "sms"
+          },
+          "value": {
+            "type": "number",
+            "example": 25
           }
         }
       },
