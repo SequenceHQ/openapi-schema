@@ -14460,6 +14460,100 @@
       "parameters": []
     },
     "/customer-aliases/{id}": {
+      "put": {
+        "tags": [],
+        "summary": "Update a Customer Alias",
+        "description": "Update a Customer Alias",
+        "operationId": "putCustomerAliasesById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Unique ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCustomerAliasEndpointUpdateCustomerAliasRequestModel",
+                "example": {
+                  "label": "CRM ID"
+                }
+              },
+              "examples": {
+                "UpdateCustomerAliasEndpointUpdateCustomerAliasRequestModel": {
+                  "summary": "",
+                  "value": {
+                    "label": "CRM ID"
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UpdateCustomerAliasEndpointProductUpdateCustomerAliasResponseModel",
+                  "example": {
+                    "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
+                    "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+                    "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
+                    "value": "external-customer-alias-123",
+                    "createdAt": "2022-10-01T00:00:00Z",
+                    "deletedAt": "2022-10-01T00:00:00Z",
+                    "label": "CRM ID"
+                  }
+                },
+                "examples": {
+                  "UpdateCustomerAliasEndpointProductUpdateCustomerAliasResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
+                      "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+                      "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
+                      "value": "external-customer-alias-123",
+                      "createdAt": "2022-10-01T00:00:00Z",
+                      "deletedAt": "2022-10-01T00:00:00Z",
+                      "label": "CRM ID"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
       "delete": {
         "tags": [],
         "summary": "Delete a Customer Alias",
@@ -45910,6 +46004,74 @@
         }
       },
       "ListCustomerAliasEndpointProductListCustomerAliasResponseModel": {
+        "required": [
+          "customerId",
+          "id",
+          "sequenceAccountId",
+          "value"
+        ],
+        "type": "object",
+        "example": {
+          "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
+          "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+          "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
+          "value": "external-customer-alias-123",
+          "createdAt": "2022-10-01T00:00:00Z",
+          "deletedAt": "2022-10-01T00:00:00Z",
+          "label": "CRM ID"
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique ID",
+            "example": "01849e70-0a0f-72ca-ba07-5557dd734d43"
+          },
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Sequence Account ID",
+            "example": "ec1479a2-6ba1-421f-a7de-0853a20d17a1"
+          },
+          "customerId": {
+            "type": "string",
+            "description": "Customer ID",
+            "example": "01849e70-703e-705a-b59a-d3fd575587e0"
+          },
+          "value": {
+            "type": "string",
+            "description": "Alias value",
+            "example": "external-customer-alias-123"
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "Created At",
+            "example": "2022-10-01T00:00:00Z"
+          },
+          "deletedAt": {
+            "type": "string",
+            "description": "Deleted At",
+            "example": "2022-10-01T00:00:00Z"
+          },
+          "label": {
+            "type": "string",
+            "description": "Alias label",
+            "example": "CRM ID"
+          }
+        }
+      },
+      "UpdateCustomerAliasEndpointUpdateCustomerAliasRequestModel": {
+        "type": "object",
+        "example": {
+          "label": "CRM ID"
+        },
+        "properties": {
+          "label": {
+            "type": "string",
+            "description": "Alias label",
+            "example": "CRM ID"
+          }
+        }
+      },
+      "UpdateCustomerAliasEndpointProductUpdateCustomerAliasResponseModel": {
         "required": [
           "customerId",
           "id",
