@@ -4019,7 +4019,8 @@
                             ]
                           }
                         ],
-                        "archivedAt": "2022-06-28T16:47:00Z"
+                        "archivedAt": "2022-06-28T16:47:00Z",
+                        "rollUpBilling": false
                       }
                     ],
                     "pagination": {
@@ -4126,7 +4127,8 @@
                               ]
                             }
                           ],
-                          "archivedAt": "2022-06-28T16:47:00Z"
+                          "archivedAt": "2022-06-28T16:47:00Z",
+                          "rollUpBilling": false
                         }
                       ],
                       "pagination": {
@@ -4408,7 +4410,8 @@
                         ]
                       }
                     ],
-                    "archivedAt": "2022-06-28T16:47:00Z"
+                    "archivedAt": "2022-06-28T16:47:00Z",
+                    "rollUpBilling": true
                   }
                 },
                 "examples": {
@@ -4477,7 +4480,8 @@
                           ]
                         }
                       ],
-                      "archivedAt": "2022-06-28T16:47:00Z"
+                      "archivedAt": "2022-06-28T16:47:00Z",
+                      "rollUpBilling": true
                     }
                   }
                 }
@@ -4776,7 +4780,8 @@
                         ]
                       }
                     ],
-                    "archivedAt": "2022-06-28T16:47:00Z"
+                    "archivedAt": "2022-06-28T16:47:00Z",
+                    "rollUpBilling": false
                   }
                 },
                 "examples": {
@@ -4897,7 +4902,8 @@
                           ]
                         }
                       ],
-                      "archivedAt": "2022-06-28T16:47:00Z"
+                      "archivedAt": "2022-06-28T16:47:00Z",
+                      "rollUpBilling": false
                     }
                   }
                 }
@@ -5102,7 +5108,8 @@
                         ]
                       }
                     ],
-                    "archivedAt": "2022-06-28T16:47:00Z"
+                    "archivedAt": "2022-06-28T16:47:00Z",
+                    "rollUpBilling": true
                   }
                 },
                 "examples": {
@@ -5171,7 +5178,8 @@
                           ]
                         }
                       ],
-                      "archivedAt": "2022-06-28T16:47:00Z"
+                      "archivedAt": "2022-06-28T16:47:00Z",
+                      "rollUpBilling": true
                     }
                   }
                 }
@@ -5282,7 +5290,8 @@
                         ]
                       }
                     ],
-                    "archivedAt": "2022-06-28T16:47:00Z"
+                    "archivedAt": "2022-06-28T16:47:00Z",
+                    "rollUpBilling": true
                   }
                 },
                 "examples": {
@@ -5351,7 +5360,8 @@
                           ]
                         }
                       ],
-                      "archivedAt": "2022-06-28T16:47:00Z"
+                      "archivedAt": "2022-06-28T16:47:00Z",
+                      "rollUpBilling": true
                     }
                   }
                 }
@@ -5462,7 +5472,8 @@
                         ]
                       }
                     ],
-                    "archivedAt": "2022-06-28T16:47:00Z"
+                    "archivedAt": "2022-06-28T16:47:00Z",
+                    "rollUpBilling": true
                   }
                 },
                 "examples": {
@@ -5531,7 +5542,8 @@
                           ]
                         }
                       ],
-                      "archivedAt": "2022-06-28T16:47:00Z"
+                      "archivedAt": "2022-06-28T16:47:00Z",
+                      "rollUpBilling": true
                     }
                   }
                 }
@@ -36020,6 +36032,7 @@
           "phases",
           "priceIds",
           "prices",
+          "rollUpBilling",
           "sequenceAccountId",
           "startDate",
           "status",
@@ -36090,7 +36103,8 @@
               ]
             }
           ],
-          "archivedAt": "2022-06-28T16:47:00Z"
+          "archivedAt": "2022-06-28T16:47:00Z",
+          "rollUpBilling": true
         },
         "properties": {
           "id": {
@@ -36253,6 +36267,11 @@
             "type": "string",
             "description": "Archived at",
             "example": "2022-06-28T16:47:00Z"
+          },
+          "rollUpBilling": {
+            "type": "boolean",
+            "description": "Roll up billing",
+            "example": true
           }
         }
       },
@@ -36852,7 +36871,8 @@
                   ]
                 }
               ],
-              "archivedAt": "2022-06-28T16:47:00Z"
+              "archivedAt": "2022-06-28T16:47:00Z",
+              "rollUpBilling": false
             }
           ],
           "pagination": {
@@ -36958,7 +36978,8 @@
                     ]
                   }
                 ],
-                "archivedAt": "2022-06-28T16:47:00Z"
+                "archivedAt": "2022-06-28T16:47:00Z",
+                "rollUpBilling": false
               }
             ],
             "items": {
