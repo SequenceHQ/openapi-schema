@@ -5699,36 +5699,9 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/UsageDataResponse",
+                  "$ref": "#/components/schemas/OptionalUsageDataResponse",
                   "example": {
-                    "usageStart": "2023-02-01",
-                    "usageEnd": "2023-04-30",
-                    "metricName": "API Calls",
-                    "metricId": "27ba4761-7573-41c5-b780-2993b2c254f7",
-                    "total": "35",
-                    "usageData": [
-                      {
-                        "periodStart": "2023-02-01",
-                        "amount": "10",
-                        "cumulativeAmount": "10"
-                      },
-                      {
-                        "periodStart": "2023-03-01",
-                        "amount": "15",
-                        "cumulativeAmount": "25"
-                      },
-                      {
-                        "periodStart": "2023-04-01",
-                        "amount": "10",
-                        "cumulativeAmount": "35"
-                      }
-                    ]
-                  }
-                },
-                "examples": {
-                  "UsageDataResponse": {
-                    "summary": "",
-                    "value": {
+                    "data": {
                       "usageStart": "2023-02-01",
                       "usageEnd": "2023-04-30",
                       "metricName": "API Calls",
@@ -5751,6 +5724,37 @@
                           "cumulativeAmount": "35"
                         }
                       ]
+                    }
+                  }
+                },
+                "examples": {
+                  "OptionalUsageDataResponse": {
+                    "summary": "",
+                    "value": {
+                      "data": {
+                        "usageStart": "2023-02-01",
+                        "usageEnd": "2023-04-30",
+                        "metricName": "API Calls",
+                        "metricId": "27ba4761-7573-41c5-b780-2993b2c254f7",
+                        "total": "35",
+                        "usageData": [
+                          {
+                            "periodStart": "2023-02-01",
+                            "amount": "10",
+                            "cumulativeAmount": "10"
+                          },
+                          {
+                            "periodStart": "2023-03-01",
+                            "amount": "15",
+                            "cumulativeAmount": "25"
+                          },
+                          {
+                            "periodStart": "2023-04-01",
+                            "amount": "10",
+                            "cumulativeAmount": "35"
+                          }
+                        ]
+                      }
                     }
                   }
                 }
@@ -9876,36 +9880,9 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/UsageDataResponse1",
+                  "$ref": "#/components/schemas/OptionalUsageDataResponse1",
                   "example": {
-                    "usageStart": "2023-02-01",
-                    "usageEnd": "2023-04-30",
-                    "metricName": "API Calls",
-                    "metricId": "030a64dd-1d89-46a3-8043-580befdb011d",
-                    "total": "35",
-                    "usageData": [
-                      {
-                        "periodStart": "2023-02-01",
-                        "amount": "10",
-                        "cumulativeAmount": "10"
-                      },
-                      {
-                        "periodStart": "2023-03-01",
-                        "amount": "15",
-                        "cumulativeAmount": "25"
-                      },
-                      {
-                        "periodStart": "2023-04-01",
-                        "amount": "10",
-                        "cumulativeAmount": "35"
-                      }
-                    ]
-                  }
-                },
-                "examples": {
-                  "UsageDataResponse": {
-                    "summary": "",
-                    "value": {
+                    "data": {
                       "usageStart": "2023-02-01",
                       "usageEnd": "2023-04-30",
                       "metricName": "API Calls",
@@ -9928,6 +9905,37 @@
                           "cumulativeAmount": "35"
                         }
                       ]
+                    }
+                  }
+                },
+                "examples": {
+                  "OptionalUsageDataResponse": {
+                    "summary": "",
+                    "value": {
+                      "data": {
+                        "usageStart": "2023-02-01",
+                        "usageEnd": "2023-04-30",
+                        "metricName": "API Calls",
+                        "metricId": "030a64dd-1d89-46a3-8043-580befdb011d",
+                        "total": "35",
+                        "usageData": [
+                          {
+                            "periodStart": "2023-02-01",
+                            "amount": "10",
+                            "cumulativeAmount": "10"
+                          },
+                          {
+                            "periodStart": "2023-03-01",
+                            "amount": "15",
+                            "cumulativeAmount": "25"
+                          },
+                          {
+                            "periodStart": "2023-04-01",
+                            "amount": "10",
+                            "cumulativeAmount": "35"
+                          }
+                        ]
+                      }
                     }
                   }
                 }
@@ -37493,6 +37501,40 @@
           "ALL"
         ]
       },
+      "OptionalUsageDataResponse": {
+        "type": "object",
+        "example": {
+          "data": {
+            "usageStart": "2023-02-01",
+            "usageEnd": "2023-04-30",
+            "metricName": "API Calls",
+            "metricId": "27ba4761-7573-41c5-b780-2993b2c254f7",
+            "total": "35",
+            "usageData": [
+              {
+                "periodStart": "2023-02-01",
+                "amount": "10",
+                "cumulativeAmount": "10"
+              },
+              {
+                "periodStart": "2023-03-01",
+                "amount": "15",
+                "cumulativeAmount": "25"
+              },
+              {
+                "periodStart": "2023-04-01",
+                "amount": "10",
+                "cumulativeAmount": "35"
+              }
+            ]
+          }
+        },
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/UsageDataResponse"
+          }
+        }
+      },
       "UsageDataResponse": {
         "required": [
           "metricId",
@@ -37660,40 +37702,6 @@
           "customerId": {
             "type": "string",
             "example": "cf747d34-9497-42a8-8b28-d65523fbbadf"
-          }
-        }
-      },
-      "OptionalUsageDataResponse": {
-        "type": "object",
-        "example": {
-          "data": {
-            "usageStart": "2023-02-01",
-            "usageEnd": "2023-04-30",
-            "metricName": "API Calls",
-            "metricId": "27ba4761-7573-41c5-b780-2993b2c254f7",
-            "total": "35",
-            "usageData": [
-              {
-                "periodStart": "2023-02-01",
-                "amount": "10",
-                "cumulativeAmount": "10"
-              },
-              {
-                "periodStart": "2023-03-01",
-                "amount": "15",
-                "cumulativeAmount": "25"
-              },
-              {
-                "periodStart": "2023-04-01",
-                "amount": "10",
-                "cumulativeAmount": "35"
-              }
-            ]
-          }
-        },
-        "properties": {
-          "data": {
-            "$ref": "#/components/schemas/UsageDataResponse"
           }
         }
       },
@@ -42029,6 +42037,40 @@
           }
         }
       },
+      "OptionalUsageDataResponse1": {
+        "type": "object",
+        "example": {
+          "data": {
+            "usageStart": "2023-02-01",
+            "usageEnd": "2023-04-30",
+            "metricName": "API Calls",
+            "metricId": "030a64dd-1d89-46a3-8043-580befdb011d",
+            "total": "35",
+            "usageData": [
+              {
+                "periodStart": "2023-02-01",
+                "amount": "10",
+                "cumulativeAmount": "10"
+              },
+              {
+                "periodStart": "2023-03-01",
+                "amount": "15",
+                "cumulativeAmount": "25"
+              },
+              {
+                "periodStart": "2023-04-01",
+                "amount": "10",
+                "cumulativeAmount": "35"
+              }
+            ]
+          }
+        },
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/UsageDataResponse1"
+          }
+        }
+      },
       "UsageDataResponse1": {
         "required": [
           "metricId",
@@ -42170,40 +42212,6 @@
           "customerId": {
             "type": "string",
             "example": "cf747d34-9497-42a8-8b28-d65523fbbadf"
-          }
-        }
-      },
-      "OptionalUsageDataResponse1": {
-        "type": "object",
-        "example": {
-          "data": {
-            "usageStart": "2023-02-01",
-            "usageEnd": "2023-04-30",
-            "metricName": "API Calls",
-            "metricId": "030a64dd-1d89-46a3-8043-580befdb011d",
-            "total": "35",
-            "usageData": [
-              {
-                "periodStart": "2023-02-01",
-                "amount": "10",
-                "cumulativeAmount": "10"
-              },
-              {
-                "periodStart": "2023-03-01",
-                "amount": "15",
-                "cumulativeAmount": "25"
-              },
-              {
-                "periodStart": "2023-04-01",
-                "amount": "10",
-                "cumulativeAmount": "35"
-              }
-            ]
-          }
-        },
-        "properties": {
-          "data": {
-            "$ref": "#/components/schemas/UsageDataResponse1"
           }
         }
       },
