@@ -10574,6 +10574,160 @@
       "servers": [],
       "parameters": []
     },
+    "/custom-usage-metrics/{id}": {
+      "put": {
+        "tags": [],
+        "summary": "Update a custom usage metric",
+        "description": "Update a custom usage metric",
+        "operationId": "putCustomUsageMetricsById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Usage Metric ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCustomUsageMetricRequest",
+                "example": {
+                  "name": "Total length of sent messages.",
+                  "description": "Total length of sent messages.",
+                  "expression": "MAX(0, 1)",
+                  "unit": "bytes",
+                  "parameters": [
+                    {
+                      "id": "f8bff40b-02be-43a6-b483-38b54f664116",
+                      "name": "ratio",
+                      "type": "POSITIVE_INTEGER",
+                      "description": "Ratio of A to B",
+                      "defaultValue": "10"
+                    }
+                  ]
+                }
+              },
+              "examples": {
+                "UpdateCustomUsageMetricRequest": {
+                  "summary": "",
+                  "value": {
+                    "name": "Total length of sent messages.",
+                    "description": "Total length of sent messages.",
+                    "expression": "MAX(0, 1)",
+                    "unit": "bytes",
+                    "parameters": [
+                      {
+                        "id": "f8bff40b-02be-43a6-b483-38b54f664116",
+                        "name": "ratio",
+                        "type": "POSITIVE_INTEGER",
+                        "description": "Ratio of A to B",
+                        "defaultValue": "10"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UsageMetric",
+                  "example": {
+                    "id": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                    "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+                    "name": "Total length of sent messages.",
+                    "description": "Total length of sent messages.",
+                    "metricType": "SIMPLE",
+                    "eventType": "N/A",
+                    "aggregationType": "CUSTOM",
+                    "unit": "bytes",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "deletedAt": "2022-06-28T16:47:00Z",
+                    "propertyFilters": {},
+                    "caseSensitive": false,
+                    "propertiesToNegate": [],
+                    "parameters": [
+                      {
+                        "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                        "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                        "name": "ratio",
+                        "type": "POSITIVE_INTEGER",
+                        "description": "Ratio of A to B",
+                        "defaultValue": "10"
+                      }
+                    ]
+                  }
+                },
+                "examples": {
+                  "UsageMetric": {
+                    "summary": "",
+                    "value": {
+                      "id": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                      "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
+                      "name": "Total length of sent messages.",
+                      "description": "Total length of sent messages.",
+                      "metricType": "SIMPLE",
+                      "eventType": "N/A",
+                      "aggregationType": "CUSTOM",
+                      "unit": "bytes",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "deletedAt": "2022-06-28T16:47:00Z",
+                      "propertyFilters": {},
+                      "caseSensitive": false,
+                      "propertiesToNegate": [],
+                      "parameters": [
+                        {
+                          "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                          "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
+                          "name": "ratio",
+                          "type": "POSITIVE_INTEGER",
+                          "description": "Ratio of A to B",
+                          "defaultValue": "10"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/usage-metrics/{id}": {
       "get": {
         "tags": [],
@@ -42597,6 +42751,106 @@
             "items": {
               "$ref": "#/components/schemas/CustomMetricParameter"
             }
+          }
+        }
+      },
+      "UpdateCustomUsageMetricRequest": {
+        "required": [
+          "description",
+          "expression",
+          "name",
+          "parameters",
+          "unit"
+        ],
+        "type": "object",
+        "example": {
+          "name": "Total length of sent messages.",
+          "description": "Total length of sent messages.",
+          "expression": "MAX(0, 1)",
+          "unit": "bytes",
+          "parameters": [
+            {
+              "id": "f8bff40b-02be-43a6-b483-38b54f664116",
+              "name": "ratio",
+              "type": "POSITIVE_INTEGER",
+              "description": "Ratio of A to B",
+              "defaultValue": "10"
+            }
+          ]
+        },
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Human-readable name for this metric, which should be unique",
+            "example": "Total length of sent messages."
+          },
+          "description": {
+            "type": "string",
+            "description": "Description for this metric",
+            "example": "Total length of sent messages."
+          },
+          "expression": {
+            "type": "string",
+            "description": "Expression to use for calculation",
+            "example": "MAX(0, 1)"
+          },
+          "unit": {
+            "type": "string",
+            "description": "Human-readable unit of the aggregated metric, eg. API calls)",
+            "example": "bytes"
+          },
+          "parameters": {
+            "type": "array",
+            "description": "Required parameters",
+            "example": [
+              {
+                "id": "f8bff40b-02be-43a6-b483-38b54f664116",
+                "name": "ratio",
+                "type": "POSITIVE_INTEGER",
+                "description": "Ratio of A to B",
+                "defaultValue": "10"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/UpdateCustomMetricParameterRequest"
+            }
+          }
+        }
+      },
+      "UpdateCustomMetricParameterRequest": {
+        "required": [
+          "defaultValue",
+          "description",
+          "name",
+          "type"
+        ],
+        "type": "object",
+        "example": {
+          "id": "f8bff40b-02be-43a6-b483-38b54f664116",
+          "name": "ratio",
+          "type": "POSITIVE_INTEGER",
+          "description": "Ratio of A to B",
+          "defaultValue": "10"
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": "f8bff40b-02be-43a6-b483-38b54f664116"
+          },
+          "name": {
+            "type": "string",
+            "example": "ratio"
+          },
+          "type": {
+            "$ref": "#/components/schemas/CustomParameterType"
+          },
+          "description": {
+            "type": "string",
+            "example": "Ratio of A to B"
+          },
+          "defaultValue": {
+            "type": "string",
+            "example": "10"
           }
         }
       },
