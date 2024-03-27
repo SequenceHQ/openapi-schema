@@ -21339,7 +21339,9 @@
                             "grouping": "email",
                             "value": 75
                           }
-                        ]
+                        ],
+                        "lineItemGroupId": "941272d1-f840-4e16-b698-0cd455c81e0e",
+                        "usageItemGroupId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9"
                       }
                     ]
                   }
@@ -21363,7 +21365,9 @@
                               "grouping": "email",
                               "value": 75
                             }
-                          ]
+                          ],
+                          "lineItemGroupId": "941272d1-f840-4e16-b698-0cd455c81e0e",
+                          "usageItemGroupId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9"
                         }
                       ]
                     }
@@ -51023,7 +51027,9 @@
               "grouping": "email",
               "value": 75
             }
-          ]
+          ],
+          "lineItemGroupId": "941272d1-f840-4e16-b698-0cd455c81e0e",
+          "usageItemGroupId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9"
         },
         "properties": {
           "id": {
@@ -51062,6 +51068,16 @@
             "items": {
               "$ref": "#/components/schemas/GroupedValue"
             }
+          },
+          "lineItemGroupId": {
+            "type": "string",
+            "description": "Line Item Group ID",
+            "example": "941272d1-f840-4e16-b698-0cd455c81e0e"
+          },
+          "usageItemGroupId": {
+            "type": "string",
+            "description": "Usage Item Group ID",
+            "example": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9"
           }
         }
       },
@@ -51157,7 +51173,9 @@
                   "grouping": "email",
                   "value": 75
                 }
-              ]
+              ],
+              "lineItemGroupId": "941272d1-f840-4e16-b698-0cd455c81e0e",
+              "usageItemGroupId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9"
             }
           ]
         },
@@ -51180,7 +51198,9 @@
                     "grouping": "email",
                     "value": 75
                   }
-                ]
+                ],
+                "lineItemGroupId": "941272d1-f840-4e16-b698-0cd455c81e0e",
+                "usageItemGroupId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9"
               }
             ],
             "items": {
