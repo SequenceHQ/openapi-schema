@@ -20449,10 +20449,12 @@
                         "customerId": "4ecc7384-e25e-459d-b811-fb5f3ae73923",
                         "legalName": "Saas Corp",
                         "total": "600",
+                        "netTotal": "400",
                         "monthDetails": [
                           {
                             "month": "2023-09-01",
                             "total": "300",
+                            "netTotal": "200",
                             "invoiceIds": [
                               "b78f0591-afcc-43bc-851f-2288aa25b07b"
                             ]
@@ -20460,6 +20462,7 @@
                           {
                             "month": "2023-10-01",
                             "total": "300",
+                            "netTotal": "200",
                             "invoiceIds": [
                               "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8"
                             ]
@@ -20470,10 +20473,12 @@
                         "customerId": "a0bc49b1-8e9a-4995-af73-5db2f9bd494b",
                         "legalName": "Hermanos Cafeteros Inc.",
                         "total": "600",
+                        "netTotal": "400",
                         "monthDetails": [
                           {
                             "month": "2023-09-01",
                             "total": "300",
+                            "netTotal": "200",
                             "invoiceIds": [
                               "12e4c680-a33d-4440-b01b-6e259e0a51d4"
                             ]
@@ -20481,6 +20486,7 @@
                           {
                             "month": "2023-10-01",
                             "total": "300",
+                            "netTotal": "200",
                             "invoiceIds": [
                               "c82c7f82-2d76-49b4-832b-c9bb1969a5c6",
                               "1b4d180d-ae8d-413c-9a97-08a7a85a2980"
@@ -20490,10 +20496,12 @@
                       }
                     ],
                     "accountTotal": "1200",
+                    "accountNetTotal": "800",
                     "monthDetails": [
                       {
                         "month": "2023-09-01",
                         "total": "600",
+                        "netTotal": "400",
                         "invoiceIds": [
                           "b78f0591-afcc-43bc-851f-2288aa25b07b",
                           "12e4c680-a33d-4440-b01b-6e259e0a51d4"
@@ -20502,6 +20510,7 @@
                       {
                         "month": "2023-10-01",
                         "total": "600",
+                        "netTotal": "400",
                         "invoiceIds": [
                           "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8",
                           "c82c7f82-2d76-49b4-832b-c9bb1969a5c6",
@@ -20521,10 +20530,12 @@
                           "customerId": "4ecc7384-e25e-459d-b811-fb5f3ae73923",
                           "legalName": "Saas Corp",
                           "total": "600",
+                          "netTotal": "400",
                           "monthDetails": [
                             {
                               "month": "2023-09-01",
                               "total": "300",
+                              "netTotal": "200",
                               "invoiceIds": [
                                 "b78f0591-afcc-43bc-851f-2288aa25b07b"
                               ]
@@ -20532,6 +20543,7 @@
                             {
                               "month": "2023-10-01",
                               "total": "300",
+                              "netTotal": "200",
                               "invoiceIds": [
                                 "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8"
                               ]
@@ -20542,10 +20554,12 @@
                           "customerId": "a0bc49b1-8e9a-4995-af73-5db2f9bd494b",
                           "legalName": "Hermanos Cafeteros Inc.",
                           "total": "600",
+                          "netTotal": "400",
                           "monthDetails": [
                             {
                               "month": "2023-09-01",
                               "total": "300",
+                              "netTotal": "200",
                               "invoiceIds": [
                                 "12e4c680-a33d-4440-b01b-6e259e0a51d4"
                               ]
@@ -20553,6 +20567,7 @@
                             {
                               "month": "2023-10-01",
                               "total": "300",
+                              "netTotal": "200",
                               "invoiceIds": [
                                 "c82c7f82-2d76-49b4-832b-c9bb1969a5c6",
                                 "1b4d180d-ae8d-413c-9a97-08a7a85a2980"
@@ -20562,10 +20577,12 @@
                         }
                       ],
                       "accountTotal": "1200",
+                      "accountNetTotal": "800",
                       "monthDetails": [
                         {
                           "month": "2023-09-01",
                           "total": "600",
+                          "netTotal": "400",
                           "invoiceIds": [
                             "b78f0591-afcc-43bc-851f-2288aa25b07b",
                             "12e4c680-a33d-4440-b01b-6e259e0a51d4"
@@ -20574,6 +20591,7 @@
                         {
                           "month": "2023-10-01",
                           "total": "600",
+                          "netTotal": "400",
                           "invoiceIds": [
                             "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8",
                             "c82c7f82-2d76-49b4-832b-c9bb1969a5c6",
@@ -20586,6 +20604,45 @@
                 }
               }
             }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
+    "/invoices/invoices-grid-csv": {
+      "get": {
+        "tags": [],
+        "summary": "Download invoices grid CSV",
+        "description": "Download invoices grid CSV",
+        "operationId": "getInvoicesInvoicesGridCsv",
+        "parameters": [
+          {
+            "name": "invoiceCurrency",
+            "in": "query",
+            "description": "Get invoices grid for a specific currency (cannot mix currencies)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {}
           },
           "400": {
             "description": "Bad Request",
@@ -49978,6 +50035,7 @@
       },
       "InvoicesGrid": {
         "required": [
+          "accountNetTotal",
           "accountTotal",
           "customerDetails",
           "monthDetails",
@@ -49991,10 +50049,12 @@
               "customerId": "4ecc7384-e25e-459d-b811-fb5f3ae73923",
               "legalName": "Saas Corp",
               "total": "600",
+              "netTotal": "400",
               "monthDetails": [
                 {
                   "month": "2023-09-01",
                   "total": "300",
+                  "netTotal": "200",
                   "invoiceIds": [
                     "b78f0591-afcc-43bc-851f-2288aa25b07b"
                   ]
@@ -50002,6 +50062,7 @@
                 {
                   "month": "2023-10-01",
                   "total": "300",
+                  "netTotal": "200",
                   "invoiceIds": [
                     "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8"
                   ]
@@ -50012,10 +50073,12 @@
               "customerId": "a0bc49b1-8e9a-4995-af73-5db2f9bd494b",
               "legalName": "Hermanos Cafeteros Inc.",
               "total": "600",
+              "netTotal": "400",
               "monthDetails": [
                 {
                   "month": "2023-09-01",
                   "total": "300",
+                  "netTotal": "200",
                   "invoiceIds": [
                     "12e4c680-a33d-4440-b01b-6e259e0a51d4"
                   ]
@@ -50023,6 +50086,7 @@
                 {
                   "month": "2023-10-01",
                   "total": "300",
+                  "netTotal": "200",
                   "invoiceIds": [
                     "c82c7f82-2d76-49b4-832b-c9bb1969a5c6",
                     "1b4d180d-ae8d-413c-9a97-08a7a85a2980"
@@ -50032,10 +50096,12 @@
             }
           ],
           "accountTotal": "1200",
+          "accountNetTotal": "800",
           "monthDetails": [
             {
               "month": "2023-09-01",
               "total": "600",
+              "netTotal": "400",
               "invoiceIds": [
                 "b78f0591-afcc-43bc-851f-2288aa25b07b",
                 "12e4c680-a33d-4440-b01b-6e259e0a51d4"
@@ -50044,6 +50110,7 @@
             {
               "month": "2023-10-01",
               "total": "600",
+              "netTotal": "400",
               "invoiceIds": [
                 "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8",
                 "c82c7f82-2d76-49b4-832b-c9bb1969a5c6",
@@ -50066,10 +50133,12 @@
                 "customerId": "4ecc7384-e25e-459d-b811-fb5f3ae73923",
                 "legalName": "Saas Corp",
                 "total": "600",
+                "netTotal": "400",
                 "monthDetails": [
                   {
                     "month": "2023-09-01",
                     "total": "300",
+                    "netTotal": "200",
                     "invoiceIds": [
                       "b78f0591-afcc-43bc-851f-2288aa25b07b"
                     ]
@@ -50077,6 +50146,7 @@
                   {
                     "month": "2023-10-01",
                     "total": "300",
+                    "netTotal": "200",
                     "invoiceIds": [
                       "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8"
                     ]
@@ -50087,10 +50157,12 @@
                 "customerId": "a0bc49b1-8e9a-4995-af73-5db2f9bd494b",
                 "legalName": "Hermanos Cafeteros Inc.",
                 "total": "600",
+                "netTotal": "400",
                 "monthDetails": [
                   {
                     "month": "2023-09-01",
                     "total": "300",
+                    "netTotal": "200",
                     "invoiceIds": [
                       "12e4c680-a33d-4440-b01b-6e259e0a51d4"
                     ]
@@ -50098,6 +50170,7 @@
                   {
                     "month": "2023-10-01",
                     "total": "300",
+                    "netTotal": "200",
                     "invoiceIds": [
                       "c82c7f82-2d76-49b4-832b-c9bb1969a5c6",
                       "1b4d180d-ae8d-413c-9a97-08a7a85a2980"
@@ -50115,6 +50188,11 @@
             "description": "The gross total across all invoices for this sequence account and currency",
             "example": "1200"
           },
+          "accountNetTotal": {
+            "type": "string",
+            "description": "The net total across all invoices for this sequence account and currency",
+            "example": "800"
+          },
           "monthDetails": {
             "type": "array",
             "description": "Breakdown of totals by month",
@@ -50122,6 +50200,7 @@
               {
                 "month": "2023-09-01",
                 "total": "600",
+                "netTotal": "400",
                 "invoiceIds": [
                   "b78f0591-afcc-43bc-851f-2288aa25b07b",
                   "12e4c680-a33d-4440-b01b-6e259e0a51d4"
@@ -50130,6 +50209,7 @@
               {
                 "month": "2023-10-01",
                 "total": "600",
+                "netTotal": "400",
                 "invoiceIds": [
                   "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8",
                   "c82c7f82-2d76-49b4-832b-c9bb1969a5c6",
@@ -50148,6 +50228,7 @@
           "customerId",
           "legalName",
           "monthDetails",
+          "netTotal",
           "total"
         ],
         "type": "object",
@@ -50155,10 +50236,12 @@
           "customerId": "4ecc7384-e25e-459d-b811-fb5f3ae73923",
           "legalName": "Saas Corp",
           "total": "600",
+          "netTotal": "400",
           "monthDetails": [
             {
               "month": "2023-09-01",
               "total": "300",
+              "netTotal": "200",
               "invoiceIds": [
                 "b78f0591-afcc-43bc-851f-2288aa25b07b"
               ]
@@ -50166,6 +50249,7 @@
             {
               "month": "2023-10-01",
               "total": "300",
+              "netTotal": "200",
               "invoiceIds": [
                 "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8"
               ]
@@ -50185,8 +50269,13 @@
           },
           "total": {
             "type": "string",
-            "description": "Total of all invoices for customer",
+            "description": "Gross total of all invoices for customer",
             "example": "600"
+          },
+          "netTotal": {
+            "type": "string",
+            "description": "Net total of all invoices for customer",
+            "example": "400"
           },
           "monthDetails": {
             "type": "array",
@@ -50195,6 +50284,7 @@
               {
                 "month": "2023-09-01",
                 "total": "300",
+                "netTotal": "200",
                 "invoiceIds": [
                   "b78f0591-afcc-43bc-851f-2288aa25b07b"
                 ]
@@ -50202,6 +50292,7 @@
               {
                 "month": "2023-10-01",
                 "total": "300",
+                "netTotal": "200",
                 "invoiceIds": [
                   "227b8ff9-42ad-47f8-bfa5-9e5760d4d5d8"
                 ]
@@ -50217,12 +50308,14 @@
         "required": [
           "invoiceIds",
           "month",
+          "netTotal",
           "total"
         ],
         "type": "object",
         "example": {
           "month": "2023-09-01",
           "total": "300",
+          "netTotal": "200",
           "invoiceIds": [
             "b78f0591-afcc-43bc-851f-2288aa25b07b"
           ]
@@ -50236,8 +50329,13 @@
           },
           "total": {
             "type": "string",
-            "description": "Total of all invoices for month",
+            "description": "Gross total of all invoices for month",
             "example": "300"
+          },
+          "netTotal": {
+            "type": "string",
+            "description": "Net total of all invoices for month",
+            "example": "200"
           },
           "invoiceIds": {
             "type": "array",
