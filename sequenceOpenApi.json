@@ -23216,6 +23216,54 @@
       "servers": [],
       "parameters": []
     },
+    "/payment-options-fix-launch": {
+      "post": {
+        "tags": [],
+        "summary": "Launch payment options data fix",
+        "description": "Launch payment options data fix",
+        "operationId": "postPaymentOptionsFixLaunch",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "On-Behalf-Of",
+            "in": "header",
+            "description": "The Sequence account that this request is made on behalf of.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {}
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/credit-notes/{id}/line-items/from-invoice": {
       "post": {
         "tags": [],
