@@ -57063,14 +57063,15 @@
         "properties": {
           "preference": {
             "description": "Invoice Accounting Date Preference",
-            "$ref": "#/components/schemas/InvoiceAccountingDatePreference"
+            "$ref": "#/components/schemas/InvoiceAccountingDateSettingsPreference"
           }
         }
       },
-      "InvoiceAccountingDatePreference": {
+      "InvoiceAccountingDateSettingsPreference": {
         "type": "string",
         "example": "INVOICE_ISSUE_DATE",
         "enum": [
+          "END_OF_BILLING_PERIOD",
           "INTENDED_INVOICE_CREATION_DATE",
           "INVOICE_ISSUE_DATE"
         ]
@@ -57100,7 +57101,7 @@
           },
           "preference": {
             "description": "Invoice Accounting Date Preference",
-            "$ref": "#/components/schemas/InvoiceAccountingDatePreference"
+            "$ref": "#/components/schemas/InvoiceAccountingDateSettingsPreference"
           }
         }
       },
@@ -57129,7 +57130,7 @@
           },
           "preference": {
             "description": "Invoice Accounting Date Preference",
-            "$ref": "#/components/schemas/InvoiceAccountingDatePreference"
+            "$ref": "#/components/schemas/InvoiceAccountingDateSettingsPreference"
           }
         }
       },
@@ -57158,7 +57159,7 @@
           },
           "preference": {
             "description": "Invoice Accounting Date Preference",
-            "$ref": "#/components/schemas/InvoiceAccountingDatePreference"
+            "$ref": "#/components/schemas/InvoiceAccountingDateSettingsPreference"
           }
         }
       },
@@ -57173,7 +57174,7 @@
         "properties": {
           "preference": {
             "description": "Invoice Accounting Date Preference",
-            "$ref": "#/components/schemas/InvoiceAccountingDatePreference"
+            "$ref": "#/components/schemas/InvoiceAccountingDateSettingsPreference"
           }
         }
       },
@@ -57202,7 +57203,7 @@
           },
           "preference": {
             "description": "Invoice Accounting Date Preference",
-            "$ref": "#/components/schemas/InvoiceAccountingDatePreference"
+            "$ref": "#/components/schemas/InvoiceAccountingDateSettingsPreference"
           }
         }
       },
