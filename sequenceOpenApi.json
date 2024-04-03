@@ -11016,7 +11016,8 @@
                         "eventProperties": {
                           "length": 500,
                           "type": "text_message"
-                        }
+                        },
+                        "isLatestForCustomerEventId": true
                       }
                     ],
                     "pagination": {
@@ -11041,7 +11042,8 @@
                           "eventProperties": {
                             "length": 500,
                             "type": "text_message"
-                          }
+                          },
+                          "isLatestForCustomerEventId": true
                         }
                       ],
                       "pagination": {
@@ -11247,7 +11249,8 @@
                       "eventProperties": {
                         "length": 500,
                         "type": "text_message"
-                      }
+                      },
+                      "isLatestForCustomerEventId": true
                     },
                     "instantCharges": []
                   }
@@ -11266,7 +11269,8 @@
                         "eventProperties": {
                           "length": 500,
                           "type": "text_message"
-                        }
+                        },
+                        "isLatestForCustomerEventId": true
                       },
                       "instantCharges": []
                     }
@@ -41911,7 +41915,8 @@
             "eventProperties": {
               "length": 500,
               "type": "text_message"
-            }
+            },
+            "isLatestForCustomerEventId": true
           },
           "instantCharges": []
         },
@@ -41936,6 +41941,7 @@
           "eventTimestamp",
           "eventType",
           "id",
+          "isLatestForCustomerEventId",
           "sequenceAccountId"
         ],
         "type": "object",
@@ -41949,7 +41955,8 @@
           "eventProperties": {
             "length": 500,
             "type": "text_message"
-          }
+          },
+          "isLatestForCustomerEventId": true
         },
         "properties": {
           "id": {
@@ -41979,6 +41986,10 @@
           "eventProperties": {
             "type": "object",
             "additionalProperties": {}
+          },
+          "isLatestForCustomerEventId": {
+            "type": "boolean",
+            "example": true
           }
         }
       },
@@ -42162,7 +42173,8 @@
               "eventProperties": {
                 "length": 500,
                 "type": "text_message"
-              }
+              },
+              "isLatestForCustomerEventId": true
             }
           ],
           "pagination": {
@@ -42186,7 +42198,8 @@
                 "eventProperties": {
                   "length": 500,
                   "type": "text_message"
-                }
+                },
+                "isLatestForCustomerEventId": true
               }
             ],
             "items": {
