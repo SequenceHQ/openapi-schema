@@ -12870,6 +12870,15 @@
             "schema": {
               "type": "boolean"
             }
+          },
+          {
+            "name": "customerAliases",
+            "in": "query",
+            "description": "Filter seat balances by customer alias",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
