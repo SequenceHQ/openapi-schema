@@ -20650,6 +20650,24 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "startDate",
+            "in": "query",
+            "description": "Start date (inclusive)",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "endDate",
+            "in": "query",
+            "description": "End date (inclusive)",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
