@@ -9676,6 +9676,30 @@
       "servers": [],
       "parameters": []
     },
+    "/usage-events/event-sinks/alloy-db": {
+      "post": {
+        "tags": [],
+        "summary": "Alloy DB Event sink",
+        "description": "Writes incoming events to AlloyDB",
+        "operationId": "postUsageEventsEventSinksAlloyDb",
+        "responses": {
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/usage-metrics/{id}/usage-data": {
       "post": {
         "tags": [],
