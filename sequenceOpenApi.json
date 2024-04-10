@@ -23400,6 +23400,72 @@
       "servers": [],
       "parameters": []
     },
+    "/credit-notes/credit-notes-csv": {
+      "get": {
+        "tags": [],
+        "summary": "Download credit notes CSV",
+        "description": "Download credit notes CSV",
+        "operationId": "getCreditNotesCreditNotesCsv",
+        "parameters": [
+          {
+            "name": "creditNoteStatus",
+            "in": "query",
+            "description": "Filter by credit note status. Options: DRAFT, FINAL, SENT, VOIDED",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "customerId",
+            "in": "query",
+            "description": "Filter by customer id.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sentBefore",
+            "in": "query",
+            "description": "Filter by sent date before. Format: yyyy-MM-dd",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sentAfter",
+            "in": "query",
+            "description": "Filter by sent date after. Format: yyyy-MM-dd",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {}
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/credit-notes/{id}/line-items/from-invoice": {
       "post": {
         "tags": [],
@@ -23689,7 +23755,43 @@
           {
             "name": "sortBy",
             "in": "query",
-            "description": "Sort column. Default: creation time.",
+            "description": "Sort column. Default: creation time. Options: GROSS_TOTAL, CREDIT_NOTE_NUMBER, STATUS",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "creditNoteStatus",
+            "in": "query",
+            "description": "Filter by credit note status. Options: DRAFT, FINAL, SENT, VOIDED",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "customerId",
+            "in": "query",
+            "description": "Filter by customer id.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sentBefore",
+            "in": "query",
+            "description": "Filter by sent date before. Format: yyyy-MM-dd",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sentAfter",
+            "in": "query",
+            "description": "Filter by sent date after. Format: yyyy-MM-dd",
             "required": false,
             "schema": {
               "type": "string"
