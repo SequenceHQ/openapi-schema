@@ -20724,21 +20724,102 @@
         "operationId": "getInvoicesInvoicesCsv",
         "parameters": [
           {
-            "name": "startDate",
+            "name": "invoiceStatus",
             "in": "query",
-            "description": "Start date (inclusive)",
+            "description": "Filter by invoice status. Options: IN_PROGRESS, DRAFT, FINAL, SENT, VOIDED",
             "required": false,
             "schema": {
               "type": "string"
             }
           },
           {
-            "name": "endDate",
+            "name": "invoicePaymentStatus",
             "in": "query",
-            "description": "End date (inclusive)",
+            "description": "Filter by payment status. Options: UNPAID, PARTIALLY_PAID, PAID, UNCOLLECTIBLE",
             "required": false,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "customerId",
+            "in": "query",
+            "description": "Filter by customer id.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "billingScheduleId",
+            "in": "query",
+            "description": "Filter by billing schedule id.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "dueBefore",
+            "in": "query",
+            "description": "Filter by due date before. Format: yyyy-MM-dd",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "dueAfter",
+            "in": "query",
+            "description": "Filter by due date after. Format: yyyy-MM-dd",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sentBefore",
+            "in": "query",
+            "description": "Filter by sent date before. Format: yyyy-MM-dd",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sentAfter",
+            "in": "query",
+            "description": "Filter by sent date after. Format: yyyy-MM-dd",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "invoiceBefore",
+            "in": "query",
+            "description": "Filter by invoice date before. Format: yyyy-MM-dd",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "invoiceAfter",
+            "in": "query",
+            "description": "Filter by invoice date after. Format: yyyy-MM-dd",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "excludeZeroQuantity",
+            "in": "query",
+            "description": "Exclude invoices with zero quantity.",
+            "required": false,
+            "schema": {
+              "type": "boolean"
             }
           }
         ],
