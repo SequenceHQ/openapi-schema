@@ -6925,6 +6925,68 @@
       "servers": [],
       "parameters": []
     },
+    "/insights/customer-totals": {
+      "get": {
+        "tags": [],
+        "summary": "Get customer totals",
+        "description": "Get customer totals by active billing schedules",
+        "operationId": "getInsightsCustomerTotals",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetTotalCustomersResponseModel",
+                  "example": {
+                    "total": 4,
+                    "numCustomersWithActiveSchedule": 2,
+                    "numCustomersNoLongerBilled": 1,
+                    "numCustomersNeverBilled": 1
+                  }
+                },
+                "examples": {
+                  "GetTotalCustomersResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "total": 4,
+                      "numCustomersWithActiveSchedule": 2,
+                      "numCustomersNoLongerBilled": 1,
+                      "numCustomersNeverBilled": 1
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/tax-rates": {
       "get": {
         "tags": [],
@@ -37024,6 +37086,43 @@
           "BANK_TRANSFER",
           "LINK"
         ]
+      },
+      "GetTotalCustomersResponseModel": {
+        "required": [
+          "numCustomersNeverBilled",
+          "numCustomersNoLongerBilled",
+          "numCustomersWithActiveSchedule",
+          "total"
+        ],
+        "type": "object",
+        "example": {
+          "total": 4,
+          "numCustomersWithActiveSchedule": 2,
+          "numCustomersNoLongerBilled": 1,
+          "numCustomersNeverBilled": 1
+        },
+        "properties": {
+          "total": {
+            "type": "integer",
+            "description": "Total number of customers",
+            "example": 4
+          },
+          "numCustomersWithActiveSchedule": {
+            "type": "integer",
+            "description": "Number of customers with an active billing schedule",
+            "example": 2
+          },
+          "numCustomersNoLongerBilled": {
+            "type": "integer",
+            "description": "Number of customers who are no longer billed",
+            "example": 1
+          },
+          "numCustomersNeverBilled": {
+            "type": "integer",
+            "description": "Number of customers who have never been billed",
+            "example": 1
+          }
+        }
       },
       "ONE_TIME": {
         "properties": {
