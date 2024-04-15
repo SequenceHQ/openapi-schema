@@ -38525,6 +38525,7 @@
       },
       "CustomerAlias": {
         "required": [
+          "createdAt",
           "customerId",
           "id",
           "sequenceAccountId",
@@ -38568,6 +38569,7 @@
       },
       "DeleteCustomerAliasEndpointProductDeleteCustomerAliasResponseModel": {
         "required": [
+          "createdAt",
           "customerId",
           "id",
           "sequenceAccountId",
@@ -38665,6 +38667,7 @@
       },
       "CreateCustomerAliasEndpointProductCreateCustomerAliasResponseModel": {
         "required": [
+          "createdAt",
           "customerId",
           "id",
           "sequenceAccountId",
@@ -38769,6 +38772,7 @@
       },
       "ListCustomerAliasEndpointProductListCustomerAliasResponseModel": {
         "required": [
+          "createdAt",
           "customerId",
           "id",
           "sequenceAccountId",
@@ -38837,6 +38841,7 @@
       },
       "UpdateCustomerAliasEndpointProductUpdateCustomerAliasResponseModel": {
         "required": [
+          "createdAt",
           "customerId",
           "id",
           "sequenceAccountId",
