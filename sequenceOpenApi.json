@@ -4640,7 +4640,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/UsageMetricCalculation",
+                  "$ref": "#/components/schemas/UsageMetricCalculationResponse",
                   "example": {
                     "name": "total_messages_sent",
                     "metricType": "GROUPED",
@@ -4654,7 +4654,7 @@
                   }
                 },
                 "examples": {
-                  "UsageMetricCalculation": {
+                  "UsageMetricCalculationResponse": {
                     "summary": "",
                     "value": {
                       "name": "total_messages_sent",
@@ -4748,7 +4748,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/UsageMetricCalculation",
+                  "$ref": "#/components/schemas/UsageMetricCalculationResponse",
                   "example": {
                     "name": "total_messages_sent",
                     "metricType": "GROUPED",
@@ -4762,7 +4762,7 @@
                   }
                 },
                 "examples": {
-                  "UsageMetricCalculation": {
+                  "UsageMetricCalculationResponse": {
                     "summary": "",
                     "value": {
                       "name": "total_messages_sent",
@@ -4911,6 +4911,109 @@
                     "value": {
                       "items": [
                         "transactions"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
+    "/insights/usage-events": {
+      "get": {
+        "tags": [],
+        "summary": "Get usage events",
+        "description": "Get usage events by event type",
+        "operationId": "getInsightsUsageEvents",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "eventType",
+            "in": "query",
+            "description": "Filter by event type",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "dateFrom",
+            "in": "query",
+            "description": "Start date (inclusive)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "dateTo",
+            "in": "query",
+            "description": "End date (inclusive)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetUsageEventsInsightsResponseModel",
+                  "example": {
+                    "totalEventCount": 5,
+                    "eventsByDay": [
+                      {
+                        "eventCount": 3,
+                        "date": "2024-01-01"
+                      },
+                      {
+                        "eventCount": 2,
+                        "date": "2024-01-02"
+                      }
+                    ]
+                  }
+                },
+                "examples": {
+                  "GetUsageEventsInsightsResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "totalEventCount": 5,
+                      "eventsByDay": [
+                        {
+                          "eventCount": 3,
+                          "date": "2024-01-01"
+                        },
+                        {
+                          "eventCount": 2,
+                          "date": "2024-01-02"
+                        }
                       ]
                     }
                   }
@@ -35598,7 +35701,7 @@
           }
         }
       },
-      "UsageMetricCalculation": {
+      "UsageMetricCalculationResponse": {
         "required": [
           "aggregationType",
           "eventCount",
@@ -35699,6 +35802,74 @@
             "items": {
               "type": "string"
             }
+          }
+        }
+      },
+      "GetUsageEventsInsightsResponseModel": {
+        "required": [
+          "eventsByDay",
+          "totalEventCount"
+        ],
+        "type": "object",
+        "example": {
+          "totalEventCount": 5,
+          "eventsByDay": [
+            {
+              "eventCount": 3,
+              "date": "2024-01-01"
+            },
+            {
+              "eventCount": 2,
+              "date": "2024-01-02"
+            }
+          ]
+        },
+        "properties": {
+          "totalEventCount": {
+            "type": "integer",
+            "description": "Total event count",
+            "example": 5
+          },
+          "eventsByDay": {
+            "type": "array",
+            "description": "Events by day",
+            "example": [
+              {
+                "eventCount": 3,
+                "date": "2024-01-01"
+              },
+              {
+                "eventCount": 2,
+                "date": "2024-01-02"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/UsageEventsByDay"
+            }
+          }
+        }
+      },
+      "UsageEventsByDay": {
+        "required": [
+          "date",
+          "eventCount"
+        ],
+        "type": "object",
+        "example": {
+          "eventCount": 3,
+          "date": "2024-01-01"
+        },
+        "properties": {
+          "eventCount": {
+            "type": "integer",
+            "description": "Count of events on this day",
+            "example": 3
+          },
+          "date": {
+            "type": "string",
+            "description": "Date",
+            "format": "date",
+            "example": "2024-01-01"
           }
         }
       },
