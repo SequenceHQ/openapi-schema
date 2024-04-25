@@ -29351,7 +29351,7 @@
           {
             "name": "dateTo",
             "in": "query",
-            "description": "End date (inclusive) - must be the last day of the given month",
+            "description": "End date (inclusive)",
             "required": true,
             "schema": {
               "type": "string"
