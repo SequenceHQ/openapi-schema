@@ -4087,6 +4087,15 @@
             }
           },
           {
+            "name": "unmappedAliasesOnly",
+            "in": "query",
+            "description": "Include unmapped aliases only",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
             "name": "eventType",
             "in": "query",
             "description": "Filter events by type",
