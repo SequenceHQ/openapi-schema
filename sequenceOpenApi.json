@@ -29101,6 +29101,15 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "currency",
+            "in": "query",
+            "description": "Filter by currency",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -29187,6 +29196,33 @@
             "name": "Authorization",
             "in": "header",
             "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "currency",
+            "in": "query",
+            "description": "Filter by currency",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "dateFrom",
+            "in": "query",
+            "description": "Start date (inclusive) - must be the first day of the given month",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "dateTo",
+            "in": "query",
+            "description": "End date (inclusive) - must be the last day of the given month",
             "required": true,
             "schema": {
               "type": "string"
