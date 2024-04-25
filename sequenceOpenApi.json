@@ -5047,6 +5047,135 @@
       "servers": [],
       "parameters": []
     },
+    "/insights/usage-metrics/{usageMetricId}/usage-data": {
+      "get": {
+        "tags": [],
+        "summary": "Get usage metric usage data",
+        "description": "Get usage data insights by usage metric",
+        "operationId": "getInsightsUsageMetricsByUsageMetricIdUsageData",
+        "parameters": [
+          {
+            "name": "usageMetricId",
+            "in": "path",
+            "description": "Usage Metric ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "dateFrom",
+            "in": "query",
+            "description": "Start date (inclusive)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "dateTo",
+            "in": "query",
+            "description": "End date (inclusive)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OptionalUsageDataResponse",
+                  "example": {
+                    "data": {
+                      "usageStart": "2024-01-01",
+                      "usageEnd": "2024-01-03",
+                      "metricName": "API Calls",
+                      "metricId": "030a64dd-1d89-46a3-8043-580befdb011d",
+                      "total": "35",
+                      "usageData": [
+                        {
+                          "periodStart": "2024-01-01",
+                          "amount": "10",
+                          "cumulativeAmount": "10"
+                        },
+                        {
+                          "periodStart": "2024-01-02",
+                          "amount": "15",
+                          "cumulativeAmount": "25"
+                        },
+                        {
+                          "periodStart": "2024-01-03",
+                          "amount": "10",
+                          "cumulativeAmount": "35"
+                        }
+                      ]
+                    }
+                  }
+                },
+                "examples": {
+                  "OptionalUsageDataResponse": {
+                    "summary": "",
+                    "value": {
+                      "data": {
+                        "usageStart": "2024-01-01",
+                        "usageEnd": "2024-01-03",
+                        "metricName": "API Calls",
+                        "metricId": "030a64dd-1d89-46a3-8043-580befdb011d",
+                        "total": "35",
+                        "usageData": [
+                          {
+                            "periodStart": "2024-01-01",
+                            "amount": "10",
+                            "cumulativeAmount": "10"
+                          },
+                          {
+                            "periodStart": "2024-01-02",
+                            "amount": "15",
+                            "cumulativeAmount": "25"
+                          },
+                          {
+                            "periodStart": "2024-01-03",
+                            "amount": "10",
+                            "cumulativeAmount": "35"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/seat-snapshots": {
       "get": {
         "tags": [],
@@ -34002,24 +34131,24 @@
         "type": "object",
         "example": {
           "data": {
-            "usageStart": "2023-02-01",
-            "usageEnd": "2023-04-30",
+            "usageStart": "2024-01-01",
+            "usageEnd": "2024-01-03",
             "metricName": "API Calls",
             "metricId": "030a64dd-1d89-46a3-8043-580befdb011d",
             "total": "35",
             "usageData": [
               {
-                "periodStart": "2023-02-01",
+                "periodStart": "2024-01-01",
                 "amount": "10",
                 "cumulativeAmount": "10"
               },
               {
-                "periodStart": "2023-03-01",
+                "periodStart": "2024-01-02",
                 "amount": "15",
                 "cumulativeAmount": "25"
               },
               {
-                "periodStart": "2023-04-01",
+                "periodStart": "2024-01-03",
                 "amount": "10",
                 "cumulativeAmount": "35"
               }
@@ -34043,24 +34172,24 @@
         ],
         "type": "object",
         "example": {
-          "usageStart": "2023-02-01",
-          "usageEnd": "2023-04-30",
+          "usageStart": "2024-01-01",
+          "usageEnd": "2024-01-03",
           "metricName": "API Calls",
           "metricId": "030a64dd-1d89-46a3-8043-580befdb011d",
           "total": "35",
           "usageData": [
             {
-              "periodStart": "2023-02-01",
+              "periodStart": "2024-01-01",
               "amount": "10",
               "cumulativeAmount": "10"
             },
             {
-              "periodStart": "2023-03-01",
+              "periodStart": "2024-01-02",
               "amount": "15",
               "cumulativeAmount": "25"
             },
             {
-              "periodStart": "2023-04-01",
+              "periodStart": "2024-01-03",
               "amount": "10",
               "cumulativeAmount": "35"
             }
@@ -34071,13 +34200,13 @@
             "type": "string",
             "description": "Usage start",
             "format": "date",
-            "example": "2023-02-01"
+            "example": "2024-01-01"
           },
           "usageEnd": {
             "type": "string",
             "description": "Usage end",
             "format": "date",
-            "example": "2023-04-30"
+            "example": "2024-01-03"
           },
           "metricName": {
             "type": "string",
@@ -34099,17 +34228,17 @@
             "description": "Usage data",
             "example": [
               {
-                "periodStart": "2023-02-01",
+                "periodStart": "2024-01-01",
                 "amount": "10",
                 "cumulativeAmount": "10"
               },
               {
-                "periodStart": "2023-03-01",
+                "periodStart": "2024-01-02",
                 "amount": "15",
                 "cumulativeAmount": "25"
               },
               {
-                "periodStart": "2023-04-01",
+                "periodStart": "2024-01-03",
                 "amount": "10",
                 "cumulativeAmount": "35"
               }
@@ -34128,7 +34257,7 @@
         ],
         "type": "object",
         "example": {
-          "periodStart": "2023-02-01",
+          "periodStart": "2024-01-01",
           "amount": "10",
           "cumulativeAmount": "10"
         },
@@ -34137,7 +34266,7 @@
             "type": "string",
             "description": "Usage period start",
             "format": "date",
-            "example": "2023-02-01"
+            "example": "2024-01-01"
           },
           "amount": {
             "type": "string",
@@ -44907,8 +45036,39 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/UsageData"
+              "$ref": "#/components/schemas/UsageData1"
             }
+          }
+        }
+      },
+      "UsageData1": {
+        "required": [
+          "amount",
+          "cumulativeAmount",
+          "periodStart"
+        ],
+        "type": "object",
+        "example": {
+          "periodStart": "2023-02-01",
+          "amount": "10",
+          "cumulativeAmount": "10"
+        },
+        "properties": {
+          "periodStart": {
+            "type": "string",
+            "description": "Usage period start",
+            "format": "date",
+            "example": "2023-02-01"
+          },
+          "amount": {
+            "type": "string",
+            "description": "Usage amount",
+            "example": "10"
+          },
+          "cumulativeAmount": {
+            "type": "string",
+            "description": "Cumulative usage amount (summing all previous data points)",
+            "example": "10"
           }
         }
       },
@@ -50024,8 +50184,39 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/UsageData"
+              "$ref": "#/components/schemas/UsageData2"
             }
+          }
+        }
+      },
+      "UsageData2": {
+        "required": [
+          "amount",
+          "cumulativeAmount",
+          "periodStart"
+        ],
+        "type": "object",
+        "example": {
+          "periodStart": "2023-02-01",
+          "amount": "10",
+          "cumulativeAmount": "10"
+        },
+        "properties": {
+          "periodStart": {
+            "type": "string",
+            "description": "Usage period start",
+            "format": "date",
+            "example": "2023-02-01"
+          },
+          "amount": {
+            "type": "string",
+            "description": "Usage amount",
+            "example": "10"
+          },
+          "cumulativeAmount": {
+            "type": "string",
+            "description": "Cumulative usage amount (summing all previous data points)",
+            "example": "10"
           }
         }
       },
