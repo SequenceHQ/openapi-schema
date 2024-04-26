@@ -23708,7 +23708,38 @@
         "responses": {
           "200": {
             "description": "OK",
-            "content": {}
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BulkAction",
+                  "example": {
+                    "id": "e007e884-5100-4183-8355-4771865cb4dd",
+                    "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
+                    "type": "VOID_INVOICES",
+                    "status": "PROCESSING",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "requestedIds": [],
+                    "completedIds": [],
+                    "failedIds": []
+                  }
+                },
+                "examples": {
+                  "BulkAction": {
+                    "summary": "",
+                    "value": {
+                      "id": "e007e884-5100-4183-8355-4771865cb4dd",
+                      "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
+                      "type": "VOID_INVOICES",
+                      "status": "PROCESSING",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "requestedIds": [],
+                      "completedIds": [],
+                      "failedIds": []
+                    }
+                  }
+                }
+              }
+            }
           },
           "400": {
             "description": "Bad Request",
@@ -52711,6 +52742,93 @@
             }
           }
         }
+      },
+      "BulkAction": {
+        "required": [
+          "completedIds",
+          "createdAt",
+          "failedIds",
+          "id",
+          "requestedIds",
+          "sequenceAccountId",
+          "status",
+          "type"
+        ],
+        "type": "object",
+        "example": {
+          "id": "e007e884-5100-4183-8355-4771865cb4dd",
+          "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
+          "type": "VOID_INVOICES",
+          "status": "PROCESSING",
+          "createdAt": "2022-06-28T16:47:00Z",
+          "requestedIds": [],
+          "completedIds": [],
+          "failedIds": []
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Bulk Action ID",
+            "example": "e007e884-5100-4183-8355-4771865cb4dd"
+          },
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Sequence Account ID",
+            "example": "1986c663-9ee9-4811-bfbf-57d2ad666096"
+          },
+          "type": {
+            "description": "Bulk Action Type",
+            "$ref": "#/components/schemas/BulkActionType"
+          },
+          "status": {
+            "description": "Bulk Action Status",
+            "$ref": "#/components/schemas/BulkActionStatus"
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "Created at",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "requestedIds": {
+            "type": "array",
+            "description": "Requested IDs",
+            "example": [],
+            "items": {}
+          },
+          "completedIds": {
+            "type": "array",
+            "description": "Completed IDs",
+            "example": [],
+            "items": {}
+          },
+          "failedIds": {
+            "type": "array",
+            "description": "Failed IDs",
+            "example": [],
+            "items": {}
+          }
+        }
+      },
+      "BulkActionType": {
+        "type": "string",
+        "example": "VOID_INVOICES",
+        "enum": [
+          "VOID_INVOICES",
+          "RECALCULATE_INVOICES",
+          "DOWNLOAD_INVOICES",
+          "FINALISE_INVOICES",
+          "SEND_INVOICES",
+          "UPDATE_INVOICES_STATUS"
+        ]
+      },
+      "BulkActionStatus": {
+        "type": "string",
+        "example": "PROCESSING",
+        "enum": [
+          "PROCESSING",
+          "PARTIALLY_FAILED",
+          "COMPLETED"
+        ]
       },
       "AddCreditNoteLineItemsFromInvoiceEndpointRequestModel": {
         "required": [
