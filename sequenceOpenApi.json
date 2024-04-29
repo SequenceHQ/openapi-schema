@@ -32056,7 +32056,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -32169,6 +32168,7 @@
       },
       "PaginationMeta": {
         "type": "object",
+        "description": "Results pagination",
         "example": {
           "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
           "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
@@ -32251,7 +32251,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationResponse"
           }
         }
@@ -32364,6 +32363,7 @@
       },
       "PaginationResponse": {
         "type": "object",
+        "description": "Results pagination",
         "example": {
           "after": "ZTMwOWU5NDgtMDg4ZS00ZDc3LWI2NTQtY2Q4NTQ5OGYxNTU1IzE2NTgyNjA4NTYwMzMwMTMjREVTQw==",
           "before": "NjRlZjJmZjktMmJjYi00M2RiLWI0ZDUtOTAxMDU4MjRiMTdmIzE2NTgyNjA3NTk3NTE2ODEjQVND",
@@ -32912,7 +32912,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationResponse"
           }
         }
@@ -33153,7 +33152,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -33634,7 +33632,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationResponse"
           }
         }
@@ -34038,7 +34035,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -35616,7 +35612,6 @@
         },
         "properties": {
           "usageEvent": {
-            "description": "usageEvent",
             "$ref": "#/components/schemas/UsageEvent"
           },
           "instantCharges": {
@@ -35844,7 +35839,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -35901,7 +35895,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -36381,7 +36374,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -36498,7 +36490,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -36756,7 +36747,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -36988,7 +36978,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -37097,7 +37086,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -37348,7 +37336,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -37429,7 +37416,6 @@
             "example": "John Doe"
           },
           "address": {
-            "description": "Address",
             "$ref": "#/components/schemas/Address"
           },
           "email": {
@@ -37500,6 +37486,7 @@
           "town"
         ],
         "type": "object",
+        "description": "Address",
         "example": {
           "line1": "Flat 1",
           "line2": "123 Fake Street",
@@ -38015,7 +38002,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -38077,7 +38063,6 @@
             "example": "John Doe"
           },
           "address": {
-            "description": "Address",
             "$ref": "#/components/schemas/Address"
           },
           "email": {
@@ -38212,7 +38197,6 @@
         },
         "properties": {
           "customer": {
-            "description": "Customer",
             "$ref": "#/components/schemas/Customer"
           }
         }
@@ -38274,7 +38258,6 @@
             "example": "John Doe"
           },
           "address": {
-            "description": "Address",
             "$ref": "#/components/schemas/Address"
           },
           "email": {
@@ -38620,7 +38603,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -39096,7 +39078,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -39212,7 +39193,6 @@
             "$ref": "#/components/schemas/Currency"
           },
           "structure": {
-            "description": "The item pricing structure",
             "oneOf": [
               {
                 "$ref": "#/components/schemas/ONE_TIME"
@@ -39318,6 +39298,7 @@
           "usageMetricId"
         ],
         "type": "object",
+        "description": "The item pricing structure",
         "example": {
           "pricingType": "LINEAR",
           "pricePerUnit": "0.25",
@@ -39488,7 +39469,6 @@
             "$ref": "#/components/schemas/Currency"
           },
           "structure": {
-            "description": "The item pricing structure",
             "oneOf": [
               {
                 "$ref": "#/components/schemas/ONE_TIME"
@@ -39635,7 +39615,6 @@
             "$ref": "#/components/schemas/Currency"
           },
           "structure": {
-            "description": "The item pricing structure",
             "oneOf": [
               {
                 "$ref": "#/components/schemas/ONE_TIME"
@@ -39798,7 +39777,6 @@
             "$ref": "#/components/schemas/Currency"
           },
           "structure": {
-            "description": "The item pricing structure",
             "oneOf": [
               {
                 "$ref": "#/components/schemas/ONE_TIME"
@@ -39959,7 +39937,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -40030,7 +40007,6 @@
             "$ref": "#/components/schemas/Currency"
           },
           "structure": {
-            "description": "The item pricing structure",
             "oneOf": [
               {
                 "$ref": "#/components/schemas/ONE_TIME"
@@ -40175,7 +40151,6 @@
             "$ref": "#/components/schemas/Currency"
           },
           "structure": {
-            "description": "The item pricing structure",
             "oneOf": [
               {
                 "$ref": "#/components/schemas/ONE_TIME"
@@ -40795,7 +40770,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -41056,7 +41030,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -41366,7 +41339,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -41534,7 +41506,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -42080,7 +42051,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -42711,7 +42681,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -44255,6 +44224,7 @@
           "version"
         ],
         "type": "object",
+        "description": "Active version",
         "example": {
           "id": "499f5dde-9735-4f6f-9ca8-337071e562ee",
           "version": 1,
@@ -44292,7 +44262,6 @@
             "example": 1
           },
           "validityPeriod": {
-            "description": "Validity period",
             "$ref": "#/components/schemas/DateRange"
           },
           "startDate": {
@@ -44369,6 +44338,7 @@
           "startDate"
         ],
         "type": "object",
+        "description": "Billing Period",
         "example": {
           "startDate": "2023-01-01",
           "endDate": "2023-01-31"
@@ -44602,7 +44572,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -45234,7 +45203,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -45359,7 +45327,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -45495,11 +45462,9 @@
             "example": "PO123"
           },
           "customer": {
-            "description": "Customer",
             "$ref": "#/components/schemas/CurrentPeriodInvoicePreviewEndpointCustomer"
           },
           "billingPeriod": {
-            "description": "Billing Period",
             "$ref": "#/components/schemas/DateRange"
           },
           "lineItems": {
@@ -45562,6 +45527,7 @@
           "id"
         ],
         "type": "object",
+        "description": "Customer",
         "example": {
           "id": "cca32597-b6b0-4499-9669-128aef8702e4",
           "taxId": "123"
@@ -46120,6 +46086,7 @@
           "legalCompanyName"
         ],
         "type": "object",
+        "description": "Merchant details",
         "example": {
           "address": {
             "line1": "The White House",
@@ -46202,7 +46169,6 @@
         },
         "properties": {
           "address": {
-            "description": "Merchant's address",
             "$ref": "#/components/schemas/Address1"
           },
           "phoneNumber": {
@@ -46226,23 +46192,18 @@
             "example": "GB33BUKB20201555555555"
           },
           "ukAccountDetails": {
-            "description": "Merchant's UK bank account details, for receiving payment by UK bank transfer",
             "$ref": "#/components/schemas/SortCodeAccountNumber"
           },
           "usAchDetails": {
-            "description": "Merchant's US account details, for receiving payment by ACH",
             "$ref": "#/components/schemas/UsAchDestination"
           },
           "usWireDetails": {
-            "description": "Merchant's US account details, for receiving payment by wire transfer",
             "$ref": "#/components/schemas/UsWireDestination"
           },
           "caBankAccountDetails": {
-            "description": "Merchant's Canadian account details, for receiving payment by Canadian bank transfer",
             "$ref": "#/components/schemas/CanadianBankAccountDestination"
           },
           "canadianInternationalDestination": {
-            "description": "Merchant's account details, for receiving payment to a Canadian bank via Wire transfer",
             "$ref": "#/components/schemas/CanadianInternationalDestination"
           },
           "logoUrl": {
@@ -46288,6 +46249,7 @@
           "town"
         ],
         "type": "object",
+        "description": "Customer's billing address",
         "example": {
           "line1": "Flat 1",
           "line2": "15 Yemen Road",
@@ -46589,6 +46551,7 @@
           "sortCode"
         ],
         "type": "object",
+        "description": "Merchant's UK bank account details, for receiving payment by UK bank transfer",
         "example": {
           "sortCode": "000000",
           "accountNumber": "12345678"
@@ -46614,6 +46577,7 @@
           "bankRoutingNumber"
         ],
         "type": "object",
+        "description": "Merchant's US account details, for receiving payment by ACH",
         "example": {
           "accountNumber": "12345678",
           "accountName": "John Doe",
@@ -46649,6 +46613,7 @@
           "swiftCode"
         ],
         "type": "object",
+        "description": "Merchant's US account details, for receiving payment by wire transfer",
         "example": {
           "accountNumber": "12345678",
           "accountName": "John Doe",
@@ -46829,7 +46794,6 @@
             "example": "The Merchant"
           },
           "address": {
-            "description": "Address",
             "$ref": "#/components/schemas/Address1"
           },
           "phoneNumber": {
@@ -47107,23 +47071,18 @@
             "example": "GB33BUKB20201555555555"
           },
           "ukBankAccount": {
-            "description": "UK bank account details.",
             "$ref": "#/components/schemas/SortCodeAccountNumber"
           },
           "usAchDestination": {
-            "description": "US Automated Clearing House (ACH) Payment Details",
             "$ref": "#/components/schemas/UsAchDestination"
           },
           "usWireDestination": {
-            "description": "US Wire Payment Details",
             "$ref": "#/components/schemas/UsWireDestination"
           },
           "canadianBankAccount": {
-            "description": "Canadian bank account details.",
             "$ref": "#/components/schemas/CanadianBankAccountDestination"
           },
           "canadianInternationalDestination": {
-            "description": "Canadian USD Wire account details.",
             "$ref": "#/components/schemas/CanadianInternationalDestination"
           }
         }
@@ -47147,6 +47106,7 @@
           "transitNumber"
         ],
         "type": "object",
+        "description": "Merchant's Canadian account details, for receiving payment by Canadian bank transfer",
         "example": {
           "transitNumber": "123",
           "institutionNumber": "12345",
@@ -47178,6 +47138,7 @@
           "transitNumber"
         ],
         "type": "object",
+        "description": "Merchant's account details, for receiving payment to a Canadian bank via Wire transfer",
         "example": {
           "legalName": "John Doe",
           "accountNumber": "12345678",
@@ -47385,7 +47346,6 @@
             "example": "The company"
           },
           "address": {
-            "description": "Address",
             "$ref": "#/components/schemas/Address1"
           },
           "phoneNumber": {
@@ -47626,7 +47586,6 @@
             "example": "The company"
           },
           "address": {
-            "description": "Address",
             "$ref": "#/components/schemas/Address1"
           },
           "phoneNumber": {
@@ -47918,7 +47877,6 @@
             "example": "2022-10-24T00:00:00Z"
           },
           "servicePeriod": {
-            "description": "Service Period",
             "$ref": "#/components/schemas/DateRange1"
           },
           "index": {
@@ -47985,6 +47943,7 @@
           "startDate"
         ],
         "type": "object",
+        "description": "Service Period",
         "example": {
           "startDate": "2022-10-20",
           "endDate": "2022-10-24"
@@ -48067,7 +48026,6 @@
         },
         "properties": {
           "total": {
-            "description": "Invoice total",
             "$ref": "#/components/schemas/Total"
           },
           "lineItemTotals": {
@@ -48113,6 +48071,7 @@
           "totalTax"
         ],
         "type": "object",
+        "description": "Credit Note total",
         "example": {
           "netTotal": "200000",
           "totalTax": "10",
@@ -48157,7 +48116,6 @@
             "example": "af60cab3-812d-4250-a051-0fb7133a00c7"
           },
           "total": {
-            "description": "Total",
             "$ref": "#/components/schemas/Total"
           }
         }
@@ -48183,7 +48141,6 @@
             "example": "941272d1-f840-4e16-b698-0cd455c81e0e"
           },
           "total": {
-            "description": "Total",
             "$ref": "#/components/schemas/Total"
           }
         }
@@ -48282,11 +48239,9 @@
             "example": "Facebook"
           },
           "customerBillingAddress": {
-            "description": "Customer's billing address",
             "$ref": "#/components/schemas/Address1"
           },
           "customerShippingAddress": {
-            "description": "Customer's shipping address",
             "$ref": "#/components/schemas/Address1"
           },
           "memo": {
@@ -48305,7 +48260,6 @@
             }
           },
           "billingPeriod": {
-            "description": "Billing period",
             "$ref": "#/components/schemas/InclusiveDateRange"
           },
           "customerId": {
@@ -48350,6 +48304,7 @@
           "start"
         ],
         "type": "object",
+        "description": "Billing period",
         "example": {
           "start": "2022-10-01",
           "endInclusive": "2022-10-30"
@@ -48628,11 +48583,9 @@
             "example": "Facebook"
           },
           "customerBillingAddress": {
-            "description": "Customer's billing address",
             "$ref": "#/components/schemas/Address1"
           },
           "customerShippingAddress": {
-            "description": "Customer's shipping address",
             "$ref": "#/components/schemas/Address1"
           },
           "memo": {
@@ -48651,7 +48604,6 @@
             }
           },
           "billingPeriod": {
-            "description": "Billing period",
             "$ref": "#/components/schemas/InclusiveDateRange"
           },
           "customerId": {
@@ -48726,7 +48678,6 @@
             }
           },
           "merchantDetails": {
-            "description": "Merchant details",
             "$ref": "#/components/schemas/InvoiceMerchantDetails"
           },
           "creditBalances": {
@@ -48882,7 +48833,6 @@
             "example": "2022-10-24T00:00:00Z"
           },
           "servicePeriod": {
-            "description": "Service Period",
             "$ref": "#/components/schemas/DateRange1"
           },
           "priceId": {
@@ -49233,11 +49183,9 @@
             "example": "Facebook"
           },
           "customerBillingAddress": {
-            "description": "Customer's billing address",
             "$ref": "#/components/schemas/Address1"
           },
           "customerShippingAddress": {
-            "description": "Customer's shipping address",
             "$ref": "#/components/schemas/Address1"
           },
           "memo": {
@@ -49256,7 +49204,6 @@
             }
           },
           "billingPeriod": {
-            "description": "Billing period",
             "$ref": "#/components/schemas/InclusiveDateRange"
           },
           "customerId": {
@@ -49331,7 +49278,6 @@
             }
           },
           "merchantDetails": {
-            "description": "Merchant details",
             "$ref": "#/components/schemas/InvoiceMerchantDetails"
           },
           "creditBalances": {
@@ -49628,11 +49574,9 @@
             "example": "Facebook"
           },
           "customerBillingAddress": {
-            "description": "Customer's billing address",
             "$ref": "#/components/schemas/Address1"
           },
           "customerShippingAddress": {
-            "description": "Customer's shipping address",
             "$ref": "#/components/schemas/Address1"
           },
           "memo": {
@@ -49651,7 +49595,6 @@
             }
           },
           "billingPeriod": {
-            "description": "Billing period",
             "$ref": "#/components/schemas/InclusiveDateRange"
           },
           "customerId": {
@@ -49721,7 +49664,6 @@
             }
           },
           "merchantDetails": {
-            "description": "Merchant details",
             "$ref": "#/components/schemas/InvoiceMerchantDetails"
           },
           "accountingDate": {
@@ -50489,11 +50431,9 @@
             "example": "Facebook"
           },
           "customerBillingAddress": {
-            "description": "Customer's billing address",
             "$ref": "#/components/schemas/Address1"
           },
           "customerShippingAddress": {
-            "description": "Customer's shipping address",
             "$ref": "#/components/schemas/Address1"
           },
           "memo": {
@@ -50512,7 +50452,6 @@
             }
           },
           "billingPeriod": {
-            "description": "Billing period",
             "$ref": "#/components/schemas/InclusiveDateRange"
           },
           "customerId": {
@@ -50587,7 +50526,6 @@
             }
           },
           "merchantDetails": {
-            "description": "Merchant details",
             "$ref": "#/components/schemas/InvoiceMerchantDetails"
           },
           "creditBalances": {
@@ -51333,7 +51271,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -51384,7 +51321,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -51539,7 +51475,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -51622,11 +51557,9 @@
             "example": "Facebook"
           },
           "customerBillingAddress": {
-            "description": "Customer's billing address",
             "$ref": "#/components/schemas/Address1"
           },
           "customerShippingAddress": {
-            "description": "Customer's shipping address",
             "$ref": "#/components/schemas/Address1"
           },
           "memo": {
@@ -51645,7 +51578,6 @@
             }
           },
           "billingPeriod": {
-            "description": "Billing period",
             "$ref": "#/components/schemas/InclusiveDateRange"
           },
           "metadata": {
@@ -51917,11 +51849,9 @@
             "example": "Facebook"
           },
           "customerBillingAddress": {
-            "description": "Customer's billing address",
             "$ref": "#/components/schemas/Address1"
           },
           "customerShippingAddress": {
-            "description": "Customer's shipping address",
             "$ref": "#/components/schemas/Address1"
           },
           "memo": {
@@ -51940,7 +51870,6 @@
             }
           },
           "billingPeriod": {
-            "description": "Billing period",
             "$ref": "#/components/schemas/InclusiveDateRange"
           },
           "customerId": {
@@ -52015,7 +51944,6 @@
             }
           },
           "merchantDetails": {
-            "description": "Merchant details",
             "$ref": "#/components/schemas/InvoiceMerchantDetails"
           },
           "creditBalances": {
@@ -52298,11 +52226,9 @@
             "example": "Facebook"
           },
           "customerBillingAddress": {
-            "description": "Customer's billing address",
             "$ref": "#/components/schemas/Address1"
           },
           "customerShippingAddress": {
-            "description": "Customer's shipping address",
             "$ref": "#/components/schemas/Address1"
           },
           "memo": {
@@ -52321,7 +52247,6 @@
             }
           },
           "billingPeriod": {
-            "description": "Billing period",
             "$ref": "#/components/schemas/InclusiveDateRange"
           },
           "metadata": {
@@ -52593,11 +52518,9 @@
             "example": "Facebook"
           },
           "customerBillingAddress": {
-            "description": "Customer's billing address",
             "$ref": "#/components/schemas/Address1"
           },
           "customerShippingAddress": {
-            "description": "Customer's shipping address",
             "$ref": "#/components/schemas/Address1"
           },
           "memo": {
@@ -52616,7 +52539,6 @@
             }
           },
           "billingPeriod": {
-            "description": "Billing period",
             "$ref": "#/components/schemas/InclusiveDateRange"
           },
           "customerId": {
@@ -52691,7 +52613,6 @@
             }
           },
           "merchantDetails": {
-            "description": "Merchant details",
             "$ref": "#/components/schemas/InvoiceMerchantDetails"
           },
           "creditBalances": {
@@ -53055,7 +52976,6 @@
         },
         "properties": {
           "total": {
-            "description": "Credit Note total",
             "$ref": "#/components/schemas/Total"
           },
           "lineItemTotals": {
@@ -53115,7 +53035,6 @@
             "example": "941272d1-f840-4e16-b698-0cd455c81e0e"
           },
           "total": {
-            "description": "Total",
             "$ref": "#/components/schemas/Total"
           }
         }
@@ -53141,7 +53060,6 @@
             "example": "06c44e52-b8f4-4588-a2a6-001169ebf80e"
           },
           "total": {
-            "description": "Total",
             "$ref": "#/components/schemas/Total"
           }
         }
@@ -53235,11 +53153,9 @@
             "example": "Facebook"
           },
           "customerBillingAddress": {
-            "description": "Customer's billing address",
             "$ref": "#/components/schemas/Address1"
           },
           "customerShippingAddress": {
-            "description": "Customer's shipping address",
             "$ref": "#/components/schemas/Address1"
           },
           "memo": {
@@ -53500,11 +53416,9 @@
             "example": "Facebook"
           },
           "customerBillingAddress": {
-            "description": "Customer's billing address",
             "$ref": "#/components/schemas/Address1"
           },
           "customerShippingAddress": {
-            "description": "Customer's shipping address",
             "$ref": "#/components/schemas/Address1"
           },
           "memo": {
@@ -53560,7 +53474,6 @@
             }
           },
           "merchantDetails": {
-            "description": "Merchant details",
             "$ref": "#/components/schemas/InvoiceMerchantDetails"
           }
         }
@@ -54122,11 +54035,9 @@
             "example": "Facebook"
           },
           "customerBillingAddress": {
-            "description": "Customer's billing address",
             "$ref": "#/components/schemas/Address1"
           },
           "customerShippingAddress": {
-            "description": "Customer's shipping address",
             "$ref": "#/components/schemas/Address1"
           },
           "memo": {
@@ -54182,7 +54093,6 @@
             }
           },
           "merchantDetails": {
-            "description": "Merchant details",
             "$ref": "#/components/schemas/InvoiceMerchantDetails"
           }
         }
@@ -54590,11 +54500,9 @@
             "example": "Facebook"
           },
           "customerBillingAddress": {
-            "description": "Customer's billing address",
             "$ref": "#/components/schemas/Address1"
           },
           "customerShippingAddress": {
-            "description": "Customer's shipping address",
             "$ref": "#/components/schemas/Address1"
           },
           "memo": {
@@ -54638,7 +54546,6 @@
             }
           },
           "merchantDetails": {
-            "description": "Merchant details",
             "$ref": "#/components/schemas/InvoiceMerchantDetails"
           }
         }
@@ -55149,7 +55056,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -55387,11 +55293,9 @@
             "example": "Facebook"
           },
           "customerBillingAddress": {
-            "description": "Customer's billing address",
             "$ref": "#/components/schemas/Address1"
           },
           "customerShippingAddress": {
-            "description": "Customer's shipping address",
             "$ref": "#/components/schemas/Address1"
           },
           "memo": {
@@ -55447,7 +55351,6 @@
             }
           },
           "merchantDetails": {
-            "description": "Merchant details",
             "$ref": "#/components/schemas/InvoiceMerchantDetails"
           }
         }
@@ -55628,7 +55531,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationResponse"
           }
         }
@@ -55681,7 +55583,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -55828,7 +55729,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationMeta"
           }
         }
@@ -56053,11 +55953,9 @@
             "example": "Facebook"
           },
           "customerBillingAddress": {
-            "description": "Customer's billing address",
             "$ref": "#/components/schemas/Address1"
           },
           "customerShippingAddress": {
-            "description": "Customer's shipping address",
             "$ref": "#/components/schemas/Address1"
           },
           "memo": {
@@ -56318,11 +56216,9 @@
             "example": "Facebook"
           },
           "customerBillingAddress": {
-            "description": "Customer's billing address",
             "$ref": "#/components/schemas/Address1"
           },
           "customerShippingAddress": {
-            "description": "Customer's shipping address",
             "$ref": "#/components/schemas/Address1"
           },
           "memo": {
@@ -56378,7 +56274,6 @@
             }
           },
           "merchantDetails": {
-            "description": "Merchant details",
             "$ref": "#/components/schemas/InvoiceMerchantDetails"
           }
         }
@@ -56928,11 +56823,9 @@
             "example": "Facebook"
           },
           "customerBillingAddress": {
-            "description": "Customer's billing address",
             "$ref": "#/components/schemas/Address1"
           },
           "customerShippingAddress": {
-            "description": "Customer's shipping address",
             "$ref": "#/components/schemas/Address1"
           },
           "memo": {
@@ -56988,7 +56881,6 @@
             }
           },
           "merchantDetails": {
-            "description": "Merchant details",
             "$ref": "#/components/schemas/InvoiceMerchantDetails"
           }
         }
@@ -57189,19 +57081,15 @@
             "example": 4900
           },
           "outstandingNow": {
-            "description": "Invoices which are outstanding but not overdue",
             "$ref": "#/components/schemas/OutstandingInvoicesGroup"
           },
           "overdueFrom0to30days": {
-            "description": "Invoices overdue for 0-30 days inclusive",
             "$ref": "#/components/schemas/OutstandingInvoicesGroup"
           },
           "overdueFrom31to60days": {
-            "description": "Invoices overdue for 31-60 days inclusive",
             "$ref": "#/components/schemas/OutstandingInvoicesGroup"
           },
           "overdueFrom61days": {
-            "description": "Invoices overdue for more than 60 days",
             "$ref": "#/components/schemas/OutstandingInvoicesGroup"
           }
         }
@@ -57212,6 +57100,7 @@
           "numberOfInvoices"
         ],
         "type": "object",
+        "description": "Invoices which are outstanding but not overdue",
         "example": {
           "numberOfInvoices": 1,
           "amount": 1900
@@ -57441,7 +57330,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationResponse"
           }
         }
@@ -57509,7 +57397,6 @@
         },
         "properties": {
           "sequenceUser": {
-            "description": "Sequence User",
             "$ref": "#/components/schemas/SequenceUser"
           },
           "sequenceAccounts": {
@@ -57536,6 +57423,7 @@
           "id"
         ],
         "type": "object",
+        "description": "Sequence User",
         "example": {
           "id": "918af48c-9f22-4bed-8462-7df0a9772d44",
           "email": "xyz@example.com",
@@ -57668,7 +57556,6 @@
         },
         "properties": {
           "error": {
-            "description": "Top level wrapper for all errors",
             "$ref": "#/components/schemas/ErrorObject"
           }
         }
@@ -57679,6 +57566,7 @@
           "type"
         ],
         "type": "object",
+        "description": "Top level wrapper for all errors",
         "example": {
           "type": "validationError",
           "message": "Request data validation failed",
@@ -57858,7 +57746,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationResponse"
           }
         }
@@ -57973,7 +57860,6 @@
             }
           },
           "pagination": {
-            "description": "Results pagination",
             "$ref": "#/components/schemas/PaginationResponse"
           }
         }
