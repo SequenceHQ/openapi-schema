@@ -29953,7 +29953,7 @@
                     "sequenceAccountIds": [
                       "724c4f93-8606-4a38-bfbf-50a7045e4eaa"
                     ],
-                    "state": "active"
+                    "state": "deleted"
                   }
                 },
                 "examples": {
@@ -29965,7 +29965,7 @@
                       "sequenceAccountIds": [
                         "724c4f93-8606-4a38-bfbf-50a7045e4eaa"
                       ],
-                      "state": "active"
+                      "state": "deleted"
                     }
                   }
                 }
@@ -57348,7 +57348,7 @@
           "sequenceAccountIds": [
             "724c4f93-8606-4a38-bfbf-50a7045e4eaa"
           ],
-          "state": "active"
+          "state": "deleted"
         },
         "properties": {
           "id": {
@@ -57374,7 +57374,7 @@
           "state": {
             "type": "string",
             "description": "User state",
-            "example": "active"
+            "example": "deleted"
           }
         }
       },
