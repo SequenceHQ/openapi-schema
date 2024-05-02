@@ -15671,6 +15671,12 @@
                               "swiftCode": "CHASUS33",
                               "routingNumber": "123456789"
                             }
+                          },
+                          "australianDestination": {
+                            "legalName": "John Doe",
+                            "accountNumber": "12345678",
+                            "swiftCode": "CHASUS33",
+                            "bsb": "123456"
                           }
                         }
                       },
@@ -15770,6 +15776,12 @@
                                 "swiftCode": "CHASUS33",
                                 "routingNumber": "123456789"
                               }
+                            },
+                            "australianDestination": {
+                              "legalName": "John Doe",
+                              "accountNumber": "12345678",
+                              "swiftCode": "CHASUS33",
+                              "bsb": "123456"
                             }
                           }
                         },
@@ -15914,6 +15926,12 @@
                             "swiftCode": "CHASUS33",
                             "routingNumber": "123456789"
                           }
+                        },
+                        "australianDestination": {
+                          "legalName": "John Doe",
+                          "accountNumber": "12345678",
+                          "swiftCode": "CHASUS33",
+                          "bsb": "123456"
                         }
                       }
                     }
@@ -16002,6 +16020,12 @@
                               "swiftCode": "CHASUS33",
                               "routingNumber": "123456789"
                             }
+                          },
+                          "australianDestination": {
+                            "legalName": "John Doe",
+                            "accountNumber": "12345678",
+                            "swiftCode": "CHASUS33",
+                            "bsb": "123456"
                           }
                         }
                       }
@@ -16103,6 +16127,12 @@
                               "swiftCode": "CHASUS33",
                               "routingNumber": "123456789"
                             }
+                          },
+                          "australianDestination": {
+                            "legalName": "John Doe",
+                            "accountNumber": "12345678",
+                            "swiftCode": "CHASUS33",
+                            "bsb": "123456"
                           }
                         }
                       }
@@ -16196,6 +16226,12 @@
                                 "swiftCode": "CHASUS33",
                                 "routingNumber": "123456789"
                               }
+                            },
+                            "australianDestination": {
+                              "legalName": "John Doe",
+                              "accountNumber": "12345678",
+                              "swiftCode": "CHASUS33",
+                              "bsb": "123456"
                             }
                           }
                         }
@@ -17084,6 +17120,12 @@
                           "routingNumber": "123456789"
                         }
                       },
+                      "australianDestination": {
+                        "legalName": "John Doe",
+                        "accountNumber": "12345678",
+                        "swiftCode": "CHASUS33",
+                        "bsb": "123456"
+                      },
                       "logoUrl": "logo",
                       "legalCompanyName": "The Merchant",
                       "primaryColour": "#000000",
@@ -17235,6 +17277,12 @@
                             "swiftCode": "CHASUS33",
                             "routingNumber": "123456789"
                           }
+                        },
+                        "australianDestination": {
+                          "legalName": "John Doe",
+                          "accountNumber": "12345678",
+                          "swiftCode": "CHASUS33",
+                          "bsb": "123456"
                         },
                         "logoUrl": "logo",
                         "legalCompanyName": "The Merchant",
@@ -18021,6 +18069,12 @@
                           "routingNumber": "123456789"
                         }
                       },
+                      "australianDestination": {
+                        "legalName": "John Doe",
+                        "accountNumber": "12345678",
+                        "swiftCode": "CHASUS33",
+                        "bsb": "123456"
+                      },
                       "logoUrl": "logo",
                       "legalCompanyName": "The Merchant",
                       "primaryColour": "#000000",
@@ -18172,6 +18226,12 @@
                             "swiftCode": "CHASUS33",
                             "routingNumber": "123456789"
                           }
+                        },
+                        "australianDestination": {
+                          "legalName": "John Doe",
+                          "accountNumber": "12345678",
+                          "swiftCode": "CHASUS33",
+                          "bsb": "123456"
                         },
                         "logoUrl": "logo",
                         "legalCompanyName": "The Merchant",
@@ -18471,6 +18531,12 @@
                           "routingNumber": "123456789"
                         }
                       },
+                      "australianDestination": {
+                        "legalName": "John Doe",
+                        "accountNumber": "12345678",
+                        "swiftCode": "CHASUS33",
+                        "bsb": "123456"
+                      },
                       "logoUrl": "logo",
                       "legalCompanyName": "The Merchant",
                       "primaryColour": "#000000",
@@ -18622,6 +18688,12 @@
                             "swiftCode": "CHASUS33",
                             "routingNumber": "123456789"
                           }
+                        },
+                        "australianDestination": {
+                          "legalName": "John Doe",
+                          "accountNumber": "12345678",
+                          "swiftCode": "CHASUS33",
+                          "bsb": "123456"
                         },
                         "logoUrl": "logo",
                         "legalCompanyName": "The Merchant",
@@ -18822,6 +18894,12 @@
                           "routingNumber": "123456789"
                         }
                       },
+                      "australianDestination": {
+                        "legalName": "John Doe",
+                        "accountNumber": "12345678",
+                        "swiftCode": "CHASUS33",
+                        "bsb": "123456"
+                      },
                       "logoUrl": "logo",
                       "legalCompanyName": "The Merchant",
                       "primaryColour": "#000000",
@@ -18973,6 +19051,12 @@
                             "swiftCode": "CHASUS33",
                             "routingNumber": "123456789"
                           }
+                        },
+                        "australianDestination": {
+                          "legalName": "John Doe",
+                          "accountNumber": "12345678",
+                          "swiftCode": "CHASUS33",
+                          "bsb": "123456"
                         },
                         "logoUrl": "logo",
                         "legalCompanyName": "The Merchant",
@@ -19272,6 +19356,12 @@
                           "routingNumber": "123456789"
                         }
                       },
+                      "australianDestination": {
+                        "legalName": "John Doe",
+                        "accountNumber": "12345678",
+                        "swiftCode": "CHASUS33",
+                        "bsb": "123456"
+                      },
                       "logoUrl": "logo",
                       "legalCompanyName": "The Merchant",
                       "primaryColour": "#000000",
@@ -19423,6 +19513,12 @@
                             "swiftCode": "CHASUS33",
                             "routingNumber": "123456789"
                           }
+                        },
+                        "australianDestination": {
+                          "legalName": "John Doe",
+                          "accountNumber": "12345678",
+                          "swiftCode": "CHASUS33",
+                          "bsb": "123456"
                         },
                         "logoUrl": "logo",
                         "legalCompanyName": "The Merchant",
@@ -24585,6 +24681,12 @@
                           "routingNumber": "123456789"
                         }
                       },
+                      "australianDestination": {
+                        "legalName": "John Doe",
+                        "accountNumber": "12345678",
+                        "swiftCode": "CHASUS33",
+                        "bsb": "123456"
+                      },
                       "logoUrl": "logo",
                       "legalCompanyName": "The Merchant",
                       "primaryColour": "#000000",
@@ -24721,6 +24823,12 @@
                             "swiftCode": "CHASUS33",
                             "routingNumber": "123456789"
                           }
+                        },
+                        "australianDestination": {
+                          "legalName": "John Doe",
+                          "accountNumber": "12345678",
+                          "swiftCode": "CHASUS33",
+                          "bsb": "123456"
                         },
                         "logoUrl": "logo",
                         "legalCompanyName": "The Merchant",
@@ -25456,6 +25564,12 @@
                           "routingNumber": "123456789"
                         }
                       },
+                      "australianDestination": {
+                        "legalName": "John Doe",
+                        "accountNumber": "12345678",
+                        "swiftCode": "CHASUS33",
+                        "bsb": "123456"
+                      },
                       "logoUrl": "logo",
                       "legalCompanyName": "The Merchant",
                       "primaryColour": "#000000",
@@ -25592,6 +25706,12 @@
                             "swiftCode": "CHASUS33",
                             "routingNumber": "123456789"
                           }
+                        },
+                        "australianDestination": {
+                          "legalName": "John Doe",
+                          "accountNumber": "12345678",
+                          "swiftCode": "CHASUS33",
+                          "bsb": "123456"
                         },
                         "logoUrl": "logo",
                         "legalCompanyName": "The Merchant",
@@ -25858,6 +25978,12 @@
                           "routingNumber": "123456789"
                         }
                       },
+                      "australianDestination": {
+                        "legalName": "John Doe",
+                        "accountNumber": "12345678",
+                        "swiftCode": "CHASUS33",
+                        "bsb": "123456"
+                      },
                       "logoUrl": "logo",
                       "legalCompanyName": "The Merchant",
                       "primaryColour": "#000000",
@@ -25994,6 +26120,12 @@
                             "swiftCode": "CHASUS33",
                             "routingNumber": "123456789"
                           }
+                        },
+                        "australianDestination": {
+                          "legalName": "John Doe",
+                          "accountNumber": "12345678",
+                          "swiftCode": "CHASUS33",
+                          "bsb": "123456"
                         },
                         "logoUrl": "logo",
                         "legalCompanyName": "The Merchant",
@@ -26179,6 +26311,12 @@
                           "routingNumber": "123456789"
                         }
                       },
+                      "australianDestination": {
+                        "legalName": "John Doe",
+                        "accountNumber": "12345678",
+                        "swiftCode": "CHASUS33",
+                        "bsb": "123456"
+                      },
                       "logoUrl": "logo",
                       "legalCompanyName": "The Merchant",
                       "primaryColour": "#000000",
@@ -26315,6 +26453,12 @@
                             "swiftCode": "CHASUS33",
                             "routingNumber": "123456789"
                           }
+                        },
+                        "australianDestination": {
+                          "legalName": "John Doe",
+                          "accountNumber": "12345678",
+                          "swiftCode": "CHASUS33",
+                          "bsb": "123456"
                         },
                         "logoUrl": "logo",
                         "legalCompanyName": "The Merchant",
@@ -27922,6 +28066,12 @@
                               "routingNumber": "123456789"
                             }
                           },
+                          "australianDestination": {
+                            "legalName": "John Doe",
+                            "accountNumber": "12345678",
+                            "swiftCode": "CHASUS33",
+                            "bsb": "123456"
+                          },
                           "logoUrl": "logo",
                           "legalCompanyName": "The Merchant",
                           "primaryColour": "#000000",
@@ -28067,6 +28217,12 @@
                                 "swiftCode": "CHASUS33",
                                 "routingNumber": "123456789"
                               }
+                            },
+                            "australianDestination": {
+                              "legalName": "John Doe",
+                              "accountNumber": "12345678",
+                              "swiftCode": "CHASUS33",
+                              "bsb": "123456"
                             },
                             "logoUrl": "logo",
                             "legalCompanyName": "The Merchant",
@@ -46156,6 +46312,12 @@
               "routingNumber": "123456789"
             }
           },
+          "australianDestination": {
+            "legalName": "John Doe",
+            "accountNumber": "12345678",
+            "swiftCode": "CHASUS33",
+            "bsb": "123456"
+          },
           "logoUrl": "logo",
           "legalCompanyName": "The Merchant",
           "primaryColour": "#000000",
@@ -46205,6 +46367,9 @@
           },
           "canadianInternationalDestination": {
             "$ref": "#/components/schemas/CanadianInternationalDestination"
+          },
+          "australianDestination": {
+            "$ref": "#/components/schemas/AustralianBankAccountDestination"
           },
           "logoUrl": {
             "type": "string",
@@ -46752,6 +46917,12 @@
                     "swiftCode": "CHASUS33",
                     "routingNumber": "123456789"
                   }
+                },
+                "australianDestination": {
+                  "legalName": "John Doe",
+                  "accountNumber": "12345678",
+                  "swiftCode": "CHASUS33",
+                  "bsb": "123456"
                 }
               }
             },
@@ -46885,6 +47056,12 @@
                       "swiftCode": "CHASUS33",
                       "routingNumber": "123456789"
                     }
+                  },
+                  "australianDestination": {
+                    "legalName": "John Doe",
+                    "accountNumber": "12345678",
+                    "swiftCode": "CHASUS33",
+                    "bsb": "123456"
                   }
                 }
               },
@@ -46983,6 +47160,12 @@
                 "swiftCode": "CHASUS33",
                 "routingNumber": "123456789"
               }
+            },
+            "australianDestination": {
+              "legalName": "John Doe",
+              "accountNumber": "12345678",
+              "swiftCode": "CHASUS33",
+              "bsb": "123456"
             }
           }
         },
@@ -47058,6 +47241,12 @@
               "swiftCode": "CHASUS33",
               "routingNumber": "123456789"
             }
+          },
+          "australianDestination": {
+            "legalName": "John Doe",
+            "accountNumber": "12345678",
+            "swiftCode": "CHASUS33",
+            "bsb": "123456"
           }
         },
         "properties": {
@@ -47084,6 +47273,9 @@
           },
           "canadianInternationalDestination": {
             "$ref": "#/components/schemas/CanadianInternationalDestination"
+          },
+          "australianDestination": {
+            "$ref": "#/components/schemas/AustralianBankAccountDestination"
           }
         }
       },
@@ -47096,7 +47288,8 @@
           "US_ACH",
           "US_WIRE",
           "CA_BANK_ACCOUNT",
-          "CA_INTERNATIONAL"
+          "CA_INTERNATIONAL",
+          "AUSTRALIAN"
         ]
       },
       "CanadianBankAccountDestination": {
@@ -47237,6 +47430,40 @@
           }
         }
       },
+      "AustralianBankAccountDestination": {
+        "required": [
+          "accountNumber",
+          "bsb",
+          "legalName",
+          "swiftCode"
+        ],
+        "type": "object",
+        "description": "Merchant's account details, for receiving payment to a Canadian bank via Australian bank transfer",
+        "example": {
+          "legalName": "John Doe",
+          "accountNumber": "12345678",
+          "swiftCode": "CHASUS33",
+          "bsb": "123456"
+        },
+        "properties": {
+          "legalName": {
+            "type": "string",
+            "example": "John Doe"
+          },
+          "accountNumber": {
+            "type": "string",
+            "example": "12345678"
+          },
+          "swiftCode": {
+            "type": "string",
+            "example": "CHASUS33"
+          },
+          "bsb": {
+            "type": "string",
+            "example": "123456"
+          }
+        }
+      },
       "UpdateMerchantEndpointUpdateMerchantRequestModel": {
         "required": [
           "address",
@@ -47321,6 +47548,12 @@
                     "swiftCode": "CHASUS33",
                     "routingNumber": "123456789"
                   }
+                },
+                "australianDestination": {
+                  "legalName": "John Doe",
+                  "accountNumber": "12345678",
+                  "swiftCode": "CHASUS33",
+                  "bsb": "123456"
                 }
               }
             }
@@ -47427,6 +47660,12 @@
                       "swiftCode": "CHASUS33",
                       "routingNumber": "123456789"
                     }
+                  },
+                  "australianDestination": {
+                    "legalName": "John Doe",
+                    "accountNumber": "12345678",
+                    "swiftCode": "CHASUS33",
+                    "bsb": "123456"
                   }
                 }
               }
@@ -47550,6 +47789,12 @@
                     "swiftCode": "CHASUS33",
                     "routingNumber": "123456789"
                   }
+                },
+                "australianDestination": {
+                  "legalName": "John Doe",
+                  "accountNumber": "12345678",
+                  "swiftCode": "CHASUS33",
+                  "bsb": "123456"
                 }
               }
             }
@@ -47677,6 +47922,12 @@
                       "swiftCode": "CHASUS33",
                       "routingNumber": "123456789"
                     }
+                  },
+                  "australianDestination": {
+                    "legalName": "John Doe",
+                    "accountNumber": "12345678",
+                    "swiftCode": "CHASUS33",
+                    "bsb": "123456"
                   }
                 }
               }
@@ -48498,6 +48749,12 @@
                 "routingNumber": "123456789"
               }
             },
+            "australianDestination": {
+              "legalName": "John Doe",
+              "accountNumber": "12345678",
+              "swiftCode": "CHASUS33",
+              "bsb": "123456"
+            },
             "logoUrl": "logo",
             "legalCompanyName": "The Merchant",
             "primaryColour": "#000000",
@@ -49097,6 +49354,12 @@
                 "swiftCode": "CHASUS33",
                 "routingNumber": "123456789"
               }
+            },
+            "australianDestination": {
+              "legalName": "John Doe",
+              "accountNumber": "12345678",
+              "swiftCode": "CHASUS33",
+              "bsb": "123456"
             },
             "logoUrl": "logo",
             "legalCompanyName": "The Merchant",
@@ -50345,6 +50608,12 @@
                 "swiftCode": "CHASUS33",
                 "routingNumber": "123456789"
               }
+            },
+            "australianDestination": {
+              "legalName": "John Doe",
+              "accountNumber": "12345678",
+              "swiftCode": "CHASUS33",
+              "bsb": "123456"
             },
             "logoUrl": "logo",
             "legalCompanyName": "The Merchant",
@@ -51764,6 +52033,12 @@
                 "routingNumber": "123456789"
               }
             },
+            "australianDestination": {
+              "legalName": "John Doe",
+              "accountNumber": "12345678",
+              "swiftCode": "CHASUS33",
+              "bsb": "123456"
+            },
             "logoUrl": "logo",
             "legalCompanyName": "The Merchant",
             "primaryColour": "#000000",
@@ -52432,6 +52707,12 @@
                 "swiftCode": "CHASUS33",
                 "routingNumber": "123456789"
               }
+            },
+            "australianDestination": {
+              "legalName": "John Doe",
+              "accountNumber": "12345678",
+              "swiftCode": "CHASUS33",
+              "bsb": "123456"
             },
             "logoUrl": "logo",
             "legalCompanyName": "The Merchant",
@@ -53322,6 +53603,12 @@
                 "routingNumber": "123456789"
               }
             },
+            "australianDestination": {
+              "legalName": "John Doe",
+              "accountNumber": "12345678",
+              "swiftCode": "CHASUS33",
+              "bsb": "123456"
+            },
             "logoUrl": "logo",
             "legalCompanyName": "The Merchant",
             "primaryColour": "#000000",
@@ -53940,6 +54227,12 @@
                 "swiftCode": "CHASUS33",
                 "routingNumber": "123456789"
               }
+            },
+            "australianDestination": {
+              "legalName": "John Doe",
+              "accountNumber": "12345678",
+              "swiftCode": "CHASUS33",
+              "bsb": "123456"
             },
             "logoUrl": "logo",
             "legalCompanyName": "The Merchant",
@@ -54893,6 +55186,12 @@
                     "routingNumber": "123456789"
                   }
                 },
+                "australianDestination": {
+                  "legalName": "John Doe",
+                  "accountNumber": "12345678",
+                  "swiftCode": "CHASUS33",
+                  "bsb": "123456"
+                },
                 "logoUrl": "logo",
                 "legalCompanyName": "The Merchant",
                 "primaryColour": "#000000",
@@ -55037,6 +55336,12 @@
                       "swiftCode": "CHASUS33",
                       "routingNumber": "123456789"
                     }
+                  },
+                  "australianDestination": {
+                    "legalName": "John Doe",
+                    "accountNumber": "12345678",
+                    "swiftCode": "CHASUS33",
+                    "bsb": "123456"
                   },
                   "logoUrl": "logo",
                   "legalCompanyName": "The Merchant",
@@ -55198,6 +55503,12 @@
                 "swiftCode": "CHASUS33",
                 "routingNumber": "123456789"
               }
+            },
+            "australianDestination": {
+              "legalName": "John Doe",
+              "accountNumber": "12345678",
+              "swiftCode": "CHASUS33",
+              "bsb": "123456"
             },
             "logoUrl": "logo",
             "legalCompanyName": "The Merchant",
@@ -56122,6 +56433,12 @@
                 "routingNumber": "123456789"
               }
             },
+            "australianDestination": {
+              "legalName": "John Doe",
+              "accountNumber": "12345678",
+              "swiftCode": "CHASUS33",
+              "bsb": "123456"
+            },
             "logoUrl": "logo",
             "legalCompanyName": "The Merchant",
             "primaryColour": "#000000",
@@ -56728,6 +57045,12 @@
                 "swiftCode": "CHASUS33",
                 "routingNumber": "123456789"
               }
+            },
+            "australianDestination": {
+              "legalName": "John Doe",
+              "accountNumber": "12345678",
+              "swiftCode": "CHASUS33",
+              "bsb": "123456"
             },
             "logoUrl": "logo",
             "legalCompanyName": "The Merchant",
