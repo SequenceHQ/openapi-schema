@@ -6680,8 +6680,7 @@
                         "eventProperties": {
                           "length": 500,
                           "type": "text_message"
-                        },
-                        "isLatestForCustomerEventId": true
+                        }
                       }
                     ],
                     "pagination": {
@@ -6706,8 +6705,7 @@
                           "eventProperties": {
                             "length": 500,
                             "type": "text_message"
-                          },
-                          "isLatestForCustomerEventId": true
+                          }
                         }
                       ],
                       "pagination": {
@@ -11456,14 +11454,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateProductEndpointCreateProductRequestModel",
+                "$ref": "#/components/schemas/ProductRequest",
                 "example": {
                   "name": "Fixed priced product",
                   "label": "Fixed priced product - UK"
                 }
               },
               "examples": {
-                "CreateProductEndpointCreateProductRequestModel": {
+                "ProductRequest": {
                   "summary": "",
                   "value": {
                     "name": "Fixed priced product",
@@ -46555,27 +46553,27 @@
         "properties": {
           "customerEventId": {
             "type": "string",
-            "description": "customerEventId",
+            "description": "ID provided by customer. Another event with the same customer event ID will supersede this one.",
             "example": "event-id-H4twuTWpYx1rkd8OMTki2hTUcZ"
           },
           "customerAlias": {
             "type": "string",
-            "description": "customerAlias",
+            "description": "End-customer alias or ID",
             "example": "customer-id-2H4u5BBwBWsS5V2sroRFqJfTXpW"
           },
           "eventType": {
             "type": "string",
-            "description": "eventType",
+            "description": "Event type. This can be referenced from a usage metric.",
             "example": "message-sent"
           },
           "eventTimestamp": {
             "type": "string",
-            "description": "eventTimestamp",
+            "description": "Event timestamp, in ISO 8601 format.",
             "example": "2022-10-01T00:00:00Z"
           },
           "eventProperties": {
             "type": "object",
-            "description": "eventProperties",
+            "description": "Event properties. These can be referenced by a usage metric.",
             "additionalProperties": {}
           }
         }
@@ -46596,7 +46594,7 @@
           "customerEventId": "event-id-H4twuTWpYx1rkd8OMTki2hTUcZ",
           "customerAlias": "customer-id-2H4u5BBwBWsS5V2sroRFqJfTXpW",
           "eventType": "message-sent",
-          "sequenceAccountId": "0184421e-a9cc-711b-af93-bf0511d4d833",
+          "sequenceAccountId": "af9b5988-1d7b-45f6-a188-326df5e59b24",
           "eventTimestamp": "2022-10-01T00:00:00Z",
           "eventProperties": {
             "length": 500,
@@ -46606,37 +46604,37 @@
         "properties": {
           "id": {
             "type": "string",
-            "description": "id",
+            "description": "Unique ID",
             "example": "0184421a-8202-70ea-a729-30308a40bbf7"
           },
           "customerEventId": {
             "type": "string",
-            "description": "customerEventId",
+            "description": "ID provided by customer. Another event with the same customer event ID will supersede this one.",
             "example": "event-id-H4twuTWpYx1rkd8OMTki2hTUcZ"
           },
           "customerAlias": {
             "type": "string",
-            "description": "customerAlias",
+            "description": "End-customer alias or ID",
             "example": "customer-id-2H4u5BBwBWsS5V2sroRFqJfTXpW"
           },
           "eventType": {
             "type": "string",
-            "description": "eventType",
+            "description": "Event type. This can be referenced from a usage metric.",
             "example": "message-sent"
           },
           "sequenceAccountId": {
             "type": "string",
-            "description": "sequenceAccountId",
-            "example": "0184421e-a9cc-711b-af93-bf0511d4d833"
+            "description": "Sequence account ID",
+            "example": "af9b5988-1d7b-45f6-a188-326df5e59b24"
           },
           "eventTimestamp": {
             "type": "string",
-            "description": "eventTimestamp",
+            "description": "Event timestamp, in ISO 8601 format.",
             "example": "2022-10-01T00:00:00Z"
           },
           "eventProperties": {
             "type": "object",
-            "description": "eventProperties",
+            "description": "Event properties. These can be referenced by a usage metric.",
             "additionalProperties": {}
           }
         }
@@ -46687,12 +46685,13 @@
           "sequenceAccountId"
         ],
         "type": "object",
+        "description": "usageEvent",
         "example": {
           "id": "0184421a-8202-70ea-a729-30308a40bbf7",
           "customerEventId": "event-id-H4twuTWpYx1rkd8OMTki2hTUcZ",
           "customerAlias": "customer-id-2H4u5BBwBWsS5V2sroRFqJfTXpW",
           "eventType": "message-sent",
-          "sequenceAccountId": "af9b5988-1d7b-45f6-a188-326df5e59b24",
+          "sequenceAccountId": "0184421e-a9cc-711b-af93-bf0511d4d833",
           "eventTimestamp": "2022-10-01T00:00:00Z",
           "eventProperties": {
             "length": 500,
@@ -46724,7 +46723,7 @@
           "sequenceAccountId": {
             "type": "string",
             "description": "Sequence account ID",
-            "example": "af9b5988-1d7b-45f6-a188-326df5e59b24"
+            "example": "0184421e-a9cc-711b-af93-bf0511d4d833"
           },
           "eventTimestamp": {
             "type": "string",
@@ -46921,8 +46920,7 @@
               "eventProperties": {
                 "length": 500,
                 "type": "text_message"
-              },
-              "isLatestForCustomerEventId": true
+              }
             }
           ],
           "pagination": {
@@ -46946,12 +46944,11 @@
                 "eventProperties": {
                   "length": 500,
                   "type": "text_message"
-                },
-                "isLatestForCustomerEventId": true
+                }
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/UsageEvent1"
+              "$ref": "#/components/schemas/CreateUsageEventEndpointProductCreateUsageEventResponseModel"
             }
           },
           "pagination": {
@@ -51122,7 +51119,7 @@
           "COMPLETED"
         ]
       },
-      "CreateProductEndpointCreateProductRequestModel": {
+      "ProductRequest": {
         "required": [
           "name"
         ],
