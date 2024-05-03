@@ -1,0 +1,56 @@
+{
+  "inputs": [
+    {
+      "inputFile": "latest.servers.json"
+    },
+    {
+      "inputFile": "../customer-portal/customer-portal-api/build/open-api-schema/latest/customer-portal.latest.product.json"
+    },
+    {
+      "inputFile": "../collections/collections-api/build/open-api-schema/latest/collections.latest.product.json"
+    },
+    {
+      "inputFile": "../api/taxes-api/build/open-api-schema/latest/taxes.latest.product.json"
+    },
+    {
+      "inputFile": "../api/revenue-recognition-api/build/open-api-schema/latest/revenue-recognition.latest.product.json"
+    },
+    {
+      "inputFile": "../api/usage-api/build/open-api-schema/latest/usage.latest.product.json"
+    },
+    {
+      "inputFile": "../activity-stream/activity-stream-api/build/open-api-schema/latest/activity-stream.latest.product.json"
+    },
+    {
+      "inputFile": "../notifications/notifications-api/build/open-api-schema/latest/notifications.latest.product.json"
+    },
+    {
+      "inputFile": "../quote/quote-api/build/open-api-schema/latest/quote.latest.product.json"
+    },
+    {
+      "inputFile": "../orchestra/orchestra-api/build/open-api-schema/latest/orchestra.latest.product.json"
+    },
+    {
+      "inputFile": "../product/product-api/build/open-api-schema/latest/product.latest.product.json"
+    },
+    {
+      "inputFile": "../customer/customer-api/build/open-api-schema/latest/customer.latest.product.json"
+    },
+    {
+      "inputFile": "../billing/billing-api/build/open-api-schema/latest/billing.latest.product.json"
+    },
+    {
+      "inputFile": "../integrations/integrations-api/build/open-api-schema/latest/integrations.latest.product.json"
+    },
+    {
+      "inputFile": "../linked-entity/linked-entity-api/build/open-api-schema/latest/linked-entity.latest.product.json"
+    },
+    {
+      "inputFile": "../invoices/invoices-api/build/open-api-schema/latest/invoices.latest.product.json"
+    },
+    {
+      "inputFile": "../account/account-api/build/open-api-schema/latest/account.latest.product.json"
+    }
+  ],
+  "output": "latest.product.json"
+}

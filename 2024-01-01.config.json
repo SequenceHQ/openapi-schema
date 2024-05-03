@@ -1,0 +1,56 @@
+{
+  "inputs": [
+    {
+      "inputFile": "2024-01-01.servers.json"
+    },
+    {
+      "inputFile": "../customer-portal/customer-portal-api/build/open-api-schema/2024-01-01/customer-portal.2024-01-01.product.json"
+    },
+    {
+      "inputFile": "../collections/collections-api/build/open-api-schema/2024-01-01/collections.2024-01-01.product.json"
+    },
+    {
+      "inputFile": "../api/taxes-api/build/open-api-schema/2024-01-01/taxes.2024-01-01.product.json"
+    },
+    {
+      "inputFile": "../api/revenue-recognition-api/build/open-api-schema/2024-01-01/revenue-recognition.2024-01-01.product.json"
+    },
+    {
+      "inputFile": "../api/usage-api/build/open-api-schema/2024-01-01/usage.2024-01-01.product.json"
+    },
+    {
+      "inputFile": "../activity-stream/activity-stream-api/build/open-api-schema/2024-01-01/activity-stream.2024-01-01.product.json"
+    },
+    {
+      "inputFile": "../notifications/notifications-api/build/open-api-schema/2024-01-01/notifications.2024-01-01.product.json"
+    },
+    {
+      "inputFile": "../quote/quote-api/build/open-api-schema/2024-01-01/quote.2024-01-01.product.json"
+    },
+    {
+      "inputFile": "../orchestra/orchestra-api/build/open-api-schema/2024-01-01/orchestra.2024-01-01.product.json"
+    },
+    {
+      "inputFile": "../product/product-api/build/open-api-schema/2024-01-01/product.2024-01-01.product.json"
+    },
+    {
+      "inputFile": "../customer/customer-api/build/open-api-schema/2024-01-01/customer.2024-01-01.product.json"
+    },
+    {
+      "inputFile": "../billing/billing-api/build/open-api-schema/2024-01-01/billing.2024-01-01.product.json"
+    },
+    {
+      "inputFile": "../integrations/integrations-api/build/open-api-schema/2024-01-01/integrations.2024-01-01.product.json"
+    },
+    {
+      "inputFile": "../linked-entity/linked-entity-api/build/open-api-schema/2024-01-01/linked-entity.2024-01-01.product.json"
+    },
+    {
+      "inputFile": "../invoices/invoices-api/build/open-api-schema/2024-01-01/invoices.2024-01-01.product.json"
+    },
+    {
+      "inputFile": "../account/account-api/build/open-api-schema/2024-01-01/account.2024-01-01.product.json"
+    }
+  ],
+  "output": "2024-01-01.product.json"
+}
