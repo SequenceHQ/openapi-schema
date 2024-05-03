@@ -43436,7 +43436,6 @@
           "autoIssueInvoices",
           "createAsDraft",
           "customerId",
-          "endDate",
           "phases",
           "startDate",
           "type"
@@ -43645,7 +43644,6 @@
       },
       "PhaseRequest": {
         "required": [
-          "endDate",
           "priceIds",
           "startDate"
         ],
@@ -43767,7 +43765,6 @@
           "autoIssueInvoices",
           "createdAt",
           "customerId",
-          "endDate",
           "id",
           "phases",
           "priceIds",
@@ -44032,7 +44029,6 @@
           "billingScheduleId",
           "createdAt",
           "discounts",
-          "endDate",
           "id",
           "minimums",
           "priceIds",
@@ -44735,7 +44731,6 @@
       "UpdateBillingScheduleRequestWithPrices": {
         "required": [
           "autoIssueInvoices",
-          "endDate",
           "startDate",
           "type"
         ],
@@ -44823,7 +44818,6 @@
       "UpdateBillingScheduleRequestWithPhases": {
         "required": [
           "autoIssueInvoices",
-          "endDate",
           "phases",
           "startDate",
           "type"
