@@ -49018,6 +49018,7 @@
         "example": "SCHEDULED",
         "enum": [
           "SCHEDULED",
+          "OVERDUE_CHECK_SCHEDULED",
           "COMPLETED",
           "FAILED",
           "NOT_REQUIRED"
