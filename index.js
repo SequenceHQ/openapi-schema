@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = `${__dirname}/sequenceOpenApi.json`
+module.exports = `${__dirname}`
