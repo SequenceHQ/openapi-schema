@@ -7760,7 +7760,7 @@
           {
             "name": "seatType",
             "in": "query",
-            "description": "Filter snpashots by seat type",
+            "description": "Filter snapshots by seat type",
             "required": false,
             "schema": {
               "type": "string"
