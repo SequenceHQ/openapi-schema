@@ -43219,7 +43219,6 @@
           "autoIssueInvoices",
           "createAsDraft",
           "customerId",
-          "endDate",
           "priceIds",
           "startDate",
           "type"
