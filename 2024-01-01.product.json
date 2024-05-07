@@ -2500,11 +2500,22 @@
         "summary": "Create a new TaxRate",
         "description": "Create a new TaxRate",
         "operationId": "postTaxRates",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateTaxRateEndpointCreateTaxRateRequestModel",
+                "$ref": "#/components/schemas/CreateTaxRateRequest",
                 "example": {
                   "isPublished": false,
                   "name": "UK Sales Tax",
@@ -2519,7 +2530,7 @@
                 }
               },
               "examples": {
-                "CreateTaxRateEndpointCreateTaxRateRequestModel": {
+                "CreateTaxRateRequest": {
                   "summary": "",
                   "value": {
                     "isPublished": false,
@@ -2942,7 +2953,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateTaxRateEndpointUpdateTaxRateRequestModel",
+                "$ref": "#/components/schemas/UpdateTaxRateEndpointUpdateTaxRateRequest",
                 "example": {
                   "id": "0373904e-0f24-4c19-bb0d-9b855f1ec3ca",
                   "isPublished": false,
@@ -2958,7 +2969,7 @@
                 }
               },
               "examples": {
-                "UpdateTaxRateEndpointUpdateTaxRateRequestModel": {
+                "UpdateTaxRateEndpointUpdateTaxRateRequest": {
                   "summary": "",
                   "value": {
                     "id": "0373904e-0f24-4c19-bb0d-9b855f1ec3ca",
@@ -2985,7 +2996,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/UpdateTaxRateEndpointProductUpdateTaxRateResponseModel",
+                  "$ref": "#/components/schemas/UpdateTaxRateEndpointProductUpdateTaxRateResponse",
                   "example": {
                     "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
                     "versionId": "82ef6f1a-afc2-4a8d-b868-6d9c72bf395f",
@@ -3005,7 +3016,7 @@
                   }
                 },
                 "examples": {
-                  "UpdateTaxRateEndpointProductUpdateTaxRateResponseModel": {
+                  "UpdateTaxRateEndpointProductUpdateTaxRateResponse": {
                     "summary": "",
                     "value": {
                       "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
@@ -41635,7 +41646,7 @@
           "sequenceAccountId"
         ]
       },
-      "CreateTaxRateEndpointCreateTaxRateRequestModel": {
+      "CreateTaxRateRequest": {
         "required": [
           "amount",
           "country",
@@ -42475,7 +42486,7 @@
           }
         }
       },
-      "UpdateTaxRateEndpointUpdateTaxRateRequestModel": {
+      "UpdateTaxRateEndpointUpdateTaxRateRequest": {
         "required": [
           "amount",
           "country",
@@ -42557,7 +42568,7 @@
           }
         }
       },
-      "UpdateTaxRateEndpointProductUpdateTaxRateResponseModel": {
+      "UpdateTaxRateEndpointProductUpdateTaxRateResponse": {
         "required": [
           "amount",
           "country",
