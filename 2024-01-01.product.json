@@ -40970,8 +40970,22 @@
             "description": "The frequency with which to charge overages"
           },
           "tiers": {
-            "items": {},
-            "example": [],
+            "items": {
+              "$ref": "#/components/schemas/UsageTier"
+            },
+            "example": [
+              {
+                "upperBound": "100",
+                "price": "1.00",
+                "fee": "50.00",
+                "isPricePercentage": false
+              },
+              {
+                "price": "0.75",
+                "fee": "25.00",
+                "isPricePercentage": false
+              }
+            ],
             "description": "A list of contiguous pricing tiers",
             "type": "array"
           },
@@ -40990,7 +41004,19 @@
           "includedSeats": 10,
           "chargeMethod": "CHARGE_CONSUMED",
           "overagesBillingFrequency": "YEARLY",
-          "tiers": [],
+          "tiers": [
+            {
+              "upperBound": "100",
+              "price": "1.00",
+              "fee": "50.00",
+              "isPricePercentage": false
+            },
+            {
+              "price": "0.75",
+              "fee": "25.00",
+              "isPricePercentage": false
+            }
+          ],
           "pricingType": "SEAT_BASED"
         },
         "type": "object",
