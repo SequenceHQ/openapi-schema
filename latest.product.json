@@ -8224,6 +8224,7 @@
                         "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                         "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                         "key": "admin",
+                        "description": "Allows user to make admin changes over whole account",
                         "label": "Administrator",
                         "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
                         "createdAt": "2022-06-28T16:47:00Z",
@@ -8246,6 +8247,7 @@
                           "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                           "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                           "key": "admin",
+                          "description": "Allows user to make admin changes over whole account",
                           "label": "Administrator",
                           "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
                           "createdAt": "2022-06-28T16:47:00Z",
@@ -8300,6 +8302,7 @@
                 "$ref": "#/components/schemas/CreateSeatTypeEndpointCreateSeatTypeRequestModel",
                 "example": {
                   "key": "admin",
+                  "description": "Allows user to make admin changes over whole account",
                   "label": "Administrator",
                   "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da"
                 }
@@ -8309,6 +8312,7 @@
                   "summary": "",
                   "value": {
                     "key": "admin",
+                    "description": "Allows user to make admin changes over whole account",
                     "label": "Administrator",
                     "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da"
                   }
@@ -8329,6 +8333,7 @@
                     "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                     "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                     "key": "admin",
+                    "description": "Allows user to make admin changes over whole account",
                     "label": "Administrator",
                     "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
                     "createdAt": "2022-06-28T16:47:00Z",
@@ -8342,6 +8347,7 @@
                       "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                       "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                       "key": "admin",
+                      "description": "Allows user to make admin changes over whole account",
                       "label": "Administrator",
                       "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
                       "createdAt": "2022-06-28T16:47:00Z",
@@ -8406,6 +8412,7 @@
                     "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                     "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                     "key": "admin",
+                    "description": "Allows user to make admin changes over whole account",
                     "label": "Administrator",
                     "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
                     "createdAt": "2022-06-28T16:47:00Z",
@@ -8419,6 +8426,7 @@
                       "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                       "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                       "key": "admin",
+                      "description": "Allows user to make admin changes over whole account",
                       "label": "Administrator",
                       "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
                       "createdAt": "2022-06-28T16:47:00Z",
@@ -8474,6 +8482,7 @@
               "schema": {
                 "$ref": "#/components/schemas/UpdateSeatTypeEndpointUpdateSeatTypeRequestModel",
                 "example": {
+                  "description": "Allows user to make admin changes over whole account",
                   "label": "Administrator"
                 }
               },
@@ -8481,6 +8490,7 @@
                 "UpdateSeatTypeEndpointUpdateSeatTypeRequestModel": {
                   "summary": "",
                   "value": {
+                    "description": "Allows user to make admin changes over whole account",
                     "label": "Administrator"
                   }
                 }
@@ -8500,6 +8510,7 @@
                     "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                     "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                     "key": "admin",
+                    "description": "Allows user to make admin changes over whole account",
                     "label": "Administrator",
                     "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
                     "createdAt": "2022-06-28T16:47:00Z",
@@ -8513,6 +8524,7 @@
                       "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                       "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                       "key": "admin",
+                      "description": "Allows user to make admin changes over whole account",
                       "label": "Administrator",
                       "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
                       "createdAt": "2022-06-28T16:47:00Z",
@@ -8573,6 +8585,7 @@
                     "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                     "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                     "key": "admin",
+                    "description": "Allows user to make admin changes over whole account",
                     "label": "Administrator",
                     "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
                     "createdAt": "2022-06-28T16:47:00Z",
@@ -8586,6 +8599,7 @@
                       "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                       "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                       "key": "admin",
+                      "description": "Allows user to make admin changes over whole account",
                       "label": "Administrator",
                       "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
                       "createdAt": "2022-06-28T16:47:00Z",
@@ -47625,6 +47639,7 @@
         "type": "object",
         "example": {
           "key": "admin",
+          "description": "Allows user to make admin changes over whole account",
           "label": "Administrator",
           "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da"
         },
@@ -47633,6 +47648,11 @@
             "type": "string",
             "description": "Immutable, unique value used to identify and refer to this seat type",
             "example": "admin"
+          },
+          "description": {
+            "type": "string",
+            "description": "Optional description",
+            "example": "Allows user to make admin changes over whole account"
           },
           "label": {
             "type": "string",
@@ -47660,6 +47680,7 @@
           "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
           "key": "admin",
+          "description": "Allows user to make admin changes over whole account",
           "label": "Administrator",
           "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
           "createdAt": "2022-06-28T16:47:00Z",
@@ -47680,6 +47701,11 @@
             "type": "string",
             "description": "Immutable, unique value used to identify and refer to this seat type",
             "example": "admin"
+          },
+          "description": {
+            "type": "string",
+            "description": "Optional description",
+            "example": "Allows user to make admin changes over whole account"
           },
           "label": {
             "type": "string",
@@ -47717,6 +47743,7 @@
           "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
           "key": "admin",
+          "description": "Allows user to make admin changes over whole account",
           "label": "Administrator",
           "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
           "createdAt": "2022-06-28T16:47:00Z",
@@ -47737,6 +47764,11 @@
             "type": "string",
             "description": "Immutable, unique value used to identify and refer to this seat type",
             "example": "admin"
+          },
+          "description": {
+            "type": "string",
+            "description": "Optional description",
+            "example": "Allows user to make admin changes over whole account"
           },
           "label": {
             "type": "string",
@@ -47772,6 +47804,7 @@
               "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
               "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
               "key": "admin",
+              "description": "Allows user to make admin changes over whole account",
               "label": "Administrator",
               "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
               "createdAt": "2022-06-28T16:47:00Z",
@@ -47793,6 +47826,7 @@
                 "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                 "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
                 "key": "admin",
+                "description": "Allows user to make admin changes over whole account",
                 "label": "Administrator",
                 "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
                 "createdAt": "2022-06-28T16:47:00Z",
@@ -47822,6 +47856,7 @@
           "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
           "key": "admin",
+          "description": "Allows user to make admin changes over whole account",
           "label": "Administrator",
           "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
           "createdAt": "2022-06-28T16:47:00Z",
@@ -47842,6 +47877,11 @@
             "type": "string",
             "description": "Immutable, unique value used to identify and refer to this seat type",
             "example": "admin"
+          },
+          "description": {
+            "type": "string",
+            "description": "Optional description",
+            "example": "Allows user to make admin changes over whole account"
           },
           "label": {
             "type": "string",
@@ -47871,9 +47911,15 @@
         ],
         "type": "object",
         "example": {
+          "description": "Allows user to make admin changes over whole account",
           "label": "Administrator"
         },
         "properties": {
+          "description": {
+            "type": "string",
+            "description": "Optional description",
+            "example": "Allows user to make admin changes over whole account"
+          },
           "label": {
             "type": "string",
             "description": "Friendly, customer-facing name for seat type",
@@ -47895,6 +47941,7 @@
           "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
           "key": "admin",
+          "description": "Allows user to make admin changes over whole account",
           "label": "Administrator",
           "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
           "createdAt": "2022-06-28T16:47:00Z",
@@ -47915,6 +47962,11 @@
             "type": "string",
             "description": "Immutable, unique value used to identify and refer to this seat type",
             "example": "admin"
+          },
+          "description": {
+            "type": "string",
+            "description": "Optional description",
+            "example": "Allows user to make admin changes over whole account"
           },
           "label": {
             "type": "string",
@@ -47952,6 +48004,7 @@
           "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
           "key": "admin",
+          "description": "Allows user to make admin changes over whole account",
           "label": "Administrator",
           "sequenceUserId": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
           "createdAt": "2022-06-28T16:47:00Z",
@@ -47972,6 +48025,11 @@
             "type": "string",
             "description": "Immutable, unique value used to identify and refer to this seat type",
             "example": "admin"
+          },
+          "description": {
+            "type": "string",
+            "description": "Optional description",
+            "example": "Allows user to make admin changes over whole account"
           },
           "label": {
             "type": "string",
