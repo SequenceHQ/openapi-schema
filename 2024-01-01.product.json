@@ -3801,7 +3801,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GetTaxRegistrationForCustomerProductResponse",
+                  "$ref": "#/components/schemas/GetTaxRegistrationForMerchantProductResponse",
                   "example": {
                     "items": [
                       {
@@ -3821,7 +3821,7 @@
                   }
                 },
                 "examples": {
-                  "GetTaxRegistrationForCustomerProductResponse": {
+                  "GetTaxRegistrationForMerchantProductResponse": {
                     "summary": "",
                     "value": {
                       "items": [
@@ -43744,6 +43744,100 @@
           }
         }
       },
+      "GetTaxRegistrationForMerchantProductResponse": {
+        "required": [
+          "items",
+          "pagination"
+        ],
+        "type": "object",
+        "example": {
+          "items": [
+            {
+              "id": "3271ca41-d538-404f-a15f-25856a37fb88",
+              "sequenceAccountId": "42020696-da25-44d0-ab79-9ecbf8fc5307",
+              "taxIdentifier": "CA123456789",
+              "merchantId": "06457f78-85cd-4140-9972-67c6cd8f6071",
+              "country": "GB",
+              "state": "CA"
+            }
+          ],
+          "pagination": {
+            "after": "nextOffset",
+            "before": "previousOffset",
+            "totalResultSize": 100
+          }
+        },
+        "properties": {
+          "items": {
+            "type": "array",
+            "description": "List of tax registrations for merchant",
+            "example": [
+              {
+                "id": "3271ca41-d538-404f-a15f-25856a37fb88",
+                "sequenceAccountId": "42020696-da25-44d0-ab79-9ecbf8fc5307",
+                "taxIdentifier": "CA123456789",
+                "merchantId": "06457f78-85cd-4140-9972-67c6cd8f6071",
+                "country": "GB",
+                "state": "CA"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/GetTaxRegistrationForMerchantMerchantTaxRegistration"
+            }
+          },
+          "pagination": {
+            "$ref": "#/components/schemas/PaginationResponse"
+          }
+        }
+      },
+      "GetTaxRegistrationForMerchantMerchantTaxRegistration": {
+        "required": [
+          "country",
+          "id",
+          "merchantId",
+          "sequenceAccountId",
+          "taxIdentifier"
+        ],
+        "type": "object",
+        "example": {
+          "id": "3271ca41-d538-404f-a15f-25856a37fb88",
+          "sequenceAccountId": "42020696-da25-44d0-ab79-9ecbf8fc5307",
+          "taxIdentifier": "CA123456789",
+          "merchantId": "06457f78-85cd-4140-9972-67c6cd8f6071",
+          "country": "GB",
+          "state": "CA"
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Tax registration ID",
+            "example": "3271ca41-d538-404f-a15f-25856a37fb88"
+          },
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Sequence account ID",
+            "example": "42020696-da25-44d0-ab79-9ecbf8fc5307"
+          },
+          "taxIdentifier": {
+            "type": "string",
+            "description": "The unique identifier for this tax registration",
+            "example": "CA123456789"
+          },
+          "merchantId": {
+            "type": "string",
+            "description": "The merchant that this tax registration belongs to",
+            "example": "06457f78-85cd-4140-9972-67c6cd8f6071"
+          },
+          "country": {
+            "description": "Country code ([ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes))",
+            "$ref": "#/components/schemas/CountryCode1"
+          },
+          "state": {
+            "description": "The registration state",
+            "$ref": "#/components/schemas/State1"
+          }
+        }
+      },
       "GetTaxRegistrationForCustomerProductResponse": {
         "required": [
           "items",
@@ -43782,7 +43876,7 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/TaxRegistration"
+              "$ref": "#/components/schemas/GetTaxRegistrationForCustomerCustomerTaxRegistration"
             }
           },
           "pagination": {
@@ -43790,9 +43884,10 @@
           }
         }
       },
-      "TaxRegistration": {
+      "GetTaxRegistrationForCustomerCustomerTaxRegistration": {
         "required": [
           "country",
+          "customerId",
           "id",
           "sequenceAccountId",
           "taxIdentifier"
@@ -45260,24 +45355,24 @@
         "type": "object",
         "example": {
           "data": {
-            "usageStart": "2024-01-01",
-            "usageEnd": "2024-01-03",
+            "usageStart": "2023-02-01",
+            "usageEnd": "2023-04-30",
             "metricName": "API Calls",
             "metricId": "030a64dd-1d89-46a3-8043-580befdb011d",
             "total": "35",
             "usageData": [
               {
-                "periodStart": "2024-01-01",
+                "periodStart": "2023-02-01",
                 "amount": "10",
                 "cumulativeAmount": "10"
               },
               {
-                "periodStart": "2024-01-02",
+                "periodStart": "2023-03-01",
                 "amount": "15",
                 "cumulativeAmount": "25"
               },
               {
-                "periodStart": "2024-01-03",
+                "periodStart": "2023-04-01",
                 "amount": "10",
                 "cumulativeAmount": "35"
               }
@@ -45301,24 +45396,24 @@
         ],
         "type": "object",
         "example": {
-          "usageStart": "2024-01-01",
-          "usageEnd": "2024-01-03",
+          "usageStart": "2023-02-01",
+          "usageEnd": "2023-04-30",
           "metricName": "API Calls",
           "metricId": "030a64dd-1d89-46a3-8043-580befdb011d",
           "total": "35",
           "usageData": [
             {
-              "periodStart": "2024-01-01",
+              "periodStart": "2023-02-01",
               "amount": "10",
               "cumulativeAmount": "10"
             },
             {
-              "periodStart": "2024-01-02",
+              "periodStart": "2023-03-01",
               "amount": "15",
               "cumulativeAmount": "25"
             },
             {
-              "periodStart": "2024-01-03",
+              "periodStart": "2023-04-01",
               "amount": "10",
               "cumulativeAmount": "35"
             }
@@ -45329,13 +45424,13 @@
             "type": "string",
             "description": "Usage start",
             "format": "date",
-            "example": "2024-01-01"
+            "example": "2023-02-01"
           },
           "usageEnd": {
             "type": "string",
             "description": "Usage end",
             "format": "date",
-            "example": "2024-01-03"
+            "example": "2023-04-30"
           },
           "metricName": {
             "type": "string",
@@ -45357,55 +45452,24 @@
             "description": "Usage data",
             "example": [
               {
-                "periodStart": "2024-01-01",
+                "periodStart": "2023-02-01",
                 "amount": "10",
                 "cumulativeAmount": "10"
               },
               {
-                "periodStart": "2024-01-02",
+                "periodStart": "2023-03-01",
                 "amount": "15",
                 "cumulativeAmount": "25"
               },
               {
-                "periodStart": "2024-01-03",
+                "periodStart": "2023-04-01",
                 "amount": "10",
                 "cumulativeAmount": "35"
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/UsageData1"
+              "$ref": "#/components/schemas/UsageData"
             }
-          }
-        }
-      },
-      "UsageData1": {
-        "required": [
-          "amount",
-          "cumulativeAmount",
-          "periodStart"
-        ],
-        "type": "object",
-        "example": {
-          "periodStart": "2024-01-01",
-          "amount": "10",
-          "cumulativeAmount": "10"
-        },
-        "properties": {
-          "periodStart": {
-            "type": "string",
-            "description": "Usage period start",
-            "format": "date",
-            "example": "2024-01-01"
-          },
-          "amount": {
-            "type": "string",
-            "description": "Usage amount",
-            "example": "10"
-          },
-          "cumulativeAmount": {
-            "type": "string",
-            "description": "Cumulative usage amount (summing all previous data points)",
-            "example": "10"
           }
         }
       },
@@ -45460,7 +45524,7 @@
           },
           "aggregationType": {
             "description": "Type of aggregation to perform",
-            "$ref": "#/components/schemas/AggregationType1"
+            "$ref": "#/components/schemas/AggregationType"
           },
           "aggregationProperty": {
             "type": "string",
@@ -45512,16 +45576,6 @@
         "enum": [
           "SIMPLE",
           "GROUPED"
-        ]
-      },
-      "AggregationType1": {
-        "type": "string",
-        "example": "SUM",
-        "enum": [
-          "COUNT",
-          "UNIQUE",
-          "SUM",
-          "CUSTOM"
         ]
       },
       "CreateUsageMetricEndpointProductCreateUsageMetricResponseModel": {
@@ -45602,7 +45656,7 @@
           },
           "aggregationType": {
             "description": "Type of aggregation to perform",
-            "$ref": "#/components/schemas/AggregationType1"
+            "$ref": "#/components/schemas/AggregationType"
           },
           "aggregationProperty": {
             "type": "string",
@@ -45832,31 +45886,22 @@
           "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
           "name": "Total length of sent messages.",
           "description": "Total length of sent messages.",
-          "metricType": "GROUPED",
-          "eventType": "message_sent",
-          "aggregationType": "COUNT",
-          "aggregationProperty": "message_length",
-          "groupingProperty": "channel",
+          "metricType": "SIMPLE",
+          "eventType": "N/A",
+          "aggregationType": "CUSTOM",
           "unit": "bytes",
           "createdAt": "2022-06-28T16:47:00Z",
           "deletedAt": "2022-06-28T16:47:00Z",
-          "propertyFilters": {
-            "channels": [
-              "text",
-              "email"
-            ]
-          },
-          "caseSensitive": true,
-          "propertiesToNegate": [
-            "channels"
-          ],
+          "propertyFilters": {},
+          "caseSensitive": false,
+          "propertiesToNegate": [],
           "parameters": [
             {
               "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
               "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
-              "name": "myParam",
-              "type": "INTEGER",
-              "description": "My parameter",
+              "name": "ratio",
+              "type": "POSITIVE_INTEGER",
+              "description": "Ratio of A to B",
               "defaultValue": "10"
             }
           ]
@@ -45889,21 +45934,11 @@
           "eventType": {
             "type": "string",
             "description": "The `eventType` of the Usage Event to be aggregated",
-            "example": "message_sent"
+            "example": "N/A"
           },
           "aggregationType": {
             "description": "Type of aggregation to perform",
-            "$ref": "#/components/schemas/AggregationType1"
-          },
-          "aggregationProperty": {
-            "type": "string",
-            "description": "Property within the event to aggregate",
-            "example": "message_length"
-          },
-          "groupingProperty": {
-            "type": "string",
-            "description": "Property within the event to group results by",
-            "example": "channel"
+            "$ref": "#/components/schemas/AggregationType"
           },
           "unit": {
             "type": "string",
@@ -45926,16 +45961,12 @@
           },
           "caseSensitive": {
             "type": "boolean",
-            "example": true
+            "example": false
           },
           "propertiesToNegate": {
             "type": "array",
-            "example": [
-              "channels"
-            ],
-            "items": {
-              "type": "string"
-            }
+            "example": [],
+            "items": {}
           },
           "parameters": {
             "type": "array",
@@ -45944,9 +45975,9 @@
               {
                 "id": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
                 "usageMetricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
-                "name": "myParam",
-                "type": "INTEGER",
-                "description": "My parameter",
+                "name": "ratio",
+                "type": "POSITIVE_INTEGER",
+                "description": "Ratio of A to B",
                 "defaultValue": "10"
               }
             ],
@@ -46134,7 +46165,7 @@
           },
           "aggregationType": {
             "description": "Type of aggregation to perform",
-            "$ref": "#/components/schemas/AggregationType1"
+            "$ref": "#/components/schemas/AggregationType"
           },
           "aggregationProperty": {
             "type": "string",
@@ -46252,7 +46283,7 @@
           },
           "aggregationType": {
             "description": "Type of aggregation to perform",
-            "$ref": "#/components/schemas/AggregationType1"
+            "$ref": "#/components/schemas/AggregationType"
           },
           "aggregationProperty": {
             "type": "string",
@@ -46371,7 +46402,7 @@
           },
           "aggregationType": {
             "description": "Type of aggregation to perform",
-            "$ref": "#/components/schemas/AggregationType1"
+            "$ref": "#/components/schemas/AggregationType"
           },
           "aggregationProperty": {
             "type": "string",
@@ -46517,7 +46548,7 @@
           },
           "aggregationType": {
             "description": "Type of aggregation to perform",
-            "$ref": "#/components/schemas/AggregationType1"
+            "$ref": "#/components/schemas/AggregationType"
           },
           "aggregationProperty": {
             "type": "string",
@@ -46645,7 +46676,7 @@
           "customerEventId": "event-id-H4twuTWpYx1rkd8OMTki2hTUcZ",
           "customerAlias": "customer-id-2H4u5BBwBWsS5V2sroRFqJfTXpW",
           "eventType": "message-sent",
-          "sequenceAccountId": "af9b5988-1d7b-45f6-a188-326df5e59b24",
+          "sequenceAccountId": "0184421e-a9cc-711b-af93-bf0511d4d833",
           "eventTimestamp": "2022-10-01T00:00:00Z",
           "eventProperties": {
             "length": 500,
@@ -46676,7 +46707,7 @@
           "sequenceAccountId": {
             "type": "string",
             "description": "Sequence account ID",
-            "example": "af9b5988-1d7b-45f6-a188-326df5e59b24"
+            "example": "0184421e-a9cc-711b-af93-bf0511d4d833"
           },
           "eventTimestamp": {
             "type": "string",
@@ -47041,7 +47072,7 @@
             "example": "message_sent"
           },
           "aggregationType": {
-            "$ref": "#/components/schemas/AggregationType1"
+            "$ref": "#/components/schemas/AggregationType"
           },
           "eventCount": {
             "type": "integer",
@@ -52963,7 +52994,7 @@
         "example": {
           "pricingType": "LINEAR",
           "pricePerUnit": "0.25",
-          "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+          "usageMetricId": "9aa108d7-6b12-4f5e-8288-5779b9d95b5e",
           "isPricePercentage": false
         },
         "properties": {
@@ -52979,7 +53010,7 @@
           "usageMetricId": {
             "type": "string",
             "description": "Usage metric associated to this pricing structure",
-            "example": "04c62961-04ba-48e6-b985-758bb7d3e712"
+            "example": "9aa108d7-6b12-4f5e-8288-5779b9d95b5e"
           },
           "isPricePercentage": {
             "type": "boolean",
@@ -53588,22 +53619,26 @@
         "type": "object",
         "example": {
           "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-          "productId": "f409d651-c475-4142-aafd-a5d2bd74d4f9",
+          "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
+          "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
           "name": "Demo Product",
           "currency": "GBP",
           "structure": {
             "pricingType": "LINEAR",
             "pricePerUnit": "0.25",
-            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+            "usageMetricId": "9aa108d7-6b12-4f5e-8288-5779b9d95b5e",
             "isPricePercentage": false
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
           "createdAt": "2022-06-28T16:47:00Z",
           "updatedAt": "2022-06-28T16:47:00Z",
-          "deletedAt": "2022-06-28T16:47:00Z",
-          "externalIds": [],
+          "externalIds": [
+            {
+              "key": "Xero",
+              "value": "123"
+            }
+          ],
           "parameters": [
             {
               "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
@@ -53620,12 +53655,12 @@
           "sequenceAccountId": {
             "type": "string",
             "description": "The Sequence Account to which this Price belongs",
-            "example": "c4602d51-0fb4-4b48-b689-6ba28f540d1e"
+            "example": "1986c663-9ee9-4811-bfbf-57d2ad666096"
           },
           "productId": {
             "type": "string",
             "description": "The ID of the Product for which this Price provides pricing",
-            "example": "f409d651-c475-4142-aafd-a5d2bd74d4f9"
+            "example": "d07037d5-3e31-4c3a-a360-e58555e2bf44"
           },
           "name": {
             "type": "string",
@@ -53685,16 +53720,18 @@
             "description": "Updated At",
             "example": "2022-06-28T16:47:00Z"
           },
-          "deletedAt": {
-            "type": "string",
-            "description": "Deleted at",
-            "example": "2022-06-28T16:47:00Z"
-          },
           "externalIds": {
             "type": "array",
             "description": "IDs in external integrations",
-            "example": [],
-            "items": {}
+            "example": [
+              {
+                "key": "Xero",
+                "value": "123"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier1"
+            }
           },
           "parameters": {
             "type": "array",
@@ -56821,18 +56858,35 @@
         "type": "object",
         "example": {
           "priceIds": [
-            "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+            "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
           ],
           "startDate": "2022-01-01",
-          "endDate": "2022-12-01",
-          "discounts": [],
-          "minimums": []
+          "endDate": "2022-06-30",
+          "discounts": [
+            {
+              "restrictToPrices": [
+                "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+              ],
+              "type": "PERCENTAGE",
+              "amount": 0.08,
+              "message": "8% Discount",
+              "separateLineItem": true
+            }
+          ],
+          "minimums": [
+            {
+              "restrictToPrices": [
+                "9fe9986b-e205-42b7-a58f-42845c91f03f"
+              ],
+              "amount": 100
+            }
+          ]
         },
         "properties": {
           "priceIds": {
             "type": "array",
             "example": [
-              "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+              "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
             ],
             "items": {
               "type": "string"
@@ -56846,17 +56900,38 @@
           "endDate": {
             "type": "string",
             "format": "date",
-            "example": "2022-12-01"
+            "example": "2022-06-30"
           },
           "discounts": {
             "type": "array",
-            "example": [],
-            "items": {}
+            "example": [
+              {
+                "restrictToPrices": [
+                  "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                ],
+                "type": "PERCENTAGE",
+                "amount": 0.08,
+                "message": "8% Discount",
+                "separateLineItem": true
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/EmbeddableDiscount"
+            }
           },
           "minimums": {
             "type": "array",
-            "example": [],
-            "items": {}
+            "example": [
+              {
+                "restrictToPrices": [
+                  "9fe9986b-e205-42b7-a58f-42845c91f03f"
+                ],
+                "amount": 100
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/MinimumRequest"
+            }
           }
         }
       },
@@ -56873,8 +56948,8 @@
             "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
           ],
           "type": "PERCENTAGE",
-          "amount": 0.15,
-          "message": "15% Discount",
+          "amount": 0.08,
+          "message": "8% Discount",
           "separateLineItem": true
         },
         "properties": {
@@ -56892,11 +56967,11 @@
           },
           "amount": {
             "type": "number",
-            "example": 0.15
+            "example": 0.08
           },
           "message": {
             "type": "string",
-            "example": "15% Discount"
+            "example": "8% Discount"
           },
           "separateLineItem": {
             "type": "boolean",
@@ -57661,21 +57736,21 @@
           "startDate"
         ],
         "type": "object",
-        "description": "Billing Period",
+        "description": "Validity period",
         "example": {
-          "startDate": "2023-01-01",
-          "endDate": "2023-01-31"
+          "startDate": "2022-01-01",
+          "endDate": "2022-12-01"
         },
         "properties": {
           "startDate": {
             "type": "string",
             "format": "date",
-            "example": "2023-01-01"
+            "example": "2022-01-01"
           },
           "endDate": {
             "type": "string",
             "format": "date",
-            "example": "2023-01-31"
+            "example": "2022-12-01"
           }
         }
       },
@@ -60024,22 +60099,21 @@
           "legalCompanyName"
         ],
         "type": "object",
-        "description": "Merchant details",
         "example": {
           "address": {
-            "line1": "The White House",
-            "line2": "1600 Pennsylvania Avenue",
-            "town": "Washington, D.C.",
-            "state": "CA",
-            "postcode": "20500",
+            "line1": "Flat 1",
+            "line2": "123 Fake Street",
+            "town": "New York",
+            "state": "NY",
+            "postcode": "AB1 2EF",
             "country": "US"
           },
           "phoneNumber": "0800001066",
           "email": "donald@example.com",
-          "taxId": "TAX60",
+          "taxId": "TAX",
           "iban": "GB33BUKB20201555555555",
           "ukAccountDetails": {
-            "sortCode": "000000",
+            "sortCode": "123456",
             "accountNumber": "12345678"
           },
           "usAchDetails": {
@@ -60062,54 +60136,9 @@
               "country": "US"
             }
           },
-          "caBankAccountDetails": {
-            "transitNumber": "123",
-            "institutionNumber": "12345",
-            "accountNumber": "1234567"
-          },
-          "canadianInternationalDestination": {
-            "legalName": "John Doe",
-            "accountNumber": "12345678",
-            "transitNumber": "12345",
-            "bankName": "Chase",
-            "bankAddress": {
-              "line1": "JP Morgan Chase",
-              "town": "New York City",
-              "state": "NY",
-              "postcode": "10017",
-              "country": "US"
-            },
-            "institutionNumber": "123",
-            "swiftCode": "CHASUS33",
-            "intermediaryBank": {
-              "bankName": "Chase",
-              "bankAddress": {
-                "line1": "JP Morgan Chase",
-                "town": "New York City",
-                "state": "NY",
-                "postcode": "10017",
-                "country": "US"
-              },
-              "swiftCode": "CHASUS33",
-              "routingNumber": "123456789"
-            }
-          },
-          "australianDestination": {
-            "legalName": "John Doe",
-            "accountNumber": "12345678",
-            "swiftCode": "CHASUS33",
-            "bsb": "123456"
-          },
-          "logoUrl": "logo",
           "legalCompanyName": "The Merchant",
-          "primaryColour": "#000000",
-          "customFields": [
-            {
-              "key": "example-label",
-              "value": "label-value"
-            }
-          ],
-          "includeBeneficiaryAddressInPaymentDetails": true
+          "customFields": [],
+          "includeBeneficiaryAddressInPaymentDetails": false
         },
         "properties": {
           "address": {
@@ -60128,7 +60157,7 @@
           "taxId": {
             "type": "string",
             "description": "Merchant's tax ID",
-            "example": "TAX60"
+            "example": "TAX"
           },
           "iban": {
             "type": "string",
@@ -60144,47 +60173,21 @@
           "usWireDetails": {
             "$ref": "#/components/schemas/UsWireDestination1"
           },
-          "caBankAccountDetails": {
-            "$ref": "#/components/schemas/CanadianBankAccountDestination1"
-          },
-          "canadianInternationalDestination": {
-            "$ref": "#/components/schemas/CanadianInternationalDestination1"
-          },
-          "australianDestination": {
-            "$ref": "#/components/schemas/AustralianBankAccountDestination1"
-          },
-          "logoUrl": {
-            "type": "string",
-            "description": "Merchant's logo image URL",
-            "example": "logo"
-          },
           "legalCompanyName": {
             "type": "string",
             "description": "Merchant's legal company name",
             "example": "The Merchant"
           },
-          "primaryColour": {
-            "type": "string",
-            "description": "Merchant's primary colour (for invoice rendering)",
-            "example": "#000000"
-          },
           "customFields": {
             "type": "array",
             "description": "merchantCustomFields",
-            "example": [
-              {
-                "key": "example-label",
-                "value": "label-value"
-              }
-            ],
-            "items": {
-              "$ref": "#/components/schemas/KeyValuePair"
-            }
+            "example": [],
+            "items": {}
           },
           "includeBeneficiaryAddressInPaymentDetails": {
             "type": "boolean",
             "description": "Include beneficiary address in payment details on invoice",
-            "example": true
+            "example": false
           }
         }
       },
@@ -60196,14 +60199,14 @@
           "town"
         ],
         "type": "object",
-        "description": "Customer's billing address",
+        "description": "Merchant's address",
         "example": {
           "line1": "Flat 1",
-          "line2": "15 Yemen Road",
-          "town": "Yemen",
-          "state": "CA",
-          "postcode": "YE1 2YE",
-          "country": "YE"
+          "line2": "123 Fake Street",
+          "town": "New York",
+          "state": "NY",
+          "postcode": "AB1 2EF",
+          "country": "US"
         },
         "properties": {
           "line1": {
@@ -60214,350 +60217,27 @@
           "line2": {
             "type": "string",
             "description": "Address line 2",
-            "example": "15 Yemen Road"
+            "example": "123 Fake Street"
           },
           "town": {
             "type": "string",
             "description": "Town or city",
-            "example": "Yemen"
+            "example": "New York"
           },
           "state": {
             "description": "State (required for USA only)",
-            "$ref": "#/components/schemas/State2"
+            "$ref": "#/components/schemas/State"
           },
           "postcode": {
             "type": "string",
             "description": "Postal code",
-            "example": "YE1 2YE"
+            "example": "AB1 2EF"
           },
           "country": {
             "description": "Country code ([ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes))",
-            "$ref": "#/components/schemas/CountryCode2"
+            "$ref": "#/components/schemas/CountryCode"
           }
         }
-      },
-      "State2": {
-        "type": "string",
-        "example": "CA",
-        "enum": [
-          "AL",
-          "AK",
-          "AZ",
-          "AR",
-          "CA",
-          "CO",
-          "CT",
-          "DC",
-          "DE",
-          "FL",
-          "GA",
-          "HI",
-          "ID",
-          "IL",
-          "IN",
-          "IA",
-          "KS",
-          "KY",
-          "LA",
-          "ME",
-          "MD",
-          "MA",
-          "MI",
-          "MN",
-          "MS",
-          "MO",
-          "MT",
-          "NE",
-          "NV",
-          "NH",
-          "NJ",
-          "NM",
-          "NY",
-          "NC",
-          "ND",
-          "OH",
-          "OK",
-          "OR",
-          "PA",
-          "RI",
-          "SC",
-          "SD",
-          "TN",
-          "TX",
-          "UT",
-          "VT",
-          "VA",
-          "WA",
-          "WV",
-          "WI",
-          "WY",
-          "AB",
-          "BC",
-          "MB",
-          "NB",
-          "NL",
-          "NS",
-          "ON",
-          "PE",
-          "QC",
-          "SK"
-        ]
-      },
-      "CountryCode2": {
-        "type": "string",
-        "example": "YE",
-        "enum": [
-          "AD",
-          "AE",
-          "AF",
-          "AG",
-          "AI",
-          "AL",
-          "AM",
-          "AO",
-          "AQ",
-          "AR",
-          "AS",
-          "AT",
-          "AU",
-          "AW",
-          "AX",
-          "AZ",
-          "BA",
-          "BB",
-          "BD",
-          "BE",
-          "BF",
-          "BG",
-          "BH",
-          "BI",
-          "BJ",
-          "BL",
-          "BM",
-          "BN",
-          "BO",
-          "BQ",
-          "BR",
-          "BS",
-          "BT",
-          "BV",
-          "BW",
-          "BY",
-          "BZ",
-          "CA",
-          "CC",
-          "CD",
-          "CF",
-          "CG",
-          "CH",
-          "CI",
-          "CK",
-          "CL",
-          "CM",
-          "CN",
-          "CO",
-          "CR",
-          "CU",
-          "CV",
-          "CW",
-          "CX",
-          "CY",
-          "CZ",
-          "DE",
-          "DJ",
-          "DK",
-          "DM",
-          "DO",
-          "DZ",
-          "EC",
-          "EE",
-          "EG",
-          "EH",
-          "ER",
-          "ES",
-          "ET",
-          "FI",
-          "FJ",
-          "FK",
-          "FM",
-          "FO",
-          "FR",
-          "GA",
-          "GB",
-          "GD",
-          "GE",
-          "GF",
-          "GG",
-          "GH",
-          "GI",
-          "GL",
-          "GM",
-          "GN",
-          "GP",
-          "GQ",
-          "GR",
-          "GS",
-          "GT",
-          "GU",
-          "GW",
-          "GY",
-          "HK",
-          "HM",
-          "HN",
-          "HR",
-          "HT",
-          "HU",
-          "ID",
-          "IE",
-          "IL",
-          "IM",
-          "IN",
-          "IO",
-          "IQ",
-          "IR",
-          "IS",
-          "IT",
-          "JE",
-          "JM",
-          "JO",
-          "JP",
-          "KE",
-          "KG",
-          "KH",
-          "KI",
-          "KM",
-          "KN",
-          "KP",
-          "KR",
-          "KW",
-          "KY",
-          "KZ",
-          "LA",
-          "LB",
-          "LC",
-          "LI",
-          "LK",
-          "LR",
-          "LS",
-          "LT",
-          "LU",
-          "LV",
-          "LY",
-          "MA",
-          "MC",
-          "MD",
-          "ME",
-          "MF",
-          "MG",
-          "MH",
-          "MK",
-          "ML",
-          "MM",
-          "MN",
-          "MO",
-          "MP",
-          "MQ",
-          "MR",
-          "MS",
-          "MT",
-          "MU",
-          "MV",
-          "MW",
-          "MX",
-          "MY",
-          "MZ",
-          "NA",
-          "NC",
-          "NE",
-          "NF",
-          "NG",
-          "NI",
-          "NL",
-          "NO",
-          "NP",
-          "NR",
-          "NU",
-          "NZ",
-          "OM",
-          "PA",
-          "PE",
-          "PF",
-          "PG",
-          "PH",
-          "PK",
-          "PL",
-          "PM",
-          "PN",
-          "PR",
-          "PS",
-          "PT",
-          "PW",
-          "PY",
-          "QA",
-          "RE",
-          "RO",
-          "RS",
-          "RU",
-          "RW",
-          "SA",
-          "SB",
-          "SC",
-          "SD",
-          "SE",
-          "SG",
-          "SH",
-          "SI",
-          "SJ",
-          "SK",
-          "SL",
-          "SM",
-          "SN",
-          "SO",
-          "SR",
-          "SS",
-          "ST",
-          "SV",
-          "SX",
-          "SY",
-          "SZ",
-          "TC",
-          "TD",
-          "TF",
-          "TG",
-          "TH",
-          "TJ",
-          "TK",
-          "TL",
-          "TM",
-          "TN",
-          "TO",
-          "TR",
-          "TT",
-          "TV",
-          "TW",
-          "TZ",
-          "UA",
-          "UG",
-          "UM",
-          "US",
-          "UY",
-          "UZ",
-          "VA",
-          "VC",
-          "VE",
-          "VG",
-          "VI",
-          "VN",
-          "VU",
-          "WF",
-          "WS",
-          "XK",
-          "YE",
-          "YT",
-          "ZA",
-          "ZM",
-          "ZW"
-        ]
       },
       "SortCodeAccountNumber": {
         "required": [
@@ -60567,14 +60247,14 @@
         "type": "object",
         "description": "Merchant's UK bank account details, for receiving payment by UK bank transfer",
         "example": {
-          "sortCode": "000000",
+          "sortCode": "123456",
           "accountNumber": "12345678"
         },
         "properties": {
           "sortCode": {
             "type": "string",
             "description": "UK sort code. 6 digits.",
-            "example": "000000"
+            "example": "123456"
           },
           "accountNumber": {
             "type": "string",
@@ -60952,10 +60632,10 @@
         "example": {
           "key": "GBP",
           "value": {
-            "type": "IBAN",
+            "type": "UK_BANK_ACCOUNT",
             "iban": "GB33BUKB20201555555555",
             "ukBankAccount": {
-              "sortCode": "000000",
+              "sortCode": "123456",
               "accountNumber": "12345678"
             },
             "usAchDestination": {
@@ -60995,7 +60675,7 @@
                 "postcode": "10017",
                 "country": "US"
               },
-              "institutionNumber": "123",
+              "institutionNumber": "123456789",
               "swiftCode": "CHASUS33",
               "intermediaryBank": {
                 "bankName": "Chase",
@@ -61033,10 +60713,10 @@
         ],
         "type": "object",
         "example": {
-          "type": "IBAN",
+          "type": "UK_BANK_ACCOUNT",
           "iban": "GB33BUKB20201555555555",
           "ukBankAccount": {
-            "sortCode": "000000",
+            "sortCode": "123456",
             "accountNumber": "12345678"
           },
           "usAchDestination": {
@@ -61076,7 +60756,7 @@
               "postcode": "10017",
               "country": "US"
             },
-            "institutionNumber": "123",
+            "institutionNumber": "123456789",
             "swiftCode": "CHASUS33",
             "intermediaryBank": {
               "bankName": "Chase",
@@ -61130,7 +60810,7 @@
       },
       "BankPaymentDestinationType": {
         "type": "string",
-        "example": "IBAN",
+        "example": "UK_BANK_ACCOUNT",
         "enum": [
           "IBAN",
           "UK_BANK_ACCOUNT",
@@ -61148,20 +60828,20 @@
           "transitNumber"
         ],
         "type": "object",
-        "description": "Merchant's Canadian account details, for receiving payment by Canadian bank transfer",
+        "description": "Canadian bank account details.",
         "example": {
-          "transitNumber": "123",
-          "institutionNumber": "12345",
+          "transitNumber": "12345",
+          "institutionNumber": "123",
           "accountNumber": "1234567"
         },
         "properties": {
           "transitNumber": {
             "type": "string",
-            "example": "123"
+            "example": "12345"
           },
           "institutionNumber": {
             "type": "string",
-            "example": "12345"
+            "example": "123"
           },
           "accountNumber": {
             "type": "string",
@@ -61180,7 +60860,7 @@
           "transitNumber"
         ],
         "type": "object",
-        "description": "Merchant's account details, for receiving payment to a Canadian bank via Wire transfer",
+        "description": "Canadian USD Wire account details.",
         "example": {
           "legalName": "John Doe",
           "accountNumber": "12345678",
@@ -61193,7 +60873,7 @@
             "postcode": "10017",
             "country": "US"
           },
-          "institutionNumber": "123",
+          "institutionNumber": "123456789",
           "swiftCode": "CHASUS33",
           "intermediaryBank": {
             "bankName": "Chase",
@@ -61230,7 +60910,7 @@
           },
           "institutionNumber": {
             "type": "string",
-            "example": "123"
+            "example": "123456789"
           },
           "swiftCode": {
             "type": "string",
@@ -61287,7 +60967,7 @@
           "swiftCode"
         ],
         "type": "object",
-        "description": "Merchant's account details, for receiving payment to a Canadian bank via Australian bank transfer",
+        "description": "Australian bank account details",
         "example": {
           "legalName": "John Doe",
           "accountNumber": "12345678",
@@ -61915,11 +61595,10 @@
             "endDate": "2022-10-24"
           },
           "index": 2,
-          "groupId": "cd11218d-fa00-4faa-8684-a43113d076a8",
-          "netTotal": "51.20",
-          "totalTax": "2.50",
-          "grossTotal": "101.23",
-          "priceId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+          "groupId": "befc8235-a295-4548-87bd-e9bcbbdf18b9",
+          "netTotal": "40000.20",
+          "totalTax": "8000.04",
+          "grossTotal": "48000.24",
           "rateDisplay": "ABSOLUTE",
           "externalIds": [
             {
@@ -61927,8 +61606,7 @@
               "value": "123"
             }
           ],
-          "revenueClassification": "EARNED",
-          "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+          "revenueClassification": "EARNED"
         },
         "properties": {
           "id": {
@@ -61987,27 +61665,22 @@
           "groupId": {
             "type": "string",
             "description": "Line Item Group ID",
-            "example": "cd11218d-fa00-4faa-8684-a43113d076a8"
+            "example": "befc8235-a295-4548-87bd-e9bcbbdf18b9"
           },
           "netTotal": {
             "type": "string",
             "description": "Net total, in decimal format of the Invoice's currency",
-            "example": "51.20"
+            "example": "40000.20"
           },
           "totalTax": {
             "type": "string",
             "description": "Total tax, in decimal format of the Invoice's currency",
-            "example": "2.50"
+            "example": "8000.04"
           },
           "grossTotal": {
             "type": "string",
             "description": "Gross total, in decimal format of the Invoice's currency",
-            "example": "101.23"
-          },
-          "priceId": {
-            "type": "string",
-            "description": "Price ID",
-            "example": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+            "example": "48000.24"
           },
           "rateDisplay": {
             "description": "Determines whether rate is displayed as an absolute value or percentage",
@@ -62029,11 +61702,6 @@
           "revenueClassification": {
             "description": "Revenue classification",
             "$ref": "#/components/schemas/RevenueClassification"
-          },
-          "creditGrantId": {
-            "type": "string",
-            "description": "Credit Grant ID",
-            "example": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
           }
         }
       },
@@ -62171,7 +61839,7 @@
           "totalTax"
         ],
         "type": "object",
-        "description": "Credit Note total",
+        "description": "Invoice total",
         "example": {
           "netTotal": "200000",
           "totalTax": "10",
@@ -62863,6 +62531,7 @@
             "startDate": "2022-10-20",
             "endDate": "2022-10-24"
           },
+          "groupId": "cd11218d-fa00-4faa-8684-a43113d076a8",
           "priceId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
           "rateDisplay": "ABSOLUTE",
           "externalIds": [
@@ -62870,7 +62539,9 @@
               "key": "Xero",
               "value": "123"
             }
-          ]
+          ],
+          "revenueClassification": "EARNED",
+          "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
         },
         "properties": {
           "title": {
@@ -62911,6 +62582,11 @@
           "servicePeriod": {
             "$ref": "#/components/schemas/DateRange1"
           },
+          "groupId": {
+            "type": "string",
+            "description": "Line Item Group ID",
+            "example": "cd11218d-fa00-4faa-8684-a43113d076a8"
+          },
           "priceId": {
             "type": "string",
             "description": "Price ID",
@@ -62932,6 +62608,15 @@
             "items": {
               "$ref": "#/components/schemas/IntegrationExternalIdentifier2"
             }
+          },
+          "revenueClassification": {
+            "description": "Revenue classification",
+            "$ref": "#/components/schemas/RevenueClassification"
+          },
+          "creditGrantId": {
+            "type": "string",
+            "description": "Credit Grant ID",
+            "example": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
           }
         }
       },
@@ -64759,70 +64444,50 @@
         ],
         "type": "object",
         "example": {
-          "id": "0186a182-5f3f-7ff0-8227-02d4e3999149",
-          "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
-          "title": "Number of messages sent",
-          "value": "100",
-          "groupedValues": [
-            {
-              "grouping": "sms",
-              "value": 25
-            },
-            {
-              "grouping": "email",
-              "value": 75
-            }
-          ],
-          "lineItemGroupId": "941272d1-f840-4e16-b698-0cd455c81e0e",
-          "usageItemGroupId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9"
+          "id": "cf8ad70f-f79a-4803-a41f-9a0b436c865a",
+          "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+          "title": "Eldest Child",
+          "value": "150",
+          "groupedValues": [],
+          "lineItemGroupId": "f4457a3c-a0f2-44ea-9c8d-548fa1298626",
+          "usageItemGroupId": "1aaeac35-cdc3-4adb-a741-5fa4816619ad"
         },
         "properties": {
           "id": {
             "type": "string",
             "description": "Usage Item ID",
-            "example": "0186a182-5f3f-7ff0-8227-02d4e3999149"
+            "example": "cf8ad70f-f79a-4803-a41f-9a0b436c865a"
           },
           "invoiceId": {
             "type": "string",
             "description": "Invoice ID",
-            "example": "cd11218d-fa00-4faa-8684-a43113d076a8"
+            "example": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9"
           },
           "title": {
             "type": "string",
             "description": "",
-            "example": "Number of messages sent"
+            "example": "Eldest Child"
           },
           "value": {
             "type": "string",
             "description": "Value",
-            "example": "100"
+            "example": "150"
           },
           "groupedValues": {
             "type": "array",
             "description": "Grouped Values",
-            "example": [
-              {
-                "grouping": "sms",
-                "value": 25
-              },
-              {
-                "grouping": "email",
-                "value": 75
-              }
-            ],
-            "items": {
-              "$ref": "#/components/schemas/GroupedValue"
-            }
+            "example": [],
+            "items": {}
           },
           "lineItemGroupId": {
             "type": "string",
             "description": "Line Item Group ID",
-            "example": "941272d1-f840-4e16-b698-0cd455c81e0e"
+            "example": "f4457a3c-a0f2-44ea-9c8d-548fa1298626"
           },
           "usageItemGroupId": {
             "type": "string",
             "description": "Usage Item Group ID",
-            "example": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9"
+            "example": "1aaeac35-cdc3-4adb-a741-5fa4816619ad"
           }
         }
       },
@@ -71196,11 +70861,11 @@
         ],
         "type": "object",
         "example": {
-          "id": "7e330949-a175-496a-a060-27821656ce34",
+          "id": "b6b0bb79-7b03-4cc0-9c70-2d3aec3aeb17",
           "createdAt": "2022-06-28T16:47:00Z",
-          "sequenceOrganisationId": "13448448-ce43-4874-8acf-8ff2a8ca24c1",
+          "sequenceOrganisationId": "e4f49f12-38cf-4fcf-ad2a-0ae7d83d6be4",
           "companyName": "Acme Inc.",
-          "companyNumber": "GB123987",
+          "companyNumber": "GB123988",
           "country": "GB",
           "sendCustomerNotifications": true,
           "alertEmailAddresses": [
@@ -71211,7 +70876,7 @@
           "id": {
             "type": "string",
             "description": "Unique ID",
-            "example": "7e330949-a175-496a-a060-27821656ce34"
+            "example": "b6b0bb79-7b03-4cc0-9c70-2d3aec3aeb17"
           },
           "createdAt": {
             "type": "string",
@@ -71221,7 +70886,7 @@
           "sequenceOrganisationId": {
             "type": "string",
             "description": "The Sequence Organisation ID that this account belongs to",
-            "example": "13448448-ce43-4874-8acf-8ff2a8ca24c1"
+            "example": "e4f49f12-38cf-4fcf-ad2a-0ae7d83d6be4"
           },
           "companyName": {
             "type": "string",
@@ -71231,11 +70896,11 @@
           "companyNumber": {
             "type": "string",
             "description": "The company number of the company which owns this Account",
-            "example": "GB123987"
+            "example": "GB123988"
           },
           "country": {
             "description": "The country in which the company who owns this Account is registered",
-            "$ref": "#/components/schemas/CountryCode3"
+            "$ref": "#/components/schemas/CountryCode2"
           },
           "sendCustomerNotifications": {
             "type": "boolean",
@@ -71254,7 +70919,7 @@
           }
         }
       },
-      "CountryCode3": {
+      "CountryCode2": {
         "type": "string",
         "example": "GB",
         "enum": [
@@ -71568,11 +71233,12 @@
         "type": "object",
         "example": {
           "id": "7b1f28b9-a4ad-450b-a0ea-fd647d5109b2",
-          "email": "person@example.com",
+          "email": "john@example.xyz",
           "sequenceAccountIds": [
-            "724c4f93-8606-4a38-bfbf-50a7045e4eaa"
+            "83da2ca4-49c7-4d81-9c9a-ba5be11768b0",
+            "c0901c87-e1a9-48e9-9e2f-9e05c402dcea"
           ],
-          "state": "deleted"
+          "state": "active"
         },
         "properties": {
           "id": {
@@ -71583,13 +71249,14 @@
           "email": {
             "type": "string",
             "description": "User email",
-            "example": "person@example.com"
+            "example": "john@example.xyz"
           },
           "sequenceAccountIds": {
             "type": "array",
             "description": "Sequence Account IDs",
             "example": [
-              "724c4f93-8606-4a38-bfbf-50a7045e4eaa"
+              "83da2ca4-49c7-4d81-9c9a-ba5be11768b0",
+              "c0901c87-e1a9-48e9-9e2f-9e05c402dcea"
             ],
             "items": {
               "type": "string"
@@ -71598,7 +71265,7 @@
           "state": {
             "type": "string",
             "description": "User state",
-            "example": "deleted"
+            "example": "active"
           }
         }
       },
