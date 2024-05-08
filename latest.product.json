@@ -2099,29 +2099,39 @@
     },
     "/billing-schedule-settings": {
       "post": {
+        "tags": [],
         "summary": "Create a new Billing Schedule Settings",
         "description": "Create a new Billing Schedule Settings",
-        "tags": [],
+        "operationId": "postBillingScheduleSettings",
         "parameters": [
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+            }
           }
         ],
         "requestBody": {
           "content": {
             "application/json": {
-              "example": {
-                "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                "paymentProvider": "STRIPE"
-              },
               "schema": {
-                "$ref": "#/components/schemas/CreateBillingScheduleSettingsEndpointCreateBillingScheduleSettingsRequestModel"
+                "$ref": "#/components/schemas/CreateBillingScheduleSettingsEndpointCreateBillingScheduleSettingsRequestModel",
+                "example": {
+                  "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                  "paymentProvider": "STRIPE"
+                }
+              },
+              "examples": {
+                "CreateBillingScheduleSettingsEndpointCreateBillingScheduleSettingsRequestModel": {
+                  "summary": "",
+                  "value": {
+                    "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "paymentProvider": "STRIPE"
+                  }
+                }
               }
             }
           },
@@ -2132,59 +2142,70 @@
             "description": "Created",
             "content": {
               "application/json": {
-                "example": {
-                  "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "paymentProvider": "STRIPE"
-                },
                 "schema": {
-                  "$ref": "#/components/schemas/CreateBillingScheduleSettingsEndpointProductCreateBillingScheduleSettingsResponseModel"
+                  "$ref": "#/components/schemas/CreateBillingScheduleSettingsEndpointProductCreateBillingScheduleSettingsResponseModel",
+                  "example": {
+                    "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "paymentProvider": "STRIPE"
+                  }
+                },
+                "examples": {
+                  "CreateBillingScheduleSettingsEndpointProductCreateBillingScheduleSettingsResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "paymentProvider": "STRIPE"
+                    }
+                  }
                 }
               }
             }
           },
           "400": {
-            "description": "",
+            "description": "Bad Request",
             "content": {}
           },
           "401": {
-            "description": "",
+            "description": "Unauthorized",
             "content": {}
           },
           "500": {
-            "description": "",
+            "description": "Internal Server Error",
             "content": {}
           }
-        },
-        "security": [],
-        "operationId": "postApiBilling_schedule_settings",
-        "deprecated": false
-      }
+        }
+      },
+      "servers": [],
+      "parameters": []
     },
     "/billing-schedule-settings/for-billing-schedule/{id}": {
       "get": {
+        "tags": [],
         "summary": "Get a BillingScheduleSettings by billing schedule ID",
         "description": "Get a BillingScheduleSettings by billing schedule ID",
-        "tags": [],
+        "operationId": "getBillingScheduleSettingsForBillingScheduleById",
         "parameters": [
           {
+            "name": "id",
+            "in": "path",
+            "description": "Unique billing schedule ID",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+            }
           },
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Unique billing schedule ID."
+            }
           }
         ],
         "responses": {
@@ -2192,117 +2213,70 @@
             "description": "OK",
             "content": {
               "application/json": {
-                "example": {
-                  "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "paymentProvider": "STRIPE"
-                },
                 "schema": {
-                  "$ref": "#/components/schemas/GetBillingScheduleSettingsEndpointProductGetBillingScheduleSettingsResponseModel"
+                  "$ref": "#/components/schemas/GetBillingScheduleSettingsEndpointProductGetBillingScheduleSettingsResponseModel",
+                  "example": {
+                    "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "paymentProvider": "STRIPE"
+                  }
+                },
+                "examples": {
+                  "GetBillingScheduleSettingsEndpointProductGetBillingScheduleSettingsResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "paymentProvider": "STRIPE"
+                    }
+                  }
                 }
               }
             }
           },
           "400": {
-            "description": "",
+            "description": "Bad Request",
             "content": {}
           },
           "401": {
-            "description": "",
+            "description": "Unauthorized",
             "content": {}
           },
           "500": {
-            "description": "",
+            "description": "Internal Server Error",
             "content": {}
           }
-        },
-        "security": [],
-        "operationId": "getApiBilling_schedule_settingsFor_billing_schedule_id",
-        "deprecated": false
-      }
+        }
+      },
+      "servers": [],
+      "parameters": []
     },
     "/billing-schedule-settings/{id}": {
-      "delete": {
-        "summary": "Delete a Billing Schedule Settings",
-        "description": "Delete a Billing Schedule Settings",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Unique payment provider ID."
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "example": {
-                  "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "paymentProvider": "STRIPE"
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/DeleteBillingScheduleSettingsEndpointProductDeleteBillingScheduleSettingsResponseModel"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "401": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "deleteApiBilling_schedule_settings_id",
-        "deprecated": false
-      },
       "get": {
+        "tags": [],
         "summary": "Get a Billing Schedule Settings by ID",
         "description": "Get a Billing Schedule Settings by ID",
-        "tags": [],
+        "operationId": "getBillingScheduleSettingsById",
         "parameters": [
           {
+            "name": "id",
+            "in": "path",
+            "description": "Unique settings ID",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+            }
           },
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Unique payment provider ID."
+            }
           }
         ],
         "responses": {
@@ -2310,67 +2284,84 @@
             "description": "OK",
             "content": {
               "application/json": {
-                "example": {
-                  "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "paymentProvider": "STRIPE"
-                },
                 "schema": {
-                  "$ref": "#/components/schemas/GetBillingScheduleSettingsEndpointProductGetBillingScheduleSettingsResponseModel"
+                  "$ref": "#/components/schemas/GetBillingScheduleSettingsEndpointProductGetBillingScheduleSettingsResponseModel",
+                  "example": {
+                    "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "paymentProvider": "STRIPE"
+                  }
+                },
+                "examples": {
+                  "GetBillingScheduleSettingsEndpointProductGetBillingScheduleSettingsResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "paymentProvider": "STRIPE"
+                    }
+                  }
                 }
               }
             }
           },
           "400": {
-            "description": "",
+            "description": "Bad Request",
             "content": {}
           },
           "401": {
-            "description": "",
+            "description": "Unauthorized",
             "content": {}
           },
           "500": {
-            "description": "",
+            "description": "Internal Server Error",
             "content": {}
           }
-        },
-        "security": [],
-        "operationId": "getApiBilling_schedule_settings_id",
-        "deprecated": false
+        }
       },
       "put": {
+        "tags": [],
         "summary": "Update a Billing Schedule Settings",
         "description": "Update a Billing Schedule Settings",
-        "tags": [],
+        "operationId": "putBillingScheduleSettingsById",
         "parameters": [
           {
+            "name": "id",
+            "in": "path",
+            "description": "Unique settings ID",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+            }
           },
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Unique payment provider ID."
+            }
           }
         ],
         "requestBody": {
           "content": {
             "application/json": {
-              "example": {
-                "paymentProvider": "STRIPE"
-              },
               "schema": {
-                "$ref": "#/components/schemas/UpdateBillingScheduleSettingsEndpointUpdateBillingScheduleSettingsRequestModel"
+                "$ref": "#/components/schemas/UpdateBillingScheduleSettingsEndpointUpdateBillingScheduleSettingsRequestModel",
+                "example": {
+                  "paymentProvider": "STRIPE"
+                }
+              },
+              "examples": {
+                "UpdateBillingScheduleSettingsEndpointUpdateBillingScheduleSettingsRequestModel": {
+                  "summary": "",
+                  "value": {
+                    "paymentProvider": "STRIPE"
+                  }
+                }
               }
             }
           },
@@ -2381,124 +2372,66 @@
             "description": "OK",
             "content": {
               "application/json": {
-                "example": {
-                  "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "paymentProvider": "STRIPE"
-                },
                 "schema": {
-                  "$ref": "#/components/schemas/UpdateBillingScheduleSettingsEndpointProductUpdateBillingScheduleSettingsResponseModel"
+                  "$ref": "#/components/schemas/UpdateBillingScheduleSettingsEndpointProductUpdateBillingScheduleSettingsResponseModel",
+                  "example": {
+                    "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "paymentProvider": "STRIPE"
+                  }
+                },
+                "examples": {
+                  "UpdateBillingScheduleSettingsEndpointProductUpdateBillingScheduleSettingsResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "paymentProvider": "STRIPE"
+                    }
+                  }
                 }
               }
             }
           },
           "400": {
-            "description": "",
+            "description": "Bad Request",
             "content": {}
           },
           "401": {
-            "description": "",
+            "description": "Unauthorized",
             "content": {}
           },
           "500": {
-            "description": "",
+            "description": "Internal Server Error",
             "content": {}
           }
-        },
-        "security": [],
-        "operationId": "putApiBilling_schedule_settings_id",
-        "deprecated": false
-      }
-    },
-    "/customer-settings": {
-      "post": {
-        "summary": "Create a new Customer Settings",
-        "description": "Create a new Customer Settings",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "example": {
-                "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                "paymentProvider": "STRIPE"
-              },
-              "schema": {
-                "$ref": "#/components/schemas/CreateCustomerSettingsEndpointCreateCustomerSettingsRequestModel"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "201": {
-            "description": "Created",
-            "content": {
-              "application/json": {
-                "example": {
-                  "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "paymentProvider": "STRIPE"
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/CreateCustomerSettingsEndpointProductCreateCustomerSettingsResponseModel"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "401": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "postApiCustomer_settings",
-        "deprecated": false
-      }
-    },
-    "/customer-settings/{id}": {
+        }
+      },
       "delete": {
-        "summary": "Delete a Customer Settings",
-        "description": "Delete a Customer Settings",
         "tags": [],
+        "summary": "Delete a Billing Schedule Settings",
+        "description": "Delete a Billing Schedule Settings",
+        "operationId": "deleteBillingScheduleSettingsById",
         "parameters": [
           {
+            "name": "id",
+            "in": "path",
+            "description": "Unique settings ID",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+            }
           },
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Unique payment provider id."
+            }
           }
         ],
         "responses": {
@@ -2506,191 +2439,83 @@
             "description": "OK",
             "content": {
               "application/json": {
-                "example": {
-                  "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "paymentProvider": "STRIPE"
-                },
                 "schema": {
-                  "$ref": "#/components/schemas/DeleteCustomerSettingsEndpointProductDeleteCustomerSettingsResponseModel"
+                  "$ref": "#/components/schemas/DeleteBillingScheduleSettingsEndpointProductDeleteBillingScheduleSettingsResponseModel",
+                  "example": {
+                    "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "paymentProvider": "STRIPE"
+                  }
+                },
+                "examples": {
+                  "DeleteBillingScheduleSettingsEndpointProductDeleteBillingScheduleSettingsResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "paymentProvider": "STRIPE"
+                    }
+                  }
                 }
               }
             }
           },
           "400": {
-            "description": "",
+            "description": "Bad Request",
             "content": {}
           },
           "401": {
-            "description": "",
+            "description": "Unauthorized",
             "content": {}
           },
           "500": {
-            "description": "",
+            "description": "Internal Server Error",
             "content": {}
           }
-        },
-        "security": [],
-        "operationId": "deleteApiCustomer_settings_id",
-        "deprecated": false
+        }
       },
-      "get": {
-        "summary": "Get a Customer Settings by ID",
-        "description": "Get a Customer Settings by ID",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Unique payment provider id."
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "example": {
-                  "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "paymentProvider": "STRIPE"
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/GetCustomerSettingsEndpointProductGetCustomerSettingsResponseModel"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "401": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "getApiCustomer_settings_id",
-        "deprecated": false
-      },
-      "put": {
-        "summary": "Update a Customer Settings",
-        "description": "Update a Customer Settings",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Unique payment provider id."
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "example": {
-                "paymentProvider": "STRIPE"
-              },
-              "schema": {
-                "$ref": "#/components/schemas/UpdateCustomerSettingsEndpointUpdateCustomerSettingsRequestModel"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "example": {
-                  "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "paymentProvider": "STRIPE"
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/UpdateCustomerSettingsEndpointProductUpdateCustomerSettingsResponseModel"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "401": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "putApiCustomer_settings_id",
-        "deprecated": false
-      }
+      "servers": [],
+      "parameters": []
     },
     "/invoice-settings": {
       "post": {
+        "tags": [],
         "summary": "Create a new Invoice Settings",
         "description": "Create a new Invoice Settings",
-        "tags": [],
+        "operationId": "postInvoiceSettings",
         "parameters": [
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+            }
           }
         ],
         "requestBody": {
           "content": {
             "application/json": {
-              "example": {
-                "invoiceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                "paymentProvider": "STRIPE"
-              },
               "schema": {
-                "$ref": "#/components/schemas/CreateInvoiceSettingsEndpointCreateInvoiceSettingsRequestModel"
+                "$ref": "#/components/schemas/CreateInvoiceSettingsEndpointCreateInvoiceSettingsRequestModel",
+                "example": {
+                  "invoiceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                  "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                  "paymentProvider": "STRIPE"
+                }
+              },
+              "examples": {
+                "CreateInvoiceSettingsEndpointCreateInvoiceSettingsRequestModel": {
+                  "summary": "",
+                  "value": {
+                    "invoiceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "paymentProvider": "STRIPE"
+                  }
+                }
               }
             }
           },
@@ -2701,60 +2526,72 @@
             "description": "Created",
             "content": {
               "application/json": {
-                "example": {
-                  "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "invoiceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "paymentProvider": "STRIPE"
-                },
                 "schema": {
-                  "$ref": "#/components/schemas/CreateInvoiceSettingsEndpointProductCreateInvoiceSettingsResponseModel"
+                  "$ref": "#/components/schemas/CreateInvoiceSettingsEndpointProductCreateInvoiceSettingsResponseModel",
+                  "example": {
+                    "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "invoiceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "paymentProvider": "STRIPE"
+                  }
+                },
+                "examples": {
+                  "CreateInvoiceSettingsEndpointProductCreateInvoiceSettingsResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "invoiceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "paymentProvider": "STRIPE"
+                    }
+                  }
                 }
               }
             }
           },
           "400": {
-            "description": "",
+            "description": "Bad Request",
             "content": {}
           },
           "401": {
-            "description": "",
+            "description": "Unauthorized",
             "content": {}
           },
           "500": {
-            "description": "",
+            "description": "Internal Server Error",
             "content": {}
           }
-        },
-        "security": [],
-        "operationId": "postApiInvoice_settings",
-        "deprecated": false
-      }
+        }
+      },
+      "servers": [],
+      "parameters": []
     },
     "/invoice-settings/for-invoice/{id}": {
       "get": {
+        "tags": [],
         "summary": "Get a InvoiceSetting by Invoice ID",
         "description": "Get a InvoiceSetting by Invoice ID",
-        "tags": [],
+        "operationId": "getInvoiceSettingsForInvoiceById",
         "parameters": [
           {
+            "name": "id",
+            "in": "path",
+            "description": "Unique invoice ID",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+            }
           },
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Invoice ID"
+            }
           }
         ],
         "responses": {
@@ -2762,118 +2599,70 @@
             "description": "OK",
             "content": {
               "application/json": {
-                "example": {
-                  "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "invoiceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "paymentProvider": "STRIPE"
-                },
                 "schema": {
-                  "$ref": "#/components/schemas/GetByInvoiceIdProductGetInvoiceSettingsResponseModel"
+                  "$ref": "#/components/schemas/GetByInvoiceIdProductGetInvoiceSettingsResponseModel",
+                  "example": {
+                    "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "invoiceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "paymentProvider": "STRIPE"
+                  }
+                },
+                "examples": {
+                  "GetByInvoiceIdProductGetInvoiceSettingsResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "invoiceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "paymentProvider": "STRIPE"
+                    }
+                  }
                 }
               }
             }
           },
           "400": {
-            "description": "",
+            "description": "Bad Request",
             "content": {}
           },
           "401": {
-            "description": "",
+            "description": "Unauthorized",
             "content": {}
           },
           "500": {
-            "description": "",
+            "description": "Internal Server Error",
             "content": {}
           }
-        },
-        "security": [],
-        "operationId": "getApiInvoice_settingsFor_invoice_id",
-        "deprecated": false
-      }
+        }
+      },
+      "servers": [],
+      "parameters": []
     },
     "/invoice-settings/{id}": {
-      "delete": {
-        "summary": "Delete an Invoice Settings",
-        "description": "Delete an Invoice Settings",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Unique payment provider id."
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "example": {
-                  "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "invoiceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "paymentProvider": "STRIPE"
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/DeleteInvoiceSettingsEndpointProductDeleteInvoiceSettingsResponseModel"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "401": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "deleteApiInvoice_settings_id",
-        "deprecated": false
-      },
       "get": {
+        "tags": [],
         "summary": "Get an Invoice Settings by ID",
         "description": "Get an Invoice Settings by ID",
-        "tags": [],
+        "operationId": "getInvoiceSettingsById",
         "parameters": [
           {
+            "name": "id",
+            "in": "path",
+            "description": "Unique settings ID",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+            }
           },
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Unique payment provider id."
+            }
           }
         ],
         "responses": {
@@ -2881,68 +2670,86 @@
             "description": "OK",
             "content": {
               "application/json": {
-                "example": {
-                  "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "invoiceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "paymentProvider": "STRIPE"
-                },
                 "schema": {
-                  "$ref": "#/components/schemas/GetInvoiceSettingsEndpointProductGetInvoiceSettingsResponseModel"
+                  "$ref": "#/components/schemas/GetInvoiceSettingsEndpointProductGetInvoiceSettingsResponseModel",
+                  "example": {
+                    "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "invoiceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "paymentProvider": "STRIPE"
+                  }
+                },
+                "examples": {
+                  "GetInvoiceSettingsEndpointProductGetInvoiceSettingsResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "invoiceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "paymentProvider": "STRIPE"
+                    }
+                  }
                 }
               }
             }
           },
           "400": {
-            "description": "",
+            "description": "Bad Request",
             "content": {}
           },
           "401": {
-            "description": "",
+            "description": "Unauthorized",
             "content": {}
           },
           "500": {
-            "description": "",
+            "description": "Internal Server Error",
             "content": {}
           }
-        },
-        "security": [],
-        "operationId": "getApiInvoice_settings_id",
-        "deprecated": false
+        }
       },
       "put": {
+        "tags": [],
         "summary": "Update an Invoice Settings",
         "description": "Update an Invoice Settings",
-        "tags": [],
+        "operationId": "putInvoiceSettingsById",
         "parameters": [
           {
+            "name": "id",
+            "in": "path",
+            "description": "Unique settings ID",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`."
+            }
           },
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Unique payment provider id."
+            }
           }
         ],
         "requestBody": {
           "content": {
             "application/json": {
-              "example": {
-                "paymentProvider": "STRIPE"
-              },
               "schema": {
-                "$ref": "#/components/schemas/UpdateInvoiceSettingsEndpointUpdateInvoiceSettingsRequestModel"
+                "$ref": "#/components/schemas/UpdateInvoiceSettingsEndpointUpdateInvoiceSettingsRequestModel",
+                "example": {
+                  "paymentProvider": "STRIPE"
+                }
+              },
+              "examples": {
+                "UpdateInvoiceSettingsEndpointUpdateInvoiceSettingsRequestModel": {
+                  "summary": "",
+                  "value": {
+                    "paymentProvider": "STRIPE"
+                  }
+                }
               }
             }
           },
@@ -2953,36 +2760,427 @@
             "description": "OK",
             "content": {
               "application/json": {
-                "example": {
-                  "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "invoiceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "paymentProvider": "STRIPE"
-                },
                 "schema": {
-                  "$ref": "#/components/schemas/UpdateInvoiceSettingsEndpointProductUpdateInvoiceSettingsResponseModel"
+                  "$ref": "#/components/schemas/UpdateInvoiceSettingsEndpointProductUpdateInvoiceSettingsResponseModel",
+                  "example": {
+                    "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "invoiceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "paymentProvider": "STRIPE"
+                  }
+                },
+                "examples": {
+                  "UpdateInvoiceSettingsEndpointProductUpdateInvoiceSettingsResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "invoiceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "paymentProvider": "STRIPE"
+                    }
+                  }
                 }
               }
             }
           },
           "400": {
-            "description": "",
+            "description": "Bad Request",
             "content": {}
           },
           "401": {
-            "description": "",
+            "description": "Unauthorized",
             "content": {}
           },
           "500": {
-            "description": "",
+            "description": "Internal Server Error",
             "content": {}
           }
+        }
+      },
+      "delete": {
+        "tags": [],
+        "summary": "Delete an Invoice Settings",
+        "description": "Delete an Invoice Settings",
+        "operationId": "deleteInvoiceSettingsById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Unique settings ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DeleteInvoiceSettingsEndpointProductDeleteInvoiceSettingsResponseModel",
+                  "example": {
+                    "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "invoiceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "paymentProvider": "STRIPE"
+                  }
+                },
+                "examples": {
+                  "DeleteInvoiceSettingsEndpointProductDeleteInvoiceSettingsResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "invoiceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "paymentProvider": "STRIPE"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
+    "/customer-settings": {
+      "post": {
+        "tags": [],
+        "summary": "Create a new Customer Settings",
+        "description": "Create a new Customer Settings",
+        "operationId": "postCustomerSettings",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCustomerSettingsEndpointCreateCustomerSettingsRequestModel",
+                "example": {
+                  "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                  "paymentProvider": "STRIPE"
+                }
+              },
+              "examples": {
+                "CreateCustomerSettingsEndpointCreateCustomerSettingsRequestModel": {
+                  "summary": "",
+                  "value": {
+                    "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "paymentProvider": "STRIPE"
+                  }
+                }
+              }
+            }
+          },
+          "required": true
         },
-        "security": [],
-        "operationId": "putApiInvoice_settings_id",
-        "deprecated": false
-      }
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreateCustomerSettingsEndpointProductCreateCustomerSettingsResponseModel",
+                  "example": {
+                    "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "paymentProvider": "STRIPE"
+                  }
+                },
+                "examples": {
+                  "CreateCustomerSettingsEndpointProductCreateCustomerSettingsResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "paymentProvider": "STRIPE"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
+    "/customer-settings/{id}": {
+      "get": {
+        "tags": [],
+        "summary": "Get a Customer Settings by ID",
+        "description": "Get a Customer Settings by ID",
+        "operationId": "getCustomerSettingsById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Unique settings ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetCustomerSettingsEndpointProductGetCustomerSettingsResponseModel",
+                  "example": {
+                    "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "paymentProvider": "STRIPE"
+                  }
+                },
+                "examples": {
+                  "GetCustomerSettingsEndpointProductGetCustomerSettingsResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "paymentProvider": "STRIPE"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "put": {
+        "tags": [],
+        "summary": "Update a Customer Settings",
+        "description": "Update a Customer Settings",
+        "operationId": "putCustomerSettingsById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Unique settings ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCustomerSettingsEndpointUpdateCustomerSettingsRequestModel",
+                "example": {
+                  "paymentProvider": "STRIPE"
+                }
+              },
+              "examples": {
+                "UpdateCustomerSettingsEndpointUpdateCustomerSettingsRequestModel": {
+                  "summary": "",
+                  "value": {
+                    "paymentProvider": "STRIPE"
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UpdateCustomerSettingsEndpointProductUpdateCustomerSettingsResponseModel",
+                  "example": {
+                    "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "paymentProvider": "STRIPE"
+                  }
+                },
+                "examples": {
+                  "UpdateCustomerSettingsEndpointProductUpdateCustomerSettingsResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "paymentProvider": "STRIPE"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "delete": {
+        "tags": [],
+        "summary": "Delete a Customer Settings",
+        "description": "Delete a Customer Settings",
+        "operationId": "deleteCustomerSettingsById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Unique settings ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/docs/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DeleteCustomerSettingsEndpointProductDeleteCustomerSettingsResponseModel",
+                  "example": {
+                    "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "paymentProvider": "STRIPE"
+                  }
+                },
+                "examples": {
+                  "DeleteCustomerSettingsEndpointProductDeleteCustomerSettingsResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "paymentProvider": "STRIPE"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
     },
     "/tax-rates": {
       "get": {
@@ -41663,41 +41861,27 @@
         ],
         "type": "string"
       },
-      "CreateBillingScheduleSettingsEndpointProductCreateBillingScheduleSettingsResponseModel": {
-        "properties": {
-          "id": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Unique payment provider ID.",
-            "type": "string"
-          },
-          "sequenceAccountId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Unique Sequence Account ID.",
-            "type": "string"
-          },
-          "billingScheduleId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Unique payment provider ID.",
-            "type": "string"
-          },
-          "paymentProvider": {
-            "$ref": "#/components/schemas/PaymentProvider",
-            "description": "Payment provider"
-          }
-        },
+      "CreateBillingScheduleSettingsEndpointCreateBillingScheduleSettingsRequestModel": {
+        "required": [
+          "billingScheduleId",
+          "paymentProvider"
+        ],
+        "type": "object",
         "example": {
-          "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "paymentProvider": "STRIPE"
         },
-        "type": "object",
-        "required": [
-          "billingScheduleId",
-          "id",
-          "paymentProvider",
-          "sequenceAccountId"
-        ]
+        "properties": {
+          "billingScheduleId": {
+            "type": "string",
+            "description": "Unique payment provider ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "paymentProvider": {
+            "description": "Payment provider",
+            "$ref": "#/components/schemas/PaymentProvider"
+          }
+        }
       },
       "PaymentProvider": {
         "type": "string",
@@ -41707,466 +41891,281 @@
           "NONE"
         ]
       },
-      "CreateBillingScheduleSettingsEndpointCreateBillingScheduleSettingsRequestModel": {
-        "properties": {
-          "billingScheduleId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Unique payment provider ID.",
-            "type": "string"
-          },
-          "paymentProvider": {
-            "$ref": "#/components/schemas/PaymentProvider",
-            "description": "Payment provider"
-          }
-        },
+      "CreateBillingScheduleSettingsEndpointProductCreateBillingScheduleSettingsResponseModel": {
+        "required": [
+          "billingScheduleId",
+          "id",
+          "paymentProvider",
+          "sequenceAccountId"
+        ],
+        "type": "object",
         "example": {
+          "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+          "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "paymentProvider": "STRIPE"
         },
-        "type": "object",
-        "required": [
-          "billingScheduleId",
-          "paymentProvider"
-        ]
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique payment provider ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Unique Sequence Account ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "billingScheduleId": {
+            "type": "string",
+            "description": "Unique payment provider ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "paymentProvider": {
+            "description": "Payment provider",
+            "$ref": "#/components/schemas/PaymentProvider"
+          }
+        }
       },
       "GetBillingScheduleSettingsEndpointProductGetBillingScheduleSettingsResponseModel": {
-        "properties": {
-          "id": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Unique payment provider ID.",
-            "type": "string"
-          },
-          "sequenceAccountId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Unique Sequence Account ID.",
-            "type": "string"
-          },
-          "billingScheduleId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Unique payment provider ID.",
-            "type": "string"
-          },
-          "paymentProvider": {
-            "$ref": "#/components/schemas/PaymentProvider",
-            "description": "Payment provider"
-          }
-        },
+        "required": [
+          "billingScheduleId",
+          "id",
+          "paymentProvider",
+          "sequenceAccountId"
+        ],
+        "type": "object",
         "example": {
           "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "paymentProvider": "STRIPE"
         },
-        "type": "object",
-        "required": [
-          "billingScheduleId",
-          "id",
-          "paymentProvider",
-          "sequenceAccountId"
-        ]
-      },
-      "UpdateBillingScheduleSettingsEndpointProductUpdateBillingScheduleSettingsResponseModel": {
         "properties": {
           "id": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+            "type": "string",
             "description": "Unique payment provider ID.",
-            "type": "string"
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
           },
           "sequenceAccountId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+            "type": "string",
             "description": "Unique Sequence Account ID.",
-            "type": "string"
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
           },
           "billingScheduleId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+            "type": "string",
             "description": "Unique payment provider ID.",
-            "type": "string"
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
           },
           "paymentProvider": {
-            "$ref": "#/components/schemas/PaymentProvider",
-            "description": "Payment provider"
+            "description": "Payment provider",
+            "$ref": "#/components/schemas/PaymentProvider"
           }
-        },
-        "example": {
-          "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "paymentProvider": "STRIPE"
-        },
-        "type": "object",
-        "required": [
-          "billingScheduleId",
-          "id",
-          "paymentProvider",
-          "sequenceAccountId"
-        ]
+        }
       },
       "UpdateBillingScheduleSettingsEndpointUpdateBillingScheduleSettingsRequestModel": {
-        "properties": {
-          "paymentProvider": {
-            "$ref": "#/components/schemas/PaymentProvider",
-            "description": "Payment provider"
-          }
-        },
+        "required": [
+          "paymentProvider"
+        ],
+        "type": "object",
         "example": {
           "paymentProvider": "STRIPE"
         },
-        "type": "object",
-        "required": [
-          "paymentProvider"
-        ]
-      },
-      "DeleteBillingScheduleSettingsEndpointProductDeleteBillingScheduleSettingsResponseModel": {
         "properties": {
-          "id": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Unique payment provider ID.",
-            "type": "string"
-          },
-          "sequenceAccountId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Unique Sequence Account ID.",
-            "type": "string"
-          },
-          "billingScheduleId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Unique payment provider ID.",
-            "type": "string"
-          },
           "paymentProvider": {
-            "$ref": "#/components/schemas/PaymentProvider",
-            "description": "Payment provider"
+            "description": "Payment provider",
+            "$ref": "#/components/schemas/PaymentProvider"
           }
-        },
+        }
+      },
+      "UpdateBillingScheduleSettingsEndpointProductUpdateBillingScheduleSettingsResponseModel": {
+        "required": [
+          "billingScheduleId",
+          "id",
+          "paymentProvider",
+          "sequenceAccountId"
+        ],
+        "type": "object",
         "example": {
           "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "paymentProvider": "STRIPE"
         },
-        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique payment provider ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Unique Sequence Account ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "billingScheduleId": {
+            "type": "string",
+            "description": "Unique payment provider ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "paymentProvider": {
+            "description": "Payment provider",
+            "$ref": "#/components/schemas/PaymentProvider"
+          }
+        }
+      },
+      "DeleteBillingScheduleSettingsEndpointProductDeleteBillingScheduleSettingsResponseModel": {
         "required": [
           "billingScheduleId",
           "id",
           "paymentProvider",
           "sequenceAccountId"
-        ]
-      },
-      "CreateCustomerSettingsEndpointProductCreateCustomerSettingsResponseModel": {
-        "properties": {
-          "id": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Unique payment provider id.",
-            "type": "string"
-          },
-          "sequenceAccountId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Sequence Account ID.",
-            "type": "string"
-          },
-          "customerId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Customer Account ID.",
-            "type": "string"
-          },
-          "paymentProvider": {
-            "$ref": "#/components/schemas/PaymentProvider",
-            "description": "Sequence Account ID."
-          }
-        },
+        ],
+        "type": "object",
         "example": {
           "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+          "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "paymentProvider": "STRIPE"
         },
-        "type": "object",
-        "required": [
-          "customerId",
-          "id",
-          "paymentProvider",
-          "sequenceAccountId"
-        ]
-      },
-      "CreateCustomerSettingsEndpointCreateCustomerSettingsRequestModel": {
-        "properties": {
-          "customerId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Customer Account ID.",
-            "type": "string"
-          },
-          "paymentProvider": {
-            "$ref": "#/components/schemas/PaymentProvider",
-            "description": "Sequence Account ID."
-          }
-        },
-        "example": {
-          "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "paymentProvider": "STRIPE"
-        },
-        "type": "object",
-        "required": [
-          "customerId",
-          "paymentProvider"
-        ]
-      },
-      "GetCustomerSettingsEndpointProductGetCustomerSettingsResponseModel": {
         "properties": {
           "id": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Unique payment provider id.",
-            "type": "string"
+            "type": "string",
+            "description": "Unique payment provider ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
           },
           "sequenceAccountId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Sequence Account ID.",
-            "type": "string"
+            "type": "string",
+            "description": "Unique Sequence Account ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
           },
-          "customerId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Customer Account ID.",
-            "type": "string"
-          },
-          "paymentProvider": {
-            "$ref": "#/components/schemas/PaymentProvider",
-            "description": "Sequence Account ID."
-          }
-        },
-        "example": {
-          "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "paymentProvider": "STRIPE"
-        },
-        "type": "object",
-        "required": [
-          "customerId",
-          "id",
-          "paymentProvider",
-          "sequenceAccountId"
-        ]
-      },
-      "UpdateCustomerSettingsEndpointProductUpdateCustomerSettingsResponseModel": {
-        "properties": {
-          "id": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Unique payment provider id.",
-            "type": "string"
-          },
-          "sequenceAccountId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Sequence Account ID.",
-            "type": "string"
-          },
-          "customerId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Customer Account ID.",
-            "type": "string"
+          "billingScheduleId": {
+            "type": "string",
+            "description": "Unique payment provider ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
           },
           "paymentProvider": {
-            "$ref": "#/components/schemas/PaymentProvider",
-            "description": "Sequence Account ID."
+            "description": "Payment provider",
+            "$ref": "#/components/schemas/PaymentProvider"
           }
-        },
-        "example": {
-          "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "paymentProvider": "STRIPE"
-        },
-        "type": "object",
-        "required": [
-          "customerId",
-          "id",
-          "paymentProvider",
-          "sequenceAccountId"
-        ]
-      },
-      "UpdateCustomerSettingsEndpointUpdateCustomerSettingsRequestModel": {
-        "properties": {
-          "paymentProvider": {
-            "$ref": "#/components/schemas/PaymentProvider",
-            "description": "Sequence Account ID."
-          }
-        },
-        "example": {
-          "paymentProvider": "STRIPE"
-        },
-        "type": "object",
-        "required": [
-          "paymentProvider"
-        ]
-      },
-      "DeleteCustomerSettingsEndpointProductDeleteCustomerSettingsResponseModel": {
-        "properties": {
-          "id": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Unique payment provider id.",
-            "type": "string"
-          },
-          "sequenceAccountId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Sequence Account ID.",
-            "type": "string"
-          },
-          "customerId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Customer Account ID.",
-            "type": "string"
-          },
-          "paymentProvider": {
-            "$ref": "#/components/schemas/PaymentProvider",
-            "description": "Sequence Account ID."
-          }
-        },
-        "example": {
-          "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "paymentProvider": "STRIPE"
-        },
-        "type": "object",
-        "required": [
-          "customerId",
-          "id",
-          "paymentProvider",
-          "sequenceAccountId"
-        ]
-      },
-      "CreateInvoiceSettingsEndpointProductCreateInvoiceSettingsResponseModel": {
-        "properties": {
-          "id": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Unique payment provider id.",
-            "type": "string"
-          },
-          "sequenceAccountId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Sequence Account ID.",
-            "type": "string"
-          },
-          "invoiceId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Invoice ID.",
-            "type": "string"
-          },
-          "customerId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Customer ID.",
-            "type": "string"
-          },
-          "paymentProvider": {
-            "$ref": "#/components/schemas/PaymentProvider",
-            "description": "Sequence Account ID."
-          }
-        },
-        "example": {
-          "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "invoiceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "paymentProvider": "STRIPE"
-        },
-        "type": "object",
-        "required": [
-          "customerId",
-          "id",
-          "invoiceId",
-          "paymentProvider",
-          "sequenceAccountId"
-        ]
+        }
       },
       "CreateInvoiceSettingsEndpointCreateInvoiceSettingsRequestModel": {
-        "properties": {
-          "invoiceId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Invoice ID.",
-            "type": "string"
-          },
-          "customerId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Customer ID.",
-            "type": "string"
-          },
-          "paymentProvider": {
-            "$ref": "#/components/schemas/PaymentProvider",
-            "description": "Sequence Account ID."
-          }
-        },
+        "required": [
+          "invoiceId",
+          "paymentProvider"
+        ],
+        "type": "object",
         "example": {
           "invoiceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "paymentProvider": "STRIPE"
         },
-        "type": "object",
+        "properties": {
+          "invoiceId": {
+            "type": "string",
+            "description": "Invoice ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "customerId": {
+            "type": "string",
+            "description": "Customer ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "paymentProvider": {
+            "description": "Sequence Account ID.",
+            "$ref": "#/components/schemas/PaymentProvider"
+          }
+        }
+      },
+      "CreateInvoiceSettingsEndpointProductCreateInvoiceSettingsResponseModel": {
         "required": [
+          "customerId",
+          "id",
           "invoiceId",
-          "paymentProvider"
-        ]
+          "paymentProvider",
+          "sequenceAccountId"
+        ],
+        "type": "object",
+        "example": {
+          "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+          "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+          "invoiceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+          "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+          "paymentProvider": "STRIPE"
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique payment provider id.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Sequence Account ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "invoiceId": {
+            "type": "string",
+            "description": "Invoice ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "customerId": {
+            "type": "string",
+            "description": "Customer ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "paymentProvider": {
+            "description": "Sequence Account ID.",
+            "$ref": "#/components/schemas/PaymentProvider"
+          }
+        }
       },
       "GetByInvoiceIdProductGetInvoiceSettingsResponseModel": {
-        "properties": {
-          "id": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Unique payment provider id.",
-            "type": "string"
-          },
-          "sequenceAccountId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Sequence Account ID.",
-            "type": "string"
-          },
-          "invoiceId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Invoice ID.",
-            "type": "string"
-          },
-          "paymentProvider": {
-            "$ref": "#/components/schemas/PaymentProvider",
-            "description": "Sequence Account ID."
-          }
-        },
+        "required": [
+          "id",
+          "invoiceId",
+          "paymentProvider",
+          "sequenceAccountId"
+        ],
+        "type": "object",
         "example": {
           "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "invoiceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "paymentProvider": "STRIPE"
         },
-        "type": "object",
-        "required": [
-          "id",
-          "invoiceId",
-          "paymentProvider",
-          "sequenceAccountId"
-        ]
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique payment provider id.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Sequence Account ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "invoiceId": {
+            "type": "string",
+            "description": "Invoice ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "paymentProvider": {
+            "description": "Sequence Account ID.",
+            "$ref": "#/components/schemas/PaymentProvider"
+          }
+        }
       },
       "GetInvoiceSettingsEndpointProductGetInvoiceSettingsResponseModel": {
-        "properties": {
-          "id": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Unique payment provider id.",
-            "type": "string"
-          },
-          "sequenceAccountId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Sequence Account ID.",
-            "type": "string"
-          },
-          "invoiceId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Invoice ID.",
-            "type": "string"
-          },
-          "customerId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Customer ID.",
-            "type": "string"
-          },
-          "paymentProvider": {
-            "$ref": "#/components/schemas/PaymentProvider",
-            "description": "Sequence Account ID."
-          }
-        },
+        "required": [
+          "customerId",
+          "id",
+          "invoiceId",
+          "paymentProvider",
+          "sequenceAccountId"
+        ],
+        "type": "object",
         "example": {
           "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
@@ -42174,100 +42173,57 @@
           "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "paymentProvider": "STRIPE"
         },
-        "type": "object",
-        "required": [
-          "customerId",
-          "id",
-          "invoiceId",
-          "paymentProvider",
-          "sequenceAccountId"
-        ]
-      },
-      "UpdateInvoiceSettingsEndpointProductUpdateInvoiceSettingsResponseModel": {
         "properties": {
           "id": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+            "type": "string",
             "description": "Unique payment provider id.",
-            "type": "string"
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
           },
           "sequenceAccountId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+            "type": "string",
             "description": "Sequence Account ID.",
-            "type": "string"
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
           },
           "invoiceId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+            "type": "string",
             "description": "Invoice ID.",
-            "type": "string"
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
           },
           "customerId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+            "type": "string",
             "description": "Customer ID.",
-            "type": "string"
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
           },
           "paymentProvider": {
-            "$ref": "#/components/schemas/PaymentProvider",
-            "description": "Sequence Account ID."
+            "description": "Sequence Account ID.",
+            "$ref": "#/components/schemas/PaymentProvider"
           }
-        },
-        "example": {
-          "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "invoiceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "paymentProvider": "STRIPE"
-        },
-        "type": "object",
-        "required": [
-          "customerId",
-          "id",
-          "invoiceId",
-          "paymentProvider",
-          "sequenceAccountId"
-        ]
+        }
       },
       "UpdateInvoiceSettingsEndpointUpdateInvoiceSettingsRequestModel": {
-        "properties": {
-          "paymentProvider": {
-            "$ref": "#/components/schemas/PaymentProvider",
-            "description": "Sequence Account ID."
-          }
-        },
+        "required": [
+          "paymentProvider"
+        ],
+        "type": "object",
         "example": {
           "paymentProvider": "STRIPE"
         },
-        "type": "object",
-        "required": [
-          "paymentProvider"
-        ]
-      },
-      "DeleteInvoiceSettingsEndpointProductDeleteInvoiceSettingsResponseModel": {
         "properties": {
-          "id": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Unique payment provider id.",
-            "type": "string"
-          },
-          "sequenceAccountId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Sequence Account ID.",
-            "type": "string"
-          },
-          "invoiceId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Invoice ID.",
-            "type": "string"
-          },
-          "customerId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "Customer ID.",
-            "type": "string"
-          },
           "paymentProvider": {
-            "$ref": "#/components/schemas/PaymentProvider",
-            "description": "Sequence Account ID."
+            "description": "Sequence Account ID.",
+            "$ref": "#/components/schemas/PaymentProvider"
           }
-        },
+        }
+      },
+      "UpdateInvoiceSettingsEndpointProductUpdateInvoiceSettingsResponseModel": {
+        "required": [
+          "customerId",
+          "id",
+          "invoiceId",
+          "paymentProvider",
+          "sequenceAccountId"
+        ],
+        "type": "object",
         "example": {
           "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
@@ -42275,14 +42231,256 @@
           "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "paymentProvider": "STRIPE"
         },
-        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique payment provider id.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Sequence Account ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "invoiceId": {
+            "type": "string",
+            "description": "Invoice ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "customerId": {
+            "type": "string",
+            "description": "Customer ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "paymentProvider": {
+            "description": "Sequence Account ID.",
+            "$ref": "#/components/schemas/PaymentProvider"
+          }
+        }
+      },
+      "DeleteInvoiceSettingsEndpointProductDeleteInvoiceSettingsResponseModel": {
         "required": [
           "customerId",
           "id",
           "invoiceId",
           "paymentProvider",
           "sequenceAccountId"
-        ]
+        ],
+        "type": "object",
+        "example": {
+          "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+          "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+          "invoiceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+          "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+          "paymentProvider": "STRIPE"
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique payment provider id.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Sequence Account ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "invoiceId": {
+            "type": "string",
+            "description": "Invoice ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "customerId": {
+            "type": "string",
+            "description": "Customer ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "paymentProvider": {
+            "description": "Sequence Account ID.",
+            "$ref": "#/components/schemas/PaymentProvider"
+          }
+        }
+      },
+      "CreateCustomerSettingsEndpointCreateCustomerSettingsRequestModel": {
+        "required": [
+          "customerId",
+          "paymentProvider"
+        ],
+        "type": "object",
+        "example": {
+          "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+          "paymentProvider": "STRIPE"
+        },
+        "properties": {
+          "customerId": {
+            "type": "string",
+            "description": "Customer Account ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "paymentProvider": {
+            "description": "Sequence Account ID.",
+            "$ref": "#/components/schemas/PaymentProvider"
+          }
+        }
+      },
+      "CreateCustomerSettingsEndpointProductCreateCustomerSettingsResponseModel": {
+        "required": [
+          "customerId",
+          "id",
+          "paymentProvider",
+          "sequenceAccountId"
+        ],
+        "type": "object",
+        "example": {
+          "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+          "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+          "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+          "paymentProvider": "STRIPE"
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique payment provider id.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Sequence Account ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "customerId": {
+            "type": "string",
+            "description": "Customer Account ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "paymentProvider": {
+            "description": "Sequence Account ID.",
+            "$ref": "#/components/schemas/PaymentProvider"
+          }
+        }
+      },
+      "GetCustomerSettingsEndpointProductGetCustomerSettingsResponseModel": {
+        "required": [
+          "customerId",
+          "id",
+          "paymentProvider",
+          "sequenceAccountId"
+        ],
+        "type": "object",
+        "example": {
+          "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+          "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+          "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+          "paymentProvider": "STRIPE"
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique payment provider id.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Sequence Account ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "customerId": {
+            "type": "string",
+            "description": "Customer Account ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "paymentProvider": {
+            "description": "Sequence Account ID.",
+            "$ref": "#/components/schemas/PaymentProvider"
+          }
+        }
+      },
+      "UpdateCustomerSettingsEndpointUpdateCustomerSettingsRequestModel": {
+        "required": [
+          "paymentProvider"
+        ],
+        "type": "object",
+        "example": {
+          "paymentProvider": "STRIPE"
+        },
+        "properties": {
+          "paymentProvider": {
+            "description": "Sequence Account ID.",
+            "$ref": "#/components/schemas/PaymentProvider"
+          }
+        }
+      },
+      "UpdateCustomerSettingsEndpointProductUpdateCustomerSettingsResponseModel": {
+        "required": [
+          "customerId",
+          "id",
+          "paymentProvider",
+          "sequenceAccountId"
+        ],
+        "type": "object",
+        "example": {
+          "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+          "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+          "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+          "paymentProvider": "STRIPE"
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique payment provider id.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Sequence Account ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "customerId": {
+            "type": "string",
+            "description": "Customer Account ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "paymentProvider": {
+            "description": "Sequence Account ID.",
+            "$ref": "#/components/schemas/PaymentProvider"
+          }
+        }
+      },
+      "DeleteCustomerSettingsEndpointProductDeleteCustomerSettingsResponseModel": {
+        "required": [
+          "customerId",
+          "id",
+          "paymentProvider",
+          "sequenceAccountId"
+        ],
+        "type": "object",
+        "example": {
+          "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+          "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+          "customerId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+          "paymentProvider": "STRIPE"
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique payment provider id.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Sequence Account ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "customerId": {
+            "type": "string",
+            "description": "Customer Account ID.",
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          },
+          "paymentProvider": {
+            "description": "Sequence Account ID.",
+            "$ref": "#/components/schemas/PaymentProvider"
+          }
+        }
       },
       "CreateTaxRateRequest": {
         "required": [
