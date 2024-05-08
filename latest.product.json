@@ -7338,7 +7338,7 @@
     "/unique-usage-event-types": {
       "get": {
         "tags": [],
-        "summary": "List all unique usage types",
+        "summary": "List all unique usage event types",
         "description": "List all unique usage event types",
         "operationId": "getUniqueUsageEventTypes",
         "parameters": [
