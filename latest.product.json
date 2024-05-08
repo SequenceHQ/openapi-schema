@@ -41704,8 +41704,7 @@
         "example": "STRIPE",
         "enum": [
           "STRIPE",
-          "NONE",
-          "UNRECOGNIZED"
+          "NONE"
         ]
       },
       "CreateBillingScheduleSettingsEndpointCreateBillingScheduleSettingsRequestModel": {
