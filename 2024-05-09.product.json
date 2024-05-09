@@ -3891,6 +3891,7 @@
                       {
                         "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                         "seatType": "admin",
+                        "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
                         "label": "Administrator",
                         "description": "Allows user to make admin changes over whole account",
                         "createdAt": "2022-06-28T16:47:00Z",
@@ -3912,6 +3913,7 @@
                         {
                           "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                           "seatType": "admin",
+                          "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
                           "label": "Administrator",
                           "description": "Allows user to make admin changes over whole account",
                           "createdAt": "2022-06-28T16:47:00Z",
@@ -3994,6 +3996,7 @@
                   "example": {
                     "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                     "seatType": "admin",
+                    "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
                     "label": "Administrator",
                     "description": "Allows user to make admin changes over whole account",
                     "createdAt": "2022-06-28T16:47:00Z",
@@ -4006,6 +4009,7 @@
                     "value": {
                       "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                       "seatType": "admin",
+                      "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
                       "label": "Administrator",
                       "description": "Allows user to make admin changes over whole account",
                       "createdAt": "2022-06-28T16:47:00Z",
@@ -4069,6 +4073,7 @@
                   "example": {
                     "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                     "seatType": "admin",
+                    "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
                     "label": "Administrator",
                     "description": "Allows user to make admin changes over whole account",
                     "createdAt": "2022-06-28T16:47:00Z",
@@ -4081,6 +4086,7 @@
                     "value": {
                       "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                       "seatType": "admin",
+                      "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
                       "label": "Administrator",
                       "description": "Allows user to make admin changes over whole account",
                       "createdAt": "2022-06-28T16:47:00Z",
@@ -4163,6 +4169,7 @@
                   "example": {
                     "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                     "seatType": "admin",
+                    "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
                     "label": "Administrator",
                     "description": "Allows user to make admin changes over whole account",
                     "createdAt": "2022-06-28T16:47:00Z",
@@ -4175,6 +4182,7 @@
                     "value": {
                       "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                       "seatType": "admin",
+                      "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
                       "label": "Administrator",
                       "description": "Allows user to make admin changes over whole account",
                       "createdAt": "2022-06-28T16:47:00Z",
@@ -4234,6 +4242,7 @@
                   "example": {
                     "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                     "seatType": "admin",
+                    "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
                     "label": "Administrator",
                     "description": "Allows user to make admin changes over whole account",
                     "createdAt": "2022-06-28T16:47:00Z",
@@ -4246,6 +4255,7 @@
                     "value": {
                       "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                       "seatType": "admin",
+                      "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
                       "label": "Administrator",
                       "description": "Allows user to make admin changes over whole account",
                       "createdAt": "2022-06-28T16:47:00Z",
@@ -37310,6 +37320,7 @@
         "example": {
           "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "seatType": "admin",
+          "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
           "label": "Administrator",
           "description": "Allows user to make admin changes over whole account",
           "createdAt": "2022-06-28T16:47:00Z",
@@ -37325,6 +37336,11 @@
             "type": "string",
             "description": "Immutable, unique value used to identify and refer to this seat type",
             "example": "admin"
+          },
+          "createdBy": {
+            "type": "string",
+            "description": "The Sequence User who created this seat metric",
+            "example": "4ffd439e-32e5-4046-bb40-3cb81f40e5da"
           },
           "label": {
             "type": "string",
@@ -37360,6 +37376,7 @@
         "example": {
           "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "seatType": "admin",
+          "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
           "label": "Administrator",
           "description": "Allows user to make admin changes over whole account",
           "createdAt": "2022-06-28T16:47:00Z",
@@ -37375,6 +37392,11 @@
             "type": "string",
             "description": "Immutable, unique value used to identify and refer to this seat type",
             "example": "admin"
+          },
+          "createdBy": {
+            "type": "string",
+            "description": "The Sequence User who created this seat metric",
+            "example": "4ffd439e-32e5-4046-bb40-3cb81f40e5da"
           },
           "label": {
             "type": "string",
@@ -37431,6 +37453,7 @@
             {
               "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
               "seatType": "admin",
+              "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
               "label": "Administrator",
               "description": "Allows user to make admin changes over whole account",
               "createdAt": "2022-06-28T16:47:00Z",
@@ -37451,6 +37474,7 @@
               {
                 "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                 "seatType": "admin",
+                "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
                 "label": "Administrator",
                 "description": "Allows user to make admin changes over whole account",
                 "createdAt": "2022-06-28T16:47:00Z",
@@ -37478,6 +37502,7 @@
         "example": {
           "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "seatType": "admin",
+          "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
           "label": "Administrator",
           "description": "Allows user to make admin changes over whole account",
           "createdAt": "2022-06-28T16:47:00Z",
@@ -37493,6 +37518,11 @@
             "type": "string",
             "description": "Immutable, unique value used to identify and refer to this seat type",
             "example": "admin"
+          },
+          "createdBy": {
+            "type": "string",
+            "description": "The Sequence User who created this seat metric",
+            "example": "4ffd439e-32e5-4046-bb40-3cb81f40e5da"
           },
           "label": {
             "type": "string",
