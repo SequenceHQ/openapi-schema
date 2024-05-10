@@ -32009,14 +32009,14 @@
     "/sequence-accounts/{id}": {
       "get": {
         "tags": [],
-        "summary": "Get Account",
-        "description": "Retrieve the details of your Sequence Account.",
+        "summary": "Get your account",
+        "description": "Retrieve the details of your Sequence account.",
         "operationId": "getSequenceAccountsById",
         "parameters": [
           {
             "name": "id",
             "in": "path",
-            "description": "Sequence Account ID",
+            "description": "Sequence account ID",
             "required": true,
             "schema": {
               "type": "string"
@@ -32196,8 +32196,8 @@
     "/users": {
       "get": {
         "tags": [],
-        "summary": "List Users",
-        "description": "List all Users within your Sequence Organisation",
+        "summary": "List all Users",
+        "description": "List all users within your Sequence account.",
         "operationId": "getUsers",
         "parameters": [
           {
@@ -32309,8 +32309,8 @@
     "/users/{id}": {
       "get": {
         "tags": [],
-        "summary": "Get User",
-        "description": "Retrieve the details of one of your Users.",
+        "summary": "Get a user",
+        "description": "Retrieve the details of one of your users.",
         "operationId": "getUsersById",
         "parameters": [
           {
@@ -32380,8 +32380,8 @@
       },
       "put": {
         "tags": [],
-        "summary": "Update User",
-        "description": "Update the details of one of your Users.",
+        "summary": "Update a user",
+        "description": "Update the details of one of your users.",
         "operationId": "putUsersById",
         "parameters": [
           {
@@ -32915,8 +32915,8 @@
     "/sequence-accounts": {
       "get": {
         "tags": [],
-        "summary": "List Accounts",
-        "description": "List all of your Sequence Accounts.",
+        "summary": "List your accounts",
+        "description": "List all of your Sequence accounts.",
         "operationId": "getSequenceAccounts",
         "parameters": [
           {
@@ -33110,8 +33110,8 @@
     "/sequence-account-id": {
       "get": {
         "tags": [],
-        "summary": "Get Account ID",
-        "description": "Retrieve the ID of your Sequence Account.",
+        "summary": "Get account ID",
+        "description": "Retrieve the ID of your Sequence account.",
         "operationId": "getSequenceAccountId",
         "parameters": [
           {
@@ -33166,8 +33166,8 @@
     "/sequence-account-settings": {
       "get": {
         "tags": [],
-        "summary": "Get Sequence Account Settings",
-        "description": "Get Sequence Account Settings",
+        "summary": "Get your Sequence account settings",
+        "description": "Retrieve the settings of your Sequence account.",
         "operationId": "getSequenceAccountSettings",
         "parameters": [
           {
@@ -62513,41 +62513,41 @@
         "properties": {
           "id": {
             "type": "string",
-            "description": "Unique ID",
+            "description": "Unique identifier for the Sequence account.",
             "example": "b6b0bb79-7b03-4cc0-9c70-2d3aec3aeb17"
           },
           "createdAt": {
             "type": "string",
-            "description": "Created at",
+            "description": "The time at which the account was created. Formatted as an ISO 8601 timestamp.",
             "example": "2022-06-28T16:47:00Z"
           },
           "sequenceOrganisationId": {
             "type": "string",
-            "description": "The Sequence Organisation ID that this account belongs to",
+            "description": "The Sequence organisation ID that this account belongs to.",
             "example": "e4f49f12-38cf-4fcf-ad2a-0ae7d83d6be4"
           },
           "companyName": {
             "type": "string",
-            "description": "The company name that this account belongs to",
+            "description": "The company name of the company that owns this Sequence account.",
             "example": "Acme Inc."
           },
           "companyNumber": {
             "type": "string",
-            "description": "The company number of the company which owns this Account",
+            "description": "The company number of the company that owns this Sequence account.",
             "example": "GB123988"
           },
           "country": {
-            "description": "The country in which the company who owns this Account is registered",
+            "description": "The country in which the company who owns this account is registered.",
             "$ref": "#/components/schemas/CountryCode"
           },
           "sendCustomerNotifications": {
             "type": "boolean",
-            "description": "True if Sequence should send customer notifications on customer's behalf",
+            "description": "True if Sequence should send customer notifications on your behalf.",
             "example": true
           },
           "alertEmailAddresses": {
             "type": "array",
-            "description": "Email address to which alert notifications will be sent",
+            "description": "List of email addresses to which alert notifications will be sent.",
             "example": [
               "alerts@example.com"
             ],
@@ -62584,7 +62584,7 @@
         "properties": {
           "items": {
             "type": "array",
-            "description": "Users",
+            "description": "A list of users.",
             "example": [
               {
                 "id": "7b1f28b9-a4ad-450b-a0ea-fd647d5109b2",
@@ -62625,17 +62625,17 @@
         "properties": {
           "id": {
             "type": "string",
-            "description": "User ID",
+            "description": "The unique ID of this user.",
             "example": "7b1f28b9-a4ad-450b-a0ea-fd647d5109b2"
           },
           "email": {
             "type": "string",
-            "description": "User email",
+            "description": "The email address of this user.",
             "example": "john@example.xyz"
           },
           "sequenceAccountIds": {
             "type": "array",
-            "description": "Sequence Account IDs",
+            "description": "A list of Sequence account IDs. These account IDs represent the accounts this user has access to.",
             "example": [
               "83da2ca4-49c7-4d81-9c9a-ba5be11768b0",
               "c0901c87-e1a9-48e9-9e2f-9e05c402dcea"
@@ -62646,7 +62646,7 @@
           },
           "state": {
             "type": "string",
-            "description": "User state",
+            "description": "The state of this user.",
             "example": "active"
           }
         }
@@ -62705,17 +62705,17 @@
         "properties": {
           "id": {
             "type": "string",
-            "description": "User ID",
+            "description": "The unique ID of this user.",
             "example": "918af48c-9f22-4bed-8462-7df0a9772d44"
           },
           "email": {
             "type": "string",
-            "description": "User email address",
+            "description": "The email address of this user.",
             "example": "xyz@example.com"
           },
           "createdAt": {
             "type": "string",
-            "description": "Created at",
+            "description": "The time at which the user was created. Formatted as an ISO 8601 timestamp.",
             "example": "2022-06-28T16:47:00Z"
           }
         }
@@ -62731,7 +62731,7 @@
         "properties": {
           "metabaseDashboardLink": {
             "type": "string",
-            "description": "Link to the Metabase Dashboard",
+            "description": "A link to the Metabase dashboard.",
             "example": "https://sandbox.sequencehq.com/analytics/dashboard1"
           }
         }
@@ -62929,7 +62929,7 @@
         "properties": {
           "sequenceAccountIds": {
             "type": "array",
-            "description": "sequenceAccountIds",
+            "description": "A list of Sequence account IDs. These account IDs represent the accounts this user has access to.",
             "example": [
               "c9e249d8-5ac9-49af-b9a3-0da9f0946c3d"
             ],
@@ -62954,12 +62954,12 @@
         "properties": {
           "id": {
             "type": "string",
-            "description": "Unique User ID",
+            "description": "Unique user ID",
             "example": "ca88f667-a17a-4c84-a8ee-8a4293834ff4"
           },
           "sequenceAccountIds": {
             "type": "array",
-            "description": "sequenceAccountIds",
+            "description": "A list of Sequence account IDs. These account IDs represent the accounts this user has access to.",
             "example": [
               "c9e249d8-5ac9-49af-b9a3-0da9f0946c3d"
             ],
@@ -62999,7 +62999,7 @@
         "properties": {
           "items": {
             "type": "array",
-            "description": "Sequence Accounts",
+            "description": "A list of Sequence accounts that you have access to.",
             "example": [
               {
                 "id": "7e330949-a175-496a-a060-27821656ce34",
@@ -63156,17 +63156,17 @@
         "properties": {
           "id": {
             "type": "string",
-            "description": "Unique ID",
+            "description": "Unique identifier for the Sequence account settings",
             "example": "613eed4d-5bdf-4fc1-a40a-aa2540b2cdc6"
           },
           "sequenceAccountId": {
             "type": "string",
-            "description": "Sequence Account ID",
+            "description": "Unique identifier for the Sequence account.",
             "example": "5eb477d7-f421-4d30-b99c-757c81021b92"
           },
           "enabledCurrencies": {
             "type": "array",
-            "description": "Enabled currencies",
+            "description": "All currencies which are enabled for the account.",
             "example": [
               "USD",
               "GBP",
