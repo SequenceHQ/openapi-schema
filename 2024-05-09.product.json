@@ -3838,8 +3838,8 @@
     "/seat-metrics": {
       "get": {
         "tags": [],
-        "summary": "List all Seat Metrics",
-        "description": "List all Seat Metrics",
+        "summary": "List all seat metrics",
+        "description": "Retrieve a paginated list of all your seat metrics.",
         "operationId": "getSeatMetrics",
         "parameters": [
           {
@@ -3947,8 +3947,8 @@
       },
       "post": {
         "tags": [],
-        "summary": "Create a new Seat Metric",
-        "description": "Create a new Seat Metric",
+        "summary": "Create a seat metric",
+        "description": "Create a new seat metric which can be used in prices.",
         "operationId": "postSeatMetrics",
         "parameters": [
           {
@@ -4040,14 +4040,14 @@
     "/seat-metrics/{id}": {
       "get": {
         "tags": [],
-        "summary": "Get a Seat Metric by ID",
-        "description": "Get a Seat Metric by ID",
+        "summary": "Get a seat metric",
+        "description": "Retrieve the details of one of your seat metrics.",
         "operationId": "getSeatMetricsById",
         "parameters": [
           {
             "name": "id",
             "in": "path",
-            "description": "id",
+            "description": "Unique ID for this seat metric.",
             "required": true,
             "schema": {
               "type": "string"
@@ -4113,8 +4113,8 @@
       },
       "put": {
         "tags": [],
-        "summary": "Update a Seat Metric",
-        "description": "Update a Seat Metric",
+        "summary": "Update a seat metric",
+        "description": "Update a seat metric which can be used in prices.",
         "operationId": "putSeatMetricsById",
         "parameters": [
           {
@@ -4209,8 +4209,8 @@
       },
       "delete": {
         "tags": [],
-        "summary": "Delete a Seat Metric",
-        "description": "Delete a Seat Metric",
+        "summary": "Delete a seat metric",
+        "description": "Delete a seat metric",
         "operationId": "deleteSeatMetricsById",
         "parameters": [
           {
@@ -4286,8 +4286,8 @@
     "/seat-events": {
       "get": {
         "tags": [],
-        "summary": "List all Seat Events",
-        "description": "List all Seat Events",
+        "summary": "List all seat events",
+        "description": "Retrieve a paginated list of all your submitted seat events.",
         "operationId": "getSeatEvents",
         "parameters": [
           {
@@ -4458,8 +4458,8 @@
       },
       "post": {
         "tags": [],
-        "summary": "Create a new Seat Event",
-        "description": "Create a new Seat Event",
+        "summary": "Create a seat event",
+        "description": "Create a new seat event. Seat events are used for calculating charges.",
         "operationId": "postSeatEvents",
         "parameters": [
           {
@@ -37298,12 +37298,12 @@
           },
           "description": {
             "type": "string",
-            "description": "Optional description",
+            "description": "Optional description for this seat metric.",
             "example": "Allows user to make admin changes over whole account"
           },
           "label": {
             "type": "string",
-            "description": "Friendly, customer-facing name for seat type",
+            "description": "Friendly, customer-facing name for this seat metric.",
             "example": "Administrator"
           }
         }
@@ -37329,37 +37329,37 @@
         "properties": {
           "id": {
             "type": "string",
-            "description": "id",
+            "description": "Unique ID for this seat metric.",
             "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
           },
           "seatType": {
             "type": "string",
-            "description": "Immutable, unique value used to identify and refer to this seat type",
+            "description": "Immutable, unique value used to identify and refer to this seat type when submitting events.",
             "example": "admin"
           },
           "createdBy": {
             "type": "string",
-            "description": "The Sequence User who created this seat metric",
+            "description": "The ID of the Sequence user who created this seat metric.",
             "example": "4ffd439e-32e5-4046-bb40-3cb81f40e5da"
           },
           "label": {
             "type": "string",
-            "description": "Friendly, customer-facing name for seat type",
+            "description": "Friendly, customer-facing name for this seat metric.",
             "example": "Administrator"
           },
           "description": {
             "type": "string",
-            "description": "Optional description",
+            "description": "Optional description for this seat metric.",
             "example": "Allows user to make admin changes over whole account"
           },
           "createdAt": {
             "type": "string",
-            "description": "Created at",
+            "description": "The time at which this seat metric was created. Formatted as an ISO 8601 timestamp.",
             "example": "2022-06-28T16:47:00Z"
           },
           "updatedAt": {
             "type": "string",
-            "description": "Updated at",
+            "description": "The time at which this seat metric was updated. Formatted as an ISO 8601 timestamp.",
             "example": "2022-06-28T16:47:00Z"
           }
         }
@@ -37385,37 +37385,37 @@
         "properties": {
           "id": {
             "type": "string",
-            "description": "id",
+            "description": "Unique ID for this seat metric.",
             "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
           },
           "seatType": {
             "type": "string",
-            "description": "Immutable, unique value used to identify and refer to this seat type",
+            "description": "Immutable, unique value used to identify and refer to this seat type when submitting events.",
             "example": "admin"
           },
           "createdBy": {
             "type": "string",
-            "description": "The Sequence User who created this seat metric",
+            "description": "The ID of the Sequence user who created this seat metric.",
             "example": "4ffd439e-32e5-4046-bb40-3cb81f40e5da"
           },
           "label": {
             "type": "string",
-            "description": "Friendly, customer-facing name for seat type",
+            "description": "Friendly, customer-facing name for this seat metric.",
             "example": "Administrator"
           },
           "description": {
             "type": "string",
-            "description": "Optional description",
+            "description": "Optional description for this seat metric.",
             "example": "Allows user to make admin changes over whole account"
           },
           "createdAt": {
             "type": "string",
-            "description": "Created at",
+            "description": "The time at which this seat metric was created. Formatted as an ISO 8601 timestamp.",
             "example": "2022-06-28T16:47:00Z"
           },
           "updatedAt": {
             "type": "string",
-            "description": "Updated at",
+            "description": "The time at which this seat metric was updated. Formatted as an ISO 8601 timestamp.",
             "example": "2022-06-28T16:47:00Z"
           }
         }
@@ -37437,7 +37437,7 @@
           },
           "label": {
             "type": "string",
-            "description": "Friendly, customer-facing name for seat type",
+            "description": "Friendly, customer-facing name for this seat metric.",
             "example": "Administrator"
           }
         }
@@ -37511,37 +37511,37 @@
         "properties": {
           "id": {
             "type": "string",
-            "description": "id",
+            "description": "Unique ID for this seat metric.",
             "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
           },
           "seatType": {
             "type": "string",
-            "description": "Immutable, unique value used to identify and refer to this seat type",
+            "description": "Immutable, unique value used to identify and refer to this seat type when submitting events.",
             "example": "admin"
           },
           "createdBy": {
             "type": "string",
-            "description": "The Sequence User who created this seat metric",
+            "description": "The ID of the Sequence user who created this seat metric.",
             "example": "4ffd439e-32e5-4046-bb40-3cb81f40e5da"
           },
           "label": {
             "type": "string",
-            "description": "Friendly, customer-facing name for seat type",
+            "description": "Friendly, customer-facing name for this seat metric.",
             "example": "Administrator"
           },
           "description": {
             "type": "string",
-            "description": "Optional description",
+            "description": "Optional description for this seat metric.",
             "example": "Allows user to make admin changes over whole account"
           },
           "createdAt": {
             "type": "string",
-            "description": "Created at",
+            "description": "The time at which this seat metric was created. Formatted as an ISO 8601 timestamp.",
             "example": "2022-06-28T16:47:00Z"
           },
           "updatedAt": {
             "type": "string",
-            "description": "Updated at",
+            "description": "The time at which this seat metric was updated. Formatted as an ISO 8601 timestamp.",
             "example": "2022-06-28T16:47:00Z"
           }
         }
@@ -37564,12 +37564,12 @@
         "properties": {
           "customerEventId": {
             "type": "string",
-            "description": "ID provided by customer. Another event with the same customer event ID will supersede this one.",
+            "description": "Unique ID provided by customer. Another event with the same customer event ID will supersede this one.",
             "example": "event-id-H4twuTWpYx1rkd8OMTki2hTUcZ"
           },
           "customerAlias": {
             "type": "string",
-            "description": "End-customer alias or ID",
+            "description": "End-customer alias or ID.",
             "example": "customer-id-2H4u5BBwBWsS5V2sroRFqJfTXpW"
           },
           "seatType": {
@@ -37584,7 +37584,7 @@
           },
           "total": {
             "type": "integer",
-            "description": "Total seats for this seat type",
+            "description": "Total seats consumed for this seat type.",
             "example": 1
           }
         }
@@ -37612,17 +37612,17 @@
         "properties": {
           "id": {
             "type": "string",
-            "description": "Unique ID",
+            "description": "Unique ID for this seat event.",
             "example": "0184421a-8202-70ea-a729-30308a40bbf7"
           },
           "customerEventId": {
             "type": "string",
-            "description": "ID provided by customer. Another event with the same customer event ID will supersede this one.",
+            "description": "Unique ID provided by customer. Another event with the same customer event ID will supersede this one.",
             "example": "event-id-H4twuTWpYx1rkd8OMTki2hTUcZ"
           },
           "customerAlias": {
             "type": "string",
-            "description": "End-customer alias or ID",
+            "description": "End-customer alias or ID.",
             "example": "customer-id-2H4u5BBwBWsS5V2sroRFqJfTXpW"
           },
           "seatType": {
@@ -37632,7 +37632,7 @@
           },
           "sequenceAccountId": {
             "type": "string",
-            "description": "Sequence account ID",
+            "description": "Unique Sequence account ID.",
             "example": "0184421e-a9cc-711b-af93-bf0511d4d833"
           },
           "eventTimestamp": {
@@ -37642,7 +37642,7 @@
           },
           "total": {
             "type": "integer",
-            "description": "Total seats for this seat type",
+            "description": "Total seats consumed for this seat type.",
             "example": 1
           }
         }
@@ -37718,17 +37718,17 @@
         "properties": {
           "id": {
             "type": "string",
-            "description": "Unique ID",
+            "description": "Unique ID for this seat event.",
             "example": "0184421a-8202-70ea-a729-30308a40bbf7"
           },
           "customerEventId": {
             "type": "string",
-            "description": "ID provided by customer. Another event with the same customer event ID will supersede this one.",
+            "description": "Unique ID provided by you. Another event with the same customer event ID will supersede this one. This ID usually corresponds to the event ID you use internally.",
             "example": "event-id-H4twuTWpYx1rkd8OMTki2hTUcZ"
           },
           "customerAlias": {
             "type": "string",
-            "description": "End-customer alias or ID",
+            "description": "End-customer alias or ID. This is a unique value provided by you and is an identifier to your customer who consumed the seats.",
             "example": "customer-id-2H4u5BBwBWsS5V2sroRFqJfTXpW"
           },
           "seatType": {
@@ -37738,7 +37738,7 @@
           },
           "sequenceAccountId": {
             "type": "string",
-            "description": "Sequence account ID",
+            "description": "Unique Sequence account ID.",
             "example": "0184421e-a9cc-711b-af93-bf0511d4d833"
           },
           "eventTimestamp": {
@@ -37748,7 +37748,7 @@
           },
           "total": {
             "type": "integer",
-            "description": "Total seats for this seat type",
+            "description": "Total seats consumed for this seat type.",
             "example": 1
           }
         }
