@@ -41899,7 +41899,7 @@
           },
           "endDate": {
             "type": "string",
-            "description": "End date",
+            "description": "End date. A null end date denotes an open-ended schedule.",
             "format": "date",
             "example": "2022-12-01"
           },
@@ -42057,6 +42057,7 @@
         "properties": {
           "priceIds": {
             "type": "array",
+            "description": "The price IDs included in this phase",
             "example": [
               "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
             ],
@@ -42066,16 +42067,19 @@
           },
           "startDate": {
             "type": "string",
+            "description": "Phase start date",
             "format": "date",
             "example": "2022-01-01"
           },
           "endDate": {
             "type": "string",
+            "description": "Phase end date. A null end date denotes an open-ended phase. Only the last phase can be open-ended.",
             "format": "date",
             "example": "2022-06-30"
           },
           "discounts": {
             "type": "array",
+            "description": "Discounts applicable to this phase",
             "example": [
               {
                 "restrictToPrices": [
@@ -42093,6 +42097,7 @@
           },
           "minimums": {
             "type": "array",
+            "description": "Minimums applicable to this phase",
             "example": [
               {
                 "restrictToPrices": [
@@ -42644,7 +42649,7 @@
         "properties": {
           "pricingType": {
             "description": "The type of pricing",
-            "$ref": "#/components/schemas/PricingType"
+            "$ref": "#/components/schemas/LinearPricingType"
           },
           "pricePerUnit": {
             "type": "string",
@@ -42947,7 +42952,7 @@
         "properties": {
           "pricingType": {
             "description": "The type of pricing",
-            "$ref": "#/components/schemas/PricingType"
+            "$ref": "#/components/schemas/GraduatedPricingType"
           },
           "tiers": {
             "type": "array",
@@ -43185,7 +43190,7 @@
         "properties": {
           "pricingType": {
             "description": "The type of pricing",
-            "$ref": "#/components/schemas/PricingType"
+            "$ref": "#/components/schemas/VolumePricingType"
           },
           "tiers": {
             "type": "array",
@@ -43350,7 +43355,7 @@
         "properties": {
           "pricingType": {
             "description": "The type of pricing",
-            "$ref": "#/components/schemas/PricingType"
+            "$ref": "#/components/schemas/SeatBasedPricingType"
           },
           "seatMetricId": {
             "type": "string",
@@ -43528,7 +43533,7 @@
         "properties": {
           "pricingType": {
             "description": "The type of pricing",
-            "$ref": "#/components/schemas/PricingType"
+            "$ref": "#/components/schemas/PackagePricingType"
           },
           "packageSize": {
             "type": "string",
@@ -43741,7 +43746,7 @@
         "properties": {
           "pricingType": {
             "description": "The type of pricing",
-            "$ref": "#/components/schemas/PricingType"
+            "$ref": "#/components/schemas/FixedPricingType"
           },
           "price": {
             "type": "string",
@@ -43852,7 +43857,7 @@
         "properties": {
           "pricingType": {
             "description": "The type of pricing",
-            "$ref": "#/components/schemas/PricingType"
+            "$ref": "#/components/schemas/OneTimePricingType"
           },
           "price": {
             "type": "string",
@@ -51175,6 +51180,69 @@
             "description": "Number of customers who have never been billed",
             "example": 1
           }
+        }
+      },
+      "OneTimePricingType": {
+        "OneTimePricingType": {
+          "type": "string",
+          "example": "ONE_TIME",
+          "enum": [
+            "ONE_TIME"
+          ]
+        }
+      },
+      "FixedPricingType": {
+        "FixedPricingType": {
+          "type": "string",
+          "example": "FIXED",
+          "enum": [
+            "FIXED"
+          ]
+        }
+      },
+      "LinearPricingType": {
+        "LinearPricingType": {
+          "type": "string",
+          "example": "LINEAR",
+          "enum": [
+            "LINEAR"
+          ]
+        }
+      },
+      "PackagePricingType": {
+        "PackagePricingType": {
+          "type": "string",
+          "example": "PACKAGE",
+          "enum": [
+            "PACKAGE"
+          ]
+        }
+      },
+      "GraduatedPricingType": {
+        "GraduatedPricingType": {
+          "type": "string",
+          "example": "GRADUATED",
+          "enum": [
+            "GRADUATED"
+          ]
+        }
+      },
+      "VolumePricingType": {
+        "VolumePricingType": {
+          "type": "string",
+          "example": "VOLUME",
+          "enum": [
+            "VOLUME"
+          ]
+        }
+      },
+      "SeatBasedPricingType": {
+        "SeatBasedPricingType": {
+          "type": "string",
+          "example": "SEAT_BASED",
+          "enum": [
+            "SEAT_BASED"
+          ]
         }
       },
       "InvoiceMerchantDetails": {

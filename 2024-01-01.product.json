@@ -45542,6 +45542,7 @@
         "properties": {
           "priceIds": {
             "type": "array",
+            "description": "The price IDs included in this phase",
             "example": [
               "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
             ],
@@ -45551,16 +45552,19 @@
           },
           "startDate": {
             "type": "string",
+            "description": "Phase start date",
             "format": "date",
             "example": "2022-01-01"
           },
           "endDate": {
             "type": "string",
+            "description": "Phase end date. A null end date denotes an open-ended phase. Only the last phase can be open-ended.",
             "format": "date",
             "example": "2022-06-30"
           },
           "discounts": {
             "type": "array",
+            "description": "Discounts applicable to this phase",
             "example": [
               {
                 "restrictToPrices": [
@@ -45578,6 +45582,7 @@
           },
           "minimums": {
             "type": "array",
+            "description": "Minimums applicable to this phase",
             "example": [
               {
                 "restrictToPrices": [
