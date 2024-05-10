@@ -51183,67 +51183,53 @@
         }
       },
       "OneTimePricingType": {
-        "OneTimePricingType": {
-          "type": "string",
-          "example": "ONE_TIME",
-          "enum": [
-            "ONE_TIME"
-          ]
-        }
+        "type": "string",
+        "example": "ONE_TIME",
+        "enum": [
+          "ONE_TIME"
+        ]
       },
       "FixedPricingType": {
-        "FixedPricingType": {
-          "type": "string",
-          "example": "FIXED",
-          "enum": [
-            "FIXED"
-          ]
-        }
+        "type": "string",
+        "example": "FIXED",
+        "enum": [
+          "FIXED"
+        ]
       },
       "LinearPricingType": {
-        "LinearPricingType": {
-          "type": "string",
-          "example": "LINEAR",
-          "enum": [
-            "LINEAR"
-          ]
-        }
+        "type": "string",
+        "example": "LINEAR",
+        "enum": [
+          "LINEAR"
+        ]
       },
       "PackagePricingType": {
-        "PackagePricingType": {
-          "type": "string",
-          "example": "PACKAGE",
-          "enum": [
-            "PACKAGE"
-          ]
-        }
+        "type": "string",
+        "example": "PACKAGE",
+        "enum": [
+          "PACKAGE"
+        ]
       },
       "GraduatedPricingType": {
-        "GraduatedPricingType": {
-          "type": "string",
-          "example": "GRADUATED",
-          "enum": [
-            "GRADUATED"
-          ]
-        }
+        "type": "string",
+        "example": "GRADUATED",
+        "enum": [
+          "GRADUATED"
+        ]
       },
       "VolumePricingType": {
-        "VolumePricingType": {
-          "type": "string",
-          "example": "VOLUME",
-          "enum": [
-            "VOLUME"
-          ]
-        }
+        "type": "string",
+        "example": "VOLUME",
+        "enum": [
+          "VOLUME"
+        ]
       },
       "SeatBasedPricingType": {
-        "SeatBasedPricingType": {
-          "type": "string",
-          "example": "SEAT_BASED",
-          "enum": [
-            "SEAT_BASED"
-          ]
-        }
+        "type": "string",
+        "example": "SEAT_BASED",
+        "enum": [
+          "SEAT_BASED"
+        ]
       },
       "InvoiceMerchantDetails": {
         "required": [
