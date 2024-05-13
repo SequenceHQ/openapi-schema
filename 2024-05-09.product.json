@@ -15,8 +15,8 @@
     "/payments/settings/billing-schedules": {
       "post": {
         "tags": [],
-        "summary": "Create a new Billing Schedule Settings",
-        "description": "Create a new Billing Schedule Settings",
+        "summary": "Create billing schedule payment settings",
+        "description": "Create payment settings for billing schedules. Invoices for billing schedules with payment settings contain payment links. If payment details are on file with Stripe or other payment providers, then payments are automatically collected when you finalise and send an invoice. Billing schedule payment settings override customer payment settings. You can also override billing schedule payment settings with invoice payment settings.",
         "operationId": "postPaymentsSettingsBillingSchedules",
         "parameters": [
           {
@@ -100,8 +100,8 @@
     "/payments/settings/billing-schedules/for-billing-schedule/{id}": {
       "get": {
         "tags": [],
-        "summary": "Get a BillingScheduleSettings by billing schedule ID",
-        "description": "Get a BillingScheduleSettings by billing schedule ID",
+        "summary": "Get billing schedule payment settings by billing schedule ID",
+        "description": "Get payment settings for billing schedules by billing schedule ID. Invoices for billing schedules with payment settings contain payment links. If payment details are on file with Stripe or other payment providers, then payments are automatically collected when you finalise and send an invoice. Billing schedule payment settings override customer payment settings. You can also override billing schedule payment settings with invoice payment settings.",
         "operationId": "getPaymentsSettingsBillingSchedulesForBillingScheduleById",
         "parameters": [
           {
@@ -171,8 +171,8 @@
     "/payments/settings/billing-schedules/{id}": {
       "get": {
         "tags": [],
-        "summary": "Get a Billing Schedule Settings by ID",
-        "description": "Get a Billing Schedule Settings by ID",
+        "summary": "Get billing schedule payment settings",
+        "description": "Get payment settings for billing schedules. Invoices for billing schedules with payment settings contain payment links. If payment details are on file with Stripe or other payment providers, then payments are automatically collected when you finalise and send an invoice. Billing schedule payment settings override customer payment settings. You can also override billing schedule payment settings with invoice payment settings.",
         "operationId": "getPaymentsSettingsBillingSchedulesById",
         "parameters": [
           {
@@ -238,8 +238,8 @@
       },
       "put": {
         "tags": [],
-        "summary": "Update a Billing Schedule Settings",
-        "description": "Update a Billing Schedule Settings",
+        "summary": "Update billing schedule payment settings",
+        "description": "Update payment settings for billing schedules. Invoices for billing schedules with payment settings contain payment links. If payment details are on file with Stripe or other payment providers, then payments are automatically collected when you finalise and send an invoice. Billing schedule payment settings override customer payment settings. You can also override billing schedule payment settings with invoice payment settings.",
         "operationId": "putPaymentsSettingsBillingSchedulesById",
         "parameters": [
           {
@@ -326,8 +326,8 @@
       },
       "delete": {
         "tags": [],
-        "summary": "Delete a Billing Schedule Settings",
-        "description": "Delete a Billing Schedule Settings",
+        "summary": "Delete billing schedule payment settings",
+        "description": "Delete payment settings for billing schedules. Invoices for billing schedules with payment settings contain payment links. If payment details are on file with Stripe or other payment providers, then payments are automatically collected when you finalise and send an invoice. Billing schedule payment settings override customer payment settings. You can also override billing schedule payment settings with invoice payment settings.",
         "operationId": "deletePaymentsSettingsBillingSchedulesById",
         "parameters": [
           {
@@ -397,8 +397,8 @@
     "/payments/settings/invoices": {
       "post": {
         "tags": [],
-        "summary": "Create a new Invoice Settings",
-        "description": "Create a new Invoice Settings",
+        "summary": "Create invoice payment settings",
+        "description": "Create payment settings for invoices. Invoices with payment settings contain payment links. If payment details are on file with Stripe or other payment providers, then payments are automatically collected when you finalise and send an invoice. Invoice payment settings override billing schedule payment settings and customer payment settings.",
         "operationId": "postPaymentsSettingsInvoices",
         "parameters": [
           {
@@ -486,8 +486,8 @@
     "/payments/settings/invoices/for-invoice/{id}": {
       "get": {
         "tags": [],
-        "summary": "Get a InvoiceSetting by Invoice ID",
-        "description": "Get a InvoiceSetting by Invoice ID",
+        "summary": "Get invoice payment settings by invoice ID",
+        "description": "Get payment settings for invoices by invoice ID. Invoices with payment settings contain payment links. If payment details are on file with Stripe or other payment providers, then payments are automatically collected when you finalise and send an invoice. Invoice payment settings override billing schedule payment settings and customer payment settings.",
         "operationId": "getPaymentsSettingsInvoicesForInvoiceById",
         "parameters": [
           {
@@ -557,8 +557,8 @@
     "/payments/settings/invoices/{id}": {
       "get": {
         "tags": [],
-        "summary": "Get an Invoice Settings by ID",
-        "description": "Get an Invoice Settings by ID",
+        "summary": "Get invoice payment settings",
+        "description": "Get payment settings for invoices. Invoices with payment settings contain payment links. If payment details are on file with Stripe or other payment providers, then payments are automatically collected when you finalise and send an invoice. Invoice payment settings override billing schedule payment settings and customer payment settings.",
         "operationId": "getPaymentsSettingsInvoicesById",
         "parameters": [
           {
@@ -626,8 +626,8 @@
       },
       "put": {
         "tags": [],
-        "summary": "Update an Invoice Settings",
-        "description": "Update an Invoice Settings",
+        "summary": "Update invoice payment settings",
+        "description": "Update payment settings for invoices. Invoices with payment settings contain payment links. If payment details are on file with Stripe or other payment providers, then payments are automatically collected when you finalise and send an invoice. Invoice payment settings override billing schedule payment settings and customer payment settings.",
         "operationId": "putPaymentsSettingsInvoicesById",
         "parameters": [
           {
@@ -716,8 +716,8 @@
       },
       "delete": {
         "tags": [],
-        "summary": "Delete an Invoice Settings",
-        "description": "Delete an Invoice Settings",
+        "summary": "Create invoice payment settings",
+        "description": "Delete payment settings for invoices. Invoices with payment settings contain payment links. If payment details are on file with Stripe or other payment providers, then payments are automatically collected when you finalise and send an invoice. Invoice payment settings override billing schedule payment settings and customer payment settings.",
         "operationId": "deletePaymentsSettingsInvoicesById",
         "parameters": [
           {
@@ -789,8 +789,8 @@
     "/payments/settings/customers": {
       "post": {
         "tags": [],
-        "summary": "Create a new Customer Settings",
-        "description": "Create a new Customer Settings",
+        "summary": "Create customer payment settings",
+        "description": "Create payment settings for customers. Invoices for customers with payment settings contain payment links. If payment details are on file with Stripe or other payment providers, then payments are automatically collected when you finalise and send an invoice. You can override customer payment settings with billing schedule payment settings and invoice payment settings.",
         "operationId": "postPaymentsSettingsCustomers",
         "parameters": [
           {
@@ -874,8 +874,8 @@
     "/payments/settings/customers/{id}": {
       "get": {
         "tags": [],
-        "summary": "Get a Customer Settings by ID",
-        "description": "Get a Customer Settings by ID",
+        "summary": "Get customer payment settings",
+        "description": "Get payment settings for customers. Invoices for customers with payment settings contain payment links. If payment details are on file with Stripe or other payment providers, then payments are automatically collected when you finalise and send an invoice. You can override customer payment settings with billing schedule payment settings and invoice payment settings.",
         "operationId": "getPaymentsSettingsCustomersById",
         "parameters": [
           {
@@ -941,8 +941,8 @@
       },
       "put": {
         "tags": [],
-        "summary": "Update a Customer Settings",
-        "description": "Update a Customer Settings",
+        "summary": "Update customer payment settings",
+        "description": "Update payment settings for customers. Invoices for customers with payment settings contain payment links. If payment details are on file with Stripe or other payment providers, then payments are automatically collected when you finalise and send an invoice. You can override customer payment settings with billing schedule payment settings and invoice payment settings.",
         "operationId": "putPaymentsSettingsCustomersById",
         "parameters": [
           {
@@ -1029,8 +1029,8 @@
       },
       "delete": {
         "tags": [],
-        "summary": "Delete a Customer Settings",
-        "description": "Delete a Customer Settings",
+        "summary": "Delete customer payment settings",
+        "description": "Delete payment settings for customers. Invoices for customers with payment settings contain payment links. If payment details are on file with Stripe or other payment providers, then payments are automatically collected when you finalise and send an invoice. You can override customer payment settings with billing schedule payment settings and invoice payment settings.",
         "operationId": "deletePaymentsSettingsCustomersById",
         "parameters": [
           {
