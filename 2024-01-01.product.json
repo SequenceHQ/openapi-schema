@@ -17731,6 +17731,15 @@
             "schema": {
               "type": "boolean"
             }
+          },
+          {
+            "name": "invoiceCurrency",
+            "in": "query",
+            "description": "Get invoices for a specific currency (cannot mix currencies)",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
