@@ -1213,7 +1213,7 @@
           {
             "name": "invoiceCurrency",
             "in": "query",
-            "description": "Get invoices for a specific currency (cannot mix currencies)",
+            "description": "Get invoices for a specific currency (provide a comma-separated list)",
             "required": false,
             "schema": {
               "type": "string"
