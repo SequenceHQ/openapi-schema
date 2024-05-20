@@ -20203,6 +20203,71 @@
       "servers": [],
       "parameters": []
     },
+    "/prices/{id}/metadata": {
+      "get": {
+        "tags": [],
+        "summary": "Get price metadata",
+        "description": "Get metadata for one of your prices. This includes information on the number of customers using this price variant.",
+        "operationId": "getPricesByIdMetadata",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Unique price ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PriceMetadata",
+                  "example": {
+                    "customerCount": 10
+                  }
+                },
+                "examples": {
+                  "PriceMetadata": {
+                    "summary": "",
+                    "value": {
+                      "customerCount": 10
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/billing-products": {
       "get": {
         "tags": [],
@@ -43997,6 +44062,22 @@
           },
           "pagination": {
             "$ref": "#/components/schemas/PaginationMeta"
+          }
+        }
+      },
+      "PriceMetadata": {
+        "required": [
+          "customerCount"
+        ],
+        "type": "object",
+        "example": {
+          "customerCount": 10
+        },
+        "properties": {
+          "customerCount": {
+            "type": "integer",
+            "description": "Number of customers using this price variant",
+            "example": 10
           }
         }
       },
