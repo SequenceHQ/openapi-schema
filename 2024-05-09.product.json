@@ -20179,14 +20179,24 @@
                 "schema": {
                   "$ref": "#/components/schemas/PriceMetadata",
                   "example": {
-                    "customerCount": 10
+                    "billingSchedules": [
+                      {
+                        "billingScheduleId": "e309e948-088e-4d77-b654-cd85498f1555",
+                        "customerLegalName": "John Doe"
+                      }
+                    ]
                   }
                 },
                 "examples": {
                   "PriceMetadata": {
                     "summary": "",
                     "value": {
-                      "customerCount": 10
+                      "billingSchedules": [
+                        {
+                          "billingScheduleId": "e309e948-088e-4d77-b654-cd85498f1555",
+                          "customerLegalName": "John Doe"
+                        }
+                      ]
                     }
                   }
                 }
@@ -43995,17 +44005,53 @@
       },
       "PriceMetadata": {
         "required": [
-          "customerCount"
+          "billingSchedules"
         ],
         "type": "object",
         "example": {
-          "customerCount": 10
+          "billingSchedules": [
+            {
+              "billingScheduleId": "e309e948-088e-4d77-b654-cd85498f1555",
+              "customerLegalName": "John Doe"
+            }
+          ]
         },
         "properties": {
-          "customerCount": {
-            "type": "integer",
-            "description": "Number of customers using this price variant",
-            "example": 10
+          "billingSchedules": {
+            "type": "array",
+            "description": "Billing schedules using this price variant",
+            "example": [
+              {
+                "billingScheduleId": "e309e948-088e-4d77-b654-cd85498f1555",
+                "customerLegalName": "John Doe"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/PriceMetadataBillingScheduleDetail"
+            }
+          }
+        }
+      },
+      "PriceMetadataBillingScheduleDetail": {
+        "required": [
+          "billingScheduleId",
+          "customerLegalName"
+        ],
+        "type": "object",
+        "example": {
+          "billingScheduleId": "e309e948-088e-4d77-b654-cd85498f1555",
+          "customerLegalName": "John Doe"
+        },
+        "properties": {
+          "billingScheduleId": {
+            "type": "string",
+            "description": "Billing schedule ID",
+            "example": "e309e948-088e-4d77-b654-cd85498f1555"
+          },
+          "customerLegalName": {
+            "type": "string",
+            "description": "Customer legal name",
+            "example": "John Doe"
           }
         }
       },
