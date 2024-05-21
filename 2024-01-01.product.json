@@ -292,7 +292,6 @@
                         }
                       }
                     ],
-                    "manualNumbering": false,
                     "customerPortalEnabled": true,
                     "includeBeneficiaryAddressInPaymentDetails": false
                   }
@@ -397,7 +396,6 @@
                           }
                         }
                       ],
-                      "manualNumbering": false,
                       "customerPortalEnabled": true,
                       "includeBeneficiaryAddressInPaymentDetails": false
                     }
@@ -741,7 +739,6 @@
                         }
                       }
                     ],
-                    "manualNumbering": true,
                     "appUrl": "www.sequencehq.com",
                     "customerPortalEnabled": true,
                     "includeBeneficiaryAddressInPaymentDetails": true
@@ -840,7 +837,6 @@
                           }
                         }
                       ],
-                      "manualNumbering": true,
                       "appUrl": "www.sequencehq.com",
                       "customerPortalEnabled": true,
                       "includeBeneficiaryAddressInPaymentDetails": true
@@ -4812,15 +4808,6 @@
             "schema": {
               "type": "string"
             }
-          },
-          {
-            "name": "invoiceNumber",
-            "in": "query",
-            "description": "Invoice number",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -5147,15 +5134,6 @@
             "in": "header",
             "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
             "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "invoiceNumber",
-            "in": "query",
-            "description": "Invoice number",
-            "required": false,
             "schema": {
               "type": "string"
             }
@@ -8119,15 +8097,6 @@
             "in": "header",
             "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
             "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "invoiceNumber",
-            "in": "query",
-            "description": "Invoice number",
-            "required": false,
             "schema": {
               "type": "string"
             }
@@ -11709,15 +11678,6 @@
             "schema": {
               "type": "string"
             }
-          },
-          {
-            "name": "creditNoteNumber",
-            "in": "query",
-            "description": "Credit note number",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -12012,15 +11972,6 @@
             "in": "header",
             "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
             "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "creditNoteNumber",
-            "in": "query",
-            "description": "Credit note number",
-            "required": false,
             "schema": {
               "type": "string"
             }
@@ -13434,15 +13385,6 @@
             "in": "header",
             "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
             "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "creditNoteNumber",
-            "in": "query",
-            "description": "Credit note number",
-            "required": false,
             "schema": {
               "type": "string"
             }
@@ -26207,7 +26149,6 @@
           "lastCreditNoteNumber",
           "lastInvoiceNumber",
           "legalCompanyName",
-          "manualNumbering",
           "sequenceAccountId"
         ],
         "type": "object",
@@ -26308,7 +26249,6 @@
               }
             }
           ],
-          "manualNumbering": false,
           "customerPortalEnabled": true,
           "includeBeneficiaryAddressInPaymentDetails": false
         },
@@ -26450,11 +26390,6 @@
             "items": {
               "$ref": "#/components/schemas/MerchantKeyValuePair"
             }
-          },
-          "manualNumbering": {
-            "type": "boolean",
-            "description": "True if invoices and credit notes should be manually numbered",
-            "example": false
           },
           "customerPortalEnabled": {
             "type": "boolean",
@@ -27110,7 +27045,6 @@
           "lastCreditNoteNumber",
           "lastInvoiceNumber",
           "legalCompanyName",
-          "manualNumbering",
           "sequenceAccountId"
         ],
         "type": "object",
@@ -27204,7 +27138,6 @@
               }
             }
           ],
-          "manualNumbering": true,
           "appUrl": "www.sequencehq.com",
           "customerPortalEnabled": true,
           "includeBeneficiaryAddressInPaymentDetails": true
@@ -27340,11 +27273,6 @@
             "items": {
               "$ref": "#/components/schemas/MerchantKeyValuePair"
             }
-          },
-          "manualNumbering": {
-            "type": "boolean",
-            "description": "True if invoices and credit notes should be manually numbered",
-            "example": true
           },
           "appUrl": {
             "type": "string",
