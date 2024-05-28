@@ -293,7 +293,8 @@
                       }
                     ],
                     "customerPortalEnabled": true,
-                    "includeBeneficiaryAddressInPaymentDetails": false
+                    "includeBeneficiaryAddressInPaymentDetails": false,
+                    "ccMerchantOnInvoiceEmails": true
                   }
                 },
                 "examples": {
@@ -397,7 +398,8 @@
                         }
                       ],
                       "customerPortalEnabled": true,
-                      "includeBeneficiaryAddressInPaymentDetails": false
+                      "includeBeneficiaryAddressInPaymentDetails": false,
+                      "ccMerchantOnInvoiceEmails": true
                     }
                   }
                 }
@@ -540,7 +542,8 @@
                   ],
                   "appUrl": "www.sequencehq.com",
                   "customerPortalEnabled": true,
-                  "includeBeneficiaryAddressInPaymentDetails": true
+                  "includeBeneficiaryAddressInPaymentDetails": true,
+                  "ccMerchantOnInvoiceEmails": true
                 }
               },
               "examples": {
@@ -634,7 +637,8 @@
                     ],
                     "appUrl": "www.sequencehq.com",
                     "customerPortalEnabled": true,
-                    "includeBeneficiaryAddressInPaymentDetails": true
+                    "includeBeneficiaryAddressInPaymentDetails": true,
+                    "ccMerchantOnInvoiceEmails": true
                   }
                 }
               }
@@ -741,7 +745,8 @@
                     ],
                     "appUrl": "www.sequencehq.com",
                     "customerPortalEnabled": true,
-                    "includeBeneficiaryAddressInPaymentDetails": true
+                    "includeBeneficiaryAddressInPaymentDetails": true,
+                    "ccMerchantOnInvoiceEmails": true
                   }
                 },
                 "examples": {
@@ -839,7 +844,8 @@
                       ],
                       "appUrl": "www.sequencehq.com",
                       "customerPortalEnabled": true,
-                      "includeBeneficiaryAddressInPaymentDetails": true
+                      "includeBeneficiaryAddressInPaymentDetails": true,
+                      "ccMerchantOnInvoiceEmails": true
                     }
                   }
                 }
@@ -26149,6 +26155,7 @@
         "required": [
           "address",
           "bankAccountDetails",
+          "ccMerchantOnInvoiceEmails",
           "creditNoteNumberPrefix",
           "customerPortalEnabled",
           "defaultDueDateDays",
@@ -26260,7 +26267,8 @@
             }
           ],
           "customerPortalEnabled": true,
-          "includeBeneficiaryAddressInPaymentDetails": false
+          "includeBeneficiaryAddressInPaymentDetails": false,
+          "ccMerchantOnInvoiceEmails": true
         },
         "properties": {
           "id": {
@@ -26410,6 +26418,11 @@
             "type": "boolean",
             "description": "Include beneficiary address in payment details",
             "example": false
+          },
+          "ccMerchantOnInvoiceEmails": {
+            "type": "boolean",
+            "description": "CC the merchant on end-customer invoice emails",
+            "example": true
           }
         }
       },
@@ -26910,7 +26923,8 @@
           ],
           "appUrl": "www.sequencehq.com",
           "customerPortalEnabled": true,
-          "includeBeneficiaryAddressInPaymentDetails": true
+          "includeBeneficiaryAddressInPaymentDetails": true,
+          "ccMerchantOnInvoiceEmails": true
         },
         "properties": {
           "invoiceNumberPrefix": {
@@ -27038,6 +27052,11 @@
             "type": "boolean",
             "description": "Include beneficiary address in payment details",
             "example": true
+          },
+          "ccMerchantOnInvoiceEmails": {
+            "type": "boolean",
+            "description": "CC the merchant on end-customer invoice emails",
+            "example": true
           }
         }
       },
@@ -27045,6 +27064,7 @@
         "required": [
           "address",
           "bankAccountDetails",
+          "ccMerchantOnInvoiceEmails",
           "creditNoteNumberPrefix",
           "customerPortalEnabled",
           "defaultDueDateDays",
@@ -27150,7 +27170,8 @@
           ],
           "appUrl": "www.sequencehq.com",
           "customerPortalEnabled": true,
-          "includeBeneficiaryAddressInPaymentDetails": true
+          "includeBeneficiaryAddressInPaymentDetails": true,
+          "ccMerchantOnInvoiceEmails": true
         },
         "properties": {
           "id": {
@@ -27297,6 +27318,11 @@
           "includeBeneficiaryAddressInPaymentDetails": {
             "type": "boolean",
             "description": "Include beneficiary address in payment details",
+            "example": true
+          },
+          "ccMerchantOnInvoiceEmails": {
+            "type": "boolean",
+            "description": "CC the merchant on end-customer invoice emails",
             "example": true
           }
         }
