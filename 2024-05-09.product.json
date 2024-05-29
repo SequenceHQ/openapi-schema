@@ -25542,8 +25542,8 @@
       },
       "delete": {
         "tags": [],
-        "summary": "Delete customer",
-        "description": "Delete one of your [Customers](/customers/overview).",
+        "summary": "Archive Customer",
+        "description": "Archive a [Customer](/customers/overview).",
         "operationId": "deleteCustomersById",
         "parameters": [
           {
