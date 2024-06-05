@@ -18181,6 +18181,159 @@
       "parameters": []
     },
     "/list-prices": {
+      "get": {
+        "tags": [],
+        "summary": "List all list prices",
+        "description": "List all list prices",
+        "operationId": "getListPrices",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "productId",
+            "in": "query",
+            "description": "Filter list prices by a given product ID.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "includeArchived",
+            "in": "query",
+            "description": "Include archived list prices in results",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Maximum number of objects to return per-page.",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "after",
+            "in": "query",
+            "description": "Pagination offset. To page through items, omit this parameter to retrieve the first page, and then successively use the value you get from `pagination.after` or `pagination.before` to retrieve each page.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "before",
+            "in": "query",
+            "description": "Pagination offset. To page through items, omit this parameter to retrieve the first page, and then successively use the value you get from `pagination.next` or `pagination.previous` to retrieve each page.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ListListPricesEndpointResponseModel",
+                  "example": {
+                    "items": [
+                      {
+                        "id": "b4d7e884-e007-4183-8355-4771865c5100",
+                        "productId": "f409d651-c475-4142-aafd-a5d2bd74d4f9",
+                        "name": "Sample product",
+                        "structure": {
+                          "pricingType": "LINEAR",
+                          "pricePerUnit": "0.25",
+                          "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                          "isPricePercentage": false
+                        },
+                        "billingFrequency": "MONTHLY",
+                        "billingType": "IN_ARREARS",
+                        "createdAt": "2021-08-25T12:00:00Z",
+                        "updatedAt": "2021-08-25T12:00:00Z",
+                        "integrationIds": [],
+                        "customMetricParameters": [
+                          {
+                            "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                            "value": "10"
+                          }
+                        ]
+                      }
+                    ],
+                    "pagination": {
+                      "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
+                      "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
+                      "totalResultSize": 10
+                    }
+                  }
+                },
+                "examples": {
+                  "ListListPricesEndpointResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "items": [
+                        {
+                          "id": "b4d7e884-e007-4183-8355-4771865c5100",
+                          "productId": "f409d651-c475-4142-aafd-a5d2bd74d4f9",
+                          "name": "Sample product",
+                          "structure": {
+                            "pricingType": "LINEAR",
+                            "pricePerUnit": "0.25",
+                            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                            "isPricePercentage": false
+                          },
+                          "billingFrequency": "MONTHLY",
+                          "billingType": "IN_ARREARS",
+                          "createdAt": "2021-08-25T12:00:00Z",
+                          "updatedAt": "2021-08-25T12:00:00Z",
+                          "integrationIds": [],
+                          "customMetricParameters": [
+                            {
+                              "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                              "value": "10"
+                            }
+                          ]
+                        }
+                      ],
+                      "pagination": {
+                        "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
+                        "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
+                        "totalResultSize": 10
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
       "post": {
         "tags": [],
         "summary": "Create a new List Price",
@@ -18224,7 +18377,8 @@
                       "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                       "value": "10"
                     }
-                  ]
+                  ],
+                  "archivedAt": "2023-04-26T16:47:00Z"
                 }
               },
               "examples": {
@@ -18252,7 +18406,8 @@
                         "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                         "value": "10"
                       }
-                    ]
+                    ],
+                    "archivedAt": "2023-04-26T16:47:00Z"
                   }
                 }
               }
@@ -18292,7 +18447,8 @@
                         "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                         "value": "10"
                       }
-                    ]
+                    ],
+                    "archivedAt": "2023-04-26T16:47:00Z"
                   }
                 },
                 "examples": {
@@ -18323,7 +18479,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "archivedAt": "2023-04-26T16:47:00Z"
                     }
                   }
                 }
@@ -18405,7 +18562,8 @@
                         "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                         "value": "10"
                       }
-                    ]
+                    ],
+                    "archivedAt": "2023-04-26T16:47:00Z"
                   }
                 },
                 "examples": {
@@ -18436,7 +18594,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "archivedAt": "2023-04-26T16:47:00Z"
                     }
                   }
                 }
@@ -18535,7 +18694,8 @@
                         "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                         "value": "10"
                       }
-                    ]
+                    ],
+                    "archivedAt": "2023-04-26T16:47:00Z"
                   }
                 },
                 "examples": {
@@ -18564,6 +18724,120 @@
                       "customMetricParameters": [
                         {
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                          "value": "10"
+                        }
+                      ],
+                      "archivedAt": "2023-04-26T16:47:00Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
+    "/list-prices/{id}/archive": {
+      "put": {
+        "tags": [],
+        "summary": "Archive a list price",
+        "description": "Mark a list price as archived",
+        "operationId": "putListPricesByIdArchive",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "List Price Id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ListPrice",
+                  "example": {
+                    "id": "b4d7e884-e007-4183-8355-4771865c5100",
+                    "productId": "f409d651-c475-4142-aafd-a5d2bd74d4f9",
+                    "name": "Sample product",
+                    "structure": {
+                      "pricingType": "LINEAR",
+                      "pricePerUnit": "0.25",
+                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                      "isPricePercentage": false
+                    },
+                    "billingFrequency": "MONTHLY",
+                    "billingType": "IN_ARREARS",
+                    "createdAt": "2021-08-25T12:00:00Z",
+                    "updatedAt": "2021-08-25T12:00:00Z",
+                    "integrationIds": [
+                      {
+                        "service": "Xero",
+                        "id": "123"
+                      }
+                    ],
+                    "customMetricParameters": [
+                      {
+                        "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                        "value": "10"
+                      }
+                    ]
+                  }
+                },
+                "examples": {
+                  "ListPrice": {
+                    "summary": "",
+                    "value": {
+                      "id": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "productId": "f409d651-c475-4142-aafd-a5d2bd74d4f9",
+                      "name": "Sample product",
+                      "structure": {
+                        "pricingType": "LINEAR",
+                        "pricePerUnit": "0.25",
+                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                        "isPricePercentage": false
+                      },
+                      "billingFrequency": "MONTHLY",
+                      "billingType": "IN_ARREARS",
+                      "createdAt": "2021-08-25T12:00:00Z",
+                      "updatedAt": "2021-08-25T12:00:00Z",
+                      "integrationIds": [
+                        {
+                          "service": "Xero",
+                          "id": "123"
+                        }
+                      ],
+                      "customMetricParameters": [
+                        {
+                          "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
                           "value": "10"
                         }
                       ]
@@ -56021,7 +56295,8 @@
               "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
               "value": "10"
             }
-          ]
+          ],
+          "archivedAt": "2023-04-26T16:47:00Z"
         },
         "properties": {
           "productId": {
@@ -56070,6 +56345,11 @@
             "items": {
               "$ref": "#/components/schemas/PriceParameter1"
             }
+          },
+          "archivedAt": {
+            "type": "string",
+            "description": "Timestamp when price was archived. Formatted as an ISO 8601 timestamp.",
+            "example": "2023-04-26T16:47:00Z"
           }
         }
       },
@@ -56213,7 +56493,8 @@
               "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
               "value": "10"
             }
-          ]
+          ],
+          "archivedAt": "2023-04-26T16:47:00Z"
         },
         "properties": {
           "id": {
@@ -56277,6 +56558,11 @@
             "items": {
               "$ref": "#/components/schemas/PriceParameter1"
             }
+          },
+          "archivedAt": {
+            "type": "string",
+            "description": "Timestamp when price was archived. Formatted as an ISO 8601 timestamp.",
+            "example": "2023-04-26T16:47:00Z"
           }
         }
       },
@@ -56319,7 +56605,8 @@
               "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
               "value": "10"
             }
-          ]
+          ],
+          "archivedAt": "2023-04-26T16:47:00Z"
         },
         "properties": {
           "id": {
@@ -56383,6 +56670,11 @@
             "items": {
               "$ref": "#/components/schemas/PriceParameter1"
             }
+          },
+          "archivedAt": {
+            "type": "string",
+            "description": "Timestamp when price was archived. Formatted as an ISO 8601 timestamp.",
+            "example": "2023-04-26T16:47:00Z"
           }
         }
       },
@@ -56441,7 +56733,8 @@
               "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
               "value": "10"
             }
-          ]
+          ],
+          "archivedAt": "2023-04-26T16:47:00Z"
         },
         "properties": {
           "id": {
@@ -56499,6 +56792,179 @@
             "example": [
               {
                 "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                "value": "10"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/PriceParameter1"
+            }
+          },
+          "archivedAt": {
+            "type": "string",
+            "description": "Timestamp when price was archived. Formatted as an ISO 8601 timestamp.",
+            "example": "2023-04-26T16:47:00Z"
+          }
+        }
+      },
+      "ListListPricesEndpointResponseModel": {
+        "required": [
+          "items",
+          "pagination"
+        ],
+        "type": "object",
+        "example": {
+          "items": [
+            {
+              "id": "b4d7e884-e007-4183-8355-4771865c5100",
+              "productId": "f409d651-c475-4142-aafd-a5d2bd74d4f9",
+              "name": "Sample product",
+              "structure": {
+                "pricingType": "LINEAR",
+                "pricePerUnit": "0.25",
+                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                "isPricePercentage": false
+              },
+              "billingFrequency": "MONTHLY",
+              "billingType": "IN_ARREARS",
+              "createdAt": "2021-08-25T12:00:00Z",
+              "updatedAt": "2021-08-25T12:00:00Z",
+              "integrationIds": [],
+              "customMetricParameters": [
+                {
+                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                  "value": "10"
+                }
+              ]
+            }
+          ],
+          "pagination": {
+            "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
+            "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
+            "totalResultSize": 10
+          }
+        },
+        "properties": {
+          "items": {
+            "type": "array",
+            "description": "List prices",
+            "example": [
+              {
+                "id": "b4d7e884-e007-4183-8355-4771865c5100",
+                "productId": "f409d651-c475-4142-aafd-a5d2bd74d4f9",
+                "name": "Sample product",
+                "structure": {
+                  "pricingType": "LINEAR",
+                  "pricePerUnit": "0.25",
+                  "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                  "isPricePercentage": false
+                },
+                "billingFrequency": "MONTHLY",
+                "billingType": "IN_ARREARS",
+                "createdAt": "2021-08-25T12:00:00Z",
+                "updatedAt": "2021-08-25T12:00:00Z",
+                "integrationIds": [],
+                "customMetricParameters": [
+                  {
+                    "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                    "value": "10"
+                  }
+                ]
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/ListPrice"
+            }
+          },
+          "pagination": {
+            "$ref": "#/components/schemas/PaginationMeta"
+          }
+        }
+      },
+      "ListPrice": {
+        "required": [
+          "billingFrequency",
+          "billingType",
+          "createdAt",
+          "customMetricParameters",
+          "id",
+          "integrationIds",
+          "name",
+          "productId",
+          "structure",
+          "updatedAt"
+        ],
+        "type": "object",
+        "example": {
+          "id": "b4d7e884-e007-4183-8355-4771865c5100",
+          "productId": "f409d651-c475-4142-aafd-a5d2bd74d4f9",
+          "name": "Sample product",
+          "structure": {
+            "pricingType": "LINEAR",
+            "pricePerUnit": "0.25",
+            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+            "isPricePercentage": false
+          },
+          "billingFrequency": "MONTHLY",
+          "billingType": "IN_ARREARS",
+          "createdAt": "2021-08-25T12:00:00Z",
+          "updatedAt": "2021-08-25T12:00:00Z",
+          "integrationIds": [],
+          "customMetricParameters": [
+            {
+              "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+              "value": "10"
+            }
+          ]
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique ID",
+            "example": "b4d7e884-e007-4183-8355-4771865c5100"
+          },
+          "productId": {
+            "type": "string",
+            "description": "The related product ID",
+            "example": "f409d651-c475-4142-aafd-a5d2bd74d4f9"
+          },
+          "name": {
+            "type": "string",
+            "description": "The customer-facing name of this list price",
+            "example": "Sample product"
+          },
+          "structure": {
+            "$ref": "#/components/schemas/LinearPricingStructure1"
+          },
+          "billingFrequency": {
+            "description": "The recurrence of charging this price.",
+            "$ref": "#/components/schemas/BillingFrequency1"
+          },
+          "billingType": {
+            "description": "How to bill this price: in-arrears or in-advance.",
+            "$ref": "#/components/schemas/BillingType"
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "Creation timestamp. Formatted as an ISO 8601 timestamp.",
+            "example": "2021-08-25T12:00:00Z"
+          },
+          "updatedAt": {
+            "type": "string",
+            "description": "Timestamp when price was last updated. Formatted as an ISO 8601 timestamp.",
+            "example": "2021-08-25T12:00:00Z"
+          },
+          "integrationIds": {
+            "type": "array",
+            "description": "Alternate IDs for this price in third-party integration systems",
+            "example": [],
+            "items": {}
+          },
+          "customMetricParameters": {
+            "type": "array",
+            "description": "Specific parameters to influence usage calculation for this price, and are only required when using a custom metric. Please speak to your Sequence contacts for further information prior to usage.",
+            "example": [
+              {
+                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
                 "value": "10"
               }
             ],
