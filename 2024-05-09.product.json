@@ -77478,7 +77478,7 @@
             "example": 30
           },
           "merchantBranding": {
-            "$ref": "#/components/schemas/MerchantBranding1"
+            "$ref": "#/components/schemas/QuoteMerchantDetails"
           },
           "phases": {
             "type": "array",
@@ -77604,7 +77604,7 @@
           "QUOTE_PRICE"
         ]
       },
-      "MerchantBranding1": {
+      "QuoteMerchantDetails": {
         "required": [
           "address",
           "email",
@@ -79310,7 +79310,7 @@
             "$ref": "#/components/schemas/QuoteCreatedFrom"
           },
           "merchantBranding": {
-            "$ref": "#/components/schemas/MerchantBranding1"
+            "$ref": "#/components/schemas/QuoteMerchantDetails"
           },
           "phases": {
             "type": "array",
