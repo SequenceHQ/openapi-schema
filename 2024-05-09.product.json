@@ -38029,6 +38029,116 @@
       "servers": [],
       "parameters": []
     },
+    "/usage-events/distinct-aliases-count": {
+      "get": {
+        "tags": [],
+        "summary": "Get count of distinct customer aliases for usage events",
+        "description": "Returns the number of distinct customer aliases across the set of usage events based on the provided filters",
+        "operationId": "getUsageEventsDistinctAliasesCount",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "customerAlias",
+            "in": "query",
+            "description": "Filter events by customer alias",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "unmappedAliasesOnly",
+            "in": "query",
+            "description": "Include unmapped aliases only",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "eventType",
+            "in": "query",
+            "description": "Filter events by type",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "eventId",
+            "in": "query",
+            "description": "Filter events by event id",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "eventTimestampBefore",
+            "in": "query",
+            "description": "Filter events by timestamp before",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "eventTimestampAfter",
+            "in": "query",
+            "description": "Filter events by timestamp after",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDistinctCustomerAliasCountForUsageEventsEndpointEndpointResponseModel",
+                  "example": {
+                    "distinctAliasCount": "10"
+                  }
+                },
+                "examples": {
+                  "GetDistinctCustomerAliasCountForUsageEventsEndpointEndpointResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "distinctAliasCount": "10"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/usage-events/{id}": {
       "get": {
         "tags": [],
@@ -76540,6 +76650,22 @@
           "isLatestForCustomerEventId": {
             "type": "boolean",
             "example": true
+          }
+        }
+      },
+      "GetDistinctCustomerAliasCountForUsageEventsEndpointEndpointResponseModel": {
+        "required": [
+          "distinctAliasCount"
+        ],
+        "type": "object",
+        "example": {
+          "distinctAliasCount": "10"
+        },
+        "properties": {
+          "distinctAliasCount": {
+            "type": "string",
+            "description": "Count of distinct customer aliases matching the provided filters",
+            "example": "10"
           }
         }
       },
