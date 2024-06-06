@@ -18377,8 +18377,7 @@
                       "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                       "value": "10"
                     }
-                  ],
-                  "archivedAt": "2023-04-26T16:47:00Z"
+                  ]
                 }
               },
               "examples": {
@@ -18406,8 +18405,7 @@
                         "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                         "value": "10"
                       }
-                    ],
-                    "archivedAt": "2023-04-26T16:47:00Z"
+                    ]
                   }
                 }
               }
@@ -56447,8 +56445,7 @@
               "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
               "value": "10"
             }
-          ],
-          "archivedAt": "2023-04-26T16:47:00Z"
+          ]
         },
         "properties": {
           "productId": {
@@ -56497,11 +56494,6 @@
             "items": {
               "$ref": "#/components/schemas/PriceParameter1"
             }
-          },
-          "archivedAt": {
-            "type": "string",
-            "description": "Timestamp when price was archived. Formatted as an ISO 8601 timestamp.",
-            "example": "2023-04-26T16:47:00Z"
           }
         }
       },
