@@ -2113,6 +2113,253 @@
       "servers": [],
       "parameters": []
     },
+    "/customer-portal/customers/{customerId}/quotes-new/{quoteId}": {
+      "get": {
+        "tags": [],
+        "summary": "Get a quote by ID",
+        "description": "Get a Quote by ID including its phases",
+        "operationId": "getCustomerPortalCustomersByCustomerIdQuotesNewByQuoteId",
+        "parameters": [
+          {
+            "name": "customerId",
+            "in": "path",
+            "description": "Customer ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "quoteId",
+            "in": "path",
+            "description": "Quote ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/QuoteNew",
+                  "example": {
+                    "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+                    "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                    "customerId": "f97438a9-776f-4dc9-9a1e-4e7ee9f4d6cc",
+                    "quoteNumber": "Q00001",
+                    "title": "My quote",
+                    "currency": "GBP",
+                    "presentation": [],
+                    "status": "DRAFT",
+                    "dealType": "NEW_BUSINESS",
+                    "preliminaryBillingStartDate": "2024-06-01",
+                    "expiresAt": "2024-05-01",
+                    "publishedAt": "2024-04-01T00:00:00Z",
+                    "acceptedAt": "2024-04-15T00:00:00Z",
+                    "merchantBranding": {
+                      "logoUrl": "logo",
+                      "legalCompanyName": "Acme Corp",
+                      "primaryColour": "green",
+                      "url": "www.example.com",
+                      "address": {
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "New York",
+                        "state": "NY",
+                        "postcode": "AB1 2EF",
+                        "country": "US"
+                      },
+                      "email": "accounts@example.com"
+                    },
+                    "phases": [
+                      {
+                        "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+                        "duration": {
+                          "days": 0,
+                          "weeks": 0,
+                          "months": 6,
+                          "years": 1
+                        },
+                        "prices": [
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "d0dce0a7-03d2-4889-80f3-9afeb0cb3c33",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "LINEAR",
+                              "pricePerUnit": "0.25",
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                              "isPricePercentage": false
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ]
+                          }
+                        ],
+                        "discounts": [
+                          {
+                            "id": "018fa035-e03b-79c1-bf81-8165e38d74e7",
+                            "restrictToPrices": [
+                              "5100e884-e007-4183-8355-4771865cb4d7"
+                            ],
+                            "amount": "50",
+                            "discountCalculationType": "PERCENTAGE",
+                            "message": "message",
+                            "createdAt": "2024-04-01T00:00:00Z",
+                            "updatedAt": "2024-04-01T00:00:00Z"
+                          }
+                        ],
+                        "minimums": [
+                          {
+                            "id": "018fa035-f39b-707f-ae5f-c7c95cc8c0d0",
+                            "amount": "100",
+                            "restrictToPrices": [
+                              "5100e884-e007-4183-8355-4771865cb4d7"
+                            ],
+                            "createdAt": "2024-04-01T00:00:00Z",
+                            "updatedAt": "2024-04-01T00:00:00Z"
+                          }
+                        ]
+                      }
+                    ],
+                    "customerName": "John Adam Smith",
+                    "customerAddress": {
+                      "line1": "Flat 1",
+                      "line2": "123 Fake Street",
+                      "town": "London",
+                      "postcode": "AB1 2EF",
+                      "country": "GB"
+                    }
+                  }
+                },
+                "examples": {
+                  "QuoteNew": {
+                    "summary": "",
+                    "value": {
+                      "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+                      "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                      "customerId": "f97438a9-776f-4dc9-9a1e-4e7ee9f4d6cc",
+                      "quoteNumber": "Q00001",
+                      "title": "My quote",
+                      "currency": "GBP",
+                      "presentation": [],
+                      "status": "DRAFT",
+                      "dealType": "NEW_BUSINESS",
+                      "preliminaryBillingStartDate": "2024-06-01",
+                      "expiresAt": "2024-05-01",
+                      "publishedAt": "2024-04-01T00:00:00Z",
+                      "acceptedAt": "2024-04-15T00:00:00Z",
+                      "merchantBranding": {
+                        "logoUrl": "logo",
+                        "legalCompanyName": "Acme Corp",
+                        "primaryColour": "green",
+                        "url": "www.example.com",
+                        "address": {
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "New York",
+                          "state": "NY",
+                          "postcode": "AB1 2EF",
+                          "country": "US"
+                        },
+                        "email": "accounts@example.com"
+                      },
+                      "phases": [
+                        {
+                          "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+                          "duration": {
+                            "days": 0,
+                            "weeks": 0,
+                            "months": 6,
+                            "years": 1
+                          },
+                          "prices": [
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "d0dce0a7-03d2-4889-80f3-9afeb0cb3c33",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "LINEAR",
+                                "pricePerUnit": "0.25",
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                                "isPricePercentage": false
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ]
+                            }
+                          ],
+                          "discounts": [
+                            {
+                              "id": "018fa035-e03b-79c1-bf81-8165e38d74e7",
+                              "restrictToPrices": [
+                                "5100e884-e007-4183-8355-4771865cb4d7"
+                              ],
+                              "amount": "50",
+                              "discountCalculationType": "PERCENTAGE",
+                              "message": "message",
+                              "createdAt": "2024-04-01T00:00:00Z",
+                              "updatedAt": "2024-04-01T00:00:00Z"
+                            }
+                          ],
+                          "minimums": [
+                            {
+                              "id": "018fa035-f39b-707f-ae5f-c7c95cc8c0d0",
+                              "amount": "100",
+                              "restrictToPrices": [
+                                "5100e884-e007-4183-8355-4771865cb4d7"
+                              ],
+                              "createdAt": "2024-04-01T00:00:00Z",
+                              "updatedAt": "2024-04-01T00:00:00Z"
+                            }
+                          ]
+                        }
+                      ],
+                      "customerName": "John Adam Smith",
+                      "customerAddress": {
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "London",
+                        "postcode": "AB1 2EF",
+                        "country": "GB"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/customer-portal/customers/{customerId}/quotes/{quoteId}/accept": {
       "post": {
         "tags": [],
@@ -38093,7 +38340,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/QuoteNew",
+                  "$ref": "#/components/schemas/QuoteNew1",
                   "example": {
                     "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
                     "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
@@ -38820,7 +39067,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/QuoteNew",
+                  "$ref": "#/components/schemas/QuoteNew1",
                   "example": {
                     "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
                     "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
@@ -39762,7 +40009,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/QuoteNew",
+                  "$ref": "#/components/schemas/QuoteNew1",
                   "example": {
                     "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
                     "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
@@ -40170,7 +40417,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/QuoteNew",
+                  "$ref": "#/components/schemas/QuoteNew1",
                   "example": {
                     "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
                     "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
@@ -40704,7 +40951,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/QuoteNew",
+                  "$ref": "#/components/schemas/QuoteNew1",
                   "example": {
                     "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
                     "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
@@ -42824,7 +43071,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/QuoteNew",
+                  "$ref": "#/components/schemas/QuoteNew1",
                   "example": {
                     "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
                     "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
@@ -46615,6 +46862,499 @@
             "type": "string",
             "description": "Updated at",
             "example": "2024-04-01T00:00:00Z"
+          }
+        }
+      },
+      "QuoteNew": {
+        "required": [
+          "createdBy",
+          "currency",
+          "customerAddress",
+          "customerId",
+          "customerName",
+          "dealType",
+          "id",
+          "merchantBranding",
+          "phases",
+          "presentation",
+          "publishedAt",
+          "quoteNumber",
+          "status",
+          "title"
+        ],
+        "type": "object",
+        "example": {
+          "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+          "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+          "customerId": "f97438a9-776f-4dc9-9a1e-4e7ee9f4d6cc",
+          "quoteNumber": "Q00001",
+          "title": "My quote",
+          "currency": "GBP",
+          "presentation": [],
+          "status": "DRAFT",
+          "dealType": "NEW_BUSINESS",
+          "preliminaryBillingStartDate": "2024-06-01",
+          "expiresAt": "2024-05-01",
+          "publishedAt": "2024-04-01T00:00:00Z",
+          "acceptedAt": "2024-04-15T00:00:00Z",
+          "merchantBranding": {
+            "logoUrl": "logo",
+            "legalCompanyName": "Acme Corp",
+            "primaryColour": "green",
+            "url": "www.example.com",
+            "address": {
+              "line1": "Flat 1",
+              "line2": "123 Fake Street",
+              "town": "New York",
+              "state": "NY",
+              "postcode": "AB1 2EF",
+              "country": "US"
+            },
+            "email": "accounts@example.com"
+          },
+          "phases": [
+            {
+              "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+              "duration": {
+                "days": 0,
+                "weeks": 0,
+                "months": 6,
+                "years": 1
+              },
+              "prices": [
+                {
+                  "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                  "productId": "d0dce0a7-03d2-4889-80f3-9afeb0cb3c33",
+                  "name": "Sample product",
+                  "structure": {
+                    "pricingType": "LINEAR",
+                    "pricePerUnit": "0.25",
+                    "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                    "isPricePercentage": false
+                  },
+                  "billingFrequency": "MONTHLY",
+                  "billingType": "IN_ARREARS",
+                  "customMetricParameters": [
+                    {
+                      "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                      "value": "10"
+                    }
+                  ]
+                }
+              ],
+              "discounts": [
+                {
+                  "id": "018fa035-e03b-79c1-bf81-8165e38d74e7",
+                  "restrictToPrices": [
+                    "5100e884-e007-4183-8355-4771865cb4d7"
+                  ],
+                  "amount": "50",
+                  "discountCalculationType": "PERCENTAGE",
+                  "message": "message",
+                  "createdAt": "2024-04-01T00:00:00Z",
+                  "updatedAt": "2024-04-01T00:00:00Z"
+                }
+              ],
+              "minimums": [
+                {
+                  "id": "018fa035-f39b-707f-ae5f-c7c95cc8c0d0",
+                  "amount": "100",
+                  "restrictToPrices": [
+                    "5100e884-e007-4183-8355-4771865cb4d7"
+                  ],
+                  "createdAt": "2024-04-01T00:00:00Z",
+                  "updatedAt": "2024-04-01T00:00:00Z"
+                }
+              ]
+            }
+          ],
+          "customerName": "John Adam Smith",
+          "customerAddress": {
+            "line1": "Flat 1",
+            "line2": "123 Fake Street",
+            "town": "London",
+            "postcode": "AB1 2EF",
+            "country": "GB"
+          }
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique ID",
+            "example": "678ca125-8bc3-478f-9a96-6ba73605cf1e"
+          },
+          "createdBy": {
+            "type": "string",
+            "description": "The Sequence user who created this quote",
+            "example": "4ffd439e-32e5-4046-bb40-3cb81f40e5da"
+          },
+          "customerId": {
+            "type": "string",
+            "description": "ID of Customer to which this quote pertains",
+            "example": "f97438a9-776f-4dc9-9a1e-4e7ee9f4d6cc"
+          },
+          "quoteNumber": {
+            "type": "string",
+            "description": "An alpha-numeric value that identifies the quote",
+            "example": "Q00001"
+          },
+          "title": {
+            "type": "string",
+            "description": "The quote title",
+            "example": "My quote"
+          },
+          "currency": {
+            "description": "Quote currency",
+            "$ref": "#/components/schemas/Currency"
+          },
+          "presentation": {
+            "type": "array",
+            "description": "JSON for the visual presentation of the quote",
+            "example": [],
+            "items": {}
+          },
+          "status": {
+            "description": "The status of the quote",
+            "$ref": "#/components/schemas/QuoteStatus"
+          },
+          "dealType": {
+            "description": "Quote deal type",
+            "$ref": "#/components/schemas/QuoteDealType"
+          },
+          "preliminaryBillingStartDate": {
+            "type": "string",
+            "description": "Preliminary start date of contract",
+            "format": "date",
+            "example": "2024-06-01"
+          },
+          "expiresAt": {
+            "type": "string",
+            "description": "Date when quote expires",
+            "format": "date",
+            "example": "2024-05-01"
+          },
+          "publishedAt": {
+            "type": "string",
+            "description": "Timestamp when quote was published. Formatted as an ISO 8601 timestamp.",
+            "example": "2024-04-01T00:00:00Z"
+          },
+          "acceptedAt": {
+            "type": "string",
+            "description": "Timestamp when quote was accepted. Formatted as an ISO 8601 timestamp.",
+            "example": "2024-04-15T00:00:00Z"
+          },
+          "merchantBranding": {
+            "$ref": "#/components/schemas/MerchantBranding"
+          },
+          "phases": {
+            "type": "array",
+            "description": "Phases for this quote, in sequential order",
+            "example": [
+              {
+                "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+                "duration": {
+                  "days": 0,
+                  "weeks": 0,
+                  "months": 6,
+                  "years": 1
+                },
+                "prices": [
+                  {
+                    "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                    "productId": "d0dce0a7-03d2-4889-80f3-9afeb0cb3c33",
+                    "name": "Sample product",
+                    "structure": {
+                      "pricingType": "LINEAR",
+                      "pricePerUnit": "0.25",
+                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                      "isPricePercentage": false
+                    },
+                    "billingFrequency": "MONTHLY",
+                    "billingType": "IN_ARREARS",
+                    "customMetricParameters": [
+                      {
+                        "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                        "value": "10"
+                      }
+                    ]
+                  }
+                ],
+                "discounts": [
+                  {
+                    "id": "018fa035-e03b-79c1-bf81-8165e38d74e7",
+                    "restrictToPrices": [
+                      "5100e884-e007-4183-8355-4771865cb4d7"
+                    ],
+                    "amount": "50",
+                    "discountCalculationType": "PERCENTAGE",
+                    "message": "message",
+                    "createdAt": "2024-04-01T00:00:00Z",
+                    "updatedAt": "2024-04-01T00:00:00Z"
+                  }
+                ],
+                "minimums": [
+                  {
+                    "id": "018fa035-f39b-707f-ae5f-c7c95cc8c0d0",
+                    "amount": "100",
+                    "restrictToPrices": [
+                      "5100e884-e007-4183-8355-4771865cb4d7"
+                    ],
+                    "createdAt": "2024-04-01T00:00:00Z",
+                    "updatedAt": "2024-04-01T00:00:00Z"
+                  }
+                ]
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/QuotePhaseNew"
+            }
+          },
+          "customerName": {
+            "type": "string",
+            "description": "Customer's name",
+            "example": "John Adam Smith"
+          },
+          "customerAddress": {
+            "$ref": "#/components/schemas/Address"
+          }
+        }
+      },
+      "QuotePhaseNew": {
+        "required": [
+          "discounts",
+          "id",
+          "minimums",
+          "prices"
+        ],
+        "type": "object",
+        "example": {
+          "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+          "duration": {
+            "days": 0,
+            "weeks": 0,
+            "months": 6,
+            "years": 1
+          },
+          "prices": [
+            {
+              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+              "productId": "d0dce0a7-03d2-4889-80f3-9afeb0cb3c33",
+              "name": "Sample product",
+              "structure": {
+                "pricingType": "LINEAR",
+                "pricePerUnit": "0.25",
+                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                "isPricePercentage": false
+              },
+              "billingFrequency": "MONTHLY",
+              "billingType": "IN_ARREARS",
+              "customMetricParameters": [
+                {
+                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                  "value": "10"
+                }
+              ]
+            }
+          ],
+          "discounts": [
+            {
+              "id": "018fa035-e03b-79c1-bf81-8165e38d74e7",
+              "restrictToPrices": [
+                "5100e884-e007-4183-8355-4771865cb4d7"
+              ],
+              "amount": "50",
+              "discountCalculationType": "PERCENTAGE",
+              "message": "message",
+              "createdAt": "2024-04-01T00:00:00Z",
+              "updatedAt": "2024-04-01T00:00:00Z"
+            }
+          ],
+          "minimums": [
+            {
+              "id": "018fa035-f39b-707f-ae5f-c7c95cc8c0d0",
+              "amount": "100",
+              "restrictToPrices": [
+                "5100e884-e007-4183-8355-4771865cb4d7"
+              ],
+              "createdAt": "2024-04-01T00:00:00Z",
+              "updatedAt": "2024-04-01T00:00:00Z"
+            }
+          ]
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique ID",
+            "example": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8"
+          },
+          "duration": {
+            "$ref": "#/components/schemas/Duration"
+          },
+          "prices": {
+            "type": "array",
+            "description": "Prices within this phase",
+            "example": [
+              {
+                "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                "productId": "d0dce0a7-03d2-4889-80f3-9afeb0cb3c33",
+                "name": "Sample product",
+                "structure": {
+                  "pricingType": "LINEAR",
+                  "pricePerUnit": "0.25",
+                  "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                  "isPricePercentage": false
+                },
+                "billingFrequency": "MONTHLY",
+                "billingType": "IN_ARREARS",
+                "customMetricParameters": [
+                  {
+                    "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                    "value": "10"
+                  }
+                ]
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/QuotePriceNew"
+            }
+          },
+          "discounts": {
+            "type": "array",
+            "description": "Discounts within this phase",
+            "example": [
+              {
+                "id": "018fa035-e03b-79c1-bf81-8165e38d74e7",
+                "restrictToPrices": [
+                  "5100e884-e007-4183-8355-4771865cb4d7"
+                ],
+                "amount": "50",
+                "discountCalculationType": "PERCENTAGE",
+                "message": "message",
+                "createdAt": "2024-04-01T00:00:00Z",
+                "updatedAt": "2024-04-01T00:00:00Z"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/QuoteDiscount"
+            }
+          },
+          "minimums": {
+            "type": "array",
+            "description": "Minimums within this phase",
+            "example": [
+              {
+                "id": "018fa035-f39b-707f-ae5f-c7c95cc8c0d0",
+                "amount": "100",
+                "restrictToPrices": [
+                  "5100e884-e007-4183-8355-4771865cb4d7"
+                ],
+                "createdAt": "2024-04-01T00:00:00Z",
+                "updatedAt": "2024-04-01T00:00:00Z"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/QuoteMinimum"
+            }
+          }
+        }
+      },
+      "QuotePriceNew": {
+        "required": [
+          "billingFrequency",
+          "billingType",
+          "customMetricParameters",
+          "id",
+          "name",
+          "productId",
+          "structure"
+        ],
+        "type": "object",
+        "example": {
+          "id": "5100e884-e007-4183-8355-4771865cb4d7",
+          "productId": "d0dce0a7-03d2-4889-80f3-9afeb0cb3c33",
+          "name": "Sample product",
+          "structure": {
+            "pricingType": "LINEAR",
+            "pricePerUnit": "0.25",
+            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+            "isPricePercentage": false
+          },
+          "billingFrequency": "MONTHLY",
+          "billingType": "IN_ARREARS",
+          "customMetricParameters": [
+            {
+              "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+              "value": "10"
+            }
+          ]
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique ID",
+            "example": "5100e884-e007-4183-8355-4771865cb4d7"
+          },
+          "productId": {
+            "type": "string",
+            "description": "Related product ID",
+            "example": "d0dce0a7-03d2-4889-80f3-9afeb0cb3c33"
+          },
+          "name": {
+            "type": "string",
+            "description": "The customer-facing name of this price",
+            "example": "Sample product"
+          },
+          "structure": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/ONE_TIME"
+              },
+              {
+                "$ref": "#/components/schemas/FIXED"
+              },
+              {
+                "$ref": "#/components/schemas/LINEAR"
+              },
+              {
+                "$ref": "#/components/schemas/PACKAGE"
+              },
+              {
+                "$ref": "#/components/schemas/VOLUME"
+              },
+              {
+                "$ref": "#/components/schemas/GRADUATED"
+              },
+              {
+                "$ref": "#/components/schemas/SEAT_BASED"
+              }
+            ],
+            "discriminator": {
+              "propertyName": "pricingType"
+            },
+            "required": [
+              "pricingType"
+            ]
+          },
+          "billingFrequency": {
+            "description": "The recurrence of charging this price.",
+            "$ref": "#/components/schemas/BillingFrequency"
+          },
+          "billingType": {
+            "description": "How to bill this price: in-arrears or in-advance.",
+            "$ref": "#/components/schemas/BillingType"
+          },
+          "customMetricParameters": {
+            "type": "array",
+            "description": "Specific parameters to influence usage calculation for this price, and are only required when using a custom metric. Please speak to your Sequence contacts for further information prior to usage.",
+            "example": [
+              {
+                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                "value": "10"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/PriceParameter"
+            }
           }
         }
       },
@@ -77306,7 +78046,7 @@
           }
         }
       },
-      "QuoteNew": {
+      "QuoteNew1": {
         "required": [
           "createdAt",
           "createdBy",
@@ -77586,7 +78326,7 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/QuotePhaseNew"
+              "$ref": "#/components/schemas/QuotePhaseNew1"
             }
           },
           "archivedAt": {
@@ -77596,7 +78336,7 @@
           }
         }
       },
-      "QuotePhaseNew": {
+      "QuotePhaseNew1": {
         "required": [
           "createdAt",
           "discounts",
@@ -77717,7 +78457,7 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/QuotePriceNew"
+              "$ref": "#/components/schemas/QuotePriceNew1"
             }
           },
           "discounts": {
@@ -77760,7 +78500,7 @@
           }
         }
       },
-      "QuotePriceNew": {
+      "QuotePriceNew1": {
         "required": [
           "billingFrequency",
           "billingType",
@@ -79628,7 +80368,7 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/QuotePhaseNew"
+              "$ref": "#/components/schemas/QuotePhaseNew1"
             }
           }
         }
