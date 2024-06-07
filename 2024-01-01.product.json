@@ -38061,6 +38061,273 @@
       "servers": [],
       "parameters": []
     },
+    "/quotes-new/{id}/latest-draft": {
+      "delete": {
+        "tags": [],
+        "summary": "Delete the latest draft variant for a quote",
+        "description": "Delete the latest draft changes for a quote and revert to the previous published variant",
+        "operationId": "deleteQuotesNewByIdLatestDraft",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Quote Id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/QuoteNew",
+                  "example": {
+                    "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+                    "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                    "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+                    "quoteNumber": "Q00001",
+                    "title": "My quote",
+                    "currency": "GBP",
+                    "presentation": [],
+                    "status": "ACCEPTED",
+                    "dealType": "NEW_BUSINESS",
+                    "preliminaryBillingStartDate": "2022-10-01",
+                    "expiresAt": "2022-10-01",
+                    "publishedAt": "2022-06-28T16:47:00Z",
+                    "acceptedAt": "2022-06-28T16:47:00Z",
+                    "executedAt": "2022-06-28T16:47:00Z",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "updatedAt": "2022-06-28T16:47:00Z",
+                    "createdFrom": {
+                      "entityType": "QUOTE",
+                      "entityId": "dc0e2104-7df5-4fc1-8f65-1823f427d111"
+                    },
+                    "expiryDays": 30,
+                    "merchantBranding": {
+                      "logoUrl": "logo",
+                      "legalCompanyName": "Acme Corp",
+                      "primaryColour": "colour",
+                      "url": "www.example.com",
+                      "address": {
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "London",
+                        "postcode": "AB1 2EF",
+                        "country": "GB"
+                      },
+                      "email": "accounting@example.com"
+                    },
+                    "phases": [
+                      {
+                        "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+                        "createdAt": "2022-06-28T16:47:00Z",
+                        "duration": {
+                          "days": 0,
+                          "weeks": 0,
+                          "months": 6,
+                          "years": 1
+                        },
+                        "prices": [
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "LINEAR",
+                              "pricePerUnit": "0.25",
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                              "isPricePercentage": false
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          }
+                        ],
+                        "discounts": [
+                          {
+                            "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
+                            "restrictToPrices": [
+                              "5100e884-e007-4183-8355-4771865cb4d7"
+                            ],
+                            "amount": "50",
+                            "discountCalculationType": "PERCENTAGE",
+                            "message": "message",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z"
+                          }
+                        ],
+                        "minimums": [
+                          {
+                            "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
+                            "amount": "50",
+                            "restrictToPrices": [
+                              "5100e884-e007-4183-8355-4771865cb4d7"
+                            ],
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z"
+                          }
+                        ]
+                      }
+                    ],
+                    "archivedAt": "2022-06-28T16:47:00Z"
+                  }
+                },
+                "examples": {
+                  "QuoteNew": {
+                    "summary": "",
+                    "value": {
+                      "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+                      "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                      "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+                      "quoteNumber": "Q00001",
+                      "title": "My quote",
+                      "currency": "GBP",
+                      "presentation": [],
+                      "status": "ACCEPTED",
+                      "dealType": "NEW_BUSINESS",
+                      "preliminaryBillingStartDate": "2022-10-01",
+                      "expiresAt": "2022-10-01",
+                      "publishedAt": "2022-06-28T16:47:00Z",
+                      "acceptedAt": "2022-06-28T16:47:00Z",
+                      "executedAt": "2022-06-28T16:47:00Z",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "updatedAt": "2022-06-28T16:47:00Z",
+                      "createdFrom": {
+                        "entityType": "QUOTE",
+                        "entityId": "dc0e2104-7df5-4fc1-8f65-1823f427d111"
+                      },
+                      "expiryDays": 30,
+                      "merchantBranding": {
+                        "logoUrl": "logo",
+                        "legalCompanyName": "Acme Corp",
+                        "primaryColour": "colour",
+                        "url": "www.example.com",
+                        "address": {
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "London",
+                          "postcode": "AB1 2EF",
+                          "country": "GB"
+                        },
+                        "email": "accounting@example.com"
+                      },
+                      "phases": [
+                        {
+                          "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+                          "createdAt": "2022-06-28T16:47:00Z",
+                          "duration": {
+                            "days": 0,
+                            "weeks": 0,
+                            "months": 6,
+                            "years": 1
+                          },
+                          "prices": [
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "LINEAR",
+                                "pricePerUnit": "0.25",
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                                "isPricePercentage": false
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            }
+                          ],
+                          "discounts": [
+                            {
+                              "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
+                              "restrictToPrices": [
+                                "5100e884-e007-4183-8355-4771865cb4d7"
+                              ],
+                              "amount": "50",
+                              "discountCalculationType": "PERCENTAGE",
+                              "message": "message",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z"
+                            }
+                          ],
+                          "minimums": [
+                            {
+                              "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
+                              "amount": "50",
+                              "restrictToPrices": [
+                                "5100e884-e007-4183-8355-4771865cb4d7"
+                              ],
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z"
+                            }
+                          ]
+                        }
+                      ],
+                      "archivedAt": "2022-06-28T16:47:00Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/quotes": {
       "get": {
         "tags": [],
@@ -38372,6 +38639,295 @@
                 },
                 "examples": {
                   "Quote": {
+                    "summary": "",
+                    "value": {
+                      "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+                      "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                      "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+                      "quoteNumber": "Q00001",
+                      "title": "My quote",
+                      "currency": "GBP",
+                      "presentation": [],
+                      "status": "ACCEPTED",
+                      "dealType": "NEW_BUSINESS",
+                      "preliminaryBillingStartDate": "2022-10-01",
+                      "expiresAt": "2022-10-01",
+                      "publishedAt": "2022-06-28T16:47:00Z",
+                      "acceptedAt": "2022-06-28T16:47:00Z",
+                      "executedAt": "2022-06-28T16:47:00Z",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "updatedAt": "2022-06-28T16:47:00Z",
+                      "createdFrom": {
+                        "entityType": "QUOTE",
+                        "entityId": "dc0e2104-7df5-4fc1-8f65-1823f427d111"
+                      },
+                      "expiryDays": 30,
+                      "merchantBranding": {
+                        "logoUrl": "logo",
+                        "legalCompanyName": "Acme Corp",
+                        "primaryColour": "colour",
+                        "url": "www.example.com",
+                        "address": {
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "London",
+                          "postcode": "AB1 2EF",
+                          "country": "GB"
+                        },
+                        "email": "accounting@example.com"
+                      },
+                      "phases": [
+                        {
+                          "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+                          "createdAt": "2022-06-28T16:47:00Z",
+                          "duration": {
+                            "days": 0,
+                            "weeks": 0,
+                            "months": 6,
+                            "years": 1
+                          },
+                          "prices": [
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "LINEAR",
+                                "pricePerUnit": "0.25",
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                                "isPricePercentage": false
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            }
+                          ],
+                          "discounts": [
+                            {
+                              "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
+                              "restrictToPrices": [
+                                "5100e884-e007-4183-8355-4771865cb4d7"
+                              ],
+                              "amount": "50",
+                              "discountCalculationType": "PERCENTAGE",
+                              "message": "message",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z"
+                            }
+                          ],
+                          "minimums": [
+                            {
+                              "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
+                              "amount": "50",
+                              "restrictToPrices": [
+                                "5100e884-e007-4183-8355-4771865cb4d7"
+                              ],
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z"
+                            }
+                          ]
+                        }
+                      ],
+                      "archivedAt": "2022-06-28T16:47:00Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
+    "/quotes-new": {
+      "post": {
+        "tags": [],
+        "summary": "Create a new quote",
+        "description": "Create a blank quote",
+        "operationId": "postQuotesNew",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateQuoteEndpointCreateQuoteRequestModel",
+                "example": {
+                  "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+                  "title": "My quote",
+                  "currency": "GBP",
+                  "dealType": "NEW_BUSINESS",
+                  "preliminaryBillingStartDate": "2022-10-01",
+                  "expiryDays": 30
+                }
+              },
+              "examples": {
+                "CreateQuoteEndpointCreateQuoteRequestModel": {
+                  "summary": "",
+                  "value": {
+                    "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+                    "title": "My quote",
+                    "currency": "GBP",
+                    "dealType": "NEW_BUSINESS",
+                    "preliminaryBillingStartDate": "2022-10-01",
+                    "expiryDays": 30
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/QuoteNew",
+                  "example": {
+                    "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+                    "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                    "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+                    "quoteNumber": "Q00001",
+                    "title": "My quote",
+                    "currency": "GBP",
+                    "presentation": [],
+                    "status": "ACCEPTED",
+                    "dealType": "NEW_BUSINESS",
+                    "preliminaryBillingStartDate": "2022-10-01",
+                    "expiresAt": "2022-10-01",
+                    "publishedAt": "2022-06-28T16:47:00Z",
+                    "acceptedAt": "2022-06-28T16:47:00Z",
+                    "executedAt": "2022-06-28T16:47:00Z",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "updatedAt": "2022-06-28T16:47:00Z",
+                    "createdFrom": {
+                      "entityType": "QUOTE",
+                      "entityId": "dc0e2104-7df5-4fc1-8f65-1823f427d111"
+                    },
+                    "expiryDays": 30,
+                    "merchantBranding": {
+                      "logoUrl": "logo",
+                      "legalCompanyName": "Acme Corp",
+                      "primaryColour": "colour",
+                      "url": "www.example.com",
+                      "address": {
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "London",
+                        "postcode": "AB1 2EF",
+                        "country": "GB"
+                      },
+                      "email": "accounting@example.com"
+                    },
+                    "phases": [
+                      {
+                        "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+                        "createdAt": "2022-06-28T16:47:00Z",
+                        "duration": {
+                          "days": 0,
+                          "weeks": 0,
+                          "months": 6,
+                          "years": 1
+                        },
+                        "prices": [
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "LINEAR",
+                              "pricePerUnit": "0.25",
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                              "isPricePercentage": false
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          }
+                        ],
+                        "discounts": [
+                          {
+                            "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
+                            "restrictToPrices": [
+                              "5100e884-e007-4183-8355-4771865cb4d7"
+                            ],
+                            "amount": "50",
+                            "discountCalculationType": "PERCENTAGE",
+                            "message": "message",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z"
+                          }
+                        ],
+                        "minimums": [
+                          {
+                            "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
+                            "amount": "50",
+                            "restrictToPrices": [
+                              "5100e884-e007-4183-8355-4771865cb4d7"
+                            ],
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z"
+                          }
+                        ]
+                      }
+                    ],
+                    "archivedAt": "2022-06-28T16:47:00Z"
+                  }
+                },
+                "examples": {
+                  "QuoteNew": {
                     "summary": "",
                     "value": {
                       "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
@@ -39174,6 +39730,681 @@
       "servers": [],
       "parameters": []
     },
+    "/quotes-new/{id}": {
+      "get": {
+        "tags": [],
+        "summary": "Get one of your quotes",
+        "description": "Get a quote by ID including its phases",
+        "operationId": "getQuotesNewById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Quote ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/QuoteNew",
+                  "example": {
+                    "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+                    "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                    "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+                    "quoteNumber": "Q00001",
+                    "title": "My quote",
+                    "currency": "GBP",
+                    "presentation": [],
+                    "status": "ACCEPTED",
+                    "dealType": "NEW_BUSINESS",
+                    "preliminaryBillingStartDate": "2022-10-01",
+                    "expiresAt": "2022-10-01",
+                    "publishedAt": "2022-06-28T16:47:00Z",
+                    "acceptedAt": "2022-06-28T16:47:00Z",
+                    "executedAt": "2022-06-28T16:47:00Z",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "updatedAt": "2022-06-28T16:47:00Z",
+                    "createdFrom": {
+                      "entityType": "QUOTE",
+                      "entityId": "dc0e2104-7df5-4fc1-8f65-1823f427d111"
+                    },
+                    "expiryDays": 30,
+                    "merchantBranding": {
+                      "logoUrl": "logo",
+                      "legalCompanyName": "Acme Corp",
+                      "primaryColour": "colour",
+                      "url": "www.example.com",
+                      "address": {
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "London",
+                        "postcode": "AB1 2EF",
+                        "country": "GB"
+                      },
+                      "email": "accounting@example.com"
+                    },
+                    "phases": [
+                      {
+                        "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+                        "createdAt": "2022-06-28T16:47:00Z",
+                        "duration": {
+                          "days": 0,
+                          "weeks": 0,
+                          "months": 6,
+                          "years": 1
+                        },
+                        "prices": [
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "LINEAR",
+                              "pricePerUnit": "0.25",
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                              "isPricePercentage": false
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          }
+                        ],
+                        "discounts": [
+                          {
+                            "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
+                            "restrictToPrices": [
+                              "5100e884-e007-4183-8355-4771865cb4d7"
+                            ],
+                            "amount": "50",
+                            "discountCalculationType": "PERCENTAGE",
+                            "message": "message",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z"
+                          }
+                        ],
+                        "minimums": [
+                          {
+                            "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
+                            "amount": "50",
+                            "restrictToPrices": [
+                              "5100e884-e007-4183-8355-4771865cb4d7"
+                            ],
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z"
+                          }
+                        ]
+                      }
+                    ],
+                    "archivedAt": "2022-06-28T16:47:00Z"
+                  }
+                },
+                "examples": {
+                  "QuoteNew": {
+                    "summary": "",
+                    "value": {
+                      "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+                      "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                      "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+                      "quoteNumber": "Q00001",
+                      "title": "My quote",
+                      "currency": "GBP",
+                      "presentation": [],
+                      "status": "ACCEPTED",
+                      "dealType": "NEW_BUSINESS",
+                      "preliminaryBillingStartDate": "2022-10-01",
+                      "expiresAt": "2022-10-01",
+                      "publishedAt": "2022-06-28T16:47:00Z",
+                      "acceptedAt": "2022-06-28T16:47:00Z",
+                      "executedAt": "2022-06-28T16:47:00Z",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "updatedAt": "2022-06-28T16:47:00Z",
+                      "createdFrom": {
+                        "entityType": "QUOTE",
+                        "entityId": "dc0e2104-7df5-4fc1-8f65-1823f427d111"
+                      },
+                      "expiryDays": 30,
+                      "merchantBranding": {
+                        "logoUrl": "logo",
+                        "legalCompanyName": "Acme Corp",
+                        "primaryColour": "colour",
+                        "url": "www.example.com",
+                        "address": {
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "London",
+                          "postcode": "AB1 2EF",
+                          "country": "GB"
+                        },
+                        "email": "accounting@example.com"
+                      },
+                      "phases": [
+                        {
+                          "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+                          "createdAt": "2022-06-28T16:47:00Z",
+                          "duration": {
+                            "days": 0,
+                            "weeks": 0,
+                            "months": 6,
+                            "years": 1
+                          },
+                          "prices": [
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "LINEAR",
+                                "pricePerUnit": "0.25",
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                                "isPricePercentage": false
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            }
+                          ],
+                          "discounts": [
+                            {
+                              "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
+                              "restrictToPrices": [
+                                "5100e884-e007-4183-8355-4771865cb4d7"
+                              ],
+                              "amount": "50",
+                              "discountCalculationType": "PERCENTAGE",
+                              "message": "message",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z"
+                            }
+                          ],
+                          "minimums": [
+                            {
+                              "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
+                              "amount": "50",
+                              "restrictToPrices": [
+                                "5100e884-e007-4183-8355-4771865cb4d7"
+                              ],
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z"
+                            }
+                          ]
+                        }
+                      ],
+                      "archivedAt": "2022-06-28T16:47:00Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "put": {
+        "tags": [],
+        "summary": "Update one of your quotes",
+        "description": "Update a quote including its phases",
+        "operationId": "putQuotesNewById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Quote ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateQuoteEndpointNewUpdateQuoteRequestModelNew",
+                "example": {
+                  "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+                  "title": "My quote",
+                  "currency": "GBP",
+                  "presentation": [],
+                  "dealType": "NEW_BUSINESS",
+                  "preliminaryBillingStartDate": "2022-10-01",
+                  "expiryDays": 30,
+                  "phases": [
+                    {
+                      "prices": [
+                        {
+                          "temporaryId": "5100e884-e007-4183-8355-4771865cb4d7",
+                          "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                          "name": "Sample product",
+                          "structure": {
+                            "pricingType": "LINEAR",
+                            "pricePerUnit": "0.25",
+                            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                            "isPricePercentage": false
+                          },
+                          "billingFrequency": "MONTHLY",
+                          "billingType": "IN_ARREARS",
+                          "integrationIds": [
+                            {
+                              "service": "Xero",
+                              "id": "123"
+                            }
+                          ],
+                          "customMetricParameters": [
+                            {
+                              "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                              "value": "10"
+                            }
+                          ],
+                          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                        }
+                      ],
+                      "duration": {
+                        "days": 0,
+                        "weeks": 0,
+                        "months": 6,
+                        "years": 1
+                      },
+                      "discounts": [
+                        {
+                          "restrictToPrices": [
+                            "5100e884-e007-4183-8355-4771865cb4d7"
+                          ],
+                          "type": "PERCENTAGE",
+                          "amount": "50",
+                          "message": "message"
+                        }
+                      ],
+                      "minimums": [
+                        {
+                          "restrictToPrices": [
+                            "5100e884-e007-4183-8355-4771865cb4d7"
+                          ],
+                          "amount": "50"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "examples": {
+                "UpdateQuoteEndpointNewUpdateQuoteRequestModelNew": {
+                  "summary": "",
+                  "value": {
+                    "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+                    "title": "My quote",
+                    "currency": "GBP",
+                    "presentation": [],
+                    "dealType": "NEW_BUSINESS",
+                    "preliminaryBillingStartDate": "2022-10-01",
+                    "expiryDays": 30,
+                    "phases": [
+                      {
+                        "prices": [
+                          {
+                            "temporaryId": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "LINEAR",
+                              "pricePerUnit": "0.25",
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                              "isPricePercentage": false
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          }
+                        ],
+                        "duration": {
+                          "days": 0,
+                          "weeks": 0,
+                          "months": 6,
+                          "years": 1
+                        },
+                        "discounts": [
+                          {
+                            "restrictToPrices": [
+                              "5100e884-e007-4183-8355-4771865cb4d7"
+                            ],
+                            "type": "PERCENTAGE",
+                            "amount": "50",
+                            "message": "message"
+                          }
+                        ],
+                        "minimums": [
+                          {
+                            "restrictToPrices": [
+                              "5100e884-e007-4183-8355-4771865cb4d7"
+                            ],
+                            "amount": "50"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/QuoteNew",
+                  "example": {
+                    "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+                    "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                    "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+                    "quoteNumber": "Q00001",
+                    "title": "My quote",
+                    "currency": "GBP",
+                    "presentation": [],
+                    "status": "ACCEPTED",
+                    "dealType": "NEW_BUSINESS",
+                    "preliminaryBillingStartDate": "2022-10-01",
+                    "expiresAt": "2022-10-01",
+                    "publishedAt": "2022-06-28T16:47:00Z",
+                    "acceptedAt": "2022-06-28T16:47:00Z",
+                    "executedAt": "2022-06-28T16:47:00Z",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "updatedAt": "2022-06-28T16:47:00Z",
+                    "createdFrom": {
+                      "entityType": "QUOTE",
+                      "entityId": "dc0e2104-7df5-4fc1-8f65-1823f427d111"
+                    },
+                    "expiryDays": 30,
+                    "merchantBranding": {
+                      "logoUrl": "logo",
+                      "legalCompanyName": "Acme Corp",
+                      "primaryColour": "colour",
+                      "url": "www.example.com",
+                      "address": {
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "London",
+                        "postcode": "AB1 2EF",
+                        "country": "GB"
+                      },
+                      "email": "accounting@example.com"
+                    },
+                    "phases": [
+                      {
+                        "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+                        "createdAt": "2022-06-28T16:47:00Z",
+                        "duration": {
+                          "days": 0,
+                          "weeks": 0,
+                          "months": 6,
+                          "years": 1
+                        },
+                        "prices": [
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "LINEAR",
+                              "pricePerUnit": "0.25",
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                              "isPricePercentage": false
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          }
+                        ],
+                        "discounts": [
+                          {
+                            "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
+                            "restrictToPrices": [
+                              "5100e884-e007-4183-8355-4771865cb4d7"
+                            ],
+                            "amount": "50",
+                            "discountCalculationType": "PERCENTAGE",
+                            "message": "message",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z"
+                          }
+                        ],
+                        "minimums": [
+                          {
+                            "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
+                            "amount": "50",
+                            "restrictToPrices": [
+                              "5100e884-e007-4183-8355-4771865cb4d7"
+                            ],
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z"
+                          }
+                        ]
+                      }
+                    ],
+                    "archivedAt": "2022-06-28T16:47:00Z"
+                  }
+                },
+                "examples": {
+                  "QuoteNew": {
+                    "summary": "",
+                    "value": {
+                      "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+                      "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                      "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+                      "quoteNumber": "Q00001",
+                      "title": "My quote",
+                      "currency": "GBP",
+                      "presentation": [],
+                      "status": "ACCEPTED",
+                      "dealType": "NEW_BUSINESS",
+                      "preliminaryBillingStartDate": "2022-10-01",
+                      "expiresAt": "2022-10-01",
+                      "publishedAt": "2022-06-28T16:47:00Z",
+                      "acceptedAt": "2022-06-28T16:47:00Z",
+                      "executedAt": "2022-06-28T16:47:00Z",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "updatedAt": "2022-06-28T16:47:00Z",
+                      "createdFrom": {
+                        "entityType": "QUOTE",
+                        "entityId": "dc0e2104-7df5-4fc1-8f65-1823f427d111"
+                      },
+                      "expiryDays": 30,
+                      "merchantBranding": {
+                        "logoUrl": "logo",
+                        "legalCompanyName": "Acme Corp",
+                        "primaryColour": "colour",
+                        "url": "www.example.com",
+                        "address": {
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "London",
+                          "postcode": "AB1 2EF",
+                          "country": "GB"
+                        },
+                        "email": "accounting@example.com"
+                      },
+                      "phases": [
+                        {
+                          "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+                          "createdAt": "2022-06-28T16:47:00Z",
+                          "duration": {
+                            "days": 0,
+                            "weeks": 0,
+                            "months": 6,
+                            "years": 1
+                          },
+                          "prices": [
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "LINEAR",
+                                "pricePerUnit": "0.25",
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                                "isPricePercentage": false
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            }
+                          ],
+                          "discounts": [
+                            {
+                              "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
+                              "restrictToPrices": [
+                                "5100e884-e007-4183-8355-4771865cb4d7"
+                              ],
+                              "amount": "50",
+                              "discountCalculationType": "PERCENTAGE",
+                              "message": "message",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z"
+                            }
+                          ],
+                          "minimums": [
+                            {
+                              "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
+                              "amount": "50",
+                              "restrictToPrices": [
+                                "5100e884-e007-4183-8355-4771865cb4d7"
+                              ],
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z"
+                            }
+                          ]
+                        }
+                      ],
+                      "archivedAt": "2022-06-28T16:47:00Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/quotes/{id}/archive": {
       "put": {
         "tags": [],
@@ -39441,6 +40672,273 @@
       "servers": [],
       "parameters": []
     },
+    "/quotes-new/{id}/archive": {
+      "put": {
+        "tags": [],
+        "summary": "Archive a quote",
+        "description": "Mark a quote as archived",
+        "operationId": "putQuotesNewByIdArchive",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Quote Id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/QuoteNew",
+                  "example": {
+                    "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+                    "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                    "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+                    "quoteNumber": "Q00001",
+                    "title": "My quote",
+                    "currency": "GBP",
+                    "presentation": [],
+                    "status": "ACCEPTED",
+                    "dealType": "NEW_BUSINESS",
+                    "preliminaryBillingStartDate": "2022-10-01",
+                    "expiresAt": "2022-10-01",
+                    "publishedAt": "2022-06-28T16:47:00Z",
+                    "acceptedAt": "2022-06-28T16:47:00Z",
+                    "executedAt": "2022-06-28T16:47:00Z",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "updatedAt": "2022-06-28T16:47:00Z",
+                    "createdFrom": {
+                      "entityType": "QUOTE",
+                      "entityId": "dc0e2104-7df5-4fc1-8f65-1823f427d111"
+                    },
+                    "expiryDays": 30,
+                    "merchantBranding": {
+                      "logoUrl": "logo",
+                      "legalCompanyName": "Acme Corp",
+                      "primaryColour": "colour",
+                      "url": "www.example.com",
+                      "address": {
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "London",
+                        "postcode": "AB1 2EF",
+                        "country": "GB"
+                      },
+                      "email": "accounting@example.com"
+                    },
+                    "phases": [
+                      {
+                        "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+                        "createdAt": "2022-06-28T16:47:00Z",
+                        "duration": {
+                          "days": 0,
+                          "weeks": 0,
+                          "months": 6,
+                          "years": 1
+                        },
+                        "prices": [
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "LINEAR",
+                              "pricePerUnit": "0.25",
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                              "isPricePercentage": false
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          }
+                        ],
+                        "discounts": [
+                          {
+                            "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
+                            "restrictToPrices": [
+                              "5100e884-e007-4183-8355-4771865cb4d7"
+                            ],
+                            "amount": "50",
+                            "discountCalculationType": "PERCENTAGE",
+                            "message": "message",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z"
+                          }
+                        ],
+                        "minimums": [
+                          {
+                            "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
+                            "amount": "50",
+                            "restrictToPrices": [
+                              "5100e884-e007-4183-8355-4771865cb4d7"
+                            ],
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z"
+                          }
+                        ]
+                      }
+                    ],
+                    "archivedAt": "2022-06-28T16:47:00Z"
+                  }
+                },
+                "examples": {
+                  "QuoteNew": {
+                    "summary": "",
+                    "value": {
+                      "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+                      "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                      "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+                      "quoteNumber": "Q00001",
+                      "title": "My quote",
+                      "currency": "GBP",
+                      "presentation": [],
+                      "status": "ACCEPTED",
+                      "dealType": "NEW_BUSINESS",
+                      "preliminaryBillingStartDate": "2022-10-01",
+                      "expiresAt": "2022-10-01",
+                      "publishedAt": "2022-06-28T16:47:00Z",
+                      "acceptedAt": "2022-06-28T16:47:00Z",
+                      "executedAt": "2022-06-28T16:47:00Z",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "updatedAt": "2022-06-28T16:47:00Z",
+                      "createdFrom": {
+                        "entityType": "QUOTE",
+                        "entityId": "dc0e2104-7df5-4fc1-8f65-1823f427d111"
+                      },
+                      "expiryDays": 30,
+                      "merchantBranding": {
+                        "logoUrl": "logo",
+                        "legalCompanyName": "Acme Corp",
+                        "primaryColour": "colour",
+                        "url": "www.example.com",
+                        "address": {
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "London",
+                          "postcode": "AB1 2EF",
+                          "country": "GB"
+                        },
+                        "email": "accounting@example.com"
+                      },
+                      "phases": [
+                        {
+                          "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+                          "createdAt": "2022-06-28T16:47:00Z",
+                          "duration": {
+                            "days": 0,
+                            "weeks": 0,
+                            "months": 6,
+                            "years": 1
+                          },
+                          "prices": [
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "LINEAR",
+                                "pricePerUnit": "0.25",
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                                "isPricePercentage": false
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            }
+                          ],
+                          "discounts": [
+                            {
+                              "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
+                              "restrictToPrices": [
+                                "5100e884-e007-4183-8355-4771865cb4d7"
+                              ],
+                              "amount": "50",
+                              "discountCalculationType": "PERCENTAGE",
+                              "message": "message",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z"
+                            }
+                          ],
+                          "minimums": [
+                            {
+                              "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
+                              "amount": "50",
+                              "restrictToPrices": [
+                                "5100e884-e007-4183-8355-4771865cb4d7"
+                              ],
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z"
+                            }
+                          ]
+                        }
+                      ],
+                      "archivedAt": "2022-06-28T16:47:00Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/quotes/{id}/publish": {
       "post": {
         "tags": [],
@@ -39579,6 +41077,269 @@
                 },
                 "examples": {
                   "PublishedQuote": {
+                    "summary": "",
+                    "value": {
+                      "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+                      "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                      "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+                      "quoteNumber": "Q00001",
+                      "title": "My quote",
+                      "currency": "GBP",
+                      "presentation": [],
+                      "status": "ACCEPTED",
+                      "dealType": "NEW_BUSINESS",
+                      "preliminaryBillingStartDate": "2022-10-01",
+                      "expiresAt": "2022-10-01",
+                      "publishedAt": "2022-06-28T16:47:00Z",
+                      "acceptedAt": "2022-06-28T16:47:00Z",
+                      "executedAt": "2022-06-28T16:47:00Z",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "updatedAt": "2022-06-28T16:47:00Z",
+                      "createdFrom": {
+                        "entityType": "QUOTE",
+                        "entityId": "dc0e2104-7df5-4fc1-8f65-1823f427d111"
+                      },
+                      "merchantBranding": {
+                        "logoUrl": "logo",
+                        "legalCompanyName": "Acme Corp",
+                        "primaryColour": "colour",
+                        "url": "www.example.com",
+                        "address": {
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "London",
+                          "postcode": "AB1 2EF",
+                          "country": "GB"
+                        },
+                        "email": "accounting@example.com"
+                      },
+                      "phases": [
+                        {
+                          "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+                          "createdAt": "2022-06-28T16:47:00Z",
+                          "duration": {
+                            "days": 0,
+                            "weeks": 0,
+                            "months": 6,
+                            "years": 1
+                          },
+                          "prices": [
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "LINEAR",
+                                "pricePerUnit": "0.25",
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                                "isPricePercentage": false
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            }
+                          ],
+                          "discounts": [
+                            {
+                              "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
+                              "restrictToPrices": [
+                                "5100e884-e007-4183-8355-4771865cb4d7"
+                              ],
+                              "amount": "50",
+                              "discountCalculationType": "PERCENTAGE",
+                              "message": "message",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z"
+                            }
+                          ],
+                          "minimums": [
+                            {
+                              "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
+                              "amount": "50",
+                              "restrictToPrices": [
+                                "5100e884-e007-4183-8355-4771865cb4d7"
+                              ],
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
+    "/quotes-new/{id}/publish": {
+      "post": {
+        "tags": [],
+        "summary": "Publish a draft quote",
+        "description": "Publish the latest changes to a draft Quote and make it available to the end-customer",
+        "operationId": "postQuotesNewByIdPublish",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Quote Id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PublishedQuoteNew",
+                  "example": {
+                    "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+                    "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                    "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+                    "quoteNumber": "Q00001",
+                    "title": "My quote",
+                    "currency": "GBP",
+                    "presentation": [],
+                    "status": "ACCEPTED",
+                    "dealType": "NEW_BUSINESS",
+                    "preliminaryBillingStartDate": "2022-10-01",
+                    "expiresAt": "2022-10-01",
+                    "publishedAt": "2022-06-28T16:47:00Z",
+                    "acceptedAt": "2022-06-28T16:47:00Z",
+                    "executedAt": "2022-06-28T16:47:00Z",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "updatedAt": "2022-06-28T16:47:00Z",
+                    "createdFrom": {
+                      "entityType": "QUOTE",
+                      "entityId": "dc0e2104-7df5-4fc1-8f65-1823f427d111"
+                    },
+                    "merchantBranding": {
+                      "logoUrl": "logo",
+                      "legalCompanyName": "Acme Corp",
+                      "primaryColour": "colour",
+                      "url": "www.example.com",
+                      "address": {
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "London",
+                        "postcode": "AB1 2EF",
+                        "country": "GB"
+                      },
+                      "email": "accounting@example.com"
+                    },
+                    "phases": [
+                      {
+                        "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+                        "createdAt": "2022-06-28T16:47:00Z",
+                        "duration": {
+                          "days": 0,
+                          "weeks": 0,
+                          "months": 6,
+                          "years": 1
+                        },
+                        "prices": [
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "LINEAR",
+                              "pricePerUnit": "0.25",
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                              "isPricePercentage": false
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          }
+                        ],
+                        "discounts": [
+                          {
+                            "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
+                            "restrictToPrices": [
+                              "5100e884-e007-4183-8355-4771865cb4d7"
+                            ],
+                            "amount": "50",
+                            "discountCalculationType": "PERCENTAGE",
+                            "message": "message",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z"
+                          }
+                        ],
+                        "minimums": [
+                          {
+                            "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
+                            "amount": "50",
+                            "restrictToPrices": [
+                              "5100e884-e007-4183-8355-4771865cb4d7"
+                            ],
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "examples": {
+                  "PublishedQuoteNew": {
                     "summary": "",
                     "value": {
                       "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
@@ -39971,6 +41732,273 @@
       "servers": [],
       "parameters": []
     },
+    "/quotes-new/{id}/accept": {
+      "post": {
+        "tags": [],
+        "summary": "Accept a published Quote",
+        "description": "Accept a published Quote",
+        "operationId": "postQuotesNewByIdAccept",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Quote Id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PublishedQuoteNew",
+                  "example": {
+                    "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+                    "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                    "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+                    "quoteNumber": "Q00001",
+                    "title": "My quote",
+                    "currency": "GBP",
+                    "presentation": [],
+                    "status": "ACCEPTED",
+                    "dealType": "NEW_BUSINESS",
+                    "preliminaryBillingStartDate": "2022-10-01",
+                    "expiresAt": "2022-10-01",
+                    "publishedAt": "2022-06-28T16:47:00Z",
+                    "acceptedAt": "2022-06-28T16:47:00Z",
+                    "executedAt": "2022-06-28T16:47:00Z",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "updatedAt": "2022-06-28T16:47:00Z",
+                    "createdFrom": {
+                      "entityType": "QUOTE",
+                      "entityId": "dc0e2104-7df5-4fc1-8f65-1823f427d111"
+                    },
+                    "merchantBranding": {
+                      "logoUrl": "logo",
+                      "legalCompanyName": "Acme Corp",
+                      "primaryColour": "colour",
+                      "url": "www.example.com",
+                      "address": {
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "London",
+                        "postcode": "AB1 2EF",
+                        "country": "GB"
+                      },
+                      "email": "accounting@example.com"
+                    },
+                    "phases": [
+                      {
+                        "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+                        "createdAt": "2022-06-28T16:47:00Z",
+                        "duration": {
+                          "days": 0,
+                          "weeks": 0,
+                          "months": 6,
+                          "years": 1
+                        },
+                        "prices": [
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "LINEAR",
+                              "pricePerUnit": "0.25",
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                              "isPricePercentage": false
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          }
+                        ],
+                        "discounts": [
+                          {
+                            "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
+                            "restrictToPrices": [
+                              "5100e884-e007-4183-8355-4771865cb4d7"
+                            ],
+                            "amount": "50",
+                            "discountCalculationType": "PERCENTAGE",
+                            "message": "message",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z"
+                          }
+                        ],
+                        "minimums": [
+                          {
+                            "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
+                            "amount": "50",
+                            "restrictToPrices": [
+                              "5100e884-e007-4183-8355-4771865cb4d7"
+                            ],
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "examples": {
+                  "PublishedQuoteNew": {
+                    "summary": "",
+                    "value": {
+                      "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+                      "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                      "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+                      "quoteNumber": "Q00001",
+                      "title": "My quote",
+                      "currency": "GBP",
+                      "presentation": [],
+                      "status": "ACCEPTED",
+                      "dealType": "NEW_BUSINESS",
+                      "preliminaryBillingStartDate": "2022-10-01",
+                      "expiresAt": "2022-10-01",
+                      "publishedAt": "2022-06-28T16:47:00Z",
+                      "acceptedAt": "2022-06-28T16:47:00Z",
+                      "executedAt": "2022-06-28T16:47:00Z",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "updatedAt": "2022-06-28T16:47:00Z",
+                      "createdFrom": {
+                        "entityType": "QUOTE",
+                        "entityId": "dc0e2104-7df5-4fc1-8f65-1823f427d111"
+                      },
+                      "merchantBranding": {
+                        "logoUrl": "logo",
+                        "legalCompanyName": "Acme Corp",
+                        "primaryColour": "colour",
+                        "url": "www.example.com",
+                        "address": {
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "London",
+                          "postcode": "AB1 2EF",
+                          "country": "GB"
+                        },
+                        "email": "accounting@example.com"
+                      },
+                      "phases": [
+                        {
+                          "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+                          "createdAt": "2022-06-28T16:47:00Z",
+                          "duration": {
+                            "days": 0,
+                            "weeks": 0,
+                            "months": 6,
+                            "years": 1
+                          },
+                          "prices": [
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "LINEAR",
+                                "pricePerUnit": "0.25",
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                                "isPricePercentage": false
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            }
+                          ],
+                          "discounts": [
+                            {
+                              "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
+                              "restrictToPrices": [
+                                "5100e884-e007-4183-8355-4771865cb4d7"
+                              ],
+                              "amount": "50",
+                              "discountCalculationType": "PERCENTAGE",
+                              "message": "message",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z"
+                            }
+                          ],
+                          "minimums": [
+                            {
+                              "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
+                              "amount": "50",
+                              "restrictToPrices": [
+                                "5100e884-e007-4183-8355-4771865cb4d7"
+                              ],
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/quotes/{id}/execute": {
       "post": {
         "tags": [],
@@ -40109,6 +42137,269 @@
                 },
                 "examples": {
                   "PublishedQuote": {
+                    "summary": "",
+                    "value": {
+                      "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+                      "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                      "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+                      "quoteNumber": "Q00001",
+                      "title": "My quote",
+                      "currency": "GBP",
+                      "presentation": [],
+                      "status": "ACCEPTED",
+                      "dealType": "NEW_BUSINESS",
+                      "preliminaryBillingStartDate": "2022-10-01",
+                      "expiresAt": "2022-10-01",
+                      "publishedAt": "2022-06-28T16:47:00Z",
+                      "acceptedAt": "2022-06-28T16:47:00Z",
+                      "executedAt": "2022-06-28T16:47:00Z",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "updatedAt": "2022-06-28T16:47:00Z",
+                      "createdFrom": {
+                        "entityType": "QUOTE",
+                        "entityId": "dc0e2104-7df5-4fc1-8f65-1823f427d111"
+                      },
+                      "merchantBranding": {
+                        "logoUrl": "logo",
+                        "legalCompanyName": "Acme Corp",
+                        "primaryColour": "colour",
+                        "url": "www.example.com",
+                        "address": {
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "London",
+                          "postcode": "AB1 2EF",
+                          "country": "GB"
+                        },
+                        "email": "accounting@example.com"
+                      },
+                      "phases": [
+                        {
+                          "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+                          "createdAt": "2022-06-28T16:47:00Z",
+                          "duration": {
+                            "days": 0,
+                            "weeks": 0,
+                            "months": 6,
+                            "years": 1
+                          },
+                          "prices": [
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "LINEAR",
+                                "pricePerUnit": "0.25",
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                                "isPricePercentage": false
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            }
+                          ],
+                          "discounts": [
+                            {
+                              "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
+                              "restrictToPrices": [
+                                "5100e884-e007-4183-8355-4771865cb4d7"
+                              ],
+                              "amount": "50",
+                              "discountCalculationType": "PERCENTAGE",
+                              "message": "message",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z"
+                            }
+                          ],
+                          "minimums": [
+                            {
+                              "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
+                              "amount": "50",
+                              "restrictToPrices": [
+                                "5100e884-e007-4183-8355-4771865cb4d7"
+                              ],
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
+    "/quotes-new/{id}/execute": {
+      "post": {
+        "tags": [],
+        "summary": "Execute a quote",
+        "description": "Execute a quote and create a draft billing schedule",
+        "operationId": "postQuotesNewByIdExecute",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Quote Id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PublishedQuoteNew",
+                  "example": {
+                    "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+                    "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                    "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+                    "quoteNumber": "Q00001",
+                    "title": "My quote",
+                    "currency": "GBP",
+                    "presentation": [],
+                    "status": "ACCEPTED",
+                    "dealType": "NEW_BUSINESS",
+                    "preliminaryBillingStartDate": "2022-10-01",
+                    "expiresAt": "2022-10-01",
+                    "publishedAt": "2022-06-28T16:47:00Z",
+                    "acceptedAt": "2022-06-28T16:47:00Z",
+                    "executedAt": "2022-06-28T16:47:00Z",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "updatedAt": "2022-06-28T16:47:00Z",
+                    "createdFrom": {
+                      "entityType": "QUOTE",
+                      "entityId": "dc0e2104-7df5-4fc1-8f65-1823f427d111"
+                    },
+                    "merchantBranding": {
+                      "logoUrl": "logo",
+                      "legalCompanyName": "Acme Corp",
+                      "primaryColour": "colour",
+                      "url": "www.example.com",
+                      "address": {
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "London",
+                        "postcode": "AB1 2EF",
+                        "country": "GB"
+                      },
+                      "email": "accounting@example.com"
+                    },
+                    "phases": [
+                      {
+                        "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+                        "createdAt": "2022-06-28T16:47:00Z",
+                        "duration": {
+                          "days": 0,
+                          "weeks": 0,
+                          "months": 6,
+                          "years": 1
+                        },
+                        "prices": [
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "LINEAR",
+                              "pricePerUnit": "0.25",
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                              "isPricePercentage": false
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          }
+                        ],
+                        "discounts": [
+                          {
+                            "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
+                            "restrictToPrices": [
+                              "5100e884-e007-4183-8355-4771865cb4d7"
+                            ],
+                            "amount": "50",
+                            "discountCalculationType": "PERCENTAGE",
+                            "message": "message",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z"
+                          }
+                        ],
+                        "minimums": [
+                          {
+                            "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
+                            "amount": "50",
+                            "restrictToPrices": [
+                              "5100e884-e007-4183-8355-4771865cb4d7"
+                            ],
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "examples": {
+                  "PublishedQuoteNew": {
                     "summary": "",
                     "value": {
                       "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
@@ -40374,6 +42665,273 @@
                 },
                 "examples": {
                   "Quote": {
+                    "summary": "",
+                    "value": {
+                      "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+                      "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                      "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+                      "quoteNumber": "Q00001",
+                      "title": "My quote",
+                      "currency": "GBP",
+                      "presentation": [],
+                      "status": "ACCEPTED",
+                      "dealType": "NEW_BUSINESS",
+                      "preliminaryBillingStartDate": "2022-10-01",
+                      "expiresAt": "2022-10-01",
+                      "publishedAt": "2022-06-28T16:47:00Z",
+                      "acceptedAt": "2022-06-28T16:47:00Z",
+                      "executedAt": "2022-06-28T16:47:00Z",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "updatedAt": "2022-06-28T16:47:00Z",
+                      "createdFrom": {
+                        "entityType": "QUOTE",
+                        "entityId": "dc0e2104-7df5-4fc1-8f65-1823f427d111"
+                      },
+                      "expiryDays": 30,
+                      "merchantBranding": {
+                        "logoUrl": "logo",
+                        "legalCompanyName": "Acme Corp",
+                        "primaryColour": "colour",
+                        "url": "www.example.com",
+                        "address": {
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "London",
+                          "postcode": "AB1 2EF",
+                          "country": "GB"
+                        },
+                        "email": "accounting@example.com"
+                      },
+                      "phases": [
+                        {
+                          "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+                          "createdAt": "2022-06-28T16:47:00Z",
+                          "duration": {
+                            "days": 0,
+                            "weeks": 0,
+                            "months": 6,
+                            "years": 1
+                          },
+                          "prices": [
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "LINEAR",
+                                "pricePerUnit": "0.25",
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                                "isPricePercentage": false
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            }
+                          ],
+                          "discounts": [
+                            {
+                              "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
+                              "restrictToPrices": [
+                                "5100e884-e007-4183-8355-4771865cb4d7"
+                              ],
+                              "amount": "50",
+                              "discountCalculationType": "PERCENTAGE",
+                              "message": "message",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z"
+                            }
+                          ],
+                          "minimums": [
+                            {
+                              "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
+                              "amount": "50",
+                              "restrictToPrices": [
+                                "5100e884-e007-4183-8355-4771865cb4d7"
+                              ],
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z"
+                            }
+                          ]
+                        }
+                      ],
+                      "archivedAt": "2022-06-28T16:47:00Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
+    "/quotes-new/{id}/duplicate": {
+      "post": {
+        "tags": [],
+        "summary": "Duplicate a quote",
+        "description": "Create a new quote by duplicating another",
+        "operationId": "postQuotesNewByIdDuplicate",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Quote Id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/QuoteNew",
+                  "example": {
+                    "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+                    "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                    "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+                    "quoteNumber": "Q00001",
+                    "title": "My quote",
+                    "currency": "GBP",
+                    "presentation": [],
+                    "status": "ACCEPTED",
+                    "dealType": "NEW_BUSINESS",
+                    "preliminaryBillingStartDate": "2022-10-01",
+                    "expiresAt": "2022-10-01",
+                    "publishedAt": "2022-06-28T16:47:00Z",
+                    "acceptedAt": "2022-06-28T16:47:00Z",
+                    "executedAt": "2022-06-28T16:47:00Z",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "updatedAt": "2022-06-28T16:47:00Z",
+                    "createdFrom": {
+                      "entityType": "QUOTE",
+                      "entityId": "dc0e2104-7df5-4fc1-8f65-1823f427d111"
+                    },
+                    "expiryDays": 30,
+                    "merchantBranding": {
+                      "logoUrl": "logo",
+                      "legalCompanyName": "Acme Corp",
+                      "primaryColour": "colour",
+                      "url": "www.example.com",
+                      "address": {
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "London",
+                        "postcode": "AB1 2EF",
+                        "country": "GB"
+                      },
+                      "email": "accounting@example.com"
+                    },
+                    "phases": [
+                      {
+                        "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+                        "createdAt": "2022-06-28T16:47:00Z",
+                        "duration": {
+                          "days": 0,
+                          "weeks": 0,
+                          "months": 6,
+                          "years": 1
+                        },
+                        "prices": [
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "LINEAR",
+                              "pricePerUnit": "0.25",
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                              "isPricePercentage": false
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          }
+                        ],
+                        "discounts": [
+                          {
+                            "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
+                            "restrictToPrices": [
+                              "5100e884-e007-4183-8355-4771865cb4d7"
+                            ],
+                            "amount": "50",
+                            "discountCalculationType": "PERCENTAGE",
+                            "message": "message",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z"
+                          }
+                        ],
+                        "minimums": [
+                          {
+                            "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
+                            "amount": "50",
+                            "restrictToPrices": [
+                              "5100e884-e007-4183-8355-4771865cb4d7"
+                            ],
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z"
+                          }
+                        ]
+                      }
+                    ],
+                    "archivedAt": "2022-06-28T16:47:00Z"
+                  }
+                },
+                "examples": {
+                  "QuoteNew": {
                     "summary": "",
                     "value": {
                       "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
@@ -74748,6 +77306,600 @@
           }
         }
       },
+      "QuoteNew": {
+        "required": [
+          "createdAt",
+          "createdBy",
+          "id",
+          "merchantBranding",
+          "phases",
+          "presentation",
+          "quoteNumber",
+          "status",
+          "updatedAt"
+        ],
+        "type": "object",
+        "example": {
+          "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+          "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+          "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+          "quoteNumber": "Q00001",
+          "title": "My quote",
+          "currency": "GBP",
+          "presentation": [],
+          "status": "ACCEPTED",
+          "dealType": "NEW_BUSINESS",
+          "preliminaryBillingStartDate": "2022-10-01",
+          "expiresAt": "2022-10-01",
+          "publishedAt": "2022-06-28T16:47:00Z",
+          "acceptedAt": "2022-06-28T16:47:00Z",
+          "executedAt": "2022-06-28T16:47:00Z",
+          "createdAt": "2022-06-28T16:47:00Z",
+          "updatedAt": "2022-06-28T16:47:00Z",
+          "createdFrom": {
+            "entityType": "QUOTE",
+            "entityId": "dc0e2104-7df5-4fc1-8f65-1823f427d111"
+          },
+          "expiryDays": 30,
+          "merchantBranding": {
+            "logoUrl": "logo",
+            "legalCompanyName": "Acme Corp",
+            "primaryColour": "colour",
+            "url": "www.example.com",
+            "address": {
+              "line1": "Flat 1",
+              "line2": "123 Fake Street",
+              "town": "London",
+              "postcode": "AB1 2EF",
+              "country": "GB"
+            },
+            "email": "accounting@example.com"
+          },
+          "phases": [
+            {
+              "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+              "createdAt": "2022-06-28T16:47:00Z",
+              "duration": {
+                "days": 0,
+                "weeks": 0,
+                "months": 6,
+                "years": 1
+              },
+              "prices": [
+                {
+                  "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                  "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                  "name": "Sample product",
+                  "structure": {
+                    "pricingType": "LINEAR",
+                    "pricePerUnit": "0.25",
+                    "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                    "isPricePercentage": false
+                  },
+                  "billingFrequency": "MONTHLY",
+                  "billingType": "IN_ARREARS",
+                  "createdAt": "2021-08-25T12:00:00Z",
+                  "updatedAt": "2021-08-25T12:00:00Z",
+                  "integrationIds": [
+                    {
+                      "service": "Xero",
+                      "id": "123"
+                    }
+                  ],
+                  "customMetricParameters": [
+                    {
+                      "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                      "value": "10"
+                    }
+                  ],
+                  "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                }
+              ],
+              "discounts": [
+                {
+                  "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
+                  "restrictToPrices": [
+                    "5100e884-e007-4183-8355-4771865cb4d7"
+                  ],
+                  "amount": "50",
+                  "discountCalculationType": "PERCENTAGE",
+                  "message": "message",
+                  "createdAt": "2021-08-25T12:00:00Z",
+                  "updatedAt": "2021-08-25T12:00:00Z"
+                }
+              ],
+              "minimums": [
+                {
+                  "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
+                  "amount": "50",
+                  "restrictToPrices": [
+                    "5100e884-e007-4183-8355-4771865cb4d7"
+                  ],
+                  "createdAt": "2021-08-25T12:00:00Z",
+                  "updatedAt": "2021-08-25T12:00:00Z"
+                }
+              ]
+            }
+          ],
+          "archivedAt": "2022-06-28T16:47:00Z"
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique ID",
+            "example": "678ca125-8bc3-478f-9a96-6ba73605cf1e"
+          },
+          "createdBy": {
+            "type": "string",
+            "description": "The Sequence user who created this quote",
+            "example": "4ffd439e-32e5-4046-bb40-3cb81f40e5da"
+          },
+          "customerId": {
+            "type": "string",
+            "description": "ID of Customer to which this quote pertains",
+            "example": "377bf97b-ca1d-4538-be06-4022afa6bde3"
+          },
+          "quoteNumber": {
+            "type": "string",
+            "description": "An alpha-numeric value that identifies the quote",
+            "example": "Q00001"
+          },
+          "title": {
+            "type": "string",
+            "description": "The quote title",
+            "example": "My quote"
+          },
+          "currency": {
+            "description": "Quote currency",
+            "$ref": "#/components/schemas/Currency"
+          },
+          "presentation": {
+            "type": "array",
+            "description": "JSON for the visual presentation of the quote",
+            "example": [],
+            "items": {}
+          },
+          "status": {
+            "description": "The status of the quote",
+            "$ref": "#/components/schemas/QuoteStatus1"
+          },
+          "dealType": {
+            "description": "Quote deal type",
+            "$ref": "#/components/schemas/QuoteDealType"
+          },
+          "preliminaryBillingStartDate": {
+            "type": "string",
+            "description": "Preliminary start date of contract",
+            "format": "date",
+            "example": "2022-10-01"
+          },
+          "expiresAt": {
+            "type": "string",
+            "description": "Date when quote expires",
+            "format": "date",
+            "example": "2022-10-01"
+          },
+          "publishedAt": {
+            "type": "string",
+            "description": "Timestamp when quote was published. Formatted as an ISO 8601 timestamp.",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "acceptedAt": {
+            "type": "string",
+            "description": "Timestamp when quote was accepted. Formatted as an ISO 8601 timestamp.",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "executedAt": {
+            "type": "string",
+            "description": "Timestamp when quote was executed. Formatted as an ISO 8601 timestamp.",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "Creation timestamp. Formatted as an ISO 8601 timestamp.",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "updatedAt": {
+            "type": "string",
+            "description": "Timestamp when quote was last updated. Formatted as an ISO 8601 timestamp.",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "createdFrom": {
+            "$ref": "#/components/schemas/QuoteCreatedFrom"
+          },
+          "expiryDays": {
+            "type": "integer",
+            "description": "Number of days after publishing in which quote will expire",
+            "format": "int32",
+            "example": 30
+          },
+          "merchantBranding": {
+            "$ref": "#/components/schemas/QuoteMerchantDetails"
+          },
+          "phases": {
+            "type": "array",
+            "description": "Phases for this quote, in sequential order",
+            "example": [
+              {
+                "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+                "createdAt": "2022-06-28T16:47:00Z",
+                "duration": {
+                  "days": 0,
+                  "weeks": 0,
+                  "months": 6,
+                  "years": 1
+                },
+                "prices": [
+                  {
+                    "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                    "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                    "name": "Sample product",
+                    "structure": {
+                      "pricingType": "LINEAR",
+                      "pricePerUnit": "0.25",
+                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                      "isPricePercentage": false
+                    },
+                    "billingFrequency": "MONTHLY",
+                    "billingType": "IN_ARREARS",
+                    "createdAt": "2021-08-25T12:00:00Z",
+                    "updatedAt": "2021-08-25T12:00:00Z",
+                    "integrationIds": [
+                      {
+                        "service": "Xero",
+                        "id": "123"
+                      }
+                    ],
+                    "customMetricParameters": [
+                      {
+                        "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                        "value": "10"
+                      }
+                    ],
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                  }
+                ],
+                "discounts": [
+                  {
+                    "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
+                    "restrictToPrices": [
+                      "5100e884-e007-4183-8355-4771865cb4d7"
+                    ],
+                    "amount": "50",
+                    "discountCalculationType": "PERCENTAGE",
+                    "message": "message",
+                    "createdAt": "2021-08-25T12:00:00Z",
+                    "updatedAt": "2021-08-25T12:00:00Z"
+                  }
+                ],
+                "minimums": [
+                  {
+                    "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
+                    "amount": "50",
+                    "restrictToPrices": [
+                      "5100e884-e007-4183-8355-4771865cb4d7"
+                    ],
+                    "createdAt": "2021-08-25T12:00:00Z",
+                    "updatedAt": "2021-08-25T12:00:00Z"
+                  }
+                ]
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/QuotePhaseNew"
+            }
+          },
+          "archivedAt": {
+            "type": "string",
+            "description": "Date and time the quote was archived",
+            "example": "2022-06-28T16:47:00Z"
+          }
+        }
+      },
+      "QuotePhaseNew": {
+        "required": [
+          "createdAt",
+          "discounts",
+          "id",
+          "minimums",
+          "prices"
+        ],
+        "type": "object",
+        "example": {
+          "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+          "createdAt": "2022-06-28T16:47:00Z",
+          "duration": {
+            "days": 0,
+            "weeks": 0,
+            "months": 6,
+            "years": 1
+          },
+          "prices": [
+            {
+              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+              "name": "Sample product",
+              "structure": {
+                "pricingType": "LINEAR",
+                "pricePerUnit": "0.25",
+                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                "isPricePercentage": false
+              },
+              "billingFrequency": "MONTHLY",
+              "billingType": "IN_ARREARS",
+              "createdAt": "2021-08-25T12:00:00Z",
+              "updatedAt": "2021-08-25T12:00:00Z",
+              "integrationIds": [
+                {
+                  "service": "Xero",
+                  "id": "123"
+                }
+              ],
+              "customMetricParameters": [
+                {
+                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                  "value": "10"
+                }
+              ],
+              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+            }
+          ],
+          "discounts": [
+            {
+              "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
+              "restrictToPrices": [
+                "5100e884-e007-4183-8355-4771865cb4d7"
+              ],
+              "amount": "50",
+              "discountCalculationType": "PERCENTAGE",
+              "message": "message",
+              "createdAt": "2021-08-25T12:00:00Z",
+              "updatedAt": "2021-08-25T12:00:00Z"
+            }
+          ],
+          "minimums": [
+            {
+              "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
+              "amount": "50",
+              "restrictToPrices": [
+                "5100e884-e007-4183-8355-4771865cb4d7"
+              ],
+              "createdAt": "2021-08-25T12:00:00Z",
+              "updatedAt": "2021-08-25T12:00:00Z"
+            }
+          ]
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique ID",
+            "example": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8"
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "Creation timestamp. Formatted as an ISO 8601 timestamp.",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "duration": {
+            "$ref": "#/components/schemas/Duration"
+          },
+          "prices": {
+            "type": "array",
+            "description": "Prices within this phase",
+            "example": [
+              {
+                "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                "name": "Sample product",
+                "structure": {
+                  "pricingType": "LINEAR",
+                  "pricePerUnit": "0.25",
+                  "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                  "isPricePercentage": false
+                },
+                "billingFrequency": "MONTHLY",
+                "billingType": "IN_ARREARS",
+                "createdAt": "2021-08-25T12:00:00Z",
+                "updatedAt": "2021-08-25T12:00:00Z",
+                "integrationIds": [
+                  {
+                    "service": "Xero",
+                    "id": "123"
+                  }
+                ],
+                "customMetricParameters": [
+                  {
+                    "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                    "value": "10"
+                  }
+                ],
+                "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/QuotePriceNew"
+            }
+          },
+          "discounts": {
+            "type": "array",
+            "description": "Discounts within this phase",
+            "example": [
+              {
+                "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
+                "restrictToPrices": [
+                  "5100e884-e007-4183-8355-4771865cb4d7"
+                ],
+                "amount": "50",
+                "discountCalculationType": "PERCENTAGE",
+                "message": "message",
+                "createdAt": "2021-08-25T12:00:00Z",
+                "updatedAt": "2021-08-25T12:00:00Z"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/QuoteDiscount1"
+            }
+          },
+          "minimums": {
+            "type": "array",
+            "description": "Minimums within this phase",
+            "example": [
+              {
+                "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
+                "amount": "50",
+                "restrictToPrices": [
+                  "5100e884-e007-4183-8355-4771865cb4d7"
+                ],
+                "createdAt": "2021-08-25T12:00:00Z",
+                "updatedAt": "2021-08-25T12:00:00Z"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/QuoteMinimum1"
+            }
+          }
+        }
+      },
+      "QuotePriceNew": {
+        "required": [
+          "billingFrequency",
+          "billingType",
+          "createdAt",
+          "customMetricParameters",
+          "id",
+          "integrationIds",
+          "name",
+          "productId",
+          "structure",
+          "updatedAt"
+        ],
+        "type": "object",
+        "example": {
+          "id": "5100e884-e007-4183-8355-4771865cb4d7",
+          "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+          "name": "Sample product",
+          "structure": {
+            "pricingType": "LINEAR",
+            "pricePerUnit": "0.25",
+            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+            "isPricePercentage": false
+          },
+          "billingFrequency": "MONTHLY",
+          "billingType": "IN_ARREARS",
+          "createdAt": "2021-08-25T12:00:00Z",
+          "updatedAt": "2021-08-25T12:00:00Z",
+          "integrationIds": [
+            {
+              "service": "Xero",
+              "id": "123"
+            }
+          ],
+          "customMetricParameters": [
+            {
+              "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+              "value": "10"
+            }
+          ],
+          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique ID",
+            "example": "5100e884-e007-4183-8355-4771865cb4d7"
+          },
+          "productId": {
+            "type": "string",
+            "description": "The related product ID",
+            "example": "e007e884-5100-4183-8355-4771865cb4dd"
+          },
+          "name": {
+            "type": "string",
+            "description": "The customer-facing name of this price",
+            "example": "Sample product"
+          },
+          "structure": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/ONE_TIME"
+              },
+              {
+                "$ref": "#/components/schemas/FIXED"
+              },
+              {
+                "$ref": "#/components/schemas/LINEAR"
+              },
+              {
+                "$ref": "#/components/schemas/PACKAGE"
+              },
+              {
+                "$ref": "#/components/schemas/VOLUME"
+              },
+              {
+                "$ref": "#/components/schemas/GRADUATED"
+              },
+              {
+                "$ref": "#/components/schemas/SEAT_BASED"
+              }
+            ],
+            "discriminator": {
+              "propertyName": "pricingType"
+            },
+            "required": [
+              "pricingType"
+            ]
+          },
+          "billingFrequency": {
+            "description": "The recurrence of charging this price.",
+            "$ref": "#/components/schemas/BillingFrequency"
+          },
+          "billingType": {
+            "description": "How to bill this price: in-arrears or in-advance.",
+            "$ref": "#/components/schemas/BillingType"
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "Creation timestamp. Formatted as an ISO 8601 timestamp.",
+            "example": "2021-08-25T12:00:00Z"
+          },
+          "updatedAt": {
+            "type": "string",
+            "description": "Timestamp when price was last updated. Formatted as an ISO 8601 timestamp.",
+            "example": "2021-08-25T12:00:00Z"
+          },
+          "integrationIds": {
+            "type": "array",
+            "description": "Alternate IDs for this price in third-party integration systems",
+            "example": [
+              {
+                "service": "Xero",
+                "id": "123"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/IntegrationId"
+            }
+          },
+          "customMetricParameters": {
+            "type": "array",
+            "description": "Specific parameters to influence usage calculation for this price, and are only required when using a custom metric. Please speak to your Sequence contacts for further information prior to usage.",
+            "example": [
+              {
+                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                "value": "10"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/PriceParameter"
+            }
+          },
+          "listPriceId": {
+            "type": "string",
+            "description": "The list price ID, if this quote price variant was created from a list price",
+            "example": "b4d7e884-e007-4183-8355-4771865c5100"
+          }
+        }
+      },
       "CreateQuoteEndpointCreateQuoteRequestModel": {
         "type": "object",
         "example": {
@@ -75483,6 +78635,438 @@
           }
         }
       },
+      "UpdateQuoteEndpointNewUpdateQuoteRequestModelNew": {
+        "required": [
+          "phases",
+          "presentation"
+        ],
+        "type": "object",
+        "example": {
+          "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+          "title": "My quote",
+          "currency": "GBP",
+          "presentation": [],
+          "dealType": "NEW_BUSINESS",
+          "preliminaryBillingStartDate": "2022-10-01",
+          "expiryDays": 30,
+          "phases": [
+            {
+              "prices": [
+                {
+                  "temporaryId": "5100e884-e007-4183-8355-4771865cb4d7",
+                  "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                  "name": "Sample product",
+                  "structure": {
+                    "pricingType": "LINEAR",
+                    "pricePerUnit": "0.25",
+                    "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                    "isPricePercentage": false
+                  },
+                  "billingFrequency": "MONTHLY",
+                  "billingType": "IN_ARREARS",
+                  "integrationIds": [
+                    {
+                      "service": "Xero",
+                      "id": "123"
+                    }
+                  ],
+                  "customMetricParameters": [
+                    {
+                      "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                      "value": "10"
+                    }
+                  ],
+                  "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                }
+              ],
+              "duration": {
+                "days": 0,
+                "weeks": 0,
+                "months": 6,
+                "years": 1
+              },
+              "discounts": [
+                {
+                  "restrictToPrices": [
+                    "5100e884-e007-4183-8355-4771865cb4d7"
+                  ],
+                  "type": "PERCENTAGE",
+                  "amount": "50",
+                  "message": "message"
+                }
+              ],
+              "minimums": [
+                {
+                  "restrictToPrices": [
+                    "5100e884-e007-4183-8355-4771865cb4d7"
+                  ],
+                  "amount": "50"
+                }
+              ]
+            }
+          ]
+        },
+        "properties": {
+          "customerId": {
+            "type": "string",
+            "description": "ID of Customer to which this quote pertains",
+            "example": "377bf97b-ca1d-4538-be06-4022afa6bde3"
+          },
+          "title": {
+            "type": "string",
+            "description": "The quote title",
+            "example": "My quote"
+          },
+          "currency": {
+            "description": "Quote currency",
+            "$ref": "#/components/schemas/Currency"
+          },
+          "presentation": {
+            "type": "array",
+            "description": "JSON for the visual presentation of the quote",
+            "example": [],
+            "items": {}
+          },
+          "dealType": {
+            "description": "Quote deal type",
+            "$ref": "#/components/schemas/QuoteDealType"
+          },
+          "preliminaryBillingStartDate": {
+            "type": "string",
+            "description": "Preliminary start date of contract",
+            "format": "date",
+            "example": "2022-10-01"
+          },
+          "expiryDays": {
+            "type": "integer",
+            "description": "Number of days after publishing in which quote will expire",
+            "format": "int32",
+            "example": 30
+          },
+          "phases": {
+            "type": "array",
+            "description": "Phases for this quote, in sequential order",
+            "example": [
+              {
+                "prices": [
+                  {
+                    "temporaryId": "5100e884-e007-4183-8355-4771865cb4d7",
+                    "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                    "name": "Sample product",
+                    "structure": {
+                      "pricingType": "LINEAR",
+                      "pricePerUnit": "0.25",
+                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                      "isPricePercentage": false
+                    },
+                    "billingFrequency": "MONTHLY",
+                    "billingType": "IN_ARREARS",
+                    "integrationIds": [
+                      {
+                        "service": "Xero",
+                        "id": "123"
+                      }
+                    ],
+                    "customMetricParameters": [
+                      {
+                        "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                        "value": "10"
+                      }
+                    ],
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                  }
+                ],
+                "duration": {
+                  "days": 0,
+                  "weeks": 0,
+                  "months": 6,
+                  "years": 1
+                },
+                "discounts": [
+                  {
+                    "restrictToPrices": [
+                      "5100e884-e007-4183-8355-4771865cb4d7"
+                    ],
+                    "type": "PERCENTAGE",
+                    "amount": "50",
+                    "message": "message"
+                  }
+                ],
+                "minimums": [
+                  {
+                    "restrictToPrices": [
+                      "5100e884-e007-4183-8355-4771865cb4d7"
+                    ],
+                    "amount": "50"
+                  }
+                ]
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/CreateQuotePhaseRequestNew"
+            }
+          }
+        }
+      },
+      "CreateQuotePhaseRequestNew": {
+        "required": [
+          "discounts",
+          "prices"
+        ],
+        "type": "object",
+        "example": {
+          "prices": [
+            {
+              "temporaryId": "5100e884-e007-4183-8355-4771865cb4d7",
+              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+              "name": "Sample product",
+              "structure": {
+                "pricingType": "LINEAR",
+                "pricePerUnit": "0.25",
+                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                "isPricePercentage": false
+              },
+              "billingFrequency": "MONTHLY",
+              "billingType": "IN_ARREARS",
+              "integrationIds": [
+                {
+                  "service": "Xero",
+                  "id": "123"
+                }
+              ],
+              "customMetricParameters": [
+                {
+                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                  "value": "10"
+                }
+              ],
+              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+            }
+          ],
+          "duration": {
+            "days": 0,
+            "weeks": 0,
+            "months": 6,
+            "years": 1
+          },
+          "discounts": [
+            {
+              "restrictToPrices": [
+                "5100e884-e007-4183-8355-4771865cb4d7"
+              ],
+              "type": "PERCENTAGE",
+              "amount": "50",
+              "message": "message"
+            }
+          ],
+          "minimums": [
+            {
+              "restrictToPrices": [
+                "5100e884-e007-4183-8355-4771865cb4d7"
+              ],
+              "amount": "50"
+            }
+          ]
+        },
+        "properties": {
+          "prices": {
+            "type": "array",
+            "description": "Prices within this phase",
+            "example": [
+              {
+                "temporaryId": "5100e884-e007-4183-8355-4771865cb4d7",
+                "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                "name": "Sample product",
+                "structure": {
+                  "pricingType": "LINEAR",
+                  "pricePerUnit": "0.25",
+                  "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                  "isPricePercentage": false
+                },
+                "billingFrequency": "MONTHLY",
+                "billingType": "IN_ARREARS",
+                "integrationIds": [
+                  {
+                    "service": "Xero",
+                    "id": "123"
+                  }
+                ],
+                "customMetricParameters": [
+                  {
+                    "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                    "value": "10"
+                  }
+                ],
+                "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/CreateQuotePriceRequestNew"
+            }
+          },
+          "duration": {
+            "$ref": "#/components/schemas/Duration"
+          },
+          "discounts": {
+            "type": "array",
+            "description": "Discounts within this phase",
+            "example": [
+              {
+                "restrictToPrices": [
+                  "5100e884-e007-4183-8355-4771865cb4d7"
+                ],
+                "type": "PERCENTAGE",
+                "amount": "50",
+                "message": "message"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/CreateQuoteDiscountRequest"
+            }
+          },
+          "minimums": {
+            "type": "array",
+            "description": "Minimums within this phase",
+            "example": [
+              {
+                "restrictToPrices": [
+                  "5100e884-e007-4183-8355-4771865cb4d7"
+                ],
+                "amount": "50"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/CreateQuoteMinimumRequest"
+            }
+          }
+        }
+      },
+      "CreateQuotePriceRequestNew": {
+        "required": [
+          "billingFrequency",
+          "billingType",
+          "customMetricParameters",
+          "integrationIds",
+          "name",
+          "productId",
+          "structure",
+          "temporaryId"
+        ],
+        "type": "object",
+        "example": {
+          "temporaryId": "5100e884-e007-4183-8355-4771865cb4d7",
+          "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+          "name": "Sample product",
+          "structure": {
+            "pricingType": "LINEAR",
+            "pricePerUnit": "0.25",
+            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+            "isPricePercentage": false
+          },
+          "billingFrequency": "MONTHLY",
+          "billingType": "IN_ARREARS",
+          "integrationIds": [
+            {
+              "service": "Xero",
+              "id": "123"
+            }
+          ],
+          "customMetricParameters": [
+            {
+              "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+              "value": "10"
+            }
+          ],
+          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+        },
+        "properties": {
+          "temporaryId": {
+            "type": "string",
+            "description": "A temporary ID with which to associate the price to other objects within the phase. This must be a UUID.",
+            "example": "5100e884-e007-4183-8355-4771865cb4d7"
+          },
+          "productId": {
+            "type": "string",
+            "description": "The related product ID",
+            "example": "e007e884-5100-4183-8355-4771865cb4dd"
+          },
+          "name": {
+            "type": "string",
+            "description": "The customer-facing name of this price",
+            "example": "Sample product"
+          },
+          "structure": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/ONE_TIME"
+              },
+              {
+                "$ref": "#/components/schemas/FIXED"
+              },
+              {
+                "$ref": "#/components/schemas/LINEAR"
+              },
+              {
+                "$ref": "#/components/schemas/PACKAGE"
+              },
+              {
+                "$ref": "#/components/schemas/VOLUME"
+              },
+              {
+                "$ref": "#/components/schemas/GRADUATED"
+              },
+              {
+                "$ref": "#/components/schemas/SEAT_BASED"
+              }
+            ],
+            "discriminator": {
+              "propertyName": "pricingType"
+            },
+            "required": [
+              "pricingType"
+            ]
+          },
+          "billingFrequency": {
+            "description": "The recurrence of charging this price.",
+            "$ref": "#/components/schemas/BillingFrequency"
+          },
+          "billingType": {
+            "description": "How to bill this price: in-arrears or in-advance.",
+            "$ref": "#/components/schemas/BillingType"
+          },
+          "integrationIds": {
+            "type": "array",
+            "description": "Alternate IDs for this price in third-party integration systems",
+            "example": [
+              {
+                "service": "Xero",
+                "id": "123"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/IntegrationId"
+            }
+          },
+          "customMetricParameters": {
+            "type": "array",
+            "description": "Specific parameters to influence usage calculation for this price, and are only required when using a custom metric. Please speak to your Sequence contacts for further information prior to usage.",
+            "example": [
+              {
+                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                "value": "10"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/PriceParameter"
+            }
+          },
+          "listPriceId": {
+            "type": "string",
+            "description": "The list price ID, if this quote price variant was created from a list price",
+            "example": "b4d7e884-e007-4183-8355-4771865c5100"
+          }
+        }
+      },
       "PublishedQuote": {
         "required": [
           "createdAt",
@@ -75762,6 +79346,289 @@
             ],
             "items": {
               "$ref": "#/components/schemas/QuotePhase1"
+            }
+          }
+        }
+      },
+      "PublishedQuoteNew": {
+        "required": [
+          "createdAt",
+          "createdBy",
+          "currency",
+          "customerId",
+          "dealType",
+          "expiresAt",
+          "id",
+          "merchantBranding",
+          "phases",
+          "presentation",
+          "publishedAt",
+          "quoteNumber",
+          "status",
+          "title",
+          "updatedAt"
+        ],
+        "type": "object",
+        "example": {
+          "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+          "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+          "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+          "quoteNumber": "Q00001",
+          "title": "My quote",
+          "currency": "GBP",
+          "presentation": [],
+          "status": "ACCEPTED",
+          "dealType": "NEW_BUSINESS",
+          "preliminaryBillingStartDate": "2022-10-01",
+          "expiresAt": "2022-10-01",
+          "publishedAt": "2022-06-28T16:47:00Z",
+          "acceptedAt": "2022-06-28T16:47:00Z",
+          "executedAt": "2022-06-28T16:47:00Z",
+          "createdAt": "2022-06-28T16:47:00Z",
+          "updatedAt": "2022-06-28T16:47:00Z",
+          "createdFrom": {
+            "entityType": "QUOTE",
+            "entityId": "dc0e2104-7df5-4fc1-8f65-1823f427d111"
+          },
+          "merchantBranding": {
+            "logoUrl": "logo",
+            "legalCompanyName": "Acme Corp",
+            "primaryColour": "colour",
+            "url": "www.example.com",
+            "address": {
+              "line1": "Flat 1",
+              "line2": "123 Fake Street",
+              "town": "London",
+              "postcode": "AB1 2EF",
+              "country": "GB"
+            },
+            "email": "accounting@example.com"
+          },
+          "phases": [
+            {
+              "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+              "createdAt": "2022-06-28T16:47:00Z",
+              "duration": {
+                "days": 0,
+                "weeks": 0,
+                "months": 6,
+                "years": 1
+              },
+              "prices": [
+                {
+                  "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                  "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                  "name": "Sample product",
+                  "structure": {
+                    "pricingType": "LINEAR",
+                    "pricePerUnit": "0.25",
+                    "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                    "isPricePercentage": false
+                  },
+                  "billingFrequency": "MONTHLY",
+                  "billingType": "IN_ARREARS",
+                  "createdAt": "2021-08-25T12:00:00Z",
+                  "updatedAt": "2021-08-25T12:00:00Z",
+                  "integrationIds": [
+                    {
+                      "service": "Xero",
+                      "id": "123"
+                    }
+                  ],
+                  "customMetricParameters": [
+                    {
+                      "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                      "value": "10"
+                    }
+                  ],
+                  "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                }
+              ],
+              "discounts": [
+                {
+                  "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
+                  "restrictToPrices": [
+                    "5100e884-e007-4183-8355-4771865cb4d7"
+                  ],
+                  "amount": "50",
+                  "discountCalculationType": "PERCENTAGE",
+                  "message": "message",
+                  "createdAt": "2021-08-25T12:00:00Z",
+                  "updatedAt": "2021-08-25T12:00:00Z"
+                }
+              ],
+              "minimums": [
+                {
+                  "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
+                  "amount": "50",
+                  "restrictToPrices": [
+                    "5100e884-e007-4183-8355-4771865cb4d7"
+                  ],
+                  "createdAt": "2021-08-25T12:00:00Z",
+                  "updatedAt": "2021-08-25T12:00:00Z"
+                }
+              ]
+            }
+          ]
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique ID",
+            "example": "678ca125-8bc3-478f-9a96-6ba73605cf1e"
+          },
+          "createdBy": {
+            "type": "string",
+            "description": "The Sequence user who created this quote",
+            "example": "4ffd439e-32e5-4046-bb40-3cb81f40e5da"
+          },
+          "customerId": {
+            "type": "string",
+            "description": "ID of Customer to which this quote pertains",
+            "example": "377bf97b-ca1d-4538-be06-4022afa6bde3"
+          },
+          "quoteNumber": {
+            "type": "string",
+            "description": "An alpha-numeric value that identifies the quote",
+            "example": "Q00001"
+          },
+          "title": {
+            "type": "string",
+            "description": "The quote title",
+            "example": "My quote"
+          },
+          "currency": {
+            "description": "Quote currency",
+            "$ref": "#/components/schemas/Currency"
+          },
+          "presentation": {
+            "type": "array",
+            "description": "JSON for the visual presentation of the quote",
+            "example": [],
+            "items": {}
+          },
+          "status": {
+            "description": "The status of the quote",
+            "$ref": "#/components/schemas/QuoteStatus1"
+          },
+          "dealType": {
+            "description": "Quote deal type",
+            "$ref": "#/components/schemas/QuoteDealType"
+          },
+          "preliminaryBillingStartDate": {
+            "type": "string",
+            "description": "Preliminary start date of contract",
+            "format": "date",
+            "example": "2022-10-01"
+          },
+          "expiresAt": {
+            "type": "string",
+            "description": "Date when quote expires",
+            "format": "date",
+            "example": "2022-10-01"
+          },
+          "publishedAt": {
+            "type": "string",
+            "description": "Timestamp when quote was published. Formatted as an ISO 8601 timestamp.",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "acceptedAt": {
+            "type": "string",
+            "description": "Timestamp when quote was accepted. Formatted as an ISO 8601 timestamp.",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "executedAt": {
+            "type": "string",
+            "description": "Timestamp when quote was executed. Formatted as an ISO 8601 timestamp.",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "Creation timestamp. Formatted as an ISO 8601 timestamp.",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "updatedAt": {
+            "type": "string",
+            "description": "Timestamp when quote was last updated. Formatted as an ISO 8601 timestamp.",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "createdFrom": {
+            "$ref": "#/components/schemas/QuoteCreatedFrom"
+          },
+          "merchantBranding": {
+            "$ref": "#/components/schemas/QuoteMerchantDetails"
+          },
+          "phases": {
+            "type": "array",
+            "description": "Phases for this quote, in sequential order",
+            "example": [
+              {
+                "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
+                "createdAt": "2022-06-28T16:47:00Z",
+                "duration": {
+                  "days": 0,
+                  "weeks": 0,
+                  "months": 6,
+                  "years": 1
+                },
+                "prices": [
+                  {
+                    "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                    "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                    "name": "Sample product",
+                    "structure": {
+                      "pricingType": "LINEAR",
+                      "pricePerUnit": "0.25",
+                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                      "isPricePercentage": false
+                    },
+                    "billingFrequency": "MONTHLY",
+                    "billingType": "IN_ARREARS",
+                    "createdAt": "2021-08-25T12:00:00Z",
+                    "updatedAt": "2021-08-25T12:00:00Z",
+                    "integrationIds": [
+                      {
+                        "service": "Xero",
+                        "id": "123"
+                      }
+                    ],
+                    "customMetricParameters": [
+                      {
+                        "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                        "value": "10"
+                      }
+                    ],
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                  }
+                ],
+                "discounts": [
+                  {
+                    "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
+                    "restrictToPrices": [
+                      "5100e884-e007-4183-8355-4771865cb4d7"
+                    ],
+                    "amount": "50",
+                    "discountCalculationType": "PERCENTAGE",
+                    "message": "message",
+                    "createdAt": "2021-08-25T12:00:00Z",
+                    "updatedAt": "2021-08-25T12:00:00Z"
+                  }
+                ],
+                "minimums": [
+                  {
+                    "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
+                    "amount": "50",
+                    "restrictToPrices": [
+                      "5100e884-e007-4183-8355-4771865cb4d7"
+                    ],
+                    "createdAt": "2021-08-25T12:00:00Z",
+                    "updatedAt": "2021-08-25T12:00:00Z"
+                  }
+                ]
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/QuotePhaseNew"
             }
           }
         }
