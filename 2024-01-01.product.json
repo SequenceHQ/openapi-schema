@@ -38301,6 +38301,10 @@
             "description": "Unauthorized",
             "content": {}
           },
+          "404": {
+            "description": "Not Found",
+            "content": {}
+          },
           "500": {
             "description": "Internal Server Error",
             "content": {}
@@ -38568,6 +38572,10 @@
           },
           "401": {
             "description": "Unauthorized",
+            "content": {}
+          },
+          "404": {
+            "description": "Not Found",
             "content": {}
           },
           "500": {
@@ -39570,6 +39578,10 @@
             "description": "Unauthorized",
             "content": {}
           },
+          "404": {
+            "description": "Not Found",
+            "content": {}
+          },
           "500": {
             "description": "Internal Server Error",
             "content": {}
@@ -39980,6 +39992,10 @@
             "description": "Unauthorized",
             "content": {}
           },
+          "404": {
+            "description": "Not Found",
+            "content": {}
+          },
           "500": {
             "description": "Internal Server Error",
             "content": {}
@@ -40247,6 +40263,10 @@
           },
           "401": {
             "description": "Unauthorized",
+            "content": {}
+          },
+          "404": {
+            "description": "Not Found",
             "content": {}
           },
           "500": {
@@ -40659,6 +40679,10 @@
             "description": "Unauthorized",
             "content": {}
           },
+          "404": {
+            "description": "Not Found",
+            "content": {}
+          },
           "500": {
             "description": "Internal Server Error",
             "content": {}
@@ -40926,6 +40950,10 @@
           },
           "401": {
             "description": "Unauthorized",
+            "content": {}
+          },
+          "404": {
+            "description": "Not Found",
             "content": {}
           },
           "500": {
@@ -41197,6 +41225,10 @@
             "description": "Unauthorized",
             "content": {}
           },
+          "404": {
+            "description": "Not Found",
+            "content": {}
+          },
           "500": {
             "description": "Internal Server Error",
             "content": {}
@@ -41462,6 +41494,10 @@
             "description": "Unauthorized",
             "content": {}
           },
+          "404": {
+            "description": "Not Found",
+            "content": {}
+          },
           "500": {
             "description": "Internal Server Error",
             "content": {}
@@ -41725,6 +41761,10 @@
           },
           "401": {
             "description": "Unauthorized",
+            "content": {}
+          },
+          "404": {
+            "description": "Not Found",
             "content": {}
           },
           "500": {
@@ -42799,6 +42839,10 @@
             "description": "Unauthorized",
             "content": {}
           },
+          "404": {
+            "description": "Not Found",
+            "content": {}
+          },
           "500": {
             "description": "Internal Server Error",
             "content": {}
@@ -43062,6 +43106,10 @@
           },
           "401": {
             "description": "Unauthorized",
+            "content": {}
+          },
+          "404": {
+            "description": "Not Found",
             "content": {}
           },
           "500": {
@@ -43333,6 +43381,10 @@
             "description": "Unauthorized",
             "content": {}
           },
+          "404": {
+            "description": "Not Found",
+            "content": {}
+          },
           "500": {
             "description": "Internal Server Error",
             "content": {}
@@ -43600,6 +43652,10 @@
           },
           "401": {
             "description": "Unauthorized",
+            "content": {}
+          },
+          "404": {
+            "description": "Not Found",
             "content": {}
           },
           "500": {
