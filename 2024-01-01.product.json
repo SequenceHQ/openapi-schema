@@ -32460,8 +32460,8 @@
       },
       "delete": {
         "tags": [],
-        "summary": "Archive Customer",
-        "description": "Archive a [Customer](/customers/overview).",
+        "summary": "Archive customer",
+        "description": "Archive a [customer](/customers/overview).",
         "operationId": "deleteCustomersById",
         "parameters": [
           {
@@ -32813,7 +32813,7 @@
       "post": {
         "tags": [],
         "summary": "Create customer",
-        "description": "Create a new [Customer](/customers/overview), who you can send money to and receive money from.",
+        "description": "Create a new [customer](/customers/overview), who you can send money to and receive money from.",
         "operationId": "postCustomers",
         "parameters": [
           {
@@ -33027,8 +33027,8 @@
     "/customers/{id}/archive": {
       "put": {
         "tags": [],
-        "summary": "Archive Customer",
-        "description": "Archive a [Customer](/customers/overview).",
+        "summary": "Archive customer",
+        "description": "Archive a [customer](/customers/overview).",
         "operationId": "putCustomersByIdArchive",
         "parameters": [
           {
