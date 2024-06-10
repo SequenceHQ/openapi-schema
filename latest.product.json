@@ -42584,6 +42584,29 @@
             }
           }
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PublishQuoteEndpointPublishQuoteRequest",
+                "example": {
+                  "sendRecipientsEmail": true,
+                  "emailMessage": "Here's your quote"
+                }
+              },
+              "examples": {
+                "PublishQuoteEndpointPublishQuoteRequest": {
+                  "summary": "",
+                  "value": {
+                    "sendRecipientsEmail": true,
+                    "emailMessage": "Here's your quote"
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
         "responses": {
           "200": {
             "description": "OK",
@@ -42853,6 +42876,29 @@
             }
           }
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PublishQuoteEndpointPublishQuoteRequest",
+                "example": {
+                  "sendRecipientsEmail": true,
+                  "emailMessage": "Here's your quote"
+                }
+              },
+              "examples": {
+                "PublishQuoteEndpointPublishQuoteRequest": {
+                  "summary": "",
+                  "value": {
+                    "sendRecipientsEmail": true,
+                    "emailMessage": "Here's your quote"
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
         "responses": {
           "200": {
             "description": "OK",
@@ -83792,6 +83838,28 @@
             "type": "string",
             "description": "The list price ID, if this quote price variant was created from a list price",
             "example": "b4d7e884-e007-4183-8355-4771865c5100"
+          }
+        }
+      },
+      "PublishQuoteEndpointPublishQuoteRequest": {
+        "required": [
+          "sendRecipientsEmail"
+        ],
+        "type": "object",
+        "example": {
+          "sendRecipientsEmail": true,
+          "emailMessage": "Here's your quote"
+        },
+        "properties": {
+          "sendRecipientsEmail": {
+            "type": "boolean",
+            "description": "If true Sequence will send an email to all quote recipients notifying them of the published quote",
+            "example": true
+          },
+          "emailMessage": {
+            "type": "string",
+            "description": "Optional message to include in email body",
+            "example": "Here's your quote"
           }
         }
       },
