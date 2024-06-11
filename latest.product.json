@@ -39656,6 +39656,143 @@
       "servers": [],
       "parameters": []
     },
+    "/quotes/settings": {
+      "get": {
+        "tags": [],
+        "summary": "Get quote settings",
+        "description": "Get quote settings for your workspace",
+        "operationId": "getQuotesSettings",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/QuoteSettings",
+                  "example": {
+                    "isSignaturesEnabled": true,
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "updatedAt": "2022-06-28T16:47:00Z"
+                  }
+                },
+                "examples": {
+                  "QuoteSettings": {
+                    "summary": "",
+                    "value": {
+                      "isSignaturesEnabled": true,
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "updatedAt": "2022-06-28T16:47:00Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "put": {
+        "tags": [],
+        "summary": "Update quote settings",
+        "description": "Update quote settings for your workspace",
+        "operationId": "putQuotesSettings",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateQuoteSettingsRequest",
+                "example": {
+                  "isSignaturesEnabled": true
+                }
+              },
+              "examples": {
+                "UpdateQuoteSettingsRequest": {
+                  "summary": "",
+                  "value": {
+                    "isSignaturesEnabled": true
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/QuoteSettings",
+                  "example": {
+                    "isSignaturesEnabled": true,
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "updatedAt": "2022-06-28T16:47:00Z"
+                  }
+                },
+                "examples": {
+                  "QuoteSettings": {
+                    "summary": "",
+                    "value": {
+                      "isSignaturesEnabled": true,
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "updatedAt": "2022-06-28T16:47:00Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/quotes/{id}/latest-draft": {
       "delete": {
         "tags": [],
@@ -89643,6 +89780,52 @@
             "items": {
               "type": "string"
             }
+          }
+        }
+      },
+      "QuoteSettings": {
+        "required": [
+          "createdAt",
+          "isSignaturesEnabled",
+          "updatedAt"
+        ],
+        "type": "object",
+        "example": {
+          "isSignaturesEnabled": true,
+          "createdAt": "2022-06-28T16:47:00Z",
+          "updatedAt": "2022-06-28T16:47:00Z"
+        },
+        "properties": {
+          "isSignaturesEnabled": {
+            "type": "boolean",
+            "description": "Enable e-signatures if you want to allow customers to sign quotes through Dropbox Sign.",
+            "example": true
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "The time at which the setting was created. Formatted as an ISO 8601 timestamp.",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "updatedAt": {
+            "type": "string",
+            "description": "The time at which the setting was updated. Formatted as an ISO 8601 timestamp.",
+            "example": "2022-06-28T16:47:00Z"
+          }
+        }
+      },
+      "UpdateQuoteSettingsRequest": {
+        "required": [
+          "isSignaturesEnabled"
+        ],
+        "type": "object",
+        "example": {
+          "isSignaturesEnabled": true
+        },
+        "properties": {
+          "isSignaturesEnabled": {
+            "type": "boolean",
+            "description": "Enable e-signatures if you want to allow customers to sign quotes through Dropbox Sign.",
+            "example": true
           }
         }
       },
