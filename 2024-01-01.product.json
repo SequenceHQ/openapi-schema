@@ -2037,7 +2037,9 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "upperBound": "400",
@@ -2050,7 +2052,9 @@
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -2084,6 +2088,25 @@
                                   "isPricePercentage": false
                                 }
                               ],
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ]
+                          },
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "d0dce0a7-03d2-4889-80f3-9afeb0cb3c33",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "PACKAGE",
+                              "packageSize": "50",
+                              "pricePerPackage": "2.00",
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                             },
                             "billingFrequency": "MONTHLY",
@@ -2273,7 +2296,9 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "upperBound": "400",
@@ -2286,7 +2311,9 @@
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -2320,6 +2347,25 @@
                                     "isPricePercentage": false
                                   }
                                 ],
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ]
+                            },
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "d0dce0a7-03d2-4889-80f3-9afeb0cb3c33",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "PACKAGE",
+                                "packageSize": "50",
+                                "pricePerPackage": "2.00",
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                               },
                               "billingFrequency": "MONTHLY",
@@ -2563,7 +2609,9 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "upperBound": "400",
@@ -2576,7 +2624,9 @@
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -2610,6 +2660,25 @@
                                   "isPricePercentage": false
                                 }
                               ],
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ]
+                          },
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "d0dce0a7-03d2-4889-80f3-9afeb0cb3c33",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "PACKAGE",
+                              "packageSize": "50",
+                              "pricePerPackage": "2.00",
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                             },
                             "billingFrequency": "MONTHLY",
@@ -2798,7 +2867,9 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "upperBound": "400",
@@ -2811,7 +2882,9 @@
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -2845,6 +2918,25 @@
                                     "isPricePercentage": false
                                   }
                                 ],
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ]
+                            },
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "d0dce0a7-03d2-4889-80f3-9afeb0cb3c33",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "PACKAGE",
+                                "packageSize": "50",
+                                "pricePerPackage": "2.00",
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                               },
                               "billingFrequency": "MONTHLY",
@@ -38665,7 +38757,9 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "upperBound": "400",
@@ -38678,7 +38772,9 @@
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -38721,6 +38817,34 @@
                                   "isPricePercentage": false
                                 }
                               ],
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          },
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "PACKAGE",
+                              "packageSize": "50",
+                              "pricePerPackage": "2.00",
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                             },
                             "billingFrequency": "MONTHLY",
@@ -38957,7 +39081,9 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "upperBound": "400",
@@ -38970,7 +39096,9 @@
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -39013,6 +39141,34 @@
                                     "isPricePercentage": false
                                   }
                                 ],
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            },
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "PACKAGE",
+                                "packageSize": "50",
+                                "pricePerPackage": "2.00",
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                               },
                               "billingFrequency": "MONTHLY",
@@ -39303,7 +39459,9 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "upperBound": "400",
@@ -39316,7 +39474,9 @@
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -39359,6 +39519,34 @@
                                   "isPricePercentage": false
                                 }
                               ],
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          },
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "PACKAGE",
+                              "packageSize": "50",
+                              "pricePerPackage": "2.00",
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                             },
                             "billingFrequency": "MONTHLY",
@@ -39594,7 +39782,9 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "upperBound": "400",
@@ -39607,7 +39797,9 @@
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -39650,6 +39842,34 @@
                                     "isPricePercentage": false
                                   }
                                 ],
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            },
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "PACKAGE",
+                                "packageSize": "50",
+                                "pricePerPackage": "2.00",
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                               },
                               "billingFrequency": "MONTHLY",
@@ -40112,7 +40332,9 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "upperBound": "400",
@@ -40125,7 +40347,9 @@
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -40168,6 +40392,34 @@
                                   "isPricePercentage": false
                                 }
                               ],
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          },
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "PACKAGE",
+                              "packageSize": "50",
+                              "pricePerPackage": "2.00",
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                             },
                             "billingFrequency": "MONTHLY",
@@ -40404,7 +40656,9 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "upperBound": "400",
@@ -40417,7 +40671,9 @@
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -40460,6 +40716,34 @@
                                     "isPricePercentage": false
                                   }
                                 ],
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            },
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "PACKAGE",
+                                "packageSize": "50",
+                                "pricePerPackage": "2.00",
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                               },
                               "billingFrequency": "MONTHLY",
@@ -40768,7 +41052,9 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "upperBound": "400",
@@ -40781,7 +41067,9 @@
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -40824,6 +41112,34 @@
                                   "isPricePercentage": false
                                 }
                               ],
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          },
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "PACKAGE",
+                              "packageSize": "50",
+                              "pricePerPackage": "2.00",
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                             },
                             "billingFrequency": "MONTHLY",
@@ -41059,7 +41375,9 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "upperBound": "400",
@@ -41072,7 +41390,9 @@
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -41115,6 +41435,34 @@
                                     "isPricePercentage": false
                                   }
                                 ],
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            },
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "PACKAGE",
+                                "packageSize": "50",
+                                "pricePerPackage": "2.00",
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                               },
                               "billingFrequency": "MONTHLY",
@@ -41402,7 +41750,9 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "upperBound": "400",
@@ -41415,7 +41765,9 @@
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -41458,6 +41810,34 @@
                                   "isPricePercentage": false
                                 }
                               ],
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          },
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "PACKAGE",
+                              "packageSize": "50",
+                              "pricePerPackage": "2.00",
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                             },
                             "billingFrequency": "MONTHLY",
@@ -41694,7 +42074,9 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "upperBound": "400",
@@ -41707,7 +42089,9 @@
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -41750,6 +42134,34 @@
                                     "isPricePercentage": false
                                   }
                                 ],
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            },
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "PACKAGE",
+                                "packageSize": "50",
+                                "pricePerPackage": "2.00",
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                               },
                               "billingFrequency": "MONTHLY",
@@ -41990,7 +42402,9 @@
                                 "upperBound": "200",
                                 "price": "1.00",
                                 "fee": "50.00",
-                                "isPricePercentage": false
+                                "isPricePercentage": true,
+                                "maxPrice": "10",
+                                "minPrice": "5"
                               },
                               {
                                 "upperBound": "400",
@@ -42003,7 +42417,9 @@
                               {
                                 "price": "0.50",
                                 "fee": "0.00",
-                                "isPricePercentage": false
+                                "isPricePercentage": true,
+                                "maxPrice": "10",
+                                "minPrice": "5"
                               }
                             ],
                             "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -42044,6 +42460,32 @@
                                 "isPricePercentage": false
                               }
                             ],
+                            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                          },
+                          "billingFrequency": "MONTHLY",
+                          "billingType": "IN_ARREARS",
+                          "integrationIds": [
+                            {
+                              "service": "Xero",
+                              "id": "123"
+                            }
+                          ],
+                          "customMetricParameters": [
+                            {
+                              "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                              "value": "10"
+                            }
+                          ],
+                          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                        },
+                        {
+                          "temporaryId": "5100e884-e007-4183-8355-4771865cb4d7",
+                          "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                          "name": "Sample product",
+                          "structure": {
+                            "pricingType": "PACKAGE",
+                            "packageSize": "50",
+                            "pricePerPackage": "2.00",
                             "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                           },
                           "billingFrequency": "MONTHLY",
@@ -42232,7 +42674,9 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "upperBound": "400",
@@ -42245,7 +42689,9 @@
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -42286,6 +42732,32 @@
                                   "isPricePercentage": false
                                 }
                               ],
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          },
+                          {
+                            "temporaryId": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "PACKAGE",
+                              "packageSize": "50",
+                              "pricePerPackage": "2.00",
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                             },
                             "billingFrequency": "MONTHLY",
@@ -42528,7 +43000,9 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "upperBound": "400",
@@ -42541,7 +43015,9 @@
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -42584,6 +43060,34 @@
                                   "isPricePercentage": false
                                 }
                               ],
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          },
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "PACKAGE",
+                              "packageSize": "50",
+                              "pricePerPackage": "2.00",
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                             },
                             "billingFrequency": "MONTHLY",
@@ -42820,7 +43324,9 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "upperBound": "400",
@@ -42833,7 +43339,9 @@
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -42876,6 +43384,34 @@
                                     "isPricePercentage": false
                                   }
                                 ],
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            },
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "PACKAGE",
+                                "packageSize": "50",
+                                "pricePerPackage": "2.00",
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                               },
                               "billingFrequency": "MONTHLY",
@@ -43166,7 +43702,9 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "upperBound": "400",
@@ -43179,7 +43717,9 @@
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -43222,6 +43762,34 @@
                                   "isPricePercentage": false
                                 }
                               ],
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          },
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "PACKAGE",
+                              "packageSize": "50",
+                              "pricePerPackage": "2.00",
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                             },
                             "billingFrequency": "MONTHLY",
@@ -43457,7 +44025,9 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "upperBound": "400",
@@ -43470,7 +44040,9 @@
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -43513,6 +44085,34 @@
                                     "isPricePercentage": false
                                   }
                                 ],
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            },
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "PACKAGE",
+                                "packageSize": "50",
+                                "pricePerPackage": "2.00",
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                               },
                               "billingFrequency": "MONTHLY",
@@ -43752,7 +44352,9 @@
                                 "upperBound": "200",
                                 "price": "1.00",
                                 "fee": "50.00",
-                                "isPricePercentage": false
+                                "isPricePercentage": true,
+                                "maxPrice": "10",
+                                "minPrice": "5"
                               },
                               {
                                 "upperBound": "400",
@@ -43765,7 +44367,9 @@
                               {
                                 "price": "0.50",
                                 "fee": "0.00",
-                                "isPricePercentage": false
+                                "isPricePercentage": true,
+                                "maxPrice": "10",
+                                "minPrice": "5"
                               }
                             ],
                             "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -43806,6 +44410,32 @@
                                 "isPricePercentage": false
                               }
                             ],
+                            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                          },
+                          "billingFrequency": "MONTHLY",
+                          "billingType": "IN_ARREARS",
+                          "integrationIds": [
+                            {
+                              "service": "Xero",
+                              "id": "123"
+                            }
+                          ],
+                          "customMetricParameters": [
+                            {
+                              "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                              "value": "10"
+                            }
+                          ],
+                          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                        },
+                        {
+                          "temporaryId": "5100e884-e007-4183-8355-4771865cb4d7",
+                          "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                          "name": "Sample product",
+                          "structure": {
+                            "pricingType": "PACKAGE",
+                            "packageSize": "50",
+                            "pricePerPackage": "2.00",
                             "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                           },
                           "billingFrequency": "MONTHLY",
@@ -43993,7 +44623,9 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "upperBound": "400",
@@ -44006,7 +44638,9 @@
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -44047,6 +44681,32 @@
                                   "isPricePercentage": false
                                 }
                               ],
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          },
+                          {
+                            "temporaryId": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "PACKAGE",
+                              "packageSize": "50",
+                              "pricePerPackage": "2.00",
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                             },
                             "billingFrequency": "MONTHLY",
@@ -44288,7 +44948,9 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "upperBound": "400",
@@ -44301,7 +44963,9 @@
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -44344,6 +45008,34 @@
                                   "isPricePercentage": false
                                 }
                               ],
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          },
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "PACKAGE",
+                              "packageSize": "50",
+                              "pricePerPackage": "2.00",
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                             },
                             "billingFrequency": "MONTHLY",
@@ -44579,7 +45271,9 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "upperBound": "400",
@@ -44592,7 +45286,9 @@
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -44635,6 +45331,34 @@
                                     "isPricePercentage": false
                                   }
                                 ],
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            },
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "PACKAGE",
+                                "packageSize": "50",
+                                "pricePerPackage": "2.00",
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                               },
                               "billingFrequency": "MONTHLY",
@@ -44926,7 +45650,9 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "upperBound": "400",
@@ -44939,7 +45665,9 @@
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -44982,6 +45710,34 @@
                                   "isPricePercentage": false
                                 }
                               ],
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          },
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "PACKAGE",
+                              "packageSize": "50",
+                              "pricePerPackage": "2.00",
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                             },
                             "billingFrequency": "MONTHLY",
@@ -45218,7 +45974,9 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "upperBound": "400",
@@ -45231,7 +45989,9 @@
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -45274,6 +46034,34 @@
                                     "isPricePercentage": false
                                   }
                                 ],
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            },
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "PACKAGE",
+                                "packageSize": "50",
+                                "pricePerPackage": "2.00",
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                               },
                               "billingFrequency": "MONTHLY",
@@ -45564,7 +46352,9 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "upperBound": "400",
@@ -45577,7 +46367,9 @@
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -45620,6 +46412,34 @@
                                   "isPricePercentage": false
                                 }
                               ],
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          },
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "PACKAGE",
+                              "packageSize": "50",
+                              "pricePerPackage": "2.00",
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                             },
                             "billingFrequency": "MONTHLY",
@@ -45855,7 +46675,9 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "upperBound": "400",
@@ -45868,7 +46690,9 @@
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -45911,6 +46735,34 @@
                                     "isPricePercentage": false
                                   }
                                 ],
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            },
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "PACKAGE",
+                                "packageSize": "50",
+                                "pricePerPackage": "2.00",
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                               },
                               "billingFrequency": "MONTHLY",
@@ -46224,7 +47076,9 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "upperBound": "400",
@@ -46237,7 +47091,9 @@
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -46280,6 +47136,34 @@
                                   "isPricePercentage": false
                                 }
                               ],
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          },
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "PACKAGE",
+                              "packageSize": "50",
+                              "pricePerPackage": "2.00",
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                             },
                             "billingFrequency": "MONTHLY",
@@ -46514,7 +47398,9 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "upperBound": "400",
@@ -46527,7 +47413,9 @@
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -46570,6 +47458,34 @@
                                     "isPricePercentage": false
                                   }
                                 ],
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            },
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "PACKAGE",
+                                "packageSize": "50",
+                                "pricePerPackage": "2.00",
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                               },
                               "billingFrequency": "MONTHLY",
@@ -46881,7 +47797,9 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "upperBound": "400",
@@ -46894,7 +47812,9 @@
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -46937,6 +47857,34 @@
                                   "isPricePercentage": false
                                 }
                               ],
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          },
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "PACKAGE",
+                              "packageSize": "50",
+                              "pricePerPackage": "2.00",
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                             },
                             "billingFrequency": "MONTHLY",
@@ -47170,7 +48118,9 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "upperBound": "400",
@@ -47183,7 +48133,9 @@
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -47226,6 +48178,34 @@
                                     "isPricePercentage": false
                                   }
                                 ],
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            },
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "PACKAGE",
+                                "packageSize": "50",
+                                "pricePerPackage": "2.00",
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                               },
                               "billingFrequency": "MONTHLY",
@@ -47515,7 +48495,9 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "upperBound": "400",
@@ -47528,7 +48510,9 @@
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -47571,6 +48555,34 @@
                                   "isPricePercentage": false
                                 }
                               ],
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          },
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "PACKAGE",
+                              "packageSize": "50",
+                              "pricePerPackage": "2.00",
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                             },
                             "billingFrequency": "MONTHLY",
@@ -47805,7 +48817,9 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "upperBound": "400",
@@ -47818,7 +48832,9 @@
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -47861,6 +48877,34 @@
                                     "isPricePercentage": false
                                   }
                                 ],
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            },
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "PACKAGE",
+                                "packageSize": "50",
+                                "pricePerPackage": "2.00",
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                               },
                               "billingFrequency": "MONTHLY",
@@ -48149,7 +49193,9 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "upperBound": "400",
@@ -48162,7 +49208,9 @@
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -48205,6 +49253,34 @@
                                   "isPricePercentage": false
                                 }
                               ],
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          },
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "PACKAGE",
+                              "packageSize": "50",
+                              "pricePerPackage": "2.00",
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                             },
                             "billingFrequency": "MONTHLY",
@@ -48438,7 +49514,9 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "upperBound": "400",
@@ -48451,7 +49529,9 @@
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -48494,6 +49574,34 @@
                                     "isPricePercentage": false
                                   }
                                 ],
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            },
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "PACKAGE",
+                                "packageSize": "50",
+                                "pricePerPackage": "2.00",
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                               },
                               "billingFrequency": "MONTHLY",
@@ -48782,7 +49890,9 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "upperBound": "400",
@@ -48795,7 +49905,9 @@
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -48838,6 +49950,34 @@
                                   "isPricePercentage": false
                                 }
                               ],
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          },
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "PACKAGE",
+                              "packageSize": "50",
+                              "pricePerPackage": "2.00",
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                             },
                             "billingFrequency": "MONTHLY",
@@ -49071,7 +50211,9 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "upperBound": "400",
@@ -49084,7 +50226,9 @@
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -49127,6 +50271,34 @@
                                     "isPricePercentage": false
                                   }
                                 ],
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            },
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "PACKAGE",
+                                "packageSize": "50",
+                                "pricePerPackage": "2.00",
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                               },
                               "billingFrequency": "MONTHLY",
@@ -49416,7 +50588,9 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "upperBound": "400",
@@ -49429,7 +50603,9 @@
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -49472,6 +50648,34 @@
                                   "isPricePercentage": false
                                 }
                               ],
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          },
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "PACKAGE",
+                              "packageSize": "50",
+                              "pricePerPackage": "2.00",
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                             },
                             "billingFrequency": "MONTHLY",
@@ -49706,7 +50910,9 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "upperBound": "400",
@@ -49719,7 +50925,9 @@
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -49762,6 +50970,34 @@
                                     "isPricePercentage": false
                                   }
                                 ],
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            },
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "PACKAGE",
+                                "packageSize": "50",
+                                "pricePerPackage": "2.00",
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                               },
                               "billingFrequency": "MONTHLY",
@@ -50050,7 +51286,9 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "upperBound": "400",
@@ -50063,7 +51301,9 @@
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -50106,6 +51346,34 @@
                                   "isPricePercentage": false
                                 }
                               ],
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          },
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "PACKAGE",
+                              "packageSize": "50",
+                              "pricePerPackage": "2.00",
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                             },
                             "billingFrequency": "MONTHLY",
@@ -50339,7 +51607,9 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "upperBound": "400",
@@ -50352,7 +51622,9 @@
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -50395,6 +51667,34 @@
                                     "isPricePercentage": false
                                   }
                                 ],
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            },
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "PACKAGE",
+                                "packageSize": "50",
+                                "pricePerPackage": "2.00",
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                               },
                               "billingFrequency": "MONTHLY",
@@ -50685,7 +51985,9 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "upperBound": "400",
@@ -50698,7 +52000,9 @@
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -50741,6 +52045,34 @@
                                   "isPricePercentage": false
                                 }
                               ],
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          },
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "PACKAGE",
+                              "packageSize": "50",
+                              "pricePerPackage": "2.00",
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                             },
                             "billingFrequency": "MONTHLY",
@@ -50977,7 +52309,9 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "upperBound": "400",
@@ -50990,7 +52324,9 @@
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -51033,6 +52369,34 @@
                                     "isPricePercentage": false
                                   }
                                 ],
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            },
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "PACKAGE",
+                                "packageSize": "50",
+                                "pricePerPackage": "2.00",
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                               },
                               "billingFrequency": "MONTHLY",
@@ -51323,7 +52687,9 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "upperBound": "400",
@@ -51336,7 +52702,9 @@
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -51379,6 +52747,34 @@
                                   "isPricePercentage": false
                                 }
                               ],
+                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                            },
+                            "billingFrequency": "MONTHLY",
+                            "billingType": "IN_ARREARS",
+                            "createdAt": "2021-08-25T12:00:00Z",
+                            "updatedAt": "2021-08-25T12:00:00Z",
+                            "integrationIds": [
+                              {
+                                "service": "Xero",
+                                "id": "123"
+                              }
+                            ],
+                            "customMetricParameters": [
+                              {
+                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                "value": "10"
+                              }
+                            ],
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          },
+                          {
+                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "name": "Sample product",
+                            "structure": {
+                              "pricingType": "PACKAGE",
+                              "packageSize": "50",
+                              "pricePerPackage": "2.00",
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                             },
                             "billingFrequency": "MONTHLY",
@@ -51614,7 +53010,9 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "upperBound": "400",
@@ -51627,7 +53025,9 @@
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -51670,6 +53070,34 @@
                                     "isPricePercentage": false
                                   }
                                 ],
+                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                              },
+                              "billingFrequency": "MONTHLY",
+                              "billingType": "IN_ARREARS",
+                              "createdAt": "2021-08-25T12:00:00Z",
+                              "updatedAt": "2021-08-25T12:00:00Z",
+                              "integrationIds": [
+                                {
+                                  "service": "Xero",
+                                  "id": "123"
+                                }
+                              ],
+                              "customMetricParameters": [
+                                {
+                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                                  "value": "10"
+                                }
+                              ],
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            },
+                            {
+                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "name": "Sample product",
+                              "structure": {
+                                "pricingType": "PACKAGE",
+                                "packageSize": "50",
+                                "pricePerPackage": "2.00",
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                               },
                               "billingFrequency": "MONTHLY",
@@ -54699,7 +56127,9 @@
                         "upperBound": "200",
                         "price": "1.00",
                         "fee": "50.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       },
                       {
                         "upperBound": "400",
@@ -54712,7 +56142,9 @@
                       {
                         "price": "0.50",
                         "fee": "0.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -54746,6 +56178,25 @@
                         "isPricePercentage": false
                       }
                     ],
+                    "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                  },
+                  "billingFrequency": "MONTHLY",
+                  "billingType": "IN_ARREARS",
+                  "customMetricParameters": [
+                    {
+                      "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                      "value": "10"
+                    }
+                  ]
+                },
+                {
+                  "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                  "productId": "d0dce0a7-03d2-4889-80f3-9afeb0cb3c33",
+                  "name": "Sample product",
+                  "structure": {
+                    "pricingType": "PACKAGE",
+                    "packageSize": "50",
+                    "pricePerPackage": "2.00",
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                   },
                   "billingFrequency": "MONTHLY",
@@ -54974,7 +56425,9 @@
                           "upperBound": "200",
                           "price": "1.00",
                           "fee": "50.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         },
                         {
                           "upperBound": "400",
@@ -54987,7 +56440,9 @@
                         {
                           "price": "0.50",
                           "fee": "0.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -55021,6 +56476,25 @@
                           "isPricePercentage": false
                         }
                       ],
+                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                    },
+                    "billingFrequency": "MONTHLY",
+                    "billingType": "IN_ARREARS",
+                    "customMetricParameters": [
+                      {
+                        "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                        "value": "10"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                    "productId": "d0dce0a7-03d2-4889-80f3-9afeb0cb3c33",
+                    "name": "Sample product",
+                    "structure": {
+                      "pricingType": "PACKAGE",
+                      "packageSize": "50",
+                      "pricePerPackage": "2.00",
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                     },
                     "billingFrequency": "MONTHLY",
@@ -55208,7 +56682,9 @@
                     "upperBound": "200",
                     "price": "1.00",
                     "fee": "50.00",
-                    "isPricePercentage": false
+                    "isPricePercentage": true,
+                    "maxPrice": "10",
+                    "minPrice": "5"
                   },
                   {
                     "upperBound": "400",
@@ -55221,7 +56697,9 @@
                   {
                     "price": "0.50",
                     "fee": "0.00",
-                    "isPricePercentage": false
+                    "isPricePercentage": true,
+                    "maxPrice": "10",
+                    "minPrice": "5"
                   }
                 ],
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -55255,6 +56733,25 @@
                     "isPricePercentage": false
                   }
                 ],
+                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+              },
+              "billingFrequency": "MONTHLY",
+              "billingType": "IN_ARREARS",
+              "customMetricParameters": [
+                {
+                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                  "value": "10"
+                }
+              ]
+            },
+            {
+              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+              "productId": "d0dce0a7-03d2-4889-80f3-9afeb0cb3c33",
+              "name": "Sample product",
+              "structure": {
+                "pricingType": "PACKAGE",
+                "packageSize": "50",
+                "pricePerPackage": "2.00",
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
               },
               "billingFrequency": "MONTHLY",
@@ -55404,7 +56901,9 @@
                       "upperBound": "200",
                       "price": "1.00",
                       "fee": "50.00",
-                      "isPricePercentage": false
+                      "isPricePercentage": true,
+                      "maxPrice": "10",
+                      "minPrice": "5"
                     },
                     {
                       "upperBound": "400",
@@ -55417,7 +56916,9 @@
                     {
                       "price": "0.50",
                       "fee": "0.00",
-                      "isPricePercentage": false
+                      "isPricePercentage": true,
+                      "maxPrice": "10",
+                      "minPrice": "5"
                     }
                   ],
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -55451,6 +56952,25 @@
                       "isPricePercentage": false
                     }
                   ],
+                  "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                },
+                "billingFrequency": "MONTHLY",
+                "billingType": "IN_ARREARS",
+                "customMetricParameters": [
+                  {
+                    "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                    "value": "10"
+                  }
+                ]
+              },
+              {
+                "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                "productId": "d0dce0a7-03d2-4889-80f3-9afeb0cb3c33",
+                "name": "Sample product",
+                "structure": {
+                  "pricingType": "PACKAGE",
+                  "packageSize": "50",
+                  "pricePerPackage": "2.00",
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                 },
                 "billingFrequency": "MONTHLY",
@@ -55608,6 +57128,9 @@
               },
               {
                 "$ref": "#/components/schemas/VOLUME"
+              },
+              {
+                "$ref": "#/components/schemas/PACKAGE"
               }
             ],
             "discriminator": {
@@ -55993,7 +57516,9 @@
                         "upperBound": "200",
                         "price": "1.00",
                         "fee": "50.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       },
                       {
                         "upperBound": "400",
@@ -56006,7 +57531,9 @@
                       {
                         "price": "0.50",
                         "fee": "0.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -56040,6 +57567,25 @@
                         "isPricePercentage": false
                       }
                     ],
+                    "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                  },
+                  "billingFrequency": "MONTHLY",
+                  "billingType": "IN_ARREARS",
+                  "customMetricParameters": [
+                    {
+                      "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                      "value": "10"
+                    }
+                  ]
+                },
+                {
+                  "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                  "productId": "d0dce0a7-03d2-4889-80f3-9afeb0cb3c33",
+                  "name": "Sample product",
+                  "structure": {
+                    "pricingType": "PACKAGE",
+                    "packageSize": "50",
+                    "pricePerPackage": "2.00",
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                   },
                   "billingFrequency": "MONTHLY",
@@ -56267,7 +57813,9 @@
                           "upperBound": "200",
                           "price": "1.00",
                           "fee": "50.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         },
                         {
                           "upperBound": "400",
@@ -56280,7 +57828,9 @@
                         {
                           "price": "0.50",
                           "fee": "0.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -56314,6 +57864,25 @@
                           "isPricePercentage": false
                         }
                       ],
+                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                    },
+                    "billingFrequency": "MONTHLY",
+                    "billingType": "IN_ARREARS",
+                    "customMetricParameters": [
+                      {
+                        "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                        "value": "10"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                    "productId": "d0dce0a7-03d2-4889-80f3-9afeb0cb3c33",
+                    "name": "Sample product",
+                    "structure": {
+                      "pricingType": "PACKAGE",
+                      "packageSize": "50",
+                      "pricePerPackage": "2.00",
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                     },
                     "billingFrequency": "MONTHLY",
@@ -56481,7 +58050,9 @@
                     "upperBound": "200",
                     "price": "1.00",
                     "fee": "50.00",
-                    "isPricePercentage": false
+                    "isPricePercentage": true,
+                    "maxPrice": "10",
+                    "minPrice": "5"
                   },
                   {
                     "upperBound": "400",
@@ -56494,7 +58065,9 @@
                   {
                     "price": "0.50",
                     "fee": "0.00",
-                    "isPricePercentage": false
+                    "isPricePercentage": true,
+                    "maxPrice": "10",
+                    "minPrice": "5"
                   }
                 ],
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -56528,6 +58101,25 @@
                     "isPricePercentage": false
                   }
                 ],
+                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+              },
+              "billingFrequency": "MONTHLY",
+              "billingType": "IN_ARREARS",
+              "customMetricParameters": [
+                {
+                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                  "value": "10"
+                }
+              ]
+            },
+            {
+              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+              "productId": "d0dce0a7-03d2-4889-80f3-9afeb0cb3c33",
+              "name": "Sample product",
+              "structure": {
+                "pricingType": "PACKAGE",
+                "packageSize": "50",
+                "pricePerPackage": "2.00",
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
               },
               "billingFrequency": "MONTHLY",
@@ -56676,7 +58268,9 @@
                       "upperBound": "200",
                       "price": "1.00",
                       "fee": "50.00",
-                      "isPricePercentage": false
+                      "isPricePercentage": true,
+                      "maxPrice": "10",
+                      "minPrice": "5"
                     },
                     {
                       "upperBound": "400",
@@ -56689,7 +58283,9 @@
                     {
                       "price": "0.50",
                       "fee": "0.00",
-                      "isPricePercentage": false
+                      "isPricePercentage": true,
+                      "maxPrice": "10",
+                      "minPrice": "5"
                     }
                   ],
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -56723,6 +58319,25 @@
                       "isPricePercentage": false
                     }
                   ],
+                  "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                },
+                "billingFrequency": "MONTHLY",
+                "billingType": "IN_ARREARS",
+                "customMetricParameters": [
+                  {
+                    "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                    "value": "10"
+                  }
+                ]
+              },
+              {
+                "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                "productId": "d0dce0a7-03d2-4889-80f3-9afeb0cb3c33",
+                "name": "Sample product",
+                "structure": {
+                  "pricingType": "PACKAGE",
+                  "packageSize": "50",
+                  "pricePerPackage": "2.00",
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                 },
                 "billingFrequency": "MONTHLY",
@@ -56842,6 +58457,9 @@
               },
               {
                 "$ref": "#/components/schemas/VOLUME"
+              },
+              {
+                "$ref": "#/components/schemas/PACKAGE"
               }
             ],
             "discriminator": {
@@ -57101,7 +58719,9 @@
                 "upperBound": "200",
                 "price": "1.00",
                 "fee": "50.00",
-                "isPricePercentage": false
+                "isPricePercentage": true,
+                "maxPrice": "10",
+                "minPrice": "5"
               },
               {
                 "upperBound": "400",
@@ -57114,7 +58734,9 @@
               {
                 "price": "0.50",
                 "fee": "0.00",
-                "isPricePercentage": false
+                "isPricePercentage": true,
+                "maxPrice": "10",
+                "minPrice": "5"
               }
             ],
             "description": "A list of contiguous pricing tiers",
@@ -57143,7 +58765,9 @@
               "upperBound": "200",
               "price": "1.00",
               "fee": "50.00",
-              "isPricePercentage": false
+              "isPricePercentage": true,
+              "maxPrice": "10",
+              "minPrice": "5"
             },
             {
               "upperBound": "400",
@@ -57156,7 +58780,9 @@
             {
               "price": "0.50",
               "fee": "0.00",
-              "isPricePercentage": false
+              "isPricePercentage": true,
+              "maxPrice": "10",
+              "minPrice": "5"
             }
           ],
           "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -57235,6 +58861,45 @@
         "required": [
           "pricingType",
           "tiers",
+          "usageMetricId"
+        ]
+      },
+      "PACKAGE": {
+        "properties": {
+          "packageSize": {
+            "example": "50",
+            "description": "The amount of usage allowed for the price in this structure",
+            "type": "string"
+          },
+          "pricePerPackage": {
+            "example": "2.00",
+            "description": "The price charged for each package",
+            "type": "string"
+          },
+          "usageMetricId": {
+            "example": "04c62961-04ba-48e6-b985-758bb7d3e712",
+            "description": "The usage metric associated to this tier",
+            "type": "string"
+          },
+          "pricingType": {
+            "enum": [
+              "PACKAGE"
+            ],
+            "example": "PACKAGE",
+            "type": "string"
+          }
+        },
+        "example": {
+          "packageSize": "50",
+          "pricePerPackage": "2.00",
+          "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+          "pricingType": "PACKAGE"
+        },
+        "type": "object",
+        "required": [
+          "packageSize",
+          "pricePerPackage",
+          "pricingType",
           "usageMetricId"
         ]
       },
@@ -82045,45 +83710,6 @@
           "usageMetricId"
         ]
       },
-      "PACKAGE": {
-        "properties": {
-          "packageSize": {
-            "example": "50",
-            "description": "The amount of usage allowed for the price in this structure",
-            "type": "string"
-          },
-          "pricePerPackage": {
-            "example": "2.00",
-            "description": "The price charged for each package",
-            "type": "string"
-          },
-          "usageMetricId": {
-            "example": "04c62961-04ba-48e6-b985-758bb7d3e712",
-            "description": "The usage metric associated to this tier",
-            "type": "string"
-          },
-          "pricingType": {
-            "enum": [
-              "PACKAGE"
-            ],
-            "example": "PACKAGE",
-            "type": "string"
-          }
-        },
-        "example": {
-          "packageSize": "50",
-          "pricePerPackage": "2.00",
-          "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-          "pricingType": "PACKAGE"
-        },
-        "type": "object",
-        "required": [
-          "packageSize",
-          "pricePerPackage",
-          "pricingType",
-          "usageMetricId"
-        ]
-      },
       "VOLUME1": {
         "properties": {
           "tiers": {
@@ -86791,7 +88417,9 @@
                         "upperBound": "200",
                         "price": "1.00",
                         "fee": "50.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       },
                       {
                         "upperBound": "400",
@@ -86804,7 +88432,9 @@
                       {
                         "price": "0.50",
                         "fee": "0.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -86847,6 +88477,34 @@
                         "isPricePercentage": false
                       }
                     ],
+                    "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                  },
+                  "billingFrequency": "MONTHLY",
+                  "billingType": "IN_ARREARS",
+                  "createdAt": "2021-08-25T12:00:00Z",
+                  "updatedAt": "2021-08-25T12:00:00Z",
+                  "integrationIds": [
+                    {
+                      "service": "Xero",
+                      "id": "123"
+                    }
+                  ],
+                  "customMetricParameters": [
+                    {
+                      "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                      "value": "10"
+                    }
+                  ],
+                  "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                },
+                {
+                  "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                  "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                  "name": "Sample product",
+                  "structure": {
+                    "pricingType": "PACKAGE",
+                    "packageSize": "50",
+                    "pricePerPackage": "2.00",
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                   },
                   "billingFrequency": "MONTHLY",
@@ -87143,7 +88801,9 @@
                           "upperBound": "200",
                           "price": "1.00",
                           "fee": "50.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         },
                         {
                           "upperBound": "400",
@@ -87156,7 +88816,9 @@
                         {
                           "price": "0.50",
                           "fee": "0.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -87199,6 +88861,34 @@
                           "isPricePercentage": false
                         }
                       ],
+                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                    },
+                    "billingFrequency": "MONTHLY",
+                    "billingType": "IN_ARREARS",
+                    "createdAt": "2021-08-25T12:00:00Z",
+                    "updatedAt": "2021-08-25T12:00:00Z",
+                    "integrationIds": [
+                      {
+                        "service": "Xero",
+                        "id": "123"
+                      }
+                    ],
+                    "customMetricParameters": [
+                      {
+                        "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                        "value": "10"
+                      }
+                    ],
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                  },
+                  {
+                    "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                    "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                    "name": "Sample product",
+                    "structure": {
+                      "pricingType": "PACKAGE",
+                      "packageSize": "50",
+                      "pricePerPackage": "2.00",
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                     },
                     "billingFrequency": "MONTHLY",
@@ -87802,7 +89492,9 @@
                     "upperBound": "200",
                     "price": "1.00",
                     "fee": "50.00",
-                    "isPricePercentage": false
+                    "isPricePercentage": true,
+                    "maxPrice": "10",
+                    "minPrice": "5"
                   },
                   {
                     "upperBound": "400",
@@ -87815,7 +89507,9 @@
                   {
                     "price": "0.50",
                     "fee": "0.00",
-                    "isPricePercentage": false
+                    "isPricePercentage": true,
+                    "maxPrice": "10",
+                    "minPrice": "5"
                   }
                 ],
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -87858,6 +89552,34 @@
                     "isPricePercentage": false
                   }
                 ],
+                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+              },
+              "billingFrequency": "MONTHLY",
+              "billingType": "IN_ARREARS",
+              "createdAt": "2021-08-25T12:00:00Z",
+              "updatedAt": "2021-08-25T12:00:00Z",
+              "integrationIds": [
+                {
+                  "service": "Xero",
+                  "id": "123"
+                }
+              ],
+              "customMetricParameters": [
+                {
+                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                  "value": "10"
+                }
+              ],
+              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+            },
+            {
+              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+              "name": "Sample product",
+              "structure": {
+                "pricingType": "PACKAGE",
+                "packageSize": "50",
+                "pricePerPackage": "2.00",
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
               },
               "billingFrequency": "MONTHLY",
@@ -88057,7 +89779,9 @@
                       "upperBound": "200",
                       "price": "1.00",
                       "fee": "50.00",
-                      "isPricePercentage": false
+                      "isPricePercentage": true,
+                      "maxPrice": "10",
+                      "minPrice": "5"
                     },
                     {
                       "upperBound": "400",
@@ -88070,7 +89794,9 @@
                     {
                       "price": "0.50",
                       "fee": "0.00",
-                      "isPricePercentage": false
+                      "isPricePercentage": true,
+                      "maxPrice": "10",
+                      "minPrice": "5"
                     }
                   ],
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -88113,6 +89839,34 @@
                       "isPricePercentage": false
                     }
                   ],
+                  "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                },
+                "billingFrequency": "MONTHLY",
+                "billingType": "IN_ARREARS",
+                "createdAt": "2021-08-25T12:00:00Z",
+                "updatedAt": "2021-08-25T12:00:00Z",
+                "integrationIds": [
+                  {
+                    "service": "Xero",
+                    "id": "123"
+                  }
+                ],
+                "customMetricParameters": [
+                  {
+                    "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                    "value": "10"
+                  }
+                ],
+                "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+              },
+              {
+                "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                "name": "Sample product",
+                "structure": {
+                  "pricingType": "PACKAGE",
+                  "packageSize": "50",
+                  "pricePerPackage": "2.00",
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                 },
                 "billingFrequency": "MONTHLY",
@@ -88253,6 +90007,9 @@
               },
               {
                 "$ref": "#/components/schemas/VOLUME"
+              },
+              {
+                "$ref": "#/components/schemas/PACKAGE"
               }
             ],
             "discriminator": {
@@ -88623,7 +90380,9 @@
                         "upperBound": "200",
                         "price": "1.00",
                         "fee": "50.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       },
                       {
                         "upperBound": "400",
@@ -88636,7 +90395,9 @@
                       {
                         "price": "0.50",
                         "fee": "0.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -88679,6 +90440,34 @@
                         "isPricePercentage": false
                       }
                     ],
+                    "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                  },
+                  "billingFrequency": "MONTHLY",
+                  "billingType": "IN_ARREARS",
+                  "createdAt": "2021-08-25T12:00:00Z",
+                  "updatedAt": "2021-08-25T12:00:00Z",
+                  "integrationIds": [
+                    {
+                      "service": "Xero",
+                      "id": "123"
+                    }
+                  ],
+                  "customMetricParameters": [
+                    {
+                      "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                      "value": "10"
+                    }
+                  ],
+                  "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                },
+                {
+                  "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                  "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                  "name": "Sample product",
+                  "structure": {
+                    "pricingType": "PACKAGE",
+                    "packageSize": "50",
+                    "pricePerPackage": "2.00",
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                   },
                   "billingFrequency": "MONTHLY",
@@ -88974,7 +90763,9 @@
                           "upperBound": "200",
                           "price": "1.00",
                           "fee": "50.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         },
                         {
                           "upperBound": "400",
@@ -88987,7 +90778,9 @@
                         {
                           "price": "0.50",
                           "fee": "0.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -89030,6 +90823,34 @@
                           "isPricePercentage": false
                         }
                       ],
+                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                    },
+                    "billingFrequency": "MONTHLY",
+                    "billingType": "IN_ARREARS",
+                    "createdAt": "2021-08-25T12:00:00Z",
+                    "updatedAt": "2021-08-25T12:00:00Z",
+                    "integrationIds": [
+                      {
+                        "service": "Xero",
+                        "id": "123"
+                      }
+                    ],
+                    "customMetricParameters": [
+                      {
+                        "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                        "value": "10"
+                      }
+                    ],
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                  },
+                  {
+                    "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                    "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                    "name": "Sample product",
+                    "structure": {
+                      "pricingType": "PACKAGE",
+                      "packageSize": "50",
+                      "pricePerPackage": "2.00",
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                     },
                     "billingFrequency": "MONTHLY",
@@ -89241,7 +91062,9 @@
                     "upperBound": "200",
                     "price": "1.00",
                     "fee": "50.00",
-                    "isPricePercentage": false
+                    "isPricePercentage": true,
+                    "maxPrice": "10",
+                    "minPrice": "5"
                   },
                   {
                     "upperBound": "400",
@@ -89254,7 +91077,9 @@
                   {
                     "price": "0.50",
                     "fee": "0.00",
-                    "isPricePercentage": false
+                    "isPricePercentage": true,
+                    "maxPrice": "10",
+                    "minPrice": "5"
                   }
                 ],
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -89297,6 +91122,34 @@
                     "isPricePercentage": false
                   }
                 ],
+                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+              },
+              "billingFrequency": "MONTHLY",
+              "billingType": "IN_ARREARS",
+              "createdAt": "2021-08-25T12:00:00Z",
+              "updatedAt": "2021-08-25T12:00:00Z",
+              "integrationIds": [
+                {
+                  "service": "Xero",
+                  "id": "123"
+                }
+              ],
+              "customMetricParameters": [
+                {
+                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                  "value": "10"
+                }
+              ],
+              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+            },
+            {
+              "id": "5100e884-e007-4183-8355-4771865cb4d7",
+              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+              "name": "Sample product",
+              "structure": {
+                "pricingType": "PACKAGE",
+                "packageSize": "50",
+                "pricePerPackage": "2.00",
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
               },
               "billingFrequency": "MONTHLY",
@@ -89495,7 +91348,9 @@
                       "upperBound": "200",
                       "price": "1.00",
                       "fee": "50.00",
-                      "isPricePercentage": false
+                      "isPricePercentage": true,
+                      "maxPrice": "10",
+                      "minPrice": "5"
                     },
                     {
                       "upperBound": "400",
@@ -89508,7 +91363,9 @@
                     {
                       "price": "0.50",
                       "fee": "0.00",
-                      "isPricePercentage": false
+                      "isPricePercentage": true,
+                      "maxPrice": "10",
+                      "minPrice": "5"
                     }
                   ],
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -89551,6 +91408,34 @@
                       "isPricePercentage": false
                     }
                   ],
+                  "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                },
+                "billingFrequency": "MONTHLY",
+                "billingType": "IN_ARREARS",
+                "createdAt": "2021-08-25T12:00:00Z",
+                "updatedAt": "2021-08-25T12:00:00Z",
+                "integrationIds": [
+                  {
+                    "service": "Xero",
+                    "id": "123"
+                  }
+                ],
+                "customMetricParameters": [
+                  {
+                    "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                    "value": "10"
+                  }
+                ],
+                "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+              },
+              {
+                "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                "name": "Sample product",
+                "structure": {
+                  "pricingType": "PACKAGE",
+                  "packageSize": "50",
+                  "pricePerPackage": "2.00",
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                 },
                 "billingFrequency": "MONTHLY",
@@ -89691,6 +91576,9 @@
               },
               {
                 "$ref": "#/components/schemas/VOLUME"
+              },
+              {
+                "$ref": "#/components/schemas/PACKAGE"
               }
             ],
             "discriminator": {
@@ -90131,7 +92019,9 @@
                         "upperBound": "200",
                         "price": "1.00",
                         "fee": "50.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       },
                       {
                         "upperBound": "400",
@@ -90144,7 +92034,9 @@
                       {
                         "price": "0.50",
                         "fee": "0.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -90185,6 +92077,32 @@
                         "isPricePercentage": false
                       }
                     ],
+                    "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                  },
+                  "billingFrequency": "MONTHLY",
+                  "billingType": "IN_ARREARS",
+                  "integrationIds": [
+                    {
+                      "service": "Xero",
+                      "id": "123"
+                    }
+                  ],
+                  "customMetricParameters": [
+                    {
+                      "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                      "value": "10"
+                    }
+                  ],
+                  "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                },
+                {
+                  "temporaryId": "5100e884-e007-4183-8355-4771865cb4d7",
+                  "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                  "name": "Sample product",
+                  "structure": {
+                    "pricingType": "PACKAGE",
+                    "packageSize": "50",
+                    "pricePerPackage": "2.00",
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                   },
                   "billingFrequency": "MONTHLY",
@@ -90401,7 +92319,9 @@
                           "upperBound": "200",
                           "price": "1.00",
                           "fee": "50.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         },
                         {
                           "upperBound": "400",
@@ -90414,7 +92334,9 @@
                         {
                           "price": "0.50",
                           "fee": "0.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -90455,6 +92377,32 @@
                           "isPricePercentage": false
                         }
                       ],
+                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                    },
+                    "billingFrequency": "MONTHLY",
+                    "billingType": "IN_ARREARS",
+                    "integrationIds": [
+                      {
+                        "service": "Xero",
+                        "id": "123"
+                      }
+                    ],
+                    "customMetricParameters": [
+                      {
+                        "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                        "value": "10"
+                      }
+                    ],
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                  },
+                  {
+                    "temporaryId": "5100e884-e007-4183-8355-4771865cb4d7",
+                    "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                    "name": "Sample product",
+                    "structure": {
+                      "pricingType": "PACKAGE",
+                      "packageSize": "50",
+                      "pricePerPackage": "2.00",
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                     },
                     "billingFrequency": "MONTHLY",
@@ -90641,7 +92589,9 @@
                     "upperBound": "200",
                     "price": "1.00",
                     "fee": "50.00",
-                    "isPricePercentage": false
+                    "isPricePercentage": true,
+                    "maxPrice": "10",
+                    "minPrice": "5"
                   },
                   {
                     "upperBound": "400",
@@ -90654,7 +92604,9 @@
                   {
                     "price": "0.50",
                     "fee": "0.00",
-                    "isPricePercentage": false
+                    "isPricePercentage": true,
+                    "maxPrice": "10",
+                    "minPrice": "5"
                   }
                 ],
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -90695,6 +92647,32 @@
                     "isPricePercentage": false
                   }
                 ],
+                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+              },
+              "billingFrequency": "MONTHLY",
+              "billingType": "IN_ARREARS",
+              "integrationIds": [
+                {
+                  "service": "Xero",
+                  "id": "123"
+                }
+              ],
+              "customMetricParameters": [
+                {
+                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                  "value": "10"
+                }
+              ],
+              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+            },
+            {
+              "temporaryId": "5100e884-e007-4183-8355-4771865cb4d7",
+              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+              "name": "Sample product",
+              "structure": {
+                "pricingType": "PACKAGE",
+                "packageSize": "50",
+                "pricePerPackage": "2.00",
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
               },
               "billingFrequency": "MONTHLY",
@@ -90871,7 +92849,9 @@
                       "upperBound": "200",
                       "price": "1.00",
                       "fee": "50.00",
-                      "isPricePercentage": false
+                      "isPricePercentage": true,
+                      "maxPrice": "10",
+                      "minPrice": "5"
                     },
                     {
                       "upperBound": "400",
@@ -90884,7 +92864,9 @@
                     {
                       "price": "0.50",
                       "fee": "0.00",
-                      "isPricePercentage": false
+                      "isPricePercentage": true,
+                      "maxPrice": "10",
+                      "minPrice": "5"
                     }
                   ],
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -90925,6 +92907,32 @@
                       "isPricePercentage": false
                     }
                   ],
+                  "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                },
+                "billingFrequency": "MONTHLY",
+                "billingType": "IN_ARREARS",
+                "integrationIds": [
+                  {
+                    "service": "Xero",
+                    "id": "123"
+                  }
+                ],
+                "customMetricParameters": [
+                  {
+                    "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                    "value": "10"
+                  }
+                ],
+                "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+              },
+              {
+                "temporaryId": "5100e884-e007-4183-8355-4771865cb4d7",
+                "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                "name": "Sample product",
+                "structure": {
+                  "pricingType": "PACKAGE",
+                  "packageSize": "50",
+                  "pricePerPackage": "2.00",
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                 },
                 "billingFrequency": "MONTHLY",
@@ -91056,6 +93064,9 @@
               },
               {
                 "$ref": "#/components/schemas/VOLUME"
+              },
+              {
+                "$ref": "#/components/schemas/PACKAGE"
               }
             ],
             "discriminator": {
@@ -91316,7 +93327,9 @@
                         "upperBound": "200",
                         "price": "1.00",
                         "fee": "50.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       },
                       {
                         "upperBound": "400",
@@ -91329,7 +93342,9 @@
                       {
                         "price": "0.50",
                         "fee": "0.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -91370,6 +93385,32 @@
                         "isPricePercentage": false
                       }
                     ],
+                    "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                  },
+                  "billingFrequency": "MONTHLY",
+                  "billingType": "IN_ARREARS",
+                  "integrationIds": [
+                    {
+                      "service": "Xero",
+                      "id": "123"
+                    }
+                  ],
+                  "customMetricParameters": [
+                    {
+                      "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                      "value": "10"
+                    }
+                  ],
+                  "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                },
+                {
+                  "temporaryId": "5100e884-e007-4183-8355-4771865cb4d7",
+                  "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                  "name": "Sample product",
+                  "structure": {
+                    "pricingType": "PACKAGE",
+                    "packageSize": "50",
+                    "pricePerPackage": "2.00",
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                   },
                   "billingFrequency": "MONTHLY",
@@ -91585,7 +93626,9 @@
                           "upperBound": "200",
                           "price": "1.00",
                           "fee": "50.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         },
                         {
                           "upperBound": "400",
@@ -91598,7 +93641,9 @@
                         {
                           "price": "0.50",
                           "fee": "0.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -91639,6 +93684,32 @@
                           "isPricePercentage": false
                         }
                       ],
+                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                    },
+                    "billingFrequency": "MONTHLY",
+                    "billingType": "IN_ARREARS",
+                    "integrationIds": [
+                      {
+                        "service": "Xero",
+                        "id": "123"
+                      }
+                    ],
+                    "customMetricParameters": [
+                      {
+                        "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                        "value": "10"
+                      }
+                    ],
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                  },
+                  {
+                    "temporaryId": "5100e884-e007-4183-8355-4771865cb4d7",
+                    "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                    "name": "Sample product",
+                    "structure": {
+                      "pricingType": "PACKAGE",
+                      "packageSize": "50",
+                      "pricePerPackage": "2.00",
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                     },
                     "billingFrequency": "MONTHLY",
@@ -91824,7 +93895,9 @@
                     "upperBound": "200",
                     "price": "1.00",
                     "fee": "50.00",
-                    "isPricePercentage": false
+                    "isPricePercentage": true,
+                    "maxPrice": "10",
+                    "minPrice": "5"
                   },
                   {
                     "upperBound": "400",
@@ -91837,7 +93910,9 @@
                   {
                     "price": "0.50",
                     "fee": "0.00",
-                    "isPricePercentage": false
+                    "isPricePercentage": true,
+                    "maxPrice": "10",
+                    "minPrice": "5"
                   }
                 ],
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -91878,6 +93953,32 @@
                     "isPricePercentage": false
                   }
                 ],
+                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+              },
+              "billingFrequency": "MONTHLY",
+              "billingType": "IN_ARREARS",
+              "integrationIds": [
+                {
+                  "service": "Xero",
+                  "id": "123"
+                }
+              ],
+              "customMetricParameters": [
+                {
+                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                  "value": "10"
+                }
+              ],
+              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+            },
+            {
+              "temporaryId": "5100e884-e007-4183-8355-4771865cb4d7",
+              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+              "name": "Sample product",
+              "structure": {
+                "pricingType": "PACKAGE",
+                "packageSize": "50",
+                "pricePerPackage": "2.00",
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
               },
               "billingFrequency": "MONTHLY",
@@ -92053,7 +94154,9 @@
                       "upperBound": "200",
                       "price": "1.00",
                       "fee": "50.00",
-                      "isPricePercentage": false
+                      "isPricePercentage": true,
+                      "maxPrice": "10",
+                      "minPrice": "5"
                     },
                     {
                       "upperBound": "400",
@@ -92066,7 +94169,9 @@
                     {
                       "price": "0.50",
                       "fee": "0.00",
-                      "isPricePercentage": false
+                      "isPricePercentage": true,
+                      "maxPrice": "10",
+                      "minPrice": "5"
                     }
                   ],
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -92107,6 +94212,32 @@
                       "isPricePercentage": false
                     }
                   ],
+                  "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                },
+                "billingFrequency": "MONTHLY",
+                "billingType": "IN_ARREARS",
+                "integrationIds": [
+                  {
+                    "service": "Xero",
+                    "id": "123"
+                  }
+                ],
+                "customMetricParameters": [
+                  {
+                    "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                    "value": "10"
+                  }
+                ],
+                "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+              },
+              {
+                "temporaryId": "5100e884-e007-4183-8355-4771865cb4d7",
+                "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                "name": "Sample product",
+                "structure": {
+                  "pricingType": "PACKAGE",
+                  "packageSize": "50",
+                  "pricePerPackage": "2.00",
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                 },
                 "billingFrequency": "MONTHLY",
@@ -92238,6 +94369,9 @@
               },
               {
                 "$ref": "#/components/schemas/VOLUME"
+              },
+              {
+                "$ref": "#/components/schemas/PACKAGE"
               }
             ],
             "discriminator": {
@@ -92511,7 +94645,9 @@
                         "upperBound": "200",
                         "price": "1.00",
                         "fee": "50.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       },
                       {
                         "upperBound": "400",
@@ -92524,7 +94660,9 @@
                       {
                         "price": "0.50",
                         "fee": "0.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -92567,6 +94705,34 @@
                         "isPricePercentage": false
                       }
                     ],
+                    "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                  },
+                  "billingFrequency": "MONTHLY",
+                  "billingType": "IN_ARREARS",
+                  "createdAt": "2021-08-25T12:00:00Z",
+                  "updatedAt": "2021-08-25T12:00:00Z",
+                  "integrationIds": [
+                    {
+                      "service": "Xero",
+                      "id": "123"
+                    }
+                  ],
+                  "customMetricParameters": [
+                    {
+                      "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                      "value": "10"
+                    }
+                  ],
+                  "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                },
+                {
+                  "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                  "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                  "name": "Sample product",
+                  "structure": {
+                    "pricingType": "PACKAGE",
+                    "packageSize": "50",
+                    "pricePerPackage": "2.00",
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                   },
                   "billingFrequency": "MONTHLY",
@@ -92856,7 +95022,9 @@
                           "upperBound": "200",
                           "price": "1.00",
                           "fee": "50.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         },
                         {
                           "upperBound": "400",
@@ -92869,7 +95037,9 @@
                         {
                           "price": "0.50",
                           "fee": "0.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -92912,6 +95082,34 @@
                           "isPricePercentage": false
                         }
                       ],
+                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                    },
+                    "billingFrequency": "MONTHLY",
+                    "billingType": "IN_ARREARS",
+                    "createdAt": "2021-08-25T12:00:00Z",
+                    "updatedAt": "2021-08-25T12:00:00Z",
+                    "integrationIds": [
+                      {
+                        "service": "Xero",
+                        "id": "123"
+                      }
+                    ],
+                    "customMetricParameters": [
+                      {
+                        "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                        "value": "10"
+                      }
+                    ],
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                  },
+                  {
+                    "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                    "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                    "name": "Sample product",
+                    "structure": {
+                      "pricingType": "PACKAGE",
+                      "packageSize": "50",
+                      "pricePerPackage": "2.00",
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                     },
                     "billingFrequency": "MONTHLY",
@@ -93165,7 +95363,9 @@
                         "upperBound": "200",
                         "price": "1.00",
                         "fee": "50.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       },
                       {
                         "upperBound": "400",
@@ -93178,7 +95378,9 @@
                       {
                         "price": "0.50",
                         "fee": "0.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -93221,6 +95423,34 @@
                         "isPricePercentage": false
                       }
                     ],
+                    "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                  },
+                  "billingFrequency": "MONTHLY",
+                  "billingType": "IN_ARREARS",
+                  "createdAt": "2021-08-25T12:00:00Z",
+                  "updatedAt": "2021-08-25T12:00:00Z",
+                  "integrationIds": [
+                    {
+                      "service": "Xero",
+                      "id": "123"
+                    }
+                  ],
+                  "customMetricParameters": [
+                    {
+                      "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                      "value": "10"
+                    }
+                  ],
+                  "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                },
+                {
+                  "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                  "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                  "name": "Sample product",
+                  "structure": {
+                    "pricingType": "PACKAGE",
+                    "packageSize": "50",
+                    "pricePerPackage": "2.00",
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                   },
                   "billingFrequency": "MONTHLY",
@@ -93509,7 +95739,9 @@
                           "upperBound": "200",
                           "price": "1.00",
                           "fee": "50.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         },
                         {
                           "upperBound": "400",
@@ -93522,7 +95754,9 @@
                         {
                           "price": "0.50",
                           "fee": "0.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -93565,6 +95799,34 @@
                           "isPricePercentage": false
                         }
                       ],
+                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                    },
+                    "billingFrequency": "MONTHLY",
+                    "billingType": "IN_ARREARS",
+                    "createdAt": "2021-08-25T12:00:00Z",
+                    "updatedAt": "2021-08-25T12:00:00Z",
+                    "integrationIds": [
+                      {
+                        "service": "Xero",
+                        "id": "123"
+                      }
+                    ],
+                    "customMetricParameters": [
+                      {
+                        "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
+                        "value": "10"
+                      }
+                    ],
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                  },
+                  {
+                    "id": "5100e884-e007-4183-8355-4771865cb4d7",
+                    "productId": "e007e884-5100-4183-8355-4771865cb4dd",
+                    "name": "Sample product",
+                    "structure": {
+                      "pricingType": "PACKAGE",
+                      "packageSize": "50",
+                      "pricePerPackage": "2.00",
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
                     },
                     "billingFrequency": "MONTHLY",
