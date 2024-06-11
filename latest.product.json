@@ -18484,9 +18484,27 @@
             }
           },
           {
+            "name": "currency",
+            "in": "query",
+            "description": "Filter by currency.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
             "name": "productId",
             "in": "query",
             "description": "Filter list prices by a given product ID.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "billingFrequency",
+            "in": "query",
+            "description": "Filter by billing frequency.",
             "required": false,
             "schema": {
               "type": "string"
@@ -18542,6 +18560,7 @@
                         "id": "b4d7e884-e007-4183-8355-4771865c5100",
                         "productId": "f409d651-c475-4142-aafd-a5d2bd74d4f9",
                         "name": "Sample product",
+                        "currency": "GBP",
                         "structure": {
                           "pricingType": "LINEAR",
                           "pricePerUnit": "0.25",
@@ -18577,6 +18596,7 @@
                           "id": "b4d7e884-e007-4183-8355-4771865c5100",
                           "productId": "f409d651-c475-4142-aafd-a5d2bd74d4f9",
                           "name": "Sample product",
+                          "currency": "GBP",
                           "structure": {
                             "pricingType": "LINEAR",
                             "pricePerUnit": "0.25",
@@ -18645,6 +18665,7 @@
                 "example": {
                   "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
                   "name": "Sample product",
+                  "currency": "GBP",
                   "structure": {
                     "pricingType": "LINEAR",
                     "pricePerUnit": "0.25",
@@ -18673,6 +18694,7 @@
                   "value": {
                     "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
                     "name": "Sample product",
+                    "currency": "GBP",
                     "structure": {
                       "pricingType": "LINEAR",
                       "pricePerUnit": "0.25",
@@ -18711,6 +18733,7 @@
                     "id": "b4d7e884-e007-4183-8355-4771865c5100",
                     "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
                     "name": "Sample product",
+                    "currency": "GBP",
                     "structure": {
                       "pricingType": "LINEAR",
                       "pricePerUnit": "0.25",
@@ -18743,6 +18766,7 @@
                       "id": "b4d7e884-e007-4183-8355-4771865c5100",
                       "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
                       "name": "Sample product",
+                      "currency": "GBP",
                       "structure": {
                         "pricingType": "LINEAR",
                         "pricePerUnit": "0.25",
@@ -18826,6 +18850,7 @@
                     "id": "b4d7e884-e007-4183-8355-4771865c5100",
                     "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
                     "name": "Sample product",
+                    "currency": "GBP",
                     "structure": {
                       "pricingType": "LINEAR",
                       "pricePerUnit": "0.25",
@@ -18858,6 +18883,7 @@
                       "id": "b4d7e884-e007-4183-8355-4771865c5100",
                       "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
                       "name": "Sample product",
+                      "currency": "GBP",
                       "structure": {
                         "pricingType": "LINEAR",
                         "pricePerUnit": "0.25",
@@ -18958,6 +18984,7 @@
                     "id": "b4d7e884-e007-4183-8355-4771865c5100",
                     "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
                     "name": "Sample product",
+                    "currency": "GBP",
                     "structure": {
                       "pricingType": "LINEAR",
                       "pricePerUnit": "0.25",
@@ -18990,6 +19017,7 @@
                       "id": "b4d7e884-e007-4183-8355-4771865c5100",
                       "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
                       "name": "Sample product",
+                      "currency": "GBP",
                       "structure": {
                         "pricingType": "LINEAR",
                         "pricePerUnit": "0.25",
@@ -19073,6 +19101,7 @@
                     "id": "b4d7e884-e007-4183-8355-4771865c5100",
                     "productId": "f409d651-c475-4142-aafd-a5d2bd74d4f9",
                     "name": "Sample product",
+                    "currency": "GBP",
                     "structure": {
                       "pricingType": "LINEAR",
                       "pricePerUnit": "0.25",
@@ -19104,6 +19133,7 @@
                       "id": "b4d7e884-e007-4183-8355-4771865c5100",
                       "productId": "f409d651-c475-4142-aafd-a5d2bd74d4f9",
                       "name": "Sample product",
+                      "currency": "GBP",
                       "structure": {
                         "pricingType": "LINEAR",
                         "pricePerUnit": "0.25",
@@ -61115,6 +61145,7 @@
         "required": [
           "billingFrequency",
           "billingType",
+          "currency",
           "customMetricParameters",
           "integrationIds",
           "name",
@@ -61125,6 +61156,7 @@
         "example": {
           "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
           "name": "Sample product",
+          "currency": "GBP",
           "structure": {
             "pricingType": "LINEAR",
             "pricePerUnit": "0.25",
@@ -61156,6 +61188,10 @@
             "type": "string",
             "description": "The customer-facing name of this list price",
             "example": "Sample product"
+          },
+          "currency": {
+            "description": "The pricing currency",
+            "$ref": "#/components/schemas/Currency"
           },
           "structure": {
             "$ref": "#/components/schemas/LinearPricingStructure1"
@@ -61302,6 +61338,7 @@
           "billingFrequency",
           "billingType",
           "createdAt",
+          "currency",
           "customMetricParameters",
           "id",
           "integrationIds",
@@ -61315,6 +61352,7 @@
           "id": "b4d7e884-e007-4183-8355-4771865c5100",
           "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
           "name": "Sample product",
+          "currency": "GBP",
           "structure": {
             "pricingType": "LINEAR",
             "pricePerUnit": "0.25",
@@ -61354,6 +61392,10 @@
             "type": "string",
             "description": "The customer-facing name of this list price",
             "example": "Sample product"
+          },
+          "currency": {
+            "description": "The pricing currency",
+            "$ref": "#/components/schemas/Currency"
           },
           "structure": {
             "$ref": "#/components/schemas/LinearPricingStructure1"
@@ -61414,6 +61456,7 @@
           "billingFrequency",
           "billingType",
           "createdAt",
+          "currency",
           "customMetricParameters",
           "id",
           "integrationIds",
@@ -61427,6 +61470,7 @@
           "id": "b4d7e884-e007-4183-8355-4771865c5100",
           "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
           "name": "Sample product",
+          "currency": "GBP",
           "structure": {
             "pricingType": "LINEAR",
             "pricePerUnit": "0.25",
@@ -61466,6 +61510,10 @@
             "type": "string",
             "description": "The customer-facing name of this list price",
             "example": "Sample product"
+          },
+          "currency": {
+            "description": "The pricing currency",
+            "$ref": "#/components/schemas/Currency"
           },
           "structure": {
             "$ref": "#/components/schemas/LinearPricingStructure1"
@@ -61542,6 +61590,7 @@
           "billingFrequency",
           "billingType",
           "createdAt",
+          "currency",
           "customMetricParameters",
           "id",
           "integrationIds",
@@ -61555,6 +61604,7 @@
           "id": "b4d7e884-e007-4183-8355-4771865c5100",
           "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
           "name": "Sample product",
+          "currency": "GBP",
           "structure": {
             "pricingType": "LINEAR",
             "pricePerUnit": "0.25",
@@ -61594,6 +61644,10 @@
             "type": "string",
             "description": "The customer-facing name of this list price",
             "example": "Sample product"
+          },
+          "currency": {
+            "description": "The pricing currency",
+            "$ref": "#/components/schemas/Currency"
           },
           "structure": {
             "$ref": "#/components/schemas/LinearPricingStructure1"
@@ -61661,6 +61715,7 @@
               "id": "b4d7e884-e007-4183-8355-4771865c5100",
               "productId": "f409d651-c475-4142-aafd-a5d2bd74d4f9",
               "name": "Sample product",
+              "currency": "GBP",
               "structure": {
                 "pricingType": "LINEAR",
                 "pricePerUnit": "0.25",
@@ -61695,6 +61750,7 @@
                 "id": "b4d7e884-e007-4183-8355-4771865c5100",
                 "productId": "f409d651-c475-4142-aafd-a5d2bd74d4f9",
                 "name": "Sample product",
+                "currency": "GBP",
                 "structure": {
                   "pricingType": "LINEAR",
                   "pricePerUnit": "0.25",
@@ -61728,6 +61784,7 @@
           "billingFrequency",
           "billingType",
           "createdAt",
+          "currency",
           "customMetricParameters",
           "id",
           "integrationIds",
@@ -61741,6 +61798,7 @@
           "id": "b4d7e884-e007-4183-8355-4771865c5100",
           "productId": "f409d651-c475-4142-aafd-a5d2bd74d4f9",
           "name": "Sample product",
+          "currency": "GBP",
           "structure": {
             "pricingType": "LINEAR",
             "pricePerUnit": "0.25",
@@ -61774,6 +61832,10 @@
             "type": "string",
             "description": "The customer-facing name of this list price",
             "example": "Sample product"
+          },
+          "currency": {
+            "description": "The pricing currency",
+            "$ref": "#/components/schemas/Currency"
           },
           "structure": {
             "$ref": "#/components/schemas/LinearPricingStructure1"
