@@ -2905,6 +2905,10 @@
             "description": "Unauthorized",
             "content": {}
           },
+          "404": {
+            "description": "Not Found",
+            "content": {}
+          },
           "500": {
             "description": "Internal Server Error",
             "content": {}
@@ -55460,16 +55464,13 @@
                 "$ref": "#/components/schemas/LINEAR"
               },
               {
-                "$ref": "#/components/schemas/PACKAGE"
-              },
-              {
-                "$ref": "#/components/schemas/VOLUME"
+                "$ref": "#/components/schemas/SEAT_BASED"
               },
               {
                 "$ref": "#/components/schemas/GRADUATED"
               },
               {
-                "$ref": "#/components/schemas/SEAT_BASED"
+                "$ref": "#/components/schemas/VOLUME"
               }
             ],
             "discriminator": {
@@ -56697,16 +56698,13 @@
                 "$ref": "#/components/schemas/LINEAR"
               },
               {
-                "$ref": "#/components/schemas/PACKAGE"
-              },
-              {
-                "$ref": "#/components/schemas/VOLUME"
+                "$ref": "#/components/schemas/SEAT_BASED"
               },
               {
                 "$ref": "#/components/schemas/GRADUATED"
               },
               {
-                "$ref": "#/components/schemas/SEAT_BASED"
+                "$ref": "#/components/schemas/VOLUME"
               }
             ],
             "discriminator": {
@@ -56743,7 +56741,7 @@
         "properties": {
           "price": {
             "example": "150.00",
-            "description": "Fixed price charged only on the first billing cycle",
+            "description": "A fixed amount that is charged once.",
             "type": "string"
           },
           "pricingType": {
@@ -56768,7 +56766,7 @@
         "properties": {
           "price": {
             "example": "20.00",
-            "description": "Fixed price charged on each billing cycle",
+            "description": "A fixed amount that is charged once every billing period.",
             "type": "string"
           },
           "pricingType": {
@@ -56793,7 +56791,7 @@
         "properties": {
           "pricePerUnit": {
             "example": "0.25",
-            "description": "Price charged per unit of usage of a product",
+            "description": "The per unit rate to apply to usage for this product. In the case of percentage pricing where `isPricePercentage` is set to `true`, a value of 1 represents 100%.",
             "type": "string"
           },
           "usageMetricId": {
@@ -56803,7 +56801,7 @@
           },
           "isPricePercentage": {
             "example": false,
-            "description": "Indicates whether the Price is represented as absolute value or a percentage",
+            "description": "Indicate whether the price attribute is to be considered as a percentage or an absolute value.",
             "type": "boolean"
           },
           "pricingType": {
@@ -56828,44 +56826,221 @@
           "usageMetricId"
         ]
       },
-      "PACKAGE": {
+      "SEAT_BASED": {
         "properties": {
-          "packageSize": {
-            "example": "50",
-            "description": "The amount of usage allowed for the price in this structure",
+          "seatMetricId": {
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+            "description": "Seat metric associated to this pricing structure",
             "type": "string"
           },
-          "pricePerPackage": {
-            "example": "2.00",
-            "description": "The price charged for each package",
+          "pricePerSeat": {
+            "example": "0.25",
+            "description": "Price charged per seat per full billing period",
             "type": "string"
           },
-          "usageMetricId": {
-            "example": "04c62961-04ba-48e6-b985-758bb7d3e712",
-            "description": "The usage metric associated to this tier",
-            "type": "string"
+          "prorationStrategy": {
+            "$ref": "#/components/schemas/SeatProrationStrategy",
+            "description": "The proration strategy to use when calculating the price for a seat. A `USE_MAXIMUM` will not prorate and charge the highest seat balance for the entire billing period, while a PRORATE_INCREMENTS will charge incremental seats from the day they're added"
+          },
+          "contractedMinimumSeats": {
+            "example": 10,
+            "description": "The number of contractually agreed minimum seats",
+            "type": "integer"
+          },
+          "overagesBillingFrequency": {
+            "$ref": "#/components/schemas/BillingFrequency",
+            "description": "The frequency with which to charge overages"
+          },
+          "tiers": {
+            "items": {
+              "$ref": "#/components/schemas/UsageTier"
+            },
+            "example": [
+              {
+                "upperBound": "100",
+                "price": "1.00",
+                "fee": "50.00",
+                "isPricePercentage": false
+              },
+              {
+                "price": "0.75",
+                "fee": "25.00",
+                "isPricePercentage": false
+              }
+            ],
+            "description": "A list of contiguous pricing tiers",
+            "type": "array"
           },
           "pricingType": {
             "enum": [
-              "PACKAGE"
+              "SEAT_BASED"
             ],
-            "example": "PACKAGE",
+            "example": "SEAT_BASED",
             "type": "string"
           }
         },
         "example": {
-          "packageSize": "50",
-          "pricePerPackage": "2.00",
-          "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-          "pricingType": "PACKAGE"
+          "seatMetricId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+          "pricePerSeat": "0.25",
+          "prorationStrategy": "USE_MAXIMUM",
+          "contractedMinimumSeats": 10,
+          "overagesBillingFrequency": "YEARLY",
+          "tiers": [
+            {
+              "upperBound": "100",
+              "price": "1.00",
+              "fee": "50.00",
+              "isPricePercentage": false
+            },
+            {
+              "price": "0.75",
+              "fee": "25.00",
+              "isPricePercentage": false
+            }
+          ],
+          "pricingType": "SEAT_BASED"
         },
         "type": "object",
         "required": [
-          "packageSize",
-          "pricePerPackage",
+          "contractedMinimumSeats",
+          "pricePerSeat",
           "pricingType",
+          "prorationStrategy",
+          "seatMetricId",
+          "tiers"
+        ]
+      },
+      "SeatProrationStrategy": {
+        "example": "USE_MAXIMUM",
+        "enum": [
+          "USE_MAXIMUM",
+          "PRORATE_INCREMENTS"
+        ],
+        "type": "string"
+      },
+      "UsageTier": {
+        "properties": {
+          "upperBound": {
+            "example": "100",
+            "description": "The upper bound of usage for this tier. Set to null to if this is a final tier and is unbounded. The lower bound is set by the previous tier or 0 if it's the first one.",
+            "type": "string"
+          },
+          "price": {
+            "example": "1.00",
+            "description": "The rate to apply to usage for this product in this tier. In the case of percentage pricing where `isPricePercentage` is set to `true`, a value of 1 represents 100%.",
+            "type": "string"
+          },
+          "fee": {
+            "example": "50.00",
+            "description": "The nominal fee associated with usage at this tier",
+            "type": "string"
+          },
+          "isPricePercentage": {
+            "example": false,
+            "description": "Indicate whether the price attribute is to be considered as a percentage or an absolute value.",
+            "type": "boolean"
+          }
+        },
+        "example": {
+          "upperBound": "100",
+          "price": "1.00",
+          "fee": "50.00",
+          "isPricePercentage": false
+        },
+        "type": "object",
+        "required": [
+          "isPricePercentage",
+          "price"
+        ]
+      },
+      "GRADUATED": {
+        "properties": {
+          "tiers": {
+            "items": {
+              "$ref": "#/components/schemas/UsageTier"
+            },
+            "example": [
+              {
+                "upperBound": "200",
+                "price": "1.00",
+                "fee": "50.00",
+                "isPricePercentage": false
+              },
+              {
+                "upperBound": "400",
+                "price": "0.75",
+                "fee": "25.00",
+                "isPricePercentage": true,
+                "maxPrice": "10",
+                "minPrice": "5"
+              },
+              {
+                "price": "0.50",
+                "fee": "0.00",
+                "isPricePercentage": false
+              }
+            ],
+            "description": "A list of contiguous pricing tiers",
+            "type": "array"
+          },
+          "usageMetricId": {
+            "example": "04c62961-04ba-48e6-b985-758bb7d3e712",
+            "description": "The usage metric associated to this pricing structure",
+            "type": "string"
+          },
+          "usageCalculationMode": {
+            "$ref": "#/components/schemas/UsageCalculationMode",
+            "description": "Indicates the scope of usage calculation"
+          },
+          "pricingType": {
+            "enum": [
+              "GRADUATED"
+            ],
+            "example": "GRADUATED",
+            "type": "string"
+          }
+        },
+        "example": {
+          "tiers": [
+            {
+              "upperBound": "200",
+              "price": "1.00",
+              "fee": "50.00",
+              "isPricePercentage": false
+            },
+            {
+              "upperBound": "400",
+              "price": "0.75",
+              "fee": "25.00",
+              "isPricePercentage": true,
+              "maxPrice": "10",
+              "minPrice": "5"
+            },
+            {
+              "price": "0.50",
+              "fee": "0.00",
+              "isPricePercentage": false
+            }
+          ],
+          "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+          "usageCalculationMode": "BILLING_PERIOD",
+          "pricingType": "GRADUATED"
+        },
+        "type": "object",
+        "required": [
+          "pricingType",
+          "tiers",
+          "usageCalculationMode",
           "usageMetricId"
         ]
+      },
+      "UsageCalculationMode": {
+        "example": "BILLING_PERIOD",
+        "enum": [
+          "BILLING_PERIOD",
+          "CUMULATIVE"
+        ],
+        "type": "string"
       },
       "VOLUME": {
         "properties": {
@@ -56925,236 +57100,6 @@
           "tiers",
           "usageMetricId"
         ]
-      },
-      "UsageTier": {
-        "properties": {
-          "upperBound": {
-            "example": "100",
-            "description": "The upper bound of usage for this tier. Set to null to if this is a final tier and is unbounded. The lower bound is set by the previous tier or 0 if it's the first one.",
-            "type": "string"
-          },
-          "price": {
-            "example": "1.00",
-            "description": "The price charged either just for volume at this tier",
-            "type": "string"
-          },
-          "fee": {
-            "example": "50.00",
-            "description": "The nominal fee associated with usage at this tier",
-            "type": "string"
-          },
-          "isPricePercentage": {
-            "example": false,
-            "description": "Indicates whether the Price is represented as absolute value or a percentage",
-            "type": "boolean"
-          }
-        },
-        "example": {
-          "upperBound": "100",
-          "price": "1.00",
-          "fee": "50.00",
-          "isPricePercentage": false
-        },
-        "type": "object",
-        "required": [
-          "isPricePercentage",
-          "price"
-        ]
-      },
-      "GRADUATED": {
-        "properties": {
-          "tiers": {
-            "items": {
-              "$ref": "#/components/schemas/UsageTier"
-            },
-            "example": [
-              {
-                "upperBound": "200",
-                "price": "1.00",
-                "fee": "50.00",
-                "isPricePercentage": false
-              },
-              {
-                "upperBound": "400",
-                "price": "0.75",
-                "fee": "25.00",
-                "isPricePercentage": false
-              },
-              {
-                "price": "0.50",
-                "fee": "0.00",
-                "isPricePercentage": false
-              }
-            ],
-            "description": "A list of contiguous pricing tiers",
-            "type": "array"
-          },
-          "usageMetricId": {
-            "example": "04c62961-04ba-48e6-b985-758bb7d3e712",
-            "description": "The usage metric associated to this pricing structure",
-            "type": "string"
-          },
-          "usageCalculationMode": {
-            "$ref": "#/components/schemas/UsageCalculationMode",
-            "description": "Indicates the scope of usage calculation"
-          },
-          "pricingType": {
-            "enum": [
-              "GRADUATED"
-            ],
-            "example": "GRADUATED",
-            "type": "string"
-          }
-        },
-        "example": {
-          "tiers": [
-            {
-              "upperBound": "200",
-              "price": "1.00",
-              "fee": "50.00",
-              "isPricePercentage": false
-            },
-            {
-              "upperBound": "400",
-              "price": "0.75",
-              "fee": "25.00",
-              "isPricePercentage": false
-            },
-            {
-              "price": "0.50",
-              "fee": "0.00",
-              "isPricePercentage": false
-            }
-          ],
-          "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-          "usageCalculationMode": "BILLING_PERIOD",
-          "pricingType": "GRADUATED"
-        },
-        "type": "object",
-        "required": [
-          "pricingType",
-          "tiers",
-          "usageCalculationMode",
-          "usageMetricId"
-        ]
-      },
-      "UsageCalculationMode": {
-        "example": "BILLING_PERIOD",
-        "enum": [
-          "BILLING_PERIOD",
-          "CUMULATIVE"
-        ],
-        "type": "string"
-      },
-      "SEAT_BASED": {
-        "properties": {
-          "seatTypeId": {
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-            "description": "The identity of the seat",
-            "type": "string"
-          },
-          "pricePerSeat": {
-            "example": "0.25",
-            "description": "Price charged per seat per full billing period",
-            "type": "string"
-          },
-          "prorationStrategy": {
-            "$ref": "#/components/schemas/SeatProrationStrategy",
-            "description": "The proration strategy to use when calculating the price for a seat"
-          },
-          "includedSeats": {
-            "example": 10,
-            "description": "The number of seats included in the price",
-            "type": "integer"
-          },
-          "chargeMethod": {
-            "$ref": "#/components/schemas/SeatChargeMethod",
-            "description": "The charge method to apply to calculated seat usage"
-          },
-          "overagesBillingFrequency": {
-            "$ref": "#/components/schemas/BillingFrequency",
-            "description": "The frequency with which to charge overages"
-          },
-          "tiers": {
-            "items": {
-              "$ref": "#/components/schemas/UsageTier"
-            },
-            "example": [
-              {
-                "upperBound": "100",
-                "price": "1.00",
-                "fee": "50.00",
-                "isPricePercentage": false
-              },
-              {
-                "price": "0.75",
-                "fee": "25.00",
-                "isPricePercentage": false
-              }
-            ],
-            "description": "A list of contiguous pricing tiers",
-            "type": "array"
-          },
-          "pricingType": {
-            "enum": [
-              "SEAT_BASED"
-            ],
-            "example": "SEAT_BASED",
-            "type": "string"
-          }
-        },
-        "example": {
-          "seatTypeId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "pricePerSeat": "0.25",
-          "prorationStrategy": "USE_FIRST",
-          "includedSeats": 10,
-          "chargeMethod": "CHARGE_CONSUMED",
-          "overagesBillingFrequency": "YEARLY",
-          "tiers": [
-            {
-              "upperBound": "100",
-              "price": "1.00",
-              "fee": "50.00",
-              "isPricePercentage": false
-            },
-            {
-              "price": "0.75",
-              "fee": "25.00",
-              "isPricePercentage": false
-            }
-          ],
-          "pricingType": "SEAT_BASED"
-        },
-        "type": "object",
-        "required": [
-          "chargeMethod",
-          "includedSeats",
-          "pricePerSeat",
-          "pricingType",
-          "prorationStrategy",
-          "seatTypeId",
-          "tiers"
-        ]
-      },
-      "SeatProrationStrategy": {
-        "example": "USE_FIRST",
-        "enum": [
-          "USE_FIRST",
-          "USE_MAXIMUM",
-          "PRORATE_INCREMENTS",
-          "PRORATE_ALL_CHANGES"
-        ],
-        "type": "string"
-      },
-      "SeatChargeMethod": {
-        "example": "CHARGE_CONSUMED",
-        "enum": [
-          "CHARGE_FIXED",
-          "CHARGE_OVERAGES",
-          "CHARGE_CONSUMED",
-          "CHARGE_MINIMUM"
-        ],
-        "type": "string"
       },
       "CreateLinkedEntityEndpointCreateLinkedEntityRequestModel": {
         "required": [
@@ -75819,25 +75764,25 @@
           "structure": {
             "oneOf": [
               {
-                "$ref": "#/components/schemas/ONE_TIME"
+                "$ref": "#/components/schemas/ONE_TIME1"
               },
               {
-                "$ref": "#/components/schemas/FIXED"
+                "$ref": "#/components/schemas/FIXED1"
               },
               {
-                "$ref": "#/components/schemas/LINEAR"
+                "$ref": "#/components/schemas/LINEAR1"
               },
               {
                 "$ref": "#/components/schemas/PACKAGE"
               },
               {
-                "$ref": "#/components/schemas/VOLUME"
+                "$ref": "#/components/schemas/VOLUME1"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED"
+                "$ref": "#/components/schemas/GRADUATED1"
               },
               {
-                "$ref": "#/components/schemas/SEAT_BASED"
+                "$ref": "#/components/schemas/SEAT_BASED1"
               }
             ],
             "discriminator": {
@@ -76019,25 +75964,25 @@
           "structure": {
             "oneOf": [
               {
-                "$ref": "#/components/schemas/ONE_TIME"
+                "$ref": "#/components/schemas/ONE_TIME1"
               },
               {
-                "$ref": "#/components/schemas/FIXED"
+                "$ref": "#/components/schemas/FIXED1"
               },
               {
-                "$ref": "#/components/schemas/LINEAR"
+                "$ref": "#/components/schemas/LINEAR1"
               },
               {
                 "$ref": "#/components/schemas/PACKAGE"
               },
               {
-                "$ref": "#/components/schemas/VOLUME"
+                "$ref": "#/components/schemas/VOLUME1"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED"
+                "$ref": "#/components/schemas/GRADUATED1"
               },
               {
-                "$ref": "#/components/schemas/SEAT_BASED"
+                "$ref": "#/components/schemas/SEAT_BASED1"
               }
             ],
             "discriminator": {
@@ -76171,25 +76116,25 @@
           "structure": {
             "oneOf": [
               {
-                "$ref": "#/components/schemas/ONE_TIME"
+                "$ref": "#/components/schemas/ONE_TIME1"
               },
               {
-                "$ref": "#/components/schemas/FIXED"
+                "$ref": "#/components/schemas/FIXED1"
               },
               {
-                "$ref": "#/components/schemas/LINEAR"
+                "$ref": "#/components/schemas/LINEAR1"
               },
               {
                 "$ref": "#/components/schemas/PACKAGE"
               },
               {
-                "$ref": "#/components/schemas/VOLUME"
+                "$ref": "#/components/schemas/VOLUME1"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED"
+                "$ref": "#/components/schemas/GRADUATED1"
               },
               {
-                "$ref": "#/components/schemas/SEAT_BASED"
+                "$ref": "#/components/schemas/SEAT_BASED1"
               }
             ],
             "discriminator": {
@@ -76339,25 +76284,25 @@
           "structure": {
             "oneOf": [
               {
-                "$ref": "#/components/schemas/ONE_TIME"
+                "$ref": "#/components/schemas/ONE_TIME1"
               },
               {
-                "$ref": "#/components/schemas/FIXED"
+                "$ref": "#/components/schemas/FIXED1"
               },
               {
-                "$ref": "#/components/schemas/LINEAR"
+                "$ref": "#/components/schemas/LINEAR1"
               },
               {
                 "$ref": "#/components/schemas/PACKAGE"
               },
               {
-                "$ref": "#/components/schemas/VOLUME"
+                "$ref": "#/components/schemas/VOLUME1"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED"
+                "$ref": "#/components/schemas/GRADUATED1"
               },
               {
-                "$ref": "#/components/schemas/SEAT_BASED"
+                "$ref": "#/components/schemas/SEAT_BASED1"
               }
             ],
             "discriminator": {
@@ -76581,25 +76526,25 @@
           "structure": {
             "oneOf": [
               {
-                "$ref": "#/components/schemas/ONE_TIME"
+                "$ref": "#/components/schemas/ONE_TIME1"
               },
               {
-                "$ref": "#/components/schemas/FIXED"
+                "$ref": "#/components/schemas/FIXED1"
               },
               {
-                "$ref": "#/components/schemas/LINEAR"
+                "$ref": "#/components/schemas/LINEAR1"
               },
               {
                 "$ref": "#/components/schemas/PACKAGE"
               },
               {
-                "$ref": "#/components/schemas/VOLUME"
+                "$ref": "#/components/schemas/VOLUME1"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED"
+                "$ref": "#/components/schemas/GRADUATED1"
               },
               {
-                "$ref": "#/components/schemas/SEAT_BASED"
+                "$ref": "#/components/schemas/SEAT_BASED1"
               }
             ],
             "discriminator": {
@@ -76733,25 +76678,25 @@
           "structure": {
             "oneOf": [
               {
-                "$ref": "#/components/schemas/ONE_TIME"
+                "$ref": "#/components/schemas/ONE_TIME1"
               },
               {
-                "$ref": "#/components/schemas/FIXED"
+                "$ref": "#/components/schemas/FIXED1"
               },
               {
-                "$ref": "#/components/schemas/LINEAR"
+                "$ref": "#/components/schemas/LINEAR1"
               },
               {
                 "$ref": "#/components/schemas/PACKAGE"
               },
               {
-                "$ref": "#/components/schemas/VOLUME"
+                "$ref": "#/components/schemas/VOLUME1"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED"
+                "$ref": "#/components/schemas/GRADUATED1"
               },
               {
-                "$ref": "#/components/schemas/SEAT_BASED"
+                "$ref": "#/components/schemas/SEAT_BASED1"
               }
             ],
             "discriminator": {
@@ -81873,6 +81818,415 @@
             "example": 1
           }
         }
+      },
+      "ONE_TIME1": {
+        "properties": {
+          "price": {
+            "example": "150.00",
+            "description": "Fixed price charged only on the first billing cycle",
+            "type": "string"
+          },
+          "pricingType": {
+            "enum": [
+              "ONE_TIME"
+            ],
+            "example": "ONE_TIME",
+            "type": "string"
+          }
+        },
+        "example": {
+          "price": "150.00",
+          "pricingType": "ONE_TIME"
+        },
+        "type": "object",
+        "required": [
+          "price",
+          "pricingType"
+        ]
+      },
+      "FIXED1": {
+        "properties": {
+          "price": {
+            "example": "20.00",
+            "description": "Fixed price charged on each billing cycle",
+            "type": "string"
+          },
+          "pricingType": {
+            "enum": [
+              "FIXED"
+            ],
+            "example": "FIXED",
+            "type": "string"
+          }
+        },
+        "example": {
+          "price": "20.00",
+          "pricingType": "FIXED"
+        },
+        "type": "object",
+        "required": [
+          "price",
+          "pricingType"
+        ]
+      },
+      "LINEAR1": {
+        "properties": {
+          "pricePerUnit": {
+            "example": "0.25",
+            "description": "Price charged per unit of usage of a product",
+            "type": "string"
+          },
+          "usageMetricId": {
+            "example": "04c62961-04ba-48e6-b985-758bb7d3e712",
+            "description": "Usage metric associated to this pricing structure",
+            "type": "string"
+          },
+          "isPricePercentage": {
+            "example": false,
+            "description": "Indicates whether the Price is represented as absolute value or a percentage",
+            "type": "boolean"
+          },
+          "pricingType": {
+            "enum": [
+              "LINEAR"
+            ],
+            "example": "LINEAR",
+            "type": "string"
+          }
+        },
+        "example": {
+          "pricePerUnit": "0.25",
+          "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+          "isPricePercentage": false,
+          "pricingType": "LINEAR"
+        },
+        "type": "object",
+        "required": [
+          "isPricePercentage",
+          "pricePerUnit",
+          "pricingType",
+          "usageMetricId"
+        ]
+      },
+      "PACKAGE": {
+        "properties": {
+          "packageSize": {
+            "example": "50",
+            "description": "The amount of usage allowed for the price in this structure",
+            "type": "string"
+          },
+          "pricePerPackage": {
+            "example": "2.00",
+            "description": "The price charged for each package",
+            "type": "string"
+          },
+          "usageMetricId": {
+            "example": "04c62961-04ba-48e6-b985-758bb7d3e712",
+            "description": "The usage metric associated to this tier",
+            "type": "string"
+          },
+          "pricingType": {
+            "enum": [
+              "PACKAGE"
+            ],
+            "example": "PACKAGE",
+            "type": "string"
+          }
+        },
+        "example": {
+          "packageSize": "50",
+          "pricePerPackage": "2.00",
+          "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+          "pricingType": "PACKAGE"
+        },
+        "type": "object",
+        "required": [
+          "packageSize",
+          "pricePerPackage",
+          "pricingType",
+          "usageMetricId"
+        ]
+      },
+      "VOLUME1": {
+        "properties": {
+          "tiers": {
+            "items": {
+              "$ref": "#/components/schemas/UsageTier1"
+            },
+            "example": [
+              {
+                "upperBound": "100",
+                "price": "1.00",
+                "fee": "50.00",
+                "isPricePercentage": false
+              },
+              {
+                "price": "0.75",
+                "fee": "25.00",
+                "isPricePercentage": false
+              }
+            ],
+            "description": "A list of contiguous pricing tiers",
+            "type": "array"
+          },
+          "usageMetricId": {
+            "example": "04c62961-04ba-48e6-b985-758bb7d3e712",
+            "description": "The usage metric associated to this tier",
+            "type": "string"
+          },
+          "pricingType": {
+            "enum": [
+              "VOLUME"
+            ],
+            "example": "VOLUME",
+            "type": "string"
+          }
+        },
+        "example": {
+          "tiers": [
+            {
+              "upperBound": "100",
+              "price": "1.00",
+              "fee": "50.00",
+              "isPricePercentage": false
+            },
+            {
+              "price": "0.75",
+              "fee": "25.00",
+              "isPricePercentage": false
+            }
+          ],
+          "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+          "pricingType": "VOLUME"
+        },
+        "type": "object",
+        "required": [
+          "pricingType",
+          "tiers",
+          "usageMetricId"
+        ]
+      },
+      "UsageTier1": {
+        "properties": {
+          "upperBound": {
+            "example": "100",
+            "description": "The upper bound of usage for this tier. Set to null to if this is a final tier and is unbounded. The lower bound is set by the previous tier or 0 if it's the first one.",
+            "type": "string"
+          },
+          "price": {
+            "example": "1.00",
+            "description": "The price charged either just for volume at this tier",
+            "type": "string"
+          },
+          "fee": {
+            "example": "50.00",
+            "description": "The nominal fee associated with usage at this tier",
+            "type": "string"
+          },
+          "isPricePercentage": {
+            "example": false,
+            "description": "Indicates whether the Price is represented as absolute value or a percentage",
+            "type": "boolean"
+          }
+        },
+        "example": {
+          "upperBound": "100",
+          "price": "1.00",
+          "fee": "50.00",
+          "isPricePercentage": false
+        },
+        "type": "object",
+        "required": [
+          "isPricePercentage",
+          "price"
+        ]
+      },
+      "GRADUATED1": {
+        "properties": {
+          "tiers": {
+            "items": {
+              "$ref": "#/components/schemas/UsageTier1"
+            },
+            "example": [
+              {
+                "upperBound": "200",
+                "price": "1.00",
+                "fee": "50.00",
+                "isPricePercentage": false
+              },
+              {
+                "upperBound": "400",
+                "price": "0.75",
+                "fee": "25.00",
+                "isPricePercentage": false
+              },
+              {
+                "price": "0.50",
+                "fee": "0.00",
+                "isPricePercentage": false
+              }
+            ],
+            "description": "A list of contiguous pricing tiers",
+            "type": "array"
+          },
+          "usageMetricId": {
+            "example": "04c62961-04ba-48e6-b985-758bb7d3e712",
+            "description": "The usage metric associated to this pricing structure",
+            "type": "string"
+          },
+          "usageCalculationMode": {
+            "$ref": "#/components/schemas/UsageCalculationMode",
+            "description": "Indicates the scope of usage calculation"
+          },
+          "pricingType": {
+            "enum": [
+              "GRADUATED"
+            ],
+            "example": "GRADUATED",
+            "type": "string"
+          }
+        },
+        "example": {
+          "tiers": [
+            {
+              "upperBound": "200",
+              "price": "1.00",
+              "fee": "50.00",
+              "isPricePercentage": false
+            },
+            {
+              "upperBound": "400",
+              "price": "0.75",
+              "fee": "25.00",
+              "isPricePercentage": false
+            },
+            {
+              "price": "0.50",
+              "fee": "0.00",
+              "isPricePercentage": false
+            }
+          ],
+          "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+          "usageCalculationMode": "BILLING_PERIOD",
+          "pricingType": "GRADUATED"
+        },
+        "type": "object",
+        "required": [
+          "pricingType",
+          "tiers",
+          "usageCalculationMode",
+          "usageMetricId"
+        ]
+      },
+      "SEAT_BASED1": {
+        "properties": {
+          "seatTypeId": {
+            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+            "description": "The identity of the seat",
+            "type": "string"
+          },
+          "pricePerSeat": {
+            "example": "0.25",
+            "description": "Price charged per seat per full billing period",
+            "type": "string"
+          },
+          "prorationStrategy": {
+            "$ref": "#/components/schemas/SeatProrationStrategy1",
+            "description": "The proration strategy to use when calculating the price for a seat"
+          },
+          "includedSeats": {
+            "example": 10,
+            "description": "The number of seats included in the price",
+            "type": "integer"
+          },
+          "chargeMethod": {
+            "$ref": "#/components/schemas/SeatChargeMethod",
+            "description": "The charge method to apply to calculated seat usage"
+          },
+          "overagesBillingFrequency": {
+            "$ref": "#/components/schemas/BillingFrequency",
+            "description": "The frequency with which to charge overages"
+          },
+          "tiers": {
+            "items": {
+              "$ref": "#/components/schemas/UsageTier1"
+            },
+            "example": [
+              {
+                "upperBound": "100",
+                "price": "1.00",
+                "fee": "50.00",
+                "isPricePercentage": false
+              },
+              {
+                "price": "0.75",
+                "fee": "25.00",
+                "isPricePercentage": false
+              }
+            ],
+            "description": "A list of contiguous pricing tiers",
+            "type": "array"
+          },
+          "pricingType": {
+            "enum": [
+              "SEAT_BASED"
+            ],
+            "example": "SEAT_BASED",
+            "type": "string"
+          }
+        },
+        "example": {
+          "seatTypeId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+          "pricePerSeat": "0.25",
+          "prorationStrategy": "USE_FIRST",
+          "includedSeats": 10,
+          "chargeMethod": "CHARGE_CONSUMED",
+          "overagesBillingFrequency": "YEARLY",
+          "tiers": [
+            {
+              "upperBound": "100",
+              "price": "1.00",
+              "fee": "50.00",
+              "isPricePercentage": false
+            },
+            {
+              "price": "0.75",
+              "fee": "25.00",
+              "isPricePercentage": false
+            }
+          ],
+          "pricingType": "SEAT_BASED"
+        },
+        "type": "object",
+        "required": [
+          "chargeMethod",
+          "includedSeats",
+          "pricePerSeat",
+          "pricingType",
+          "prorationStrategy",
+          "seatTypeId",
+          "tiers"
+        ]
+      },
+      "SeatProrationStrategy1": {
+        "example": "USE_FIRST",
+        "enum": [
+          "USE_FIRST",
+          "USE_MAXIMUM",
+          "PRORATE_INCREMENTS",
+          "PRORATE_ALL_CHANGES"
+        ],
+        "type": "string"
+      },
+      "SeatChargeMethod": {
+        "example": "CHARGE_CONSUMED",
+        "enum": [
+          "CHARGE_FIXED",
+          "CHARGE_OVERAGES",
+          "CHARGE_CONSUMED",
+          "CHARGE_MINIMUM"
+        ],
+        "type": "string"
       },
       "Customer2": {
         "required": [
@@ -87709,16 +88063,13 @@
                 "$ref": "#/components/schemas/LINEAR"
               },
               {
-                "$ref": "#/components/schemas/PACKAGE"
-              },
-              {
-                "$ref": "#/components/schemas/VOLUME"
+                "$ref": "#/components/schemas/SEAT_BASED"
               },
               {
                 "$ref": "#/components/schemas/GRADUATED"
               },
               {
-                "$ref": "#/components/schemas/SEAT_BASED"
+                "$ref": "#/components/schemas/VOLUME"
               }
             ],
             "discriminator": {
@@ -89150,16 +89501,13 @@
                 "$ref": "#/components/schemas/LINEAR"
               },
               {
-                "$ref": "#/components/schemas/PACKAGE"
-              },
-              {
-                "$ref": "#/components/schemas/VOLUME"
+                "$ref": "#/components/schemas/SEAT_BASED"
               },
               {
                 "$ref": "#/components/schemas/GRADUATED"
               },
               {
-                "$ref": "#/components/schemas/SEAT_BASED"
+                "$ref": "#/components/schemas/VOLUME"
               }
             ],
             "discriminator": {
@@ -90518,16 +90866,13 @@
                 "$ref": "#/components/schemas/LINEAR"
               },
               {
-                "$ref": "#/components/schemas/PACKAGE"
-              },
-              {
-                "$ref": "#/components/schemas/VOLUME"
+                "$ref": "#/components/schemas/SEAT_BASED"
               },
               {
                 "$ref": "#/components/schemas/GRADUATED"
               },
               {
-                "$ref": "#/components/schemas/SEAT_BASED"
+                "$ref": "#/components/schemas/VOLUME"
               }
             ],
             "discriminator": {
@@ -91703,16 +92048,13 @@
                 "$ref": "#/components/schemas/LINEAR"
               },
               {
-                "$ref": "#/components/schemas/PACKAGE"
-              },
-              {
-                "$ref": "#/components/schemas/VOLUME"
+                "$ref": "#/components/schemas/SEAT_BASED"
               },
               {
                 "$ref": "#/components/schemas/GRADUATED"
               },
               {
-                "$ref": "#/components/schemas/SEAT_BASED"
+                "$ref": "#/components/schemas/VOLUME"
               }
             ],
             "discriminator": {
