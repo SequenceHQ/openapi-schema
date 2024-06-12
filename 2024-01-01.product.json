@@ -2575,13 +2575,11 @@
                                 {
                                   "upperBound": "100",
                                   "price": "1.00",
-                                  "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "fee": "50.00"
                                 },
                                 {
                                   "price": "0.75",
-                                  "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "fee": "25.00"
                                 }
                               ]
                             },
@@ -2831,13 +2829,11 @@
                                   {
                                     "upperBound": "100",
                                     "price": "1.00",
-                                    "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "fee": "50.00"
                                   },
                                   {
                                     "price": "0.75",
-                                    "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "fee": "25.00"
                                   }
                                 ]
                               },
@@ -39408,13 +39404,11 @@
                                 {
                                   "upperBound": "100",
                                   "price": "1.00",
-                                  "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "fee": "50.00"
                                 },
                                 {
                                   "price": "0.75",
-                                  "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "fee": "25.00"
                                 }
                               ]
                             },
@@ -39729,13 +39723,11 @@
                                   {
                                     "upperBound": "100",
                                     "price": "1.00",
-                                    "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "fee": "50.00"
                                   },
                                   {
                                     "price": "0.75",
-                                    "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "fee": "25.00"
                                   }
                                 ]
                               },
@@ -40993,13 +40985,11 @@
                                 {
                                   "upperBound": "100",
                                   "price": "1.00",
-                                  "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "fee": "50.00"
                                 },
                                 {
                                   "price": "0.75",
-                                  "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "fee": "25.00"
                                 }
                               ]
                             },
@@ -41314,13 +41304,11 @@
                                   {
                                     "upperBound": "100",
                                     "price": "1.00",
-                                    "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "fee": "50.00"
                                   },
                                   {
                                     "price": "0.75",
-                                    "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "fee": "25.00"
                                   }
                                 ]
                               },
@@ -43627,13 +43615,11 @@
                                 {
                                   "upperBound": "100",
                                   "price": "1.00",
-                                  "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "fee": "50.00"
                                 },
                                 {
                                   "price": "0.75",
-                                  "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "fee": "25.00"
                                 }
                               ]
                             },
@@ -43948,13 +43934,11 @@
                                   {
                                     "upperBound": "100",
                                     "price": "1.00",
-                                    "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "fee": "50.00"
                                   },
                                   {
                                     "price": "0.75",
-                                    "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "fee": "25.00"
                                   }
                                 ]
                               },
@@ -44275,13 +44259,11 @@
                               {
                                 "upperBound": "100",
                                 "price": "1.00",
-                                "fee": "50.00",
-                                "isPricePercentage": false
+                                "fee": "50.00"
                               },
                               {
                                 "price": "0.75",
-                                "fee": "25.00",
-                                "isPricePercentage": false
+                                "fee": "25.00"
                               }
                             ]
                           },
@@ -44544,13 +44526,11 @@
                                 {
                                   "upperBound": "100",
                                   "price": "1.00",
-                                  "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "fee": "50.00"
                                 },
                                 {
                                   "price": "0.75",
-                                  "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "fee": "25.00"
                                 }
                               ]
                             },
@@ -44865,13 +44845,11 @@
                                 {
                                   "upperBound": "100",
                                   "price": "1.00",
-                                  "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "fee": "50.00"
                                 },
                                 {
                                   "price": "0.75",
-                                  "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "fee": "25.00"
                                 }
                               ]
                             },
@@ -45186,13 +45164,11 @@
                                   {
                                     "upperBound": "100",
                                     "price": "1.00",
-                                    "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "fee": "50.00"
                                   },
                                   {
                                     "price": "0.75",
-                                    "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "fee": "25.00"
                                   }
                                 ]
                               },
@@ -46261,13 +46237,11 @@
                                 {
                                   "upperBound": "100",
                                   "price": "1.00",
-                                  "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "fee": "50.00"
                                 },
                                 {
                                   "price": "0.75",
-                                  "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "fee": "25.00"
                                 }
                               ]
                             },
@@ -46582,13 +46556,11 @@
                                   {
                                     "upperBound": "100",
                                     "price": "1.00",
-                                    "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "fee": "50.00"
                                   },
                                   {
                                     "price": "0.75",
-                                    "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "fee": "25.00"
                                   }
                                 ]
                               },
@@ -47698,13 +47670,11 @@
                                 {
                                   "upperBound": "100",
                                   "price": "1.00",
-                                  "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "fee": "50.00"
                                 },
                                 {
                                   "price": "0.75",
-                                  "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "fee": "25.00"
                                 }
                               ]
                             },
@@ -48017,13 +47987,11 @@
                                   {
                                     "upperBound": "100",
                                     "price": "1.00",
-                                    "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "fee": "50.00"
                                   },
                                   {
                                     "price": "0.75",
-                                    "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "fee": "25.00"
                                   }
                                 ]
                               },
@@ -49086,13 +49054,11 @@
                                 {
                                   "upperBound": "100",
                                   "price": "1.00",
-                                  "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "fee": "50.00"
                                 },
                                 {
                                   "price": "0.75",
-                                  "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "fee": "25.00"
                                 }
                               ]
                             },
@@ -49405,13 +49371,11 @@
                                   {
                                     "upperBound": "100",
                                     "price": "1.00",
-                                    "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "fee": "50.00"
                                   },
                                   {
                                     "price": "0.75",
-                                    "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "fee": "25.00"
                                   }
                                 ]
                               },
@@ -49779,13 +49743,11 @@
                                 {
                                   "upperBound": "100",
                                   "price": "1.00",
-                                  "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "fee": "50.00"
                                 },
                                 {
                                   "price": "0.75",
-                                  "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "fee": "25.00"
                                 }
                               ]
                             },
@@ -50098,13 +50060,11 @@
                                   {
                                     "upperBound": "100",
                                     "price": "1.00",
-                                    "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "fee": "50.00"
                                   },
                                   {
                                     "price": "0.75",
-                                    "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "fee": "25.00"
                                   }
                                 ]
                               },
@@ -51167,13 +51127,11 @@
                                 {
                                   "upperBound": "100",
                                   "price": "1.00",
-                                  "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "fee": "50.00"
                                 },
                                 {
                                   "price": "0.75",
-                                  "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "fee": "25.00"
                                 }
                               ]
                             },
@@ -51486,13 +51444,11 @@
                                   {
                                     "upperBound": "100",
                                     "price": "1.00",
-                                    "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "fee": "50.00"
                                   },
                                   {
                                     "price": "0.75",
-                                    "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "fee": "25.00"
                                   }
                                 ]
                               },
@@ -52560,13 +52516,11 @@
                                 {
                                   "upperBound": "100",
                                   "price": "1.00",
-                                  "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "fee": "50.00"
                                 },
                                 {
                                   "price": "0.75",
-                                  "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "fee": "25.00"
                                 }
                               ]
                             },
@@ -52881,13 +52835,11 @@
                                   {
                                     "upperBound": "100",
                                     "price": "1.00",
-                                    "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "fee": "50.00"
                                   },
                                   {
                                     "price": "0.75",
-                                    "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "fee": "25.00"
                                   }
                                 ]
                               },
@@ -57386,13 +57338,11 @@
                       {
                         "upperBound": "100",
                         "price": "1.00",
-                        "fee": "50.00",
-                        "isPricePercentage": false
+                        "fee": "50.00"
                       },
                       {
                         "price": "0.75",
-                        "fee": "25.00",
-                        "isPricePercentage": false
+                        "fee": "25.00"
                       }
                     ]
                   },
@@ -57681,13 +57631,11 @@
                         {
                           "upperBound": "100",
                           "price": "1.00",
-                          "fee": "50.00",
-                          "isPricePercentage": false
+                          "fee": "50.00"
                         },
                         {
                           "price": "0.75",
-                          "fee": "25.00",
-                          "isPricePercentage": false
+                          "fee": "25.00"
                         }
                       ]
                     },
@@ -57916,13 +57864,11 @@
                   {
                     "upperBound": "100",
                     "price": "1.00",
-                    "fee": "50.00",
-                    "isPricePercentage": false
+                    "fee": "50.00"
                   },
                   {
                     "price": "0.75",
-                    "fee": "25.00",
-                    "isPricePercentage": false
+                    "fee": "25.00"
                   }
                 ]
               },
@@ -58132,13 +58078,11 @@
                     {
                       "upperBound": "100",
                       "price": "1.00",
-                      "fee": "50.00",
-                      "isPricePercentage": false
+                      "fee": "50.00"
                     },
                     {
                       "price": "0.75",
-                      "fee": "25.00",
-                      "isPricePercentage": false
+                      "fee": "25.00"
                     }
                   ]
                 },
@@ -58500,19 +58444,17 @@
           },
           "tiers": {
             "items": {
-              "$ref": "#/components/schemas/UsageTier"
+              "$ref": "#/components/schemas/SeatUsageTier"
             },
             "example": [
               {
                 "upperBound": "100",
                 "price": "1.00",
-                "fee": "50.00",
-                "isPricePercentage": false
+                "fee": "50.00"
               },
               {
                 "price": "0.75",
-                "fee": "25.00",
-                "isPricePercentage": false
+                "fee": "25.00"
               }
             ],
             "description": "A list of contiguous pricing tiers",
@@ -58536,13 +58478,11 @@
             {
               "upperBound": "100",
               "price": "1.00",
-              "fee": "50.00",
-              "isPricePercentage": false
+              "fee": "50.00"
             },
             {
               "price": "0.75",
-              "fee": "25.00",
-              "isPricePercentage": false
+              "fee": "25.00"
             }
           ],
           "pricingType": "SEAT_BASED"
@@ -58565,7 +58505,7 @@
         ],
         "type": "string"
       },
-      "UsageTier": {
+      "SeatUsageTier": {
         "properties": {
           "upperBound": {
             "example": "100",
@@ -58581,22 +58521,15 @@
             "example": "50.00",
             "description": "The nominal fee associated with usage at this tier",
             "type": "string"
-          },
-          "isPricePercentage": {
-            "example": false,
-            "description": "Indicate whether the price attribute is to be considered as a percentage or an absolute value.",
-            "type": "boolean"
           }
         },
         "example": {
           "upperBound": "100",
           "price": "1.00",
-          "fee": "50.00",
-          "isPricePercentage": false
+          "fee": "50.00"
         },
         "type": "object",
         "required": [
-          "isPricePercentage",
           "price"
         ]
       },
@@ -58604,7 +58537,7 @@
         "properties": {
           "tiers": {
             "items": {
-              "$ref": "#/components/schemas/UsageTier1"
+              "$ref": "#/components/schemas/GraduatedUsageTier"
             },
             "example": [
               {
@@ -58677,6 +58610,41 @@
           "usageMetricId"
         ]
       },
+      "GraduatedUsageTier": {
+        "properties": {
+          "upperBound": {
+            "example": "200",
+            "description": "The upper bound of usage for this tier. Set to null to if this is a final tier and is unbounded. The lower bound is set by the previous tier or 0 if it's the first one.",
+            "type": "string"
+          },
+          "price": {
+            "example": "1.00",
+            "description": "The rate to apply to usage for this product in this tier. In the case of percentage pricing where `isPricePercentage` is set to `true`, a value of 1 represents 100%.",
+            "type": "string"
+          },
+          "fee": {
+            "example": "50.00",
+            "description": "The nominal fee associated with usage at this tier",
+            "type": "string"
+          },
+          "isPricePercentage": {
+            "example": false,
+            "description": "Indicate whether the price attribute is to be considered as a percentage or an absolute value.",
+            "type": "boolean"
+          }
+        },
+        "example": {
+          "upperBound": "200",
+          "price": "1.00",
+          "fee": "50.00",
+          "isPricePercentage": false
+        },
+        "type": "object",
+        "required": [
+          "isPricePercentage",
+          "price"
+        ]
+      },
       "UsageCalculationMode": {
         "example": "BILLING_PERIOD",
         "enum": [
@@ -58689,7 +58657,7 @@
         "properties": {
           "tiers": {
             "items": {
-              "$ref": "#/components/schemas/UsageTier"
+              "$ref": "#/components/schemas/VolumeUsageTier"
             },
             "example": [
               {
@@ -58750,6 +58718,53 @@
           "pricingType",
           "tiers",
           "usageMetricId"
+        ]
+      },
+      "VolumeUsageTier": {
+        "properties": {
+          "upperBound": {
+            "example": "100",
+            "description": "The upper bound of usage for this tier. Set to null to if this is a final tier and is unbounded. The lower bound is set by the previous tier or 0 if it's the first one.",
+            "type": "string"
+          },
+          "price": {
+            "example": "1.00",
+            "description": "The rate to apply to usage for this product in this tier. In the case of percentage pricing where `isPricePercentage` is set to `true`, a value of 1 represents 100%.",
+            "type": "string"
+          },
+          "fee": {
+            "example": "50.00",
+            "description": "The nominal fee associated with usage at this tier",
+            "type": "string"
+          },
+          "isPricePercentage": {
+            "example": true,
+            "description": "Indicate whether the price attribute is to be considered as a percentage or an absolute value.",
+            "type": "boolean"
+          },
+          "maxPrice": {
+            "example": "10",
+            "description": "Maximum Price to Charge for each Unit if Price is Percentage Based",
+            "type": "string"
+          },
+          "minPrice": {
+            "example": "5",
+            "description": "Minimum Price to Charge for each Unit if Price is Percentage Based",
+            "type": "string"
+          }
+        },
+        "example": {
+          "upperBound": "100",
+          "price": "1.00",
+          "fee": "50.00",
+          "isPricePercentage": true,
+          "maxPrice": "10",
+          "minPrice": "5"
+        },
+        "type": "object",
+        "required": [
+          "isPricePercentage",
+          "price"
         ]
       },
       "PACKAGE": {
@@ -77469,7 +77484,7 @@
                 "$ref": "#/components/schemas/VOLUME1"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED"
+                "$ref": "#/components/schemas/GRADUATED1"
               },
               {
                 "$ref": "#/components/schemas/SEAT_BASED1"
@@ -77669,7 +77684,7 @@
                 "$ref": "#/components/schemas/VOLUME1"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED"
+                "$ref": "#/components/schemas/GRADUATED1"
               },
               {
                 "$ref": "#/components/schemas/SEAT_BASED1"
@@ -77821,7 +77836,7 @@
                 "$ref": "#/components/schemas/VOLUME1"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED"
+                "$ref": "#/components/schemas/GRADUATED1"
               },
               {
                 "$ref": "#/components/schemas/SEAT_BASED1"
@@ -77989,7 +78004,7 @@
                 "$ref": "#/components/schemas/VOLUME1"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED"
+                "$ref": "#/components/schemas/GRADUATED1"
               },
               {
                 "$ref": "#/components/schemas/SEAT_BASED1"
@@ -78231,7 +78246,7 @@
                 "$ref": "#/components/schemas/VOLUME1"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED"
+                "$ref": "#/components/schemas/GRADUATED1"
               },
               {
                 "$ref": "#/components/schemas/SEAT_BASED1"
@@ -78383,7 +78398,7 @@
                 "$ref": "#/components/schemas/VOLUME1"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED"
+                "$ref": "#/components/schemas/GRADUATED1"
               },
               {
                 "$ref": "#/components/schemas/SEAT_BASED1"
@@ -83602,7 +83617,7 @@
         "properties": {
           "tiers": {
             "items": {
-              "$ref": "#/components/schemas/UsageTier1"
+              "$ref": "#/components/schemas/UsageTier"
             },
             "example": [
               {
@@ -83657,7 +83672,7 @@
           "usageMetricId"
         ]
       },
-      "UsageTier1": {
+      "UsageTier": {
         "properties": {
           "upperBound": {
             "example": "100",
@@ -83692,6 +83707,83 @@
           "price"
         ]
       },
+      "GRADUATED1": {
+        "properties": {
+          "tiers": {
+            "items": {
+              "$ref": "#/components/schemas/UsageTier"
+            },
+            "example": [
+              {
+                "upperBound": "200",
+                "price": "1.00",
+                "fee": "50.00",
+                "isPricePercentage": false
+              },
+              {
+                "upperBound": "400",
+                "price": "0.75",
+                "fee": "25.00",
+                "isPricePercentage": false
+              },
+              {
+                "price": "0.50",
+                "fee": "0.00",
+                "isPricePercentage": false
+              }
+            ],
+            "description": "A list of contiguous pricing tiers",
+            "type": "array"
+          },
+          "usageMetricId": {
+            "example": "04c62961-04ba-48e6-b985-758bb7d3e712",
+            "description": "The usage metric associated to this pricing structure",
+            "type": "string"
+          },
+          "usageCalculationMode": {
+            "$ref": "#/components/schemas/UsageCalculationMode",
+            "description": "Indicates the scope of usage calculation"
+          },
+          "pricingType": {
+            "enum": [
+              "GRADUATED"
+            ],
+            "example": "GRADUATED",
+            "type": "string"
+          }
+        },
+        "example": {
+          "tiers": [
+            {
+              "upperBound": "200",
+              "price": "1.00",
+              "fee": "50.00",
+              "isPricePercentage": false
+            },
+            {
+              "upperBound": "400",
+              "price": "0.75",
+              "fee": "25.00",
+              "isPricePercentage": false
+            },
+            {
+              "price": "0.50",
+              "fee": "0.00",
+              "isPricePercentage": false
+            }
+          ],
+          "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+          "usageCalculationMode": "BILLING_PERIOD",
+          "pricingType": "GRADUATED"
+        },
+        "type": "object",
+        "required": [
+          "pricingType",
+          "tiers",
+          "usageCalculationMode",
+          "usageMetricId"
+        ]
+      },
       "SEAT_BASED1": {
         "properties": {
           "seatTypeId": {
@@ -83723,7 +83815,7 @@
           },
           "tiers": {
             "items": {
-              "$ref": "#/components/schemas/UsageTier1"
+              "$ref": "#/components/schemas/UsageTier"
             },
             "example": [
               {
@@ -89806,7 +89898,7 @@
                 "$ref": "#/components/schemas/SEAT_BASED"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED1"
+                "$ref": "#/components/schemas/GRADUATED"
               },
               {
                 "$ref": "#/components/schemas/VOLUME"
@@ -90144,13 +90236,11 @@
                       {
                         "upperBound": "100",
                         "price": "1.00",
-                        "fee": "50.00",
-                        "isPricePercentage": false
+                        "fee": "50.00"
                       },
                       {
                         "price": "0.75",
-                        "fee": "25.00",
-                        "isPricePercentage": false
+                        "fee": "25.00"
                       }
                     ]
                   },
@@ -90525,13 +90615,11 @@
                         {
                           "upperBound": "100",
                           "price": "1.00",
-                          "fee": "50.00",
-                          "isPricePercentage": false
+                          "fee": "50.00"
                         },
                         {
                           "price": "0.75",
-                          "fee": "25.00",
-                          "isPricePercentage": false
+                          "fee": "25.00"
                         }
                       ]
                     },
@@ -90822,13 +90910,11 @@
                   {
                     "upperBound": "100",
                     "price": "1.00",
-                    "fee": "50.00",
-                    "isPricePercentage": false
+                    "fee": "50.00"
                   },
                   {
                     "price": "0.75",
-                    "fee": "25.00",
-                    "isPricePercentage": false
+                    "fee": "25.00"
                   }
                 ]
               },
@@ -91106,13 +91192,11 @@
                     {
                       "upperBound": "100",
                       "price": "1.00",
-                      "fee": "50.00",
-                      "isPricePercentage": false
+                      "fee": "50.00"
                     },
                     {
                       "price": "0.75",
-                      "fee": "25.00",
-                      "isPricePercentage": false
+                      "fee": "25.00"
                     }
                   ]
                 },
@@ -91367,7 +91451,7 @@
                 "$ref": "#/components/schemas/SEAT_BASED"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED1"
+                "$ref": "#/components/schemas/GRADUATED"
               },
               {
                 "$ref": "#/components/schemas/VOLUME"
@@ -92847,7 +92931,7 @@
                 "$ref": "#/components/schemas/SEAT_BASED"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED1"
+                "$ref": "#/components/schemas/GRADUATED"
               },
               {
                 "$ref": "#/components/schemas/VOLUME"
@@ -93077,13 +93161,11 @@
                       {
                         "upperBound": "100",
                         "price": "1.00",
-                        "fee": "50.00",
-                        "isPricePercentage": false
+                        "fee": "50.00"
                       },
                       {
                         "price": "0.75",
-                        "fee": "25.00",
-                        "isPricePercentage": false
+                        "fee": "25.00"
                       }
                     ]
                   },
@@ -93374,13 +93456,11 @@
                         {
                           "upperBound": "100",
                           "price": "1.00",
-                          "fee": "50.00",
-                          "isPricePercentage": false
+                          "fee": "50.00"
                         },
                         {
                           "price": "0.75",
-                          "fee": "25.00",
-                          "isPricePercentage": false
+                          "fee": "25.00"
                         }
                       ]
                     },
@@ -93641,13 +93721,11 @@
                   {
                     "upperBound": "100",
                     "price": "1.00",
-                    "fee": "50.00",
-                    "isPricePercentage": false
+                    "fee": "50.00"
                   },
                   {
                     "price": "0.75",
-                    "fee": "25.00",
-                    "isPricePercentage": false
+                    "fee": "25.00"
                   }
                 ]
               },
@@ -93898,13 +93976,11 @@
                     {
                       "upperBound": "100",
                       "price": "1.00",
-                      "fee": "50.00",
-                      "isPricePercentage": false
+                      "fee": "50.00"
                     },
                     {
                       "price": "0.75",
-                      "fee": "25.00",
-                      "isPricePercentage": false
+                      "fee": "25.00"
                     }
                   ]
                 },
@@ -94144,7 +94220,7 @@
                 "$ref": "#/components/schemas/SEAT_BASED"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED1"
+                "$ref": "#/components/schemas/GRADUATED"
               },
               {
                 "$ref": "#/components/schemas/VOLUME"
@@ -95099,13 +95175,11 @@
                       {
                         "upperBound": "100",
                         "price": "1.00",
-                        "fee": "50.00",
-                        "isPricePercentage": false
+                        "fee": "50.00"
                       },
                       {
                         "price": "0.75",
-                        "fee": "25.00",
-                        "isPricePercentage": false
+                        "fee": "25.00"
                       }
                     ]
                   },
@@ -95473,13 +95547,11 @@
                         {
                           "upperBound": "100",
                           "price": "1.00",
-                          "fee": "50.00",
-                          "isPricePercentage": false
+                          "fee": "50.00"
                         },
                         {
                           "price": "0.75",
-                          "fee": "25.00",
-                          "isPricePercentage": false
+                          "fee": "25.00"
                         }
                       ]
                     },
@@ -95650,83 +95722,6 @@
             }
           }
         }
-      },
-      "GRADUATED1": {
-        "properties": {
-          "tiers": {
-            "items": {
-              "$ref": "#/components/schemas/UsageTier"
-            },
-            "example": [
-              {
-                "upperBound": "200",
-                "price": "1.00",
-                "fee": "50.00",
-                "isPricePercentage": false
-              },
-              {
-                "upperBound": "400",
-                "price": "0.75",
-                "fee": "25.00",
-                "isPricePercentage": false
-              },
-              {
-                "price": "0.50",
-                "fee": "0.00",
-                "isPricePercentage": false
-              }
-            ],
-            "description": "A list of contiguous pricing tiers",
-            "type": "array"
-          },
-          "usageMetricId": {
-            "example": "04c62961-04ba-48e6-b985-758bb7d3e712",
-            "description": "The usage metric associated to this pricing structure",
-            "type": "string"
-          },
-          "usageCalculationMode": {
-            "$ref": "#/components/schemas/UsageCalculationMode",
-            "description": "Indicates the scope of usage calculation"
-          },
-          "pricingType": {
-            "enum": [
-              "GRADUATED"
-            ],
-            "example": "GRADUATED",
-            "type": "string"
-          }
-        },
-        "example": {
-          "tiers": [
-            {
-              "upperBound": "200",
-              "price": "1.00",
-              "fee": "50.00",
-              "isPricePercentage": false
-            },
-            {
-              "upperBound": "400",
-              "price": "0.75",
-              "fee": "25.00",
-              "isPricePercentage": false
-            },
-            {
-              "price": "0.50",
-              "fee": "0.00",
-              "isPricePercentage": false
-            }
-          ],
-          "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-          "usageCalculationMode": "BILLING_PERIOD",
-          "pricingType": "GRADUATED"
-        },
-        "type": "object",
-        "required": [
-          "pricingType",
-          "tiers",
-          "usageCalculationMode",
-          "usageMetricId"
-        ]
       }
     },
     "requestBodies": {}
