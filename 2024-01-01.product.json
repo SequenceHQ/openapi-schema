@@ -27,6 +27,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -206,6 +218,18 @@
             "required": false,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -515,6 +539,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -562,6 +598,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -675,6 +723,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -765,6 +825,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -844,6 +916,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -1067,6 +1151,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -1168,6 +1264,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -1317,6 +1425,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -1416,6 +1536,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -1707,6 +1839,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -1782,6 +1926,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -1889,6 +2045,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -2458,6 +2626,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -3097,6 +3277,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -3493,6 +3685,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -3624,6 +3828,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -4659,6 +4875,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -5437,6 +5665,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -5788,6 +6028,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -5982,6 +6234,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -8141,6 +8405,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -8929,6 +9205,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -9151,6 +9439,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -9280,6 +9580,18 @@
             "schema": {
               "type": "boolean"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -9336,6 +9648,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -9448,6 +9772,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -9534,6 +9870,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -9667,6 +10015,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -9775,6 +10135,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -9892,6 +10264,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -11923,6 +12307,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -12276,6 +12672,18 @@
             "required": false,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -12951,6 +13359,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -13260,6 +13680,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -13460,6 +13892,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -15011,6 +15455,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -15717,6 +16173,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -15817,6 +16285,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -15942,6 +16422,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -17202,6 +17694,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -17270,6 +17774,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -17426,6 +17942,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -17542,6 +18070,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -17715,6 +18255,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -17785,6 +18337,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -18101,6 +18665,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -18171,6 +18747,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -18489,6 +19077,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -18742,6 +19342,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -18919,6 +19531,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -19142,6 +19766,18 @@
             "required": false,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -19434,6 +20070,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -19779,45 +20427,58 @@
     },
     "/notifications/policies": {
       "get": {
+        "tags": [],
         "summary": "List All Notification Policies",
         "description": "List all Notification Policies.",
-        "tags": [],
+        "operationId": "getApiNotificationsPolicies",
         "parameters": [
           {
+            "name": "limit",
+            "in": "query",
+            "description": "Maximum number of objects to return per-page.",
+            "required": false,
             "schema": {
               "type": "integer"
-            },
-            "in": "query",
-            "name": "limit",
-            "required": false,
-            "description": "Maximum number of objects to return per-page."
+            }
           },
           {
-            "schema": {
-              "type": "string"
-            },
-            "in": "query",
             "name": "after",
-            "required": false,
-            "description": "Pagination offset. To page through items, omit this parameter to retrieve the first page, and then successively use the value you get from `pagination.after` or `pagination.before` to retrieve each page."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
             "in": "query",
-            "name": "before",
+            "description": "Pagination offset. To page through items, omit this parameter to retrieve the first page, and then successively use the value you get from `pagination.after` or `pagination.before` to retrieve each page.",
             "required": false,
-            "description": "Pagination offset. To page through items, omit this parameter to retrieve the first page, and then successively use the value you get from `pagination.next` or `pagination.previous` to retrieve each page."
-          },
-          {
             "schema": {
               "type": "string"
-            },
-            "in": "header",
+            }
+          },
+          {
+            "name": "before",
+            "in": "query",
+            "description": "Pagination offset. To page through items, omit this parameter to retrieve the first page, and then successively use the value you get from `pagination.next` or `pagination.previous` to retrieve each page.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
             "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
             "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -19825,6 +20486,9 @@
             "description": "OK",
             "content": {
               "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NotificationPolicies"
+                },
                 "example": {
                   "items": [
                     {
@@ -19846,9 +20510,6 @@
                     "before": "NjRlZjJmZjktMmJjYi00M2RiLWI0ZDUtOTAxMDU4MjRiMTdmIzE2NTgyNjA3NTk3NTE2ODEjQVND",
                     "totalResultSize": 100
                   }
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/NotificationPolicies"
                 }
               }
             }
@@ -19866,28 +20527,31 @@
             "content": {}
           }
         },
-        "security": [],
-        "operationId": "getApiNotificationsPolicies",
-        "deprecated": false
+        "deprecated": false,
+        "security": []
       },
       "post": {
+        "tags": [],
         "summary": "Create Notification policy",
         "description": "Create a new Notification Policy, which will send matching notifications to the recipients you specify.",
-        "tags": [],
+        "operationId": "postApiNotificationsPolicies",
         "parameters": [
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
+            }
           }
         ],
         "requestBody": {
           "content": {
             "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateNotificationPolicyRequest"
+              },
               "example": {
                 "name": "Dev team integration webhooks",
                 "notificationTypes": [
@@ -19898,9 +20562,6 @@
                 ],
                 "channel": "WEBHOOK",
                 "webhookSecret": "whsec_UserSubmittedSecret1234567890abc"
-              },
-              "schema": {
-                "$ref": "#/components/schemas/CreateNotificationPolicyRequest"
               }
             }
           },
@@ -19911,6 +20572,9 @@
             "description": "Created",
             "content": {
               "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NotificationPolicy"
+                },
                 "example": {
                   "id": "75da306e-8e25-47ac-8079-b695c369e2ef",
                   "createdAt": "2022-06-28T16:47:00Z",
@@ -19924,9 +20588,6 @@
                   ],
                   "channel": "WEBHOOK",
                   "webhookSecret": "whsec_AutoGeneratedSecret01234567890ab"
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/NotificationPolicy"
                 }
               }
             }
@@ -19935,11 +20596,11 @@
             "description": "Bad Request",
             "content": {
               "application/json": {
-                "example": {
-                  "errors": []
-                },
                 "schema": {
                   "$ref": "#/components/schemas/DatabaseErrors"
+                },
+                "example": {
+                  "errors": []
                 }
               }
             }
@@ -19957,103 +20618,46 @@
             "content": {}
           }
         },
-        "security": [],
-        "operationId": "postApiNotificationsPolicies",
-        "deprecated": false
+        "deprecated": false,
+        "security": []
       }
     },
     "/notifications/policies/{id}": {
-      "delete": {
-        "summary": "Delete notification policy",
-        "description": "Delete one of your Notification Policies, to stop sending matching notifications to its recipients.",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Notification policy ID"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "example": {
-                  "id": "9c4c54e7-59da-44ae-9cc5-7fd81be7c133",
-                  "createdAt": "2022-06-28T16:47:00Z",
-                  "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-                  "name": "Finance team emails",
-                  "notificationTypes": [
-                    "CUSTOMER_CREATED"
-                  ],
-                  "recipients": [
-                    "finance@example.com"
-                  ],
-                  "channel": "EMAIL"
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/NotificationPolicy"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "401": {
-            "description": "",
-            "content": {}
-          },
-          "403": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "deleteApiNotificationsPolicies_id",
-        "deprecated": false
-      },
       "get": {
+        "tags": [],
         "summary": "Get notification policy",
         "description": "Retrieve the details of a Notification Policy.",
-        "tags": [],
+        "operationId": "getApiNotificationsPolicies_id",
         "parameters": [
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
+            }
           },
           {
+            "name": "id",
+            "in": "path",
+            "description": "Notification policy ID",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Notification policy ID"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -20061,6 +20665,9 @@
             "description": "OK",
             "content": {
               "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NotificationPolicy"
+                },
                 "example": {
                   "id": "9c4c54e7-59da-44ae-9cc5-7fd81be7c133",
                   "createdAt": "2022-06-28T16:47:00Z",
@@ -20073,9 +20680,6 @@
                     "finance@example.com"
                   ],
                   "channel": "EMAIL"
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/NotificationPolicy"
                 }
               }
             }
@@ -20097,46 +20701,115 @@
             "content": {}
           }
         },
-        "security": [],
-        "operationId": "getApiNotificationsPolicies_id",
-        "deprecated": false
+        "deprecated": false,
+        "security": []
+      },
+      "delete": {
+        "tags": [],
+        "summary": "Delete notification policy",
+        "description": "Delete one of your Notification Policies, to stop sending matching notifications to its recipients.",
+        "operationId": "deleteApiNotificationsPolicies_id",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Notification policy ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NotificationPolicy"
+                },
+                "example": {
+                  "id": "9c4c54e7-59da-44ae-9cc5-7fd81be7c133",
+                  "createdAt": "2022-06-28T16:47:00Z",
+                  "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+                  "name": "Finance team emails",
+                  "notificationTypes": [
+                    "CUSTOMER_CREATED"
+                  ],
+                  "recipients": [
+                    "finance@example.com"
+                  ],
+                  "channel": "EMAIL"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "",
+            "content": {}
+          },
+          "401": {
+            "description": "",
+            "content": {}
+          },
+          "403": {
+            "description": "",
+            "content": {}
+          },
+          "500": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "deprecated": false,
+        "security": []
       }
     },
     "/notifications/policies/{id}/notification-types": {
       "post": {
+        "tags": [],
         "summary": "Add notification types to a policy",
         "description": "Add new notification types to an existing Notification Policy.",
-        "tags": [],
+        "operationId": "postApiNotificationsPolicies_id_Notification_types",
         "parameters": [
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
+            }
           },
           {
+            "name": "id",
+            "in": "path",
+            "description": "Notification policy ID",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Notification policy ID"
+            }
           }
         ],
         "requestBody": {
           "content": {
             "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddNotificationTypesToPolicyRequest"
+              },
               "example": {
                 "notificationTypes": [
                   "CUSTOMER_CREATED"
                 ]
-              },
-              "schema": {
-                "$ref": "#/components/schemas/AddNotificationTypesToPolicyRequest"
               }
             }
           },
@@ -20147,6 +20820,9 @@
             "description": "OK",
             "content": {
               "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NotificationPolicy"
+                },
                 "example": {
                   "id": "9c4c54e7-59da-44ae-9cc5-7fd81be7c133",
                   "createdAt": "2022-06-28T16:47:00Z",
@@ -20159,9 +20835,6 @@
                     "finance@example.com"
                   ],
                   "channel": "EMAIL"
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/NotificationPolicy"
                 }
               }
             }
@@ -20170,11 +20843,11 @@
             "description": ",Bad Request",
             "content": {
               "application/json": {
-                "example": {
-                  "errors": []
-                },
                 "schema": {
                   "$ref": "#/components/schemas/DatabaseErrors"
+                },
+                "example": {
+                  "errors": []
                 }
               }
             }
@@ -20192,40 +20865,40 @@
             "content": {}
           }
         },
-        "security": [],
-        "operationId": "postApiNotificationsPolicies_id_Notification_types",
-        "deprecated": false
+        "deprecated": false,
+        "security": []
       }
     },
     "/notifications/policies/{id}/notification-types/{type}": {
       "delete": {
+        "tags": [],
         "summary": "Remove a notification type from a policy",
         "description": "Remove a notification type from an existing Notification Policy.",
-        "tags": [],
+        "operationId": "deleteApiNotificationsPolicies_id_Notification_types_type",
         "parameters": [
           {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
             "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
             "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
-          },
-          {
             "schema": {
               "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Notification policy ID"
+            }
           },
           {
+            "name": "id",
             "in": "path",
-            "name": "type",
+            "description": "Notification policy ID",
             "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "type",
+            "in": "path",
             "description": "The notification type to remove from this policy",
+            "required": true,
             "schema": {
               "$ref": "#/components/schemas/NotificationType"
             }
@@ -20236,6 +20909,9 @@
             "description": "OK",
             "content": {
               "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NotificationPolicy"
+                },
                 "example": {
                   "id": "9c4c54e7-59da-44ae-9cc5-7fd81be7c133",
                   "createdAt": "2022-06-28T16:47:00Z",
@@ -20248,9 +20924,6 @@
                     "finance@example.com"
                   ],
                   "channel": "EMAIL"
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/NotificationPolicy"
                 }
               }
             }
@@ -20259,11 +20932,11 @@
             "description": ",Bad Request",
             "content": {
               "application/json": {
-                "example": {
-                  "errors": []
-                },
                 "schema": {
                   "$ref": "#/components/schemas/DatabaseErrors"
+                },
+                "example": {
+                  "errors": []
                 }
               }
             }
@@ -20281,46 +20954,46 @@
             "content": {}
           }
         },
-        "security": [],
-        "operationId": "deleteApiNotificationsPolicies_id_Notification_types_type",
-        "deprecated": false
+        "deprecated": false,
+        "security": []
       }
     },
     "/notifications/policies/{id}/recipients": {
       "post": {
+        "tags": [],
         "summary": "Add recipients to a policy",
         "description": "Add new recipients to an existing Notification Policy.",
-        "tags": [],
+        "operationId": "postApiNotificationsPolicies_id_Recipients",
         "parameters": [
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
+            }
           },
           {
+            "name": "id",
+            "in": "path",
+            "description": "Notification policy ID",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "description": "Notification policy ID"
+            }
           }
         ],
         "requestBody": {
           "content": {
             "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddRecipientsToPolicyRequest"
+              },
               "example": {
                 "recipients": [
                   "operations@example.com"
                 ]
-              },
-              "schema": {
-                "$ref": "#/components/schemas/AddRecipientsToPolicyRequest"
               }
             }
           },
@@ -20331,6 +21004,9 @@
             "description": "OK",
             "content": {
               "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NotificationPolicy"
+                },
                 "example": {
                   "id": "9c4c54e7-59da-44ae-9cc5-7fd81be7c133",
                   "createdAt": "2022-06-28T16:47:00Z",
@@ -20344,9 +21020,6 @@
                     "operations@example.com"
                   ],
                   "channel": "EMAIL"
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/NotificationPolicy"
                 }
               }
             }
@@ -20355,11 +21028,11 @@
             "description": ",Bad Request",
             "content": {
               "application/json": {
-                "example": {
-                  "errors": []
-                },
                 "schema": {
                   "$ref": "#/components/schemas/DatabaseErrors"
+                },
+                "example": {
+                  "errors": []
                 }
               }
             }
@@ -20377,43 +21050,43 @@
             "content": {}
           }
         },
-        "security": [],
-        "operationId": "postApiNotificationsPolicies_id_Recipients",
-        "deprecated": false
+        "deprecated": false,
+        "security": []
       }
     },
     "/notifications/policies/{id}/recipients/{recipient}": {
       "delete": {
+        "tags": [],
         "summary": "Remove a recipient from a policy",
         "description": "Delete a recipient from an existing Notification Policy.",
-        "tags": [],
+        "operationId": "deleteApiNotificationsPolicies_id_Recipients_recipient",
         "parameters": [
           {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
             "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
             "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
-          },
-          {
             "schema": {
               "type": "string"
-            },
-            "in": "path",
+            }
+          },
+          {
             "name": "id",
+            "in": "path",
+            "description": "Notification policy ID",
             "required": true,
-            "description": "Notification policy ID"
-          },
-          {
             "schema": {
               "type": "string"
-            },
-            "in": "path",
+            }
+          },
+          {
             "name": "recipient",
+            "in": "path",
+            "description": "The webhook URL or email address to remove from the policy",
             "required": true,
-            "description": "The webhook URL or email address to remove from the policy"
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -20421,6 +21094,9 @@
             "description": "OK",
             "content": {
               "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NotificationPolicy"
+                },
                 "example": {
                   "id": "9c4c54e7-59da-44ae-9cc5-7fd81be7c133",
                   "createdAt": "2022-06-28T16:47:00Z",
@@ -20433,9 +21109,6 @@
                     "finance@example.com"
                   ],
                   "channel": "EMAIL"
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/NotificationPolicy"
                 }
               }
             }
@@ -20444,11 +21117,11 @@
             "description": ",Bad Request",
             "content": {
               "application/json": {
-                "example": {
-                  "errors": []
-                },
                 "schema": {
                   "$ref": "#/components/schemas/DatabaseErrors"
+                },
+                "example": {
+                  "errors": []
                 }
               }
             }
@@ -20466,9 +21139,8 @@
             "content": {}
           }
         },
-        "security": [],
-        "operationId": "deleteApiNotificationsPolicies_id_Recipients_recipient",
-        "deprecated": false
+        "deprecated": false,
+        "security": []
       }
     },
     "/performance-obligations/{id}": {
@@ -20494,6 +21166,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -20597,6 +21281,18 @@
             "required": false,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -20718,6 +21414,18 @@
             "required": false,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -20937,6 +21645,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -21174,6 +21894,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -21473,6 +22205,18 @@
             "required": true,
             "schema": {
               "type": "integer"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -21911,6 +22655,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -22099,6 +22855,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -22192,6 +22960,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -22284,6 +23064,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -22555,6 +23347,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -22742,6 +23546,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -22939,6 +23755,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -23196,6 +24024,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -23463,6 +24303,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -23668,6 +24520,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -23762,6 +24626,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -23993,6 +24869,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -24064,6 +24952,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -24147,6 +25047,18 @@
             "required": false,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -24387,6 +25299,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -24555,6 +25479,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -24610,6 +25546,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -24799,6 +25747,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -24886,6 +25846,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -24933,18 +25905,31 @@
     },
     "/integrations": {
       "get": {
+        "tags": [],
         "summary": "List all Integrations",
         "description": "List all Integrations, including integrations that are not configured",
-        "tags": [],
+        "operationId": "getApiIntegrations",
         "parameters": [
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
+            }
+          },
+          {
+            "name": "Sequence-Version",
             "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -24952,6 +25937,9 @@
             "description": "OK",
             "content": {
               "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ListAllIntegrationsEndpointResponseModel"
+                },
                 "example": {
                   "items": [
                     {
@@ -24965,9 +25953,6 @@
                       "authFailure": false
                     }
                   ]
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/ListAllIntegrationsEndpointResponseModel"
                 }
               }
             }
@@ -24985,25 +25970,37 @@
             "content": {}
           }
         },
-        "security": [],
-        "operationId": "getApiIntegrations",
-        "deprecated": false
+        "deprecated": false,
+        "security": []
       }
     },
     "/integrations/customers": {
       "get": {
+        "tags": [],
         "summary": "Get customers from connected integrations",
         "description": "Gets customers for external integration if connected",
-        "tags": [],
+        "operationId": "getApiIntegrationsCustomers",
         "parameters": [
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
+            }
+          },
+          {
+            "name": "Sequence-Version",
             "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -25011,6 +26008,9 @@
             "description": "OK",
             "content": {
               "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetIntegrationCustomersEndpointResponseModel"
+                },
                 "example": {
                   "customers": [
                     {
@@ -25027,9 +26027,6 @@
                       ]
                     }
                   ]
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/GetIntegrationCustomersEndpointResponseModel"
                 }
               }
             }
@@ -25047,34 +26044,46 @@
             "content": {}
           }
         },
-        "security": [],
-        "operationId": "getApiIntegrationsCustomers",
-        "deprecated": false
+        "deprecated": false,
+        "security": []
       }
     },
     "/integrations/customers/{service}": {
       "get": {
+        "tags": [],
         "summary": "Get customers from a specific integration",
         "description": "Gets customers from a specific integration",
-        "tags": [],
+        "operationId": "getApiIntegrationsCustomers_service",
         "parameters": [
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
+            }
           },
           {
+            "name": "service",
+            "in": "path",
+            "description": "Integration service",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "path",
-            "name": "service",
-            "required": true,
-            "description": "Integration service"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -25082,6 +26091,9 @@
             "description": "OK",
             "content": {
               "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetIntegrationCustomersForServiceEndpointResponseModel"
+                },
                 "example": {
                   "items": [
                     {
@@ -25093,9 +26105,6 @@
                       "externalUrl": "www.example.com"
                     }
                   ]
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/GetIntegrationCustomersForServiceEndpointResponseModel"
                 }
               }
             }
@@ -25113,36 +26122,36 @@
             "content": {}
           }
         },
-        "security": [],
-        "operationId": "getApiIntegrationsCustomers_service",
-        "deprecated": false
+        "deprecated": false,
+        "security": []
       }
     },
     "/integrations/google-sheets/export": {
       "post": {
+        "tags": [],
         "summary": "Set up a data export to Google Sheets",
         "description": "Set up a data export to Google Sheets",
-        "tags": [],
+        "operationId": "postApiIntegrationsGoogle_sheetsExport",
         "parameters": [
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
+            }
           }
         ],
         "requestBody": {
           "content": {
             "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExportDataToGoogleSheetsEndpointRequestModel"
+              },
               "example": {
                 "template": "ALL",
                 "sheetUrl": "https://www.example.com"
-              },
-              "schema": {
-                "$ref": "#/components/schemas/ExportDataToGoogleSheetsEndpointRequestModel"
               }
             }
           },
@@ -25166,25 +26175,37 @@
             "content": {}
           }
         },
-        "security": [],
-        "operationId": "postApiIntegrationsGoogle_sheetsExport",
-        "deprecated": false
+        "deprecated": false,
+        "security": []
       }
     },
     "/integrations/ledger-accounts": {
       "get": {
+        "tags": [],
         "summary": "Get integration ledger accounts",
         "description": "Gets ledger accounts for external integration if connected",
-        "tags": [],
+        "operationId": "getApiIntegrationsLedger_accounts",
         "parameters": [
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
+            }
+          },
+          {
+            "name": "Sequence-Version",
             "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -25192,6 +26213,9 @@
             "description": "OK",
             "content": {
               "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetIntegrationLedgerAccountsEndpointResponseModel"
+                },
                 "example": {
                   "ledgerAccounts": [
                     {
@@ -25208,9 +26232,6 @@
                       "creditDefaultLedgerAccount": "810"
                     }
                   ]
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/GetIntegrationLedgerAccountsEndpointResponseModel"
                 }
               }
             }
@@ -25228,25 +26249,37 @@
             "content": {}
           }
         },
-        "security": [],
-        "operationId": "getApiIntegrationsLedger_accounts",
-        "deprecated": false
+        "deprecated": false,
+        "security": []
       }
     },
     "/integrations/token": {
       "get": {
+        "tags": [],
         "summary": "Get a token for integration.app",
         "description": "Get a token for integration.app",
-        "tags": [],
+        "operationId": "getApiIntegrationsToken",
         "parameters": [
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
+            }
+          },
+          {
+            "name": "Sequence-Version",
             "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -25254,11 +26287,11 @@
             "description": "OK",
             "content": {
               "application/json": {
-                "example": {
-                  "token": "token"
-                },
                 "schema": {
                   "$ref": "#/components/schemas/GetIntegrationAppTokenEndpointResponseModel"
+                },
+                "example": {
+                  "token": "token"
                 }
               }
             }
@@ -25276,80 +26309,46 @@
             "content": {}
           }
         },
-        "security": [],
-        "operationId": "getApiIntegrationsToken",
-        "deprecated": false
+        "deprecated": false,
+        "security": []
       }
     },
     "/integrations/{service}": {
-      "delete": {
-        "summary": "Delete an integration",
-        "description": "Delete an integration",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "service",
-            "required": true,
-            "description": "Integration service"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "",
-            "content": {}
-          },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "401": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "deleteApiIntegrations_service",
-        "deprecated": false
-      },
       "get": {
+        "tags": [],
         "summary": "Get an integration",
         "description": "Get an integration",
-        "tags": [],
+        "operationId": "getApiIntegrations_service",
         "parameters": [
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
+            }
           },
           {
+            "name": "service",
+            "in": "path",
+            "description": "Integration service",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "path",
-            "name": "service",
-            "required": true,
-            "description": "Integration service"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -25357,6 +26356,9 @@
             "description": "OK",
             "content": {
               "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Integration"
+                },
                 "example": {
                   "sequenceAccountId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
                   "state": "CONNECTED",
@@ -25371,9 +26373,6 @@
                   "service": "Xero",
                   "type": "Accounting",
                   "authFailure": false
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/Integration"
                 }
               }
             }
@@ -25391,104 +26390,42 @@
             "content": {}
           }
         },
-        "security": [],
-        "operationId": "getApiIntegrations_service",
-        "deprecated": false
-      },
-      "post": {
-        "summary": "Create an integration",
-        "description": "Create an integration",
-        "tags": [],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "path",
-            "name": "service",
-            "required": true,
-            "description": "Integration service"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "example": {
-                  "sequenceAccountId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
-                  "state": "CONNECTED",
-                  "rawState": "Callable",
-                  "enabled": true,
-                  "settings": [],
-                  "service": "Xero",
-                  "type": "Accounting",
-                  "authFailure": false
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/Integration"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "",
-            "content": {}
-          },
-          "401": {
-            "description": "",
-            "content": {}
-          },
-          "500": {
-            "description": "",
-            "content": {}
-          }
-        },
-        "security": [],
-        "operationId": "postApiIntegrations_service",
-        "deprecated": false
+        "deprecated": false,
+        "security": []
       },
       "put": {
+        "tags": [],
         "summary": "Update Integration",
         "description": "Update Integration",
-        "tags": [],
+        "operationId": "putApiIntegrations_service",
         "parameters": [
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
+            }
           },
           {
+            "name": "service",
+            "in": "path",
+            "description": "Integration service",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "path",
-            "name": "service",
-            "required": true,
-            "description": "Integration service"
+            }
           }
         ],
         "requestBody": {
           "content": {
             "application/json": {
-              "example": {
-                "enabled": true
-              },
               "schema": {
                 "$ref": "#/components/schemas/UpdateIntegrationEndpointRequestModel"
+              },
+              "example": {
+                "enabled": true
               }
             }
           },
@@ -25499,6 +26436,9 @@
             "description": "OK",
             "content": {
               "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Integration"
+                },
                 "example": {
                   "sequenceAccountId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
                   "state": "CONNECTED",
@@ -25508,9 +26448,6 @@
                   "service": "Xero",
                   "type": "Accounting",
                   "authFailure": false
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/Integration"
                 }
               }
             }
@@ -25528,34 +26465,32 @@
             "content": {}
           }
         },
-        "security": [],
-        "operationId": "putApiIntegrations_service",
-        "deprecated": false
-      }
-    },
-    "/integrations/{service}/authorize/redirect": {
+        "deprecated": false,
+        "security": []
+      },
       "post": {
-        "summary": "Create an integration authorise URL and redirect",
-        "description": "Create an integration authorise URL and redirect",
         "tags": [],
+        "summary": "Create an integration",
+        "description": "Create an integration",
+        "operationId": "postApiIntegrations_service",
         "parameters": [
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
+            }
           },
           {
+            "name": "service",
+            "in": "path",
+            "description": "Integration service",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "path",
-            "name": "service",
-            "required": true,
-            "description": "Integration service"
+            }
           }
         ],
         "responses": {
@@ -25563,11 +26498,18 @@
             "description": "OK",
             "content": {
               "application/json": {
-                "example": {
-                  "url": "https://connect.example.com/oauth/authorize?response_type=code"
-                },
                 "schema": {
-                  "$ref": "#/components/schemas/CreateIntegrationAuthoriseUrlEndpointOauthRedirect"
+                  "$ref": "#/components/schemas/Integration"
+                },
+                "example": {
+                  "sequenceAccountId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                  "state": "CONNECTED",
+                  "rawState": "Callable",
+                  "enabled": true,
+                  "settings": [],
+                  "service": "Xero",
+                  "type": "Accounting",
+                  "authFailure": false
                 }
               }
             }
@@ -25585,44 +26527,147 @@
             "content": {}
           }
         },
-        "security": [],
+        "deprecated": false,
+        "security": []
+      },
+      "delete": {
+        "tags": [],
+        "summary": "Delete an integration",
+        "description": "Delete an integration",
+        "operationId": "deleteApiIntegrations_service",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "service",
+            "in": "path",
+            "description": "Integration service",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {}
+          },
+          "400": {
+            "description": "",
+            "content": {}
+          },
+          "401": {
+            "description": "",
+            "content": {}
+          },
+          "500": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "deprecated": false,
+        "security": []
+      }
+    },
+    "/integrations/{service}/authorize/redirect": {
+      "post": {
+        "tags": [],
+        "summary": "Create an integration authorise URL and redirect",
+        "description": "Create an integration authorise URL and redirect",
         "operationId": "postApiIntegrations_service_AuthorizeRedirect",
-        "deprecated": false
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "service",
+            "in": "path",
+            "description": "Integration service",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreateIntegrationAuthoriseUrlEndpointOauthRedirect"
+                },
+                "example": {
+                  "url": "https://connect.example.com/oauth/authorize?response_type=code"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "",
+            "content": {}
+          },
+          "401": {
+            "description": "",
+            "content": {}
+          },
+          "500": {
+            "description": "",
+            "content": {}
+          }
+        },
+        "deprecated": false,
+        "security": []
       }
     },
     "/integrations/{service}/credit-default-ledger-account": {
       "put": {
+        "tags": [],
         "summary": "Set credit default ledger account",
         "description": "Set credit default ledger account for accounting Integration",
-        "tags": [],
+        "operationId": "putApiIntegrations_service_Credit_default_ledger_account",
         "parameters": [
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
+            }
           },
           {
+            "name": "service",
+            "in": "path",
+            "description": "Integration service",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "path",
-            "name": "service",
-            "required": true,
-            "description": "Integration service"
+            }
           }
         ],
         "requestBody": {
           "content": {
             "application/json": {
-              "example": {
-                "creditDefaultLedgerAccount": "810"
-              },
               "schema": {
                 "$ref": "#/components/schemas/SetCreditDefaultLedgerAccountEndpointRequestModel"
+              },
+              "example": {
+                "creditDefaultLedgerAccount": "810"
               }
             }
           },
@@ -25646,46 +26691,46 @@
             "content": {}
           }
         },
-        "security": [],
-        "operationId": "putApiIntegrations_service_Credit_default_ledger_account",
-        "deprecated": false
+        "deprecated": false,
+        "security": []
       }
     },
     "/integrations/{service}/customers": {
       "post": {
+        "tags": [],
         "summary": "Create Customers from connected Integration",
         "description": "Import [Customers](/customers/overview) from your connected integration.",
-        "tags": [],
+        "operationId": "postApiIntegrations_service_Customers",
         "parameters": [
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
+            }
           },
           {
+            "name": "service",
+            "in": "path",
+            "description": "Integration service",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "path",
-            "name": "service",
-            "required": true,
-            "description": "Integration service"
+            }
           }
         ],
         "requestBody": {
           "content": {
             "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SyncCustomersFromIntegrationEndpointRequestModel"
+              },
               "example": {
                 "customerIds": [
                   "123"
                 ]
-              },
-              "schema": {
-                "$ref": "#/components/schemas/SyncCustomersFromIntegrationEndpointRequestModel"
               }
             }
           },
@@ -25696,11 +26741,11 @@
             "description": "Created",
             "content": {
               "application/json": {
-                "example": {
-                  "count": 10
-                },
                 "schema": {
                   "$ref": "#/components/schemas/SyncCustomersFromIntegrationEndpointResponseModel"
+                },
+                "example": {
+                  "count": 10
                 }
               }
             }
@@ -25710,46 +26755,46 @@
             "content": {}
           }
         },
-        "security": [],
-        "operationId": "postApiIntegrations_service_Customers",
-        "deprecated": false
+        "deprecated": false,
+        "security": []
       }
     },
     "/integrations/{service}/customers/progress": {
       "post": {
+        "tags": [],
         "summary": "Get progress of importing Customers from connected Integration",
         "description": "Get progress of importing [Customers](/customers/overview) from your connected integration.",
-        "tags": [],
+        "operationId": "postApiIntegrations_service_CustomersProgress",
         "parameters": [
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
+            }
           },
           {
+            "name": "service",
+            "in": "path",
+            "description": "Integration service",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "path",
-            "name": "service",
-            "required": true,
-            "description": "Integration service"
+            }
           }
         ],
         "requestBody": {
           "content": {
             "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetCustomerImportFromIntegrationProgressEndpointRequestModel"
+              },
               "example": {
                 "customerIds": [
                   "123"
                 ]
-              },
-              "schema": {
-                "$ref": "#/components/schemas/GetCustomerImportFromIntegrationProgressEndpointRequestModel"
               }
             }
           },
@@ -25760,12 +26805,12 @@
             "description": "OK",
             "content": {
               "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetCustomerImportFromIntegrationProgressEndpointResponseModel"
+                },
                 "example": {
                   "totalCount": 10,
                   "currentCount": 1
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/GetCustomerImportFromIntegrationProgressEndpointResponseModel"
                 }
               }
             }
@@ -25775,44 +26820,44 @@
             "content": {}
           }
         },
-        "security": [],
-        "operationId": "postApiIntegrations_service_CustomersProgress",
-        "deprecated": false
+        "deprecated": false,
+        "security": []
       }
     },
     "/integrations/{service}/default-ledger-account": {
       "put": {
+        "tags": [],
         "summary": "Set default ledger account",
         "description": "Set default ledger account for accounting Integration",
-        "tags": [],
+        "operationId": "putApiIntegrations_service_Default_ledger_account",
         "parameters": [
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
+            }
           },
           {
+            "name": "service",
+            "in": "path",
+            "description": "Integration service",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "path",
-            "name": "service",
-            "required": true,
-            "description": "Integration service"
+            }
           }
         ],
         "requestBody": {
           "content": {
             "application/json": {
-              "example": {
-                "defaultLedgerAccount": "200"
-              },
               "schema": {
                 "$ref": "#/components/schemas/SetDefaultLedgerAccountEndpointRequestModel"
+              },
+              "example": {
+                "defaultLedgerAccount": "200"
               }
             }
           },
@@ -25836,47 +26881,47 @@
             "content": {}
           }
         },
-        "security": [],
-        "operationId": "putApiIntegrations_service_Default_ledger_account",
-        "deprecated": false
+        "deprecated": false,
+        "security": []
       }
     },
     "/integrations/{service}/enabled-pipeline-stages": {
       "put": {
+        "tags": [],
         "summary": "Set enabled pipeline stages",
         "description": "Set enabled pipeline stages for CRM integration",
-        "tags": [],
+        "operationId": "putApiIntegrations_service_Enabled_pipeline_stages",
         "parameters": [
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
+            }
           },
           {
+            "name": "service",
+            "in": "path",
+            "description": "Integration service",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "path",
-            "name": "service",
-            "required": true,
-            "description": "Integration service"
+            }
           }
         ],
         "requestBody": {
           "content": {
             "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SetEnabledPipelineStagesEndpointRequestModel"
+              },
               "example": {
                 "pipelineStageIds": [
                   "23034582",
                   "closedwon"
                 ]
-              },
-              "schema": {
-                "$ref": "#/components/schemas/SetEnabledPipelineStagesEndpointRequestModel"
               }
             }
           },
@@ -25900,34 +26945,34 @@
             "content": {}
           }
         },
-        "security": [],
-        "operationId": "putApiIntegrations_service_Enabled_pipeline_stages",
-        "deprecated": false
+        "deprecated": false,
+        "security": []
       }
     },
     "/integrations/{service}/links": {
       "delete": {
+        "tags": [],
         "summary": "Delete all links for an integration",
         "description": "Delete all links for an integration",
-        "tags": [],
+        "operationId": "deleteApiIntegrations_service_Links",
         "parameters": [
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
+            }
           },
           {
+            "name": "service",
+            "in": "path",
+            "description": "Integration service",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "path",
-            "name": "service",
-            "required": true,
-            "description": "Integration service"
+            }
           }
         ],
         "responses": {
@@ -25948,34 +26993,46 @@
             "content": {}
           }
         },
-        "security": [],
-        "operationId": "deleteApiIntegrations_service_Links",
-        "deprecated": false
+        "deprecated": false,
+        "security": []
       }
     },
     "/integrations/{service}/pipeline-stages": {
       "get": {
+        "tags": [],
         "summary": "Get integration pipeline stages",
         "description": "Gets pipeline stages for external CRM integration if connected",
-        "tags": [],
+        "operationId": "getApiIntegrations_service_Pipeline_stages",
         "parameters": [
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
+            }
           },
           {
+            "name": "service",
+            "in": "path",
+            "description": "Integration service",
+            "required": true,
             "schema": {
               "type": "string"
-            },
-            "in": "path",
-            "name": "service",
-            "required": true,
-            "description": "Integration service"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -25983,6 +27040,9 @@
             "description": ",OK",
             "content": {
               "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetIntegrationPipelineStagesEndpointResponseModel"
+                },
                 "example": {
                   "pipelineStages": {
                     "key": "HubSpot",
@@ -26002,9 +27062,6 @@
                       "10349039"
                     ]
                   }
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/GetIntegrationPipelineStagesEndpointResponseModel"
                 }
               }
             }
@@ -26022,43 +27079,43 @@
             "content": {}
           }
         },
-        "security": [],
-        "operationId": "getApiIntegrations_service_Pipeline_stages",
-        "deprecated": false
+        "deprecated": false,
+        "security": []
       }
     },
     "/integrations/{service}/sync-invoice/{invoiceId}": {
       "post": {
+        "tags": [],
         "summary": "Sync an invoice",
         "description": "Set an invoice with an accounting Integration",
-        "tags": [],
+        "operationId": "postApiIntegrations_service_Sync_invoice_invoiceId",
         "parameters": [
           {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
             "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
             "required": true,
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`."
-          },
-          {
             "schema": {
               "type": "string"
-            },
-            "in": "path",
+            }
+          },
+          {
             "name": "service",
+            "in": "path",
+            "description": "Integration service",
             "required": true,
-            "description": "Integration service"
-          },
-          {
             "schema": {
               "type": "string"
-            },
-            "in": "path",
+            }
+          },
+          {
             "name": "invoiceId",
+            "in": "path",
+            "description": "Invoice Id",
             "required": true,
-            "description": "Invoice Id"
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -26079,9 +27136,8 @@
             "content": {}
           }
         },
-        "security": [],
-        "operationId": "postApiIntegrations_service_Sync_invoice_invoiceId",
-        "deprecated": false
+        "deprecated": false,
+        "security": []
       }
     },
     "/billing-products": {
@@ -26125,6 +27181,18 @@
             "required": false,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -26274,6 +27342,18 @@
             "required": false,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -26584,6 +27664,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -26955,6 +28047,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -27092,6 +28196,18 @@
             "required": false,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -27488,6 +28604,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -27869,6 +28997,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -28050,6 +29190,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -28239,6 +29391,18 @@
             "required": false,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -28508,6 +29672,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -28616,6 +29792,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -28963,6 +30151,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -29070,6 +30270,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -29152,6 +30364,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -29309,6 +30533,18 @@
             "required": false,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -29530,6 +30766,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -29708,6 +30956,18 @@
             "required": false,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -30450,6 +31710,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -31386,6 +32658,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -31606,6 +32890,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -31704,6 +33000,18 @@
             "required": false,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -31840,6 +33148,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -31974,6 +33294,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -32744,6 +34076,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -32814,6 +34158,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -33483,6 +34839,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -33847,6 +35215,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -34117,6 +35497,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -34304,6 +35696,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -34647,6 +36051,18 @@
             "required": false,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -35261,6 +36677,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -35788,6 +37216,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -36214,6 +37654,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -36278,6 +37730,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -36398,6 +37862,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -36506,6 +37982,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -36587,6 +38075,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -36655,6 +38155,18 @@
             "required": false,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -36742,6 +38254,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -36845,6 +38369,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -37037,6 +38573,18 @@
             "required": false,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -37331,6 +38879,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -37447,6 +39007,18 @@
             "required": false,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -37637,6 +39209,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -37926,6 +39510,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -38025,6 +39621,18 @@
             "required": false,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -38299,6 +39907,18 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -38406,6 +40026,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -39981,6 +41613,18 @@
             "schema": {
               "type": "boolean"
             }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
           }
         ],
         "responses": {
@@ -41521,6 +43165,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -43462,6 +45118,18 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
             }
           }
         ],
@@ -71480,52 +73148,15 @@
         }
       },
       "NotificationPolicy": {
-        "properties": {
-          "id": {
-            "example": "9c4c54e7-59da-44ae-9cc5-7fd81be7c133",
-            "description": "Unique ID",
-            "type": "string"
-          },
-          "createdAt": {
-            "example": "2022-06-28T16:47:00Z",
-            "description": "Created at",
-            "type": "string"
-          },
-          "sequenceAccountId": {
-            "example": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-            "description": "Sequence Account which this policy matches",
-            "type": "string"
-          },
-          "name": {
-            "example": "Finance team emails",
-            "description": "Human-readable name",
-            "type": "string"
-          },
-          "notificationTypes": {
-            "items": {
-              "$ref": "#/components/schemas/NotificationType"
-            },
-            "example": [
-              "CUSTOMER_CREATED"
-            ],
-            "description": "Set of notification types that this policy matches. If not present this policy will cover all notification types.",
-            "type": "array"
-          },
-          "recipients": {
-            "items": {
-              "type": "string"
-            },
-            "example": [
-              "finance@example.com"
-            ],
-            "description": "The webhook URLs or email addresses which will receive notifications, depending on the channel",
-            "type": "array"
-          },
-          "channel": {
-            "$ref": "#/components/schemas/NotificationChannel",
-            "description": "Notification channel"
-          }
-        },
+        "required": [
+          "channel",
+          "createdAt",
+          "id",
+          "name",
+          "recipients",
+          "sequenceAccountId"
+        ],
+        "type": "object",
         "example": {
           "id": "9c4c54e7-59da-44ae-9cc5-7fd81be7c133",
           "createdAt": "2022-06-28T16:47:00Z",
@@ -71539,17 +73170,55 @@
           ],
           "channel": "EMAIL"
         },
-        "type": "object",
-        "required": [
-          "channel",
-          "createdAt",
-          "id",
-          "name",
-          "recipients",
-          "sequenceAccountId"
-        ]
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique ID",
+            "example": "9c4c54e7-59da-44ae-9cc5-7fd81be7c133"
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "Created at",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Sequence Account which this policy matches",
+            "example": "c4602d51-0fb4-4b48-b689-6ba28f540d1e"
+          },
+          "name": {
+            "type": "string",
+            "description": "Human-readable name",
+            "example": "Finance team emails"
+          },
+          "notificationTypes": {
+            "type": "array",
+            "description": "Set of notification types that this policy matches. If not present this policy will cover all notification types.",
+            "example": [
+              "CUSTOMER_CREATED"
+            ],
+            "items": {
+              "$ref": "#/components/schemas/NotificationType"
+            }
+          },
+          "recipients": {
+            "type": "array",
+            "description": "The webhook URLs or email addresses which will receive notifications, depending on the channel",
+            "example": [
+              "finance@example.com"
+            ],
+            "items": {
+              "type": "string"
+            }
+          },
+          "channel": {
+            "description": "Notification channel",
+            "$ref": "#/components/schemas/NotificationChannel"
+          }
+        }
       },
       "NotificationType": {
+        "type": "string",
         "example": "CUSTOMER_CREATED",
         "enum": [
           "CUSTOMER_CREATED",
@@ -71574,70 +73243,39 @@
           "QUOTE_PUBLISHED",
           "QUOTE_ACCEPTED",
           "QUOTE_ACCEPTED_BY_CUSTOMER"
-        ],
-        "type": "string"
+        ]
       },
       "NotificationChannel": {
+        "type": "string",
         "example": "EMAIL",
         "enum": [
           "WEBHOOK",
           "EMAIL"
-        ],
-        "type": "string"
+        ]
       },
       "DatabaseErrors": {
-        "properties": {
-          "errors": {
-            "items": {},
-            "example": [],
-            "type": "array"
-          }
-        },
+        "required": [
+          "errors"
+        ],
+        "type": "object",
         "example": {
           "errors": []
         },
-        "type": "object",
-        "required": [
-          "errors"
-        ]
+        "properties": {
+          "errors": {
+            "type": "array",
+            "example": [],
+            "items": {}
+          }
+        }
       },
       "CreateNotificationPolicyRequest": {
-        "properties": {
-          "name": {
-            "example": "Dev team integration webhooks",
-            "description": "Human-readable name",
-            "type": "string"
-          },
-          "notificationTypes": {
-            "items": {
-              "$ref": "#/components/schemas/NotificationType"
-            },
-            "example": [
-              "CUSTOMER_CREATED"
-            ],
-            "description": "Set of notification types that this policy matches. If not provided, then this policy will apply to all notification types.",
-            "type": "array"
-          },
-          "recipients": {
-            "items": {
-              "type": "string"
-            },
-            "example": [
-              "https://api.company.com/webhooks"
-            ],
-            "description": "The webhook URLs or email addresses which will receive notifications, depending on the channel",
-            "type": "array"
-          },
-          "channel": {
-            "$ref": "#/components/schemas/NotificationChannel",
-            "description": "Notification channel"
-          },
-          "webhookSecret": {
-            "example": "whsec_UserSubmittedSecret1234567890abc",
-            "description": "Webhook secret used to generate a signature header that's sent with an outbound webhook.It can be used to verify the authenticity of received Sequence webhooks. Only available for webhook channel policies.",
-            "type": "string"
-          }
-        },
+        "required": [
+          "channel",
+          "name",
+          "recipients"
+        ],
+        "type": "object",
         "example": {
           "name": "Dev team integration webhooks",
           "notificationTypes": [
@@ -71649,41 +73287,49 @@
           "channel": "WEBHOOK",
           "webhookSecret": "whsec_UserSubmittedSecret1234567890abc"
         },
-        "type": "object",
-        "required": [
-          "channel",
-          "name",
-          "recipients"
-        ]
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Human-readable name",
+            "example": "Dev team integration webhooks"
+          },
+          "notificationTypes": {
+            "type": "array",
+            "description": "Set of notification types that this policy matches. If not provided, then this policy will apply to all notification types.",
+            "example": [
+              "CUSTOMER_CREATED"
+            ],
+            "items": {
+              "$ref": "#/components/schemas/NotificationType"
+            }
+          },
+          "recipients": {
+            "type": "array",
+            "description": "The webhook URLs or email addresses which will receive notifications, depending on the channel",
+            "example": [
+              "https://api.company.com/webhooks"
+            ],
+            "items": {
+              "type": "string"
+            }
+          },
+          "channel": {
+            "description": "Notification channel",
+            "$ref": "#/components/schemas/NotificationChannel"
+          },
+          "webhookSecret": {
+            "type": "string",
+            "description": "Webhook secret used to generate a signature header that's sent with an outbound webhook.It can be used to verify the authenticity of received Sequence webhooks. Only available for webhook channel policies.",
+            "example": "whsec_UserSubmittedSecret1234567890abc"
+          }
+        }
       },
       "NotificationPolicies": {
-        "properties": {
-          "items": {
-            "items": {
-              "$ref": "#/components/schemas/NotificationPolicy"
-            },
-            "example": [
-              {
-                "id": "9c4c54e7-59da-44ae-9cc5-7fd81be7c133",
-                "createdAt": "2022-06-28T16:47:00Z",
-                "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
-                "name": "Finance team emails",
-                "notificationTypes": [
-                  "CUSTOMER_CREATED"
-                ],
-                "recipients": [
-                  "finance@example.com"
-                ],
-                "channel": "EMAIL"
-              }
-            ],
-            "description": "Notification policies",
-            "type": "array"
-          },
-          "pagination": {
-            "$ref": "#/components/schemas/PaginationResponse"
-          }
-        },
+        "required": [
+          "items",
+          "pagination"
+        ],
+        "type": "object",
         "example": {
           "items": [
             {
@@ -71706,57 +73352,79 @@
             "totalResultSize": 100
           }
         },
-        "type": "object",
-        "required": [
-          "items",
-          "pagination"
-        ]
+        "properties": {
+          "items": {
+            "type": "array",
+            "description": "Notification policies",
+            "example": [
+              {
+                "id": "9c4c54e7-59da-44ae-9cc5-7fd81be7c133",
+                "createdAt": "2022-06-28T16:47:00Z",
+                "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
+                "name": "Finance team emails",
+                "notificationTypes": [
+                  "CUSTOMER_CREATED"
+                ],
+                "recipients": [
+                  "finance@example.com"
+                ],
+                "channel": "EMAIL"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/NotificationPolicy"
+            }
+          },
+          "pagination": {
+            "$ref": "#/components/schemas/PaginationResponse"
+          }
+        }
       },
       "AddNotificationTypesToPolicyRequest": {
-        "properties": {
-          "notificationTypes": {
-            "items": {
-              "$ref": "#/components/schemas/NotificationType"
-            },
-            "example": [
-              "CUSTOMER_CREATED"
-            ],
-            "description": "The notification types to add to this policy",
-            "type": "array"
-          }
-        },
+        "required": [
+          "notificationTypes"
+        ],
+        "type": "object",
         "example": {
           "notificationTypes": [
             "CUSTOMER_CREATED"
           ]
         },
-        "type": "object",
-        "required": [
-          "notificationTypes"
-        ]
+        "properties": {
+          "notificationTypes": {
+            "type": "array",
+            "description": "The notification types to add to this policy",
+            "example": [
+              "CUSTOMER_CREATED"
+            ],
+            "items": {
+              "$ref": "#/components/schemas/NotificationType"
+            }
+          }
+        }
       },
       "AddRecipientsToPolicyRequest": {
-        "properties": {
-          "recipients": {
-            "items": {
-              "type": "string"
-            },
-            "example": [
-              "operations@example.com"
-            ],
-            "description": "The webhook URLs or email addresses to add to the policy, depending on its channel",
-            "type": "array"
-          }
-        },
+        "required": [
+          "recipients"
+        ],
+        "type": "object",
         "example": {
           "recipients": [
             "operations@example.com"
           ]
         },
-        "type": "object",
-        "required": [
-          "recipients"
-        ]
+        "properties": {
+          "recipients": {
+            "type": "array",
+            "description": "The webhook URLs or email addresses to add to the policy, depending on its channel",
+            "example": [
+              "operations@example.com"
+            ],
+            "items": {
+              "type": "string"
+            }
+          }
+        }
       },
       "GetPerformanceObligationEndpointProductGetPerformanceObligationResponseModel": {
         "required": [
@@ -76494,27 +78162,10 @@
         }
       },
       "ListAllIntegrationsEndpointResponseModel": {
-        "properties": {
-          "items": {
-            "items": {
-              "$ref": "#/components/schemas/Integration"
-            },
-            "example": [
-              {
-                "sequenceAccountId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
-                "state": "CONNECTED",
-                "rawState": "CONNECTED",
-                "enabled": true,
-                "settings": [],
-                "service": "Xero",
-                "type": "Accounting",
-                "authFailure": false
-              }
-            ],
-            "description": "Integrations",
-            "type": "array"
-          }
-        },
+        "required": [
+          "items"
+        ],
+        "type": "object",
         "example": {
           "items": [
             {
@@ -76529,52 +78180,40 @@
             }
           ]
         },
-        "type": "object",
-        "required": [
-          "items"
-        ]
+        "properties": {
+          "items": {
+            "type": "array",
+            "description": "Integrations",
+            "example": [
+              {
+                "sequenceAccountId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                "state": "CONNECTED",
+                "rawState": "CONNECTED",
+                "enabled": true,
+                "settings": [],
+                "service": "Xero",
+                "type": "Accounting",
+                "authFailure": false
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/Integration"
+            }
+          }
+        }
       },
       "Integration": {
-        "properties": {
-          "sequenceAccountId": {
-            "example": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
-            "description": "Sequence Account ID",
-            "type": "string"
-          },
-          "state": {
-            "$ref": "#/components/schemas/IntegrationState",
-            "description": "Integration state"
-          },
-          "rawState": {
-            "example": "CONNECTED",
-            "description": "Name of the integration state in the source system",
-            "type": "string"
-          },
-          "enabled": {
-            "example": true,
-            "description": "Integration enabled",
-            "type": "boolean"
-          },
-          "settings": {
-            "items": {},
-            "example": [],
-            "description": "Integration-specific settings",
-            "type": "array"
-          },
-          "service": {
-            "$ref": "#/components/schemas/IntegrationService1",
-            "description": "Integration Service"
-          },
-          "type": {
-            "$ref": "#/components/schemas/IntegrationType",
-            "description": "Integration Type"
-          },
-          "authFailure": {
-            "example": false,
-            "description": "Integration connection has been lost",
-            "type": "boolean"
-          }
-        },
+        "required": [
+          "authFailure",
+          "enabled",
+          "rawState",
+          "sequenceAccountId",
+          "service",
+          "settings",
+          "state",
+          "type"
+        ],
+        "type": "object",
         "example": {
           "sequenceAccountId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
           "state": "CONNECTED",
@@ -76585,19 +78224,49 @@
           "type": "Accounting",
           "authFailure": false
         },
-        "type": "object",
-        "required": [
-          "authFailure",
-          "enabled",
-          "rawState",
-          "sequenceAccountId",
-          "service",
-          "settings",
-          "state",
-          "type"
-        ]
+        "properties": {
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Sequence Account ID",
+            "example": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9"
+          },
+          "state": {
+            "description": "Integration state",
+            "$ref": "#/components/schemas/IntegrationState"
+          },
+          "rawState": {
+            "type": "string",
+            "description": "Name of the integration state in the source system",
+            "example": "CONNECTED"
+          },
+          "enabled": {
+            "type": "boolean",
+            "description": "Integration enabled",
+            "example": true
+          },
+          "settings": {
+            "type": "array",
+            "description": "Integration-specific settings",
+            "example": [],
+            "items": {}
+          },
+          "service": {
+            "description": "Integration Service",
+            "$ref": "#/components/schemas/IntegrationService1"
+          },
+          "type": {
+            "description": "Integration Type",
+            "$ref": "#/components/schemas/IntegrationType"
+          },
+          "authFailure": {
+            "type": "boolean",
+            "description": "Integration connection has been lost",
+            "example": false
+          }
+        }
       },
       "IntegrationState": {
+        "type": "string",
         "example": "CONNECTED",
         "enum": [
           "UNAVAILABLE",
@@ -76605,10 +78274,10 @@
           "PENDING",
           "CONNECTED",
           "COMING_SOON"
-        ],
-        "type": "string"
+        ]
       },
       "IntegrationService1": {
+        "type": "string",
         "example": "HubSpot",
         "enum": [
           "Amazon_Redshift",
@@ -76622,10 +78291,10 @@
           "Snowflake",
           "Stripe",
           "Xero"
-        ],
-        "type": "string"
+        ]
       },
       "IntegrationType": {
+        "type": "string",
         "example": "Accounting",
         "enum": [
           "Accounting",
@@ -76633,102 +78302,81 @@
           "CRM",
           "Data",
           "Payments"
-        ],
-        "type": "string"
+        ]
       },
       "KeyValuePair1": {
-        "properties": {
-          "key": {
-            "example": "Organisation",
-            "type": "string"
-          },
-          "value": {
-            "example": "My Company",
-            "type": "string"
-          }
-        },
+        "required": [
+          "key",
+          "value"
+        ],
+        "type": "object",
         "example": {
           "key": "Organisation",
           "value": "My Company"
         },
-        "type": "object",
-        "required": [
-          "key",
-          "value"
-        ]
+        "properties": {
+          "key": {
+            "type": "string",
+            "example": "Organisation"
+          },
+          "value": {
+            "type": "string",
+            "example": "My Company"
+          }
+        }
       },
       "GetIntegrationAppTokenEndpointResponseModel": {
-        "properties": {
-          "token": {
-            "example": "token",
-            "type": "string"
-          }
-        },
+        "required": [
+          "token"
+        ],
+        "type": "object",
         "example": {
           "token": "token"
         },
-        "type": "object",
-        "required": [
-          "token"
-        ]
+        "properties": {
+          "token": {
+            "type": "string",
+            "example": "token"
+          }
+        }
       },
       "CreateIntegrationAuthoriseUrlEndpointOauthRedirect": {
-        "properties": {
-          "url": {
-            "example": "https://connect.example.com/oauth/authorize?response_type=code",
-            "description": "OAuth Redirect URL",
-            "type": "string"
-          }
-        },
+        "required": [
+          "url"
+        ],
+        "type": "object",
         "example": {
           "url": "https://connect.example.com/oauth/authorize?response_type=code"
         },
-        "type": "object",
-        "required": [
-          "url"
-        ]
+        "properties": {
+          "url": {
+            "type": "string",
+            "description": "OAuth Redirect URL",
+            "example": "https://connect.example.com/oauth/authorize?response_type=code"
+          }
+        }
       },
       "UpdateIntegrationEndpointRequestModel": {
-        "properties": {
-          "enabled": {
-            "example": true,
-            "description": "Integration enabled",
-            "type": "boolean"
-          }
-        },
+        "required": [
+          "enabled"
+        ],
+        "type": "object",
         "example": {
           "enabled": true
         },
-        "type": "object",
-        "required": [
-          "enabled"
-        ]
+        "properties": {
+          "enabled": {
+            "type": "boolean",
+            "description": "Integration enabled",
+            "example": true
+          }
+        }
       },
       "GetIntegrationLedgerAccountsEndpointResponseModel": {
-        "properties": {
-          "ledgerAccounts": {
-            "items": {
-              "$ref": "#/components/schemas/GetIntegrationLedgerAccountsEndpointLedgerAccounts"
-            },
-            "example": [
-              {
-                "key": "Xero",
-                "value": [
-                  {
-                    "id": "id",
-                    "name": "My account",
-                    "code": "123",
-                    "status": "active"
-                  }
-                ],
-                "defaultLedgerAccount": "200",
-                "creditDefaultLedgerAccount": "810"
-              }
-            ],
-            "description": "Ledger accounts by service if available",
-            "type": "array"
-          }
-        },
+        "required": [
+          "ledgerAccounts"
+        ],
+        "type": "object",
         "example": {
           "ledgerAccounts": [
             {
@@ -76746,41 +78394,37 @@
             }
           ]
         },
-        "type": "object",
-        "required": [
-          "ledgerAccounts"
-        ]
-      },
-      "GetIntegrationLedgerAccountsEndpointLedgerAccounts": {
         "properties": {
-          "key": {
-            "$ref": "#/components/schemas/IntegrationService1"
-          },
-          "value": {
-            "items": {
-              "$ref": "#/components/schemas/GetIntegrationLedgerAccountsEndpointLedgerAccount"
-            },
+          "ledgerAccounts": {
+            "type": "array",
+            "description": "Ledger accounts by service if available",
             "example": [
               {
-                "id": "id",
-                "name": "My account",
-                "code": "123",
-                "status": "active"
+                "key": "Xero",
+                "value": [
+                  {
+                    "id": "id",
+                    "name": "My account",
+                    "code": "123",
+                    "status": "active"
+                  }
+                ],
+                "defaultLedgerAccount": "200",
+                "creditDefaultLedgerAccount": "810"
               }
             ],
-            "type": "array"
-          },
-          "defaultLedgerAccount": {
-            "example": "200",
-            "description": "Default ledger account if set",
-            "type": "string"
-          },
-          "creditDefaultLedgerAccount": {
-            "example": "810",
-            "description": "Credit Default ledger account",
-            "type": "string"
+            "items": {
+              "$ref": "#/components/schemas/GetIntegrationLedgerAccountsEndpointLedgerAccounts"
+            }
           }
-        },
+        }
+      },
+      "GetIntegrationLedgerAccountsEndpointLedgerAccounts": {
+        "required": [
+          "key",
+          "value"
+        ],
+        "type": "object",
         "example": {
           "key": "Xero",
           "value": [
@@ -76794,195 +78438,199 @@
           "defaultLedgerAccount": "200",
           "creditDefaultLedgerAccount": "810"
         },
-        "type": "object",
-        "required": [
-          "key",
-          "value"
-        ]
+        "properties": {
+          "key": {
+            "$ref": "#/components/schemas/IntegrationService1"
+          },
+          "value": {
+            "type": "array",
+            "example": [
+              {
+                "id": "id",
+                "name": "My account",
+                "code": "123",
+                "status": "active"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/GetIntegrationLedgerAccountsEndpointLedgerAccount"
+            }
+          },
+          "defaultLedgerAccount": {
+            "type": "string",
+            "description": "Default ledger account if set",
+            "example": "200"
+          },
+          "creditDefaultLedgerAccount": {
+            "type": "string",
+            "description": "Credit Default ledger account",
+            "example": "810"
+          }
+        }
       },
       "GetIntegrationLedgerAccountsEndpointLedgerAccount": {
-        "properties": {
-          "id": {
-            "example": "id",
-            "type": "string"
-          },
-          "name": {
-            "example": "My account",
-            "type": "string"
-          },
-          "code": {
-            "example": "123",
-            "type": "string"
-          },
-          "status": {
-            "$ref": "#/components/schemas/LedgerAccountStatus"
-          }
-        },
+        "required": [
+          "code",
+          "id",
+          "name",
+          "status"
+        ],
+        "type": "object",
         "example": {
           "id": "id",
           "name": "My account",
           "code": "123",
           "status": "active"
         },
-        "type": "object",
-        "required": [
-          "code",
-          "id",
-          "name",
-          "status"
-        ]
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": "id"
+          },
+          "name": {
+            "type": "string",
+            "example": "My account"
+          },
+          "code": {
+            "type": "string",
+            "example": "123"
+          },
+          "status": {
+            "$ref": "#/components/schemas/LedgerAccountStatus"
+          }
+        }
       },
       "LedgerAccountStatus": {
+        "type": "string",
         "example": "active",
         "enum": [
           "active",
           "inactive",
           "archived"
-        ],
-        "type": "string"
+        ]
       },
       "SyncCustomersFromIntegrationEndpointResponseModel": {
-        "properties": {
-          "count": {
-            "example": 10,
-            "description": "Number of customers to import",
-            "type": "integer"
-          }
-        },
+        "required": [
+          "count"
+        ],
+        "type": "object",
         "example": {
           "count": 10
         },
-        "type": "object",
-        "required": [
-          "count"
-        ]
+        "properties": {
+          "count": {
+            "type": "integer",
+            "description": "Number of customers to import",
+            "example": 10
+          }
+        }
       },
       "SyncCustomersFromIntegrationEndpointRequestModel": {
-        "properties": {
-          "customerIds": {
-            "items": {
-              "type": "string"
-            },
-            "example": [
-              "123"
-            ],
-            "description": "External customer IDs to import",
-            "type": "array"
-          }
-        },
+        "required": [
+          "customerIds"
+        ],
+        "type": "object",
         "example": {
           "customerIds": [
             "123"
           ]
         },
-        "type": "object",
-        "required": [
-          "customerIds"
-        ]
+        "properties": {
+          "customerIds": {
+            "type": "array",
+            "description": "External customer IDs to import",
+            "example": [
+              "123"
+            ],
+            "items": {
+              "type": "string"
+            }
+          }
+        }
       },
       "GetCustomerImportFromIntegrationProgressEndpointResponseModel": {
-        "properties": {
-          "totalCount": {
-            "example": 10,
-            "description": "Total number of customers to import",
-            "type": "integer"
-          },
-          "currentCount": {
-            "example": 1,
-            "description": "Current number of customers imported",
-            "type": "integer"
-          }
-        },
+        "required": [
+          "currentCount",
+          "totalCount"
+        ],
+        "type": "object",
         "example": {
           "totalCount": 10,
           "currentCount": 1
         },
-        "type": "object",
-        "required": [
-          "currentCount",
-          "totalCount"
-        ]
+        "properties": {
+          "totalCount": {
+            "type": "integer",
+            "description": "Total number of customers to import",
+            "example": 10
+          },
+          "currentCount": {
+            "type": "integer",
+            "description": "Current number of customers imported",
+            "example": 1
+          }
+        }
       },
       "GetCustomerImportFromIntegrationProgressEndpointRequestModel": {
-        "properties": {
-          "customerIds": {
-            "items": {
-              "type": "string"
-            },
-            "example": [
-              "123"
-            ],
-            "description": "External customer IDs to import",
-            "type": "array"
-          }
-        },
+        "required": [
+          "customerIds"
+        ],
+        "type": "object",
         "example": {
           "customerIds": [
             "123"
           ]
         },
-        "type": "object",
-        "required": [
-          "customerIds"
-        ]
+        "properties": {
+          "customerIds": {
+            "type": "array",
+            "description": "External customer IDs to import",
+            "example": [
+              "123"
+            ],
+            "items": {
+              "type": "string"
+            }
+          }
+        }
       },
       "SetDefaultLedgerAccountEndpointRequestModel": {
-        "properties": {
-          "defaultLedgerAccount": {
-            "example": "200",
-            "description": "Default ledger account",
-            "type": "string"
-          }
-        },
+        "required": [
+          "defaultLedgerAccount"
+        ],
+        "type": "object",
         "example": {
           "defaultLedgerAccount": "200"
         },
-        "type": "object",
-        "required": [
-          "defaultLedgerAccount"
-        ]
+        "properties": {
+          "defaultLedgerAccount": {
+            "type": "string",
+            "description": "Default ledger account",
+            "example": "200"
+          }
+        }
       },
       "SetCreditDefaultLedgerAccountEndpointRequestModel": {
-        "properties": {
-          "creditDefaultLedgerAccount": {
-            "example": "810",
-            "description": "Credit Default ledger account",
-            "type": "string"
-          }
-        },
+        "required": [
+          "creditDefaultLedgerAccount"
+        ],
+        "type": "object",
         "example": {
           "creditDefaultLedgerAccount": "810"
         },
-        "type": "object",
-        "required": [
-          "creditDefaultLedgerAccount"
-        ]
+        "properties": {
+          "creditDefaultLedgerAccount": {
+            "type": "string",
+            "description": "Credit Default ledger account",
+            "example": "810"
+          }
+        }
       },
       "GetIntegrationCustomersEndpointResponseModel": {
-        "properties": {
-          "customers": {
-            "items": {
-              "$ref": "#/components/schemas/GetIntegrationCustomersEndpointCustomers"
-            },
-            "example": [
-              {
-                "key": "Xero",
-                "value": [
-                  {
-                    "id": "id",
-                    "companyName": "My customer",
-                    "country": "GB",
-                    "isLinked": true,
-                    "invalidReason": "Something's wrong",
-                    "externalUrl": "www.example.com"
-                  }
-                ]
-              }
-            ],
-            "description": "Customers by service if available",
-            "type": "array"
-          }
-        },
+        "required": [
+          "customers"
+        ],
+        "type": "object",
         "example": {
           "customers": [
             {
@@ -77000,33 +78648,37 @@
             }
           ]
         },
-        "type": "object",
-        "required": [
-          "customers"
-        ]
-      },
-      "GetIntegrationCustomersEndpointCustomers": {
         "properties": {
-          "key": {
-            "$ref": "#/components/schemas/IntegrationService1"
-          },
-          "value": {
-            "items": {
-              "$ref": "#/components/schemas/Customer1"
-            },
+          "customers": {
+            "type": "array",
+            "description": "Customers by service if available",
             "example": [
               {
-                "id": "id",
-                "companyName": "My customer",
-                "country": "GB",
-                "isLinked": true,
-                "invalidReason": "Something's wrong",
-                "externalUrl": "www.example.com"
+                "key": "Xero",
+                "value": [
+                  {
+                    "id": "id",
+                    "companyName": "My customer",
+                    "country": "GB",
+                    "isLinked": true,
+                    "invalidReason": "Something's wrong",
+                    "externalUrl": "www.example.com"
+                  }
+                ]
               }
             ],
-            "type": "array"
+            "items": {
+              "$ref": "#/components/schemas/GetIntegrationCustomersEndpointCustomers"
+            }
           }
-        },
+        }
+      },
+      "GetIntegrationCustomersEndpointCustomers": {
+        "required": [
+          "key",
+          "value"
+        ],
+        "type": "object",
         "example": {
           "key": "Xero",
           "value": [
@@ -77040,67 +78692,12 @@
             }
           ]
         },
-        "type": "object",
-        "required": [
-          "key",
-          "value"
-        ]
-      },
-      "Customer1": {
         "properties": {
-          "id": {
-            "example": "id",
-            "description": "External customer ID",
-            "type": "string"
+          "key": {
+            "$ref": "#/components/schemas/IntegrationService1"
           },
-          "companyName": {
-            "example": "My customer",
-            "description": "Company name",
-            "type": "string"
-          },
-          "country": {
-            "example": "GB",
-            "description": "Customer country",
-            "type": "string"
-          },
-          "isLinked": {
-            "example": true,
-            "description": "Is already linked to a Sequence customer",
-            "type": "boolean"
-          },
-          "invalidReason": {
-            "example": "Something's wrong",
-            "description": "If customer is invalid, the reason why",
-            "type": "string"
-          },
-          "externalUrl": {
-            "example": "www.example.com",
-            "description": "URL in external system",
-            "type": "string"
-          }
-        },
-        "example": {
-          "id": "id",
-          "companyName": "My customer",
-          "country": "GB",
-          "isLinked": true,
-          "invalidReason": "Something's wrong",
-          "externalUrl": "www.example.com"
-        },
-        "type": "object",
-        "required": [
-          "companyName",
-          "externalUrl",
-          "id",
-          "isLinked"
-        ]
-      },
-      "GetIntegrationCustomersForServiceEndpointResponseModel": {
-        "properties": {
-          "items": {
-            "items": {
-              "$ref": "#/components/schemas/Customer1"
-            },
+          "value": {
+            "type": "array",
             "example": [
               {
                 "id": "id",
@@ -77111,9 +78708,66 @@
                 "externalUrl": "www.example.com"
               }
             ],
-            "type": "array"
+            "items": {
+              "$ref": "#/components/schemas/Customer1"
+            }
           }
+        }
+      },
+      "Customer1": {
+        "required": [
+          "companyName",
+          "externalUrl",
+          "id",
+          "isLinked"
+        ],
+        "type": "object",
+        "example": {
+          "id": "id",
+          "companyName": "My customer",
+          "country": "GB",
+          "isLinked": true,
+          "invalidReason": "Something's wrong",
+          "externalUrl": "www.example.com"
         },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "External customer ID",
+            "example": "id"
+          },
+          "companyName": {
+            "type": "string",
+            "description": "Company name",
+            "example": "My customer"
+          },
+          "country": {
+            "type": "string",
+            "description": "Customer country",
+            "example": "GB"
+          },
+          "isLinked": {
+            "type": "boolean",
+            "description": "Is already linked to a Sequence customer",
+            "example": true
+          },
+          "invalidReason": {
+            "type": "string",
+            "description": "If customer is invalid, the reason why",
+            "example": "Something's wrong"
+          },
+          "externalUrl": {
+            "type": "string",
+            "description": "URL in external system",
+            "example": "www.example.com"
+          }
+        }
+      },
+      "GetIntegrationCustomersForServiceEndpointResponseModel": {
+        "required": [
+          "items"
+        ],
+        "type": "object",
         "example": {
           "items": [
             {
@@ -77126,34 +78780,49 @@
             }
           ]
         },
-        "type": "object",
-        "required": [
-          "items"
-        ]
+        "properties": {
+          "items": {
+            "type": "array",
+            "example": [
+              {
+                "id": "id",
+                "companyName": "My customer",
+                "country": "GB",
+                "isLinked": true,
+                "invalidReason": "Something's wrong",
+                "externalUrl": "www.example.com"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/Customer1"
+            }
+          }
+        }
       },
       "ExportDataToGoogleSheetsEndpointRequestModel": {
-        "properties": {
-          "template": {
-            "$ref": "#/components/schemas/Template",
-            "description": "Export template"
-          },
-          "sheetUrl": {
-            "example": "https://www.example.com",
-            "description": "URL of sheet to export data to",
-            "type": "string"
-          }
-        },
+        "required": [
+          "sheetUrl",
+          "template"
+        ],
+        "type": "object",
         "example": {
           "template": "ALL",
           "sheetUrl": "https://www.example.com"
         },
-        "type": "object",
-        "required": [
-          "sheetUrl",
-          "template"
-        ]
+        "properties": {
+          "template": {
+            "description": "Export template",
+            "$ref": "#/components/schemas/Template"
+          },
+          "sheetUrl": {
+            "type": "string",
+            "description": "URL of sheet to export data to",
+            "example": "https://www.example.com"
+          }
+        }
       },
       "Template": {
+        "type": "string",
         "example": "ALL",
         "enum": [
           "ALL",
@@ -77161,15 +78830,13 @@
           "AR_ANALYTICS",
           "SALES_COMMISSIONS",
           "REVENUE_ANALYTICS"
-        ],
-        "type": "string"
+        ]
       },
       "GetIntegrationPipelineStagesEndpointResponseModel": {
-        "properties": {
-          "pipelineStages": {
-            "$ref": "#/components/schemas/GetIntegrationPipelineStagesEndpointPipelineStages"
-          }
-        },
+        "required": [
+          "pipelineStages"
+        ],
+        "type": "object",
         "example": {
           "pipelineStages": {
             "key": "HubSpot",
@@ -77190,45 +78857,20 @@
             ]
           }
         },
-        "type": "object",
-        "required": [
-          "pipelineStages"
-        ]
+        "properties": {
+          "pipelineStages": {
+            "$ref": "#/components/schemas/GetIntegrationPipelineStagesEndpointPipelineStages"
+          }
+        }
       },
       "GetIntegrationPipelineStagesEndpointPipelineStages": {
-        "properties": {
-          "key": {
-            "$ref": "#/components/schemas/IntegrationService1"
-          },
-          "value": {
-            "items": {
-              "$ref": "#/components/schemas/PipelineStage"
-            },
-            "example": [
-              {
-                "id": "10349039",
-                "label": "Closed Won",
-                "archived": false
-              },
-              {
-                "id": "3985098",
-                "label": "Meeting Booked",
-                "archived": false
-              }
-            ],
-            "type": "array"
-          },
-          "enabledPipelineStages": {
-            "items": {
-              "type": "string"
-            },
-            "example": [
-              "10349039"
-            ],
-            "description": "Current enabled pipeline stages",
-            "type": "array"
-          }
-        },
+        "required": [
+          "enabledPipelineStages",
+          "key",
+          "value"
+        ],
+        "type": "object",
+        "description": "Pipeline stages by service",
         "example": {
           "key": "HubSpot",
           "value": [
@@ -77247,65 +78889,91 @@
             "10349039"
           ]
         },
-        "description": "Pipeline stages by service",
-        "type": "object",
-        "required": [
-          "enabledPipelineStages",
-          "key",
-          "value"
-        ]
+        "properties": {
+          "key": {
+            "$ref": "#/components/schemas/IntegrationService1"
+          },
+          "value": {
+            "type": "array",
+            "example": [
+              {
+                "id": "10349039",
+                "label": "Closed Won",
+                "archived": false
+              },
+              {
+                "id": "3985098",
+                "label": "Meeting Booked",
+                "archived": false
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/PipelineStage"
+            }
+          },
+          "enabledPipelineStages": {
+            "type": "array",
+            "description": "Current enabled pipeline stages",
+            "example": [
+              "10349039"
+            ],
+            "items": {
+              "type": "string"
+            }
+          }
+        }
       },
       "PipelineStage": {
-        "properties": {
-          "id": {
-            "example": "10349039",
-            "type": "string"
-          },
-          "label": {
-            "example": "Closed Won",
-            "type": "string"
-          },
-          "archived": {
-            "example": false,
-            "type": "boolean"
-          }
-        },
+        "required": [
+          "archived",
+          "id",
+          "label"
+        ],
+        "type": "object",
         "example": {
           "id": "10349039",
           "label": "Closed Won",
           "archived": false
         },
-        "type": "object",
-        "required": [
-          "archived",
-          "id",
-          "label"
-        ]
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": "10349039"
+          },
+          "label": {
+            "type": "string",
+            "example": "Closed Won"
+          },
+          "archived": {
+            "type": "boolean",
+            "example": false
+          }
+        }
       },
       "SetEnabledPipelineStagesEndpointRequestModel": {
-        "properties": {
-          "pipelineStageIds": {
-            "items": {
-              "type": "string"
-            },
-            "example": [
-              "23034582",
-              "closedwon"
-            ],
-            "description": "Closedwon pipeline stages",
-            "type": "array"
-          }
-        },
+        "required": [
+          "pipelineStageIds"
+        ],
+        "type": "object",
         "example": {
           "pipelineStageIds": [
             "23034582",
             "closedwon"
           ]
         },
-        "type": "object",
-        "required": [
-          "pipelineStageIds"
-        ]
+        "properties": {
+          "pipelineStageIds": {
+            "type": "array",
+            "description": "Closedwon pipeline stages",
+            "example": [
+              "23034582",
+              "closedwon"
+            ],
+            "items": {
+              "type": "string"
+            }
+          }
+        }
       },
       "ListBillingProductsEndpointListProductResponsePaginatedResponseModel": {
         "required": [
