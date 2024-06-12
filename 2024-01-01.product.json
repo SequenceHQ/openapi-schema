@@ -2037,24 +2037,18 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "upperBound": "400",
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -2080,12 +2074,16 @@
                                   "upperBound": "100",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -2296,24 +2294,18 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "upperBound": "400",
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -2339,12 +2331,16 @@
                                     "upperBound": "100",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -2609,24 +2605,18 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "upperBound": "400",
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -2652,12 +2642,16 @@
                                   "upperBound": "100",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -2867,24 +2861,18 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "upperBound": "400",
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -2910,12 +2898,16 @@
                                     "upperBound": "100",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -38757,24 +38749,18 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "upperBound": "400",
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -38809,12 +38795,16 @@
                                   "upperBound": "100",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -39081,24 +39071,18 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "upperBound": "400",
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -39133,12 +39117,16 @@
                                     "upperBound": "100",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -39459,24 +39447,18 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "upperBound": "400",
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -39511,12 +39493,16 @@
                                   "upperBound": "100",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -39782,24 +39768,18 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "upperBound": "400",
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -39834,12 +39814,16 @@
                                     "upperBound": "100",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -40332,24 +40316,18 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "upperBound": "400",
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -40384,12 +40362,16 @@
                                   "upperBound": "100",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -40656,24 +40638,18 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "upperBound": "400",
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -40708,12 +40684,16 @@
                                     "upperBound": "100",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -41052,24 +41032,18 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "upperBound": "400",
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -41104,12 +41078,16 @@
                                   "upperBound": "100",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -41375,24 +41353,18 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "upperBound": "400",
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -41427,12 +41399,16 @@
                                     "upperBound": "100",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -41750,24 +41726,18 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "upperBound": "400",
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -41802,12 +41772,16 @@
                                   "upperBound": "100",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -42074,24 +42048,18 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "upperBound": "400",
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -42126,12 +42094,16 @@
                                     "upperBound": "100",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -42402,24 +42374,18 @@
                                 "upperBound": "200",
                                 "price": "1.00",
                                 "fee": "50.00",
-                                "isPricePercentage": true,
-                                "maxPrice": "10",
-                                "minPrice": "5"
+                                "isPricePercentage": false
                               },
                               {
                                 "upperBound": "400",
                                 "price": "0.75",
                                 "fee": "25.00",
-                                "isPricePercentage": true,
-                                "maxPrice": "10",
-                                "minPrice": "5"
+                                "isPricePercentage": false
                               },
                               {
                                 "price": "0.50",
                                 "fee": "0.00",
-                                "isPricePercentage": true,
-                                "maxPrice": "10",
-                                "minPrice": "5"
+                                "isPricePercentage": false
                               }
                             ],
                             "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -42452,12 +42418,16 @@
                                 "upperBound": "100",
                                 "price": "1.00",
                                 "fee": "50.00",
-                                "isPricePercentage": false
+                                "isPricePercentage": true,
+                                "maxPrice": "10",
+                                "minPrice": "5"
                               },
                               {
                                 "price": "0.75",
                                 "fee": "25.00",
-                                "isPricePercentage": false
+                                "isPricePercentage": true,
+                                "maxPrice": "10",
+                                "minPrice": "5"
                               }
                             ],
                             "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -42674,24 +42644,18 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "upperBound": "400",
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -42724,12 +42688,16 @@
                                   "upperBound": "100",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -43000,24 +42968,18 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "upperBound": "400",
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -43052,12 +43014,16 @@
                                   "upperBound": "100",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -43324,24 +43290,18 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "upperBound": "400",
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -43376,12 +43336,16 @@
                                     "upperBound": "100",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -43702,24 +43666,18 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "upperBound": "400",
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -43754,12 +43712,16 @@
                                   "upperBound": "100",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -44025,24 +43987,18 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "upperBound": "400",
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -44077,12 +44033,16 @@
                                     "upperBound": "100",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -44352,24 +44312,18 @@
                                 "upperBound": "200",
                                 "price": "1.00",
                                 "fee": "50.00",
-                                "isPricePercentage": true,
-                                "maxPrice": "10",
-                                "minPrice": "5"
+                                "isPricePercentage": false
                               },
                               {
                                 "upperBound": "400",
                                 "price": "0.75",
                                 "fee": "25.00",
-                                "isPricePercentage": true,
-                                "maxPrice": "10",
-                                "minPrice": "5"
+                                "isPricePercentage": false
                               },
                               {
                                 "price": "0.50",
                                 "fee": "0.00",
-                                "isPricePercentage": true,
-                                "maxPrice": "10",
-                                "minPrice": "5"
+                                "isPricePercentage": false
                               }
                             ],
                             "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -44402,12 +44356,16 @@
                                 "upperBound": "100",
                                 "price": "1.00",
                                 "fee": "50.00",
-                                "isPricePercentage": false
+                                "isPricePercentage": true,
+                                "maxPrice": "10",
+                                "minPrice": "5"
                               },
                               {
                                 "price": "0.75",
                                 "fee": "25.00",
-                                "isPricePercentage": false
+                                "isPricePercentage": true,
+                                "maxPrice": "10",
+                                "minPrice": "5"
                               }
                             ],
                             "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -44623,24 +44581,18 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "upperBound": "400",
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -44673,12 +44625,16 @@
                                   "upperBound": "100",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -44948,24 +44904,18 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "upperBound": "400",
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -45000,12 +44950,16 @@
                                   "upperBound": "100",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -45271,24 +45225,18 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "upperBound": "400",
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -45323,12 +45271,16 @@
                                     "upperBound": "100",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -45650,24 +45602,18 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "upperBound": "400",
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -45702,12 +45648,16 @@
                                   "upperBound": "100",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -45974,24 +45924,18 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "upperBound": "400",
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -46026,12 +45970,16 @@
                                     "upperBound": "100",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -46352,24 +46300,18 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "upperBound": "400",
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -46404,12 +46346,16 @@
                                   "upperBound": "100",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -46675,24 +46621,18 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "upperBound": "400",
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -46727,12 +46667,16 @@
                                     "upperBound": "100",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -47076,24 +47020,18 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "upperBound": "400",
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -47128,12 +47066,16 @@
                                   "upperBound": "100",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -47398,24 +47340,18 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "upperBound": "400",
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -47450,12 +47386,16 @@
                                     "upperBound": "100",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -47797,24 +47737,18 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "upperBound": "400",
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -47849,12 +47783,16 @@
                                   "upperBound": "100",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -48118,24 +48056,18 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "upperBound": "400",
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -48170,12 +48102,16 @@
                                     "upperBound": "100",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -48495,24 +48431,18 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "upperBound": "400",
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -48547,12 +48477,16 @@
                                   "upperBound": "100",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -48817,24 +48751,18 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "upperBound": "400",
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -48869,12 +48797,16 @@
                                     "upperBound": "100",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -49193,24 +49125,18 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "upperBound": "400",
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -49245,12 +49171,16 @@
                                   "upperBound": "100",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -49514,24 +49444,18 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "upperBound": "400",
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -49566,12 +49490,16 @@
                                     "upperBound": "100",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -49890,24 +49818,18 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "upperBound": "400",
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -49942,12 +49864,16 @@
                                   "upperBound": "100",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -50211,24 +50137,18 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "upperBound": "400",
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -50263,12 +50183,16 @@
                                     "upperBound": "100",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -50588,24 +50512,18 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "upperBound": "400",
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -50640,12 +50558,16 @@
                                   "upperBound": "100",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -50910,24 +50832,18 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "upperBound": "400",
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -50962,12 +50878,16 @@
                                     "upperBound": "100",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -51286,24 +51206,18 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "upperBound": "400",
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -51338,12 +51252,16 @@
                                   "upperBound": "100",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -51607,24 +51525,18 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "upperBound": "400",
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -51659,12 +51571,16 @@
                                     "upperBound": "100",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -51985,24 +51901,18 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "upperBound": "400",
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -52037,12 +51947,16 @@
                                   "upperBound": "100",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -52309,24 +52223,18 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "upperBound": "400",
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -52361,12 +52269,16 @@
                                     "upperBound": "100",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -52687,24 +52599,18 @@
                                   "upperBound": "200",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "upperBound": "400",
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 },
                                 {
                                   "price": "0.50",
                                   "fee": "0.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
+                                  "isPricePercentage": false
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -52739,12 +52645,16 @@
                                   "upperBound": "100",
                                   "price": "1.00",
                                   "fee": "50.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 },
                                 {
                                   "price": "0.75",
                                   "fee": "25.00",
-                                  "isPricePercentage": false
+                                  "isPricePercentage": true,
+                                  "maxPrice": "10",
+                                  "minPrice": "5"
                                 }
                               ],
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -53010,24 +52920,18 @@
                                     "upperBound": "200",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "upperBound": "400",
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   },
                                   {
                                     "price": "0.50",
                                     "fee": "0.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
+                                    "isPricePercentage": false
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -53062,12 +52966,16 @@
                                     "upperBound": "100",
                                     "price": "1.00",
                                     "fee": "50.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   },
                                   {
                                     "price": "0.75",
                                     "fee": "25.00",
-                                    "isPricePercentage": false
+                                    "isPricePercentage": true,
+                                    "maxPrice": "10",
+                                    "minPrice": "5"
                                   }
                                 ],
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -56127,24 +56035,18 @@
                         "upperBound": "200",
                         "price": "1.00",
                         "fee": "50.00",
-                        "isPricePercentage": true,
-                        "maxPrice": "10",
-                        "minPrice": "5"
+                        "isPricePercentage": false
                       },
                       {
                         "upperBound": "400",
                         "price": "0.75",
                         "fee": "25.00",
-                        "isPricePercentage": true,
-                        "maxPrice": "10",
-                        "minPrice": "5"
+                        "isPricePercentage": false
                       },
                       {
                         "price": "0.50",
                         "fee": "0.00",
-                        "isPricePercentage": true,
-                        "maxPrice": "10",
-                        "minPrice": "5"
+                        "isPricePercentage": false
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -56170,12 +56072,16 @@
                         "upperBound": "100",
                         "price": "1.00",
                         "fee": "50.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       },
                       {
                         "price": "0.75",
                         "fee": "25.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -56425,24 +56331,18 @@
                           "upperBound": "200",
                           "price": "1.00",
                           "fee": "50.00",
-                          "isPricePercentage": true,
-                          "maxPrice": "10",
-                          "minPrice": "5"
+                          "isPricePercentage": false
                         },
                         {
                           "upperBound": "400",
                           "price": "0.75",
                           "fee": "25.00",
-                          "isPricePercentage": true,
-                          "maxPrice": "10",
-                          "minPrice": "5"
+                          "isPricePercentage": false
                         },
                         {
                           "price": "0.50",
                           "fee": "0.00",
-                          "isPricePercentage": true,
-                          "maxPrice": "10",
-                          "minPrice": "5"
+                          "isPricePercentage": false
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -56468,12 +56368,16 @@
                           "upperBound": "100",
                           "price": "1.00",
                           "fee": "50.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         },
                         {
                           "price": "0.75",
                           "fee": "25.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -56682,24 +56586,18 @@
                     "upperBound": "200",
                     "price": "1.00",
                     "fee": "50.00",
-                    "isPricePercentage": true,
-                    "maxPrice": "10",
-                    "minPrice": "5"
+                    "isPricePercentage": false
                   },
                   {
                     "upperBound": "400",
                     "price": "0.75",
                     "fee": "25.00",
-                    "isPricePercentage": true,
-                    "maxPrice": "10",
-                    "minPrice": "5"
+                    "isPricePercentage": false
                   },
                   {
                     "price": "0.50",
                     "fee": "0.00",
-                    "isPricePercentage": true,
-                    "maxPrice": "10",
-                    "minPrice": "5"
+                    "isPricePercentage": false
                   }
                 ],
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -56725,12 +56623,16 @@
                     "upperBound": "100",
                     "price": "1.00",
                     "fee": "50.00",
-                    "isPricePercentage": false
+                    "isPricePercentage": true,
+                    "maxPrice": "10",
+                    "minPrice": "5"
                   },
                   {
                     "price": "0.75",
                     "fee": "25.00",
-                    "isPricePercentage": false
+                    "isPricePercentage": true,
+                    "maxPrice": "10",
+                    "minPrice": "5"
                   }
                 ],
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -56901,24 +56803,18 @@
                       "upperBound": "200",
                       "price": "1.00",
                       "fee": "50.00",
-                      "isPricePercentage": true,
-                      "maxPrice": "10",
-                      "minPrice": "5"
+                      "isPricePercentage": false
                     },
                     {
                       "upperBound": "400",
                       "price": "0.75",
                       "fee": "25.00",
-                      "isPricePercentage": true,
-                      "maxPrice": "10",
-                      "minPrice": "5"
+                      "isPricePercentage": false
                     },
                     {
                       "price": "0.50",
                       "fee": "0.00",
-                      "isPricePercentage": true,
-                      "maxPrice": "10",
-                      "minPrice": "5"
+                      "isPricePercentage": false
                     }
                   ],
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -56944,12 +56840,16 @@
                       "upperBound": "100",
                       "price": "1.00",
                       "fee": "50.00",
-                      "isPricePercentage": false
+                      "isPricePercentage": true,
+                      "maxPrice": "10",
+                      "minPrice": "5"
                     },
                     {
                       "price": "0.75",
                       "fee": "25.00",
-                      "isPricePercentage": false
+                      "isPricePercentage": true,
+                      "maxPrice": "10",
+                      "minPrice": "5"
                     }
                   ],
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -57516,24 +57416,18 @@
                         "upperBound": "200",
                         "price": "1.00",
                         "fee": "50.00",
-                        "isPricePercentage": true,
-                        "maxPrice": "10",
-                        "minPrice": "5"
+                        "isPricePercentage": false
                       },
                       {
                         "upperBound": "400",
                         "price": "0.75",
                         "fee": "25.00",
-                        "isPricePercentage": true,
-                        "maxPrice": "10",
-                        "minPrice": "5"
+                        "isPricePercentage": false
                       },
                       {
                         "price": "0.50",
                         "fee": "0.00",
-                        "isPricePercentage": true,
-                        "maxPrice": "10",
-                        "minPrice": "5"
+                        "isPricePercentage": false
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -57559,12 +57453,16 @@
                         "upperBound": "100",
                         "price": "1.00",
                         "fee": "50.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       },
                       {
                         "price": "0.75",
                         "fee": "25.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -57813,24 +57711,18 @@
                           "upperBound": "200",
                           "price": "1.00",
                           "fee": "50.00",
-                          "isPricePercentage": true,
-                          "maxPrice": "10",
-                          "minPrice": "5"
+                          "isPricePercentage": false
                         },
                         {
                           "upperBound": "400",
                           "price": "0.75",
                           "fee": "25.00",
-                          "isPricePercentage": true,
-                          "maxPrice": "10",
-                          "minPrice": "5"
+                          "isPricePercentage": false
                         },
                         {
                           "price": "0.50",
                           "fee": "0.00",
-                          "isPricePercentage": true,
-                          "maxPrice": "10",
-                          "minPrice": "5"
+                          "isPricePercentage": false
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -57856,12 +57748,16 @@
                           "upperBound": "100",
                           "price": "1.00",
                           "fee": "50.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         },
                         {
                           "price": "0.75",
                           "fee": "25.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -58050,24 +57946,18 @@
                     "upperBound": "200",
                     "price": "1.00",
                     "fee": "50.00",
-                    "isPricePercentage": true,
-                    "maxPrice": "10",
-                    "minPrice": "5"
+                    "isPricePercentage": false
                   },
                   {
                     "upperBound": "400",
                     "price": "0.75",
                     "fee": "25.00",
-                    "isPricePercentage": true,
-                    "maxPrice": "10",
-                    "minPrice": "5"
+                    "isPricePercentage": false
                   },
                   {
                     "price": "0.50",
                     "fee": "0.00",
-                    "isPricePercentage": true,
-                    "maxPrice": "10",
-                    "minPrice": "5"
+                    "isPricePercentage": false
                   }
                 ],
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -58093,12 +57983,16 @@
                     "upperBound": "100",
                     "price": "1.00",
                     "fee": "50.00",
-                    "isPricePercentage": false
+                    "isPricePercentage": true,
+                    "maxPrice": "10",
+                    "minPrice": "5"
                   },
                   {
                     "price": "0.75",
                     "fee": "25.00",
-                    "isPricePercentage": false
+                    "isPricePercentage": true,
+                    "maxPrice": "10",
+                    "minPrice": "5"
                   }
                 ],
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -58268,24 +58162,18 @@
                       "upperBound": "200",
                       "price": "1.00",
                       "fee": "50.00",
-                      "isPricePercentage": true,
-                      "maxPrice": "10",
-                      "minPrice": "5"
+                      "isPricePercentage": false
                     },
                     {
                       "upperBound": "400",
                       "price": "0.75",
                       "fee": "25.00",
-                      "isPricePercentage": true,
-                      "maxPrice": "10",
-                      "minPrice": "5"
+                      "isPricePercentage": false
                     },
                     {
                       "price": "0.50",
                       "fee": "0.00",
-                      "isPricePercentage": true,
-                      "maxPrice": "10",
-                      "minPrice": "5"
+                      "isPricePercentage": false
                     }
                   ],
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -58311,12 +58199,16 @@
                       "upperBound": "100",
                       "price": "1.00",
                       "fee": "50.00",
-                      "isPricePercentage": false
+                      "isPricePercentage": true,
+                      "maxPrice": "10",
+                      "minPrice": "5"
                     },
                     {
                       "price": "0.75",
                       "fee": "25.00",
-                      "isPricePercentage": false
+                      "isPricePercentage": true,
+                      "maxPrice": "10",
+                      "minPrice": "5"
                     }
                   ],
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -58712,31 +58604,25 @@
         "properties": {
           "tiers": {
             "items": {
-              "$ref": "#/components/schemas/UsageTier"
+              "$ref": "#/components/schemas/UsageTier1"
             },
             "example": [
               {
                 "upperBound": "200",
                 "price": "1.00",
                 "fee": "50.00",
-                "isPricePercentage": true,
-                "maxPrice": "10",
-                "minPrice": "5"
+                "isPricePercentage": false
               },
               {
                 "upperBound": "400",
                 "price": "0.75",
                 "fee": "25.00",
-                "isPricePercentage": true,
-                "maxPrice": "10",
-                "minPrice": "5"
+                "isPricePercentage": false
               },
               {
                 "price": "0.50",
                 "fee": "0.00",
-                "isPricePercentage": true,
-                "maxPrice": "10",
-                "minPrice": "5"
+                "isPricePercentage": false
               }
             ],
             "description": "A list of contiguous pricing tiers",
@@ -58765,24 +58651,18 @@
               "upperBound": "200",
               "price": "1.00",
               "fee": "50.00",
-              "isPricePercentage": true,
-              "maxPrice": "10",
-              "minPrice": "5"
+              "isPricePercentage": false
             },
             {
               "upperBound": "400",
               "price": "0.75",
               "fee": "25.00",
-              "isPricePercentage": true,
-              "maxPrice": "10",
-              "minPrice": "5"
+              "isPricePercentage": false
             },
             {
               "price": "0.50",
               "fee": "0.00",
-              "isPricePercentage": true,
-              "maxPrice": "10",
-              "minPrice": "5"
+              "isPricePercentage": false
             }
           ],
           "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -58816,12 +58696,16 @@
                 "upperBound": "100",
                 "price": "1.00",
                 "fee": "50.00",
-                "isPricePercentage": false
+                "isPricePercentage": true,
+                "maxPrice": "10",
+                "minPrice": "5"
               },
               {
                 "price": "0.75",
                 "fee": "25.00",
-                "isPricePercentage": false
+                "isPricePercentage": true,
+                "maxPrice": "10",
+                "minPrice": "5"
               }
             ],
             "description": "A list of contiguous pricing tiers",
@@ -58846,12 +58730,16 @@
               "upperBound": "100",
               "price": "1.00",
               "fee": "50.00",
-              "isPricePercentage": false
+              "isPricePercentage": true,
+              "maxPrice": "10",
+              "minPrice": "5"
             },
             {
               "price": "0.75",
               "fee": "25.00",
-              "isPricePercentage": false
+              "isPricePercentage": true,
+              "maxPrice": "10",
+              "minPrice": "5"
             }
           ],
           "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -77581,7 +77469,7 @@
                 "$ref": "#/components/schemas/VOLUME1"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED1"
+                "$ref": "#/components/schemas/GRADUATED"
               },
               {
                 "$ref": "#/components/schemas/SEAT_BASED1"
@@ -77781,7 +77669,7 @@
                 "$ref": "#/components/schemas/VOLUME1"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED1"
+                "$ref": "#/components/schemas/GRADUATED"
               },
               {
                 "$ref": "#/components/schemas/SEAT_BASED1"
@@ -77933,7 +77821,7 @@
                 "$ref": "#/components/schemas/VOLUME1"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED1"
+                "$ref": "#/components/schemas/GRADUATED"
               },
               {
                 "$ref": "#/components/schemas/SEAT_BASED1"
@@ -78101,7 +77989,7 @@
                 "$ref": "#/components/schemas/VOLUME1"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED1"
+                "$ref": "#/components/schemas/GRADUATED"
               },
               {
                 "$ref": "#/components/schemas/SEAT_BASED1"
@@ -78343,7 +78231,7 @@
                 "$ref": "#/components/schemas/VOLUME1"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED1"
+                "$ref": "#/components/schemas/GRADUATED"
               },
               {
                 "$ref": "#/components/schemas/SEAT_BASED1"
@@ -78495,7 +78383,7 @@
                 "$ref": "#/components/schemas/VOLUME1"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED1"
+                "$ref": "#/components/schemas/GRADUATED"
               },
               {
                 "$ref": "#/components/schemas/SEAT_BASED1"
@@ -83804,83 +83692,6 @@
           "price"
         ]
       },
-      "GRADUATED1": {
-        "properties": {
-          "tiers": {
-            "items": {
-              "$ref": "#/components/schemas/UsageTier1"
-            },
-            "example": [
-              {
-                "upperBound": "200",
-                "price": "1.00",
-                "fee": "50.00",
-                "isPricePercentage": false
-              },
-              {
-                "upperBound": "400",
-                "price": "0.75",
-                "fee": "25.00",
-                "isPricePercentage": false
-              },
-              {
-                "price": "0.50",
-                "fee": "0.00",
-                "isPricePercentage": false
-              }
-            ],
-            "description": "A list of contiguous pricing tiers",
-            "type": "array"
-          },
-          "usageMetricId": {
-            "example": "04c62961-04ba-48e6-b985-758bb7d3e712",
-            "description": "The usage metric associated to this pricing structure",
-            "type": "string"
-          },
-          "usageCalculationMode": {
-            "$ref": "#/components/schemas/UsageCalculationMode",
-            "description": "Indicates the scope of usage calculation"
-          },
-          "pricingType": {
-            "enum": [
-              "GRADUATED"
-            ],
-            "example": "GRADUATED",
-            "type": "string"
-          }
-        },
-        "example": {
-          "tiers": [
-            {
-              "upperBound": "200",
-              "price": "1.00",
-              "fee": "50.00",
-              "isPricePercentage": false
-            },
-            {
-              "upperBound": "400",
-              "price": "0.75",
-              "fee": "25.00",
-              "isPricePercentage": false
-            },
-            {
-              "price": "0.50",
-              "fee": "0.00",
-              "isPricePercentage": false
-            }
-          ],
-          "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-          "usageCalculationMode": "BILLING_PERIOD",
-          "pricingType": "GRADUATED"
-        },
-        "type": "object",
-        "required": [
-          "pricingType",
-          "tiers",
-          "usageCalculationMode",
-          "usageMetricId"
-        ]
-      },
       "SEAT_BASED1": {
         "properties": {
           "seatTypeId": {
@@ -88417,24 +88228,18 @@
                         "upperBound": "200",
                         "price": "1.00",
                         "fee": "50.00",
-                        "isPricePercentage": true,
-                        "maxPrice": "10",
-                        "minPrice": "5"
+                        "isPricePercentage": false
                       },
                       {
                         "upperBound": "400",
                         "price": "0.75",
                         "fee": "25.00",
-                        "isPricePercentage": true,
-                        "maxPrice": "10",
-                        "minPrice": "5"
+                        "isPricePercentage": false
                       },
                       {
                         "price": "0.50",
                         "fee": "0.00",
-                        "isPricePercentage": true,
-                        "maxPrice": "10",
-                        "minPrice": "5"
+                        "isPricePercentage": false
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -88469,12 +88274,16 @@
                         "upperBound": "100",
                         "price": "1.00",
                         "fee": "50.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       },
                       {
                         "price": "0.75",
                         "fee": "25.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -88801,24 +88610,18 @@
                           "upperBound": "200",
                           "price": "1.00",
                           "fee": "50.00",
-                          "isPricePercentage": true,
-                          "maxPrice": "10",
-                          "minPrice": "5"
+                          "isPricePercentage": false
                         },
                         {
                           "upperBound": "400",
                           "price": "0.75",
                           "fee": "25.00",
-                          "isPricePercentage": true,
-                          "maxPrice": "10",
-                          "minPrice": "5"
+                          "isPricePercentage": false
                         },
                         {
                           "price": "0.50",
                           "fee": "0.00",
-                          "isPricePercentage": true,
-                          "maxPrice": "10",
-                          "minPrice": "5"
+                          "isPricePercentage": false
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -88853,12 +88656,16 @@
                           "upperBound": "100",
                           "price": "1.00",
                           "fee": "50.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         },
                         {
                           "price": "0.75",
                           "fee": "25.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -89492,24 +89299,18 @@
                     "upperBound": "200",
                     "price": "1.00",
                     "fee": "50.00",
-                    "isPricePercentage": true,
-                    "maxPrice": "10",
-                    "minPrice": "5"
+                    "isPricePercentage": false
                   },
                   {
                     "upperBound": "400",
                     "price": "0.75",
                     "fee": "25.00",
-                    "isPricePercentage": true,
-                    "maxPrice": "10",
-                    "minPrice": "5"
+                    "isPricePercentage": false
                   },
                   {
                     "price": "0.50",
                     "fee": "0.00",
-                    "isPricePercentage": true,
-                    "maxPrice": "10",
-                    "minPrice": "5"
+                    "isPricePercentage": false
                   }
                 ],
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -89544,12 +89345,16 @@
                     "upperBound": "100",
                     "price": "1.00",
                     "fee": "50.00",
-                    "isPricePercentage": false
+                    "isPricePercentage": true,
+                    "maxPrice": "10",
+                    "minPrice": "5"
                   },
                   {
                     "price": "0.75",
                     "fee": "25.00",
-                    "isPricePercentage": false
+                    "isPricePercentage": true,
+                    "maxPrice": "10",
+                    "minPrice": "5"
                   }
                 ],
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -89779,24 +89584,18 @@
                       "upperBound": "200",
                       "price": "1.00",
                       "fee": "50.00",
-                      "isPricePercentage": true,
-                      "maxPrice": "10",
-                      "minPrice": "5"
+                      "isPricePercentage": false
                     },
                     {
                       "upperBound": "400",
                       "price": "0.75",
                       "fee": "25.00",
-                      "isPricePercentage": true,
-                      "maxPrice": "10",
-                      "minPrice": "5"
+                      "isPricePercentage": false
                     },
                     {
                       "price": "0.50",
                       "fee": "0.00",
-                      "isPricePercentage": true,
-                      "maxPrice": "10",
-                      "minPrice": "5"
+                      "isPricePercentage": false
                     }
                   ],
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -89831,12 +89630,16 @@
                       "upperBound": "100",
                       "price": "1.00",
                       "fee": "50.00",
-                      "isPricePercentage": false
+                      "isPricePercentage": true,
+                      "maxPrice": "10",
+                      "minPrice": "5"
                     },
                     {
                       "price": "0.75",
                       "fee": "25.00",
-                      "isPricePercentage": false
+                      "isPricePercentage": true,
+                      "maxPrice": "10",
+                      "minPrice": "5"
                     }
                   ],
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -90003,7 +89806,7 @@
                 "$ref": "#/components/schemas/SEAT_BASED"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED"
+                "$ref": "#/components/schemas/GRADUATED1"
               },
               {
                 "$ref": "#/components/schemas/VOLUME"
@@ -90380,24 +90183,18 @@
                         "upperBound": "200",
                         "price": "1.00",
                         "fee": "50.00",
-                        "isPricePercentage": true,
-                        "maxPrice": "10",
-                        "minPrice": "5"
+                        "isPricePercentage": false
                       },
                       {
                         "upperBound": "400",
                         "price": "0.75",
                         "fee": "25.00",
-                        "isPricePercentage": true,
-                        "maxPrice": "10",
-                        "minPrice": "5"
+                        "isPricePercentage": false
                       },
                       {
                         "price": "0.50",
                         "fee": "0.00",
-                        "isPricePercentage": true,
-                        "maxPrice": "10",
-                        "minPrice": "5"
+                        "isPricePercentage": false
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -90432,12 +90229,16 @@
                         "upperBound": "100",
                         "price": "1.00",
                         "fee": "50.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       },
                       {
                         "price": "0.75",
                         "fee": "25.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -90763,24 +90564,18 @@
                           "upperBound": "200",
                           "price": "1.00",
                           "fee": "50.00",
-                          "isPricePercentage": true,
-                          "maxPrice": "10",
-                          "minPrice": "5"
+                          "isPricePercentage": false
                         },
                         {
                           "upperBound": "400",
                           "price": "0.75",
                           "fee": "25.00",
-                          "isPricePercentage": true,
-                          "maxPrice": "10",
-                          "minPrice": "5"
+                          "isPricePercentage": false
                         },
                         {
                           "price": "0.50",
                           "fee": "0.00",
-                          "isPricePercentage": true,
-                          "maxPrice": "10",
-                          "minPrice": "5"
+                          "isPricePercentage": false
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -90815,12 +90610,16 @@
                           "upperBound": "100",
                           "price": "1.00",
                           "fee": "50.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         },
                         {
                           "price": "0.75",
                           "fee": "25.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -91062,24 +90861,18 @@
                     "upperBound": "200",
                     "price": "1.00",
                     "fee": "50.00",
-                    "isPricePercentage": true,
-                    "maxPrice": "10",
-                    "minPrice": "5"
+                    "isPricePercentage": false
                   },
                   {
                     "upperBound": "400",
                     "price": "0.75",
                     "fee": "25.00",
-                    "isPricePercentage": true,
-                    "maxPrice": "10",
-                    "minPrice": "5"
+                    "isPricePercentage": false
                   },
                   {
                     "price": "0.50",
                     "fee": "0.00",
-                    "isPricePercentage": true,
-                    "maxPrice": "10",
-                    "minPrice": "5"
+                    "isPricePercentage": false
                   }
                 ],
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -91114,12 +90907,16 @@
                     "upperBound": "100",
                     "price": "1.00",
                     "fee": "50.00",
-                    "isPricePercentage": false
+                    "isPricePercentage": true,
+                    "maxPrice": "10",
+                    "minPrice": "5"
                   },
                   {
                     "price": "0.75",
                     "fee": "25.00",
-                    "isPricePercentage": false
+                    "isPricePercentage": true,
+                    "maxPrice": "10",
+                    "minPrice": "5"
                   }
                 ],
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -91348,24 +91145,18 @@
                       "upperBound": "200",
                       "price": "1.00",
                       "fee": "50.00",
-                      "isPricePercentage": true,
-                      "maxPrice": "10",
-                      "minPrice": "5"
+                      "isPricePercentage": false
                     },
                     {
                       "upperBound": "400",
                       "price": "0.75",
                       "fee": "25.00",
-                      "isPricePercentage": true,
-                      "maxPrice": "10",
-                      "minPrice": "5"
+                      "isPricePercentage": false
                     },
                     {
                       "price": "0.50",
                       "fee": "0.00",
-                      "isPricePercentage": true,
-                      "maxPrice": "10",
-                      "minPrice": "5"
+                      "isPricePercentage": false
                     }
                   ],
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -91400,12 +91191,16 @@
                       "upperBound": "100",
                       "price": "1.00",
                       "fee": "50.00",
-                      "isPricePercentage": false
+                      "isPricePercentage": true,
+                      "maxPrice": "10",
+                      "minPrice": "5"
                     },
                     {
                       "price": "0.75",
                       "fee": "25.00",
-                      "isPricePercentage": false
+                      "isPricePercentage": true,
+                      "maxPrice": "10",
+                      "minPrice": "5"
                     }
                   ],
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -91572,7 +91367,7 @@
                 "$ref": "#/components/schemas/SEAT_BASED"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED"
+                "$ref": "#/components/schemas/GRADUATED1"
               },
               {
                 "$ref": "#/components/schemas/VOLUME"
@@ -92019,24 +91814,18 @@
                         "upperBound": "200",
                         "price": "1.00",
                         "fee": "50.00",
-                        "isPricePercentage": true,
-                        "maxPrice": "10",
-                        "minPrice": "5"
+                        "isPricePercentage": false
                       },
                       {
                         "upperBound": "400",
                         "price": "0.75",
                         "fee": "25.00",
-                        "isPricePercentage": true,
-                        "maxPrice": "10",
-                        "minPrice": "5"
+                        "isPricePercentage": false
                       },
                       {
                         "price": "0.50",
                         "fee": "0.00",
-                        "isPricePercentage": true,
-                        "maxPrice": "10",
-                        "minPrice": "5"
+                        "isPricePercentage": false
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -92069,12 +91858,16 @@
                         "upperBound": "100",
                         "price": "1.00",
                         "fee": "50.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       },
                       {
                         "price": "0.75",
                         "fee": "25.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -92319,24 +92112,18 @@
                           "upperBound": "200",
                           "price": "1.00",
                           "fee": "50.00",
-                          "isPricePercentage": true,
-                          "maxPrice": "10",
-                          "minPrice": "5"
+                          "isPricePercentage": false
                         },
                         {
                           "upperBound": "400",
                           "price": "0.75",
                           "fee": "25.00",
-                          "isPricePercentage": true,
-                          "maxPrice": "10",
-                          "minPrice": "5"
+                          "isPricePercentage": false
                         },
                         {
                           "price": "0.50",
                           "fee": "0.00",
-                          "isPricePercentage": true,
-                          "maxPrice": "10",
-                          "minPrice": "5"
+                          "isPricePercentage": false
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -92369,12 +92156,16 @@
                           "upperBound": "100",
                           "price": "1.00",
                           "fee": "50.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         },
                         {
                           "price": "0.75",
                           "fee": "25.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -92589,24 +92380,18 @@
                     "upperBound": "200",
                     "price": "1.00",
                     "fee": "50.00",
-                    "isPricePercentage": true,
-                    "maxPrice": "10",
-                    "minPrice": "5"
+                    "isPricePercentage": false
                   },
                   {
                     "upperBound": "400",
                     "price": "0.75",
                     "fee": "25.00",
-                    "isPricePercentage": true,
-                    "maxPrice": "10",
-                    "minPrice": "5"
+                    "isPricePercentage": false
                   },
                   {
                     "price": "0.50",
                     "fee": "0.00",
-                    "isPricePercentage": true,
-                    "maxPrice": "10",
-                    "minPrice": "5"
+                    "isPricePercentage": false
                   }
                 ],
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -92639,12 +92424,16 @@
                     "upperBound": "100",
                     "price": "1.00",
                     "fee": "50.00",
-                    "isPricePercentage": false
+                    "isPricePercentage": true,
+                    "maxPrice": "10",
+                    "minPrice": "5"
                   },
                   {
                     "price": "0.75",
                     "fee": "25.00",
-                    "isPricePercentage": false
+                    "isPricePercentage": true,
+                    "maxPrice": "10",
+                    "minPrice": "5"
                   }
                 ],
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -92849,24 +92638,18 @@
                       "upperBound": "200",
                       "price": "1.00",
                       "fee": "50.00",
-                      "isPricePercentage": true,
-                      "maxPrice": "10",
-                      "minPrice": "5"
+                      "isPricePercentage": false
                     },
                     {
                       "upperBound": "400",
                       "price": "0.75",
                       "fee": "25.00",
-                      "isPricePercentage": true,
-                      "maxPrice": "10",
-                      "minPrice": "5"
+                      "isPricePercentage": false
                     },
                     {
                       "price": "0.50",
                       "fee": "0.00",
-                      "isPricePercentage": true,
-                      "maxPrice": "10",
-                      "minPrice": "5"
+                      "isPricePercentage": false
                     }
                   ],
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -92899,12 +92682,16 @@
                       "upperBound": "100",
                       "price": "1.00",
                       "fee": "50.00",
-                      "isPricePercentage": false
+                      "isPricePercentage": true,
+                      "maxPrice": "10",
+                      "minPrice": "5"
                     },
                     {
                       "price": "0.75",
                       "fee": "25.00",
-                      "isPricePercentage": false
+                      "isPricePercentage": true,
+                      "maxPrice": "10",
+                      "minPrice": "5"
                     }
                   ],
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -93060,7 +92847,7 @@
                 "$ref": "#/components/schemas/SEAT_BASED"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED"
+                "$ref": "#/components/schemas/GRADUATED1"
               },
               {
                 "$ref": "#/components/schemas/VOLUME"
@@ -93327,24 +93114,18 @@
                         "upperBound": "200",
                         "price": "1.00",
                         "fee": "50.00",
-                        "isPricePercentage": true,
-                        "maxPrice": "10",
-                        "minPrice": "5"
+                        "isPricePercentage": false
                       },
                       {
                         "upperBound": "400",
                         "price": "0.75",
                         "fee": "25.00",
-                        "isPricePercentage": true,
-                        "maxPrice": "10",
-                        "minPrice": "5"
+                        "isPricePercentage": false
                       },
                       {
                         "price": "0.50",
                         "fee": "0.00",
-                        "isPricePercentage": true,
-                        "maxPrice": "10",
-                        "minPrice": "5"
+                        "isPricePercentage": false
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -93377,12 +93158,16 @@
                         "upperBound": "100",
                         "price": "1.00",
                         "fee": "50.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       },
                       {
                         "price": "0.75",
                         "fee": "25.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -93626,24 +93411,18 @@
                           "upperBound": "200",
                           "price": "1.00",
                           "fee": "50.00",
-                          "isPricePercentage": true,
-                          "maxPrice": "10",
-                          "minPrice": "5"
+                          "isPricePercentage": false
                         },
                         {
                           "upperBound": "400",
                           "price": "0.75",
                           "fee": "25.00",
-                          "isPricePercentage": true,
-                          "maxPrice": "10",
-                          "minPrice": "5"
+                          "isPricePercentage": false
                         },
                         {
                           "price": "0.50",
                           "fee": "0.00",
-                          "isPricePercentage": true,
-                          "maxPrice": "10",
-                          "minPrice": "5"
+                          "isPricePercentage": false
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -93676,12 +93455,16 @@
                           "upperBound": "100",
                           "price": "1.00",
                           "fee": "50.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         },
                         {
                           "price": "0.75",
                           "fee": "25.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -93895,24 +93678,18 @@
                     "upperBound": "200",
                     "price": "1.00",
                     "fee": "50.00",
-                    "isPricePercentage": true,
-                    "maxPrice": "10",
-                    "minPrice": "5"
+                    "isPricePercentage": false
                   },
                   {
                     "upperBound": "400",
                     "price": "0.75",
                     "fee": "25.00",
-                    "isPricePercentage": true,
-                    "maxPrice": "10",
-                    "minPrice": "5"
+                    "isPricePercentage": false
                   },
                   {
                     "price": "0.50",
                     "fee": "0.00",
-                    "isPricePercentage": true,
-                    "maxPrice": "10",
-                    "minPrice": "5"
+                    "isPricePercentage": false
                   }
                 ],
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -93945,12 +93722,16 @@
                     "upperBound": "100",
                     "price": "1.00",
                     "fee": "50.00",
-                    "isPricePercentage": false
+                    "isPricePercentage": true,
+                    "maxPrice": "10",
+                    "minPrice": "5"
                   },
                   {
                     "price": "0.75",
                     "fee": "25.00",
-                    "isPricePercentage": false
+                    "isPricePercentage": true,
+                    "maxPrice": "10",
+                    "minPrice": "5"
                   }
                 ],
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -94154,24 +93935,18 @@
                       "upperBound": "200",
                       "price": "1.00",
                       "fee": "50.00",
-                      "isPricePercentage": true,
-                      "maxPrice": "10",
-                      "minPrice": "5"
+                      "isPricePercentage": false
                     },
                     {
                       "upperBound": "400",
                       "price": "0.75",
                       "fee": "25.00",
-                      "isPricePercentage": true,
-                      "maxPrice": "10",
-                      "minPrice": "5"
+                      "isPricePercentage": false
                     },
                     {
                       "price": "0.50",
                       "fee": "0.00",
-                      "isPricePercentage": true,
-                      "maxPrice": "10",
-                      "minPrice": "5"
+                      "isPricePercentage": false
                     }
                   ],
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -94204,12 +93979,16 @@
                       "upperBound": "100",
                       "price": "1.00",
                       "fee": "50.00",
-                      "isPricePercentage": false
+                      "isPricePercentage": true,
+                      "maxPrice": "10",
+                      "minPrice": "5"
                     },
                     {
                       "price": "0.75",
                       "fee": "25.00",
-                      "isPricePercentage": false
+                      "isPricePercentage": true,
+                      "maxPrice": "10",
+                      "minPrice": "5"
                     }
                   ],
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -94365,7 +94144,7 @@
                 "$ref": "#/components/schemas/SEAT_BASED"
               },
               {
-                "$ref": "#/components/schemas/GRADUATED"
+                "$ref": "#/components/schemas/GRADUATED1"
               },
               {
                 "$ref": "#/components/schemas/VOLUME"
@@ -94645,24 +94424,18 @@
                         "upperBound": "200",
                         "price": "1.00",
                         "fee": "50.00",
-                        "isPricePercentage": true,
-                        "maxPrice": "10",
-                        "minPrice": "5"
+                        "isPricePercentage": false
                       },
                       {
                         "upperBound": "400",
                         "price": "0.75",
                         "fee": "25.00",
-                        "isPricePercentage": true,
-                        "maxPrice": "10",
-                        "minPrice": "5"
+                        "isPricePercentage": false
                       },
                       {
                         "price": "0.50",
                         "fee": "0.00",
-                        "isPricePercentage": true,
-                        "maxPrice": "10",
-                        "minPrice": "5"
+                        "isPricePercentage": false
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -94697,12 +94470,16 @@
                         "upperBound": "100",
                         "price": "1.00",
                         "fee": "50.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       },
                       {
                         "price": "0.75",
                         "fee": "25.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -95022,24 +94799,18 @@
                           "upperBound": "200",
                           "price": "1.00",
                           "fee": "50.00",
-                          "isPricePercentage": true,
-                          "maxPrice": "10",
-                          "minPrice": "5"
+                          "isPricePercentage": false
                         },
                         {
                           "upperBound": "400",
                           "price": "0.75",
                           "fee": "25.00",
-                          "isPricePercentage": true,
-                          "maxPrice": "10",
-                          "minPrice": "5"
+                          "isPricePercentage": false
                         },
                         {
                           "price": "0.50",
                           "fee": "0.00",
-                          "isPricePercentage": true,
-                          "maxPrice": "10",
-                          "minPrice": "5"
+                          "isPricePercentage": false
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -95074,12 +94845,16 @@
                           "upperBound": "100",
                           "price": "1.00",
                           "fee": "50.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         },
                         {
                           "price": "0.75",
                           "fee": "25.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -95363,24 +95138,18 @@
                         "upperBound": "200",
                         "price": "1.00",
                         "fee": "50.00",
-                        "isPricePercentage": true,
-                        "maxPrice": "10",
-                        "minPrice": "5"
+                        "isPricePercentage": false
                       },
                       {
                         "upperBound": "400",
                         "price": "0.75",
                         "fee": "25.00",
-                        "isPricePercentage": true,
-                        "maxPrice": "10",
-                        "minPrice": "5"
+                        "isPricePercentage": false
                       },
                       {
                         "price": "0.50",
                         "fee": "0.00",
-                        "isPricePercentage": true,
-                        "maxPrice": "10",
-                        "minPrice": "5"
+                        "isPricePercentage": false
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -95415,12 +95184,16 @@
                         "upperBound": "100",
                         "price": "1.00",
                         "fee": "50.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       },
                       {
                         "price": "0.75",
                         "fee": "25.00",
-                        "isPricePercentage": false
+                        "isPricePercentage": true,
+                        "maxPrice": "10",
+                        "minPrice": "5"
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -95739,24 +95512,18 @@
                           "upperBound": "200",
                           "price": "1.00",
                           "fee": "50.00",
-                          "isPricePercentage": true,
-                          "maxPrice": "10",
-                          "minPrice": "5"
+                          "isPricePercentage": false
                         },
                         {
                           "upperBound": "400",
                           "price": "0.75",
                           "fee": "25.00",
-                          "isPricePercentage": true,
-                          "maxPrice": "10",
-                          "minPrice": "5"
+                          "isPricePercentage": false
                         },
                         {
                           "price": "0.50",
                           "fee": "0.00",
-                          "isPricePercentage": true,
-                          "maxPrice": "10",
-                          "minPrice": "5"
+                          "isPricePercentage": false
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
@@ -95791,12 +95558,16 @@
                           "upperBound": "100",
                           "price": "1.00",
                           "fee": "50.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         },
                         {
                           "price": "0.75",
                           "fee": "25.00",
-                          "isPricePercentage": false
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
@@ -95879,6 +95650,83 @@
             }
           }
         }
+      },
+      "GRADUATED1": {
+        "properties": {
+          "tiers": {
+            "items": {
+              "$ref": "#/components/schemas/UsageTier"
+            },
+            "example": [
+              {
+                "upperBound": "200",
+                "price": "1.00",
+                "fee": "50.00",
+                "isPricePercentage": false
+              },
+              {
+                "upperBound": "400",
+                "price": "0.75",
+                "fee": "25.00",
+                "isPricePercentage": false
+              },
+              {
+                "price": "0.50",
+                "fee": "0.00",
+                "isPricePercentage": false
+              }
+            ],
+            "description": "A list of contiguous pricing tiers",
+            "type": "array"
+          },
+          "usageMetricId": {
+            "example": "04c62961-04ba-48e6-b985-758bb7d3e712",
+            "description": "The usage metric associated to this pricing structure",
+            "type": "string"
+          },
+          "usageCalculationMode": {
+            "$ref": "#/components/schemas/UsageCalculationMode",
+            "description": "Indicates the scope of usage calculation"
+          },
+          "pricingType": {
+            "enum": [
+              "GRADUATED"
+            ],
+            "example": "GRADUATED",
+            "type": "string"
+          }
+        },
+        "example": {
+          "tiers": [
+            {
+              "upperBound": "200",
+              "price": "1.00",
+              "fee": "50.00",
+              "isPricePercentage": false
+            },
+            {
+              "upperBound": "400",
+              "price": "0.75",
+              "fee": "25.00",
+              "isPricePercentage": false
+            },
+            {
+              "price": "0.50",
+              "fee": "0.00",
+              "isPricePercentage": false
+            }
+          ],
+          "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+          "usageCalculationMode": "BILLING_PERIOD",
+          "pricingType": "GRADUATED"
+        },
+        "type": "object",
+        "required": [
+          "pricingType",
+          "tiers",
+          "usageCalculationMode",
+          "usageMetricId"
+        ]
       }
     },
     "requestBodies": {}
