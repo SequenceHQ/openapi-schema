@@ -21876,16 +21876,310 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateListPriceEndpointUpdateListPriceRequestModel",
                 "example": {
-                  "name": "Sample product"
-                }
+                  "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
+                  "name": "Sample product",
+                  "currency": "GBP",
+                  "structure": {
+                    "pricingType": "GRADUATED",
+                    "tiers": [
+                      {
+                        "upperBound": "200",
+                        "price": "1.00",
+                        "fee": "50.00",
+                        "isPricePercentage": false
+                      },
+                      {
+                        "upperBound": "400",
+                        "price": "0.75",
+                        "fee": "25.00",
+                        "isPricePercentage": false
+                      },
+                      {
+                        "price": "0.50",
+                        "fee": "0.00",
+                        "isPricePercentage": false
+                      }
+                    ],
+                    "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                    "usageCalculationMode": "BILLING_PERIOD"
+                  },
+                  "billingFrequency": "MONTHLY",
+                  "billingType": "IN_ARREARS",
+                  "integrationIds": [
+                    {
+                      "service": "Xero",
+                      "id": "123"
+                    }
+                  ],
+                  "customMetricParameters": [
+                    {
+                      "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                      "value": "10"
+                    }
+                  ]
+                },
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/OneTimeListPriceRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/FixedListPriceRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/LinearListPriceRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/PackageListPriceRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/SeatBasedListPriceRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/GraduatedListPriceRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/VolumeListPriceRequest"
+                  }
+                ]
               },
               "examples": {
-                "UpdateListPriceEndpointUpdateListPriceRequestModel": {
+                "GraduatedListPriceRequest": {
                   "summary": "",
                   "value": {
-                    "name": "Sample product"
+                    "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
+                    "name": "Sample product",
+                    "currency": "GBP",
+                    "structure": {
+                      "pricingType": "GRADUATED",
+                      "tiers": [
+                        {
+                          "upperBound": "200",
+                          "price": "1.00",
+                          "fee": "50.00",
+                          "isPricePercentage": false
+                        },
+                        {
+                          "upperBound": "400",
+                          "price": "0.75",
+                          "fee": "25.00",
+                          "isPricePercentage": false
+                        },
+                        {
+                          "price": "0.50",
+                          "fee": "0.00",
+                          "isPricePercentage": false
+                        }
+                      ],
+                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                      "usageCalculationMode": "BILLING_PERIOD"
+                    },
+                    "billingFrequency": "MONTHLY",
+                    "billingType": "IN_ARREARS",
+                    "integrationIds": [
+                      {
+                        "service": "Xero",
+                        "id": "123"
+                      }
+                    ],
+                    "customMetricParameters": [
+                      {
+                        "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                        "value": "10"
+                      }
+                    ]
+                  }
+                },
+                "VolumeListPriceRequest": {
+                  "summary": "",
+                  "value": {
+                    "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
+                    "name": "Sample product",
+                    "currency": "GBP",
+                    "structure": {
+                      "pricingType": "VOLUME",
+                      "tiers": [
+                        {
+                          "upperBound": "100",
+                          "price": "1.00",
+                          "fee": "50.00",
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
+                        },
+                        {
+                          "price": "0.75",
+                          "fee": "25.00",
+                          "isPricePercentage": true,
+                          "maxPrice": "10",
+                          "minPrice": "5"
+                        }
+                      ],
+                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                    },
+                    "billingFrequency": "MONTHLY",
+                    "billingType": "IN_ARREARS",
+                    "integrationIds": [
+                      {
+                        "service": "Xero",
+                        "id": "123"
+                      }
+                    ],
+                    "customMetricParameters": [
+                      {
+                        "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                        "value": "10"
+                      }
+                    ]
+                  }
+                },
+                "SeatBasedListPriceRequest": {
+                  "summary": "",
+                  "value": {
+                    "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
+                    "name": "Sample product",
+                    "currency": "GBP",
+                    "structure": {
+                      "pricingType": "SEAT_BASED",
+                      "seatMetricId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "pricePerSeat": "0.25",
+                      "prorationStrategy": "USE_MAXIMUM",
+                      "contractedMinimumSeats": 10,
+                      "overagesBillingFrequency": "YEARLY",
+                      "tiers": [
+                        {
+                          "upperBound": "100",
+                          "price": "1.00",
+                          "fee": "50.00"
+                        },
+                        {
+                          "price": "0.75",
+                          "fee": "25.00"
+                        }
+                      ]
+                    },
+                    "billingFrequency": "MONTHLY",
+                    "billingType": "IN_ARREARS",
+                    "integrationIds": [
+                      {
+                        "service": "Xero",
+                        "id": "123"
+                      }
+                    ],
+                    "customMetricParameters": [
+                      {
+                        "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                        "value": "10"
+                      }
+                    ]
+                  }
+                },
+                "PackageListPriceRequest": {
+                  "summary": "",
+                  "value": {
+                    "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
+                    "name": "Sample product",
+                    "currency": "GBP",
+                    "structure": {
+                      "pricingType": "PACKAGE",
+                      "packageSize": "50",
+                      "pricePerPackage": "2.00",
+                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                    },
+                    "billingFrequency": "MONTHLY",
+                    "billingType": "IN_ARREARS",
+                    "integrationIds": [
+                      {
+                        "service": "Xero",
+                        "id": "123"
+                      }
+                    ],
+                    "customMetricParameters": [
+                      {
+                        "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                        "value": "10"
+                      }
+                    ]
+                  }
+                },
+                "LinearListPriceRequest": {
+                  "summary": "",
+                  "value": {
+                    "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
+                    "name": "Sample product",
+                    "currency": "GBP",
+                    "structure": {
+                      "pricingType": "LINEAR",
+                      "pricePerUnit": "0.25",
+                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                      "isPricePercentage": false
+                    },
+                    "billingFrequency": "MONTHLY",
+                    "billingType": "IN_ARREARS",
+                    "integrationIds": [
+                      {
+                        "service": "Xero",
+                        "id": "123"
+                      }
+                    ],
+                    "customMetricParameters": [
+                      {
+                        "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                        "value": "10"
+                      }
+                    ]
+                  }
+                },
+                "FixedListPriceRequest": {
+                  "summary": "",
+                  "value": {
+                    "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
+                    "name": "Sample product",
+                    "currency": "GBP",
+                    "structure": {
+                      "pricingType": "FIXED",
+                      "price": "20.00"
+                    },
+                    "billingFrequency": "MONTHLY",
+                    "billingType": "IN_ARREARS",
+                    "integrationIds": [
+                      {
+                        "service": "Xero",
+                        "id": "123"
+                      }
+                    ],
+                    "customMetricParameters": [
+                      {
+                        "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                        "value": "10"
+                      }
+                    ]
+                  }
+                },
+                "OneTimeListPriceRequest": {
+                  "summary": "",
+                  "value": {
+                    "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
+                    "name": "Sample product",
+                    "currency": "GBP",
+                    "structure": {
+                      "pricingType": "ONE_TIME",
+                      "price": "150.00"
+                    },
+                    "billingFrequency": "MONTHLY",
+                    "billingType": "IN_ARREARS",
+                    "integrationIds": [
+                      {
+                        "service": "Xero",
+                        "id": "123"
+                      }
+                    ],
+                    "customMetricParameters": [
+                      {
+                        "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                        "value": "10"
+                      }
+                    ]
                   }
                 }
               }
@@ -59338,7 +59632,7 @@
                     "detailsUrl": "https://app.hellosign.com/home/manage?guid=fa5c8a0b0f492d768749333ad6fcc214c111e967",
                     "ccEmailAddresses": [],
                     "signingRedirectUrl": "https://customer-portal/some-quote",
-                    "finalCopyUri": "https://app.hellosign.com/download/some.pdf",
+                    "finalCopyUri": "/download/some.pdf",
                     "signers": [
                       {
                         "signatureId": "78caf2a1d01cd39cea2bc1cbb340dac3",
@@ -59377,7 +59671,7 @@
                       "detailsUrl": "https://app.hellosign.com/home/manage?guid=fa5c8a0b0f492d768749333ad6fcc214c111e967",
                       "ccEmailAddresses": [],
                       "signingRedirectUrl": "https://customer-portal/some-quote",
-                      "finalCopyUri": "https://app.hellosign.com/download/some.pdf",
+                      "finalCopyUri": "/download/some.pdf",
                       "signers": [
                         {
                           "signatureId": "78caf2a1d01cd39cea2bc1cbb340dac3",
@@ -77906,22 +78200,6 @@
             "items": {
               "$ref": "#/components/schemas/PriceParameter1"
             }
-          }
-        }
-      },
-      "UpdateListPriceEndpointUpdateListPriceRequestModel": {
-        "required": [
-          "name"
-        ],
-        "type": "object",
-        "example": {
-          "name": "Sample product"
-        },
-        "properties": {
-          "name": {
-            "type": "string",
-            "description": "The customer-facing name of this list price",
-            "example": "Sample product"
           }
         }
       },
@@ -100238,7 +100516,7 @@
             "detailsUrl": "https://app.hellosign.com/home/manage?guid=fa5c8a0b0f492d768749333ad6fcc214c111e967",
             "ccEmailAddresses": [],
             "signingRedirectUrl": "https://customer-portal/some-quote",
-            "finalCopyUri": "https://app.hellosign.com/download/some.pdf",
+            "finalCopyUri": "/download/some.pdf",
             "signers": [
               {
                 "signatureId": "78caf2a1d01cd39cea2bc1cbb340dac3",
@@ -100336,7 +100614,7 @@
           "detailsUrl": "https://app.hellosign.com/home/manage?guid=fa5c8a0b0f492d768749333ad6fcc214c111e967",
           "ccEmailAddresses": [],
           "signingRedirectUrl": "https://customer-portal/some-quote",
-          "finalCopyUri": "https://app.hellosign.com/download/some.pdf",
+          "finalCopyUri": "/download/some.pdf",
           "signers": [
             {
               "signatureId": "78caf2a1d01cd39cea2bc1cbb340dac3",
@@ -100413,7 +100691,7 @@
           },
           "finalCopyUri": {
             "type": "string",
-            "example": "https://app.hellosign.com/download/some.pdf"
+            "example": "/download/some.pdf"
           },
           "signers": {
             "type": "array",
