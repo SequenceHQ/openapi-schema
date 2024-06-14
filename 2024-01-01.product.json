@@ -58170,6 +58170,160 @@
       },
       "servers": [],
       "parameters": []
+    },
+    "/dropbox-sign-webhooks/{eventType}/{signatureRequestId}": {
+      "post": {
+        "tags": [],
+        "summary": "Handle Signature Request webhooks from Dropbox Sign",
+        "description": "Handle Signature Request webhooks from Dropbox Sign",
+        "operationId": "postDropboxSignWebhooksByEventTypeBySignatureRequestId",
+        "parameters": [
+          {
+            "name": "eventType",
+            "in": "path",
+            "description": "Dropbox Sign webhook event type",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "signatureRequestId",
+            "in": "path",
+            "description": "Dropbox Sign signature request ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DropboxSignWebhookEvent",
+                "example": {
+                  "event": {
+                    "eventType": "SIGNATURE_REQUEST_ALL_SIGNED",
+                    "eventTime": "1348177752",
+                    "eventHash": "3a31324d1919d7cdc849ff407adf38fc01e01107d9400b028ff8c892469ca947",
+                    "eventMetadata": {}
+                  },
+                  "signatureRequest": {
+                    "testMode": false,
+                    "signatureRequestId": "fa5c8a0b0f492d768749333ad6fcc214c111e967",
+                    "title": "Acme x Rust Inc",
+                    "subject": "Acme x Rust Inc",
+                    "message": "Please sign and return.",
+                    "createdAt": 1570471067,
+                    "expiresAt": 1670471000,
+                    "isComplete": true,
+                    "isDeclined": false,
+                    "hasError": false,
+                    "filesUrl": "https://api.hellosign.com/v3/signature_request/files/2d055d5449fcbf016f5ebf0cf967bdd2bc42494f",
+                    "signingUrl": "https://api.hellosign.com/v3/signing_url",
+                    "detailsUrl": "https://app.hellosign.com/home/manage?guid=fa5c8a0b0f492d768749333ad6fcc214c111e967",
+                    "ccEmailAddresses": [],
+                    "signingRedirectUrl": "https://customer-portal/some-quote",
+                    "finalCopyUri": "https://app.hellosign.com/download/some.pdf",
+                    "signers": [
+                      {
+                        "signatureId": "78caf2a1d01cd39cea2bc1cbb340dac3",
+                        "signerEmailAddress": "john@example.com",
+                        "signerName": "John Doe",
+                        "statusCode": "signed",
+                        "signedAt": 1590471070
+                      }
+                    ]
+                  }
+                }
+              },
+              "examples": {
+                "DropboxSignWebhookEvent": {
+                  "summary": "",
+                  "value": {
+                    "event": {
+                      "eventType": "SIGNATURE_REQUEST_ALL_SIGNED",
+                      "eventTime": "1348177752",
+                      "eventHash": "3a31324d1919d7cdc849ff407adf38fc01e01107d9400b028ff8c892469ca947",
+                      "eventMetadata": {}
+                    },
+                    "signatureRequest": {
+                      "testMode": false,
+                      "signatureRequestId": "fa5c8a0b0f492d768749333ad6fcc214c111e967",
+                      "title": "Acme x Rust Inc",
+                      "subject": "Acme x Rust Inc",
+                      "message": "Please sign and return.",
+                      "createdAt": 1570471067,
+                      "expiresAt": 1670471000,
+                      "isComplete": true,
+                      "isDeclined": false,
+                      "hasError": false,
+                      "filesUrl": "https://api.hellosign.com/v3/signature_request/files/2d055d5449fcbf016f5ebf0cf967bdd2bc42494f",
+                      "signingUrl": "https://api.hellosign.com/v3/signing_url",
+                      "detailsUrl": "https://app.hellosign.com/home/manage?guid=fa5c8a0b0f492d768749333ad6fcc214c111e967",
+                      "ccEmailAddresses": [],
+                      "signingRedirectUrl": "https://customer-portal/some-quote",
+                      "finalCopyUri": "https://app.hellosign.com/download/some.pdf",
+                      "signers": [
+                        {
+                          "signatureId": "78caf2a1d01cd39cea2bc1cbb340dac3",
+                          "signerEmailAddress": "john@example.com",
+                          "signerName": "John Doe",
+                          "statusCode": "signed",
+                          "signedAt": 1590471070
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {}
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
     }
   },
   "components": {
@@ -97993,6 +98147,268 @@
             "items": {
               "$ref": "#/components/schemas/QuotePhaseNew1"
             }
+          }
+        }
+      },
+      "DropboxSignWebhookEvent": {
+        "required": [
+          "event",
+          "signatureRequest"
+        ],
+        "type": "object",
+        "example": {
+          "event": {
+            "eventType": "SIGNATURE_REQUEST_ALL_SIGNED",
+            "eventTime": "1348177752",
+            "eventHash": "3a31324d1919d7cdc849ff407adf38fc01e01107d9400b028ff8c892469ca947",
+            "eventMetadata": {}
+          },
+          "signatureRequest": {
+            "testMode": false,
+            "signatureRequestId": "fa5c8a0b0f492d768749333ad6fcc214c111e967",
+            "title": "Acme x Rust Inc",
+            "subject": "Acme x Rust Inc",
+            "message": "Please sign and return.",
+            "createdAt": 1570471067,
+            "expiresAt": 1670471000,
+            "isComplete": true,
+            "isDeclined": false,
+            "hasError": false,
+            "filesUrl": "https://api.hellosign.com/v3/signature_request/files/2d055d5449fcbf016f5ebf0cf967bdd2bc42494f",
+            "signingUrl": "https://api.hellosign.com/v3/signing_url",
+            "detailsUrl": "https://app.hellosign.com/home/manage?guid=fa5c8a0b0f492d768749333ad6fcc214c111e967",
+            "ccEmailAddresses": [],
+            "signingRedirectUrl": "https://customer-portal/some-quote",
+            "finalCopyUri": "https://app.hellosign.com/download/some.pdf",
+            "signers": [
+              {
+                "signatureId": "78caf2a1d01cd39cea2bc1cbb340dac3",
+                "signerEmailAddress": "john@example.com",
+                "signerName": "John Doe",
+                "statusCode": "signed",
+                "signedAt": 1590471070
+              }
+            ]
+          }
+        },
+        "properties": {
+          "event": {
+            "$ref": "#/components/schemas/DropboxSignWebhookEventEvent"
+          },
+          "signatureRequest": {
+            "$ref": "#/components/schemas/DropboxSignWebhookEventSignatureRequest"
+          }
+        }
+      },
+      "DropboxSignWebhookEventEvent": {
+        "required": [
+          "eventHash",
+          "eventMetadata",
+          "eventTime",
+          "eventType"
+        ],
+        "type": "object",
+        "example": {
+          "eventType": "SIGNATURE_REQUEST_ALL_SIGNED",
+          "eventTime": "1348177752",
+          "eventHash": "3a31324d1919d7cdc849ff407adf38fc01e01107d9400b028ff8c892469ca947",
+          "eventMetadata": {}
+        },
+        "properties": {
+          "eventType": {
+            "$ref": "#/components/schemas/DropboxSignEventType"
+          },
+          "eventTime": {
+            "type": "string",
+            "example": "1348177752"
+          },
+          "eventHash": {
+            "type": "string",
+            "example": "3a31324d1919d7cdc849ff407adf38fc01e01107d9400b028ff8c892469ca947"
+          },
+          "eventMetadata": {
+            "$ref": "#/components/schemas/DropboxSignWebhookEventEventEventMetadata"
+          }
+        }
+      },
+      "DropboxSignEventType": {
+        "type": "string",
+        "example": "SIGNATURE_REQUEST_ALL_SIGNED",
+        "enum": [
+          "UNKNOWN_ERROR",
+          "FILE_ERROR",
+          "SIGNATURE_REQUEST_ALL_SIGNED",
+          "SIGNATURE_REQUEST_INVALID",
+          "CALLBACK_TEST"
+        ]
+      },
+      "DropboxSignWebhookEventEventEventMetadata": {
+        "type": "object",
+        "example": {},
+        "properties": {}
+      },
+      "DropboxSignWebhookEventSignatureRequest": {
+        "required": [
+          "ccEmailAddresses",
+          "createdAt",
+          "detailsUrl",
+          "filesUrl",
+          "hasError",
+          "isComplete",
+          "isDeclined",
+          "signatureRequestId",
+          "signers",
+          "title"
+        ],
+        "type": "object",
+        "example": {
+          "testMode": false,
+          "signatureRequestId": "fa5c8a0b0f492d768749333ad6fcc214c111e967",
+          "title": "Acme x Rust Inc",
+          "subject": "Acme x Rust Inc",
+          "message": "Please sign and return.",
+          "createdAt": 1570471067,
+          "expiresAt": 1670471000,
+          "isComplete": true,
+          "isDeclined": false,
+          "hasError": false,
+          "filesUrl": "https://api.hellosign.com/v3/signature_request/files/2d055d5449fcbf016f5ebf0cf967bdd2bc42494f",
+          "signingUrl": "https://api.hellosign.com/v3/signing_url",
+          "detailsUrl": "https://app.hellosign.com/home/manage?guid=fa5c8a0b0f492d768749333ad6fcc214c111e967",
+          "ccEmailAddresses": [],
+          "signingRedirectUrl": "https://customer-portal/some-quote",
+          "finalCopyUri": "https://app.hellosign.com/download/some.pdf",
+          "signers": [
+            {
+              "signatureId": "78caf2a1d01cd39cea2bc1cbb340dac3",
+              "signerEmailAddress": "john@example.com",
+              "signerName": "John Doe",
+              "statusCode": "signed",
+              "signedAt": 1590471070
+            }
+          ]
+        },
+        "properties": {
+          "testMode": {
+            "type": "boolean",
+            "example": false
+          },
+          "signatureRequestId": {
+            "type": "string",
+            "example": "fa5c8a0b0f492d768749333ad6fcc214c111e967"
+          },
+          "title": {
+            "type": "string",
+            "example": "Acme x Rust Inc"
+          },
+          "subject": {
+            "type": "string",
+            "example": "Acme x Rust Inc"
+          },
+          "message": {
+            "type": "string",
+            "example": "Please sign and return."
+          },
+          "createdAt": {
+            "type": "integer",
+            "format": "int32",
+            "example": 1570471067
+          },
+          "expiresAt": {
+            "type": "integer",
+            "format": "int32",
+            "example": 1670471000
+          },
+          "isComplete": {
+            "type": "boolean",
+            "example": true
+          },
+          "isDeclined": {
+            "type": "boolean",
+            "example": false
+          },
+          "hasError": {
+            "type": "boolean",
+            "example": false
+          },
+          "filesUrl": {
+            "type": "string",
+            "example": "https://api.hellosign.com/v3/signature_request/files/2d055d5449fcbf016f5ebf0cf967bdd2bc42494f"
+          },
+          "signingUrl": {
+            "type": "string",
+            "example": "https://api.hellosign.com/v3/signing_url"
+          },
+          "detailsUrl": {
+            "type": "string",
+            "example": "https://app.hellosign.com/home/manage?guid=fa5c8a0b0f492d768749333ad6fcc214c111e967"
+          },
+          "ccEmailAddresses": {
+            "type": "array",
+            "example": [],
+            "items": {}
+          },
+          "signingRedirectUrl": {
+            "type": "string",
+            "example": "https://customer-portal/some-quote"
+          },
+          "finalCopyUri": {
+            "type": "string",
+            "example": "https://app.hellosign.com/download/some.pdf"
+          },
+          "signers": {
+            "type": "array",
+            "example": [
+              {
+                "signatureId": "78caf2a1d01cd39cea2bc1cbb340dac3",
+                "signerEmailAddress": "john@example.com",
+                "signerName": "John Doe",
+                "statusCode": "signed",
+                "signedAt": 1590471070
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/DropboxSignWebhookEventSignatureRequestSigner"
+            }
+          }
+        }
+      },
+      "DropboxSignWebhookEventSignatureRequestSigner": {
+        "required": [
+          "signatureId",
+          "signerEmailAddress",
+          "signerName",
+          "statusCode"
+        ],
+        "type": "object",
+        "example": {
+          "signatureId": "78caf2a1d01cd39cea2bc1cbb340dac3",
+          "signerEmailAddress": "john@example.com",
+          "signerName": "John Doe",
+          "statusCode": "signed",
+          "signedAt": 1590471070
+        },
+        "properties": {
+          "signatureId": {
+            "type": "string",
+            "example": "78caf2a1d01cd39cea2bc1cbb340dac3"
+          },
+          "signerEmailAddress": {
+            "type": "string",
+            "example": "john@example.com"
+          },
+          "signerName": {
+            "type": "string",
+            "example": "John Doe"
+          },
+          "statusCode": {
+            "type": "string",
+            "example": "signed"
+          },
+          "signedAt": {
+            "type": "integer",
+            "format": "int32",
+            "example": 1590471070
           }
         }
       }
