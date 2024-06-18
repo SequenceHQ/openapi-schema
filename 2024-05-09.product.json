@@ -31239,7 +31239,8 @@
                             "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                             "value": "10"
                           }
-                        ]
+                        ],
+                        "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                       }
                     ],
                     "pagination": {
@@ -31283,7 +31284,8 @@
                               "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                               "value": "10"
                             }
-                          ]
+                          ],
+                          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                         }
                       ],
                       "pagination": {
@@ -31712,7 +31714,8 @@
                         "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                         "value": "10"
                       }
-                    ]
+                    ],
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                   },
                   "oneOf": [
                     {
@@ -31785,7 +31788,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   },
                   "VolumePriceResponse": {
@@ -31831,7 +31835,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   },
                   "SeatBasedPriceResponse": {
@@ -31875,7 +31880,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   },
                   "PackagePriceResponse": {
@@ -31906,7 +31912,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   },
                   "LinearPriceResponse": {
@@ -31937,7 +31944,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   },
                   "FixedPriceResponse": {
@@ -31966,7 +31974,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   },
                   "OneTimePriceResponse": {
@@ -31995,7 +32004,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   }
                 }
@@ -32107,7 +32117,8 @@
                         "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                         "value": "10"
                       }
-                    ]
+                    ],
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                   },
                   "oneOf": [
                     {
@@ -32180,7 +32191,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   },
                   "VolumePriceResponse": {
@@ -32226,7 +32238,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   },
                   "SeatBasedPriceResponse": {
@@ -32270,7 +32283,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   },
                   "PackagePriceResponse": {
@@ -32301,7 +32315,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   },
                   "LinearPriceResponse": {
@@ -32332,7 +32347,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   },
                   "FixedPriceResponse": {
@@ -32361,7 +32377,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   },
                   "OneTimePriceResponse": {
@@ -32390,7 +32407,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   }
                 }
@@ -32519,7 +32537,8 @@
                         "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                         "value": "10"
                       }
-                    ]
+                    ],
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                   },
                   "oneOf": [
                     {
@@ -32592,7 +32611,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   },
                   "VolumePriceResponse": {
@@ -32638,7 +32658,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   },
                   "SeatBasedPriceResponse": {
@@ -32682,7 +32703,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   },
                   "PackagePriceResponse": {
@@ -32713,7 +32735,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   },
                   "LinearPriceResponse": {
@@ -32744,7 +32767,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   },
                   "FixedPriceResponse": {
@@ -32773,7 +32797,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   },
                   "OneTimePriceResponse": {
@@ -32802,7 +32827,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   }
                 }
@@ -32910,7 +32936,8 @@
                         "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                         "value": "10"
                       }
-                    ]
+                    ],
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                   },
                   "oneOf": [
                     {
@@ -32983,7 +33010,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   },
                   "VolumePriceResponse": {
@@ -33029,7 +33057,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   },
                   "SeatBasedPriceResponse": {
@@ -33073,7 +33102,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   },
                   "PackagePriceResponse": {
@@ -33104,7 +33134,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   },
                   "LinearPriceResponse": {
@@ -33135,7 +33166,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   },
                   "FixedPriceResponse": {
@@ -33164,7 +33196,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   },
                   "OneTimePriceResponse": {
@@ -33193,7 +33226,8 @@
                           "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                           "value": "10"
                         }
-                      ]
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
                     }
                   }
                 }
@@ -86521,7 +86555,8 @@
               "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
               "value": "10"
             }
-          ]
+          ],
+          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
         },
         "properties": {
           "id": {
@@ -86589,6 +86624,11 @@
             "items": {
               "$ref": "#/components/schemas/PriceParameter2"
             }
+          },
+          "listPriceId": {
+            "type": "string",
+            "description": "The list price ID, if this price variant was created from a list price",
+            "example": "b4d7e884-e007-4183-8355-4771865c5100"
           }
         }
       },
@@ -86648,7 +86688,8 @@
               "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
               "value": "10"
             }
-          ]
+          ],
+          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
         },
         "properties": {
           "id": {
@@ -86716,6 +86757,11 @@
             "items": {
               "$ref": "#/components/schemas/PriceParameter2"
             }
+          },
+          "listPriceId": {
+            "type": "string",
+            "description": "The list price ID, if this price variant was created from a list price",
+            "example": "b4d7e884-e007-4183-8355-4771865c5100"
           }
         }
       },
@@ -86773,7 +86819,8 @@
               "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
               "value": "10"
             }
-          ]
+          ],
+          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
         },
         "properties": {
           "id": {
@@ -86841,6 +86888,11 @@
             "items": {
               "$ref": "#/components/schemas/PriceParameter2"
             }
+          },
+          "listPriceId": {
+            "type": "string",
+            "description": "The list price ID, if this price variant was created from a list price",
+            "example": "b4d7e884-e007-4183-8355-4771865c5100"
           }
         }
       },
@@ -86885,7 +86937,8 @@
               "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
               "value": "10"
             }
-          ]
+          ],
+          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
         },
         "properties": {
           "id": {
@@ -86953,6 +87006,11 @@
             "items": {
               "$ref": "#/components/schemas/PriceParameter2"
             }
+          },
+          "listPriceId": {
+            "type": "string",
+            "description": "The list price ID, if this price variant was created from a list price",
+            "example": "b4d7e884-e007-4183-8355-4771865c5100"
           }
         }
       },
@@ -86997,7 +87055,8 @@
               "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
               "value": "10"
             }
-          ]
+          ],
+          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
         },
         "properties": {
           "id": {
@@ -87065,6 +87124,11 @@
             "items": {
               "$ref": "#/components/schemas/PriceParameter2"
             }
+          },
+          "listPriceId": {
+            "type": "string",
+            "description": "The list price ID, if this price variant was created from a list price",
+            "example": "b4d7e884-e007-4183-8355-4771865c5100"
           }
         }
       },
@@ -87107,7 +87171,8 @@
               "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
               "value": "10"
             }
-          ]
+          ],
+          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
         },
         "properties": {
           "id": {
@@ -87175,6 +87240,11 @@
             "items": {
               "$ref": "#/components/schemas/PriceParameter2"
             }
+          },
+          "listPriceId": {
+            "type": "string",
+            "description": "The list price ID, if this price variant was created from a list price",
+            "example": "b4d7e884-e007-4183-8355-4771865c5100"
           }
         }
       },
@@ -87217,7 +87287,8 @@
               "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
               "value": "10"
             }
-          ]
+          ],
+          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
         },
         "properties": {
           "id": {
@@ -87285,6 +87356,11 @@
             "items": {
               "$ref": "#/components/schemas/PriceParameter2"
             }
+          },
+          "listPriceId": {
+            "type": "string",
+            "description": "The list price ID, if this price variant was created from a list price",
+            "example": "b4d7e884-e007-4183-8355-4771865c5100"
           }
         }
       },
@@ -87356,7 +87432,8 @@
                   "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                   "value": "10"
                 }
-              ]
+              ],
+              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
             }
           ],
           "pagination": {
@@ -87414,7 +87491,8 @@
                     "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                     "value": "10"
                   }
-                ]
+                ],
+                "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
               }
             ],
             "items": {
@@ -87484,7 +87562,8 @@
               "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
               "value": "10"
             }
-          ]
+          ],
+          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
         },
         "properties": {
           "id": {
@@ -87574,6 +87653,11 @@
             "items": {
               "$ref": "#/components/schemas/PriceParameter2"
             }
+          },
+          "listPriceId": {
+            "type": "string",
+            "description": "The list price ID, if this price variant was created from a list price",
+            "example": "b4d7e884-e007-4183-8355-4771865c5100"
           }
         }
       },
