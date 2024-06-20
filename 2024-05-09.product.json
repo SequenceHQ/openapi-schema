@@ -40544,6 +40544,239 @@
       "servers": [],
       "parameters": []
     },
+    "/customers/{customer}/contacts": {
+      "post": {
+        "tags": [],
+        "summary": "Create a new contact",
+        "description": "Create a contact",
+        "operationId": "postCustomersByCustomerContacts",
+        "parameters": [
+          {
+            "name": "customer",
+            "in": "path",
+            "description": "The Customer ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-05-09"
+              ]
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactRequestModel",
+                "example": {
+                  "name": "John Smith",
+                  "email": "john.smith@example.com",
+                  "billingPreference": "NONE"
+                }
+              },
+              "examples": {
+                "ContactRequestModel": {
+                  "summary": "",
+                  "value": {
+                    "name": "John Smith",
+                    "email": "john.smith@example.com",
+                    "billingPreference": "NONE"
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Contact",
+                  "example": {
+                    "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+                    "name": "John Smith",
+                    "email": "john.smith@example.com",
+                    "billingPreference": "NONE",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "updatedAt": "2022-06-28T16:47:00Z"
+                  }
+                },
+                "examples": {
+                  "Contact": {
+                    "summary": "",
+                    "value": {
+                      "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+                      "name": "John Smith",
+                      "email": "john.smith@example.com",
+                      "billingPreference": "NONE",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "updatedAt": "2022-06-28T16:47:00Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
+    "/customers/{customer}/contacts/{id}": {
+      "put": {
+        "tags": [],
+        "summary": "Update a contact for a customer",
+        "description": "Update a contact for a customer",
+        "operationId": "putCustomersByCustomerContactsById",
+        "parameters": [
+          {
+            "name": "customer",
+            "in": "path",
+            "description": "The Customer ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Unique ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-05-09"
+              ]
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactRequestModel",
+                "example": {
+                  "name": "John Smith",
+                  "email": "john.smith@example.com",
+                  "billingPreference": "NONE"
+                }
+              },
+              "examples": {
+                "ContactRequestModel": {
+                  "summary": "",
+                  "value": {
+                    "name": "John Smith",
+                    "email": "john.smith@example.com",
+                    "billingPreference": "NONE"
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Contact",
+                  "example": {
+                    "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+                    "name": "John Smith",
+                    "email": "john.smith@example.com",
+                    "billingPreference": "NONE",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "updatedAt": "2022-06-28T16:47:00Z"
+                  }
+                },
+                "examples": {
+                  "Contact": {
+                    "summary": "",
+                    "value": {
+                      "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+                      "name": "John Smith",
+                      "email": "john.smith@example.com",
+                      "billingPreference": "NONE",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "updatedAt": "2022-06-28T16:47:00Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/seat-metrics": {
       "get": {
         "tags": [],
@@ -86719,6 +86952,93 @@
             "type": "string",
             "description": "Alias label",
             "example": "CRM ID"
+          }
+        }
+      },
+      "ContactRequestModel": {
+        "required": [
+          "billingPreference",
+          "email",
+          "name"
+        ],
+        "type": "object",
+        "example": {
+          "name": "John Smith",
+          "email": "john.smith@example.com",
+          "billingPreference": "NONE"
+        },
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Full name of this contact",
+            "example": "John Smith"
+          },
+          "email": {
+            "type": "string",
+            "description": "Email address of this contact",
+            "example": "john.smith@example.com"
+          },
+          "billingPreference": {
+            "description": "Billing preference. Whether this contact receives billing communications. Options are NONE, STANDARD or PRIMARY. For a given customer, if any contacts receive billing communications then at least one contact must be designated PRIMARY for billing.",
+            "$ref": "#/components/schemas/ContactBillingPreference"
+          }
+        }
+      },
+      "ContactBillingPreference": {
+        "type": "string",
+        "example": "NONE",
+        "enum": [
+          "PRIMARY",
+          "STANDARD",
+          "NONE"
+        ]
+      },
+      "Contact": {
+        "required": [
+          "billingPreference",
+          "createdAt",
+          "email",
+          "id",
+          "updatedAt"
+        ],
+        "type": "object",
+        "example": {
+          "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+          "name": "John Smith",
+          "email": "john.smith@example.com",
+          "billingPreference": "NONE",
+          "createdAt": "2022-06-28T16:47:00Z",
+          "updatedAt": "2022-06-28T16:47:00Z"
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique ID",
+            "example": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
+          },
+          "name": {
+            "type": "string",
+            "description": "Full name of this contact",
+            "example": "John Smith"
+          },
+          "email": {
+            "type": "string",
+            "description": "Email address of this contact",
+            "example": "john.smith@example.com"
+          },
+          "billingPreference": {
+            "description": "Billing preference. Whether this contact receives billing communications. Options are NONE, STANDARD or PRIMARY. For a given customer, if any contacts receive billing communications then at least one contact must be designated PRIMARY for billing.",
+            "$ref": "#/components/schemas/ContactBillingPreference"
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "Time of creation. Formatted as an ISO 8601 timestamp.",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "updatedAt": {
+            "type": "string",
+            "description": "Time of last update. Formatted as an ISO 8601 timestamp.",
+            "example": "2022-06-28T16:47:00Z"
           }
         }
       },
