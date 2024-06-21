@@ -39473,6 +39473,97 @@
       "parameters": []
     },
     "/customers/{customer}/contacts": {
+      "get": {
+        "tags": [],
+        "summary": "List all contacts for a customer",
+        "description": "List all contacts for a customer",
+        "operationId": "getCustomersByCustomerContacts",
+        "parameters": [
+          {
+            "name": "customer",
+            "in": "path",
+            "description": "The Customer ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-05-09"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ListContactEndpointContactResponseModel",
+                  "example": {
+                    "items": [
+                      {
+                        "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+                        "name": "John Smith",
+                        "email": "john.smith@example.com",
+                        "billingPreference": "NONE",
+                        "createdAt": "2022-06-28T16:47:00Z",
+                        "updatedAt": "2022-06-28T16:47:00Z"
+                      }
+                    ]
+                  }
+                },
+                "examples": {
+                  "ListContactEndpointContactResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "items": [
+                        {
+                          "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+                          "name": "John Smith",
+                          "email": "john.smith@example.com",
+                          "billingPreference": "NONE",
+                          "createdAt": "2022-06-28T16:47:00Z",
+                          "updatedAt": "2022-06-28T16:47:00Z"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
       "post": {
         "tags": [],
         "summary": "Create a new contact",
@@ -39587,8 +39678,8 @@
     "/customers/{customer}/contacts/{id}": {
       "put": {
         "tags": [],
-        "summary": "Update a contact for a customer",
-        "description": "Update a contact for a customer",
+        "summary": "Update a contact",
+        "description": "Update a contact",
         "operationId": "putCustomersByCustomerContactsById",
         "parameters": [
           {
@@ -83505,6 +83596,43 @@
             "type": "string",
             "description": "Time of last update. Formatted as an ISO 8601 timestamp.",
             "example": "2022-06-28T16:47:00Z"
+          }
+        }
+      },
+      "ListContactEndpointContactResponseModel": {
+        "required": [
+          "items"
+        ],
+        "type": "object",
+        "example": {
+          "items": [
+            {
+              "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+              "name": "John Smith",
+              "email": "john.smith@example.com",
+              "billingPreference": "NONE",
+              "createdAt": "2022-06-28T16:47:00Z",
+              "updatedAt": "2022-06-28T16:47:00Z"
+            }
+          ]
+        },
+        "properties": {
+          "items": {
+            "type": "array",
+            "description": "Contacts",
+            "example": [
+              {
+                "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+                "name": "John Smith",
+                "email": "john.smith@example.com",
+                "billingPreference": "NONE",
+                "createdAt": "2022-06-28T16:47:00Z",
+                "updatedAt": "2022-06-28T16:47:00Z"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/Contact"
+            }
           }
         }
       },
