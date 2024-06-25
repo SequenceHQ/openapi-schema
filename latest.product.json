@@ -39498,6 +39498,15 @@
             }
           },
           {
+            "name": "includeArchived",
+            "in": "query",
+            "description": "Include archived contacts in results",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
             "name": "Sequence-Version",
             "in": "header",
             "description": "Use this header to select an API version",
@@ -39525,7 +39534,8 @@
                         "email": "john.smith@example.com",
                         "billingPreference": "NONE",
                         "createdAt": "2022-06-28T16:47:00Z",
-                        "updatedAt": "2022-06-28T16:47:00Z"
+                        "updatedAt": "2022-06-28T16:47:00Z",
+                        "archivedAt": "2023-06-28T16:47:00Z"
                       }
                     ]
                   }
@@ -39541,7 +39551,8 @@
                           "email": "john.smith@example.com",
                           "billingPreference": "NONE",
                           "createdAt": "2022-06-28T16:47:00Z",
-                          "updatedAt": "2022-06-28T16:47:00Z"
+                          "updatedAt": "2022-06-28T16:47:00Z",
+                          "archivedAt": "2023-06-28T16:47:00Z"
                         }
                       ]
                     }
@@ -39773,6 +39784,104 @@
                       "billingPreference": "NONE",
                       "createdAt": "2022-06-28T16:47:00Z",
                       "updatedAt": "2022-06-28T16:47:00Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
+    "/customers/{customer}/contacts/{id}/archive": {
+      "post": {
+        "tags": [],
+        "summary": "Archive a contact",
+        "description": "Mark a contact as archived",
+        "operationId": "postCustomersByCustomerContactsByIdArchive",
+        "parameters": [
+          {
+            "name": "customer",
+            "in": "path",
+            "description": "The Customer ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Unique ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-05-09"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Contact",
+                  "example": {
+                    "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+                    "name": "John Smith",
+                    "email": "john.smith@example.com",
+                    "billingPreference": "NONE",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "updatedAt": "2022-06-28T16:47:00Z",
+                    "archivedAt": "2023-06-28T16:47:00Z"
+                  }
+                },
+                "examples": {
+                  "Contact": {
+                    "summary": "",
+                    "value": {
+                      "id": "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc",
+                      "name": "John Smith",
+                      "email": "john.smith@example.com",
+                      "billingPreference": "NONE",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "updatedAt": "2022-06-28T16:47:00Z",
+                      "archivedAt": "2023-06-28T16:47:00Z"
                     }
                   }
                 }
@@ -83612,7 +83721,8 @@
               "email": "john.smith@example.com",
               "billingPreference": "NONE",
               "createdAt": "2022-06-28T16:47:00Z",
-              "updatedAt": "2022-06-28T16:47:00Z"
+              "updatedAt": "2022-06-28T16:47:00Z",
+              "archivedAt": "2023-06-28T16:47:00Z"
             }
           ]
         },
@@ -83627,7 +83737,8 @@
                 "email": "john.smith@example.com",
                 "billingPreference": "NONE",
                 "createdAt": "2022-06-28T16:47:00Z",
-                "updatedAt": "2022-06-28T16:47:00Z"
+                "updatedAt": "2022-06-28T16:47:00Z",
+                "archivedAt": "2023-06-28T16:47:00Z"
               }
             ],
             "items": {
