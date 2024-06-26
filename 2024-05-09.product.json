@@ -39650,7 +39650,8 @@
                     "email": "john.smith@example.com",
                     "billingPreference": "NONE",
                     "createdAt": "2022-06-28T16:47:00Z",
-                    "updatedAt": "2022-06-28T16:47:00Z"
+                    "updatedAt": "2022-06-28T16:47:00Z",
+                    "archivedAt": "2023-06-28T16:47:00Z"
                   }
                 },
                 "examples": {
@@ -39662,7 +39663,8 @@
                       "email": "john.smith@example.com",
                       "billingPreference": "NONE",
                       "createdAt": "2022-06-28T16:47:00Z",
-                      "updatedAt": "2022-06-28T16:47:00Z"
+                      "updatedAt": "2022-06-28T16:47:00Z",
+                      "archivedAt": "2023-06-28T16:47:00Z"
                     }
                   }
                 }
@@ -39771,7 +39773,8 @@
                     "email": "john.smith@example.com",
                     "billingPreference": "NONE",
                     "createdAt": "2022-06-28T16:47:00Z",
-                    "updatedAt": "2022-06-28T16:47:00Z"
+                    "updatedAt": "2022-06-28T16:47:00Z",
+                    "archivedAt": "2023-06-28T16:47:00Z"
                   }
                 },
                 "examples": {
@@ -39783,7 +39786,8 @@
                       "email": "john.smith@example.com",
                       "billingPreference": "NONE",
                       "createdAt": "2022-06-28T16:47:00Z",
-                      "updatedAt": "2022-06-28T16:47:00Z"
+                      "updatedAt": "2022-06-28T16:47:00Z",
+                      "archivedAt": "2023-06-28T16:47:00Z"
                     }
                   }
                 }
@@ -83099,7 +83103,8 @@
           "email": "john.smith@example.com",
           "billingPreference": "NONE",
           "createdAt": "2022-06-28T16:47:00Z",
-          "updatedAt": "2022-06-28T16:47:00Z"
+          "updatedAt": "2022-06-28T16:47:00Z",
+          "archivedAt": "2023-06-28T16:47:00Z"
         },
         "properties": {
           "id": {
@@ -83130,6 +83135,11 @@
             "type": "string",
             "description": "Time of last update. Formatted as an ISO 8601 timestamp.",
             "example": "2022-06-28T16:47:00Z"
+          },
+          "archivedAt": {
+            "type": "string",
+            "description": "Time of archive. Formatted as an ISO 8601 timestamp.",
+            "example": "2023-06-28T16:47:00Z"
           }
         }
       },
