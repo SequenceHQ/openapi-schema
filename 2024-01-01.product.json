@@ -5839,707 +5839,6 @@
       "servers": [],
       "parameters": []
     },
-    "/quotes/{id}/ready-to-sign": {
-      "post": {
-        "tags": [],
-        "summary": "Ready to sign a published Quote",
-        "description": "Sends signature requests for a published Quote",
-        "operationId": "postQuotesByIdReadyToSign",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Quote Id",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "Authorization",
-            "in": "header",
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "Sequence-Version",
-            "in": "header",
-            "description": "Use this header to select an API version",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "enum": [
-                "2024-01-01"
-              ]
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/PublishedQuote",
-                  "example": {
-                    "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
-                    "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
-                    "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
-                    "quoteNumber": "Q00001",
-                    "title": "My quote",
-                    "currency": "GBP",
-                    "presentation": [],
-                    "status": "ACCEPTED",
-                    "dealType": "NEW_BUSINESS",
-                    "preliminaryBillingStartDate": "2022-10-01",
-                    "expiresAt": "2022-10-01",
-                    "publishedAt": "2022-06-28T16:47:00Z",
-                    "readyToSignAt": "2022-06-28T16:47:00Z",
-                    "acceptedAt": "2022-06-28T16:47:00Z",
-                    "executedAt": "2022-06-28T16:47:00Z",
-                    "createdAt": "2022-06-28T16:47:00Z",
-                    "updatedAt": "2022-06-28T16:47:00Z",
-                    "createdFrom": {
-                      "entityType": "QUOTE",
-                      "entityId": "dc0e2104-7df5-4fc1-8f65-1823f427d111"
-                    },
-                    "merchantBranding": {
-                      "logoUrl": "logo",
-                      "legalCompanyName": "Acme Corp",
-                      "primaryColour": "colour",
-                      "url": "www.example.com",
-                      "address": {
-                        "line1": "Flat 1",
-                        "line2": "123 Fake Street",
-                        "town": "London",
-                        "postcode": "AB1 2EF",
-                        "country": "GB"
-                      },
-                      "email": "accounting@example.com"
-                    },
-                    "phases": [
-                      {
-                        "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
-                        "createdAt": "2022-06-28T16:47:00Z",
-                        "duration": {
-                          "days": 0,
-                          "weeks": 0,
-                          "months": 6,
-                          "years": 1
-                        },
-                        "prices": [
-                          {
-                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
-                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
-                            "name": "Sample product",
-                            "structure": {
-                              "pricingType": "ONE_TIME",
-                              "price": "150.00"
-                            },
-                            "billingFrequency": "MONTHLY",
-                            "billingType": "IN_ARREARS",
-                            "createdAt": "2021-08-25T12:00:00Z",
-                            "updatedAt": "2021-08-25T12:00:00Z",
-                            "integrationIds": [
-                              {
-                                "service": "Xero",
-                                "id": "123"
-                              }
-                            ],
-                            "customMetricParameters": [
-                              {
-                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
-                                "value": "10"
-                              }
-                            ],
-                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
-                          },
-                          {
-                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
-                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
-                            "name": "Sample product",
-                            "structure": {
-                              "pricingType": "FIXED",
-                              "price": "20.00"
-                            },
-                            "billingFrequency": "MONTHLY",
-                            "billingType": "IN_ARREARS",
-                            "createdAt": "2021-08-25T12:00:00Z",
-                            "updatedAt": "2021-08-25T12:00:00Z",
-                            "integrationIds": [
-                              {
-                                "service": "Xero",
-                                "id": "123"
-                              }
-                            ],
-                            "customMetricParameters": [
-                              {
-                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
-                                "value": "10"
-                              }
-                            ],
-                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
-                          },
-                          {
-                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
-                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
-                            "name": "Sample product",
-                            "structure": {
-                              "pricingType": "LINEAR",
-                              "pricePerUnit": "0.25",
-                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                              "isPricePercentage": false
-                            },
-                            "billingFrequency": "MONTHLY",
-                            "billingType": "IN_ARREARS",
-                            "createdAt": "2021-08-25T12:00:00Z",
-                            "updatedAt": "2021-08-25T12:00:00Z",
-                            "integrationIds": [
-                              {
-                                "service": "Xero",
-                                "id": "123"
-                              }
-                            ],
-                            "customMetricParameters": [
-                              {
-                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
-                                "value": "10"
-                              }
-                            ],
-                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
-                          },
-                          {
-                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
-                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
-                            "name": "Sample product",
-                            "structure": {
-                              "pricingType": "SEAT_BASED",
-                              "seatMetricId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                              "pricePerSeat": "0.25",
-                              "prorationStrategy": "USE_MAXIMUM",
-                              "contractedMinimumSeats": 10,
-                              "overagesBillingFrequency": "YEARLY",
-                              "tiers": [
-                                {
-                                  "upperBound": "100",
-                                  "price": "1.00",
-                                  "fee": "50.00"
-                                },
-                                {
-                                  "price": "0.75",
-                                  "fee": "25.00"
-                                }
-                              ]
-                            },
-                            "billingFrequency": "MONTHLY",
-                            "billingType": "IN_ARREARS",
-                            "createdAt": "2021-08-25T12:00:00Z",
-                            "updatedAt": "2021-08-25T12:00:00Z",
-                            "integrationIds": [
-                              {
-                                "service": "Xero",
-                                "id": "123"
-                              }
-                            ],
-                            "customMetricParameters": [
-                              {
-                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
-                                "value": "10"
-                              }
-                            ],
-                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
-                          },
-                          {
-                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
-                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
-                            "name": "Sample product",
-                            "structure": {
-                              "pricingType": "GRADUATED",
-                              "tiers": [
-                                {
-                                  "upperBound": "200",
-                                  "price": "1.00",
-                                  "fee": "50.00",
-                                  "isPricePercentage": false
-                                },
-                                {
-                                  "upperBound": "400",
-                                  "price": "0.75",
-                                  "fee": "25.00",
-                                  "isPricePercentage": false
-                                },
-                                {
-                                  "price": "0.50",
-                                  "fee": "0.00",
-                                  "isPricePercentage": false
-                                }
-                              ],
-                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                              "usageCalculationMode": "BILLING_PERIOD"
-                            },
-                            "billingFrequency": "MONTHLY",
-                            "billingType": "IN_ARREARS",
-                            "createdAt": "2021-08-25T12:00:00Z",
-                            "updatedAt": "2021-08-25T12:00:00Z",
-                            "integrationIds": [
-                              {
-                                "service": "Xero",
-                                "id": "123"
-                              }
-                            ],
-                            "customMetricParameters": [
-                              {
-                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
-                                "value": "10"
-                              }
-                            ],
-                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
-                          },
-                          {
-                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
-                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
-                            "name": "Sample product",
-                            "structure": {
-                              "pricingType": "VOLUME",
-                              "tiers": [
-                                {
-                                  "upperBound": "100",
-                                  "price": "1.00",
-                                  "fee": "50.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
-                                },
-                                {
-                                  "price": "0.75",
-                                  "fee": "25.00",
-                                  "isPricePercentage": true,
-                                  "maxPrice": "10",
-                                  "minPrice": "5"
-                                }
-                              ],
-                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
-                            },
-                            "billingFrequency": "MONTHLY",
-                            "billingType": "IN_ARREARS",
-                            "createdAt": "2021-08-25T12:00:00Z",
-                            "updatedAt": "2021-08-25T12:00:00Z",
-                            "integrationIds": [
-                              {
-                                "service": "Xero",
-                                "id": "123"
-                              }
-                            ],
-                            "customMetricParameters": [
-                              {
-                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
-                                "value": "10"
-                              }
-                            ],
-                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
-                          },
-                          {
-                            "id": "5100e884-e007-4183-8355-4771865cb4d7",
-                            "productId": "e007e884-5100-4183-8355-4771865cb4dd",
-                            "name": "Sample product",
-                            "structure": {
-                              "pricingType": "PACKAGE",
-                              "packageSize": "50",
-                              "pricePerPackage": "2.00",
-                              "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
-                            },
-                            "billingFrequency": "MONTHLY",
-                            "billingType": "IN_ARREARS",
-                            "createdAt": "2021-08-25T12:00:00Z",
-                            "updatedAt": "2021-08-25T12:00:00Z",
-                            "integrationIds": [
-                              {
-                                "service": "Xero",
-                                "id": "123"
-                              }
-                            ],
-                            "customMetricParameters": [
-                              {
-                                "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
-                                "value": "10"
-                              }
-                            ],
-                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
-                          }
-                        ],
-                        "discounts": [
-                          {
-                            "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
-                            "restrictToPrices": [
-                              "5100e884-e007-4183-8355-4771865cb4d7"
-                            ],
-                            "amount": "50",
-                            "discountCalculationType": "PERCENTAGE",
-                            "message": "message",
-                            "createdAt": "2021-08-25T12:00:00Z",
-                            "updatedAt": "2021-08-25T12:00:00Z"
-                          }
-                        ],
-                        "minimums": [
-                          {
-                            "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
-                            "amount": "50",
-                            "restrictToPrices": [
-                              "5100e884-e007-4183-8355-4771865cb4d7"
-                            ],
-                            "createdAt": "2021-08-25T12:00:00Z",
-                            "updatedAt": "2021-08-25T12:00:00Z"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                },
-                "examples": {
-                  "PublishedQuote": {
-                    "summary": "",
-                    "value": {
-                      "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
-                      "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
-                      "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
-                      "quoteNumber": "Q00001",
-                      "title": "My quote",
-                      "currency": "GBP",
-                      "presentation": [],
-                      "status": "ACCEPTED",
-                      "dealType": "NEW_BUSINESS",
-                      "preliminaryBillingStartDate": "2022-10-01",
-                      "expiresAt": "2022-10-01",
-                      "publishedAt": "2022-06-28T16:47:00Z",
-                      "readyToSignAt": "2022-06-28T16:47:00Z",
-                      "acceptedAt": "2022-06-28T16:47:00Z",
-                      "executedAt": "2022-06-28T16:47:00Z",
-                      "createdAt": "2022-06-28T16:47:00Z",
-                      "updatedAt": "2022-06-28T16:47:00Z",
-                      "createdFrom": {
-                        "entityType": "QUOTE",
-                        "entityId": "dc0e2104-7df5-4fc1-8f65-1823f427d111"
-                      },
-                      "merchantBranding": {
-                        "logoUrl": "logo",
-                        "legalCompanyName": "Acme Corp",
-                        "primaryColour": "colour",
-                        "url": "www.example.com",
-                        "address": {
-                          "line1": "Flat 1",
-                          "line2": "123 Fake Street",
-                          "town": "London",
-                          "postcode": "AB1 2EF",
-                          "country": "GB"
-                        },
-                        "email": "accounting@example.com"
-                      },
-                      "phases": [
-                        {
-                          "id": "abe4bf01-9b75-495d-f5fd-ca82b001f3a8",
-                          "createdAt": "2022-06-28T16:47:00Z",
-                          "duration": {
-                            "days": 0,
-                            "weeks": 0,
-                            "months": 6,
-                            "years": 1
-                          },
-                          "prices": [
-                            {
-                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
-                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
-                              "name": "Sample product",
-                              "structure": {
-                                "pricingType": "ONE_TIME",
-                                "price": "150.00"
-                              },
-                              "billingFrequency": "MONTHLY",
-                              "billingType": "IN_ARREARS",
-                              "createdAt": "2021-08-25T12:00:00Z",
-                              "updatedAt": "2021-08-25T12:00:00Z",
-                              "integrationIds": [
-                                {
-                                  "service": "Xero",
-                                  "id": "123"
-                                }
-                              ],
-                              "customMetricParameters": [
-                                {
-                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
-                                  "value": "10"
-                                }
-                              ],
-                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
-                            },
-                            {
-                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
-                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
-                              "name": "Sample product",
-                              "structure": {
-                                "pricingType": "FIXED",
-                                "price": "20.00"
-                              },
-                              "billingFrequency": "MONTHLY",
-                              "billingType": "IN_ARREARS",
-                              "createdAt": "2021-08-25T12:00:00Z",
-                              "updatedAt": "2021-08-25T12:00:00Z",
-                              "integrationIds": [
-                                {
-                                  "service": "Xero",
-                                  "id": "123"
-                                }
-                              ],
-                              "customMetricParameters": [
-                                {
-                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
-                                  "value": "10"
-                                }
-                              ],
-                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
-                            },
-                            {
-                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
-                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
-                              "name": "Sample product",
-                              "structure": {
-                                "pricingType": "LINEAR",
-                                "pricePerUnit": "0.25",
-                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                                "isPricePercentage": false
-                              },
-                              "billingFrequency": "MONTHLY",
-                              "billingType": "IN_ARREARS",
-                              "createdAt": "2021-08-25T12:00:00Z",
-                              "updatedAt": "2021-08-25T12:00:00Z",
-                              "integrationIds": [
-                                {
-                                  "service": "Xero",
-                                  "id": "123"
-                                }
-                              ],
-                              "customMetricParameters": [
-                                {
-                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
-                                  "value": "10"
-                                }
-                              ],
-                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
-                            },
-                            {
-                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
-                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
-                              "name": "Sample product",
-                              "structure": {
-                                "pricingType": "SEAT_BASED",
-                                "seatMetricId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                                "pricePerSeat": "0.25",
-                                "prorationStrategy": "USE_MAXIMUM",
-                                "contractedMinimumSeats": 10,
-                                "overagesBillingFrequency": "YEARLY",
-                                "tiers": [
-                                  {
-                                    "upperBound": "100",
-                                    "price": "1.00",
-                                    "fee": "50.00"
-                                  },
-                                  {
-                                    "price": "0.75",
-                                    "fee": "25.00"
-                                  }
-                                ]
-                              },
-                              "billingFrequency": "MONTHLY",
-                              "billingType": "IN_ARREARS",
-                              "createdAt": "2021-08-25T12:00:00Z",
-                              "updatedAt": "2021-08-25T12:00:00Z",
-                              "integrationIds": [
-                                {
-                                  "service": "Xero",
-                                  "id": "123"
-                                }
-                              ],
-                              "customMetricParameters": [
-                                {
-                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
-                                  "value": "10"
-                                }
-                              ],
-                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
-                            },
-                            {
-                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
-                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
-                              "name": "Sample product",
-                              "structure": {
-                                "pricingType": "GRADUATED",
-                                "tiers": [
-                                  {
-                                    "upperBound": "200",
-                                    "price": "1.00",
-                                    "fee": "50.00",
-                                    "isPricePercentage": false
-                                  },
-                                  {
-                                    "upperBound": "400",
-                                    "price": "0.75",
-                                    "fee": "25.00",
-                                    "isPricePercentage": false
-                                  },
-                                  {
-                                    "price": "0.50",
-                                    "fee": "0.00",
-                                    "isPricePercentage": false
-                                  }
-                                ],
-                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                                "usageCalculationMode": "BILLING_PERIOD"
-                              },
-                              "billingFrequency": "MONTHLY",
-                              "billingType": "IN_ARREARS",
-                              "createdAt": "2021-08-25T12:00:00Z",
-                              "updatedAt": "2021-08-25T12:00:00Z",
-                              "integrationIds": [
-                                {
-                                  "service": "Xero",
-                                  "id": "123"
-                                }
-                              ],
-                              "customMetricParameters": [
-                                {
-                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
-                                  "value": "10"
-                                }
-                              ],
-                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
-                            },
-                            {
-                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
-                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
-                              "name": "Sample product",
-                              "structure": {
-                                "pricingType": "VOLUME",
-                                "tiers": [
-                                  {
-                                    "upperBound": "100",
-                                    "price": "1.00",
-                                    "fee": "50.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
-                                  },
-                                  {
-                                    "price": "0.75",
-                                    "fee": "25.00",
-                                    "isPricePercentage": true,
-                                    "maxPrice": "10",
-                                    "minPrice": "5"
-                                  }
-                                ],
-                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
-                              },
-                              "billingFrequency": "MONTHLY",
-                              "billingType": "IN_ARREARS",
-                              "createdAt": "2021-08-25T12:00:00Z",
-                              "updatedAt": "2021-08-25T12:00:00Z",
-                              "integrationIds": [
-                                {
-                                  "service": "Xero",
-                                  "id": "123"
-                                }
-                              ],
-                              "customMetricParameters": [
-                                {
-                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
-                                  "value": "10"
-                                }
-                              ],
-                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
-                            },
-                            {
-                              "id": "5100e884-e007-4183-8355-4771865cb4d7",
-                              "productId": "e007e884-5100-4183-8355-4771865cb4dd",
-                              "name": "Sample product",
-                              "structure": {
-                                "pricingType": "PACKAGE",
-                                "packageSize": "50",
-                                "pricePerPackage": "2.00",
-                                "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
-                              },
-                              "billingFrequency": "MONTHLY",
-                              "billingType": "IN_ARREARS",
-                              "createdAt": "2021-08-25T12:00:00Z",
-                              "updatedAt": "2021-08-25T12:00:00Z",
-                              "integrationIds": [
-                                {
-                                  "service": "Xero",
-                                  "id": "123"
-                                }
-                              ],
-                              "customMetricParameters": [
-                                {
-                                  "parameterId": "2963e49a-c8e0-4673-89f5-7a805c0faf14",
-                                  "value": "10"
-                                }
-                              ],
-                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
-                            }
-                          ],
-                          "discounts": [
-                            {
-                              "id": "018f920a-40d1-7e62-91ca-f3a4b4ac5d9d",
-                              "restrictToPrices": [
-                                "5100e884-e007-4183-8355-4771865cb4d7"
-                              ],
-                              "amount": "50",
-                              "discountCalculationType": "PERCENTAGE",
-                              "message": "message",
-                              "createdAt": "2021-08-25T12:00:00Z",
-                              "updatedAt": "2021-08-25T12:00:00Z"
-                            }
-                          ],
-                          "minimums": [
-                            {
-                              "id": "018f9164-c2d9-7eb2-bb98-11ecb5454055",
-                              "amount": "50",
-                              "restrictToPrices": [
-                                "5100e884-e007-4183-8355-4771865cb4d7"
-                              ],
-                              "createdAt": "2021-08-25T12:00:00Z",
-                              "updatedAt": "2021-08-25T12:00:00Z"
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Bad Request",
-            "content": {}
-          },
-          "401": {
-            "description": "Unauthorized",
-            "content": {}
-          },
-          "404": {
-            "description": "Not Found",
-            "content": {}
-          },
-          "500": {
-            "description": "Internal Server Error",
-            "content": {}
-          }
-        }
-      },
-      "servers": [],
-      "parameters": []
-    },
     "/quotes/{id}/execute": {
       "post": {
         "tags": [],
@@ -47417,6 +46716,70 @@
           },
           "401": {
             "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
+    "/customer-portal/customers/{customerId}/quotes/{quoteId}/ready-to-sign": {
+      "post": {
+        "tags": [],
+        "summary": "Ready to sign a published Quote by ID",
+        "description": "Sends signature requests for a published Quote by ID",
+        "operationId": "postCustomerPortalCustomersByCustomerIdQuotesByQuoteIdReadyToSign",
+        "parameters": [
+          {
+            "name": "customerId",
+            "in": "path",
+            "description": "Customer ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "quoteId",
+            "in": "path",
+            "description": "Quote Id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-01-01"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {}
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "404": {
+            "description": "Not Found",
             "content": {}
           },
           "500": {
