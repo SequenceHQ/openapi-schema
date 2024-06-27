@@ -40225,7 +40225,7 @@
       "post": {
         "tags": [],
         "summary": "CSV usage event uploads",
-        "description": "Upload CSV files containing usage events",
+        "description": "Batch upload usage events as a CSV file. The processing of the CSV files happens asynchronously,\nso errors won't be returned in the response.\n\n\n### Data format\nThe CSV file must match the following schema:\n\n- **Required columns**:\n  - `eventType`\n  - `eventTimestamp`. Date or timestamp with timezone, e.g. `\"2023-09-20\"`, `\"2023-09-20T15:13:11+03:00\"`\n  - `customerAlias`\n\n- **Optional columns**:\n  - Event properties: each event property should be a separate column, named\n    `eventProperty#<property_name>`. `property_name` can be anything but must be `snake_case`.\n    E.g. `eventProperties#application_id`, `eventProperties#transaction_amount`\n  - `customerEventId`",
         "operationId": "postUsageEventsCsv",
         "parameters": [
           {
