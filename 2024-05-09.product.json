@@ -47912,7 +47912,14 @@
                       "town": "London",
                       "postcode": "AB1 2EF",
                       "country": "GB"
-                    }
+                    },
+                    "contacts": [
+                      {
+                        "name": "Jane Doe",
+                        "email": "jane@acme.corp",
+                        "hasSigned": false
+                      }
+                    ]
                   }
                 },
                 "examples": {
@@ -48166,7 +48173,14 @@
                         "town": "London",
                         "postcode": "AB1 2EF",
                         "country": "GB"
-                      }
+                      },
+                      "contacts": [
+                        {
+                          "name": "Jane Doe",
+                          "email": "jane@acme.corp",
+                          "hasSigned": false
+                        }
+                      ]
                     }
                   }
                 }
@@ -88832,7 +88846,14 @@
             "town": "London",
             "postcode": "AB1 2EF",
             "country": "GB"
-          }
+          },
+          "contacts": [
+            {
+              "name": "Jane Doe",
+              "email": "jane@acme.corp",
+              "hasSigned": false
+            }
+          ]
         },
         "properties": {
           "id": {
@@ -89129,6 +89150,20 @@
           },
           "customerAddress": {
             "$ref": "#/components/schemas/Address3"
+          },
+          "contacts": {
+            "type": "array",
+            "description": "List of contacts requested to sign this quote",
+            "example": [
+              {
+                "name": "Jane Doe",
+                "email": "jane@acme.corp",
+                "hasSigned": false
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/QuoteContacts"
+            }
           }
         }
       },
@@ -89804,6 +89839,36 @@
             "type": "string",
             "description": "Updated at",
             "example": "2024-04-01T00:00:00Z"
+          }
+        }
+      },
+      "QuoteContacts": {
+        "required": [
+          "email",
+          "hasSigned",
+          "name"
+        ],
+        "type": "object",
+        "example": {
+          "name": "Jane Doe",
+          "email": "jane@acme.corp",
+          "hasSigned": false
+        },
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Full name of the signer",
+            "example": "Jane Doe"
+          },
+          "email": {
+            "type": "string",
+            "description": "Email address of the signer",
+            "example": "jane@acme.corp"
+          },
+          "hasSigned": {
+            "type": "boolean",
+            "description": "hasSigned",
+            "example": false
           }
         }
       },
