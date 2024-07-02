@@ -531,7 +531,10 @@
                         ]
                       }
                     ],
-                    "archivedAt": "2022-06-28T16:47:00Z"
+                    "archivedAt": "2022-06-28T16:47:00Z",
+                    "contactIds": [
+                      "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
+                    ]
                   }
                 },
                 "examples": {
@@ -850,7 +853,10 @@
                           ]
                         }
                       ],
-                      "archivedAt": "2022-06-28T16:47:00Z"
+                      "archivedAt": "2022-06-28T16:47:00Z",
+                      "contactIds": [
+                        "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
+                      ]
                     }
                   }
                 }
@@ -1419,7 +1425,10 @@
                         ]
                       }
                     ],
-                    "archivedAt": "2022-06-28T16:47:00Z"
+                    "archivedAt": "2022-06-28T16:47:00Z",
+                    "contactIds": [
+                      "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
+                    ]
                   }
                 },
                 "examples": {
@@ -1738,7 +1747,10 @@
                           ]
                         }
                       ],
-                      "archivedAt": "2022-06-28T16:47:00Z"
+                      "archivedAt": "2022-06-28T16:47:00Z",
+                      "contactIds": [
+                        "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
+                      ]
                     }
                   }
                 }
@@ -2120,7 +2132,10 @@
                         ]
                       }
                     ],
-                    "archivedAt": "2022-06-28T16:47:00Z"
+                    "archivedAt": "2022-06-28T16:47:00Z",
+                    "contactIds": [
+                      "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
+                    ]
                   }
                 },
                 "examples": {
@@ -2439,7 +2454,10 @@
                           ]
                         }
                       ],
-                      "archivedAt": "2022-06-28T16:47:00Z"
+                      "archivedAt": "2022-06-28T16:47:00Z",
+                      "contactIds": [
+                        "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
+                      ]
                     }
                   }
                 }
@@ -2767,6 +2785,9 @@
                         }
                       ]
                     }
+                  ],
+                  "contactIds": [
+                    "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
                   ]
                 }
               },
@@ -3034,6 +3055,9 @@
                           }
                         ]
                       }
+                    ],
+                    "contactIds": [
+                      "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
                     ]
                   }
                 }
@@ -3362,7 +3386,10 @@
                         ]
                       }
                     ],
-                    "archivedAt": "2022-06-28T16:47:00Z"
+                    "archivedAt": "2022-06-28T16:47:00Z",
+                    "contactIds": [
+                      "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
+                    ]
                   }
                 },
                 "examples": {
@@ -3681,7 +3708,10 @@
                           ]
                         }
                       ],
-                      "archivedAt": "2022-06-28T16:47:00Z"
+                      "archivedAt": "2022-06-28T16:47:00Z",
+                      "contactIds": [
+                        "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
+                      ]
                     }
                   }
                 }
@@ -4067,7 +4097,10 @@
                         ]
                       }
                     ],
-                    "archivedAt": "2022-06-28T16:47:00Z"
+                    "archivedAt": "2022-06-28T16:47:00Z",
+                    "contactIds": [
+                      "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
+                    ]
                   }
                 },
                 "examples": {
@@ -4386,7 +4419,10 @@
                           ]
                         }
                       ],
-                      "archivedAt": "2022-06-28T16:47:00Z"
+                      "archivedAt": "2022-06-28T16:47:00Z",
+                      "contactIds": [
+                        "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
+                      ]
                     }
                   }
                 }
@@ -6898,7 +6934,10 @@
                         ]
                       }
                     ],
-                    "archivedAt": "2022-06-28T16:47:00Z"
+                    "archivedAt": "2022-06-28T16:47:00Z",
+                    "contactIds": [
+                      "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
+                    ]
                   }
                 },
                 "examples": {
@@ -7217,7 +7256,10 @@
                           ]
                         }
                       ],
-                      "archivedAt": "2022-06-28T16:47:00Z"
+                      "archivedAt": "2022-06-28T16:47:00Z",
+                      "contactIds": [
+                        "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
+                      ]
                     }
                   }
                 }
@@ -50697,6 +50739,7 @@
       },
       "Quote": {
         "required": [
+          "contactIds",
           "createdAt",
           "createdBy",
           "id",
@@ -51021,7 +51064,10 @@
               ]
             }
           ],
-          "archivedAt": "2022-06-28T16:47:00Z"
+          "archivedAt": "2022-06-28T16:47:00Z",
+          "contactIds": [
+            "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
+          ]
         },
         "properties": {
           "id": {
@@ -51408,6 +51454,16 @@
             "type": "string",
             "description": "Date and time the quote was archived",
             "example": "2022-06-28T16:47:00Z"
+          },
+          "contactIds": {
+            "type": "array",
+            "description": "IDs of contacts who will receive this quote (and sign this quote if using e-signatures)",
+            "example": [
+              "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
+            ],
+            "items": {
+              "type": "string"
+            }
           }
         }
       },
@@ -53366,6 +53422,9 @@
                 }
               ]
             }
+          ],
+          "contactIds": [
+            "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
           ]
         },
         "properties": {
@@ -53664,6 +53723,16 @@
             ],
             "items": {
               "$ref": "#/components/schemas/CreateQuotePhaseRequest"
+            }
+          },
+          "contactIds": {
+            "type": "array",
+            "description": "IDs of contacts who will receive this quote (and sign this quote if using e-signatures)",
+            "example": [
+              "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
+            ],
+            "items": {
+              "type": "string"
             }
           }
         }
