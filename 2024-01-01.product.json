@@ -534,7 +534,8 @@
                     "archivedAt": "2022-06-28T16:47:00Z",
                     "contactIds": [
                       "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
-                    ]
+                    ],
+                    "isSignaturesEnabled": false
                   }
                 },
                 "examples": {
@@ -856,7 +857,8 @@
                       "archivedAt": "2022-06-28T16:47:00Z",
                       "contactIds": [
                         "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
-                      ]
+                      ],
+                      "isSignaturesEnabled": false
                     }
                   }
                 }
@@ -1428,7 +1430,8 @@
                     "archivedAt": "2022-06-28T16:47:00Z",
                     "contactIds": [
                       "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
-                    ]
+                    ],
+                    "isSignaturesEnabled": false
                   }
                 },
                 "examples": {
@@ -1750,7 +1753,8 @@
                       "archivedAt": "2022-06-28T16:47:00Z",
                       "contactIds": [
                         "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
-                      ]
+                      ],
+                      "isSignaturesEnabled": false
                     }
                   }
                 }
@@ -2135,7 +2139,8 @@
                     "archivedAt": "2022-06-28T16:47:00Z",
                     "contactIds": [
                       "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
-                    ]
+                    ],
+                    "isSignaturesEnabled": false
                   }
                 },
                 "examples": {
@@ -2457,7 +2462,8 @@
                       "archivedAt": "2022-06-28T16:47:00Z",
                       "contactIds": [
                         "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
-                      ]
+                      ],
+                      "isSignaturesEnabled": false
                     }
                   }
                 }
@@ -3389,7 +3395,8 @@
                     "archivedAt": "2022-06-28T16:47:00Z",
                     "contactIds": [
                       "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
-                    ]
+                    ],
+                    "isSignaturesEnabled": false
                   }
                 },
                 "examples": {
@@ -3711,7 +3718,8 @@
                       "archivedAt": "2022-06-28T16:47:00Z",
                       "contactIds": [
                         "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
-                      ]
+                      ],
+                      "isSignaturesEnabled": false
                     }
                   }
                 }
@@ -4100,7 +4108,8 @@
                     "archivedAt": "2022-06-28T16:47:00Z",
                     "contactIds": [
                       "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
-                    ]
+                    ],
+                    "isSignaturesEnabled": false
                   }
                 },
                 "examples": {
@@ -4422,7 +4431,8 @@
                       "archivedAt": "2022-06-28T16:47:00Z",
                       "contactIds": [
                         "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
-                      ]
+                      ],
+                      "isSignaturesEnabled": false
                     }
                   }
                 }
@@ -4829,7 +4839,8 @@
                           }
                         ]
                       }
-                    ]
+                    ],
+                    "isSignaturesEnabled": false
                   }
                 },
                 "examples": {
@@ -5146,7 +5157,8 @@
                             }
                           ]
                         }
-                      ]
+                      ],
+                      "isSignaturesEnabled": false
                     }
                   }
                 }
@@ -5530,7 +5542,8 @@
                           }
                         ]
                       }
-                    ]
+                    ],
+                    "isSignaturesEnabled": false
                   }
                 },
                 "examples": {
@@ -5847,7 +5860,8 @@
                             }
                           ]
                         }
-                      ]
+                      ],
+                      "isSignaturesEnabled": false
                     }
                   }
                 }
@@ -6231,7 +6245,8 @@
                           }
                         ]
                       }
-                    ]
+                    ],
+                    "isSignaturesEnabled": false
                   }
                 },
                 "examples": {
@@ -6548,7 +6563,8 @@
                             }
                           ]
                         }
-                      ]
+                      ],
+                      "isSignaturesEnabled": false
                     }
                   }
                 }
@@ -6937,7 +6953,8 @@
                     "archivedAt": "2022-06-28T16:47:00Z",
                     "contactIds": [
                       "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
-                    ]
+                    ],
+                    "isSignaturesEnabled": false
                   }
                 },
                 "examples": {
@@ -7259,7 +7276,8 @@
                       "archivedAt": "2022-06-28T16:47:00Z",
                       "contactIds": [
                         "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
-                      ]
+                      ],
+                      "isSignaturesEnabled": false
                     }
                   }
                 }
@@ -46434,7 +46452,8 @@
                         "email": "jane@acme.corp",
                         "hasSigned": false
                       }
-                    ]
+                    ],
+                    "isSignaturesEnabled": false
                   }
                 },
                 "examples": {
@@ -46695,7 +46714,8 @@
                           "email": "jane@acme.corp",
                           "hasSigned": false
                         }
-                      ]
+                      ],
+                      "isSignaturesEnabled": false
                     }
                   }
                 }
@@ -50743,6 +50763,7 @@
           "createdAt",
           "createdBy",
           "id",
+          "isSignaturesEnabled",
           "merchantBranding",
           "phases",
           "presentation",
@@ -51067,7 +51088,8 @@
           "archivedAt": "2022-06-28T16:47:00Z",
           "contactIds": [
             "9a1e38a9-4dc9-776f-f974-4e7ee9f4d6cc"
-          ]
+          ],
+          "isSignaturesEnabled": false
         },
         "properties": {
           "id": {
@@ -51464,6 +51486,11 @@
             "items": {
               "type": "string"
             }
+          },
+          "isSignaturesEnabled": {
+            "type": "boolean",
+            "description": "Enable e-signatures to allow customers to sign this quote through Dropbox Sign.",
+            "example": false
           }
         }
       },
@@ -54488,6 +54515,7 @@
           "dealType",
           "expiresAt",
           "id",
+          "isSignaturesEnabled",
           "merchantBranding",
           "phases",
           "presentation",
@@ -54809,7 +54837,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "isSignaturesEnabled": false
         },
         "properties": {
           "id": {
@@ -55185,6 +55214,11 @@
             "items": {
               "$ref": "#/components/schemas/QuotePhase"
             }
+          },
+          "isSignaturesEnabled": {
+            "type": "boolean",
+            "description": "Enable e-signatures to allow customers to sign this quote through Dropbox Sign.",
+            "example": false
           }
         }
       },
@@ -85915,6 +85949,7 @@
           "customerName",
           "dealType",
           "id",
+          "isSignaturesEnabled",
           "merchantBranding",
           "phases",
           "presentation",
@@ -86179,7 +86214,8 @@
               "email": "jane@acme.corp",
               "hasSigned": false
             }
-          ]
+          ],
+          "isSignaturesEnabled": false
         },
         "properties": {
           "id": {
@@ -86490,6 +86526,11 @@
             "items": {
               "$ref": "#/components/schemas/QuoteContacts"
             }
+          },
+          "isSignaturesEnabled": {
+            "type": "boolean",
+            "description": "Enable e-signatures to allow customers to sign this quote through Dropbox Sign.",
+            "example": false
           }
         }
       },
