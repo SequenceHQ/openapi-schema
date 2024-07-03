@@ -37018,7 +37018,8 @@
                     "value": "external-customer-alias-123",
                     "createdAt": "2022-10-01T00:00:00Z",
                     "deletedAt": "2022-10-01T00:00:00Z",
-                    "label": "CRM ID"
+                    "label": "CRM ID",
+                    "archivedAt": "2022-10-01T00:00:00Z"
                   }
                 },
                 "examples": {
@@ -37031,7 +37032,8 @@
                       "value": "external-customer-alias-123",
                       "createdAt": "2022-10-01T00:00:00Z",
                       "deletedAt": "2022-10-01T00:00:00Z",
-                      "label": "CRM ID"
+                      "label": "CRM ID",
+                      "archivedAt": "2022-10-01T00:00:00Z"
                     }
                   }
                 }
@@ -37103,7 +37105,8 @@
                     "value": "external-customer-alias-123",
                     "createdAt": "2022-10-01T00:00:00Z",
                     "deletedAt": "2022-10-01T00:00:00Z",
-                    "label": "CRM ID"
+                    "label": "CRM ID",
+                    "archivedAt": "2022-10-01T00:00:00Z"
                   }
                 },
                 "examples": {
@@ -37116,7 +37119,8 @@
                       "value": "external-customer-alias-123",
                       "createdAt": "2022-10-01T00:00:00Z",
                       "deletedAt": "2022-10-01T00:00:00Z",
-                      "label": "CRM ID"
+                      "label": "CRM ID",
+                      "archivedAt": "2022-10-01T00:00:00Z"
                     }
                   }
                 }
@@ -37212,7 +37216,8 @@
                         "value": "external-customer-alias-123",
                         "createdAt": "2022-10-01T00:00:00Z",
                         "deletedAt": "2022-10-01T00:00:00Z",
-                        "label": "CRM ID"
+                        "label": "CRM ID",
+                        "archivedAt": "2022-10-01T00:00:00Z"
                       }
                     ],
                     "pagination": {
@@ -37234,7 +37239,8 @@
                           "value": "external-customer-alias-123",
                           "createdAt": "2022-10-01T00:00:00Z",
                           "deletedAt": "2022-10-01T00:00:00Z",
-                          "label": "CRM ID"
+                          "label": "CRM ID",
+                          "archivedAt": "2022-10-01T00:00:00Z"
                         }
                       ],
                       "pagination": {
@@ -37300,7 +37306,8 @@
                   "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
                   "value": "external-customer-alias-123",
                   "deletedAt": "2022-10-01T00:00:00Z",
-                  "label": "CRM ID"
+                  "label": "CRM ID",
+                  "archivedAt": "2022-10-01T00:00:00Z"
                 }
               },
               "examples": {
@@ -37311,7 +37318,8 @@
                     "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
                     "value": "external-customer-alias-123",
                     "deletedAt": "2022-10-01T00:00:00Z",
-                    "label": "CRM ID"
+                    "label": "CRM ID",
+                    "archivedAt": "2022-10-01T00:00:00Z"
                   }
                 }
               }
@@ -37333,7 +37341,8 @@
                     "value": "external-customer-alias-123",
                     "createdAt": "2022-10-01T00:00:00Z",
                     "deletedAt": "2022-10-01T00:00:00Z",
-                    "label": "CRM ID"
+                    "label": "CRM ID",
+                    "archivedAt": "2022-10-01T00:00:00Z"
                   }
                 },
                 "examples": {
@@ -37346,7 +37355,8 @@
                       "value": "external-customer-alias-123",
                       "createdAt": "2022-10-01T00:00:00Z",
                       "deletedAt": "2022-10-01T00:00:00Z",
-                      "label": "CRM ID"
+                      "label": "CRM ID",
+                      "archivedAt": "2022-10-01T00:00:00Z"
                     }
                   }
                 }
@@ -79171,7 +79181,8 @@
           "value": "external-customer-alias-123",
           "createdAt": "2022-10-01T00:00:00Z",
           "deletedAt": "2022-10-01T00:00:00Z",
-          "label": "CRM ID"
+          "label": "CRM ID",
+          "archivedAt": "2022-10-01T00:00:00Z"
         },
         "properties": {
           "id": {
@@ -79208,6 +79219,11 @@
             "type": "string",
             "description": "Alias label",
             "example": "CRM ID"
+          },
+          "archivedAt": {
+            "type": "string",
+            "description": "Archived At",
+            "example": "2022-10-01T00:00:00Z"
           }
         }
       },
@@ -79223,7 +79239,8 @@
           "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
           "value": "external-customer-alias-123",
           "deletedAt": "2022-10-01T00:00:00Z",
-          "label": "CRM ID"
+          "label": "CRM ID",
+          "archivedAt": "2022-10-01T00:00:00Z"
         },
         "properties": {
           "sequenceAccountId": {
@@ -79250,6 +79267,11 @@
             "type": "string",
             "description": "Alias label",
             "example": "CRM ID"
+          },
+          "archivedAt": {
+            "type": "string",
+            "description": "Archived At",
+            "example": "2022-10-01T00:00:00Z"
           }
         }
       },
@@ -79269,7 +79291,8 @@
           "value": "external-customer-alias-123",
           "createdAt": "2022-10-01T00:00:00Z",
           "deletedAt": "2022-10-01T00:00:00Z",
-          "label": "CRM ID"
+          "label": "CRM ID",
+          "archivedAt": "2022-10-01T00:00:00Z"
         },
         "properties": {
           "id": {
@@ -79306,6 +79329,11 @@
             "type": "string",
             "description": "Alias label",
             "example": "CRM ID"
+          },
+          "archivedAt": {
+            "type": "string",
+            "description": "Archived At",
+            "example": "2022-10-01T00:00:00Z"
           }
         }
       },
@@ -79324,7 +79352,8 @@
               "value": "external-customer-alias-123",
               "createdAt": "2022-10-01T00:00:00Z",
               "deletedAt": "2022-10-01T00:00:00Z",
-              "label": "CRM ID"
+              "label": "CRM ID",
+              "archivedAt": "2022-10-01T00:00:00Z"
             }
           ],
           "pagination": {
@@ -79345,7 +79374,8 @@
                 "value": "external-customer-alias-123",
                 "createdAt": "2022-10-01T00:00:00Z",
                 "deletedAt": "2022-10-01T00:00:00Z",
-                "label": "CRM ID"
+                "label": "CRM ID",
+                "archivedAt": "2022-10-01T00:00:00Z"
               }
             ],
             "items": {
@@ -79373,7 +79403,8 @@
           "value": "external-customer-alias-123",
           "createdAt": "2022-10-01T00:00:00Z",
           "deletedAt": "2022-10-01T00:00:00Z",
-          "label": "CRM ID"
+          "label": "CRM ID",
+          "archivedAt": "2022-10-01T00:00:00Z"
         },
         "properties": {
           "id": {
@@ -79410,6 +79441,11 @@
             "type": "string",
             "description": "Alias label",
             "example": "CRM ID"
+          },
+          "archivedAt": {
+            "type": "string",
+            "description": "Archived At",
+            "example": "2022-10-01T00:00:00Z"
           }
         }
       },
@@ -79442,7 +79478,8 @@
           "value": "external-customer-alias-123",
           "createdAt": "2022-10-01T00:00:00Z",
           "deletedAt": "2022-10-01T00:00:00Z",
-          "label": "CRM ID"
+          "label": "CRM ID",
+          "archivedAt": "2022-10-01T00:00:00Z"
         },
         "properties": {
           "id": {
@@ -79479,6 +79516,11 @@
             "type": "string",
             "description": "Alias label",
             "example": "CRM ID"
+          },
+          "archivedAt": {
+            "type": "string",
+            "description": "Archived At",
+            "example": "2022-10-01T00:00:00Z"
           }
         }
       },
