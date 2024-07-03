@@ -8899,7 +8899,10 @@
                           "includeBeneficiaryAddressInPaymentDetails": false
                         },
                         "accountingDate": "2022-10-05",
-                        "customerTaxStatus": "TAXED"
+                        "customerTaxStatus": "TAXED",
+                        "renderSettings": {
+                          "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                        }
                       }
                     ],
                     "pagination": {
@@ -9015,7 +9018,10 @@
                             "includeBeneficiaryAddressInPaymentDetails": false
                           },
                           "accountingDate": "2022-10-05",
-                          "customerTaxStatus": "TAXED"
+                          "customerTaxStatus": "TAXED",
+                          "renderSettings": {
+                            "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                          }
                         }
                       ],
                       "pagination": {
@@ -9335,7 +9341,10 @@
                     "dunningStatus": "SCHEDULED",
                     "accountingDate": "2022-09-30",
                     "calculatedAt": "2022-09-30T00:00:00Z",
-                    "customerTaxStatus": "TAXED"
+                    "customerTaxStatus": "TAXED",
+                    "renderSettings": {
+                      "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                    }
                   }
                 },
                 "examples": {
@@ -9493,7 +9502,10 @@
                       "dunningStatus": "SCHEDULED",
                       "accountingDate": "2022-09-30",
                       "calculatedAt": "2022-09-30T00:00:00Z",
-                      "customerTaxStatus": "TAXED"
+                      "customerTaxStatus": "TAXED",
+                      "renderSettings": {
+                        "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                      }
                     }
                   }
                 }
@@ -10344,7 +10356,10 @@
                     "dunningStatus": "SCHEDULED",
                     "accountingDate": "2022-09-30",
                     "calculatedAt": "2022-09-30T00:00:00Z",
-                    "customerTaxStatus": "TAXED"
+                    "customerTaxStatus": "TAXED",
+                    "renderSettings": {
+                      "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                    }
                   }
                 },
                 "examples": {
@@ -10502,7 +10517,10 @@
                       "dunningStatus": "SCHEDULED",
                       "accountingDate": "2022-09-30",
                       "calculatedAt": "2022-09-30T00:00:00Z",
-                      "customerTaxStatus": "TAXED"
+                      "customerTaxStatus": "TAXED",
+                      "renderSettings": {
+                        "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                      }
                     }
                   }
                 }
@@ -10818,7 +10836,10 @@
                     "dunningStatus": "SCHEDULED",
                     "accountingDate": "2022-09-30",
                     "calculatedAt": "2022-09-30T00:00:00Z",
-                    "customerTaxStatus": "TAXED"
+                    "customerTaxStatus": "TAXED",
+                    "renderSettings": {
+                      "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                    }
                   }
                 },
                 "examples": {
@@ -10976,7 +10997,10 @@
                       "dunningStatus": "SCHEDULED",
                       "accountingDate": "2022-09-30",
                       "calculatedAt": "2022-09-30T00:00:00Z",
-                      "customerTaxStatus": "TAXED"
+                      "customerTaxStatus": "TAXED",
+                      "renderSettings": {
+                        "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                      }
                     }
                   }
                 }
@@ -11193,7 +11217,10 @@
                     "dunningStatus": "SCHEDULED",
                     "accountingDate": "2022-09-30",
                     "calculatedAt": "2022-09-30T00:00:00Z",
-                    "customerTaxStatus": "TAXED"
+                    "customerTaxStatus": "TAXED",
+                    "renderSettings": {
+                      "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                    }
                   }
                 },
                 "examples": {
@@ -11351,7 +11378,10 @@
                       "dunningStatus": "SCHEDULED",
                       "accountingDate": "2022-09-30",
                       "calculatedAt": "2022-09-30T00:00:00Z",
-                      "customerTaxStatus": "TAXED"
+                      "customerTaxStatus": "TAXED",
+                      "renderSettings": {
+                        "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                      }
                     }
                   }
                 }
@@ -11667,7 +11697,10 @@
                     "dunningStatus": "SCHEDULED",
                     "accountingDate": "2022-09-30",
                     "calculatedAt": "2022-09-30T00:00:00Z",
-                    "customerTaxStatus": "TAXED"
+                    "customerTaxStatus": "TAXED",
+                    "renderSettings": {
+                      "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                    }
                   }
                 },
                 "examples": {
@@ -11825,7 +11858,10 @@
                       "dunningStatus": "SCHEDULED",
                       "accountingDate": "2022-09-30",
                       "calculatedAt": "2022-09-30T00:00:00Z",
-                      "customerTaxStatus": "TAXED"
+                      "customerTaxStatus": "TAXED",
+                      "renderSettings": {
+                        "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                      }
                     }
                   }
                 }
@@ -12683,7 +12719,10 @@
                       "includeBeneficiaryAddressInPaymentDetails": false
                     },
                     "accountingDate": "2022-10-05",
-                    "customerTaxStatus": "TAXED"
+                    "customerTaxStatus": "TAXED",
+                    "renderSettings": {
+                      "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                    }
                   }
                 },
                 "examples": {
@@ -12790,7 +12829,10 @@
                         "includeBeneficiaryAddressInPaymentDetails": false
                       },
                       "accountingDate": "2022-10-05",
-                      "customerTaxStatus": "TAXED"
+                      "customerTaxStatus": "TAXED",
+                      "renderSettings": {
+                        "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                      }
                     }
                   }
                 }
@@ -13036,7 +13078,10 @@
                       "includeBeneficiaryAddressInPaymentDetails": false
                     },
                     "accountingDate": "2022-10-05",
-                    "customerTaxStatus": "TAXED"
+                    "customerTaxStatus": "TAXED",
+                    "renderSettings": {
+                      "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                    }
                   }
                 },
                 "examples": {
@@ -13143,7 +13188,10 @@
                         "includeBeneficiaryAddressInPaymentDetails": false
                       },
                       "accountingDate": "2022-10-05",
-                      "customerTaxStatus": "TAXED"
+                      "customerTaxStatus": "TAXED",
+                      "renderSettings": {
+                        "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                      }
                     }
                   }
                 }
@@ -14582,7 +14630,10 @@
                       "includeBeneficiaryAddressInPaymentDetails": false
                     },
                     "accountingDate": "2022-10-05",
-                    "customerTaxStatus": "TAXED"
+                    "customerTaxStatus": "TAXED",
+                    "renderSettings": {
+                      "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                    }
                   }
                 },
                 "examples": {
@@ -14689,7 +14740,10 @@
                         "includeBeneficiaryAddressInPaymentDetails": false
                       },
                       "accountingDate": "2022-10-05",
-                      "customerTaxStatus": "TAXED"
+                      "customerTaxStatus": "TAXED",
+                      "renderSettings": {
+                        "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                      }
                     }
                   }
                 }
@@ -14935,7 +14989,10 @@
                       "includeBeneficiaryAddressInPaymentDetails": false
                     },
                     "accountingDate": "2022-10-05",
-                    "customerTaxStatus": "TAXED"
+                    "customerTaxStatus": "TAXED",
+                    "renderSettings": {
+                      "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                    }
                   }
                 },
                 "examples": {
@@ -15042,7 +15099,10 @@
                         "includeBeneficiaryAddressInPaymentDetails": false
                       },
                       "accountingDate": "2022-10-05",
-                      "customerTaxStatus": "TAXED"
+                      "customerTaxStatus": "TAXED",
+                      "renderSettings": {
+                        "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                      }
                     }
                   }
                 }
@@ -15212,7 +15272,10 @@
                       "includeBeneficiaryAddressInPaymentDetails": false
                     },
                     "accountingDate": "2022-10-05",
-                    "customerTaxStatus": "TAXED"
+                    "customerTaxStatus": "TAXED",
+                    "renderSettings": {
+                      "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                    }
                   }
                 },
                 "examples": {
@@ -15319,7 +15382,10 @@
                         "includeBeneficiaryAddressInPaymentDetails": false
                       },
                       "accountingDate": "2022-10-05",
-                      "customerTaxStatus": "TAXED"
+                      "customerTaxStatus": "TAXED",
+                      "renderSettings": {
+                        "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                      }
                     }
                   }
                 }
@@ -15574,7 +15640,10 @@
                       "includeBeneficiaryAddressInPaymentDetails": false
                     },
                     "accountingDate": "2022-10-05",
-                    "customerTaxStatus": "TAXED"
+                    "customerTaxStatus": "TAXED",
+                    "renderSettings": {
+                      "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                    }
                   }
                 },
                 "examples": {
@@ -15681,7 +15750,10 @@
                         "includeBeneficiaryAddressInPaymentDetails": false
                       },
                       "accountingDate": "2022-10-05",
-                      "customerTaxStatus": "TAXED"
+                      "customerTaxStatus": "TAXED",
+                      "renderSettings": {
+                        "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                      }
                     }
                   }
                 }
@@ -15872,7 +15944,10 @@
                       "includeBeneficiaryAddressInPaymentDetails": false
                     },
                     "accountingDate": "2022-10-05",
-                    "customerTaxStatus": "TAXED"
+                    "customerTaxStatus": "TAXED",
+                    "renderSettings": {
+                      "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                    }
                   }
                 },
                 "examples": {
@@ -15979,7 +16054,10 @@
                         "includeBeneficiaryAddressInPaymentDetails": false
                       },
                       "accountingDate": "2022-10-05",
-                      "customerTaxStatus": "TAXED"
+                      "customerTaxStatus": "TAXED",
+                      "renderSettings": {
+                        "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                      }
                     }
                   }
                 }
@@ -16227,7 +16305,10 @@
                       "includeBeneficiaryAddressInPaymentDetails": false
                     },
                     "accountingDate": "2022-10-05",
-                    "customerTaxStatus": "TAXED"
+                    "customerTaxStatus": "TAXED",
+                    "renderSettings": {
+                      "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                    }
                   }
                 },
                 "examples": {
@@ -16334,7 +16415,10 @@
                         "includeBeneficiaryAddressInPaymentDetails": false
                       },
                       "accountingDate": "2022-10-05",
-                      "customerTaxStatus": "TAXED"
+                      "customerTaxStatus": "TAXED",
+                      "renderSettings": {
+                        "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                      }
                     }
                   }
                 }
@@ -59860,6 +59944,7 @@
           "metadata",
           "netTotal",
           "paymentStatus",
+          "renderSettings",
           "sequenceAccountId",
           "status",
           "totalTax"
@@ -60017,7 +60102,10 @@
           "dunningStatus": "SCHEDULED",
           "accountingDate": "2022-09-30",
           "calculatedAt": "2022-09-30T00:00:00Z",
-          "customerTaxStatus": "TAXED"
+          "customerTaxStatus": "TAXED",
+          "renderSettings": {
+            "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+          }
         },
         "properties": {
           "id": {
@@ -60207,6 +60295,9 @@
           "customerTaxStatus": {
             "description": "Customer tax status",
             "$ref": "#/components/schemas/TaxStatus"
+          },
+          "renderSettings": {
+            "$ref": "#/components/schemas/InvoiceRenderSettingsInlineAggregate"
           }
         }
       },
@@ -60278,6 +60369,30 @@
           "TAXED",
           "TAX_EXEMPT",
           "REVERSE_CHARGED"
+        ]
+      },
+      "InvoiceRenderSettingsInlineAggregate": {
+        "required": [
+          "paymentLinkDisplay"
+        ],
+        "type": "object",
+        "description": "Settings that control how the invoice is rendered.",
+        "example": {
+          "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+        },
+        "properties": {
+          "paymentLinkDisplay": {
+            "description": "Payment link display preference. By default, the payment link is shown.",
+            "$ref": "#/components/schemas/PaymentLinkDisplayOption"
+          }
+        }
+      },
+      "PaymentLinkDisplayOption": {
+        "type": "string",
+        "example": "HIDE_PAYMENT_LINK",
+        "enum": [
+          "SHOW_PAYMENT_LINK",
+          "HIDE_PAYMENT_LINK"
         ]
       },
       "CreateOrUpdateLineItemRequestModel": {
@@ -60493,6 +60608,7 @@
           "metadata",
           "netTotal",
           "paymentStatus",
+          "renderSettings",
           "sequenceAccountId",
           "status",
           "totalTax"
@@ -60650,7 +60766,10 @@
           "dunningStatus": "SCHEDULED",
           "accountingDate": "2022-09-30",
           "calculatedAt": "2022-09-30T00:00:00Z",
-          "customerTaxStatus": "TAXED"
+          "customerTaxStatus": "TAXED",
+          "renderSettings": {
+            "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+          }
         },
         "properties": {
           "id": {
@@ -60840,6 +60959,9 @@
           "customerTaxStatus": {
             "description": "Customer tax status",
             "$ref": "#/components/schemas/TaxStatus"
+          },
+          "renderSettings": {
+            "$ref": "#/components/schemas/InvoiceRenderSettingsInlineAggregate"
           }
         }
       },
@@ -60947,6 +61069,7 @@
           "metadata",
           "netTotal",
           "paymentStatus",
+          "renderSettings",
           "sequenceAccountId",
           "status",
           "totalTax"
@@ -61053,7 +61176,10 @@
             "includeBeneficiaryAddressInPaymentDetails": false
           },
           "accountingDate": "2022-10-05",
-          "customerTaxStatus": "TAXED"
+          "customerTaxStatus": "TAXED",
+          "renderSettings": {
+            "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+          }
         },
         "properties": {
           "id": {
@@ -61212,6 +61338,9 @@
           "customerTaxStatus": {
             "description": "Customer tax status",
             "$ref": "#/components/schemas/TaxStatus"
+          },
+          "renderSettings": {
+            "$ref": "#/components/schemas/InvoiceRenderSettingsInlineAggregate"
           }
         }
       },
@@ -61747,6 +61876,7 @@
           "metadata",
           "netTotal",
           "paymentStatus",
+          "renderSettings",
           "sequenceAccountId",
           "status",
           "totalTax"
@@ -61904,7 +62034,10 @@
           "dunningStatus": "SCHEDULED",
           "accountingDate": "2022-09-30",
           "calculatedAt": "2022-09-30T00:00:00Z",
-          "customerTaxStatus": "TAXED"
+          "customerTaxStatus": "TAXED",
+          "renderSettings": {
+            "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+          }
         },
         "properties": {
           "id": {
@@ -62094,6 +62227,9 @@
           "customerTaxStatus": {
             "description": "Customer tax status",
             "$ref": "#/components/schemas/TaxStatus"
+          },
+          "renderSettings": {
+            "$ref": "#/components/schemas/InvoiceRenderSettingsInlineAggregate"
           }
         }
       },
@@ -62671,7 +62807,10 @@
                 "includeBeneficiaryAddressInPaymentDetails": false
               },
               "accountingDate": "2022-10-05",
-              "customerTaxStatus": "TAXED"
+              "customerTaxStatus": "TAXED",
+              "renderSettings": {
+                "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+              }
             }
           ],
           "pagination": {
@@ -62786,7 +62925,10 @@
                   "includeBeneficiaryAddressInPaymentDetails": false
                 },
                 "accountingDate": "2022-10-05",
-                "customerTaxStatus": "TAXED"
+                "customerTaxStatus": "TAXED",
+                "renderSettings": {
+                  "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                }
               }
             ],
             "items": {
@@ -63151,6 +63293,7 @@
           "metadata",
           "netTotal",
           "paymentStatus",
+          "renderSettings",
           "sequenceAccountId",
           "status",
           "totalTax"
@@ -63308,7 +63451,10 @@
           "dunningStatus": "SCHEDULED",
           "accountingDate": "2022-09-30",
           "calculatedAt": "2022-09-30T00:00:00Z",
-          "customerTaxStatus": "TAXED"
+          "customerTaxStatus": "TAXED",
+          "renderSettings": {
+            "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+          }
         },
         "properties": {
           "id": {
@@ -63498,6 +63644,9 @@
           "customerTaxStatus": {
             "description": "Customer tax status",
             "$ref": "#/components/schemas/TaxStatus"
+          },
+          "renderSettings": {
+            "$ref": "#/components/schemas/InvoiceRenderSettingsInlineAggregate"
           }
         }
       },
@@ -63826,6 +63975,7 @@
           "metadata",
           "netTotal",
           "paymentStatus",
+          "renderSettings",
           "sequenceAccountId",
           "status",
           "totalTax"
@@ -63983,7 +64133,10 @@
           "dunningStatus": "SCHEDULED",
           "accountingDate": "2022-09-30",
           "calculatedAt": "2022-09-30T00:00:00Z",
-          "customerTaxStatus": "TAXED"
+          "customerTaxStatus": "TAXED",
+          "renderSettings": {
+            "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+          }
         },
         "properties": {
           "id": {
@@ -64173,6 +64326,9 @@
           "customerTaxStatus": {
             "description": "Customer tax status",
             "$ref": "#/components/schemas/TaxStatus"
+          },
+          "renderSettings": {
+            "$ref": "#/components/schemas/InvoiceRenderSettingsInlineAggregate"
           }
         }
       },
