@@ -86566,7 +86566,7 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/QuoteContacts"
+              "$ref": "#/components/schemas/QuoteContact"
             }
           },
           "isSignaturesEnabled": {
@@ -87251,7 +87251,7 @@
           }
         }
       },
-      "QuoteContacts": {
+      "QuoteContact": {
         "required": [
           "email",
           "hasSigned",
