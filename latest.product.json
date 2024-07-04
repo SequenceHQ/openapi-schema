@@ -56904,11 +56904,7 @@
         "type": "string",
         "example": "SIGNATURE_REQUEST_ALL_SIGNED",
         "enum": [
-          "UNKNOWN_ERROR",
-          "FILE_ERROR",
-          "SIGNATURE_REQUEST_ALL_SIGNED",
-          "SIGNATURE_REQUEST_INVALID",
-          "CALLBACK_TEST"
+          "SIGNATURE_REQUEST_ALL_SIGNED"
         ]
       },
       "DropboxSignWebhookEventEventEventMetadata": {
