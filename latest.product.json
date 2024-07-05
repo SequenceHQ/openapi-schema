@@ -34170,6 +34170,15 @@
             }
           },
           {
+            "name": "includeArchived",
+            "in": "query",
+            "description": "Include archived products in results",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
             "name": "limit",
             "in": "query",
             "description": "Maximum number of objects to return per-page.",
@@ -34547,6 +34556,88 @@
           },
           "401": {
             "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
+    "/products/{id}/archive": {
+      "post": {
+        "tags": [],
+        "summary": "Archive a product",
+        "description": "Archive one of your products. Once archived, new prices cannot be created for the product.",
+        "operationId": "postProductsByIdArchive",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Product ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-05-09"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductResponse",
+                  "example": {
+                    "id": "994d23f7-47b6-43ee-af6b-cd27181196b6",
+                    "name": "Fixed priced product",
+                    "label": "Fixed priced product - UK",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "updatedAt": "2022-06-28T16:47:00Z",
+                    "archivedAt": "2022-08-02T16:47:00Z"
+                  }
+                },
+                "examples": {
+                  "ProductResponse": {
+                    "summary": "",
+                    "value": {
+                      "id": "994d23f7-47b6-43ee-af6b-cd27181196b6",
+                      "name": "Fixed priced product",
+                      "label": "Fixed priced product - UK",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "updatedAt": "2022-06-28T16:47:00Z",
+                      "archivedAt": "2022-08-02T16:47:00Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "403": {
+            "description": "Forbidden",
             "content": {}
           },
           "500": {
