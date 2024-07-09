@@ -53262,6 +53262,7 @@
           "INVOICE",
           "LIST_PRICE",
           "PRICE",
+          "BILLING_SCHEDULE",
           "QUOTE",
           "QUOTE_PRICE"
         ]
@@ -86154,6 +86155,7 @@
           "INVOICE",
           "LIST_PRICE",
           "PRICE",
+          "BILLING_SCHEDULE",
           "QUOTE",
           "QUOTE_PRICE"
         ]
@@ -93572,6 +93574,7 @@
           "INVOICE",
           "LIST_PRICE",
           "PRICE",
+          "BILLING_SCHEDULE",
           "QUOTE",
           "QUOTE_PRICE"
         ]
