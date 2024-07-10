@@ -46918,66 +46918,6 @@
       "servers": [],
       "parameters": []
     },
-    "/customer-portal/customers/{customerId}/quotes/{quoteId}/accept": {
-      "post": {
-        "tags": [],
-        "summary": "Accept a Quote by ID",
-        "description": "Accept a Quote by ID",
-        "operationId": "postCustomerPortalCustomersByCustomerIdQuotesByQuoteIdAccept",
-        "parameters": [
-          {
-            "name": "customerId",
-            "in": "path",
-            "description": "Customer ID",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "quoteId",
-            "in": "path",
-            "description": "Quote ID",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "Sequence-Version",
-            "in": "header",
-            "description": "Use this header to select an API version",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "enum": [
-                "2024-01-01"
-              ]
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {}
-          },
-          "400": {
-            "description": "Bad Request",
-            "content": {}
-          },
-          "401": {
-            "description": "Unauthorized",
-            "content": {}
-          },
-          "500": {
-            "description": "Internal Server Error",
-            "content": {}
-          }
-        }
-      },
-      "servers": [],
-      "parameters": []
-    },
     "/customer-portal/customers/{customerId}/quotes/{quoteId}/ready-to-sign": {
       "post": {
         "tags": [],
@@ -79869,8 +79809,7 @@
           "CREDIT_NOTE_UPDATED",
           "CREDIT_NOTE_ISSUED",
           "QUOTE_PUBLISHED",
-          "QUOTE_ACCEPTED",
-          "QUOTE_ACCEPTED_BY_CUSTOMER"
+          "QUOTE_ACCEPTED"
         ]
       },
       "NotificationChannel": {
