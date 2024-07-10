@@ -34584,6 +34584,15 @@
             }
           },
           {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
             "name": "Sequence-Version",
             "in": "header",
             "description": "Use this header to select an API version",
