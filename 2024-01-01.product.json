@@ -55402,7 +55402,8 @@
         "type": "string",
         "example": "SIGNATURE_REQUEST_ALL_SIGNED",
         "enum": [
-          "SIGNATURE_REQUEST_ALL_SIGNED"
+          "SIGNATURE_REQUEST_ALL_SIGNED",
+          "SIGNATURE_REQUEST_SIGNED"
         ]
       },
       "DropboxSignWebhookEventEventEventMetadata": {
