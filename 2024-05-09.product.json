@@ -38351,87 +38351,6 @@
       "servers": [],
       "parameters": []
     },
-    "/invoices/backfill-contacts": {
-      "post": {
-        "tags": [],
-        "summary": "Backfill invoice contacts",
-        "description": "Backfills invoice contacts or customer overrides as required",
-        "operationId": "postInvoicesBackfillContacts",
-        "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "On-Behalf-Of",
-            "in": "header",
-            "description": "The Sequence account that this request is made on behalf of.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "Sequence-Version",
-            "in": "header",
-            "description": "Use this header to select an API version",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "enum": [
-                "2024-05-09"
-              ]
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/BackfillInvoiceContactsEndpointRequestModel",
-                "example": {
-                  "pageSize": 10
-                }
-              },
-              "examples": {
-                "BackfillInvoiceContactsEndpointRequestModel": {
-                  "summary": "",
-                  "value": {
-                    "pageSize": 10
-                  }
-                }
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {}
-          },
-          "400": {
-            "description": "Bad Request",
-            "content": {}
-          },
-          "401": {
-            "description": "Unauthorized",
-            "content": {}
-          },
-          "500": {
-            "description": "Internal Server Error",
-            "content": {}
-          }
-        }
-      },
-      "servers": [],
-      "parameters": []
-    },
     "/credit-notes/credit-notes-csv": {
       "get": {
         "tags": [],
@@ -46765,89 +46684,6 @@
                 }
               }
             }
-          },
-          "400": {
-            "description": "Bad Request",
-            "content": {}
-          },
-          "401": {
-            "description": "Unauthorized",
-            "content": {}
-          },
-          "500": {
-            "description": "Internal Server Error",
-            "content": {}
-          }
-        }
-      },
-      "servers": [],
-      "parameters": []
-    },
-    "/customers/clean-duplicate-contacts": {
-      "post": {
-        "tags": [],
-        "summary": "Clean duplicate contacts",
-        "description": "Deletes duplicate contacts for all customer versions",
-        "operationId": "postCustomersCleanDuplicateContacts",
-        "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "On-Behalf-Of",
-            "in": "header",
-            "description": "The Sequence account that this request is made on behalf of.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "Sequence-Version",
-            "in": "header",
-            "description": "Use this header to select an API version",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "enum": [
-                "2024-05-09"
-              ]
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CleanDuplicateContactsEndpointRequestModel",
-                "example": {
-                  "pageSize": 10,
-                  "dryRun": true
-                }
-              },
-              "examples": {
-                "CleanDuplicateContactsEndpointRequestModel": {
-                  "summary": "",
-                  "value": {
-                    "pageSize": 10,
-                    "dryRun": true
-                  }
-                }
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {}
           },
           "400": {
             "description": "Bad Request",
@@ -84847,22 +84683,6 @@
           }
         }
       },
-      "BackfillInvoiceContactsEndpointRequestModel": {
-        "required": [
-          "pageSize"
-        ],
-        "type": "object",
-        "example": {
-          "pageSize": 10
-        },
-        "properties": {
-          "pageSize": {
-            "type": "integer",
-            "format": "int32",
-            "example": 10
-          }
-        }
-      },
       "AddCreditNoteLineItemsFromInvoiceEndpointRequestModel": {
         "required": [
           "lineItemIds"
@@ -90726,28 +90546,6 @@
             "items": {
               "$ref": "#/components/schemas/Contact"
             }
-          }
-        }
-      },
-      "CleanDuplicateContactsEndpointRequestModel": {
-        "required": [
-          "dryRun",
-          "pageSize"
-        ],
-        "type": "object",
-        "example": {
-          "pageSize": 10,
-          "dryRun": true
-        },
-        "properties": {
-          "pageSize": {
-            "type": "integer",
-            "format": "int32",
-            "example": 10
-          },
-          "dryRun": {
-            "type": "boolean",
-            "example": true
           }
         }
       },
