@@ -19944,7 +19944,10 @@
                           }
                         ],
                         "creditBalances": "balance",
-                        "accountingDate": "2023-11-02"
+                        "accountingDate": "2023-11-02",
+                        "renderSettings": {
+                          "paymentLinkDisplay": "SHOW_PAYMENT_LINK"
+                        }
                       }
                     ],
                     "pagination": {
@@ -20077,7 +20080,10 @@
                             }
                           ],
                           "creditBalances": "balance",
-                          "accountingDate": "2023-11-02"
+                          "accountingDate": "2023-11-02",
+                          "renderSettings": {
+                            "paymentLinkDisplay": "SHOW_PAYMENT_LINK"
+                          }
                         }
                       ],
                       "pagination": {
@@ -21272,7 +21278,10 @@
                       }
                     ],
                     "creditBalances": "balance",
-                    "accountingDate": "2023-11-02"
+                    "accountingDate": "2023-11-02",
+                    "renderSettings": {
+                      "paymentLinkDisplay": "SHOW_PAYMENT_LINK"
+                    }
                   }
                 },
                 "examples": {
@@ -21396,7 +21405,10 @@
                         }
                       ],
                       "creditBalances": "balance",
-                      "accountingDate": "2023-11-02"
+                      "accountingDate": "2023-11-02",
+                      "renderSettings": {
+                        "paymentLinkDisplay": "SHOW_PAYMENT_LINK"
+                      }
                     }
                   }
                 }
@@ -69218,7 +69230,10 @@
                 }
               ],
               "creditBalances": "balance",
-              "accountingDate": "2023-11-02"
+              "accountingDate": "2023-11-02",
+              "renderSettings": {
+                "paymentLinkDisplay": "SHOW_PAYMENT_LINK"
+              }
             }
           ],
           "pagination": {
@@ -69350,7 +69365,10 @@
                   }
                 ],
                 "creditBalances": "balance",
-                "accountingDate": "2023-11-02"
+                "accountingDate": "2023-11-02",
+                "renderSettings": {
+                  "paymentLinkDisplay": "SHOW_PAYMENT_LINK"
+                }
               }
             ],
             "items": {
@@ -69378,6 +69396,7 @@
           "netTotal",
           "paymentOptions",
           "paymentStatus",
+          "renderSettings",
           "totalTax"
         ],
         "type": "object",
@@ -69499,7 +69518,10 @@
             }
           ],
           "creditBalances": "balance",
-          "accountingDate": "2023-11-02"
+          "accountingDate": "2023-11-02",
+          "renderSettings": {
+            "paymentLinkDisplay": "SHOW_PAYMENT_LINK"
+          }
         },
         "properties": {
           "id": {
@@ -69614,6 +69636,9 @@
             "description": "Accounting date",
             "format": "date",
             "example": "2023-11-02"
+          },
+          "renderSettings": {
+            "$ref": "#/components/schemas/InvoiceRenderSettingsAggregate"
           }
         }
       },
@@ -70077,6 +70102,29 @@
             "example": "label-value"
           }
         }
+      },
+      "InvoiceRenderSettingsAggregate": {
+        "required": [
+          "paymentLinkDisplay"
+        ],
+        "type": "object",
+        "description": "Render settings",
+        "example": {
+          "paymentLinkDisplay": "SHOW_PAYMENT_LINK"
+        },
+        "properties": {
+          "paymentLinkDisplay": {
+            "$ref": "#/components/schemas/PaymentLinkDisplayOption"
+          }
+        }
+      },
+      "PaymentLinkDisplayOption": {
+        "type": "string",
+        "example": "SHOW_PAYMENT_LINK",
+        "enum": [
+          "SHOW_PAYMENT_LINK",
+          "HIDE_PAYMENT_LINK"
+        ]
       },
       "ListUsageMetricsForBillingScheduleEndpointResponseModel1": {
         "required": [
@@ -80798,11 +80846,11 @@
         "properties": {
           "paymentLinkDisplay": {
             "description": "Payment link display preference. By default, the payment link is shown.",
-            "$ref": "#/components/schemas/PaymentLinkDisplayOption"
+            "$ref": "#/components/schemas/PaymentLinkDisplayOption1"
           }
         }
       },
-      "PaymentLinkDisplayOption": {
+      "PaymentLinkDisplayOption1": {
         "type": "string",
         "example": "HIDE_PAYMENT_LINK",
         "enum": [
