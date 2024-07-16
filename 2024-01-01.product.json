@@ -41321,7 +41321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ListByQueryIdCreditNoteEndpointProductListByQueryIdCreditNotePaginatedResponseModel",
+                  "$ref": "#/components/schemas/ListByCustomerIdCreditNoteEndpointProductListByQueryIdCreditNotePaginatedResponseModel",
                   "example": {
                     "items": [
                       {
@@ -41472,7 +41472,7 @@
                   }
                 },
                 "examples": {
-                  "ListByQueryIdCreditNoteEndpointProductListByQueryIdCreditNotePaginatedResponseModel": {
+                  "ListByCustomerIdCreditNoteEndpointProductListByQueryIdCreditNotePaginatedResponseModel": {
                     "summary": "",
                     "value": {
                       "items": [
@@ -83693,7 +83693,7 @@
           }
         }
       },
-      "ListByQueryIdCreditNoteEndpointProductListByQueryIdCreditNotePaginatedResponseModel": {
+      "ListByCustomerIdCreditNoteEndpointProductListByQueryIdCreditNotePaginatedResponseModel": {
         "required": [
           "items",
           "pagination"
@@ -83993,7 +83993,7 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/ListByQueryIdCreditNoteEndpointProductListByQueryIdCreditNoteResponseModel"
+              "$ref": "#/components/schemas/ListByCustomerIdCreditNoteEndpointProductListByQueryIdCreditNoteResponseModel"
             }
           },
           "pagination": {
@@ -84001,7 +84001,7 @@
           }
         }
       },
-      "ListByQueryIdCreditNoteEndpointProductListByQueryIdCreditNoteResponseModel": {
+      "ListByCustomerIdCreditNoteEndpointProductListByQueryIdCreditNoteResponseModel": {
         "required": [
           "currency",
           "customerBillingAddress",
