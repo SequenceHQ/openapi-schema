@@ -2549,12 +2549,12 @@
                   },
                   "oneOf": [
                     {
-                      "$ref": "#/components/schemas/ListPriceEndpointProductListPricePaginatedResponseModel"
+                      "$ref": "#/components/schemas/PriceResponsePaginatedPriceResponseModel"
                     }
                   ]
                 },
                 "examples": {
-                  "ListPriceEndpointProductListPricePaginatedResponseModel": {
+                  "PriceResponsePaginatedPriceResponseModel": {
                     "summary": "",
                     "value": {
                       "items": [
@@ -56405,7 +56405,7 @@
           }
         }
       },
-      "ListPriceEndpointProductListPricePaginatedResponseModel": {
+      "PriceResponsePaginatedPriceResponseModel": {
         "required": [
           "items",
           "pagination"
@@ -56872,7 +56872,7 @@
           }
         }
       },
-      "CreatePriceEndpointCreatePriceRequestModel": {
+      "CreatePriceRequestModel20240101": {
         "required": [
           "billingFrequency",
           "billingType",
@@ -56988,7 +56988,7 @@
           }
         }
       },
-      "CreatePriceEndpointProductCreatePriceResponseModel": {
+      "PriceResponseModel20240101": {
         "required": [
           "billingFrequency",
           "billingType",
@@ -57112,375 +57112,93 @@
           }
         }
       },
-      "GetPriceEndpointProductGetPriceResponseModel": {
+      "PriceResponseModel20240101PaginatedPriceResponseModel": {
         "required": [
-          "billingFrequency",
-          "billingType",
-          "createdAt",
-          "currency",
-          "externalIds",
-          "id",
-          "name",
-          "parameters",
-          "productId",
-          "sequenceAccountId",
-          "structure"
+          "items",
+          "pagination"
         ],
         "type": "object",
         "example": {
-          "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
-          "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
-          "name": "Demo Product",
-          "currency": "GBP",
-          "structure": {
-            "pricingType": "LINEAR",
-            "pricePerUnit": "0.25",
-            "usageMetricId": "9aa108d7-6b12-4f5e-8288-5779b9d95b5e",
-            "isPricePercentage": false
-          },
-          "billingFrequency": "MONTHLY",
-          "billingType": "IN_ARREARS",
-          "createdAt": "2022-06-28T16:47:00Z",
-          "updatedAt": "2022-06-28T16:47:00Z",
-          "externalIds": [
+          "items": [
             {
-              "key": "Xero",
-              "value": "123"
+              "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+              "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
+              "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
+              "name": "Demo Product",
+              "currency": "GBP",
+              "structure": {
+                "pricingType": "LINEAR",
+                "pricePerUnit": "0.25",
+                "usageMetricId": "9aa108d7-6b12-4f5e-8288-5779b9d95b5e",
+                "isPricePercentage": false
+              },
+              "billingFrequency": "MONTHLY",
+              "billingType": "IN_ARREARS",
+              "createdAt": "2022-06-28T16:47:00Z",
+              "updatedAt": "2022-06-28T16:47:00Z",
+              "externalIds": [
+                {
+                  "key": "Xero",
+                  "value": "123"
+                }
+              ],
+              "parameters": [
+                {
+                  "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                  "value": "10"
+                }
+              ],
+              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
             }
           ],
-          "parameters": [
-            {
-              "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
-              "value": "10"
-            }
-          ],
-          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
-        },
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "Unique Price ID",
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
-          },
-          "sequenceAccountId": {
-            "type": "string",
-            "description": "The Sequence Account to which this Price belongs",
-            "example": "1986c663-9ee9-4811-bfbf-57d2ad666096"
-          },
-          "productId": {
-            "type": "string",
-            "description": "The ID of the Product for which this Price provides pricing",
-            "example": "d07037d5-3e31-4c3a-a360-e58555e2bf44"
-          },
-          "name": {
-            "type": "string",
-            "description": "The customer-facing name of this Price",
-            "example": "Demo Product"
-          },
-          "currency": {
-            "description": "The pricing currency",
-            "$ref": "#/components/schemas/Currency"
-          },
-          "structure": {
-            "$ref": "#/components/schemas/LinearPricingStructure"
-          },
-          "billingFrequency": {
-            "description": "The recurrence of charging this price.",
-            "$ref": "#/components/schemas/BillingFrequency"
-          },
-          "billingType": {
-            "description": "How to bill this price: in-arrears or in-advance.",
-            "$ref": "#/components/schemas/BillingType"
-          },
-          "createdAt": {
-            "type": "string",
-            "description": "Created at",
-            "example": "2022-06-28T16:47:00Z"
-          },
-          "updatedAt": {
-            "type": "string",
-            "description": "Updated At",
-            "example": "2022-06-28T16:47:00Z"
-          },
-          "externalIds": {
-            "type": "array",
-            "description": "IDs in external integrations",
-            "example": [
-              {
-                "key": "Xero",
-                "value": "123"
-              }
-            ],
-            "items": {
-              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
-            }
-          },
-          "parameters": {
-            "type": "array",
-            "description": "Parameters required for usage calculation",
-            "example": [
-              {
-                "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
-                "value": "10"
-              }
-            ],
-            "items": {
-              "$ref": "#/components/schemas/PriceParameter"
-            }
-          },
-          "listPriceId": {
-            "type": "string",
-            "description": "The list price ID, if this price variant was created from a list price",
-            "example": "b4d7e884-e007-4183-8355-4771865c5100"
+          "pagination": {
+            "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
+            "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
+            "totalResultSize": 10
           }
-        }
-      },
-      "UpdatePriceEndpointProductUpdatePriceResponseModel": {
-        "required": [
-          "billingFrequency",
-          "billingType",
-          "createdAt",
-          "currency",
-          "externalIds",
-          "id",
-          "name",
-          "parameters",
-          "productId",
-          "sequenceAccountId",
-          "structure"
-        ],
-        "type": "object",
-        "example": {
-          "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
-          "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
-          "name": "Demo Product",
-          "currency": "GBP",
-          "structure": {
-            "pricingType": "LINEAR",
-            "pricePerUnit": "0.25",
-            "usageMetricId": "9aa108d7-6b12-4f5e-8288-5779b9d95b5e",
-            "isPricePercentage": false
-          },
-          "billingFrequency": "MONTHLY",
-          "billingType": "IN_ARREARS",
-          "createdAt": "2022-06-28T16:47:00Z",
-          "updatedAt": "2022-06-28T16:47:00Z",
-          "externalIds": [
-            {
-              "key": "Xero",
-              "value": "123"
-            }
-          ],
-          "parameters": [
-            {
-              "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
-              "value": "10"
-            }
-          ],
-          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
         },
         "properties": {
-          "id": {
-            "type": "string",
-            "description": "Unique Price ID",
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
-          },
-          "sequenceAccountId": {
-            "type": "string",
-            "description": "The Sequence Account to which this Price belongs",
-            "example": "1986c663-9ee9-4811-bfbf-57d2ad666096"
-          },
-          "productId": {
-            "type": "string",
-            "description": "The ID of the Product for which this Price provides pricing",
-            "example": "d07037d5-3e31-4c3a-a360-e58555e2bf44"
-          },
-          "name": {
-            "type": "string",
-            "description": "The customer-facing name of this Price",
-            "example": "Demo Product"
-          },
-          "currency": {
-            "description": "The pricing currency",
-            "$ref": "#/components/schemas/Currency"
-          },
-          "structure": {
-            "$ref": "#/components/schemas/LinearPricingStructure"
-          },
-          "billingFrequency": {
-            "description": "The recurrence of charging this price.",
-            "$ref": "#/components/schemas/BillingFrequency"
-          },
-          "billingType": {
-            "description": "How to bill this price: in-arrears or in-advance.",
-            "$ref": "#/components/schemas/BillingType"
-          },
-          "createdAt": {
-            "type": "string",
-            "description": "Created at",
-            "example": "2022-06-28T16:47:00Z"
-          },
-          "updatedAt": {
-            "type": "string",
-            "description": "Updated At",
-            "example": "2022-06-28T16:47:00Z"
-          },
-          "externalIds": {
+          "items": {
             "type": "array",
-            "description": "IDs in external integrations",
+            "description": "Prices",
             "example": [
               {
-                "key": "Xero",
-                "value": "123"
+                "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
+                "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
+                "name": "Demo Product",
+                "currency": "GBP",
+                "structure": {
+                  "pricingType": "LINEAR",
+                  "pricePerUnit": "0.25",
+                  "usageMetricId": "9aa108d7-6b12-4f5e-8288-5779b9d95b5e",
+                  "isPricePercentage": false
+                },
+                "billingFrequency": "MONTHLY",
+                "billingType": "IN_ARREARS",
+                "createdAt": "2022-06-28T16:47:00Z",
+                "updatedAt": "2022-06-28T16:47:00Z",
+                "externalIds": [
+                  {
+                    "key": "Xero",
+                    "value": "123"
+                  }
+                ],
+                "parameters": [
+                  {
+                    "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                    "value": "10"
+                  }
+                ],
+                "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+              "$ref": "#/components/schemas/PriceResponseModel20240101"
             }
           },
-          "parameters": {
-            "type": "array",
-            "description": "Parameters required for usage calculation",
-            "example": [
-              {
-                "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
-                "value": "10"
-              }
-            ],
-            "items": {
-              "$ref": "#/components/schemas/PriceParameter"
-            }
-          },
-          "listPriceId": {
-            "type": "string",
-            "description": "The list price ID, if this price variant was created from a list price",
-            "example": "b4d7e884-e007-4183-8355-4771865c5100"
-          }
-        }
-      },
-      "DeletePriceEndpointProductDeletePriceResponseModel": {
-        "required": [
-          "billingFrequency",
-          "billingType",
-          "createdAt",
-          "currency",
-          "externalIds",
-          "id",
-          "name",
-          "parameters",
-          "productId",
-          "sequenceAccountId",
-          "structure"
-        ],
-        "type": "object",
-        "example": {
-          "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
-          "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
-          "name": "Demo Product",
-          "currency": "GBP",
-          "structure": {
-            "pricingType": "LINEAR",
-            "pricePerUnit": "0.25",
-            "usageMetricId": "9aa108d7-6b12-4f5e-8288-5779b9d95b5e",
-            "isPricePercentage": false
-          },
-          "billingFrequency": "MONTHLY",
-          "billingType": "IN_ARREARS",
-          "createdAt": "2022-06-28T16:47:00Z",
-          "updatedAt": "2022-06-28T16:47:00Z",
-          "externalIds": [
-            {
-              "key": "Xero",
-              "value": "123"
-            }
-          ],
-          "parameters": [
-            {
-              "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
-              "value": "10"
-            }
-          ],
-          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
-        },
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "Unique Price ID",
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
-          },
-          "sequenceAccountId": {
-            "type": "string",
-            "description": "The Sequence Account to which this Price belongs",
-            "example": "1986c663-9ee9-4811-bfbf-57d2ad666096"
-          },
-          "productId": {
-            "type": "string",
-            "description": "The ID of the Product for which this Price provides pricing",
-            "example": "d07037d5-3e31-4c3a-a360-e58555e2bf44"
-          },
-          "name": {
-            "type": "string",
-            "description": "The customer-facing name of this Price",
-            "example": "Demo Product"
-          },
-          "currency": {
-            "description": "The pricing currency",
-            "$ref": "#/components/schemas/Currency"
-          },
-          "structure": {
-            "$ref": "#/components/schemas/LinearPricingStructure"
-          },
-          "billingFrequency": {
-            "description": "The recurrence of charging this price.",
-            "$ref": "#/components/schemas/BillingFrequency"
-          },
-          "billingType": {
-            "description": "How to bill this price: in-arrears or in-advance.",
-            "$ref": "#/components/schemas/BillingType"
-          },
-          "createdAt": {
-            "type": "string",
-            "description": "Created at",
-            "example": "2022-06-28T16:47:00Z"
-          },
-          "updatedAt": {
-            "type": "string",
-            "description": "Updated At",
-            "example": "2022-06-28T16:47:00Z"
-          },
-          "externalIds": {
-            "type": "array",
-            "description": "IDs in external integrations",
-            "example": [
-              {
-                "key": "Xero",
-                "value": "123"
-              }
-            ],
-            "items": {
-              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
-            }
-          },
-          "parameters": {
-            "type": "array",
-            "description": "Parameters required for usage calculation",
-            "example": [
-              {
-                "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
-                "value": "10"
-              }
-            ],
-            "items": {
-              "$ref": "#/components/schemas/PriceParameter"
-            }
-          },
-          "listPriceId": {
-            "type": "string",
-            "description": "The list price ID, if this price variant was created from a list price",
-            "example": "b4d7e884-e007-4183-8355-4771865c5100"
+          "pagination": {
+            "$ref": "#/components/schemas/PaginationMeta"
           }
         }
       },
