@@ -62527,6 +62527,7 @@
       },
       "UpdateQuoteEndpointUpdateQuoteRequestModel": {
         "required": [
+          "contactIds",
           "phases",
           "presentation"
         ],
