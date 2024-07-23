@@ -906,66 +906,6 @@
       "servers": [],
       "parameters": []
     },
-    "/payments/invoices/{id}/retry": {
-      "post": {
-        "tags": [],
-        "summary": "Retry a failed invoice collection",
-        "description": "Retry a failed invoice collection. Succeeded invoice collections will not produce a second payment.",
-        "operationId": "postPaymentsInvoicesByIdRetry",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Unique invoice ID",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "Authorization",
-            "in": "header",
-            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "Sequence-Version",
-            "in": "header",
-            "description": "Use this header to select an API version",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "enum": [
-                "2024-05-09"
-              ]
-            }
-          }
-        ],
-        "responses": {
-          "202": {
-            "description": "Accepted",
-            "content": {}
-          },
-          "400": {
-            "description": "Bad Request",
-            "content": {}
-          },
-          "401": {
-            "description": "Unauthorized",
-            "content": {}
-          },
-          "500": {
-            "description": "Internal Server Error",
-            "content": {}
-          }
-        }
-      },
-      "servers": [],
-      "parameters": []
-    },
     "/payments/settings/customers": {
       "post": {
         "tags": [],
