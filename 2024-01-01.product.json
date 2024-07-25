@@ -1519,7 +1519,11 @@
                             "value": "10"
                           }
                         ],
-                        "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                        "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                        "usageCalculationPeriod": {
+                          "frequency": "YEARLY",
+                          "interval": 1
+                        }
                       }
                     ],
                     "pagination": {
@@ -1562,7 +1566,11 @@
                               "value": "10"
                             }
                           ],
-                          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                          "usageCalculationPeriod": {
+                            "frequency": "YEARLY",
+                            "interval": 1
+                          }
                         }
                       ],
                       "pagination": {
@@ -1647,7 +1655,11 @@
                       "value": "10"
                     }
                   ],
-                  "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                  "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                  "usageCalculationPeriod": {
+                    "frequency": "YEARLY",
+                    "interval": 1
+                  }
                 }
               },
               "examples": {
@@ -1677,7 +1689,11 @@
                         "value": "10"
                       }
                     ],
-                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                    "usageCalculationPeriod": {
+                      "frequency": "YEARLY",
+                      "interval": 1
+                    }
                   }
                 }
               }
@@ -1720,7 +1736,11 @@
                         "value": "10"
                       }
                     ],
-                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                    "usageCalculationPeriod": {
+                      "frequency": "YEARLY",
+                      "interval": 1
+                    }
                   }
                 },
                 "examples": {
@@ -1754,7 +1774,11 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "usageCalculationPeriod": {
+                        "frequency": "YEARLY",
+                        "interval": 1
+                      }
                     }
                   }
                 }
@@ -1851,7 +1875,11 @@
                         "value": "10"
                       }
                     ],
-                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                    "usageCalculationPeriod": {
+                      "frequency": "YEARLY",
+                      "interval": 1
+                    }
                   }
                 },
                 "examples": {
@@ -1885,7 +1913,11 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "usageCalculationPeriod": {
+                        "frequency": "YEARLY",
+                        "interval": 1
+                      }
                     }
                   }
                 }
@@ -1999,7 +2031,11 @@
                         "value": "10"
                       }
                     ],
-                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                    "usageCalculationPeriod": {
+                      "frequency": "YEARLY",
+                      "interval": 1
+                    }
                   }
                 },
                 "examples": {
@@ -2033,7 +2069,11 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "usageCalculationPeriod": {
+                        "frequency": "YEARLY",
+                        "interval": 1
+                      }
                     }
                   }
                 }
@@ -2126,7 +2166,11 @@
                         "value": "10"
                       }
                     ],
-                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                    "usageCalculationPeriod": {
+                      "frequency": "YEARLY",
+                      "interval": 1
+                    }
                   }
                 },
                 "examples": {
@@ -2160,7 +2204,11 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "usageCalculationPeriod": {
+                        "frequency": "YEARLY",
+                        "interval": 1
+                      }
                     }
                   }
                 }
@@ -7576,6 +7624,10 @@
                           "usageCalculationMode": "BILLING_PERIOD"
                         },
                         "billingFrequency": "MONTHLY",
+                        "usageCalculationPeriod": {
+                          "frequency": "QUARTERLY",
+                          "interval": 1
+                        },
                         "billingType": "IN_ARREARS",
                         "createdAt": "2021-08-25T12:00:00Z",
                         "updatedAt": "2021-08-25T12:00:00Z",
@@ -7735,7 +7787,11 @@
                       "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                       "value": "10"
                     }
-                  ]
+                  ],
+                  "usageCalculationPeriod": {
+                    "frequency": "QUARTERLY",
+                    "interval": 1
+                  }
                 },
                 "oneOf": [
                   {
@@ -7805,7 +7861,11 @@
                         "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                         "value": "10"
                       }
-                    ]
+                    ],
+                    "usageCalculationPeriod": {
+                      "frequency": "QUARTERLY",
+                      "interval": 1
+                    }
                   }
                 },
                 "VolumeListPriceRequest": {
@@ -8041,6 +8101,10 @@
                       "usageCalculationMode": "BILLING_PERIOD"
                     },
                     "billingFrequency": "MONTHLY",
+                    "usageCalculationPeriod": {
+                      "frequency": "QUARTERLY",
+                      "interval": 1
+                    },
                     "billingType": "IN_ARREARS",
                     "createdAt": "2021-08-25T12:00:00Z",
                     "updatedAt": "2021-08-25T12:00:00Z",
@@ -8114,6 +8178,10 @@
                         "usageCalculationMode": "BILLING_PERIOD"
                       },
                       "billingFrequency": "MONTHLY",
+                      "usageCalculationPeriod": {
+                        "frequency": "QUARTERLY",
+                        "interval": 1
+                      },
                       "billingType": "IN_ARREARS",
                       "createdAt": "2021-08-25T12:00:00Z",
                       "updatedAt": "2021-08-25T12:00:00Z",
@@ -8436,6 +8504,10 @@
                       "usageCalculationMode": "BILLING_PERIOD"
                     },
                     "billingFrequency": "MONTHLY",
+                    "usageCalculationPeriod": {
+                      "frequency": "QUARTERLY",
+                      "interval": 1
+                    },
                     "billingType": "IN_ARREARS",
                     "createdAt": "2021-08-25T12:00:00Z",
                     "updatedAt": "2021-08-25T12:00:00Z",
@@ -8509,6 +8581,10 @@
                         "usageCalculationMode": "BILLING_PERIOD"
                       },
                       "billingFrequency": "MONTHLY",
+                      "usageCalculationPeriod": {
+                        "frequency": "QUARTERLY",
+                        "interval": 1
+                      },
                       "billingType": "IN_ARREARS",
                       "createdAt": "2021-08-25T12:00:00Z",
                       "updatedAt": "2021-08-25T12:00:00Z",
@@ -8836,7 +8912,11 @@
                       "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                       "value": "10"
                     }
-                  ]
+                  ],
+                  "usageCalculationPeriod": {
+                    "frequency": "QUARTERLY",
+                    "interval": 1
+                  }
                 },
                 "oneOf": [
                   {
@@ -8906,7 +8986,11 @@
                         "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
                         "value": "10"
                       }
-                    ]
+                    ],
+                    "usageCalculationPeriod": {
+                      "frequency": "QUARTERLY",
+                      "interval": 1
+                    }
                   }
                 },
                 "VolumeListPriceRequest": {
@@ -9142,6 +9226,10 @@
                       "usageCalculationMode": "BILLING_PERIOD"
                     },
                     "billingFrequency": "MONTHLY",
+                    "usageCalculationPeriod": {
+                      "frequency": "QUARTERLY",
+                      "interval": 1
+                    },
                     "billingType": "IN_ARREARS",
                     "createdAt": "2021-08-25T12:00:00Z",
                     "updatedAt": "2021-08-25T12:00:00Z",
@@ -9215,6 +9303,10 @@
                         "usageCalculationMode": "BILLING_PERIOD"
                       },
                       "billingFrequency": "MONTHLY",
+                      "usageCalculationPeriod": {
+                        "frequency": "QUARTERLY",
+                        "interval": 1
+                      },
                       "billingType": "IN_ARREARS",
                       "createdAt": "2021-08-25T12:00:00Z",
                       "updatedAt": "2021-08-25T12:00:00Z",
@@ -9537,6 +9629,10 @@
                       "usageCalculationMode": "BILLING_PERIOD"
                     },
                     "billingFrequency": "MONTHLY",
+                    "usageCalculationPeriod": {
+                      "frequency": "QUARTERLY",
+                      "interval": 1
+                    },
                     "billingType": "IN_ARREARS",
                     "createdAt": "2021-08-25T12:00:00Z",
                     "updatedAt": "2021-08-25T12:00:00Z",
@@ -9610,6 +9706,10 @@
                         "usageCalculationMode": "BILLING_PERIOD"
                       },
                       "billingFrequency": "MONTHLY",
+                      "usageCalculationPeriod": {
+                        "frequency": "QUARTERLY",
+                        "interval": 1
+                      },
                       "billingType": "IN_ARREARS",
                       "createdAt": "2021-08-25T12:00:00Z",
                       "updatedAt": "2021-08-25T12:00:00Z",
@@ -26183,7 +26283,11 @@
               "value": "10"
             }
           ],
-          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+          "usageCalculationPeriod": {
+            "frequency": "YEARLY",
+            "interval": 1
+          }
         },
         "properties": {
           "productId": {
@@ -26269,6 +26373,9 @@
             "type": "string",
             "description": "The list price ID, if this price variant was created from a list price",
             "example": "b4d7e884-e007-4183-8355-4771865c5100"
+          },
+          "usageCalculationPeriod": {
+            "$ref": "#/components/schemas/UsageCalculationPeriod"
           }
         }
       },
@@ -26429,6 +26536,39 @@
           }
         }
       },
+      "UsageCalculationPeriod": {
+        "required": [
+          "frequency",
+          "interval"
+        ],
+        "type": "object",
+        "description": "The period over which usage is aggregated.",
+        "example": {
+          "frequency": "YEARLY",
+          "interval": 1
+        },
+        "properties": {
+          "frequency": {
+            "description": "Frequency determines the time period over which usage is aggregated.",
+            "$ref": "#/components/schemas/UsageCalculationFrequency"
+          },
+          "interval": {
+            "type": "integer",
+            "description": "Interval determines the time period over which usage is aggregated. For example, if the frequency is MONTHLY and the interval is 3, the usage is aggregated over 3 months before starting at 0 again.",
+            "format": "int32",
+            "example": 1
+          }
+        }
+      },
+      "UsageCalculationFrequency": {
+        "type": "string",
+        "example": "YEARLY",
+        "enum": [
+          "MONTHLY",
+          "QUARTERLY",
+          "YEARLY"
+        ]
+      },
       "PriceResponseModel20240101": {
         "required": [
           "billingFrequency",
@@ -26472,7 +26612,11 @@
               "value": "10"
             }
           ],
-          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+          "usageCalculationPeriod": {
+            "frequency": "YEARLY",
+            "interval": 1
+          }
         },
         "properties": {
           "id": {
@@ -26578,6 +26722,9 @@
             "type": "string",
             "description": "The list price ID, if this price variant was created from a list price",
             "example": "b4d7e884-e007-4183-8355-4771865c5100"
+          },
+          "usageCalculationPeriod": {
+            "$ref": "#/components/schemas/UsageCalculationPeriod"
           }
         }
       },
@@ -26633,7 +26780,11 @@
                   "value": "10"
                 }
               ],
-              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+              "usageCalculationPeriod": {
+                "frequency": "YEARLY",
+                "interval": 1
+              }
             }
           ],
           "pagination": {
@@ -26675,7 +26826,11 @@
                     "value": "10"
                   }
                 ],
-                "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                "usageCalculationPeriod": {
+                  "frequency": "YEARLY",
+                  "interval": 1
+                }
               }
             ],
             "items": {
@@ -30939,7 +31094,8 @@
         "example": "BILLING_PERIOD",
         "enum": [
           "BILLING_PERIOD",
-          "CUMULATIVE"
+          "CUMULATIVE",
+          "PERIODIC"
         ]
       },
       "SEAT_BASED": {
@@ -31657,6 +31813,39 @@
           }
         }
       },
+      "UsageCalculationPeriod1": {
+        "required": [
+          "frequency",
+          "interval"
+        ],
+        "type": "object",
+        "description": "The period over which usage is aggregated. This value is only taken into consideration and required with graduated pricing structures with a usage calculation mode of 'PERIOD'. It will be ignored for all non-graduated prices.",
+        "example": {
+          "frequency": "QUARTERLY",
+          "interval": 1
+        },
+        "properties": {
+          "frequency": {
+            "description": "Frequency determines the time period over which usage is aggregated.",
+            "$ref": "#/components/schemas/UsageCalculationFrequency1"
+          },
+          "interval": {
+            "type": "integer",
+            "description": "Interval determines the time period over which usage is aggregated. For example, if the frequency is MONTHLY and the interval is 3, the usage is aggregated over 3 months before starting at 0 again.",
+            "format": "int32",
+            "example": 1
+          }
+        }
+      },
+      "UsageCalculationFrequency1": {
+        "type": "string",
+        "example": "QUARTERLY",
+        "enum": [
+          "MONTHLY",
+          "QUARTERLY",
+          "YEARLY"
+        ]
+      },
       "GraduatedListPriceRequest": {
         "required": [
           "billingFrequency",
@@ -31711,7 +31900,11 @@
               "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
               "value": "10"
             }
-          ]
+          ],
+          "usageCalculationPeriod": {
+            "frequency": "QUARTERLY",
+            "interval": 1
+          }
         },
         "properties": {
           "productId": {
@@ -31764,6 +31957,9 @@
             "items": {
               "$ref": "#/components/schemas/PriceParameter"
             }
+          },
+          "usageCalculationPeriod": {
+            "$ref": "#/components/schemas/UsageCalculationPeriod1"
           }
         }
       },
@@ -32735,6 +32931,10 @@
             "usageCalculationMode": "BILLING_PERIOD"
           },
           "billingFrequency": "MONTHLY",
+          "usageCalculationPeriod": {
+            "frequency": "QUARTERLY",
+            "interval": 1
+          },
           "billingType": "IN_ARREARS",
           "createdAt": "2021-08-25T12:00:00Z",
           "updatedAt": "2021-08-25T12:00:00Z",
@@ -32777,6 +32977,9 @@
           "billingFrequency": {
             "description": "The recurrence of charging this price.",
             "$ref": "#/components/schemas/BillingFrequency1"
+          },
+          "usageCalculationPeriod": {
+            "$ref": "#/components/schemas/UsageCalculationPeriod1"
           },
           "billingType": {
             "description": "How to bill this price: in-arrears or in-advance.",
@@ -33560,6 +33763,10 @@
                 "usageCalculationMode": "BILLING_PERIOD"
               },
               "billingFrequency": "MONTHLY",
+              "usageCalculationPeriod": {
+                "frequency": "QUARTERLY",
+                "interval": 1
+              },
               "billingType": "IN_ARREARS",
               "createdAt": "2021-08-25T12:00:00Z",
               "updatedAt": "2021-08-25T12:00:00Z",
@@ -33618,6 +33825,10 @@
                   "usageCalculationMode": "BILLING_PERIOD"
                 },
                 "billingFrequency": "MONTHLY",
+                "usageCalculationPeriod": {
+                  "frequency": "QUARTERLY",
+                  "interval": 1
+                },
                 "billingType": "IN_ARREARS",
                 "createdAt": "2021-08-25T12:00:00Z",
                 "updatedAt": "2021-08-25T12:00:00Z",
@@ -33689,6 +33900,10 @@
             "usageCalculationMode": "BILLING_PERIOD"
           },
           "billingFrequency": "MONTHLY",
+          "usageCalculationPeriod": {
+            "frequency": "QUARTERLY",
+            "interval": 1
+          },
           "billingType": "IN_ARREARS",
           "createdAt": "2021-08-25T12:00:00Z",
           "updatedAt": "2021-08-25T12:00:00Z",
@@ -33753,6 +33968,9 @@
           "billingFrequency": {
             "description": "The recurrence of charging this price.",
             "$ref": "#/components/schemas/BillingFrequency1"
+          },
+          "usageCalculationPeriod": {
+            "$ref": "#/components/schemas/UsageCalculationPeriod1"
           },
           "billingType": {
             "description": "How to bill this price: in-arrears or in-advance.",
