@@ -24184,7 +24184,7 @@
     "/usage-metrics": {
       "post": {
         "tags": [
-          "/api"
+          "Usage Metrics"
         ],
         "summary": "Create a new Usage Metric",
         "description": "Create a new Usage Metric",
@@ -24373,7 +24373,7 @@
     "/usage-metrics/{id}": {
       "get": {
         "tags": [
-          "/api"
+          "Usage Metrics"
         ],
         "summary": "Get a Usage Metric by ID",
         "description": "Get a Usage Metric by ID",
@@ -24510,7 +24510,7 @@
       },
       "put": {
         "tags": [
-          "/api"
+          "Usage Metrics"
         ],
         "summary": "Update a Usage Metric",
         "description": "Update a Usage Metric",
@@ -24702,7 +24702,7 @@
       },
       "delete": {
         "tags": [
-          "/api"
+          "Usage Metrics"
         ],
         "summary": "Delete a Usage Metric",
         "description": "Delete a Usage Metric",
@@ -24843,7 +24843,7 @@
     "/usage-events": {
       "get": {
         "tags": [
-          "/api"
+          "Usage Events"
         ],
         "summary": "List all Usage Events",
         "description": "List all Usage Events",
@@ -25053,7 +25053,7 @@
       },
       "post": {
         "tags": [
-          "/api"
+          "Usage Events"
         ],
         "summary": "Create a new Usage Event",
         "description": "Create a new Usage Event",
@@ -25176,7 +25176,7 @@
     "/usage-events/csv": {
       "post": {
         "tags": [
-          "/api"
+          "Usage Events"
         ],
         "summary": "CSV usage event uploads",
         "description": "Batch upload usage events as a CSV file. The processing of the CSV files happens asynchronously,\nso errors won't be returned in the response.\n\n\n### Data format\nThe CSV file must match the following schema:\n\n- **Required columns**:\n  - `eventType`\n  - `eventTimestamp`. Date or timestamp with timezone, e.g. `\"2023-09-20\"`, `\"2023-09-20T15:13:11+03:00\"`\n  - `customerAlias`\n\n- **Optional columns**:\n  - Event properties: each event property should be a separate column, named\n    `eventProperty#<property_name>`. `property_name` can be anything but must be `snake_case`.\n    E.g. `eventProperties#application_id`, `eventProperties#transaction_amount`\n  - `customerEventId`",
@@ -25248,7 +25248,7 @@
     "/seat-metrics": {
       "get": {
         "tags": [
-          "/api"
+          "Seat Metrics"
         ],
         "summary": "List all seat metrics",
         "description": "Retrieve a paginated list of all your seat metrics.",
@@ -25371,7 +25371,7 @@
       },
       "post": {
         "tags": [
-          "/api"
+          "Seat Metrics"
         ],
         "summary": "Create a seat metric",
         "description": "Create a new seat metric which can be used in prices.",
@@ -25478,7 +25478,7 @@
     "/seat-metrics/{id}": {
       "get": {
         "tags": [
-          "/api"
+          "Seat Metrics"
         ],
         "summary": "Get a seat metric",
         "description": "Retrieve the details of one of your seat metrics.",
@@ -25565,7 +25565,7 @@
       },
       "put": {
         "tags": [
-          "/api"
+          "Seat Metrics"
         ],
         "summary": "Update a seat metric",
         "description": "Update a seat metric which can be used in prices.",
@@ -25675,7 +25675,7 @@
       },
       "delete": {
         "tags": [
-          "/api"
+          "Seat Metrics"
         ],
         "summary": "Delete a seat metric",
         "description": "Delete a seat metric",
@@ -25766,7 +25766,7 @@
     "/seat-events": {
       "get": {
         "tags": [
-          "/api"
+          "Seat Events"
         ],
         "summary": "List all seat events",
         "description": "Retrieve a paginated list of all your submitted seat events.",
@@ -25952,7 +25952,7 @@
       },
       "post": {
         "tags": [
-          "/api"
+          "Seat Events"
         ],
         "summary": "Create a seat event",
         "description": "Create a new seat event. Seat events are used for calculating charges.",
@@ -26063,7 +26063,7 @@
     "/seat-balances": {
       "get": {
         "tags": [
-          "/api"
+          "Seat Metrics"
         ],
         "summary": "List Seat balances by Customer",
         "description": "List Seat balances grouped by Customer and seat type.",

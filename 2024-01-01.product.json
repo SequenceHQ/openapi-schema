@@ -22508,7 +22508,7 @@
     "/usage-metrics": {
       "post": {
         "tags": [
-          "/api"
+          "Usage Metrics"
         ],
         "summary": "Create a new Usage Metric",
         "description": "Create a new Usage Metric",
@@ -22697,7 +22697,7 @@
     "/usage-metrics/{id}": {
       "get": {
         "tags": [
-          "/api"
+          "Usage Metrics"
         ],
         "summary": "Get a Usage Metric by ID",
         "description": "Get a Usage Metric by ID",
@@ -22834,7 +22834,7 @@
       },
       "put": {
         "tags": [
-          "/api"
+          "Usage Metrics"
         ],
         "summary": "Update a Usage Metric",
         "description": "Update a Usage Metric",
@@ -23026,7 +23026,7 @@
       },
       "delete": {
         "tags": [
-          "/api"
+          "Usage Metrics"
         ],
         "summary": "Delete a Usage Metric",
         "description": "Delete a Usage Metric",
@@ -23167,7 +23167,7 @@
     "/usage-events": {
       "get": {
         "tags": [
-          "/api"
+          "Usage Events"
         ],
         "summary": "List all Usage Events",
         "description": "List all Usage Events",
@@ -23377,7 +23377,7 @@
       },
       "post": {
         "tags": [
-          "/api"
+          "Usage Events"
         ],
         "summary": "Create a new Usage Event",
         "description": "Create a new Usage Event",
@@ -23500,7 +23500,7 @@
     "/usage-events/csv": {
       "post": {
         "tags": [
-          "/api"
+          "Usage Events"
         ],
         "summary": "CSV usage event uploads",
         "description": "Batch upload usage events as a CSV file. The processing of the CSV files happens asynchronously,\nso errors won't be returned in the response.\n\n\n### Data format\nThe CSV file must match the following schema:\n\n- **Required columns**:\n  - `eventType`\n  - `eventTimestamp`. Date or timestamp with timezone, e.g. `\"2023-09-20\"`, `\"2023-09-20T15:13:11+03:00\"`\n  - `customerAlias`\n\n- **Optional columns**:\n  - Event properties: each event property should be a separate column, named\n    `eventProperty#<property_name>`. `property_name` can be anything but must be `snake_case`.\n    E.g. `eventProperties#application_id`, `eventProperties#transaction_amount`\n  - `customerEventId`",
@@ -23572,7 +23572,7 @@
     "/seat-balances": {
       "get": {
         "tags": [
-          "/api"
+          "Seat Metrics"
         ],
         "summary": "List Seat balances by Customer",
         "description": "List Seat balances grouped by Customer and seat type.",
@@ -23706,7 +23706,7 @@
     "/seat-snapshots": {
       "get": {
         "tags": [
-          "/api"
+          "Seat Snapshots"
         ],
         "summary": "List all Seat Snapshots",
         "description": "List all Seat Snapshots",
@@ -23894,7 +23894,7 @@
       },
       "post": {
         "tags": [
-          "/api"
+          "Seat Snapshots"
         ],
         "summary": "Create a new Seat Snapshot",
         "description": "Create a new Seat Snapshot",
@@ -24045,7 +24045,7 @@
     "/seat-changes": {
       "get": {
         "tags": [
-          "/api"
+          "Seat Types"
         ],
         "summary": "List all Seat Changes",
         "description": "List all Seat Changes",
@@ -24221,7 +24221,7 @@
     "/seat-types": {
       "get": {
         "tags": [
-          "/api"
+          "Seat Types"
         ],
         "summary": "List all Seat Types",
         "description": "List all Seat Types",
@@ -24346,7 +24346,7 @@
       },
       "post": {
         "tags": [
-          "/api"
+          "Seat Types"
         ],
         "summary": "Create a new Seat Type",
         "description": "Create a new Seat Type",
@@ -24457,7 +24457,7 @@
     "/seat-types/{id}": {
       "get": {
         "tags": [
-          "/api"
+          "Seat Types"
         ],
         "summary": "Get a Seat Type by ID",
         "description": "Get a Seat Type by ID",
@@ -24546,7 +24546,7 @@
       },
       "put": {
         "tags": [
-          "/api"
+          "Seat Types"
         ],
         "summary": "Update a Seat Type",
         "description": "Update a Seat Type",
@@ -24658,7 +24658,7 @@
       },
       "delete": {
         "tags": [
-          "/api"
+          "Seat Types"
         ],
         "summary": "Delete a Seat Type",
         "description": "Delete a Seat Type",
