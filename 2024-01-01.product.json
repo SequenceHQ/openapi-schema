@@ -8332,7 +8332,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ListBillingSchedulesEndpointListBillingSchedulesResponseModel",
+                  "$ref": "#/components/schemas/ListBillingSchedulesResponse20240101",
                   "example": {
                     "items": [
                       {
@@ -8440,7 +8440,7 @@
                   }
                 },
                 "examples": {
-                  "ListBillingSchedulesEndpointListBillingSchedulesResponseModel": {
+                  "ListBillingSchedulesResponse20240101": {
                     "summary": "",
                     "value": {
                       "items": [
@@ -8981,58 +8981,6 @@
                     "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
                     "customerId": "cca32597-b6b0-4499-9669-128aef8702e4",
                     "status": "ACTIVE",
-                    "activeVersion": {
-                      "id": "499f5dde-9735-4f6f-9ca8-337071e562ee",
-                      "version": 1,
-                      "validityPeriod": {
-                        "startDate": "2022-01-01",
-                        "endDate": "2022-12-01"
-                      },
-                      "startDate": "2022-01-01",
-                      "endDate": "2022-12-01",
-                      "taxRates": [
-                        {
-                          "priceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                          "taxRateId": "50c0d53b-8460-41e6-b4e9-a4e157fc1a64"
-                        }
-                      ],
-                      "firstBillingDate": "2022-02-02",
-                      "autoIssueInvoices": false,
-                      "purchaseOrderNumber": "PO123",
-                      "reference": "ref",
-                      "label": "label",
-                      "recurrenceDayOfMonth": 1,
-                      "planId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                      "type": "PLAN"
-                    },
-                    "futureVersions": [
-                      {
-                        "id": "053e77bf-2a7a-4c3b-bd7f-689959d848a6",
-                        "version": 2,
-                        "validityPeriod": {
-                          "startDate": "2023-01-01",
-                          "endDate": "+999999999-12-31"
-                        },
-                        "startDate": "2022-01-01",
-                        "endDate": "2022-12-01",
-                        "taxRates": [
-                          {
-                            "priceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                            "taxRateId": "50c0d53b-8460-41e6-b4e9-a4e157fc1a64"
-                          }
-                        ],
-                        "firstBillingDate": "2022-02-02",
-                        "autoIssueInvoices": false,
-                        "purchaseOrderNumber": "PO123",
-                        "reference": "ref",
-                        "label": "label",
-                        "recurrenceDayOfMonth": 1,
-                        "priceIds": [
-                          "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
-                        ],
-                        "type": "CUSTOM"
-                      }
-                    ],
                     "startDate": "2022-01-01",
                     "endDate": "2022-12-01",
                     "taxRates": [
@@ -9092,7 +9040,7 @@
                       }
                     ],
                     "archivedAt": "2022-06-28T16:47:00Z",
-                    "rollUpBilling": false
+                    "rollUpBilling": true
                   }
                 },
                 "examples": {
@@ -9103,58 +9051,6 @@
                       "sequenceAccountId": "c4602d51-0fb4-4b48-b689-6ba28f540d1e",
                       "customerId": "cca32597-b6b0-4499-9669-128aef8702e4",
                       "status": "ACTIVE",
-                      "activeVersion": {
-                        "id": "499f5dde-9735-4f6f-9ca8-337071e562ee",
-                        "version": 1,
-                        "validityPeriod": {
-                          "startDate": "2022-01-01",
-                          "endDate": "2022-12-01"
-                        },
-                        "startDate": "2022-01-01",
-                        "endDate": "2022-12-01",
-                        "taxRates": [
-                          {
-                            "priceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                            "taxRateId": "50c0d53b-8460-41e6-b4e9-a4e157fc1a64"
-                          }
-                        ],
-                        "firstBillingDate": "2022-02-02",
-                        "autoIssueInvoices": false,
-                        "purchaseOrderNumber": "PO123",
-                        "reference": "ref",
-                        "label": "label",
-                        "recurrenceDayOfMonth": 1,
-                        "planId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-                        "type": "PLAN"
-                      },
-                      "futureVersions": [
-                        {
-                          "id": "053e77bf-2a7a-4c3b-bd7f-689959d848a6",
-                          "version": 2,
-                          "validityPeriod": {
-                            "startDate": "2023-01-01",
-                            "endDate": "+999999999-12-31"
-                          },
-                          "startDate": "2022-01-01",
-                          "endDate": "2022-12-01",
-                          "taxRates": [
-                            {
-                              "priceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                              "taxRateId": "50c0d53b-8460-41e6-b4e9-a4e157fc1a64"
-                            }
-                          ],
-                          "firstBillingDate": "2022-02-02",
-                          "autoIssueInvoices": false,
-                          "purchaseOrderNumber": "PO123",
-                          "reference": "ref",
-                          "label": "label",
-                          "recurrenceDayOfMonth": 1,
-                          "priceIds": [
-                            "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
-                          ],
-                          "type": "CUSTOM"
-                        }
-                      ],
                       "startDate": "2022-01-01",
                       "endDate": "2022-12-01",
                       "taxRates": [
@@ -9214,7 +9110,7 @@
                         }
                       ],
                       "archivedAt": "2022-06-28T16:47:00Z",
-                      "rollUpBilling": false
+                      "rollUpBilling": true
                     }
                   }
                 }
@@ -33318,6 +33214,7 @@
         "properties": {
           "restrictToPrices": {
             "type": "array",
+            "description": "Price IDs to which this discount applies",
             "example": [
               "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
             ],
@@ -33326,18 +33223,22 @@
             }
           },
           "type": {
+            "description": "Whether the discount is a nominal or percentage amount",
             "$ref": "#/components/schemas/DiscountCalculationType"
           },
           "amount": {
             "type": "number",
+            "description": "The discount amount",
             "example": 0.08
           },
           "message": {
             "type": "string",
+            "description": "The message to show on an invoice",
             "example": "8% Discount"
           },
           "separateLineItem": {
             "type": "boolean",
+            "description": "If true the discount will show as a separate line item on an invoice",
             "example": true
           }
         }
@@ -33356,6 +33257,7 @@
         "properties": {
           "restrictToPrices": {
             "type": "array",
+            "description": "Price IDs to which this minimum applies",
             "example": [
               "9fe9986b-e205-42b7-a58f-42845c91f03f"
             ],
@@ -33365,6 +33267,7 @@
           },
           "amount": {
             "type": "number",
+            "description": "The minimum amount",
             "example": 100
           }
         }
@@ -34013,149 +33916,7 @@
           }
         }
       },
-      "BillingScheduleResponseVersion": {
-        "required": [
-          "autoIssueInvoices",
-          "id",
-          "startDate",
-          "type",
-          "validityPeriod",
-          "version"
-        ],
-        "type": "object",
-        "description": "Active version",
-        "example": {
-          "id": "499f5dde-9735-4f6f-9ca8-337071e562ee",
-          "version": 1,
-          "validityPeriod": {
-            "startDate": "2022-01-01",
-            "endDate": "2022-12-01"
-          },
-          "startDate": "2022-01-01",
-          "endDate": "2022-12-01",
-          "taxRates": [
-            {
-              "priceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-              "taxRateId": "50c0d53b-8460-41e6-b4e9-a4e157fc1a64"
-            }
-          ],
-          "firstBillingDate": "2022-02-02",
-          "autoIssueInvoices": false,
-          "purchaseOrderNumber": "PO123",
-          "reference": "ref",
-          "label": "label",
-          "recurrenceDayOfMonth": 1,
-          "planId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-          "type": "PLAN"
-        },
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "Version ID",
-            "example": "499f5dde-9735-4f6f-9ca8-337071e562ee"
-          },
-          "version": {
-            "type": "integer",
-            "description": "Version number",
-            "format": "int64",
-            "example": 1
-          },
-          "validityPeriod": {
-            "$ref": "#/components/schemas/DateRange"
-          },
-          "startDate": {
-            "type": "string",
-            "description": "Start date",
-            "format": "date",
-            "example": "2022-01-01"
-          },
-          "endDate": {
-            "type": "string",
-            "description": "End date",
-            "format": "date",
-            "example": "2022-12-01"
-          },
-          "taxRates": {
-            "type": "array",
-            "description": "Tax Rate for each Product",
-            "example": [
-              {
-                "priceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                "taxRateId": "50c0d53b-8460-41e6-b4e9-a4e157fc1a64"
-              }
-            ],
-            "items": {
-              "$ref": "#/components/schemas/ProductTaxRateRepresentation"
-            }
-          },
-          "firstBillingDate": {
-            "type": "string",
-            "description": "First billing date",
-            "format": "date",
-            "example": "2022-02-02"
-          },
-          "autoIssueInvoices": {
-            "type": "boolean",
-            "description": "Auto-issue invoices for this billing schedule",
-            "example": false
-          },
-          "purchaseOrderNumber": {
-            "type": "string",
-            "description": "Optional purchase order number to be added to invoices",
-            "example": "PO123"
-          },
-          "reference": {
-            "type": "string",
-            "description": "Optional reference to be added to invoices",
-            "example": "ref"
-          },
-          "label": {
-            "type": "string",
-            "description": "Optional label",
-            "example": "label"
-          },
-          "recurrenceDayOfMonth": {
-            "type": "integer",
-            "description": "Recurrence day of month",
-            "format": "int32",
-            "example": 1
-          },
-          "planId": {
-            "type": "string",
-            "description": "Plan ID",
-            "example": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
-          },
-          "type": {
-            "description": "Billing schedule type",
-            "$ref": "#/components/schemas/BillingScheduleType"
-          }
-        }
-      },
-      "DateRange": {
-        "required": [
-          "endDate",
-          "startDate"
-        ],
-        "type": "object",
-        "description": "Validity period",
-        "example": {
-          "startDate": "2022-01-01",
-          "endDate": "2022-12-01"
-        },
-        "properties": {
-          "startDate": {
-            "type": "string",
-            "format": "date",
-            "example": "2022-01-01"
-          },
-          "endDate": {
-            "type": "string",
-            "format": "date",
-            "example": "2022-12-01"
-          }
-        }
-      },
-      "ListBillingSchedulesEndpointListBillingSchedulesResponseModel": {
+      "ListBillingSchedulesResponse20240101": {
         "required": [
           "items",
           "pagination"
@@ -40273,7 +40034,7 @@
             "example": "2022-10-24T00:00:00Z"
           },
           "servicePeriod": {
-            "$ref": "#/components/schemas/DateRange1"
+            "$ref": "#/components/schemas/DateRange"
           },
           "groupId": {
             "type": "string",
@@ -40313,7 +40074,7 @@
           }
         }
       },
-      "DateRange1": {
+      "DateRange": {
         "required": [
           "endDate",
           "startDate"
@@ -40467,7 +40228,7 @@
             "example": "2022-10-24T00:00:00Z"
           },
           "servicePeriod": {
-            "$ref": "#/components/schemas/DateRange1"
+            "$ref": "#/components/schemas/DateRange"
           },
           "index": {
             "type": "integer",
