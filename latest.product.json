@@ -30884,10 +30884,12 @@
         "properties": {
           "parameterId": {
             "type": "string",
+            "description": "Custom metric parameter ID",
             "example": "94703530-1293-479b-bd37-ccad42fd9c8b"
           },
           "value": {
             "type": "string",
+            "description": "Parameter value",
             "example": "10"
           }
         }
