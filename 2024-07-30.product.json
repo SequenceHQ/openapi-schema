@@ -15695,7 +15695,7 @@
           {
             "name": "invoicePaymentStatus",
             "in": "query",
-            "description": "Filter by payment status. Options: UNPAID, PARTIALLY_PAID, PAID, UNCOLLECTIBLE, FAILED",
+            "description": "Filter by payment status. Options: UNPAID, PARTIALLY_PAID, PAID, UNCOLLECTIBLE",
             "required": false,
             "schema": {
               "type": "string"
@@ -41067,8 +41067,7 @@
           "UNPAID",
           "PARTIALLY_PAID",
           "PAID",
-          "UNCOLLECTIBLE",
-          "FAILED"
+          "UNCOLLECTIBLE"
         ]
       },
       "LinkInfo": {
