@@ -27903,6 +27903,7 @@
           "createdAt",
           "email",
           "id",
+          "name",
           "updatedAt"
         ],
         "type": "object",
