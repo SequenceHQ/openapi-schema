@@ -16203,7 +16203,8 @@
                           }
                         ],
                         "archivedAt": "2022-06-28T16:47:00Z",
-                        "rollUpBilling": false
+                        "rollUpBilling": false,
+                        "integrationIds": []
                       }
                     ],
                     "pagination": {
@@ -16312,7 +16313,8 @@
                             }
                           ],
                           "archivedAt": "2022-06-28T16:47:00Z",
-                          "rollUpBilling": false
+                          "rollUpBilling": false,
+                          "integrationIds": []
                         }
                       ],
                       "pagination": {
@@ -16831,7 +16833,15 @@
                       }
                     ],
                     "archivedAt": "2022-06-28T16:47:00Z",
-                    "rollUpBilling": true
+                    "rollUpBilling": true,
+                    "integrationIds": [
+                      {
+                        "service": "Salesforce",
+                        "id": "a0CQy00000Ipz5VMAR",
+                        "lastSynced": "2024-08-14T17:14:17Z",
+                        "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                      }
+                    ]
                   }
                 },
                 "examples": {
@@ -16901,7 +16911,15 @@
                         }
                       ],
                       "archivedAt": "2022-06-28T16:47:00Z",
-                      "rollUpBilling": true
+                      "rollUpBilling": true,
+                      "integrationIds": [
+                        {
+                          "service": "Salesforce",
+                          "id": "a0CQy00000Ipz5VMAR",
+                          "lastSynced": "2024-08-14T17:14:17Z",
+                          "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                        }
+                      ]
                     }
                   }
                 }
@@ -17121,7 +17139,15 @@
                       }
                     ],
                     "archivedAt": "2022-06-28T16:47:00Z",
-                    "rollUpBilling": true
+                    "rollUpBilling": true,
+                    "integrationIds": [
+                      {
+                        "service": "Salesforce",
+                        "id": "a0CQy00000Ipz5VMAR",
+                        "lastSynced": "2024-08-14T17:14:17Z",
+                        "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                      }
+                    ]
                   }
                 },
                 "examples": {
@@ -17191,7 +17217,15 @@
                         }
                       ],
                       "archivedAt": "2022-06-28T16:47:00Z",
-                      "rollUpBilling": true
+                      "rollUpBilling": true,
+                      "integrationIds": [
+                        {
+                          "service": "Salesforce",
+                          "id": "a0CQy00000Ipz5VMAR",
+                          "lastSynced": "2024-08-14T17:14:17Z",
+                          "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                        }
+                      ]
                     }
                   }
                 }
@@ -17317,7 +17351,15 @@
                       }
                     ],
                     "archivedAt": "2022-06-28T16:47:00Z",
-                    "rollUpBilling": true
+                    "rollUpBilling": true,
+                    "integrationIds": [
+                      {
+                        "service": "Salesforce",
+                        "id": "a0CQy00000Ipz5VMAR",
+                        "lastSynced": "2024-08-14T17:14:17Z",
+                        "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                      }
+                    ]
                   }
                 },
                 "examples": {
@@ -17387,7 +17429,15 @@
                         }
                       ],
                       "archivedAt": "2022-06-28T16:47:00Z",
-                      "rollUpBilling": true
+                      "rollUpBilling": true,
+                      "integrationIds": [
+                        {
+                          "service": "Salesforce",
+                          "id": "a0CQy00000Ipz5VMAR",
+                          "lastSynced": "2024-08-14T17:14:17Z",
+                          "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                        }
+                      ]
                     }
                   }
                 }
@@ -17522,7 +17572,15 @@
                       }
                     ],
                     "archivedAt": "2022-06-28T16:47:00Z",
-                    "rollUpBilling": true
+                    "rollUpBilling": true,
+                    "integrationIds": [
+                      {
+                        "service": "Salesforce",
+                        "id": "a0CQy00000Ipz5VMAR",
+                        "lastSynced": "2024-08-14T17:14:17Z",
+                        "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                      }
+                    ]
                   }
                 },
                 "examples": {
@@ -17592,7 +17650,15 @@
                         }
                       ],
                       "archivedAt": "2022-06-28T16:47:00Z",
-                      "rollUpBilling": true
+                      "rollUpBilling": true,
+                      "integrationIds": [
+                        {
+                          "service": "Salesforce",
+                          "id": "a0CQy00000Ipz5VMAR",
+                          "lastSynced": "2024-08-14T17:14:17Z",
+                          "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                        }
+                      ]
                     }
                   }
                 }
@@ -42038,6 +42104,7 @@
           "createdAt",
           "customerId",
           "id",
+          "integrationIds",
           "phases",
           "priceIds",
           "prices",
@@ -42113,7 +42180,15 @@
             }
           ],
           "archivedAt": "2022-06-28T16:47:00Z",
-          "rollUpBilling": true
+          "rollUpBilling": true,
+          "integrationIds": [
+            {
+              "service": "Salesforce",
+              "id": "a0CQy00000Ipz5VMAR",
+              "lastSynced": "2024-08-14T17:14:17Z",
+              "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+            }
+          ]
         },
         "properties": {
           "id": {
@@ -42281,6 +42356,21 @@
             "type": "boolean",
             "description": "Roll up billing",
             "example": true
+          },
+          "integrationIds": {
+            "type": "array",
+            "description": "External services which are linked to this customer",
+            "example": [
+              {
+                "service": "Salesforce",
+                "id": "a0CQy00000Ipz5VMAR",
+                "lastSynced": "2024-08-14T17:14:17Z",
+                "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/IntegrationId1"
+            }
           }
         }
       },
@@ -42386,7 +42476,8 @@
                 }
               ],
               "archivedAt": "2022-06-28T16:47:00Z",
-              "rollUpBilling": false
+              "rollUpBilling": false,
+              "integrationIds": []
             }
           ],
           "pagination": {
@@ -42494,7 +42585,8 @@
                   }
                 ],
                 "archivedAt": "2022-06-28T16:47:00Z",
-                "rollUpBilling": false
+                "rollUpBilling": false,
+                "integrationIds": []
               }
             ],
             "items": {
