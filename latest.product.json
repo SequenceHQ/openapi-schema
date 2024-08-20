@@ -17708,7 +17708,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ListResponseModel",
+                  "$ref": "#/components/schemas/Stable20240509ListResponseModel",
                   "example": {
                     "items": [
                       {
@@ -17727,7 +17727,7 @@
                   }
                 },
                 "examples": {
-                  "ListResponseModel": {
+                  "Stable20240509ListResponseModel": {
                     "summary": "",
                     "value": {
                       "items": [
@@ -17798,14 +17798,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProductRequest",
+                "$ref": "#/components/schemas/Stable20240509ProductRequest",
                 "example": {
                   "name": "Fixed priced product",
                   "label": "Fixed priced product - UK"
                 }
               },
               "examples": {
-                "ProductRequest": {
+                "Stable20240509ProductRequest": {
                   "summary": "",
                   "value": {
                     "name": "Fixed priced product",
@@ -17823,7 +17823,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ProductResponse",
+                  "$ref": "#/components/schemas/Stable20240509ProductResponse",
                   "example": {
                     "id": "994d23f7-47b6-43ee-af6b-cd27181196b6",
                     "name": "Fixed priced product",
@@ -17833,7 +17833,7 @@
                   }
                 },
                 "examples": {
-                  "ProductResponse": {
+                  "Stable20240509ProductResponse": {
                     "summary": "",
                     "value": {
                       "id": "994d23f7-47b6-43ee-af6b-cd27181196b6",
@@ -17910,7 +17910,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ProductResponse",
+                  "$ref": "#/components/schemas/Stable20240509ProductResponse",
                   "example": {
                     "id": "994d23f7-47b6-43ee-af6b-cd27181196b6",
                     "name": "Fixed priced product",
@@ -17920,7 +17920,7 @@
                   }
                 },
                 "examples": {
-                  "ProductResponse": {
+                  "Stable20240509ProductResponse": {
                     "summary": "",
                     "value": {
                       "id": "994d23f7-47b6-43ee-af6b-cd27181196b6",
@@ -18016,7 +18016,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ProductResponse",
+                  "$ref": "#/components/schemas/Stable20240509ProductResponse",
                   "example": {
                     "id": "994d23f7-47b6-43ee-af6b-cd27181196b6",
                     "name": "Fixed priced product",
@@ -18026,7 +18026,7 @@
                   }
                 },
                 "examples": {
-                  "ProductResponse": {
+                  "Stable20240509ProductResponse": {
                     "summary": "",
                     "value": {
                       "id": "994d23f7-47b6-43ee-af6b-cd27181196b6",
@@ -18103,7 +18103,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ProductResponse",
+                  "$ref": "#/components/schemas/Stable20240509ProductResponse",
                   "example": {
                     "id": "994d23f7-47b6-43ee-af6b-cd27181196b6",
                     "name": "Fixed priced product",
@@ -18114,7 +18114,7 @@
                   }
                 },
                 "examples": {
-                  "ProductResponse": {
+                  "Stable20240509ProductResponse": {
                     "summary": "",
                     "value": {
                       "id": "994d23f7-47b6-43ee-af6b-cd27181196b6",
@@ -42141,7 +42141,7 @@
           "SEAT_BASED"
         ]
       },
-      "ProductRequest": {
+      "Stable20240509ProductRequest": {
         "required": [
           "name"
         ],
@@ -42163,7 +42163,7 @@
           }
         }
       },
-      "ProductResponse": {
+      "Stable20240509ProductResponse": {
         "required": [
           "createdAt",
           "id",
@@ -42228,7 +42228,7 @@
           }
         }
       },
-      "ListResponseModel": {
+      "Stable20240509ListResponseModel": {
         "required": [
           "items",
           "pagination"
@@ -42264,7 +42264,7 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/ProductResponse"
+              "$ref": "#/components/schemas/Stable20240509ProductResponse"
             }
           },
           "pagination": {
