@@ -17991,14 +17991,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateProductEndpointUpdateProductRequestModel",
+                "$ref": "#/components/schemas/Stable20240509ProductRequest",
                 "example": {
                   "name": "Fixed priced product",
                   "label": "Fixed priced product - UK"
                 }
               },
               "examples": {
-                "UpdateProductEndpointUpdateProductRequestModel": {
+                "Stable20240509ProductRequest": {
                   "summary": "",
                   "value": {
                     "name": "Fixed priced product",
@@ -41173,28 +41173,6 @@
             "type": "string",
             "description": "Time at which the Product was last updated, in ISO 8601 format (UTC). Expect millisecond precision.",
             "example": "2022-06-28T16:47:00Z"
-          }
-        }
-      },
-      "UpdateProductEndpointUpdateProductRequestModel": {
-        "required": [
-          "name"
-        ],
-        "type": "object",
-        "example": {
-          "name": "Fixed priced product",
-          "label": "Fixed priced product - UK"
-        },
-        "properties": {
-          "name": {
-            "type": "string",
-            "description": "The customer-facing name of this Product",
-            "example": "Fixed priced product"
-          },
-          "label": {
-            "type": "string",
-            "description": "The internal descriptive name of this item",
-            "example": "Fixed priced product - UK"
           }
         }
       },
