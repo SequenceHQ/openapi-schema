@@ -16204,7 +16204,19 @@
                         ],
                         "archivedAt": "2022-06-28T16:47:00Z",
                         "rollUpBilling": false,
-                        "integrationIds": []
+                        "integrationIds": [],
+                        "attachmentAssets": [
+                          {
+                            "id": "e007e884-5100-4183-8355-4771865cb4dd",
+                            "createdBy": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                            "type": "IMAGE",
+                            "format": "PNG",
+                            "fileName": "my-image.png",
+                            "fileSizeBytes": 12345,
+                            "url": "https://assets.sequencehq.com/018f9ad5-4192-76d7-aea5-d80a9018eded/images/e007e884-5100-4183-8355-4771865cb4dd.png",
+                            "createdAt": "2022-06-28T16:47:00Z"
+                          }
+                        ]
                       }
                     ],
                     "pagination": {
@@ -16314,7 +16326,19 @@
                           ],
                           "archivedAt": "2022-06-28T16:47:00Z",
                           "rollUpBilling": false,
-                          "integrationIds": []
+                          "integrationIds": [],
+                          "attachmentAssets": [
+                            {
+                              "id": "e007e884-5100-4183-8355-4771865cb4dd",
+                              "createdBy": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                              "type": "IMAGE",
+                              "format": "PNG",
+                              "fileName": "my-image.png",
+                              "fileSizeBytes": 12345,
+                              "url": "https://assets.sequencehq.com/018f9ad5-4192-76d7-aea5-d80a9018eded/images/e007e884-5100-4183-8355-4771865cb4dd.png",
+                              "createdAt": "2022-06-28T16:47:00Z"
+                            }
+                          ]
                         }
                       ],
                       "pagination": {
@@ -16841,6 +16865,18 @@
                         "lastSynced": "2024-08-14T17:14:17Z",
                         "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
                       }
+                    ],
+                    "attachmentAssets": [
+                      {
+                        "id": "e007e884-5100-4183-8355-4771865cb4dd",
+                        "createdBy": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                        "type": "IMAGE",
+                        "format": "PNG",
+                        "fileName": "my-image.png",
+                        "fileSizeBytes": 12345,
+                        "url": "https://assets.sequencehq.com/018f9ad5-4192-76d7-aea5-d80a9018eded/images/e007e884-5100-4183-8355-4771865cb4dd.png",
+                        "createdAt": "2022-06-28T16:47:00Z"
+                      }
                     ]
                   }
                 },
@@ -16918,6 +16954,18 @@
                           "id": "a0CQy00000Ipz5VMAR",
                           "lastSynced": "2024-08-14T17:14:17Z",
                           "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                        }
+                      ],
+                      "attachmentAssets": [
+                        {
+                          "id": "e007e884-5100-4183-8355-4771865cb4dd",
+                          "createdBy": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                          "type": "IMAGE",
+                          "format": "PNG",
+                          "fileName": "my-image.png",
+                          "fileSizeBytes": 12345,
+                          "url": "https://assets.sequencehq.com/018f9ad5-4192-76d7-aea5-d80a9018eded/images/e007e884-5100-4183-8355-4771865cb4dd.png",
+                          "createdAt": "2022-06-28T16:47:00Z"
                         }
                       ]
                     }
@@ -17156,6 +17204,18 @@
                         "lastSynced": "2024-08-14T17:14:17Z",
                         "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
                       }
+                    ],
+                    "attachmentAssets": [
+                      {
+                        "id": "e007e884-5100-4183-8355-4771865cb4dd",
+                        "createdBy": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                        "type": "IMAGE",
+                        "format": "PNG",
+                        "fileName": "my-image.png",
+                        "fileSizeBytes": 12345,
+                        "url": "https://assets.sequencehq.com/018f9ad5-4192-76d7-aea5-d80a9018eded/images/e007e884-5100-4183-8355-4771865cb4dd.png",
+                        "createdAt": "2022-06-28T16:47:00Z"
+                      }
                     ]
                   }
                 },
@@ -17233,6 +17293,18 @@
                           "id": "a0CQy00000Ipz5VMAR",
                           "lastSynced": "2024-08-14T17:14:17Z",
                           "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                        }
+                      ],
+                      "attachmentAssets": [
+                        {
+                          "id": "e007e884-5100-4183-8355-4771865cb4dd",
+                          "createdBy": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                          "type": "IMAGE",
+                          "format": "PNG",
+                          "fileName": "my-image.png",
+                          "fileSizeBytes": 12345,
+                          "url": "https://assets.sequencehq.com/018f9ad5-4192-76d7-aea5-d80a9018eded/images/e007e884-5100-4183-8355-4771865cb4dd.png",
+                          "createdAt": "2022-06-28T16:47:00Z"
                         }
                       ]
                     }
@@ -17368,6 +17440,18 @@
                         "lastSynced": "2024-08-14T17:14:17Z",
                         "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
                       }
+                    ],
+                    "attachmentAssets": [
+                      {
+                        "id": "e007e884-5100-4183-8355-4771865cb4dd",
+                        "createdBy": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                        "type": "IMAGE",
+                        "format": "PNG",
+                        "fileName": "my-image.png",
+                        "fileSizeBytes": 12345,
+                        "url": "https://assets.sequencehq.com/018f9ad5-4192-76d7-aea5-d80a9018eded/images/e007e884-5100-4183-8355-4771865cb4dd.png",
+                        "createdAt": "2022-06-28T16:47:00Z"
+                      }
                     ]
                   }
                 },
@@ -17445,6 +17529,18 @@
                           "id": "a0CQy00000Ipz5VMAR",
                           "lastSynced": "2024-08-14T17:14:17Z",
                           "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                        }
+                      ],
+                      "attachmentAssets": [
+                        {
+                          "id": "e007e884-5100-4183-8355-4771865cb4dd",
+                          "createdBy": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                          "type": "IMAGE",
+                          "format": "PNG",
+                          "fileName": "my-image.png",
+                          "fileSizeBytes": 12345,
+                          "url": "https://assets.sequencehq.com/018f9ad5-4192-76d7-aea5-d80a9018eded/images/e007e884-5100-4183-8355-4771865cb4dd.png",
+                          "createdAt": "2022-06-28T16:47:00Z"
                         }
                       ]
                     }
@@ -17589,6 +17685,18 @@
                         "lastSynced": "2024-08-14T17:14:17Z",
                         "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
                       }
+                    ],
+                    "attachmentAssets": [
+                      {
+                        "id": "e007e884-5100-4183-8355-4771865cb4dd",
+                        "createdBy": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                        "type": "IMAGE",
+                        "format": "PNG",
+                        "fileName": "my-image.png",
+                        "fileSizeBytes": 12345,
+                        "url": "https://assets.sequencehq.com/018f9ad5-4192-76d7-aea5-d80a9018eded/images/e007e884-5100-4183-8355-4771865cb4dd.png",
+                        "createdAt": "2022-06-28T16:47:00Z"
+                      }
                     ]
                   }
                 },
@@ -17666,6 +17774,18 @@
                           "id": "a0CQy00000Ipz5VMAR",
                           "lastSynced": "2024-08-14T17:14:17Z",
                           "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                        }
+                      ],
+                      "attachmentAssets": [
+                        {
+                          "id": "e007e884-5100-4183-8355-4771865cb4dd",
+                          "createdBy": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                          "type": "IMAGE",
+                          "format": "PNG",
+                          "fileName": "my-image.png",
+                          "fileSizeBytes": 12345,
+                          "url": "https://assets.sequencehq.com/018f9ad5-4192-76d7-aea5-d80a9018eded/images/e007e884-5100-4183-8355-4771865cb4dd.png",
+                          "createdAt": "2022-06-28T16:47:00Z"
                         }
                       ]
                     }
@@ -41103,6 +41223,7 @@
       },
       "BillingScheduleResponse": {
         "required": [
+          "attachmentAssets",
           "autoIssueInvoices",
           "createdAt",
           "customerId",
@@ -41190,6 +41311,18 @@
               "id": "a0CQy00000Ipz5VMAR",
               "lastSynced": "2024-08-14T17:14:17Z",
               "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+            }
+          ],
+          "attachmentAssets": [
+            {
+              "id": "e007e884-5100-4183-8355-4771865cb4dd",
+              "createdBy": "94703530-1293-479b-bd37-ccad42fd9c8b",
+              "type": "IMAGE",
+              "format": "PNG",
+              "fileName": "my-image.png",
+              "fileSizeBytes": 12345,
+              "url": "https://assets.sequencehq.com/018f9ad5-4192-76d7-aea5-d80a9018eded/images/e007e884-5100-4183-8355-4771865cb4dd.png",
+              "createdAt": "2022-06-28T16:47:00Z"
             }
           ]
         },
@@ -41374,8 +41507,108 @@
             "items": {
               "$ref": "#/components/schemas/IntegrationId1"
             }
+          },
+          "attachmentAssets": {
+            "type": "array",
+            "description": "Assets attached to this billing schedule",
+            "example": [
+              {
+                "id": "e007e884-5100-4183-8355-4771865cb4dd",
+                "createdBy": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                "type": "IMAGE",
+                "format": "PNG",
+                "fileName": "my-image.png",
+                "fileSizeBytes": 12345,
+                "url": "https://assets.sequencehq.com/018f9ad5-4192-76d7-aea5-d80a9018eded/images/e007e884-5100-4183-8355-4771865cb4dd.png",
+                "createdAt": "2022-06-28T16:47:00Z"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/AssetResponse"
+            }
           }
         }
+      },
+      "AssetResponse": {
+        "required": [
+          "createdAt",
+          "createdBy",
+          "fileName",
+          "fileSizeBytes",
+          "format",
+          "id",
+          "type",
+          "url"
+        ],
+        "type": "object",
+        "example": {
+          "id": "e007e884-5100-4183-8355-4771865cb4dd",
+          "createdBy": "94703530-1293-479b-bd37-ccad42fd9c8b",
+          "type": "IMAGE",
+          "format": "PNG",
+          "fileName": "my-image.png",
+          "fileSizeBytes": 12345,
+          "url": "https://assets.sequencehq.com/018f9ad5-4192-76d7-aea5-d80a9018eded/images/e007e884-5100-4183-8355-4771865cb4dd.png",
+          "createdAt": "2022-06-28T16:47:00Z"
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique ID",
+            "example": "e007e884-5100-4183-8355-4771865cb4dd"
+          },
+          "createdBy": {
+            "type": "string",
+            "description": "The Sequence user who created this asset",
+            "example": "94703530-1293-479b-bd37-ccad42fd9c8b"
+          },
+          "type": {
+            "description": "Either image or document",
+            "$ref": "#/components/schemas/AssetType"
+          },
+          "format": {
+            "description": "Identifies the intended data format. Allowed formats are: jpg, jpeg, png, and pdf",
+            "$ref": "#/components/schemas/AssetFormat"
+          },
+          "fileName": {
+            "type": "string",
+            "description": "Filename of the uploaded file",
+            "example": "my-image.png"
+          },
+          "fileSizeBytes": {
+            "type": "integer",
+            "description": "Size of the uploaded file in bytes",
+            "format": "int32",
+            "example": 12345
+          },
+          "url": {
+            "type": "string",
+            "description": "URL to download the asset",
+            "example": "https://assets.sequencehq.com/018f9ad5-4192-76d7-aea5-d80a9018eded/images/e007e884-5100-4183-8355-4771865cb4dd.png"
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "Creation timestamp. Formatted as an ISO 8601 timestamp.",
+            "example": "2022-06-28T16:47:00Z"
+          }
+        }
+      },
+      "AssetType": {
+        "type": "string",
+        "example": "IMAGE",
+        "enum": [
+          "IMAGE",
+          "DOCUMENT"
+        ]
+      },
+      "AssetFormat": {
+        "type": "string",
+        "example": "PNG",
+        "enum": [
+          "JPEG",
+          "PNG",
+          "PDF"
+        ]
       },
       "ListBillingSchedulesResponse20240101": {
         "required": [
@@ -41480,7 +41713,19 @@
               ],
               "archivedAt": "2022-06-28T16:47:00Z",
               "rollUpBilling": false,
-              "integrationIds": []
+              "integrationIds": [],
+              "attachmentAssets": [
+                {
+                  "id": "e007e884-5100-4183-8355-4771865cb4dd",
+                  "createdBy": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                  "type": "IMAGE",
+                  "format": "PNG",
+                  "fileName": "my-image.png",
+                  "fileSizeBytes": 12345,
+                  "url": "https://assets.sequencehq.com/018f9ad5-4192-76d7-aea5-d80a9018eded/images/e007e884-5100-4183-8355-4771865cb4dd.png",
+                  "createdAt": "2022-06-28T16:47:00Z"
+                }
+              ]
             }
           ],
           "pagination": {
@@ -41589,7 +41834,19 @@
                 ],
                 "archivedAt": "2022-06-28T16:47:00Z",
                 "rollUpBilling": false,
-                "integrationIds": []
+                "integrationIds": [],
+                "attachmentAssets": [
+                  {
+                    "id": "e007e884-5100-4183-8355-4771865cb4dd",
+                    "createdBy": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                    "type": "IMAGE",
+                    "format": "PNG",
+                    "fileName": "my-image.png",
+                    "fileSizeBytes": 12345,
+                    "url": "https://assets.sequencehq.com/018f9ad5-4192-76d7-aea5-d80a9018eded/images/e007e884-5100-4183-8355-4771865cb4dd.png",
+                    "createdAt": "2022-06-28T16:47:00Z"
+                  }
+                ]
               }
             ],
             "items": {
