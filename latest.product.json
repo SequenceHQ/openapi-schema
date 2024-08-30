@@ -16852,6 +16852,9 @@
                       "discounts": [],
                       "minimums": []
                     }
+                  ],
+                  "attachmentAssetIds": [
+                    "5055cd17-d5e8-4286-bddf-79729ddabf51"
                   ]
                 }
               },
@@ -16881,6 +16884,9 @@
                         "discounts": [],
                         "minimums": []
                       }
+                    ],
+                    "attachmentAssetIds": [
+                      "5055cd17-d5e8-4286-bddf-79729ddabf51"
                     ]
                   }
                 }
@@ -40771,6 +40777,9 @@
               "discounts": [],
               "minimums": []
             }
+          ],
+          "attachmentAssetIds": [
+            "5055cd17-d5e8-4286-bddf-79729ddabf51"
           ]
         },
         "properties": {
@@ -40836,6 +40845,16 @@
             ],
             "items": {
               "$ref": "#/components/schemas/PhaseRequest"
+            }
+          },
+          "attachmentAssetIds": {
+            "type": "array",
+            "description": "IDs of assets that are attached to this schedule",
+            "example": [
+              "5055cd17-d5e8-4286-bddf-79729ddabf51"
+            ],
+            "items": {
+              "type": "string"
             }
           }
         }

@@ -17000,6 +17000,9 @@
                   "rollUpBilling": false,
                   "priceIds": [
                     "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+                  ],
+                  "attachmentAssetIds": [
+                    "5055cd17-d5e8-4286-bddf-79729ddabf51"
                   ]
                 },
                 "oneOf": [
@@ -17031,6 +17034,9 @@
                     "rollUpBilling": false,
                     "priceIds": [
                       "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+                    ],
+                    "attachmentAssetIds": [
+                      "5055cd17-d5e8-4286-bddf-79729ddabf51"
                     ]
                   }
                 },
@@ -17060,6 +17066,9 @@
                         "discounts": [],
                         "minimums": []
                       }
+                    ],
+                    "attachmentAssetIds": [
+                      "5055cd17-d5e8-4286-bddf-79729ddabf51"
                     ]
                   }
                 }
@@ -40899,6 +40908,9 @@
           "rollUpBilling": false,
           "priceIds": [
             "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
+          ],
+          "attachmentAssetIds": [
+            "5055cd17-d5e8-4286-bddf-79729ddabf51"
           ]
         },
         "properties": {
@@ -40959,6 +40971,15 @@
             "items": {
               "type": "string"
             }
+          },
+          "attachmentAssetIds": {
+            "type": "array",
+            "example": [
+              "5055cd17-d5e8-4286-bddf-79729ddabf51"
+            ],
+            "items": {
+              "type": "string"
+            }
           }
         }
       },
@@ -41003,6 +41024,9 @@
               "discounts": [],
               "minimums": []
             }
+          ],
+          "attachmentAssetIds": [
+            "5055cd17-d5e8-4286-bddf-79729ddabf51"
           ]
         },
         "properties": {
@@ -41064,6 +41088,15 @@
             ],
             "items": {
               "$ref": "#/components/schemas/PhaseRequest"
+            }
+          },
+          "attachmentAssetIds": {
+            "type": "array",
+            "example": [
+              "5055cd17-d5e8-4286-bddf-79729ddabf51"
+            ],
+            "items": {
+              "type": "string"
             }
           }
         }
