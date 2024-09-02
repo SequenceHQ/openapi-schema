@@ -3391,7 +3391,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateOrUpdateLineItemRequestModel",
+                "$ref": "#/components/schemas/LatestCreateOrUpdateLineItem",
                 "example": {
                   "title": "Ferraris",
                   "description": "Red",
@@ -3414,11 +3414,12 @@
                     }
                   ],
                   "revenueClassification": "EARNED",
-                  "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+                  "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+                  "taxCategoryId": "01919964-f751-7b04-bb91-a854167911b9"
                 }
               },
               "examples": {
-                "CreateOrUpdateLineItemRequestModel": {
+                "LatestCreateOrUpdateLineItem": {
                   "summary": "",
                   "value": {
                     "title": "Ferraris",
@@ -3442,7 +3443,8 @@
                       }
                     ],
                     "revenueClassification": "EARNED",
-                    "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+                    "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+                    "taxCategoryId": "01919964-f751-7b04-bb91-a854167911b9"
                   }
                 }
               }
@@ -3456,7 +3458,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/LineItemResponseModel",
+                  "$ref": "#/components/schemas/LatestLineItemResponse",
                   "example": {
                     "id": "af60cab3-812d-4250-a051-0fb7133a00c7",
                     "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
@@ -3485,11 +3487,12 @@
                       }
                     ],
                     "revenueClassification": "EARNED",
-                    "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+                    "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+                    "taxCategoryId": "01919964-f751-7b04-bb91-a854167911b9"
                   }
                 },
                 "examples": {
-                  "LineItemResponseModel": {
+                  "LatestLineItemResponse": {
                     "summary": "",
                     "value": {
                       "id": "af60cab3-812d-4250-a051-0fb7133a00c7",
@@ -3519,7 +3522,8 @@
                         }
                       ],
                       "revenueClassification": "EARNED",
-                      "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+                      "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+                      "taxCategoryId": "01919964-f751-7b04-bb91-a854167911b9"
                     }
                   }
                 }
@@ -3532,6 +3536,10 @@
           },
           "401": {
             "description": "Unauthorized",
+            "content": {}
+          },
+          "404": {
+            "description": "Not Found",
             "content": {}
           },
           "500": {
@@ -5541,8 +5549,8 @@
         "tags": [
           "Invoice Line Items"
         ],
-        "summary": "Update a Line Item",
-        "description": "Update a Line Item",
+        "summary": "Create a new Line Item",
+        "description": "Create a new Line Item",
         "operationId": "putInvoicesByInvoiceLineItemsById",
         "parameters": [
           {
@@ -5589,7 +5597,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateOrUpdateLineItemRequestModel",
+                "$ref": "#/components/schemas/Stable20240101CreateOrUpdateLineItem",
                 "example": {
                   "title": "Ferraris",
                   "description": "Red",
@@ -5602,6 +5610,7 @@
                     "startDate": "2022-10-20",
                     "endDate": "2022-10-24"
                   },
+                  "groupId": "cd11218d-fa00-4faa-8684-a43113d076a8",
                   "priceId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
                   "rateDisplay": "ABSOLUTE",
                   "externalIds": [
@@ -5609,11 +5618,13 @@
                       "key": "Xero",
                       "value": "123"
                     }
-                  ]
+                  ],
+                  "revenueClassification": "EARNED",
+                  "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
                 }
               },
               "examples": {
-                "CreateOrUpdateLineItemRequestModel": {
+                "Stable20240101CreateOrUpdateLineItem": {
                   "summary": "",
                   "value": {
                     "title": "Ferraris",
@@ -5627,6 +5638,7 @@
                       "startDate": "2022-10-20",
                       "endDate": "2022-10-24"
                     },
+                    "groupId": "cd11218d-fa00-4faa-8684-a43113d076a8",
                     "priceId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
                     "rateDisplay": "ABSOLUTE",
                     "externalIds": [
@@ -5634,7 +5646,9 @@
                         "key": "Xero",
                         "value": "123"
                       }
-                    ]
+                    ],
+                    "revenueClassification": "EARNED",
+                    "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
                   }
                 }
               }
@@ -5648,7 +5662,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/LineItemResponseModel",
+                  "$ref": "#/components/schemas/Stable20240101LineItemResponse",
                   "example": {
                     "id": "af60cab3-812d-4250-a051-0fb7133a00c7",
                     "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
@@ -5681,7 +5695,7 @@
                   }
                 },
                 "examples": {
-                  "LineItemResponseModel": {
+                  "Stable20240101LineItemResponse": {
                     "summary": "",
                     "value": {
                       "id": "af60cab3-812d-4250-a051-0fb7133a00c7",
@@ -5726,6 +5740,10 @@
             "description": "Unauthorized",
             "content": {}
           },
+          "404": {
+            "description": "Not Found",
+            "content": {}
+          },
           "500": {
             "description": "Internal Server Error",
             "content": {}
@@ -5736,8 +5754,8 @@
         "tags": [
           "Invoice Line Items"
         ],
-        "summary": "Delete a Line Item",
-        "description": "Delete a Line Item",
+        "summary": "Deletes a Line Item",
+        "description": "Deletes a Line Item",
         "operationId": "deleteInvoicesByInvoiceLineItemsById",
         "parameters": [
           {
@@ -5786,7 +5804,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/LineItemResponseModel",
+                  "$ref": "#/components/schemas/Stable20240101LineItemResponse",
                   "example": {
                     "id": "af60cab3-812d-4250-a051-0fb7133a00c7",
                     "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
@@ -5819,7 +5837,7 @@
                   }
                 },
                 "examples": {
-                  "LineItemResponseModel": {
+                  "Stable20240101LineItemResponse": {
                     "summary": "",
                     "value": {
                       "id": "af60cab3-812d-4250-a051-0fb7133a00c7",
@@ -30373,7 +30391,7 @@
           "HIDE_PAYMENT_LINK"
         ]
       },
-      "CreateOrUpdateLineItemRequestModel": {
+      "LatestCreateOrUpdateLineItem": {
         "required": [
           "externalIds",
           "quantity",
@@ -30404,7 +30422,8 @@
             }
           ],
           "revenueClassification": "EARNED",
-          "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+          "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+          "taxCategoryId": "01919964-f751-7b04-bb91-a854167911b9"
         },
         "properties": {
           "title": {
@@ -30480,6 +30499,11 @@
             "type": "string",
             "description": "Credit Grant ID",
             "example": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+          },
+          "taxCategoryId": {
+            "type": "string",
+            "description": "Tax Category ID",
+            "example": "01919964-f751-7b04-bb91-a854167911b9"
           }
         }
       },
@@ -30544,7 +30568,7 @@
           "BURNDOWN"
         ]
       },
-      "LineItemResponseModel": {
+      "LatestLineItemResponse": {
         "required": [
           "externalIds",
           "grossTotal",
@@ -30588,7 +30612,8 @@
             }
           ],
           "revenueClassification": "EARNED",
-          "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+          "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+          "taxCategoryId": "01919964-f751-7b04-bb91-a854167911b9"
         },
         "properties": {
           "id": {
@@ -30694,6 +30719,11 @@
             "type": "string",
             "description": "Credit Grant ID",
             "example": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+          },
+          "taxCategoryId": {
+            "type": "string",
+            "description": "Tax Category ID",
+            "example": "01919964-f751-7b04-bb91-a854167911b9"
           }
         }
       },
@@ -31154,6 +31184,159 @@
           },
           "renderSettings": {
             "$ref": "#/components/schemas/InvoiceRenderSettingsInlineAggregate"
+          }
+        }
+      },
+      "Stable20240101LineItemResponse": {
+        "required": [
+          "externalIds",
+          "grossTotal",
+          "id",
+          "index",
+          "invoiceId",
+          "netTotal",
+          "quantity",
+          "rate",
+          "rateDisplay",
+          "taxRate",
+          "title",
+          "totalTax"
+        ],
+        "type": "object",
+        "example": {
+          "id": "af60cab3-812d-4250-a051-0fb7133a00c7",
+          "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
+          "title": "Ferraris",
+          "description": "Red",
+          "quantity": "2",
+          "rate": "20000.10",
+          "taxRate": "0.2",
+          "servicePeriodStart": "2022-10-20T00:00:00Z",
+          "servicePeriodEnd": "2022-10-24T00:00:00Z",
+          "servicePeriod": {
+            "startDate": "2022-10-20",
+            "endDate": "2022-10-24"
+          },
+          "index": 2,
+          "groupId": "cd11218d-fa00-4faa-8684-a43113d076a8",
+          "netTotal": "51.20",
+          "totalTax": "2.50",
+          "grossTotal": "101.23",
+          "priceId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+          "rateDisplay": "ABSOLUTE",
+          "externalIds": [
+            {
+              "key": "Xero",
+              "value": "123"
+            }
+          ],
+          "revenueClassification": "EARNED",
+          "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Line Item ID",
+            "example": "af60cab3-812d-4250-a051-0fb7133a00c7"
+          },
+          "invoiceId": {
+            "type": "string",
+            "description": "Invoice ID",
+            "example": "cd11218d-fa00-4faa-8684-a43113d076a8"
+          },
+          "title": {
+            "type": "string",
+            "description": "Item Title",
+            "example": "Ferraris"
+          },
+          "description": {
+            "type": "string",
+            "description": "Item Description",
+            "example": "Red"
+          },
+          "quantity": {
+            "type": "string",
+            "description": "Quantity",
+            "example": "2"
+          },
+          "rate": {
+            "type": "string",
+            "description": "Price per Item",
+            "example": "20000.10"
+          },
+          "taxRate": {
+            "type": "string",
+            "description": "Tax Rate",
+            "example": "0.2"
+          },
+          "servicePeriodStart": {
+            "type": "string",
+            "description": "Start of the service period (the time period in which the service was provided)",
+            "example": "2022-10-20T00:00:00Z"
+          },
+          "servicePeriodEnd": {
+            "type": "string",
+            "description": "End of the service period (the time period in which the service was provided)",
+            "example": "2022-10-24T00:00:00Z"
+          },
+          "servicePeriod": {
+            "$ref": "#/components/schemas/DateRange"
+          },
+          "index": {
+            "type": "integer",
+            "description": "Index (for maintaining order)",
+            "example": 2
+          },
+          "groupId": {
+            "type": "string",
+            "description": "Line Item Group ID",
+            "example": "cd11218d-fa00-4faa-8684-a43113d076a8"
+          },
+          "netTotal": {
+            "type": "string",
+            "description": "Net total, in decimal format of the Invoice's currency",
+            "example": "51.20"
+          },
+          "totalTax": {
+            "type": "string",
+            "description": "Total tax, in decimal format of the Invoice's currency",
+            "example": "2.50"
+          },
+          "grossTotal": {
+            "type": "string",
+            "description": "Gross total, in decimal format of the Invoice's currency",
+            "example": "101.23"
+          },
+          "priceId": {
+            "type": "string",
+            "description": "Price ID",
+            "example": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+          },
+          "rateDisplay": {
+            "description": "Determines whether rate is displayed as an absolute value or percentage",
+            "$ref": "#/components/schemas/RateDisplay"
+          },
+          "externalIds": {
+            "type": "array",
+            "description": "IDs in external integrations",
+            "example": [
+              {
+                "key": "Xero",
+                "value": "123"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+            }
+          },
+          "revenueClassification": {
+            "description": "Revenue classification",
+            "$ref": "#/components/schemas/RevenueClassification"
+          },
+          "creditGrantId": {
+            "type": "string",
+            "description": "Credit Grant ID",
+            "example": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
           }
         }
       },
@@ -32033,7 +32216,7 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/LineItemResponseModel"
+              "$ref": "#/components/schemas/Stable20240101LineItemResponse"
             }
           },
           "pagination": {
@@ -32185,6 +32368,116 @@
           "paymentStatus": {
             "description": "Invoice payment status",
             "$ref": "#/components/schemas/InvoicePaymentStatus"
+          }
+        }
+      },
+      "Stable20240101CreateOrUpdateLineItem": {
+        "required": [
+          "externalIds",
+          "quantity",
+          "rate",
+          "taxRate",
+          "title"
+        ],
+        "type": "object",
+        "example": {
+          "title": "Ferraris",
+          "description": "Red",
+          "quantity": "2",
+          "rate": "20000.10",
+          "taxRate": "0.2",
+          "servicePeriodStart": "2022-10-20T00:00:00Z",
+          "servicePeriodEnd": "2022-10-24T00:00:00Z",
+          "servicePeriod": {
+            "startDate": "2022-10-20",
+            "endDate": "2022-10-24"
+          },
+          "groupId": "cd11218d-fa00-4faa-8684-a43113d076a8",
+          "priceId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+          "rateDisplay": "ABSOLUTE",
+          "externalIds": [
+            {
+              "key": "Xero",
+              "value": "123"
+            }
+          ],
+          "revenueClassification": "EARNED",
+          "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+        },
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Item Title",
+            "example": "Ferraris"
+          },
+          "description": {
+            "type": "string",
+            "description": "Item Description",
+            "example": "Red"
+          },
+          "quantity": {
+            "type": "string",
+            "description": "Quantity",
+            "example": "2"
+          },
+          "rate": {
+            "type": "string",
+            "description": "Price per Item",
+            "example": "20000.10"
+          },
+          "taxRate": {
+            "type": "string",
+            "description": "Tax Rate",
+            "example": "0.2"
+          },
+          "servicePeriodStart": {
+            "type": "string",
+            "description": "Start of the service period (the time period in which the service was provided)",
+            "example": "2022-10-20T00:00:00Z"
+          },
+          "servicePeriodEnd": {
+            "type": "string",
+            "description": "End of the service period (the time period in which the service was provided)",
+            "example": "2022-10-24T00:00:00Z"
+          },
+          "servicePeriod": {
+            "$ref": "#/components/schemas/DateRange"
+          },
+          "groupId": {
+            "type": "string",
+            "description": "Line Item Group ID",
+            "example": "cd11218d-fa00-4faa-8684-a43113d076a8"
+          },
+          "priceId": {
+            "type": "string",
+            "description": "Price ID",
+            "example": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+          },
+          "rateDisplay": {
+            "description": "Determines whether rate is displayed as an absolute value or percentage",
+            "$ref": "#/components/schemas/RateDisplay"
+          },
+          "externalIds": {
+            "type": "array",
+            "description": "IDs in external integrations",
+            "example": [
+              {
+                "key": "Xero",
+                "value": "123"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/IntegrationExternalIdentifier"
+            }
+          },
+          "revenueClassification": {
+            "description": "Revenue classification",
+            "$ref": "#/components/schemas/RevenueClassification"
+          },
+          "creditGrantId": {
+            "type": "string",
+            "description": "Credit Grant ID",
+            "example": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
           }
         }
       },
