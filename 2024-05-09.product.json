@@ -5549,8 +5549,8 @@
         "tags": [
           "Invoice Line Items"
         ],
-        "summary": "Create a new Line Item",
-        "description": "Create a new Line Item",
+        "summary": "Update a line item",
+        "description": "Update a line item on an invoice",
         "operationId": "putInvoicesByInvoiceLineItemsById",
         "parameters": [
           {
