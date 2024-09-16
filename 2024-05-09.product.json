@@ -18236,7 +18236,8 @@
                         "customerTaxStatus": "TAXED",
                         "renderSettings": {
                           "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-                        }
+                        },
+                        "isCustomerArchived": false
                       }
                     ],
                     "pagination": {
@@ -18355,7 +18356,8 @@
                           "customerTaxStatus": "TAXED",
                           "renderSettings": {
                             "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-                          }
+                          },
+                          "isCustomerArchived": false
                         }
                       ],
                       "pagination": {
@@ -18680,7 +18682,8 @@
                     "customerTaxStatus": "TAXED",
                     "renderSettings": {
                       "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-                    }
+                    },
+                    "isCustomerArchived": false
                   }
                 },
                 "examples": {
@@ -18841,7 +18844,8 @@
                       "customerTaxStatus": "TAXED",
                       "renderSettings": {
                         "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-                      }
+                      },
+                      "isCustomerArchived": false
                     }
                   }
                 }
@@ -19709,7 +19713,8 @@
                     "customerTaxStatus": "TAXED",
                     "renderSettings": {
                       "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-                    }
+                    },
+                    "isCustomerArchived": false
                   }
                 },
                 "examples": {
@@ -19870,7 +19875,8 @@
                       "customerTaxStatus": "TAXED",
                       "renderSettings": {
                         "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-                      }
+                      },
+                      "isCustomerArchived": false
                     }
                   }
                 }
@@ -20191,7 +20197,8 @@
                     "customerTaxStatus": "TAXED",
                     "renderSettings": {
                       "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-                    }
+                    },
+                    "isCustomerArchived": false
                   }
                 },
                 "examples": {
@@ -20352,7 +20359,8 @@
                       "customerTaxStatus": "TAXED",
                       "renderSettings": {
                         "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-                      }
+                      },
+                      "isCustomerArchived": false
                     }
                   }
                 }
@@ -20574,7 +20582,8 @@
                     "customerTaxStatus": "TAXED",
                     "renderSettings": {
                       "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-                    }
+                    },
+                    "isCustomerArchived": false
                   }
                 },
                 "examples": {
@@ -20735,7 +20744,8 @@
                       "customerTaxStatus": "TAXED",
                       "renderSettings": {
                         "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-                      }
+                      },
+                      "isCustomerArchived": false
                     }
                   }
                 }
@@ -21056,7 +21066,8 @@
                     "customerTaxStatus": "TAXED",
                     "renderSettings": {
                       "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-                    }
+                    },
+                    "isCustomerArchived": false
                   }
                 },
                 "examples": {
@@ -21217,7 +21228,8 @@
                       "customerTaxStatus": "TAXED",
                       "renderSettings": {
                         "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-                      }
+                      },
+                      "isCustomerArchived": false
                     }
                   }
                 }
@@ -22024,7 +22036,8 @@
                     "customerTaxStatus": "TAXED",
                     "renderSettings": {
                       "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-                    }
+                    },
+                    "isCustomerArchived": false
                   }
                 },
                 "examples": {
@@ -22134,7 +22147,8 @@
                       "customerTaxStatus": "TAXED",
                       "renderSettings": {
                         "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-                      }
+                      },
+                      "isCustomerArchived": false
                     }
                   }
                 }
@@ -22309,7 +22323,8 @@
                     "customerTaxStatus": "TAXED",
                     "renderSettings": {
                       "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-                    }
+                    },
+                    "isCustomerArchived": false
                   }
                 },
                 "examples": {
@@ -22419,7 +22434,8 @@
                       "customerTaxStatus": "TAXED",
                       "renderSettings": {
                         "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-                      }
+                      },
+                      "isCustomerArchived": false
                     }
                   }
                 }
@@ -22594,7 +22610,8 @@
                     "customerTaxStatus": "TAXED",
                     "renderSettings": {
                       "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-                    }
+                    },
+                    "isCustomerArchived": false
                   }
                 },
                 "examples": {
@@ -22704,7 +22721,8 @@
                       "customerTaxStatus": "TAXED",
                       "renderSettings": {
                         "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-                      }
+                      },
+                      "isCustomerArchived": false
                     }
                   }
                 }
@@ -22900,7 +22918,8 @@
                     "customerTaxStatus": "TAXED",
                     "renderSettings": {
                       "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-                    }
+                    },
+                    "isCustomerArchived": false
                   }
                 },
                 "examples": {
@@ -23010,7 +23029,8 @@
                       "customerTaxStatus": "TAXED",
                       "renderSettings": {
                         "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-                      }
+                      },
+                      "isCustomerArchived": false
                     }
                   }
                 }
@@ -23185,7 +23205,8 @@
                     "customerTaxStatus": "TAXED",
                     "renderSettings": {
                       "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-                    }
+                    },
+                    "isCustomerArchived": false
                   }
                 },
                 "examples": {
@@ -23295,7 +23316,8 @@
                       "customerTaxStatus": "TAXED",
                       "renderSettings": {
                         "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-                      }
+                      },
+                      "isCustomerArchived": false
                     }
                   }
                 }
@@ -42511,6 +42533,7 @@
           "customerShippingAddress",
           "grossTotal",
           "id",
+          "isCustomerArchived",
           "linkedServices",
           "metadata",
           "netTotal",
@@ -42676,7 +42699,8 @@
           "customerTaxStatus": "TAXED",
           "renderSettings": {
             "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-          }
+          },
+          "isCustomerArchived": false
         },
         "properties": {
           "id": {
@@ -42869,6 +42893,10 @@
           },
           "renderSettings": {
             "$ref": "#/components/schemas/InvoiceRenderSettingsInlineAggregate"
+          },
+          "isCustomerArchived": {
+            "type": "boolean",
+            "example": false
           }
         }
       },
@@ -43814,6 +43842,7 @@
           "customerShippingAddress",
           "grossTotal",
           "id",
+          "isCustomerArchived",
           "linkedServices",
           "metadata",
           "netTotal",
@@ -43979,7 +44008,8 @@
           "customerTaxStatus": "TAXED",
           "renderSettings": {
             "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-          }
+          },
+          "isCustomerArchived": false
         },
         "properties": {
           "id": {
@@ -44172,6 +44202,11 @@
           },
           "renderSettings": {
             "$ref": "#/components/schemas/InvoiceRenderSettingsInlineAggregate"
+          },
+          "isCustomerArchived": {
+            "type": "boolean",
+            "description": "isCustomerArchived",
+            "example": false
           }
         }
       },
@@ -44252,6 +44287,7 @@
           "customerShippingAddress",
           "grossTotal",
           "id",
+          "isCustomerArchived",
           "linkedServices",
           "metadata",
           "netTotal",
@@ -44417,7 +44453,8 @@
           "customerTaxStatus": "TAXED",
           "renderSettings": {
             "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-          }
+          },
+          "isCustomerArchived": false
         },
         "properties": {
           "id": {
@@ -44610,6 +44647,11 @@
           },
           "renderSettings": {
             "$ref": "#/components/schemas/InvoiceRenderSettingsInlineAggregate"
+          },
+          "isCustomerArchived": {
+            "type": "boolean",
+            "description": "isCustomerArchived",
+            "example": false
           }
         }
       },
@@ -44725,7 +44767,8 @@
               "customerTaxStatus": "TAXED",
               "renderSettings": {
                 "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-              }
+              },
+              "isCustomerArchived": false
             }
           ],
           "pagination": {
@@ -44843,7 +44886,8 @@
                 "customerTaxStatus": "TAXED",
                 "renderSettings": {
                   "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-                }
+                },
+                "isCustomerArchived": false
               }
             ],
             "items": {
