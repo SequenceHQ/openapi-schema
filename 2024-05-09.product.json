@@ -9276,7 +9276,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/CreateLineItemGroupEndpointProductCreateLineItemGroupResponseModel",
+                  "$ref": "#/components/schemas/LineItemGroupResponseModel",
                   "example": {
                     "id": "4639a112-f821-4bc1-bc2d-6f9ece5b7c0f",
                     "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
@@ -9289,7 +9289,7 @@
                   }
                 },
                 "examples": {
-                  "CreateLineItemGroupEndpointProductCreateLineItemGroupResponseModel": {
+                  "LineItemGroupResponseModel": {
                     "summary": "",
                     "value": {
                       "id": "4639a112-f821-4bc1-bc2d-6f9ece5b7c0f",
@@ -11490,7 +11490,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/UpdateLineItemGroupEndpointProductUpdateLineItemGroupResponseModel",
+                  "$ref": "#/components/schemas/LineItemGroupResponseModel",
                   "example": {
                     "id": "4639a112-f821-4bc1-bc2d-6f9ece5b7c0f",
                     "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
@@ -11503,7 +11503,7 @@
                   }
                 },
                 "examples": {
-                  "UpdateLineItemGroupEndpointProductUpdateLineItemGroupResponseModel": {
+                  "LineItemGroupResponseModel": {
                     "summary": "",
                     "value": {
                       "id": "4639a112-f821-4bc1-bc2d-6f9ece5b7c0f",
@@ -11588,7 +11588,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/DeleteLineItemGroupEndpointProductDeleteLineItemGroupResponseModel",
+                  "$ref": "#/components/schemas/LineItemGroupResponseModel",
                   "example": {
                     "id": "4639a112-f821-4bc1-bc2d-6f9ece5b7c0f",
                     "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
@@ -11601,7 +11601,7 @@
                   }
                 },
                 "examples": {
-                  "DeleteLineItemGroupEndpointProductDeleteLineItemGroupResponseModel": {
+                  "LineItemGroupResponseModel": {
                     "summary": "",
                     "value": {
                       "id": "4639a112-f821-4bc1-bc2d-6f9ece5b7c0f",
@@ -35416,7 +35416,7 @@
           }
         }
       },
-      "CreateLineItemGroupEndpointProductCreateLineItemGroupResponseModel": {
+      "LineItemGroupResponseModel": {
         "required": [
           "grossTotal",
           "id",
@@ -35858,70 +35858,6 @@
             "type": "boolean",
             "description": "isCustomerArchived",
             "example": false
-          }
-        }
-      },
-      "DeleteLineItemGroupEndpointProductDeleteLineItemGroupResponseModel": {
-        "required": [
-          "grossTotal",
-          "id",
-          "index",
-          "invoiceId",
-          "netTotal",
-          "title",
-          "totalTax"
-        ],
-        "type": "object",
-        "example": {
-          "id": "4639a112-f821-4bc1-bc2d-6f9ece5b7c0f",
-          "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
-          "title": "Users",
-          "description": "Charges for users",
-          "index": 2,
-          "netTotal": "51.20",
-          "totalTax": "2.50",
-          "grossTotal": "101.23"
-        },
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "Line Item Group ID",
-            "example": "4639a112-f821-4bc1-bc2d-6f9ece5b7c0f"
-          },
-          "invoiceId": {
-            "type": "string",
-            "description": "Invoice ID",
-            "example": "cd11218d-fa00-4faa-8684-a43113d076a8"
-          },
-          "title": {
-            "type": "string",
-            "description": "Line Item Group Title",
-            "example": "Users"
-          },
-          "description": {
-            "type": "string",
-            "description": "Line Item Group Description",
-            "example": "Charges for users"
-          },
-          "index": {
-            "type": "integer",
-            "description": "Index (for maintaining order)",
-            "example": 2
-          },
-          "netTotal": {
-            "type": "string",
-            "description": "Net total, in decimal format of the Invoice's currency",
-            "example": "51.20"
-          },
-          "totalTax": {
-            "type": "string",
-            "description": "Total tax, in decimal format of the Invoice's currency",
-            "example": "2.50"
-          },
-          "grossTotal": {
-            "type": "string",
-            "description": "Gross total, in decimal format of the Invoice's currency",
-            "example": "101.23"
           }
         }
       },
@@ -36592,75 +36528,11 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/ListLineItemGroupEndpointProductListLineItemGroupResponseModel"
+              "$ref": "#/components/schemas/LineItemGroupResponseModel"
             }
           },
           "pagination": {
             "$ref": "#/components/schemas/PaginationMeta"
-          }
-        }
-      },
-      "ListLineItemGroupEndpointProductListLineItemGroupResponseModel": {
-        "required": [
-          "grossTotal",
-          "id",
-          "index",
-          "invoiceId",
-          "netTotal",
-          "title",
-          "totalTax"
-        ],
-        "type": "object",
-        "example": {
-          "id": "4639a112-f821-4bc1-bc2d-6f9ece5b7c0f",
-          "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
-          "title": "Users",
-          "description": "Charges for users",
-          "index": 2,
-          "netTotal": "51.20",
-          "totalTax": "2.50",
-          "grossTotal": "101.23"
-        },
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "Line Item Group ID",
-            "example": "4639a112-f821-4bc1-bc2d-6f9ece5b7c0f"
-          },
-          "invoiceId": {
-            "type": "string",
-            "description": "Invoice ID",
-            "example": "cd11218d-fa00-4faa-8684-a43113d076a8"
-          },
-          "title": {
-            "type": "string",
-            "description": "Line Item Group Title",
-            "example": "Users"
-          },
-          "description": {
-            "type": "string",
-            "description": "Line Item Group Description",
-            "example": "Charges for users"
-          },
-          "index": {
-            "type": "integer",
-            "description": "Index (for maintaining order)",
-            "example": 2
-          },
-          "netTotal": {
-            "type": "string",
-            "description": "Net total, in decimal format of the Invoice's currency",
-            "example": "51.20"
-          },
-          "totalTax": {
-            "type": "string",
-            "description": "Total tax, in decimal format of the Invoice's currency",
-            "example": "2.50"
-          },
-          "grossTotal": {
-            "type": "string",
-            "description": "Gross total, in decimal format of the Invoice's currency",
-            "example": "101.23"
           }
         }
       },
@@ -36920,70 +36792,6 @@
             "type": "string",
             "description": "Line Item Group Description",
             "example": "Charges for users"
-          }
-        }
-      },
-      "UpdateLineItemGroupEndpointProductUpdateLineItemGroupResponseModel": {
-        "required": [
-          "grossTotal",
-          "id",
-          "index",
-          "invoiceId",
-          "netTotal",
-          "title",
-          "totalTax"
-        ],
-        "type": "object",
-        "example": {
-          "id": "4639a112-f821-4bc1-bc2d-6f9ece5b7c0f",
-          "invoiceId": "cd11218d-fa00-4faa-8684-a43113d076a8",
-          "title": "Users",
-          "description": "Charges for users",
-          "index": 2,
-          "netTotal": "51.20",
-          "totalTax": "2.50",
-          "grossTotal": "101.23"
-        },
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "Line Item Group ID",
-            "example": "4639a112-f821-4bc1-bc2d-6f9ece5b7c0f"
-          },
-          "invoiceId": {
-            "type": "string",
-            "description": "Invoice ID",
-            "example": "cd11218d-fa00-4faa-8684-a43113d076a8"
-          },
-          "title": {
-            "type": "string",
-            "description": "Line Item Group Title",
-            "example": "Users"
-          },
-          "description": {
-            "type": "string",
-            "description": "Line Item Group Description",
-            "example": "Charges for users"
-          },
-          "index": {
-            "type": "integer",
-            "description": "Index (for maintaining order)",
-            "example": 2
-          },
-          "netTotal": {
-            "type": "string",
-            "description": "Net total, in decimal format of the Invoice's currency",
-            "example": "51.20"
-          },
-          "totalTax": {
-            "type": "string",
-            "description": "Total tax, in decimal format of the Invoice's currency",
-            "example": "2.50"
-          },
-          "grossTotal": {
-            "type": "string",
-            "description": "Gross total, in decimal format of the Invoice's currency",
-            "example": "101.23"
           }
         }
       },
