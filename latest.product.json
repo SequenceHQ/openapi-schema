@@ -9607,18 +9607,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateLineItemGroupEndpointCreateLineItemGroupRequestModel",
+                "$ref": "#/components/schemas/CreateLineItemGroupRequestModel",
                 "example": {
                   "title": "Users",
-                  "description": "Charges for users"
+                  "description": "Charges for users",
+                  "taxCategoryId": "28227c88-6dba-455f-9b30-b9c76957e610"
                 }
               },
               "examples": {
-                "CreateLineItemGroupEndpointCreateLineItemGroupRequestModel": {
+                "CreateLineItemGroupRequestModel": {
                   "summary": "",
                   "value": {
                     "title": "Users",
-                    "description": "Charges for users"
+                    "description": "Charges for users",
+                    "taxCategoryId": "28227c88-6dba-455f-9b30-b9c76957e610"
                   }
                 }
               }
@@ -11829,18 +11831,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateLineItemGroupEndpointUpdateLineItemGroupRequestModel",
+                "$ref": "#/components/schemas/UpdateLineItemGroupRequestModel",
                 "example": {
                   "title": "Users",
-                  "description": "Charges for users"
+                  "description": "Charges for users",
+                  "taxCategoryId": "28227c88-6dba-455f-9b30-b9c76957e610"
                 }
               },
               "examples": {
-                "UpdateLineItemGroupEndpointUpdateLineItemGroupRequestModel": {
+                "UpdateLineItemGroupRequestModel": {
                   "summary": "",
                   "value": {
                     "title": "Users",
-                    "description": "Charges for users"
+                    "description": "Charges for users",
+                    "taxCategoryId": "28227c88-6dba-455f-9b30-b9c76957e610"
                   }
                 }
               }
@@ -35704,14 +35708,15 @@
           }
         }
       },
-      "CreateLineItemGroupEndpointCreateLineItemGroupRequestModel": {
+      "CreateLineItemGroupRequestModel": {
         "required": [
           "title"
         ],
         "type": "object",
         "example": {
           "title": "Users",
-          "description": "Charges for users"
+          "description": "Charges for users",
+          "taxCategoryId": "28227c88-6dba-455f-9b30-b9c76957e610"
         },
         "properties": {
           "title": {
@@ -35723,6 +35728,11 @@
             "type": "string",
             "description": "Line Item Group Description",
             "example": "Charges for users"
+          },
+          "taxCategoryId": {
+            "type": "string",
+            "description": "The tax category for all line items in this line item group",
+            "example": "28227c88-6dba-455f-9b30-b9c76957e610"
           }
         }
       },
@@ -37122,14 +37132,15 @@
           }
         }
       },
-      "UpdateLineItemGroupEndpointUpdateLineItemGroupRequestModel": {
+      "UpdateLineItemGroupRequestModel": {
         "required": [
           "title"
         ],
         "type": "object",
         "example": {
           "title": "Users",
-          "description": "Charges for users"
+          "description": "Charges for users",
+          "taxCategoryId": "28227c88-6dba-455f-9b30-b9c76957e610"
         },
         "properties": {
           "title": {
@@ -37141,6 +37152,11 @@
             "type": "string",
             "description": "Line Item Group Description",
             "example": "Charges for users"
+          },
+          "taxCategoryId": {
+            "type": "string",
+            "description": "The tax category for all line items in this line item group",
+            "example": "28227c88-6dba-455f-9b30-b9c76957e610"
           }
         }
       },
