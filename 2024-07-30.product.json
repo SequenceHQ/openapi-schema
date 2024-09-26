@@ -9505,7 +9505,11 @@
                         "index": 2,
                         "netTotal": "51.20",
                         "totalTax": "2.50",
-                        "grossTotal": "101.23"
+                        "grossTotal": "101.23",
+                        "taxCategory": {
+                          "id": "28227c88-6dba-455f-9b30-b9c76957e610",
+                          "name": "VAT"
+                        }
                       }
                     ],
                     "pagination": {
@@ -9528,7 +9532,11 @@
                           "index": 2,
                           "netTotal": "51.20",
                           "totalTax": "2.50",
-                          "grossTotal": "101.23"
+                          "grossTotal": "101.23",
+                          "taxCategory": {
+                            "id": "28227c88-6dba-455f-9b30-b9c76957e610",
+                            "name": "VAT"
+                          }
                         }
                       ],
                       "pagination": {
@@ -9633,7 +9641,11 @@
                     "index": 2,
                     "netTotal": "51.20",
                     "totalTax": "2.50",
-                    "grossTotal": "101.23"
+                    "grossTotal": "101.23",
+                    "taxCategory": {
+                      "id": "28227c88-6dba-455f-9b30-b9c76957e610",
+                      "name": "VAT"
+                    }
                   }
                 },
                 "examples": {
@@ -9647,7 +9659,11 @@
                       "index": 2,
                       "netTotal": "51.20",
                       "totalTax": "2.50",
-                      "grossTotal": "101.23"
+                      "grossTotal": "101.23",
+                      "taxCategory": {
+                        "id": "28227c88-6dba-455f-9b30-b9c76957e610",
+                        "name": "VAT"
+                      }
                     }
                   }
                 }
@@ -11847,7 +11863,11 @@
                     "index": 2,
                     "netTotal": "51.20",
                     "totalTax": "2.50",
-                    "grossTotal": "101.23"
+                    "grossTotal": "101.23",
+                    "taxCategory": {
+                      "id": "28227c88-6dba-455f-9b30-b9c76957e610",
+                      "name": "VAT"
+                    }
                   }
                 },
                 "examples": {
@@ -11861,7 +11881,11 @@
                       "index": 2,
                       "netTotal": "51.20",
                       "totalTax": "2.50",
-                      "grossTotal": "101.23"
+                      "grossTotal": "101.23",
+                      "taxCategory": {
+                        "id": "28227c88-6dba-455f-9b30-b9c76957e610",
+                        "name": "VAT"
+                      }
                     }
                   }
                 }
@@ -11945,7 +11969,11 @@
                     "index": 2,
                     "netTotal": "51.20",
                     "totalTax": "2.50",
-                    "grossTotal": "101.23"
+                    "grossTotal": "101.23",
+                    "taxCategory": {
+                      "id": "28227c88-6dba-455f-9b30-b9c76957e610",
+                      "name": "VAT"
+                    }
                   }
                 },
                 "examples": {
@@ -11959,7 +11987,11 @@
                       "index": 2,
                       "netTotal": "51.20",
                       "totalTax": "2.50",
-                      "grossTotal": "101.23"
+                      "grossTotal": "101.23",
+                      "taxCategory": {
+                        "id": "28227c88-6dba-455f-9b30-b9c76957e610",
+                        "name": "VAT"
+                      }
                     }
                   }
                 }
@@ -35713,7 +35745,11 @@
           "index": 2,
           "netTotal": "51.20",
           "totalTax": "2.50",
-          "grossTotal": "101.23"
+          "grossTotal": "101.23",
+          "taxCategory": {
+            "id": "28227c88-6dba-455f-9b30-b9c76957e610",
+            "name": "VAT"
+          }
         },
         "properties": {
           "id": {
@@ -35755,6 +35791,33 @@
             "type": "string",
             "description": "Gross total, in decimal format of the Invoice's currency",
             "example": "101.23"
+          },
+          "taxCategory": {
+            "$ref": "#/components/schemas/TaxCategoryResponse"
+          }
+        }
+      },
+      "TaxCategoryResponse": {
+        "required": [
+          "id",
+          "name"
+        ],
+        "type": "object",
+        "description": "The tax category for all line items in this line item group",
+        "example": {
+          "id": "28227c88-6dba-455f-9b30-b9c76957e610",
+          "name": "VAT"
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Tax Category ID",
+            "example": "28227c88-6dba-455f-9b30-b9c76957e610"
+          },
+          "name": {
+            "type": "string",
+            "description": "Tax Category name",
+            "example": "VAT"
           }
         }
       },
@@ -36780,7 +36843,11 @@
               "index": 2,
               "netTotal": "51.20",
               "totalTax": "2.50",
-              "grossTotal": "101.23"
+              "grossTotal": "101.23",
+              "taxCategory": {
+                "id": "28227c88-6dba-455f-9b30-b9c76957e610",
+                "name": "VAT"
+              }
             }
           ],
           "pagination": {
@@ -36802,7 +36869,11 @@
                 "index": 2,
                 "netTotal": "51.20",
                 "totalTax": "2.50",
-                "grossTotal": "101.23"
+                "grossTotal": "101.23",
+                "taxCategory": {
+                  "id": "28227c88-6dba-455f-9b30-b9c76957e610",
+                  "name": "VAT"
+                }
               }
             ],
             "items": {
