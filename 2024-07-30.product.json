@@ -4103,7 +4103,6 @@
                         "name": "Sample product",
                         "currency": "GBP",
                         "structure": {
-                          "pricingType": "GRADUATED",
                           "tiers": [
                             {
                               "upperBound": "200",
@@ -4124,7 +4123,8 @@
                             }
                           ],
                           "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                          "usageCalculationMode": "BILLING_PERIOD"
+                          "usageCalculationMode": "BILLING_PERIOD",
+                          "pricingType": "GRADUATED"
                         },
                         "billingFrequency": "MONTHLY",
                         "usageCalculationPeriod": {
@@ -4171,8 +4171,8 @@
                           "name": "Sample product",
                           "currency": "GBP",
                           "structure": {
-                            "pricingType": "ONE_TIME",
-                            "price": "150.00"
+                            "price": "150.00",
+                            "pricingType": "ONE_TIME"
                           },
                           "billingFrequency": "MONTHLY",
                           "billingType": "IN_ARREARS",
@@ -4256,7 +4256,6 @@
                   "name": "Sample product",
                   "currency": "GBP",
                   "structure": {
-                    "pricingType": "GRADUATED",
                     "tiers": [
                       {
                         "upperBound": "200",
@@ -4277,7 +4276,8 @@
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                    "usageCalculationMode": "BILLING_PERIOD"
+                    "usageCalculationMode": "BILLING_PERIOD",
+                    "pricingType": "GRADUATED"
                   },
                   "billingFrequency": "MONTHLY",
                   "billingType": "IN_ARREARS",
@@ -4330,7 +4330,6 @@
                     "name": "Sample product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "GRADUATED",
                       "tiers": [
                         {
                           "upperBound": "200",
@@ -4351,7 +4350,8 @@
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                      "usageCalculationMode": "BILLING_PERIOD"
+                      "usageCalculationMode": "BILLING_PERIOD",
+                      "pricingType": "GRADUATED"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
@@ -4380,7 +4380,6 @@
                     "name": "Sample product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "VOLUME",
                       "tiers": [
                         {
                           "upperBound": "100",
@@ -4398,7 +4397,8 @@
                           "minPrice": "5"
                         }
                       ],
-                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                      "pricingType": "VOLUME"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
@@ -4423,7 +4423,6 @@
                     "name": "Sample product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "SEAT_BASED",
                       "seatMetricId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                       "pricePerSeat": "0.25",
                       "prorationStrategy": "USE_MAXIMUM",
@@ -4439,7 +4438,8 @@
                           "price": "0.75",
                           "fee": "25.00"
                         }
-                      ]
+                      ],
+                      "pricingType": "SEAT_BASED"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
@@ -4464,10 +4464,10 @@
                     "name": "Sample product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "PACKAGE",
                       "packageSize": "50",
                       "pricePerPackage": "2.00",
-                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                      "pricingType": "PACKAGE"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
@@ -4492,10 +4492,10 @@
                     "name": "Sample product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "LINEAR",
                       "pricePerUnit": "0.25",
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                      "isPricePercentage": false
+                      "isPricePercentage": false,
+                      "pricingType": "LINEAR"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
@@ -4520,8 +4520,8 @@
                     "name": "Sample product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "FIXED",
-                      "price": "20.00"
+                      "price": "20.00",
+                      "pricingType": "FIXED"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
@@ -4546,8 +4546,8 @@
                     "name": "Sample product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "ONE_TIME",
-                      "price": "150.00"
+                      "price": "150.00",
+                      "pricingType": "ONE_TIME"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
@@ -4582,7 +4582,6 @@
                     "name": "Sample product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "GRADUATED",
                       "tiers": [
                         {
                           "upperBound": "200",
@@ -4603,7 +4602,8 @@
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                      "usageCalculationMode": "BILLING_PERIOD"
+                      "usageCalculationMode": "BILLING_PERIOD",
+                      "pricingType": "GRADUATED"
                     },
                     "billingFrequency": "MONTHLY",
                     "usageCalculationPeriod": {
@@ -4659,7 +4659,6 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "GRADUATED",
                         "tiers": [
                           {
                             "upperBound": "200",
@@ -4680,7 +4679,8 @@
                           }
                         ],
                         "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                        "usageCalculationMode": "BILLING_PERIOD"
+                        "usageCalculationMode": "BILLING_PERIOD",
+                        "pricingType": "GRADUATED"
                       },
                       "billingFrequency": "MONTHLY",
                       "usageCalculationPeriod": {
@@ -4712,7 +4712,6 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "VOLUME",
                         "tiers": [
                           {
                             "upperBound": "100",
@@ -4730,7 +4729,8 @@
                             "minPrice": "5"
                           }
                         ],
-                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                        "pricingType": "VOLUME"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -4758,7 +4758,6 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "SEAT_BASED",
                         "seatMetricId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                         "pricePerSeat": "0.25",
                         "prorationStrategy": "USE_MAXIMUM",
@@ -4774,7 +4773,8 @@
                             "price": "0.75",
                             "fee": "25.00"
                           }
-                        ]
+                        ],
+                        "pricingType": "SEAT_BASED"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -4802,10 +4802,10 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "PACKAGE",
                         "packageSize": "50",
                         "pricePerPackage": "2.00",
-                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                        "pricingType": "PACKAGE"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -4833,10 +4833,10 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "LINEAR",
                         "pricePerUnit": "0.25",
                         "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                        "isPricePercentage": false
+                        "isPricePercentage": false,
+                        "pricingType": "LINEAR"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -4864,8 +4864,8 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "FIXED",
-                        "price": "20.00"
+                        "price": "20.00",
+                        "pricingType": "FIXED"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -4893,8 +4893,8 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "ONE_TIME",
-                        "price": "150.00"
+                        "price": "150.00",
+                        "pricingType": "ONE_TIME"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -4987,7 +4987,6 @@
                     "name": "Sample product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "GRADUATED",
                       "tiers": [
                         {
                           "upperBound": "200",
@@ -5008,7 +5007,8 @@
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                      "usageCalculationMode": "BILLING_PERIOD"
+                      "usageCalculationMode": "BILLING_PERIOD",
+                      "pricingType": "GRADUATED"
                     },
                     "billingFrequency": "MONTHLY",
                     "usageCalculationPeriod": {
@@ -5064,7 +5064,6 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "GRADUATED",
                         "tiers": [
                           {
                             "upperBound": "200",
@@ -5085,7 +5084,8 @@
                           }
                         ],
                         "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                        "usageCalculationMode": "BILLING_PERIOD"
+                        "usageCalculationMode": "BILLING_PERIOD",
+                        "pricingType": "GRADUATED"
                       },
                       "billingFrequency": "MONTHLY",
                       "usageCalculationPeriod": {
@@ -5117,7 +5117,6 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "VOLUME",
                         "tiers": [
                           {
                             "upperBound": "100",
@@ -5135,7 +5134,8 @@
                             "minPrice": "5"
                           }
                         ],
-                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                        "pricingType": "VOLUME"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -5163,7 +5163,6 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "SEAT_BASED",
                         "seatMetricId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                         "pricePerSeat": "0.25",
                         "prorationStrategy": "USE_MAXIMUM",
@@ -5179,7 +5178,8 @@
                             "price": "0.75",
                             "fee": "25.00"
                           }
-                        ]
+                        ],
+                        "pricingType": "SEAT_BASED"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -5207,10 +5207,10 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "PACKAGE",
                         "packageSize": "50",
                         "pricePerPackage": "2.00",
-                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                        "pricingType": "PACKAGE"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -5238,10 +5238,10 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "LINEAR",
                         "pricePerUnit": "0.25",
                         "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                        "isPricePercentage": false
+                        "isPricePercentage": false,
+                        "pricingType": "LINEAR"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -5269,8 +5269,8 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "FIXED",
-                        "price": "20.00"
+                        "price": "20.00",
+                        "pricingType": "FIXED"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -5298,8 +5298,8 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "ONE_TIME",
-                        "price": "150.00"
+                        "price": "150.00",
+                        "pricingType": "ONE_TIME"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -5385,7 +5385,6 @@
                   "name": "Sample product",
                   "currency": "GBP",
                   "structure": {
-                    "pricingType": "GRADUATED",
                     "tiers": [
                       {
                         "upperBound": "200",
@@ -5406,7 +5405,8 @@
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                    "usageCalculationMode": "BILLING_PERIOD"
+                    "usageCalculationMode": "BILLING_PERIOD",
+                    "pricingType": "GRADUATED"
                   },
                   "billingFrequency": "MONTHLY",
                   "billingType": "IN_ARREARS",
@@ -5459,7 +5459,6 @@
                     "name": "Sample product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "GRADUATED",
                       "tiers": [
                         {
                           "upperBound": "200",
@@ -5480,7 +5479,8 @@
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                      "usageCalculationMode": "BILLING_PERIOD"
+                      "usageCalculationMode": "BILLING_PERIOD",
+                      "pricingType": "GRADUATED"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
@@ -5509,7 +5509,6 @@
                     "name": "Sample product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "VOLUME",
                       "tiers": [
                         {
                           "upperBound": "100",
@@ -5527,7 +5526,8 @@
                           "minPrice": "5"
                         }
                       ],
-                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                      "pricingType": "VOLUME"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
@@ -5552,7 +5552,6 @@
                     "name": "Sample product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "SEAT_BASED",
                       "seatMetricId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                       "pricePerSeat": "0.25",
                       "prorationStrategy": "USE_MAXIMUM",
@@ -5568,7 +5567,8 @@
                           "price": "0.75",
                           "fee": "25.00"
                         }
-                      ]
+                      ],
+                      "pricingType": "SEAT_BASED"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
@@ -5593,10 +5593,10 @@
                     "name": "Sample product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "PACKAGE",
                       "packageSize": "50",
                       "pricePerPackage": "2.00",
-                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                      "pricingType": "PACKAGE"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
@@ -5621,10 +5621,10 @@
                     "name": "Sample product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "LINEAR",
                       "pricePerUnit": "0.25",
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                      "isPricePercentage": false
+                      "isPricePercentage": false,
+                      "pricingType": "LINEAR"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
@@ -5649,8 +5649,8 @@
                     "name": "Sample product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "FIXED",
-                      "price": "20.00"
+                      "price": "20.00",
+                      "pricingType": "FIXED"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
@@ -5675,8 +5675,8 @@
                     "name": "Sample product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "ONE_TIME",
-                      "price": "150.00"
+                      "price": "150.00",
+                      "pricingType": "ONE_TIME"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
@@ -5711,7 +5711,6 @@
                     "name": "Sample product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "GRADUATED",
                       "tiers": [
                         {
                           "upperBound": "200",
@@ -5732,7 +5731,8 @@
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                      "usageCalculationMode": "BILLING_PERIOD"
+                      "usageCalculationMode": "BILLING_PERIOD",
+                      "pricingType": "GRADUATED"
                     },
                     "billingFrequency": "MONTHLY",
                     "usageCalculationPeriod": {
@@ -5788,7 +5788,6 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "GRADUATED",
                         "tiers": [
                           {
                             "upperBound": "200",
@@ -5809,7 +5808,8 @@
                           }
                         ],
                         "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                        "usageCalculationMode": "BILLING_PERIOD"
+                        "usageCalculationMode": "BILLING_PERIOD",
+                        "pricingType": "GRADUATED"
                       },
                       "billingFrequency": "MONTHLY",
                       "usageCalculationPeriod": {
@@ -5841,7 +5841,6 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "VOLUME",
                         "tiers": [
                           {
                             "upperBound": "100",
@@ -5859,7 +5858,8 @@
                             "minPrice": "5"
                           }
                         ],
-                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                        "pricingType": "VOLUME"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -5887,7 +5887,6 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "SEAT_BASED",
                         "seatMetricId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                         "pricePerSeat": "0.25",
                         "prorationStrategy": "USE_MAXIMUM",
@@ -5903,7 +5902,8 @@
                             "price": "0.75",
                             "fee": "25.00"
                           }
-                        ]
+                        ],
+                        "pricingType": "SEAT_BASED"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -5931,10 +5931,10 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "PACKAGE",
                         "packageSize": "50",
                         "pricePerPackage": "2.00",
-                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                        "pricingType": "PACKAGE"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -5962,10 +5962,10 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "LINEAR",
                         "pricePerUnit": "0.25",
                         "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                        "isPricePercentage": false
+                        "isPricePercentage": false,
+                        "pricingType": "LINEAR"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -5993,8 +5993,8 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "FIXED",
-                        "price": "20.00"
+                        "price": "20.00",
+                        "pricingType": "FIXED"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -6022,8 +6022,8 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "ONE_TIME",
-                        "price": "150.00"
+                        "price": "150.00",
+                        "pricingType": "ONE_TIME"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -6116,7 +6116,6 @@
                     "name": "Sample product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "GRADUATED",
                       "tiers": [
                         {
                           "upperBound": "200",
@@ -6137,7 +6136,8 @@
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                      "usageCalculationMode": "BILLING_PERIOD"
+                      "usageCalculationMode": "BILLING_PERIOD",
+                      "pricingType": "GRADUATED"
                     },
                     "billingFrequency": "MONTHLY",
                     "usageCalculationPeriod": {
@@ -6193,7 +6193,6 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "GRADUATED",
                         "tiers": [
                           {
                             "upperBound": "200",
@@ -6214,7 +6213,8 @@
                           }
                         ],
                         "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                        "usageCalculationMode": "BILLING_PERIOD"
+                        "usageCalculationMode": "BILLING_PERIOD",
+                        "pricingType": "GRADUATED"
                       },
                       "billingFrequency": "MONTHLY",
                       "usageCalculationPeriod": {
@@ -6246,7 +6246,6 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "VOLUME",
                         "tiers": [
                           {
                             "upperBound": "100",
@@ -6264,7 +6263,8 @@
                             "minPrice": "5"
                           }
                         ],
-                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                        "pricingType": "VOLUME"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -6292,7 +6292,6 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "SEAT_BASED",
                         "seatMetricId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                         "pricePerSeat": "0.25",
                         "prorationStrategy": "USE_MAXIMUM",
@@ -6308,7 +6307,8 @@
                             "price": "0.75",
                             "fee": "25.00"
                           }
-                        ]
+                        ],
+                        "pricingType": "SEAT_BASED"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -6336,10 +6336,10 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "PACKAGE",
                         "packageSize": "50",
                         "pricePerPackage": "2.00",
-                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                        "pricingType": "PACKAGE"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -6367,10 +6367,10 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "LINEAR",
                         "pricePerUnit": "0.25",
                         "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                        "isPricePercentage": false
+                        "isPricePercentage": false,
+                        "pricingType": "LINEAR"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -6398,8 +6398,8 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "FIXED",
-                        "price": "20.00"
+                        "price": "20.00",
+                        "pricingType": "FIXED"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -6427,8 +6427,8 @@
                       "name": "Sample product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "ONE_TIME",
-                        "price": "150.00"
+                        "price": "150.00",
+                        "pricingType": "ONE_TIME"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -21286,7 +21286,6 @@
                         "name": "Demo Product",
                         "currency": "GBP",
                         "structure": {
-                          "pricingType": "GRADUATED",
                           "tiers": [
                             {
                               "upperBound": "200",
@@ -21307,7 +21306,8 @@
                             }
                           ],
                           "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                          "usageCalculationMode": "BILLING_PERIOD"
+                          "usageCalculationMode": "BILLING_PERIOD",
+                          "pricingType": "GRADUATED"
                         },
                         "billingFrequency": "MONTHLY",
                         "billingType": "IN_ARREARS",
@@ -21355,8 +21355,8 @@
                           "name": "Demo Product",
                           "currency": "GBP",
                           "structure": {
-                            "pricingType": "ONE_TIME",
-                            "price": "150.00"
+                            "price": "150.00",
+                            "pricingType": "ONE_TIME"
                           },
                           "billingFrequency": "MONTHLY",
                           "billingType": "IN_ARREARS",
@@ -21441,7 +21441,6 @@
                   "name": "Demo Product",
                   "currency": "GBP",
                   "structure": {
-                    "pricingType": "GRADUATED",
                     "tiers": [
                       {
                         "upperBound": "200",
@@ -21462,7 +21461,8 @@
                       }
                     ],
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                    "usageCalculationMode": "BILLING_PERIOD"
+                    "usageCalculationMode": "BILLING_PERIOD",
+                    "pricingType": "GRADUATED"
                   },
                   "billingFrequency": "MONTHLY",
                   "billingType": "IN_ARREARS",
@@ -21516,7 +21516,6 @@
                     "name": "Demo Product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "GRADUATED",
                       "tiers": [
                         {
                           "upperBound": "200",
@@ -21537,7 +21536,8 @@
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                      "usageCalculationMode": "BILLING_PERIOD"
+                      "usageCalculationMode": "BILLING_PERIOD",
+                      "pricingType": "GRADUATED"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
@@ -21567,7 +21567,6 @@
                     "name": "Demo Product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "VOLUME",
                       "tiers": [
                         {
                           "upperBound": "100",
@@ -21585,7 +21584,8 @@
                           "minPrice": "5"
                         }
                       ],
-                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                      "pricingType": "VOLUME"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
@@ -21611,7 +21611,6 @@
                     "name": "Demo Product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "SEAT_BASED",
                       "seatMetricId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                       "pricePerSeat": "0.25",
                       "prorationStrategy": "USE_MAXIMUM",
@@ -21627,7 +21626,8 @@
                           "price": "0.75",
                           "fee": "25.00"
                         }
-                      ]
+                      ],
+                      "pricingType": "SEAT_BASED"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
@@ -21653,10 +21653,10 @@
                     "name": "Demo Product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "PACKAGE",
                       "packageSize": "50",
                       "pricePerPackage": "2.00",
-                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                      "pricingType": "PACKAGE"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
@@ -21682,10 +21682,10 @@
                     "name": "Demo Product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "LINEAR",
                       "pricePerUnit": "0.25",
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                      "isPricePercentage": false
+                      "isPricePercentage": false,
+                      "pricingType": "LINEAR"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
@@ -21711,8 +21711,8 @@
                     "name": "Demo Product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "FIXED",
-                      "price": "20.00"
+                      "price": "20.00",
+                      "pricingType": "FIXED"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
@@ -21738,8 +21738,8 @@
                     "name": "Demo Product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "ONE_TIME",
-                      "price": "150.00"
+                      "price": "150.00",
+                      "pricingType": "ONE_TIME"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
@@ -21775,7 +21775,6 @@
                     "name": "Demo Product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "GRADUATED",
                       "tiers": [
                         {
                           "upperBound": "200",
@@ -21796,7 +21795,8 @@
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                      "usageCalculationMode": "BILLING_PERIOD"
+                      "usageCalculationMode": "BILLING_PERIOD",
+                      "pricingType": "GRADUATED"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
@@ -21853,7 +21853,6 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "GRADUATED",
                         "tiers": [
                           {
                             "upperBound": "200",
@@ -21874,7 +21873,8 @@
                           }
                         ],
                         "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                        "usageCalculationMode": "BILLING_PERIOD"
+                        "usageCalculationMode": "BILLING_PERIOD",
+                        "pricingType": "GRADUATED"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -21907,7 +21907,6 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "VOLUME",
                         "tiers": [
                           {
                             "upperBound": "100",
@@ -21925,7 +21924,8 @@
                             "minPrice": "5"
                           }
                         ],
-                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                        "pricingType": "VOLUME"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -21954,7 +21954,6 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "SEAT_BASED",
                         "seatMetricId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                         "pricePerSeat": "0.25",
                         "prorationStrategy": "USE_MAXIMUM",
@@ -21970,7 +21969,8 @@
                             "price": "0.75",
                             "fee": "25.00"
                           }
-                        ]
+                        ],
+                        "pricingType": "SEAT_BASED"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -21999,10 +21999,10 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "PACKAGE",
                         "packageSize": "50",
                         "pricePerPackage": "2.00",
-                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                        "pricingType": "PACKAGE"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -22031,10 +22031,10 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "LINEAR",
                         "pricePerUnit": "0.25",
                         "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                        "isPricePercentage": false
+                        "isPricePercentage": false,
+                        "pricingType": "LINEAR"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -22063,8 +22063,8 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "FIXED",
-                        "price": "20.00"
+                        "price": "20.00",
+                        "pricingType": "FIXED"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -22093,8 +22093,8 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "ONE_TIME",
-                        "price": "150.00"
+                        "price": "150.00",
+                        "pricingType": "ONE_TIME"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -22188,7 +22188,6 @@
                     "name": "Demo Product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "GRADUATED",
                       "tiers": [
                         {
                           "upperBound": "200",
@@ -22209,7 +22208,8 @@
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                      "usageCalculationMode": "BILLING_PERIOD"
+                      "usageCalculationMode": "BILLING_PERIOD",
+                      "pricingType": "GRADUATED"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
@@ -22266,7 +22266,6 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "GRADUATED",
                         "tiers": [
                           {
                             "upperBound": "200",
@@ -22287,7 +22286,8 @@
                           }
                         ],
                         "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                        "usageCalculationMode": "BILLING_PERIOD"
+                        "usageCalculationMode": "BILLING_PERIOD",
+                        "pricingType": "GRADUATED"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -22320,7 +22320,6 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "VOLUME",
                         "tiers": [
                           {
                             "upperBound": "100",
@@ -22338,7 +22337,8 @@
                             "minPrice": "5"
                           }
                         ],
-                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                        "pricingType": "VOLUME"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -22367,7 +22367,6 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "SEAT_BASED",
                         "seatMetricId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                         "pricePerSeat": "0.25",
                         "prorationStrategy": "USE_MAXIMUM",
@@ -22383,7 +22382,8 @@
                             "price": "0.75",
                             "fee": "25.00"
                           }
-                        ]
+                        ],
+                        "pricingType": "SEAT_BASED"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -22412,10 +22412,10 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "PACKAGE",
                         "packageSize": "50",
                         "pricePerPackage": "2.00",
-                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                        "pricingType": "PACKAGE"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -22444,10 +22444,10 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "LINEAR",
                         "pricePerUnit": "0.25",
                         "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                        "isPricePercentage": false
+                        "isPricePercentage": false,
+                        "pricingType": "LINEAR"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -22476,8 +22476,8 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "FIXED",
-                        "price": "20.00"
+                        "price": "20.00",
+                        "pricingType": "FIXED"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -22506,8 +22506,8 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "ONE_TIME",
-                        "price": "150.00"
+                        "price": "150.00",
+                        "pricingType": "ONE_TIME"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -22618,7 +22618,6 @@
                     "name": "Demo Product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "GRADUATED",
                       "tiers": [
                         {
                           "upperBound": "200",
@@ -22639,7 +22638,8 @@
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                      "usageCalculationMode": "BILLING_PERIOD"
+                      "usageCalculationMode": "BILLING_PERIOD",
+                      "pricingType": "GRADUATED"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
@@ -22696,7 +22696,6 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "GRADUATED",
                         "tiers": [
                           {
                             "upperBound": "200",
@@ -22717,7 +22716,8 @@
                           }
                         ],
                         "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                        "usageCalculationMode": "BILLING_PERIOD"
+                        "usageCalculationMode": "BILLING_PERIOD",
+                        "pricingType": "GRADUATED"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -22750,7 +22750,6 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "VOLUME",
                         "tiers": [
                           {
                             "upperBound": "100",
@@ -22768,7 +22767,8 @@
                             "minPrice": "5"
                           }
                         ],
-                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                        "pricingType": "VOLUME"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -22797,7 +22797,6 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "SEAT_BASED",
                         "seatMetricId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                         "pricePerSeat": "0.25",
                         "prorationStrategy": "USE_MAXIMUM",
@@ -22813,7 +22812,8 @@
                             "price": "0.75",
                             "fee": "25.00"
                           }
-                        ]
+                        ],
+                        "pricingType": "SEAT_BASED"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -22842,10 +22842,10 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "PACKAGE",
                         "packageSize": "50",
                         "pricePerPackage": "2.00",
-                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                        "pricingType": "PACKAGE"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -22874,10 +22874,10 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "LINEAR",
                         "pricePerUnit": "0.25",
                         "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                        "isPricePercentage": false
+                        "isPricePercentage": false,
+                        "pricingType": "LINEAR"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -22906,8 +22906,8 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "FIXED",
-                        "price": "20.00"
+                        "price": "20.00",
+                        "pricingType": "FIXED"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -22936,8 +22936,8 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "ONE_TIME",
-                        "price": "150.00"
+                        "price": "150.00",
+                        "pricingType": "ONE_TIME"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -23027,7 +23027,6 @@
                     "name": "Demo Product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "GRADUATED",
                       "tiers": [
                         {
                           "upperBound": "200",
@@ -23048,7 +23047,8 @@
                         }
                       ],
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                      "usageCalculationMode": "BILLING_PERIOD"
+                      "usageCalculationMode": "BILLING_PERIOD",
+                      "pricingType": "GRADUATED"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
@@ -23105,7 +23105,6 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "GRADUATED",
                         "tiers": [
                           {
                             "upperBound": "200",
@@ -23126,7 +23125,8 @@
                           }
                         ],
                         "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                        "usageCalculationMode": "BILLING_PERIOD"
+                        "usageCalculationMode": "BILLING_PERIOD",
+                        "pricingType": "GRADUATED"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -23159,7 +23159,6 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "VOLUME",
                         "tiers": [
                           {
                             "upperBound": "100",
@@ -23177,7 +23176,8 @@
                             "minPrice": "5"
                           }
                         ],
-                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                        "pricingType": "VOLUME"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -23206,7 +23206,6 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "SEAT_BASED",
                         "seatMetricId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                         "pricePerSeat": "0.25",
                         "prorationStrategy": "USE_MAXIMUM",
@@ -23222,7 +23221,8 @@
                             "price": "0.75",
                             "fee": "25.00"
                           }
-                        ]
+                        ],
+                        "pricingType": "SEAT_BASED"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -23251,10 +23251,10 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "PACKAGE",
                         "packageSize": "50",
                         "pricePerPackage": "2.00",
-                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                        "pricingType": "PACKAGE"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -23283,10 +23283,10 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "LINEAR",
                         "pricePerUnit": "0.25",
                         "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                        "isPricePercentage": false
+                        "isPricePercentage": false,
+                        "pricingType": "LINEAR"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -23315,8 +23315,8 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "FIXED",
-                        "price": "20.00"
+                        "price": "20.00",
+                        "pricingType": "FIXED"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -23345,8 +23345,8 @@
                       "name": "Demo Product",
                       "currency": "GBP",
                       "structure": {
-                        "pricingType": "ONE_TIME",
-                        "price": "150.00"
+                        "price": "150.00",
+                        "pricingType": "ONE_TIME"
                       },
                       "billingFrequency": "MONTHLY",
                       "billingType": "IN_ARREARS",
@@ -24666,10 +24666,10 @@
                             "name": "Demo Product",
                             "currency": "GBP",
                             "structure": {
-                              "pricingType": "LINEAR",
                               "pricePerUnit": "0.25",
                               "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                              "isPricePercentage": false
+                              "isPricePercentage": false,
+                              "pricingType": "LINEAR"
                             },
                             "billingFrequency": "MONTHLY",
                             "billingType": "IN_ARREARS",
@@ -24787,10 +24787,10 @@
                               "name": "Demo Product",
                               "currency": "GBP",
                               "structure": {
-                                "pricingType": "LINEAR",
                                 "pricePerUnit": "0.25",
                                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                                "isPricePercentage": false
+                                "isPricePercentage": false,
+                                "pricingType": "LINEAR"
                               },
                               "billingFrequency": "MONTHLY",
                               "billingType": "IN_ARREARS",
@@ -25095,10 +25095,10 @@
                         "name": "Demo Product",
                         "currency": "GBP",
                         "structure": {
-                          "pricingType": "LINEAR",
                           "pricePerUnit": "0.25",
                           "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                          "isPricePercentage": false
+                          "isPricePercentage": false,
+                          "pricingType": "LINEAR"
                         },
                         "billingFrequency": "MONTHLY",
                         "billingType": "IN_ARREARS",
@@ -25207,10 +25207,10 @@
                           "name": "Demo Product",
                           "currency": "GBP",
                           "structure": {
-                            "pricingType": "LINEAR",
                             "pricePerUnit": "0.25",
                             "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                            "isPricePercentage": false
+                            "isPricePercentage": false,
+                            "pricingType": "LINEAR"
                           },
                           "billingFrequency": "MONTHLY",
                           "billingType": "IN_ARREARS",
@@ -25384,10 +25384,10 @@
                         "name": "Demo Product",
                         "currency": "GBP",
                         "structure": {
-                          "pricingType": "LINEAR",
                           "pricePerUnit": "0.25",
                           "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                          "isPricePercentage": false
+                          "isPricePercentage": false,
+                          "pricingType": "LINEAR"
                         },
                         "billingFrequency": "MONTHLY",
                         "billingType": "IN_ARREARS",
@@ -25496,10 +25496,10 @@
                           "name": "Demo Product",
                           "currency": "GBP",
                           "structure": {
-                            "pricingType": "LINEAR",
                             "pricePerUnit": "0.25",
                             "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                            "isPricePercentage": false
+                            "isPricePercentage": false,
+                            "pricingType": "LINEAR"
                           },
                           "billingFrequency": "MONTHLY",
                           "billingType": "IN_ARREARS",
@@ -25740,10 +25740,10 @@
                         "name": "Demo Product",
                         "currency": "GBP",
                         "structure": {
-                          "pricingType": "LINEAR",
                           "pricePerUnit": "0.25",
                           "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                          "isPricePercentage": false
+                          "isPricePercentage": false,
+                          "pricingType": "LINEAR"
                         },
                         "billingFrequency": "MONTHLY",
                         "billingType": "IN_ARREARS",
@@ -25852,10 +25852,10 @@
                           "name": "Demo Product",
                           "currency": "GBP",
                           "structure": {
-                            "pricingType": "LINEAR",
                             "pricePerUnit": "0.25",
                             "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                            "isPricePercentage": false
+                            "isPricePercentage": false,
+                            "pricingType": "LINEAR"
                           },
                           "billingFrequency": "MONTHLY",
                           "billingType": "IN_ARREARS",
@@ -26020,10 +26020,10 @@
                         "name": "Demo Product",
                         "currency": "GBP",
                         "structure": {
-                          "pricingType": "LINEAR",
                           "pricePerUnit": "0.25",
                           "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                          "isPricePercentage": false
+                          "isPricePercentage": false,
+                          "pricingType": "LINEAR"
                         },
                         "billingFrequency": "MONTHLY",
                         "billingType": "IN_ARREARS",
@@ -26132,10 +26132,10 @@
                           "name": "Demo Product",
                           "currency": "GBP",
                           "structure": {
-                            "pricingType": "LINEAR",
                             "pricePerUnit": "0.25",
                             "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                            "isPricePercentage": false
+                            "isPricePercentage": false,
+                            "pricingType": "LINEAR"
                           },
                           "billingFrequency": "MONTHLY",
                           "billingType": "IN_ARREARS",
@@ -26309,10 +26309,10 @@
                         "name": "Demo Product",
                         "currency": "GBP",
                         "structure": {
-                          "pricingType": "LINEAR",
                           "pricePerUnit": "0.25",
                           "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                          "isPricePercentage": false
+                          "isPricePercentage": false,
+                          "pricingType": "LINEAR"
                         },
                         "billingFrequency": "MONTHLY",
                         "billingType": "IN_ARREARS",
@@ -26421,10 +26421,10 @@
                           "name": "Demo Product",
                           "currency": "GBP",
                           "structure": {
-                            "pricingType": "LINEAR",
                             "pricePerUnit": "0.25",
                             "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                            "isPricePercentage": false
+                            "isPricePercentage": false,
+                            "pricingType": "LINEAR"
                           },
                           "billingFrequency": "MONTHLY",
                           "billingType": "IN_ARREARS",
@@ -30087,7 +30087,6 @@
         "type": "object",
         "description": "The pricing structure",
         "example": {
-          "pricingType": "GRADUATED",
           "tiers": [
             {
               "upperBound": "200",
@@ -30108,13 +30107,10 @@
             }
           ],
           "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-          "usageCalculationMode": "BILLING_PERIOD"
+          "usageCalculationMode": "BILLING_PERIOD",
+          "pricingType": "GRADUATED"
         },
         "properties": {
-          "pricingType": {
-            "description": "The type of pricing",
-            "$ref": "#/components/schemas/GraduatedPricingType"
-          },
           "tiers": {
             "type": "array",
             "description": "A list of contiguous pricing tiers",
@@ -30149,21 +30145,12 @@
           "usageCalculationMode": {
             "description": "Indicates the scope of usage calculation",
             "$ref": "#/components/schemas/UsageCalculationMode"
+          },
+          "pricingType": {
+            "description": "The type of pricing",
+            "$ref": "#/components/schemas/GraduatedPricingType"
           }
         }
-      },
-      "PricingType": {
-        "type": "string",
-        "example": "GRADUATED",
-        "enum": [
-          "ONE_TIME",
-          "FIXED",
-          "LINEAR",
-          "PACKAGE",
-          "GRADUATED",
-          "VOLUME",
-          "SEAT_BASED"
-        ]
       },
       "GraduatedUsageTier": {
         "required": [
@@ -30207,6 +30194,19 @@
           "BILLING_PERIOD",
           "CUMULATIVE",
           "PERIODIC"
+        ]
+      },
+      "PricingType": {
+        "type": "string",
+        "example": "GRADUATED",
+        "enum": [
+          "ONE_TIME",
+          "FIXED",
+          "LINEAR",
+          "PACKAGE",
+          "GRADUATED",
+          "VOLUME",
+          "SEAT_BASED"
         ]
       },
       "BillingFrequency": {
@@ -30338,7 +30338,6 @@
           "name": "Sample product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "GRADUATED",
             "tiers": [
               {
                 "upperBound": "200",
@@ -30359,7 +30358,8 @@
               }
             ],
             "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-            "usageCalculationMode": "BILLING_PERIOD"
+            "usageCalculationMode": "BILLING_PERIOD",
+            "pricingType": "GRADUATED"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -30446,7 +30446,6 @@
         "type": "object",
         "description": "The pricing structure",
         "example": {
-          "pricingType": "VOLUME",
           "tiers": [
             {
               "upperBound": "100",
@@ -30464,13 +30463,10 @@
               "minPrice": "5"
             }
           ],
-          "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+          "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+          "pricingType": "VOLUME"
         },
         "properties": {
-          "pricingType": {
-            "description": "The type of pricing",
-            "$ref": "#/components/schemas/VolumePricingType"
-          },
           "tiers": {
             "type": "array",
             "description": "A list of contiguous pricing tiers",
@@ -30499,6 +30495,10 @@
             "type": "string",
             "description": "The usage metric associated to this tier",
             "example": "04c62961-04ba-48e6-b985-758bb7d3e712"
+          },
+          "pricingType": {
+            "description": "The type of pricing",
+            "$ref": "#/components/schemas/VolumePricingType"
           }
         }
       },
@@ -30567,7 +30567,6 @@
           "name": "Sample product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "VOLUME",
             "tiers": [
               {
                 "upperBound": "100",
@@ -30585,7 +30584,8 @@
                 "minPrice": "5"
               }
             ],
-            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+            "pricingType": "VOLUME"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -30668,7 +30668,6 @@
         "type": "object",
         "description": "The pricing structure",
         "example": {
-          "pricingType": "SEAT_BASED",
           "seatMetricId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "pricePerSeat": "0.25",
           "prorationStrategy": "USE_MAXIMUM",
@@ -30684,13 +30683,10 @@
               "price": "0.75",
               "fee": "25.00"
             }
-          ]
+          ],
+          "pricingType": "SEAT_BASED"
         },
         "properties": {
-          "pricingType": {
-            "description": "The type of pricing",
-            "$ref": "#/components/schemas/SeatBasedPricingType"
-          },
           "seatMetricId": {
             "type": "string",
             "description": "Seat metric associated to this pricing structure",
@@ -30731,6 +30727,10 @@
             "items": {
               "$ref": "#/components/schemas/SeatUsageTier"
             }
+          },
+          "pricingType": {
+            "description": "The type of pricing",
+            "$ref": "#/components/schemas/SeatBasedPricingType"
           }
         }
       },
@@ -30788,7 +30788,6 @@
           "name": "Sample product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "SEAT_BASED",
             "seatMetricId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
             "pricePerSeat": "0.25",
             "prorationStrategy": "USE_MAXIMUM",
@@ -30804,7 +30803,8 @@
                 "price": "0.75",
                 "fee": "25.00"
               }
-            ]
+            ],
+            "pricingType": "SEAT_BASED"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -30885,16 +30885,12 @@
         "type": "object",
         "description": "The pricing structure",
         "example": {
-          "pricingType": "PACKAGE",
           "packageSize": "50",
           "pricePerPackage": "2.00",
-          "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+          "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+          "pricingType": "PACKAGE"
         },
         "properties": {
-          "pricingType": {
-            "description": "The type of pricing",
-            "$ref": "#/components/schemas/PackagePricingType"
-          },
           "packageSize": {
             "type": "string",
             "description": "The amount of usage allowed for the price in this structure",
@@ -30909,6 +30905,10 @@
             "type": "string",
             "description": "The usage metric associated to this tier",
             "example": "04c62961-04ba-48e6-b985-758bb7d3e712"
+          },
+          "pricingType": {
+            "description": "The type of pricing",
+            "$ref": "#/components/schemas/PackagePricingType"
           }
         }
       },
@@ -30930,10 +30930,10 @@
           "name": "Sample product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "PACKAGE",
             "packageSize": "50",
             "pricePerPackage": "2.00",
-            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+            "pricingType": "PACKAGE"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -31014,16 +31014,12 @@
         "type": "object",
         "description": "The pricing structure",
         "example": {
-          "pricingType": "LINEAR",
           "pricePerUnit": "0.25",
           "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-          "isPricePercentage": false
+          "isPricePercentage": false,
+          "pricingType": "LINEAR"
         },
         "properties": {
-          "pricingType": {
-            "description": "The type of pricing",
-            "$ref": "#/components/schemas/LinearPricingType"
-          },
           "pricePerUnit": {
             "type": "string",
             "description": "The per unit rate to apply to usage for this product. In the case of percentage pricing where `isPricePercentage` is set to `true`, a value of 1 represents 100%.",
@@ -31038,6 +31034,10 @@
             "type": "boolean",
             "description": "Indicate whether the price attribute is to be considered as a percentage or an absolute value.",
             "example": false
+          },
+          "pricingType": {
+            "description": "The type of pricing",
+            "$ref": "#/components/schemas/LinearPricingType"
           }
         }
       },
@@ -31059,10 +31059,10 @@
           "name": "Sample product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "LINEAR",
             "pricePerUnit": "0.25",
             "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-            "isPricePercentage": false
+            "isPricePercentage": false,
+            "pricingType": "LINEAR"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -31141,18 +31141,18 @@
         "type": "object",
         "description": "The pricing structure",
         "example": {
-          "pricingType": "FIXED",
-          "price": "20.00"
+          "price": "20.00",
+          "pricingType": "FIXED"
         },
         "properties": {
-          "pricingType": {
-            "description": "The type of pricing",
-            "$ref": "#/components/schemas/FixedPricingType"
-          },
           "price": {
             "type": "string",
             "description": "A fixed amount that is charged once every billing period.",
             "example": "20.00"
+          },
+          "pricingType": {
+            "description": "The type of pricing",
+            "$ref": "#/components/schemas/FixedPricingType"
           }
         }
       },
@@ -31174,8 +31174,8 @@
           "name": "Sample product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "FIXED",
-            "price": "20.00"
+            "price": "20.00",
+            "pricingType": "FIXED"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -31254,18 +31254,18 @@
         "type": "object",
         "description": "The pricing structure",
         "example": {
-          "pricingType": "ONE_TIME",
-          "price": "150.00"
+          "price": "150.00",
+          "pricingType": "ONE_TIME"
         },
         "properties": {
-          "pricingType": {
-            "description": "The type of pricing",
-            "$ref": "#/components/schemas/OneTimePricingType"
-          },
           "price": {
             "type": "string",
             "description": "A fixed amount that is charged once.",
             "example": "150.00"
+          },
+          "pricingType": {
+            "description": "The type of pricing",
+            "$ref": "#/components/schemas/OneTimePricingType"
           }
         }
       },
@@ -31287,8 +31287,8 @@
           "name": "Sample product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "ONE_TIME",
-            "price": "150.00"
+            "price": "150.00",
+            "pricingType": "ONE_TIME"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -31381,7 +31381,6 @@
           "name": "Sample product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "GRADUATED",
             "tiers": [
               {
                 "upperBound": "200",
@@ -31402,7 +31401,8 @@
               }
             ],
             "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-            "usageCalculationMode": "BILLING_PERIOD"
+            "usageCalculationMode": "BILLING_PERIOD",
+            "pricingType": "GRADUATED"
           },
           "billingFrequency": "MONTHLY",
           "usageCalculationPeriod": {
@@ -31519,7 +31519,6 @@
           "name": "Sample product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "VOLUME",
             "tiers": [
               {
                 "upperBound": "100",
@@ -31537,7 +31536,8 @@
                 "minPrice": "5"
               }
             ],
-            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+            "pricingType": "VOLUME"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -31647,7 +31647,6 @@
           "name": "Sample product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "SEAT_BASED",
             "seatMetricId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
             "pricePerSeat": "0.25",
             "prorationStrategy": "USE_MAXIMUM",
@@ -31663,7 +31662,8 @@
                 "price": "0.75",
                 "fee": "25.00"
               }
-            ]
+            ],
+            "pricingType": "SEAT_BASED"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -31773,10 +31773,10 @@
           "name": "Sample product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "PACKAGE",
             "packageSize": "50",
             "pricePerPackage": "2.00",
-            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+            "pricingType": "PACKAGE"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -31886,10 +31886,10 @@
           "name": "Sample product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "LINEAR",
             "pricePerUnit": "0.25",
             "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-            "isPricePercentage": false
+            "isPricePercentage": false,
+            "pricingType": "LINEAR"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -31999,8 +31999,8 @@
           "name": "Sample product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "FIXED",
-            "price": "20.00"
+            "price": "20.00",
+            "pricingType": "FIXED"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -32110,8 +32110,8 @@
           "name": "Sample product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "ONE_TIME",
-            "price": "150.00"
+            "price": "150.00",
+            "pricingType": "ONE_TIME"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -32213,7 +32213,6 @@
               "name": "Sample product",
               "currency": "GBP",
               "structure": {
-                "pricingType": "GRADUATED",
                 "tiers": [
                   {
                     "upperBound": "200",
@@ -32234,7 +32233,8 @@
                   }
                 ],
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                "usageCalculationMode": "BILLING_PERIOD"
+                "usageCalculationMode": "BILLING_PERIOD",
+                "pricingType": "GRADUATED"
               },
               "billingFrequency": "MONTHLY",
               "usageCalculationPeriod": {
@@ -32275,7 +32275,6 @@
                 "name": "Sample product",
                 "currency": "GBP",
                 "structure": {
-                  "pricingType": "GRADUATED",
                   "tiers": [
                     {
                       "upperBound": "200",
@@ -32296,7 +32295,8 @@
                     }
                   ],
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                  "usageCalculationMode": "BILLING_PERIOD"
+                  "usageCalculationMode": "BILLING_PERIOD",
+                  "pricingType": "GRADUATED"
                 },
                 "billingFrequency": "MONTHLY",
                 "usageCalculationPeriod": {
@@ -32350,7 +32350,6 @@
           "name": "Sample product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "GRADUATED",
             "tiers": [
               {
                 "upperBound": "200",
@@ -32371,7 +32370,8 @@
               }
             ],
             "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-            "usageCalculationMode": "BILLING_PERIOD"
+            "usageCalculationMode": "BILLING_PERIOD",
+            "pricingType": "GRADUATED"
           },
           "billingFrequency": "MONTHLY",
           "usageCalculationPeriod": {
@@ -42519,7 +42519,6 @@
         "type": "object",
         "description": "The pricing structure for this price. This can be a simple fixed price, or a more complex structure that varies based on usage.",
         "example": {
-          "pricingType": "GRADUATED",
           "tiers": [
             {
               "upperBound": "200",
@@ -42540,13 +42539,10 @@
             }
           ],
           "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-          "usageCalculationMode": "BILLING_PERIOD"
+          "usageCalculationMode": "BILLING_PERIOD",
+          "pricingType": "GRADUATED"
         },
         "properties": {
-          "pricingType": {
-            "description": "The type of pricing",
-            "$ref": "#/components/schemas/GraduatedPricingType"
-          },
           "tiers": {
             "type": "array",
             "description": "A list of contiguous pricing tiers",
@@ -42581,6 +42577,10 @@
           "usageCalculationMode": {
             "description": "Indicates the scope of usage calculation",
             "$ref": "#/components/schemas/UsageCalculationMode"
+          },
+          "pricingType": {
+            "description": "The type of pricing",
+            "$ref": "#/components/schemas/GraduatedPricingType"
           }
         }
       },
@@ -42633,7 +42633,6 @@
           "name": "Demo Product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "GRADUATED",
             "tiers": [
               {
                 "upperBound": "200",
@@ -42654,7 +42653,8 @@
               }
             ],
             "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-            "usageCalculationMode": "BILLING_PERIOD"
+            "usageCalculationMode": "BILLING_PERIOD",
+            "pricingType": "GRADUATED"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -42747,7 +42747,6 @@
         "type": "object",
         "description": "The pricing structure for this price. This can be a simple fixed price, or a more complex structure that varies based on usage.",
         "example": {
-          "pricingType": "VOLUME",
           "tiers": [
             {
               "upperBound": "100",
@@ -42765,13 +42764,10 @@
               "minPrice": "5"
             }
           ],
-          "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+          "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+          "pricingType": "VOLUME"
         },
         "properties": {
-          "pricingType": {
-            "description": "The type of pricing",
-            "$ref": "#/components/schemas/VolumePricingType"
-          },
           "tiers": {
             "type": "array",
             "description": "A list of contiguous pricing tiers",
@@ -42800,6 +42796,10 @@
             "type": "string",
             "description": "The usage metric associated to this tier",
             "example": "04c62961-04ba-48e6-b985-758bb7d3e712"
+          },
+          "pricingType": {
+            "description": "The type of pricing",
+            "$ref": "#/components/schemas/VolumePricingType"
           }
         }
       },
@@ -42819,7 +42819,6 @@
           "name": "Demo Product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "VOLUME",
             "tiers": [
               {
                 "upperBound": "100",
@@ -42837,7 +42836,8 @@
                 "minPrice": "5"
               }
             ],
-            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+            "pricingType": "VOLUME"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -42926,7 +42926,6 @@
         "type": "object",
         "description": "The pricing structure for this price. This can be a simple fixed price, or a more complex structure that varies based on usage.",
         "example": {
-          "pricingType": "SEAT_BASED",
           "seatMetricId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "pricePerSeat": "0.25",
           "prorationStrategy": "USE_MAXIMUM",
@@ -42942,13 +42941,10 @@
               "price": "0.75",
               "fee": "25.00"
             }
-          ]
+          ],
+          "pricingType": "SEAT_BASED"
         },
         "properties": {
-          "pricingType": {
-            "description": "The type of pricing",
-            "$ref": "#/components/schemas/SeatBasedPricingType"
-          },
           "seatMetricId": {
             "type": "string",
             "description": "Seat metric associated to this pricing structure",
@@ -42989,6 +42985,10 @@
             "items": {
               "$ref": "#/components/schemas/SeatUsageTier"
             }
+          },
+          "pricingType": {
+            "description": "The type of pricing",
+            "$ref": "#/components/schemas/SeatBasedPricingType"
           }
         }
       },
@@ -43008,7 +43008,6 @@
           "name": "Demo Product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "SEAT_BASED",
             "seatMetricId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
             "pricePerSeat": "0.25",
             "prorationStrategy": "USE_MAXIMUM",
@@ -43024,7 +43023,8 @@
                 "price": "0.75",
                 "fee": "25.00"
               }
-            ]
+            ],
+            "pricingType": "SEAT_BASED"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -43111,16 +43111,12 @@
         "type": "object",
         "description": "The pricing structure for this price. This can be a simple fixed price, or a more complex structure that varies based on usage.",
         "example": {
-          "pricingType": "PACKAGE",
           "packageSize": "50",
           "pricePerPackage": "2.00",
-          "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+          "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+          "pricingType": "PACKAGE"
         },
         "properties": {
-          "pricingType": {
-            "description": "The type of pricing",
-            "$ref": "#/components/schemas/PackagePricingType"
-          },
           "packageSize": {
             "type": "string",
             "description": "The amount of usage allowed for the price in this structure",
@@ -43135,6 +43131,10 @@
             "type": "string",
             "description": "The usage metric associated to this tier",
             "example": "04c62961-04ba-48e6-b985-758bb7d3e712"
+          },
+          "pricingType": {
+            "description": "The type of pricing",
+            "$ref": "#/components/schemas/PackagePricingType"
           }
         }
       },
@@ -43154,10 +43154,10 @@
           "name": "Demo Product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "PACKAGE",
             "packageSize": "50",
             "pricePerPackage": "2.00",
-            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+            "pricingType": "PACKAGE"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -43244,16 +43244,12 @@
         "type": "object",
         "description": "The pricing structure for this price. This can be a simple fixed price, or a more complex structure that varies based on usage.",
         "example": {
-          "pricingType": "LINEAR",
           "pricePerUnit": "0.25",
           "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-          "isPricePercentage": false
+          "isPricePercentage": false,
+          "pricingType": "LINEAR"
         },
         "properties": {
-          "pricingType": {
-            "description": "The type of pricing",
-            "$ref": "#/components/schemas/LinearPricingType"
-          },
           "pricePerUnit": {
             "type": "string",
             "description": "The per unit rate to apply to usage for this product. In the case of percentage pricing where `isPricePercentage` is set to `true`, a value of 1 represents 100%.",
@@ -43268,6 +43264,10 @@
             "type": "boolean",
             "description": "Indicate whether the price attribute is to be considered as a percentage or an absolute value.",
             "example": false
+          },
+          "pricingType": {
+            "description": "The type of pricing",
+            "$ref": "#/components/schemas/LinearPricingType"
           }
         }
       },
@@ -43287,10 +43287,10 @@
           "name": "Demo Product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "LINEAR",
             "pricePerUnit": "0.25",
             "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-            "isPricePercentage": false
+            "isPricePercentage": false,
+            "pricingType": "LINEAR"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -43375,18 +43375,18 @@
         "type": "object",
         "description": "The pricing structure for this price. This can be a simple fixed price, or a more complex structure that varies based on usage.",
         "example": {
-          "pricingType": "FIXED",
-          "price": "20.00"
+          "price": "20.00",
+          "pricingType": "FIXED"
         },
         "properties": {
-          "pricingType": {
-            "description": "The type of pricing",
-            "$ref": "#/components/schemas/FixedPricingType"
-          },
           "price": {
             "type": "string",
             "description": "A fixed amount that is charged once every billing period.",
             "example": "20.00"
+          },
+          "pricingType": {
+            "description": "The type of pricing",
+            "$ref": "#/components/schemas/FixedPricingType"
           }
         }
       },
@@ -43406,8 +43406,8 @@
           "name": "Demo Product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "FIXED",
-            "price": "20.00"
+            "price": "20.00",
+            "pricingType": "FIXED"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -43492,18 +43492,18 @@
         "type": "object",
         "description": "The pricing structure for this price. This can be a simple fixed price, or a more complex structure that varies based on usage.",
         "example": {
-          "pricingType": "ONE_TIME",
-          "price": "150.00"
+          "price": "150.00",
+          "pricingType": "ONE_TIME"
         },
         "properties": {
-          "pricingType": {
-            "description": "The type of pricing",
-            "$ref": "#/components/schemas/OneTimePricingType"
-          },
           "price": {
             "type": "string",
             "description": "A fixed amount that is charged once.",
             "example": "150.00"
+          },
+          "pricingType": {
+            "description": "The type of pricing",
+            "$ref": "#/components/schemas/OneTimePricingType"
           }
         }
       },
@@ -43523,8 +43523,8 @@
           "name": "Demo Product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "ONE_TIME",
-            "price": "150.00"
+            "price": "150.00",
+            "pricingType": "ONE_TIME"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -43622,7 +43622,6 @@
           "name": "Demo Product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "GRADUATED",
             "tiers": [
               {
                 "upperBound": "200",
@@ -43643,7 +43642,8 @@
               }
             ],
             "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-            "usageCalculationMode": "BILLING_PERIOD"
+            "usageCalculationMode": "BILLING_PERIOD",
+            "pricingType": "GRADUATED"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -43765,7 +43765,6 @@
           "name": "Demo Product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "VOLUME",
             "tiers": [
               {
                 "upperBound": "100",
@@ -43783,7 +43782,8 @@
                 "minPrice": "5"
               }
             ],
-            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+            "pricingType": "VOLUME"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -43898,7 +43898,6 @@
           "name": "Demo Product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "SEAT_BASED",
             "seatMetricId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
             "pricePerSeat": "0.25",
             "prorationStrategy": "USE_MAXIMUM",
@@ -43914,7 +43913,8 @@
                 "price": "0.75",
                 "fee": "25.00"
               }
-            ]
+            ],
+            "pricingType": "SEAT_BASED"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -44029,10 +44029,10 @@
           "name": "Demo Product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "PACKAGE",
             "packageSize": "50",
             "pricePerPackage": "2.00",
-            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712"
+            "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+            "pricingType": "PACKAGE"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -44147,10 +44147,10 @@
           "name": "Demo Product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "LINEAR",
             "pricePerUnit": "0.25",
             "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-            "isPricePercentage": false
+            "isPricePercentage": false,
+            "pricingType": "LINEAR"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -44265,8 +44265,8 @@
           "name": "Demo Product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "FIXED",
-            "price": "20.00"
+            "price": "20.00",
+            "pricingType": "FIXED"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -44381,8 +44381,8 @@
           "name": "Demo Product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "ONE_TIME",
-            "price": "150.00"
+            "price": "150.00",
+            "pricingType": "ONE_TIME"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -44506,7 +44506,6 @@
               "name": "Demo Product",
               "currency": "GBP",
               "structure": {
-                "pricingType": "GRADUATED",
                 "tiers": [
                   {
                     "upperBound": "200",
@@ -44527,7 +44526,8 @@
                   }
                 ],
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                "usageCalculationMode": "BILLING_PERIOD"
+                "usageCalculationMode": "BILLING_PERIOD",
+                "pricingType": "GRADUATED"
               },
               "billingFrequency": "MONTHLY",
               "billingType": "IN_ARREARS",
@@ -44569,7 +44569,6 @@
                 "name": "Demo Product",
                 "currency": "GBP",
                 "structure": {
-                  "pricingType": "GRADUATED",
                   "tiers": [
                     {
                       "upperBound": "200",
@@ -44590,7 +44589,8 @@
                     }
                   ],
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                  "usageCalculationMode": "BILLING_PERIOD"
+                  "usageCalculationMode": "BILLING_PERIOD",
+                  "pricingType": "GRADUATED"
                 },
                 "billingFrequency": "MONTHLY",
                 "billingType": "IN_ARREARS",
@@ -44644,7 +44644,6 @@
           "name": "Demo Product",
           "currency": "GBP",
           "structure": {
-            "pricingType": "GRADUATED",
             "tiers": [
               {
                 "upperBound": "200",
@@ -44665,7 +44664,8 @@
               }
             ],
             "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-            "usageCalculationMode": "BILLING_PERIOD"
+            "usageCalculationMode": "BILLING_PERIOD",
+            "pricingType": "GRADUATED"
           },
           "billingFrequency": "MONTHLY",
           "billingType": "IN_ARREARS",
@@ -46658,10 +46658,10 @@
               "name": "Demo Product",
               "currency": "GBP",
               "structure": {
-                "pricingType": "LINEAR",
                 "pricePerUnit": "0.25",
                 "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                "isPricePercentage": false
+                "isPricePercentage": false,
+                "pricingType": "LINEAR"
               },
               "billingFrequency": "MONTHLY",
               "billingType": "IN_ARREARS",
@@ -46823,10 +46823,10 @@
                 "name": "Demo Product",
                 "currency": "GBP",
                 "structure": {
-                  "pricingType": "LINEAR",
                   "pricePerUnit": "0.25",
                   "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                  "isPricePercentage": false
+                  "isPricePercentage": false,
+                  "pricingType": "LINEAR"
                 },
                 "billingFrequency": "MONTHLY",
                 "billingType": "IN_ARREARS",
@@ -47392,10 +47392,10 @@
                   "name": "Demo Product",
                   "currency": "GBP",
                   "structure": {
-                    "pricingType": "LINEAR",
                     "pricePerUnit": "0.25",
                     "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                    "isPricePercentage": false
+                    "isPricePercentage": false,
+                    "pricingType": "LINEAR"
                   },
                   "billingFrequency": "MONTHLY",
                   "billingType": "IN_ARREARS",
@@ -47512,10 +47512,10 @@
                     "name": "Demo Product",
                     "currency": "GBP",
                     "structure": {
-                      "pricingType": "LINEAR",
                       "pricePerUnit": "0.25",
                       "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
-                      "isPricePercentage": false
+                      "isPricePercentage": false,
+                      "pricingType": "LINEAR"
                     },
                     "billingFrequency": "MONTHLY",
                     "billingType": "IN_ARREARS",
