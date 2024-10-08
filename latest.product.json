@@ -8746,7 +8746,8 @@
                       {
                         "externalId": "123",
                         "externalService": "Xero",
-                        "syncTime": "2022-06-28T16:47:00Z"
+                        "syncTime": "2022-06-28T16:47:00Z",
+                        "externalUrl": "https://invoicing.xero.com/view/85e52542-3e54-4f0d-872b-33bba11a0504"
                       }
                     ],
                     "merchantDetails": {
@@ -8908,7 +8909,8 @@
                         {
                           "externalId": "123",
                           "externalService": "Xero",
-                          "syncTime": "2022-06-28T16:47:00Z"
+                          "syncTime": "2022-06-28T16:47:00Z",
+                          "externalUrl": "https://invoicing.xero.com/view/85e52542-3e54-4f0d-872b-33bba11a0504"
                         }
                       ],
                       "merchantDetails": {
@@ -10279,7 +10281,8 @@
                       {
                         "externalId": "123",
                         "externalService": "Xero",
-                        "syncTime": "2022-06-28T16:47:00Z"
+                        "syncTime": "2022-06-28T16:47:00Z",
+                        "externalUrl": "https://invoicing.xero.com/view/85e52542-3e54-4f0d-872b-33bba11a0504"
                       }
                     ],
                     "merchantDetails": {
@@ -10441,7 +10444,8 @@
                         {
                           "externalId": "123",
                           "externalService": "Xero",
-                          "syncTime": "2022-06-28T16:47:00Z"
+                          "syncTime": "2022-06-28T16:47:00Z",
+                          "externalUrl": "https://invoicing.xero.com/view/85e52542-3e54-4f0d-872b-33bba11a0504"
                         }
                       ],
                       "merchantDetails": {
@@ -11148,7 +11152,8 @@
                       {
                         "externalId": "123",
                         "externalService": "Xero",
-                        "syncTime": "2022-06-28T16:47:00Z"
+                        "syncTime": "2022-06-28T16:47:00Z",
+                        "externalUrl": "https://invoicing.xero.com/view/85e52542-3e54-4f0d-872b-33bba11a0504"
                       }
                     ],
                     "merchantDetails": {
@@ -11310,7 +11315,8 @@
                         {
                           "externalId": "123",
                           "externalService": "Xero",
-                          "syncTime": "2022-06-28T16:47:00Z"
+                          "syncTime": "2022-06-28T16:47:00Z",
+                          "externalUrl": "https://invoicing.xero.com/view/85e52542-3e54-4f0d-872b-33bba11a0504"
                         }
                       ],
                       "merchantDetails": {
@@ -34547,7 +34553,8 @@
             {
               "externalId": "123",
               "externalService": "Xero",
-              "syncTime": "2022-06-28T16:47:00Z"
+              "syncTime": "2022-06-28T16:47:00Z",
+              "externalUrl": "https://invoicing.xero.com/view/85e52542-3e54-4f0d-872b-33bba11a0504"
             }
           ],
           "merchantDetails": {
@@ -34801,7 +34808,8 @@
               {
                 "externalId": "123",
                 "externalService": "Xero",
-                "syncTime": "2022-06-28T16:47:00Z"
+                "syncTime": "2022-06-28T16:47:00Z",
+                "externalUrl": "https://invoicing.xero.com/view/85e52542-3e54-4f0d-872b-33bba11a0504"
               }
             ],
             "items": {
@@ -34875,7 +34883,8 @@
         "example": {
           "externalId": "123",
           "externalService": "Xero",
-          "syncTime": "2022-06-28T16:47:00Z"
+          "syncTime": "2022-06-28T16:47:00Z",
+          "externalUrl": "https://invoicing.xero.com/view/85e52542-3e54-4f0d-872b-33bba11a0504"
         },
         "properties": {
           "externalId": {
@@ -34891,6 +34900,11 @@
             "type": "string",
             "description": "The time that this was synced from the connected integration",
             "example": "2022-06-28T16:47:00Z"
+          },
+          "externalUrl": {
+            "type": "string",
+            "description": "External URL",
+            "example": "https://invoicing.xero.com/view/85e52542-3e54-4f0d-872b-33bba11a0504"
           }
         }
       },
