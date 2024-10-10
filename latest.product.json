@@ -30560,7 +30560,8 @@
           "Slack",
           "Snowflake",
           "Stripe",
-          "Xero"
+          "Xero",
+          "Avalara"
         ]
       },
       "PriceParameter": {
