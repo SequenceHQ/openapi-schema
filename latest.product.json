@@ -846,6 +846,7 @@
                       "country": "US"
                     },
                     "url": "https://example.com/",
+                    "domain": "example.com",
                     "label": "Example customer",
                     "integrationIds": [
                       {
@@ -907,6 +908,7 @@
                         "country": "US"
                       },
                       "url": "https://example.com/",
+                      "domain": "example.com",
                       "label": "Example customer",
                       "integrationIds": [
                         {
@@ -1107,6 +1109,7 @@
                           "country": "US"
                         },
                         "url": "https://example.com/",
+                        "domain": "example.com",
                         "label": "Example customer",
                         "integrationIds": [
                           {
@@ -1166,6 +1169,7 @@
                             "country": "US"
                           },
                           "url": "https://example.com/",
+                          "domain": "example.com",
                           "label": "Example customer",
                           "integrationIds": [
                             {
@@ -1392,6 +1396,7 @@
                       "country": "US"
                     },
                     "url": "https://example.com/",
+                    "domain": "example.com",
                     "label": "Example customer",
                     "integrationIds": [
                       {
@@ -1453,6 +1458,7 @@
                         "country": "US"
                       },
                       "url": "https://example.com/",
+                      "domain": "example.com",
                       "label": "Example customer",
                       "integrationIds": [
                         {
@@ -1579,6 +1585,7 @@
                       "country": "US"
                     },
                     "url": "https://example.com/",
+                    "domain": "example.com",
                     "label": "Example customer",
                     "integrationIds": [
                       {
@@ -1640,6 +1647,7 @@
                         "country": "US"
                       },
                       "url": "https://example.com/",
+                      "domain": "example.com",
                       "label": "Example customer",
                       "integrationIds": [
                         {
@@ -1866,6 +1874,7 @@
                       "country": "US"
                     },
                     "url": "https://example.com/",
+                    "domain": "example.com",
                     "label": "Example customer",
                     "integrationIds": [
                       {
@@ -1927,6 +1936,7 @@
                         "country": "US"
                       },
                       "url": "https://example.com/",
+                      "domain": "example.com",
                       "label": "Example customer",
                       "integrationIds": [
                         {
@@ -28414,6 +28424,7 @@
             "country": "US"
           },
           "url": "https://example.com/",
+          "domain": "example.com",
           "label": "Example customer",
           "integrationIds": [
             {
@@ -28489,6 +28500,11 @@
             "type": "string",
             "description": "URL",
             "example": "https://example.com/"
+          },
+          "domain": {
+            "type": "string",
+            "description": "Customer's primary domain name",
+            "example": "example.com"
           },
           "label": {
             "type": "string",
@@ -29306,6 +29322,7 @@
                 "country": "US"
               },
               "url": "https://example.com/",
+              "domain": "example.com",
               "label": "Example customer",
               "integrationIds": [
                 {
@@ -29364,6 +29381,7 @@
                   "country": "US"
                 },
                 "url": "https://example.com/",
+                "domain": "example.com",
                 "label": "Example customer",
                 "integrationIds": [
                   {
@@ -29431,6 +29449,7 @@
             "country": "US"
           },
           "url": "https://example.com/",
+          "domain": "example.com",
           "label": "Example customer",
           "integrationIds": [
             {
@@ -29495,6 +29514,11 @@
             "type": "string",
             "description": "URL",
             "example": "https://example.com/"
+          },
+          "domain": {
+            "type": "string",
+            "description": "Customer's primary domain name",
+            "example": "example.com"
           },
           "label": {
             "type": "string",
