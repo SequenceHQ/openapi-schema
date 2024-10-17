@@ -248,7 +248,7 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Maximum number of objects to return per-page.",
+            "description": "Maximum number of objects to return per-page. Must be between 1 and 100 (inclusive).",
             "required": false,
             "schema": {
               "type": "integer"
@@ -656,7 +656,7 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Maximum number of objects to return per-page.",
+            "description": "Maximum number of objects to return per-page. Must be between 1 and 100 (inclusive).",
             "required": false,
             "schema": {
               "type": "integer"
@@ -1041,7 +1041,7 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Maximum number of objects to return per-page.",
+            "description": "Maximum number of objects to return per-page. Must be between 1 and 100 (inclusive).",
             "required": false,
             "schema": {
               "type": "integer"
@@ -2691,7 +2691,7 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Maximum number of objects to return per-page.",
+            "description": "Maximum number of objects to return per-page. Must be between 1 and 100 (inclusive).",
             "required": false,
             "schema": {
               "type": "integer"
@@ -3528,7 +3528,7 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Maximum number of objects to return per-page.",
+            "description": "Maximum number of objects to return per-page. Must be between 1 and 100 (inclusive).",
             "required": false,
             "schema": {
               "type": "integer"
@@ -4070,7 +4070,7 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Maximum number of objects to return per-page.",
+            "description": "Maximum number of objects to return per-page. Must be between 1 and 100 (inclusive).",
             "required": false,
             "schema": {
               "type": "integer"
@@ -7963,7 +7963,7 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Maximum number of objects to return per-page.",
+            "description": "Maximum number of objects to return per-page. Must be between 1 and 100 (inclusive).",
             "required": false,
             "schema": {
               "type": "integer"
@@ -9259,7 +9259,7 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Maximum number of objects to return per-page.",
+            "description": "Maximum number of objects to return per-page. Must be between 1 and 100 (inclusive).",
             "required": false,
             "schema": {
               "type": "integer"
@@ -10208,7 +10208,7 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Maximum number of objects to return per-page.",
+            "description": "Maximum number of objects to return per-page. Must be between 1 and 100 (inclusive).",
             "required": false,
             "schema": {
               "type": "integer"
@@ -10922,7 +10922,7 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Maximum number of objects to return per-page.",
+            "description": "Maximum number of objects to return per-page. Must be between 1 and 100 (inclusive).",
             "required": false,
             "schema": {
               "type": "integer"
@@ -11664,7 +11664,7 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Maximum number of objects to return per-page.",
+            "description": "Maximum number of objects to return per-page. Must be between 1 and 100 (inclusive).",
             "required": false,
             "schema": {
               "type": "integer"
@@ -12701,7 +12701,7 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Maximum number of objects to return per-page.",
+            "description": "Maximum number of objects to return per-page. Must be between 1 and 100 (inclusive).",
             "required": false,
             "schema": {
               "type": "integer"
@@ -12828,7 +12828,7 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Maximum number of objects to return per-page.",
+            "description": "Maximum number of objects to return per-page. Must be between 1 and 100 (inclusive).",
             "required": false,
             "schema": {
               "type": "integer"
@@ -15038,7 +15038,7 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Maximum number of objects to return per-page.",
+            "description": "Maximum number of objects to return per-page. Must be between 1 and 100 (inclusive).",
             "required": false,
             "schema": {
               "type": "integer"
@@ -15783,7 +15783,7 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Maximum number of objects to return per-page.",
+            "description": "Maximum number of objects to return per-page. Must be between 1 and 100 (inclusive).",
             "required": false,
             "schema": {
               "type": "integer"
@@ -16233,7 +16233,7 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Maximum number of objects to return per-page.",
+            "description": "Maximum number of objects to return per-page. Must be between 1 and 100 (inclusive).",
             "required": false,
             "schema": {
               "type": "integer"
@@ -18362,7 +18362,7 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Maximum number of objects to return per-page.",
+            "description": "Maximum number of objects to return per-page. Must be between 1 and 100 (inclusive).",
             "required": false,
             "schema": {
               "type": "integer"
@@ -19294,7 +19294,7 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Maximum number of objects to return per-page.",
+            "description": "Maximum number of objects to return per-page. Must be between 1 and 100 (inclusive).",
             "required": false,
             "schema": {
               "type": "integer"
@@ -19686,7 +19686,7 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Maximum number of objects to return per-page.",
+            "description": "Maximum number of objects to return per-page. Must be between 1 and 100 (inclusive).",
             "required": false,
             "schema": {
               "type": "integer"
@@ -24093,7 +24093,7 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Maximum number of objects to return per-page.",
+            "description": "Maximum number of objects to return per-page. Must be between 1 and 100 (inclusive).",
             "required": false,
             "schema": {
               "type": "integer"
@@ -24840,7 +24840,7 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Maximum number of objects to return per-page.",
+            "description": "Maximum number of objects to return per-page. Must be between 1 and 100 (inclusive).",
             "required": false,
             "schema": {
               "type": "integer"
@@ -25177,7 +25177,7 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Maximum number of objects to return per-page.",
+            "description": "Maximum number of objects to return per-page. Must be between 1 and 100 (inclusive).",
             "required": false,
             "schema": {
               "type": "integer"
