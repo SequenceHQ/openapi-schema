@@ -16159,15 +16159,6 @@
             }
           },
           {
-            "name": "planId",
-            "in": "query",
-            "description": "Filter by plan ID.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
             "name": "customerId",
             "in": "query",
             "description": "Filter by customer ID.",
