@@ -8811,6 +8811,15 @@
             }
           },
           {
+            "name": "limit",
+            "in": "query",
+            "description": "Maximum number of objects to return per-page. Must be between 1 and 100 (inclusive).",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
             "name": "sortOrder",
             "in": "query",
             "description": "Sort order. Default: DESC (descending, most often used for reverse chronological sorting).",
@@ -8823,15 +8832,6 @@
             "name": "offset",
             "in": "query",
             "description": "Pagination offset. To retrieve a non-contiguous page, use this parameter to specify the offset to fetch relative to `pagination.after` or `pagination.before`.",
-            "required": false,
-            "schema": {
-              "type": "integer"
-            }
-          },
-          {
-            "name": "limit",
-            "in": "query",
-            "description": "Maximum number of objects to return per-page.",
             "required": false,
             "schema": {
               "type": "integer"
@@ -9793,21 +9793,21 @@
             }
           },
           {
+            "name": "limit",
+            "in": "query",
+            "description": "Maximum number of objects to return per-page. Must be between 1 and 100 (inclusive).",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
             "name": "sortOrder",
             "in": "query",
             "description": "Sort order. Default: DESC (descending, most often used for reverse chronological sorting).",
             "required": false,
             "schema": {
               "type": "string"
-            }
-          },
-          {
-            "name": "limit",
-            "in": "query",
-            "description": "Maximum number of objects to return per-page.",
-            "required": false,
-            "schema": {
-              "type": "integer"
             }
           },
           {
