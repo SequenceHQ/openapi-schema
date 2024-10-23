@@ -16593,9 +16593,7 @@
                       ]
                     },
                     {
-                      "priceIds": [
-                        "9fe9986b-e205-42b7-a58f-42845c91f03f"
-                      ],
+                      "priceIds": [],
                       "startDate": "2022-07-01",
                       "endDate": "2022-12-31",
                       "discounts": [],
@@ -16606,6 +16604,9 @@
                           ],
                           "amount": 100
                         }
+                      ],
+                      "listPriceIds": [
+                        "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
                       ]
                     }
                   ],
@@ -16661,9 +16662,7 @@
                         ]
                       },
                       {
-                        "priceIds": [
-                          "9fe9986b-e205-42b7-a58f-42845c91f03f"
-                        ],
+                        "priceIds": [],
                         "startDate": "2022-07-01",
                         "endDate": "2022-12-31",
                         "discounts": [],
@@ -16674,6 +16673,9 @@
                             ],
                             "amount": 100
                           }
+                        ],
+                        "listPriceIds": [
+                          "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
                         ]
                       }
                     ],
@@ -41037,9 +41039,7 @@
               ]
             },
             {
-              "priceIds": [
-                "9fe9986b-e205-42b7-a58f-42845c91f03f"
-              ],
+              "priceIds": [],
               "startDate": "2022-07-01",
               "endDate": "2022-12-31",
               "discounts": [],
@@ -41050,6 +41050,9 @@
                   ],
                   "amount": 100
                 }
+              ],
+              "listPriceIds": [
+                "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
               ]
             }
           ],
@@ -41149,9 +41152,7 @@
                 ]
               },
               {
-                "priceIds": [
-                  "9fe9986b-e205-42b7-a58f-42845c91f03f"
-                ],
+                "priceIds": [],
                 "startDate": "2022-07-01",
                 "endDate": "2022-12-31",
                 "discounts": [],
@@ -41162,6 +41163,9 @@
                     ],
                     "amount": 100
                   }
+                ],
+                "listPriceIds": [
+                  "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
                 ]
               }
             ],
