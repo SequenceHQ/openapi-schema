@@ -16590,6 +16590,9 @@
                           ],
                           "amount": 100
                         }
+                      ],
+                      "listPriceIds": [
+                        "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
                       ]
                     },
                     {
@@ -16659,6 +16662,9 @@
                             ],
                             "amount": 100
                           }
+                        ],
+                        "listPriceIds": [
+                          "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
                         ]
                       },
                       {
@@ -41036,6 +41042,9 @@
                   ],
                   "amount": 100
                 }
+              ],
+              "listPriceIds": [
+                "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
               ]
             },
             {
@@ -41149,6 +41158,9 @@
                     ],
                     "amount": 100
                   }
+                ],
+                "listPriceIds": [
+                  "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
                 ]
               },
               {
@@ -41238,6 +41250,9 @@
               ],
               "amount": 100
             }
+          ],
+          "listPriceIds": [
+            "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
           ]
         },
         "properties": {
@@ -41294,6 +41309,16 @@
             ],
             "items": {
               "$ref": "#/components/schemas/MinimumRequest"
+            }
+          },
+          "listPriceIds": {
+            "type": "array",
+            "description": "IDs of list prices from which to create prices for this phase",
+            "example": [
+              "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
+            ],
+            "items": {
+              "type": "string"
             }
           }
         }
