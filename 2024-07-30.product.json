@@ -16150,15 +16150,6 @@
             }
           },
           {
-            "name": "label",
-            "in": "query",
-            "description": "Filter by label.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
             "name": "customerId",
             "in": "query",
             "description": "Filter by customer ID.",
@@ -16186,9 +16177,9 @@
             }
           },
           {
-            "name": "sortBy",
+            "name": "label",
             "in": "query",
-            "description": "Sort column. Default: creation time.",
+            "description": "Filter by label.",
             "required": false,
             "schema": {
               "type": "string"
@@ -16198,6 +16189,15 @@
             "name": "includeArchivedSchedules",
             "in": "query",
             "description": "Include archived schedules.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sortBy",
+            "in": "query",
+            "description": "Sort column. Default: creation time.",
             "required": false,
             "schema": {
               "type": "string"
