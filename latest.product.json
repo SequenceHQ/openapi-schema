@@ -24058,8 +24058,8 @@
         "tags": [
           "Credit Notes"
         ],
-        "summary": "List all CreditNotes",
-        "description": "List all CreditNotes",
+        "summary": "List all Credit Notes",
+        "description": "List all Credit Notes for this Sequence account",
         "operationId": "getCreditNotes",
         "parameters": [
           {
@@ -24189,7 +24189,8 @@
                         "purchaseOrderNumber": "PO123",
                         "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
                         "customerEmails": [
-                          "customer@example.com"
+                          "customer@example.com",
+                          "customer.alias@example.com"
                         ],
                         "customerLegalCompanyName": "Facebook",
                         "customerBillingAddress": {
@@ -24237,6 +24238,69 @@
                           "phoneNumber": "0800001066",
                           "email": "donald@example.com",
                           "taxId": "TAX60",
+                          "iban": "GB33BUKB20201555555555",
+                          "ukAccountDetails": {
+                            "sortCode": "000000",
+                            "accountNumber": "12345678"
+                          },
+                          "usAchDetails": {
+                            "accountNumber": "12345678",
+                            "accountName": "John Doe",
+                            "bankName": "Chase",
+                            "bankRoutingNumber": "123456789"
+                          },
+                          "usWireDetails": {
+                            "accountNumber": "12345678",
+                            "accountName": "John Doe",
+                            "bankName": "Chase",
+                            "bankRoutingNumber": "123456789",
+                            "swiftCode": "CHASUS33",
+                            "bankAddress": {
+                              "line1": "JP Morgan Chase",
+                              "town": "New York City",
+                              "state": "NY",
+                              "postcode": "10017",
+                              "country": "US"
+                            }
+                          },
+                          "caBankAccountDetails": {
+                            "transitNumber": "123",
+                            "institutionNumber": "12345",
+                            "accountNumber": "1234567"
+                          },
+                          "canadianInternationalDestination": {
+                            "legalName": "John Doe",
+                            "accountNumber": "12345678",
+                            "transitNumber": "12345",
+                            "bankName": "Chase",
+                            "bankAddress": {
+                              "line1": "JP Morgan Chase",
+                              "town": "New York City",
+                              "state": "NY",
+                              "postcode": "10017",
+                              "country": "US"
+                            },
+                            "institutionNumber": "123",
+                            "swiftCode": "CHASUS33",
+                            "intermediaryBank": {
+                              "bankName": "Chase",
+                              "bankAddress": {
+                                "line1": "JP Morgan Chase",
+                                "town": "New York City",
+                                "state": "NY",
+                                "postcode": "10017",
+                                "country": "US"
+                              },
+                              "swiftCode": "CHASUS33",
+                              "routingNumber": "123456789"
+                            }
+                          },
+                          "australianDestination": {
+                            "legalName": "John Doe",
+                            "accountNumber": "12345678",
+                            "swiftCode": "CHASUS33",
+                            "bsb": "123456"
+                          },
                           "logoUrl": "logo",
                           "legalCompanyName": "The Merchant",
                           "primaryColour": "#000000",
@@ -24246,7 +24310,10 @@
                               "value": "label-value"
                             }
                           ],
-                          "includeBeneficiaryAddressInPaymentDetails": false
+                          "includeBeneficiaryAddressInPaymentDetails": true
+                        },
+                        "settings": {
+                          "generateCashCreditGrant": "ENABLED"
                         }
                       }
                     ],
@@ -24277,7 +24344,8 @@
                           "purchaseOrderNumber": "PO123",
                           "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
                           "customerEmails": [
-                            "customer@example.com"
+                            "customer@example.com",
+                            "customer.alias@example.com"
                           ],
                           "customerLegalCompanyName": "Facebook",
                           "customerBillingAddress": {
@@ -24325,6 +24393,69 @@
                             "phoneNumber": "0800001066",
                             "email": "donald@example.com",
                             "taxId": "TAX60",
+                            "iban": "GB33BUKB20201555555555",
+                            "ukAccountDetails": {
+                              "sortCode": "000000",
+                              "accountNumber": "12345678"
+                            },
+                            "usAchDetails": {
+                              "accountNumber": "12345678",
+                              "accountName": "John Doe",
+                              "bankName": "Chase",
+                              "bankRoutingNumber": "123456789"
+                            },
+                            "usWireDetails": {
+                              "accountNumber": "12345678",
+                              "accountName": "John Doe",
+                              "bankName": "Chase",
+                              "bankRoutingNumber": "123456789",
+                              "swiftCode": "CHASUS33",
+                              "bankAddress": {
+                                "line1": "JP Morgan Chase",
+                                "town": "New York City",
+                                "state": "NY",
+                                "postcode": "10017",
+                                "country": "US"
+                              }
+                            },
+                            "caBankAccountDetails": {
+                              "transitNumber": "123",
+                              "institutionNumber": "12345",
+                              "accountNumber": "1234567"
+                            },
+                            "canadianInternationalDestination": {
+                              "legalName": "John Doe",
+                              "accountNumber": "12345678",
+                              "transitNumber": "12345",
+                              "bankName": "Chase",
+                              "bankAddress": {
+                                "line1": "JP Morgan Chase",
+                                "town": "New York City",
+                                "state": "NY",
+                                "postcode": "10017",
+                                "country": "US"
+                              },
+                              "institutionNumber": "123",
+                              "swiftCode": "CHASUS33",
+                              "intermediaryBank": {
+                                "bankName": "Chase",
+                                "bankAddress": {
+                                  "line1": "JP Morgan Chase",
+                                  "town": "New York City",
+                                  "state": "NY",
+                                  "postcode": "10017",
+                                  "country": "US"
+                                },
+                                "swiftCode": "CHASUS33",
+                                "routingNumber": "123456789"
+                              }
+                            },
+                            "australianDestination": {
+                              "legalName": "John Doe",
+                              "accountNumber": "12345678",
+                              "swiftCode": "CHASUS33",
+                              "bsb": "123456"
+                            },
                             "logoUrl": "logo",
                             "legalCompanyName": "The Merchant",
                             "primaryColour": "#000000",
@@ -24334,7 +24465,10 @@
                                 "value": "label-value"
                               }
                             ],
-                            "includeBeneficiaryAddressInPaymentDetails": false
+                            "includeBeneficiaryAddressInPaymentDetails": true
+                          },
+                          "settings": {
+                            "generateCashCreditGrant": "ENABLED"
                           }
                         }
                       ],
@@ -24624,6 +24758,9 @@
                         }
                       ],
                       "includeBeneficiaryAddressInPaymentDetails": true
+                    },
+                    "settings": {
+                      "generateCashCreditGrant": "ENABLED"
                     }
                   }
                 },
@@ -24767,6 +24904,9 @@
                           }
                         ],
                         "includeBeneficiaryAddressInPaymentDetails": true
+                      },
+                      "settings": {
+                        "generateCashCreditGrant": "ENABLED"
                       }
                     }
                   }
@@ -25577,6 +25717,9 @@
                         }
                       ],
                       "includeBeneficiaryAddressInPaymentDetails": true
+                    },
+                    "settings": {
+                      "generateCashCreditGrant": "ENABLED"
                     }
                   }
                 },
@@ -25720,6 +25863,9 @@
                           }
                         ],
                         "includeBeneficiaryAddressInPaymentDetails": true
+                      },
+                      "settings": {
+                        "generateCashCreditGrant": "ENABLED"
                       }
                     }
                   }
@@ -25816,7 +25962,10 @@
                       "value": "label-value"
                     }
                   ],
-                  "customerTaxId": "TAX123"
+                  "customerTaxId": "TAX123",
+                  "settings": {
+                    "generateCashCreditGrant": "ENABLED"
+                  }
                 }
               },
               "examples": {
@@ -25853,7 +26002,10 @@
                         "value": "label-value"
                       }
                     ],
-                    "customerTaxId": "TAX123"
+                    "customerTaxId": "TAX123",
+                    "settings": {
+                      "generateCashCreditGrant": "ENABLED"
+                    }
                   }
                 }
               }
@@ -26005,6 +26157,9 @@
                         }
                       ],
                       "includeBeneficiaryAddressInPaymentDetails": true
+                    },
+                    "settings": {
+                      "generateCashCreditGrant": "ENABLED"
                     }
                   }
                 },
@@ -26148,6 +26303,9 @@
                           }
                         ],
                         "includeBeneficiaryAddressInPaymentDetails": true
+                      },
+                      "settings": {
+                        "generateCashCreditGrant": "ENABLED"
                       }
                     }
                   }
@@ -26352,6 +26510,9 @@
                         }
                       ],
                       "includeBeneficiaryAddressInPaymentDetails": true
+                    },
+                    "settings": {
+                      "generateCashCreditGrant": "ENABLED"
                     }
                   }
                 },
@@ -26495,6 +26656,9 @@
                           }
                         ],
                         "includeBeneficiaryAddressInPaymentDetails": true
+                      },
+                      "settings": {
+                        "generateCashCreditGrant": "ENABLED"
                       }
                     }
                   }
@@ -27151,20 +27315,22 @@
                 "schema": {
                   "$ref": "#/components/schemas/CreditNote",
                   "example": {
-                    "id": "941272d1-f840-4e16-b698-0cd455c81e0e",
-                    "sequenceAccountId": "af9b5988-1d7b-45f6-a188-326df5e59b24",
+                    "id": "af60cab3-812d-4250-a051-0fb7133a00c7",
+                    "sequenceAccountId": "68233908-402a-43b4-8952-1c2ab0ef0b25",
                     "status": "DRAFT",
-                    "invoiceId": "06c44e52-b8f4-4588-a2a6-001169ebf80e",
+                    "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7",
                     "invoiceNumber": "INV00001",
+                    "billingScheduleId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
                     "currency": "GBP",
-                    "issueDate": "2022-11-05",
+                    "issueDate": "2022-09-15",
                     "billingPeriodStart": "2022-10-01T00:00:00Z",
                     "billingPeriodEnd": "2022-10-30T00:00:00Z",
                     "creditNoteNumber": "CN00001",
                     "purchaseOrderNumber": "PO123",
-                    "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
+                    "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
                     "customerEmails": [
-                      "customer@example.com"
+                      "customer@example.com",
+                      "customer.alias@example.com"
                     ],
                     "customerLegalCompanyName": "Facebook",
                     "customerBillingAddress": {
@@ -27177,39 +27343,44 @@
                     },
                     "customerShippingAddress": {
                       "line1": "742 Evergreen Terrace",
-                      "line2": "",
                       "town": "Springfield",
                       "state": "CA",
                       "postcode": "12345",
                       "country": "US"
                     },
                     "memo": "Thanks",
-                    "totalTax": "0",
-                    "netTotal": "0",
-                    "grossTotal": "0",
-                    "metadata": [],
+                    "totalTax": "2.50",
+                    "netTotal": "51.20",
+                    "grossTotal": "101.23",
+                    "metadata": [
+                      {
+                        "key": "example-label",
+                        "value": "label-value"
+                      }
+                    ],
+                    "customerTaxId": "TAX123",
                     "linkedServices": [
                       {
-                        "externalId": "ID",
+                        "externalId": "123",
                         "externalService": "Xero",
                         "syncTime": "2022-06-28T16:47:00Z"
                       }
                     ],
                     "merchantDetails": {
                       "address": {
-                        "line1": "Flat 1",
-                        "line2": "123 Fake Street",
-                        "town": "New York",
-                        "state": "NY",
-                        "postcode": "AB1 2EF",
+                        "line1": "The White House",
+                        "line2": "1600 Pennsylvania Avenue",
+                        "town": "Washington, D.C.",
+                        "state": "CA",
+                        "postcode": "20500",
                         "country": "US"
                       },
                       "phoneNumber": "0800001066",
                       "email": "donald@example.com",
-                      "taxId": "TAX",
+                      "taxId": "TAX60",
                       "iban": "GB33BUKB20201555555555",
                       "ukAccountDetails": {
-                        "sortCode": "123456",
+                        "sortCode": "000000",
                         "accountNumber": "12345678"
                       },
                       "usAchDetails": {
@@ -27232,9 +27403,57 @@
                           "country": "US"
                         }
                       },
+                      "caBankAccountDetails": {
+                        "transitNumber": "123",
+                        "institutionNumber": "12345",
+                        "accountNumber": "1234567"
+                      },
+                      "canadianInternationalDestination": {
+                        "legalName": "John Doe",
+                        "accountNumber": "12345678",
+                        "transitNumber": "12345",
+                        "bankName": "Chase",
+                        "bankAddress": {
+                          "line1": "JP Morgan Chase",
+                          "town": "New York City",
+                          "state": "NY",
+                          "postcode": "10017",
+                          "country": "US"
+                        },
+                        "institutionNumber": "123",
+                        "swiftCode": "CHASUS33",
+                        "intermediaryBank": {
+                          "bankName": "Chase",
+                          "bankAddress": {
+                            "line1": "JP Morgan Chase",
+                            "town": "New York City",
+                            "state": "NY",
+                            "postcode": "10017",
+                            "country": "US"
+                          },
+                          "swiftCode": "CHASUS33",
+                          "routingNumber": "123456789"
+                        }
+                      },
+                      "australianDestination": {
+                        "legalName": "John Doe",
+                        "accountNumber": "12345678",
+                        "swiftCode": "CHASUS33",
+                        "bsb": "123456"
+                      },
+                      "logoUrl": "logo",
                       "legalCompanyName": "The Merchant",
-                      "customFields": [],
-                      "includeBeneficiaryAddressInPaymentDetails": false
+                      "primaryColour": "#000000",
+                      "customFields": [
+                        {
+                          "key": "example-label",
+                          "value": "label-value"
+                        }
+                      ],
+                      "includeBeneficiaryAddressInPaymentDetails": true
+                    },
+                    "settings": {
+                      "generateCashCreditGrant": "ENABLED"
                     }
                   }
                 },
@@ -27242,20 +27461,22 @@
                   "CreditNote": {
                     "summary": "",
                     "value": {
-                      "id": "941272d1-f840-4e16-b698-0cd455c81e0e",
-                      "sequenceAccountId": "af9b5988-1d7b-45f6-a188-326df5e59b24",
+                      "id": "af60cab3-812d-4250-a051-0fb7133a00c7",
+                      "sequenceAccountId": "68233908-402a-43b4-8952-1c2ab0ef0b25",
                       "status": "DRAFT",
-                      "invoiceId": "06c44e52-b8f4-4588-a2a6-001169ebf80e",
+                      "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7",
                       "invoiceNumber": "INV00001",
+                      "billingScheduleId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
                       "currency": "GBP",
-                      "issueDate": "2022-11-05",
+                      "issueDate": "2022-09-15",
                       "billingPeriodStart": "2022-10-01T00:00:00Z",
                       "billingPeriodEnd": "2022-10-30T00:00:00Z",
                       "creditNoteNumber": "CN00001",
                       "purchaseOrderNumber": "PO123",
-                      "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
+                      "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
                       "customerEmails": [
-                        "customer@example.com"
+                        "customer@example.com",
+                        "customer.alias@example.com"
                       ],
                       "customerLegalCompanyName": "Facebook",
                       "customerBillingAddress": {
@@ -27268,39 +27489,44 @@
                       },
                       "customerShippingAddress": {
                         "line1": "742 Evergreen Terrace",
-                        "line2": "",
                         "town": "Springfield",
                         "state": "CA",
                         "postcode": "12345",
                         "country": "US"
                       },
                       "memo": "Thanks",
-                      "totalTax": "0",
-                      "netTotal": "0",
-                      "grossTotal": "0",
-                      "metadata": [],
+                      "totalTax": "2.50",
+                      "netTotal": "51.20",
+                      "grossTotal": "101.23",
+                      "metadata": [
+                        {
+                          "key": "example-label",
+                          "value": "label-value"
+                        }
+                      ],
+                      "customerTaxId": "TAX123",
                       "linkedServices": [
                         {
-                          "externalId": "ID",
+                          "externalId": "123",
                           "externalService": "Xero",
                           "syncTime": "2022-06-28T16:47:00Z"
                         }
                       ],
                       "merchantDetails": {
                         "address": {
-                          "line1": "Flat 1",
-                          "line2": "123 Fake Street",
-                          "town": "New York",
-                          "state": "NY",
-                          "postcode": "AB1 2EF",
+                          "line1": "The White House",
+                          "line2": "1600 Pennsylvania Avenue",
+                          "town": "Washington, D.C.",
+                          "state": "CA",
+                          "postcode": "20500",
                           "country": "US"
                         },
                         "phoneNumber": "0800001066",
                         "email": "donald@example.com",
-                        "taxId": "TAX",
+                        "taxId": "TAX60",
                         "iban": "GB33BUKB20201555555555",
                         "ukAccountDetails": {
-                          "sortCode": "123456",
+                          "sortCode": "000000",
                           "accountNumber": "12345678"
                         },
                         "usAchDetails": {
@@ -27323,9 +27549,57 @@
                             "country": "US"
                           }
                         },
+                        "caBankAccountDetails": {
+                          "transitNumber": "123",
+                          "institutionNumber": "12345",
+                          "accountNumber": "1234567"
+                        },
+                        "canadianInternationalDestination": {
+                          "legalName": "John Doe",
+                          "accountNumber": "12345678",
+                          "transitNumber": "12345",
+                          "bankName": "Chase",
+                          "bankAddress": {
+                            "line1": "JP Morgan Chase",
+                            "town": "New York City",
+                            "state": "NY",
+                            "postcode": "10017",
+                            "country": "US"
+                          },
+                          "institutionNumber": "123",
+                          "swiftCode": "CHASUS33",
+                          "intermediaryBank": {
+                            "bankName": "Chase",
+                            "bankAddress": {
+                              "line1": "JP Morgan Chase",
+                              "town": "New York City",
+                              "state": "NY",
+                              "postcode": "10017",
+                              "country": "US"
+                            },
+                            "swiftCode": "CHASUS33",
+                            "routingNumber": "123456789"
+                          }
+                        },
+                        "australianDestination": {
+                          "legalName": "John Doe",
+                          "accountNumber": "12345678",
+                          "swiftCode": "CHASUS33",
+                          "bsb": "123456"
+                        },
+                        "logoUrl": "logo",
                         "legalCompanyName": "The Merchant",
-                        "customFields": [],
-                        "includeBeneficiaryAddressInPaymentDetails": false
+                        "primaryColour": "#000000",
+                        "customFields": [
+                          {
+                            "key": "example-label",
+                            "value": "label-value"
+                          }
+                        ],
+                        "includeBeneficiaryAddressInPaymentDetails": true
+                      },
+                      "settings": {
+                        "generateCashCreditGrant": "ENABLED"
                       }
                     }
                   }
@@ -27398,20 +27672,22 @@
                 "schema": {
                   "$ref": "#/components/schemas/CreditNote",
                   "example": {
-                    "id": "941272d1-f840-4e16-b698-0cd455c81e0e",
-                    "sequenceAccountId": "af9b5988-1d7b-45f6-a188-326df5e59b24",
+                    "id": "af60cab3-812d-4250-a051-0fb7133a00c7",
+                    "sequenceAccountId": "68233908-402a-43b4-8952-1c2ab0ef0b25",
                     "status": "DRAFT",
-                    "invoiceId": "06c44e52-b8f4-4588-a2a6-001169ebf80e",
+                    "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7",
                     "invoiceNumber": "INV00001",
+                    "billingScheduleId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
                     "currency": "GBP",
-                    "issueDate": "2022-11-05",
+                    "issueDate": "2022-09-15",
                     "billingPeriodStart": "2022-10-01T00:00:00Z",
                     "billingPeriodEnd": "2022-10-30T00:00:00Z",
                     "creditNoteNumber": "CN00001",
                     "purchaseOrderNumber": "PO123",
-                    "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
+                    "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
                     "customerEmails": [
-                      "customer@example.com"
+                      "customer@example.com",
+                      "customer.alias@example.com"
                     ],
                     "customerLegalCompanyName": "Facebook",
                     "customerBillingAddress": {
@@ -27424,39 +27700,44 @@
                     },
                     "customerShippingAddress": {
                       "line1": "742 Evergreen Terrace",
-                      "line2": "",
                       "town": "Springfield",
                       "state": "CA",
                       "postcode": "12345",
                       "country": "US"
                     },
                     "memo": "Thanks",
-                    "totalTax": "0",
-                    "netTotal": "0",
-                    "grossTotal": "0",
-                    "metadata": [],
+                    "totalTax": "2.50",
+                    "netTotal": "51.20",
+                    "grossTotal": "101.23",
+                    "metadata": [
+                      {
+                        "key": "example-label",
+                        "value": "label-value"
+                      }
+                    ],
+                    "customerTaxId": "TAX123",
                     "linkedServices": [
                       {
-                        "externalId": "ID",
+                        "externalId": "123",
                         "externalService": "Xero",
                         "syncTime": "2022-06-28T16:47:00Z"
                       }
                     ],
                     "merchantDetails": {
                       "address": {
-                        "line1": "Flat 1",
-                        "line2": "123 Fake Street",
-                        "town": "New York",
-                        "state": "NY",
-                        "postcode": "AB1 2EF",
+                        "line1": "The White House",
+                        "line2": "1600 Pennsylvania Avenue",
+                        "town": "Washington, D.C.",
+                        "state": "CA",
+                        "postcode": "20500",
                         "country": "US"
                       },
                       "phoneNumber": "0800001066",
                       "email": "donald@example.com",
-                      "taxId": "TAX",
+                      "taxId": "TAX60",
                       "iban": "GB33BUKB20201555555555",
                       "ukAccountDetails": {
-                        "sortCode": "123456",
+                        "sortCode": "000000",
                         "accountNumber": "12345678"
                       },
                       "usAchDetails": {
@@ -27479,9 +27760,57 @@
                           "country": "US"
                         }
                       },
+                      "caBankAccountDetails": {
+                        "transitNumber": "123",
+                        "institutionNumber": "12345",
+                        "accountNumber": "1234567"
+                      },
+                      "canadianInternationalDestination": {
+                        "legalName": "John Doe",
+                        "accountNumber": "12345678",
+                        "transitNumber": "12345",
+                        "bankName": "Chase",
+                        "bankAddress": {
+                          "line1": "JP Morgan Chase",
+                          "town": "New York City",
+                          "state": "NY",
+                          "postcode": "10017",
+                          "country": "US"
+                        },
+                        "institutionNumber": "123",
+                        "swiftCode": "CHASUS33",
+                        "intermediaryBank": {
+                          "bankName": "Chase",
+                          "bankAddress": {
+                            "line1": "JP Morgan Chase",
+                            "town": "New York City",
+                            "state": "NY",
+                            "postcode": "10017",
+                            "country": "US"
+                          },
+                          "swiftCode": "CHASUS33",
+                          "routingNumber": "123456789"
+                        }
+                      },
+                      "australianDestination": {
+                        "legalName": "John Doe",
+                        "accountNumber": "12345678",
+                        "swiftCode": "CHASUS33",
+                        "bsb": "123456"
+                      },
+                      "logoUrl": "logo",
                       "legalCompanyName": "The Merchant",
-                      "customFields": [],
-                      "includeBeneficiaryAddressInPaymentDetails": false
+                      "primaryColour": "#000000",
+                      "customFields": [
+                        {
+                          "key": "example-label",
+                          "value": "label-value"
+                        }
+                      ],
+                      "includeBeneficiaryAddressInPaymentDetails": true
+                    },
+                    "settings": {
+                      "generateCashCreditGrant": "ENABLED"
                     }
                   }
                 },
@@ -27489,20 +27818,22 @@
                   "CreditNote": {
                     "summary": "",
                     "value": {
-                      "id": "941272d1-f840-4e16-b698-0cd455c81e0e",
-                      "sequenceAccountId": "af9b5988-1d7b-45f6-a188-326df5e59b24",
+                      "id": "af60cab3-812d-4250-a051-0fb7133a00c7",
+                      "sequenceAccountId": "68233908-402a-43b4-8952-1c2ab0ef0b25",
                       "status": "DRAFT",
-                      "invoiceId": "06c44e52-b8f4-4588-a2a6-001169ebf80e",
+                      "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7",
                       "invoiceNumber": "INV00001",
+                      "billingScheduleId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
                       "currency": "GBP",
-                      "issueDate": "2022-11-05",
+                      "issueDate": "2022-09-15",
                       "billingPeriodStart": "2022-10-01T00:00:00Z",
                       "billingPeriodEnd": "2022-10-30T00:00:00Z",
                       "creditNoteNumber": "CN00001",
                       "purchaseOrderNumber": "PO123",
-                      "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
+                      "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
                       "customerEmails": [
-                        "customer@example.com"
+                        "customer@example.com",
+                        "customer.alias@example.com"
                       ],
                       "customerLegalCompanyName": "Facebook",
                       "customerBillingAddress": {
@@ -27515,39 +27846,44 @@
                       },
                       "customerShippingAddress": {
                         "line1": "742 Evergreen Terrace",
-                        "line2": "",
                         "town": "Springfield",
                         "state": "CA",
                         "postcode": "12345",
                         "country": "US"
                       },
                       "memo": "Thanks",
-                      "totalTax": "0",
-                      "netTotal": "0",
-                      "grossTotal": "0",
-                      "metadata": [],
+                      "totalTax": "2.50",
+                      "netTotal": "51.20",
+                      "grossTotal": "101.23",
+                      "metadata": [
+                        {
+                          "key": "example-label",
+                          "value": "label-value"
+                        }
+                      ],
+                      "customerTaxId": "TAX123",
                       "linkedServices": [
                         {
-                          "externalId": "ID",
+                          "externalId": "123",
                           "externalService": "Xero",
                           "syncTime": "2022-06-28T16:47:00Z"
                         }
                       ],
                       "merchantDetails": {
                         "address": {
-                          "line1": "Flat 1",
-                          "line2": "123 Fake Street",
-                          "town": "New York",
-                          "state": "NY",
-                          "postcode": "AB1 2EF",
+                          "line1": "The White House",
+                          "line2": "1600 Pennsylvania Avenue",
+                          "town": "Washington, D.C.",
+                          "state": "CA",
+                          "postcode": "20500",
                           "country": "US"
                         },
                         "phoneNumber": "0800001066",
                         "email": "donald@example.com",
-                        "taxId": "TAX",
+                        "taxId": "TAX60",
                         "iban": "GB33BUKB20201555555555",
                         "ukAccountDetails": {
-                          "sortCode": "123456",
+                          "sortCode": "000000",
                           "accountNumber": "12345678"
                         },
                         "usAchDetails": {
@@ -27570,9 +27906,57 @@
                             "country": "US"
                           }
                         },
+                        "caBankAccountDetails": {
+                          "transitNumber": "123",
+                          "institutionNumber": "12345",
+                          "accountNumber": "1234567"
+                        },
+                        "canadianInternationalDestination": {
+                          "legalName": "John Doe",
+                          "accountNumber": "12345678",
+                          "transitNumber": "12345",
+                          "bankName": "Chase",
+                          "bankAddress": {
+                            "line1": "JP Morgan Chase",
+                            "town": "New York City",
+                            "state": "NY",
+                            "postcode": "10017",
+                            "country": "US"
+                          },
+                          "institutionNumber": "123",
+                          "swiftCode": "CHASUS33",
+                          "intermediaryBank": {
+                            "bankName": "Chase",
+                            "bankAddress": {
+                              "line1": "JP Morgan Chase",
+                              "town": "New York City",
+                              "state": "NY",
+                              "postcode": "10017",
+                              "country": "US"
+                            },
+                            "swiftCode": "CHASUS33",
+                            "routingNumber": "123456789"
+                          }
+                        },
+                        "australianDestination": {
+                          "legalName": "John Doe",
+                          "accountNumber": "12345678",
+                          "swiftCode": "CHASUS33",
+                          "bsb": "123456"
+                        },
+                        "logoUrl": "logo",
                         "legalCompanyName": "The Merchant",
-                        "customFields": [],
-                        "includeBeneficiaryAddressInPaymentDetails": false
+                        "primaryColour": "#000000",
+                        "customFields": [
+                          {
+                            "key": "example-label",
+                            "value": "label-value"
+                          }
+                        ],
+                        "includeBeneficiaryAddressInPaymentDetails": true
+                      },
+                      "settings": {
+                        "generateCashCreditGrant": "ENABLED"
                       }
                     }
                   }
@@ -27645,20 +28029,22 @@
                 "schema": {
                   "$ref": "#/components/schemas/CreditNote",
                   "example": {
-                    "id": "941272d1-f840-4e16-b698-0cd455c81e0e",
-                    "sequenceAccountId": "af9b5988-1d7b-45f6-a188-326df5e59b24",
+                    "id": "af60cab3-812d-4250-a051-0fb7133a00c7",
+                    "sequenceAccountId": "68233908-402a-43b4-8952-1c2ab0ef0b25",
                     "status": "DRAFT",
-                    "invoiceId": "06c44e52-b8f4-4588-a2a6-001169ebf80e",
+                    "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7",
                     "invoiceNumber": "INV00001",
+                    "billingScheduleId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
                     "currency": "GBP",
-                    "issueDate": "2022-11-05",
+                    "issueDate": "2022-09-15",
                     "billingPeriodStart": "2022-10-01T00:00:00Z",
                     "billingPeriodEnd": "2022-10-30T00:00:00Z",
                     "creditNoteNumber": "CN00001",
                     "purchaseOrderNumber": "PO123",
-                    "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
+                    "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
                     "customerEmails": [
-                      "customer@example.com"
+                      "customer@example.com",
+                      "customer.alias@example.com"
                     ],
                     "customerLegalCompanyName": "Facebook",
                     "customerBillingAddress": {
@@ -27671,39 +28057,44 @@
                     },
                     "customerShippingAddress": {
                       "line1": "742 Evergreen Terrace",
-                      "line2": "",
                       "town": "Springfield",
                       "state": "CA",
                       "postcode": "12345",
                       "country": "US"
                     },
                     "memo": "Thanks",
-                    "totalTax": "0",
-                    "netTotal": "0",
-                    "grossTotal": "0",
-                    "metadata": [],
+                    "totalTax": "2.50",
+                    "netTotal": "51.20",
+                    "grossTotal": "101.23",
+                    "metadata": [
+                      {
+                        "key": "example-label",
+                        "value": "label-value"
+                      }
+                    ],
+                    "customerTaxId": "TAX123",
                     "linkedServices": [
                       {
-                        "externalId": "ID",
+                        "externalId": "123",
                         "externalService": "Xero",
                         "syncTime": "2022-06-28T16:47:00Z"
                       }
                     ],
                     "merchantDetails": {
                       "address": {
-                        "line1": "Flat 1",
-                        "line2": "123 Fake Street",
-                        "town": "New York",
-                        "state": "NY",
-                        "postcode": "AB1 2EF",
+                        "line1": "The White House",
+                        "line2": "1600 Pennsylvania Avenue",
+                        "town": "Washington, D.C.",
+                        "state": "CA",
+                        "postcode": "20500",
                         "country": "US"
                       },
                       "phoneNumber": "0800001066",
                       "email": "donald@example.com",
-                      "taxId": "TAX",
+                      "taxId": "TAX60",
                       "iban": "GB33BUKB20201555555555",
                       "ukAccountDetails": {
-                        "sortCode": "123456",
+                        "sortCode": "000000",
                         "accountNumber": "12345678"
                       },
                       "usAchDetails": {
@@ -27726,9 +28117,57 @@
                           "country": "US"
                         }
                       },
+                      "caBankAccountDetails": {
+                        "transitNumber": "123",
+                        "institutionNumber": "12345",
+                        "accountNumber": "1234567"
+                      },
+                      "canadianInternationalDestination": {
+                        "legalName": "John Doe",
+                        "accountNumber": "12345678",
+                        "transitNumber": "12345",
+                        "bankName": "Chase",
+                        "bankAddress": {
+                          "line1": "JP Morgan Chase",
+                          "town": "New York City",
+                          "state": "NY",
+                          "postcode": "10017",
+                          "country": "US"
+                        },
+                        "institutionNumber": "123",
+                        "swiftCode": "CHASUS33",
+                        "intermediaryBank": {
+                          "bankName": "Chase",
+                          "bankAddress": {
+                            "line1": "JP Morgan Chase",
+                            "town": "New York City",
+                            "state": "NY",
+                            "postcode": "10017",
+                            "country": "US"
+                          },
+                          "swiftCode": "CHASUS33",
+                          "routingNumber": "123456789"
+                        }
+                      },
+                      "australianDestination": {
+                        "legalName": "John Doe",
+                        "accountNumber": "12345678",
+                        "swiftCode": "CHASUS33",
+                        "bsb": "123456"
+                      },
+                      "logoUrl": "logo",
                       "legalCompanyName": "The Merchant",
-                      "customFields": [],
-                      "includeBeneficiaryAddressInPaymentDetails": false
+                      "primaryColour": "#000000",
+                      "customFields": [
+                        {
+                          "key": "example-label",
+                          "value": "label-value"
+                        }
+                      ],
+                      "includeBeneficiaryAddressInPaymentDetails": true
+                    },
+                    "settings": {
+                      "generateCashCreditGrant": "ENABLED"
                     }
                   }
                 },
@@ -27736,20 +28175,22 @@
                   "CreditNote": {
                     "summary": "",
                     "value": {
-                      "id": "941272d1-f840-4e16-b698-0cd455c81e0e",
-                      "sequenceAccountId": "af9b5988-1d7b-45f6-a188-326df5e59b24",
+                      "id": "af60cab3-812d-4250-a051-0fb7133a00c7",
+                      "sequenceAccountId": "68233908-402a-43b4-8952-1c2ab0ef0b25",
                       "status": "DRAFT",
-                      "invoiceId": "06c44e52-b8f4-4588-a2a6-001169ebf80e",
+                      "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7",
                       "invoiceNumber": "INV00001",
+                      "billingScheduleId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
                       "currency": "GBP",
-                      "issueDate": "2022-11-05",
+                      "issueDate": "2022-09-15",
                       "billingPeriodStart": "2022-10-01T00:00:00Z",
                       "billingPeriodEnd": "2022-10-30T00:00:00Z",
                       "creditNoteNumber": "CN00001",
                       "purchaseOrderNumber": "PO123",
-                      "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
+                      "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
                       "customerEmails": [
-                        "customer@example.com"
+                        "customer@example.com",
+                        "customer.alias@example.com"
                       ],
                       "customerLegalCompanyName": "Facebook",
                       "customerBillingAddress": {
@@ -27762,39 +28203,44 @@
                       },
                       "customerShippingAddress": {
                         "line1": "742 Evergreen Terrace",
-                        "line2": "",
                         "town": "Springfield",
                         "state": "CA",
                         "postcode": "12345",
                         "country": "US"
                       },
                       "memo": "Thanks",
-                      "totalTax": "0",
-                      "netTotal": "0",
-                      "grossTotal": "0",
-                      "metadata": [],
+                      "totalTax": "2.50",
+                      "netTotal": "51.20",
+                      "grossTotal": "101.23",
+                      "metadata": [
+                        {
+                          "key": "example-label",
+                          "value": "label-value"
+                        }
+                      ],
+                      "customerTaxId": "TAX123",
                       "linkedServices": [
                         {
-                          "externalId": "ID",
+                          "externalId": "123",
                           "externalService": "Xero",
                           "syncTime": "2022-06-28T16:47:00Z"
                         }
                       ],
                       "merchantDetails": {
                         "address": {
-                          "line1": "Flat 1",
-                          "line2": "123 Fake Street",
-                          "town": "New York",
-                          "state": "NY",
-                          "postcode": "AB1 2EF",
+                          "line1": "The White House",
+                          "line2": "1600 Pennsylvania Avenue",
+                          "town": "Washington, D.C.",
+                          "state": "CA",
+                          "postcode": "20500",
                           "country": "US"
                         },
                         "phoneNumber": "0800001066",
                         "email": "donald@example.com",
-                        "taxId": "TAX",
+                        "taxId": "TAX60",
                         "iban": "GB33BUKB20201555555555",
                         "ukAccountDetails": {
-                          "sortCode": "123456",
+                          "sortCode": "000000",
                           "accountNumber": "12345678"
                         },
                         "usAchDetails": {
@@ -27817,9 +28263,57 @@
                             "country": "US"
                           }
                         },
+                        "caBankAccountDetails": {
+                          "transitNumber": "123",
+                          "institutionNumber": "12345",
+                          "accountNumber": "1234567"
+                        },
+                        "canadianInternationalDestination": {
+                          "legalName": "John Doe",
+                          "accountNumber": "12345678",
+                          "transitNumber": "12345",
+                          "bankName": "Chase",
+                          "bankAddress": {
+                            "line1": "JP Morgan Chase",
+                            "town": "New York City",
+                            "state": "NY",
+                            "postcode": "10017",
+                            "country": "US"
+                          },
+                          "institutionNumber": "123",
+                          "swiftCode": "CHASUS33",
+                          "intermediaryBank": {
+                            "bankName": "Chase",
+                            "bankAddress": {
+                              "line1": "JP Morgan Chase",
+                              "town": "New York City",
+                              "state": "NY",
+                              "postcode": "10017",
+                              "country": "US"
+                            },
+                            "swiftCode": "CHASUS33",
+                            "routingNumber": "123456789"
+                          }
+                        },
+                        "australianDestination": {
+                          "legalName": "John Doe",
+                          "accountNumber": "12345678",
+                          "swiftCode": "CHASUS33",
+                          "bsb": "123456"
+                        },
+                        "logoUrl": "logo",
                         "legalCompanyName": "The Merchant",
-                        "customFields": [],
-                        "includeBeneficiaryAddressInPaymentDetails": false
+                        "primaryColour": "#000000",
+                        "customFields": [
+                          {
+                            "key": "example-label",
+                            "value": "label-value"
+                          }
+                        ],
+                        "includeBeneficiaryAddressInPaymentDetails": true
+                      },
+                      "settings": {
+                        "generateCashCreditGrant": "ENABLED"
                       }
                     }
                   }
@@ -27892,20 +28386,22 @@
                 "schema": {
                   "$ref": "#/components/schemas/CreditNote",
                   "example": {
-                    "id": "941272d1-f840-4e16-b698-0cd455c81e0e",
-                    "sequenceAccountId": "af9b5988-1d7b-45f6-a188-326df5e59b24",
+                    "id": "af60cab3-812d-4250-a051-0fb7133a00c7",
+                    "sequenceAccountId": "68233908-402a-43b4-8952-1c2ab0ef0b25",
                     "status": "DRAFT",
-                    "invoiceId": "06c44e52-b8f4-4588-a2a6-001169ebf80e",
+                    "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7",
                     "invoiceNumber": "INV00001",
+                    "billingScheduleId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
                     "currency": "GBP",
-                    "issueDate": "2022-11-05",
+                    "issueDate": "2022-09-15",
                     "billingPeriodStart": "2022-10-01T00:00:00Z",
                     "billingPeriodEnd": "2022-10-30T00:00:00Z",
                     "creditNoteNumber": "CN00001",
                     "purchaseOrderNumber": "PO123",
-                    "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
+                    "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
                     "customerEmails": [
-                      "customer@example.com"
+                      "customer@example.com",
+                      "customer.alias@example.com"
                     ],
                     "customerLegalCompanyName": "Facebook",
                     "customerBillingAddress": {
@@ -27918,39 +28414,44 @@
                     },
                     "customerShippingAddress": {
                       "line1": "742 Evergreen Terrace",
-                      "line2": "",
                       "town": "Springfield",
                       "state": "CA",
                       "postcode": "12345",
                       "country": "US"
                     },
                     "memo": "Thanks",
-                    "totalTax": "0",
-                    "netTotal": "0",
-                    "grossTotal": "0",
-                    "metadata": [],
+                    "totalTax": "2.50",
+                    "netTotal": "51.20",
+                    "grossTotal": "101.23",
+                    "metadata": [
+                      {
+                        "key": "example-label",
+                        "value": "label-value"
+                      }
+                    ],
+                    "customerTaxId": "TAX123",
                     "linkedServices": [
                       {
-                        "externalId": "ID",
+                        "externalId": "123",
                         "externalService": "Xero",
                         "syncTime": "2022-06-28T16:47:00Z"
                       }
                     ],
                     "merchantDetails": {
                       "address": {
-                        "line1": "Flat 1",
-                        "line2": "123 Fake Street",
-                        "town": "New York",
-                        "state": "NY",
-                        "postcode": "AB1 2EF",
+                        "line1": "The White House",
+                        "line2": "1600 Pennsylvania Avenue",
+                        "town": "Washington, D.C.",
+                        "state": "CA",
+                        "postcode": "20500",
                         "country": "US"
                       },
                       "phoneNumber": "0800001066",
                       "email": "donald@example.com",
-                      "taxId": "TAX",
+                      "taxId": "TAX60",
                       "iban": "GB33BUKB20201555555555",
                       "ukAccountDetails": {
-                        "sortCode": "123456",
+                        "sortCode": "000000",
                         "accountNumber": "12345678"
                       },
                       "usAchDetails": {
@@ -27973,9 +28474,57 @@
                           "country": "US"
                         }
                       },
+                      "caBankAccountDetails": {
+                        "transitNumber": "123",
+                        "institutionNumber": "12345",
+                        "accountNumber": "1234567"
+                      },
+                      "canadianInternationalDestination": {
+                        "legalName": "John Doe",
+                        "accountNumber": "12345678",
+                        "transitNumber": "12345",
+                        "bankName": "Chase",
+                        "bankAddress": {
+                          "line1": "JP Morgan Chase",
+                          "town": "New York City",
+                          "state": "NY",
+                          "postcode": "10017",
+                          "country": "US"
+                        },
+                        "institutionNumber": "123",
+                        "swiftCode": "CHASUS33",
+                        "intermediaryBank": {
+                          "bankName": "Chase",
+                          "bankAddress": {
+                            "line1": "JP Morgan Chase",
+                            "town": "New York City",
+                            "state": "NY",
+                            "postcode": "10017",
+                            "country": "US"
+                          },
+                          "swiftCode": "CHASUS33",
+                          "routingNumber": "123456789"
+                        }
+                      },
+                      "australianDestination": {
+                        "legalName": "John Doe",
+                        "accountNumber": "12345678",
+                        "swiftCode": "CHASUS33",
+                        "bsb": "123456"
+                      },
+                      "logoUrl": "logo",
                       "legalCompanyName": "The Merchant",
-                      "customFields": [],
-                      "includeBeneficiaryAddressInPaymentDetails": false
+                      "primaryColour": "#000000",
+                      "customFields": [
+                        {
+                          "key": "example-label",
+                          "value": "label-value"
+                        }
+                      ],
+                      "includeBeneficiaryAddressInPaymentDetails": true
+                    },
+                    "settings": {
+                      "generateCashCreditGrant": "ENABLED"
                     }
                   }
                 },
@@ -27983,20 +28532,22 @@
                   "CreditNote": {
                     "summary": "",
                     "value": {
-                      "id": "941272d1-f840-4e16-b698-0cd455c81e0e",
-                      "sequenceAccountId": "af9b5988-1d7b-45f6-a188-326df5e59b24",
+                      "id": "af60cab3-812d-4250-a051-0fb7133a00c7",
+                      "sequenceAccountId": "68233908-402a-43b4-8952-1c2ab0ef0b25",
                       "status": "DRAFT",
-                      "invoiceId": "06c44e52-b8f4-4588-a2a6-001169ebf80e",
+                      "invoiceId": "af60cab3-812d-4250-a051-0fb7133a00c7",
                       "invoiceNumber": "INV00001",
+                      "billingScheduleId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
                       "currency": "GBP",
-                      "issueDate": "2022-11-05",
+                      "issueDate": "2022-09-15",
                       "billingPeriodStart": "2022-10-01T00:00:00Z",
                       "billingPeriodEnd": "2022-10-30T00:00:00Z",
                       "creditNoteNumber": "CN00001",
                       "purchaseOrderNumber": "PO123",
-                      "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
+                      "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
                       "customerEmails": [
-                        "customer@example.com"
+                        "customer@example.com",
+                        "customer.alias@example.com"
                       ],
                       "customerLegalCompanyName": "Facebook",
                       "customerBillingAddress": {
@@ -28009,39 +28560,44 @@
                       },
                       "customerShippingAddress": {
                         "line1": "742 Evergreen Terrace",
-                        "line2": "",
                         "town": "Springfield",
                         "state": "CA",
                         "postcode": "12345",
                         "country": "US"
                       },
                       "memo": "Thanks",
-                      "totalTax": "0",
-                      "netTotal": "0",
-                      "grossTotal": "0",
-                      "metadata": [],
+                      "totalTax": "2.50",
+                      "netTotal": "51.20",
+                      "grossTotal": "101.23",
+                      "metadata": [
+                        {
+                          "key": "example-label",
+                          "value": "label-value"
+                        }
+                      ],
+                      "customerTaxId": "TAX123",
                       "linkedServices": [
                         {
-                          "externalId": "ID",
+                          "externalId": "123",
                           "externalService": "Xero",
                           "syncTime": "2022-06-28T16:47:00Z"
                         }
                       ],
                       "merchantDetails": {
                         "address": {
-                          "line1": "Flat 1",
-                          "line2": "123 Fake Street",
-                          "town": "New York",
-                          "state": "NY",
-                          "postcode": "AB1 2EF",
+                          "line1": "The White House",
+                          "line2": "1600 Pennsylvania Avenue",
+                          "town": "Washington, D.C.",
+                          "state": "CA",
+                          "postcode": "20500",
                           "country": "US"
                         },
                         "phoneNumber": "0800001066",
                         "email": "donald@example.com",
-                        "taxId": "TAX",
+                        "taxId": "TAX60",
                         "iban": "GB33BUKB20201555555555",
                         "ukAccountDetails": {
-                          "sortCode": "123456",
+                          "sortCode": "000000",
                           "accountNumber": "12345678"
                         },
                         "usAchDetails": {
@@ -28064,9 +28620,57 @@
                             "country": "US"
                           }
                         },
+                        "caBankAccountDetails": {
+                          "transitNumber": "123",
+                          "institutionNumber": "12345",
+                          "accountNumber": "1234567"
+                        },
+                        "canadianInternationalDestination": {
+                          "legalName": "John Doe",
+                          "accountNumber": "12345678",
+                          "transitNumber": "12345",
+                          "bankName": "Chase",
+                          "bankAddress": {
+                            "line1": "JP Morgan Chase",
+                            "town": "New York City",
+                            "state": "NY",
+                            "postcode": "10017",
+                            "country": "US"
+                          },
+                          "institutionNumber": "123",
+                          "swiftCode": "CHASUS33",
+                          "intermediaryBank": {
+                            "bankName": "Chase",
+                            "bankAddress": {
+                              "line1": "JP Morgan Chase",
+                              "town": "New York City",
+                              "state": "NY",
+                              "postcode": "10017",
+                              "country": "US"
+                            },
+                            "swiftCode": "CHASUS33",
+                            "routingNumber": "123456789"
+                          }
+                        },
+                        "australianDestination": {
+                          "legalName": "John Doe",
+                          "accountNumber": "12345678",
+                          "swiftCode": "CHASUS33",
+                          "bsb": "123456"
+                        },
+                        "logoUrl": "logo",
                         "legalCompanyName": "The Merchant",
-                        "customFields": [],
-                        "includeBeneficiaryAddressInPaymentDetails": false
+                        "primaryColour": "#000000",
+                        "customFields": [
+                          {
+                            "key": "example-label",
+                            "value": "label-value"
+                          }
+                        ],
+                        "includeBeneficiaryAddressInPaymentDetails": true
+                      },
+                      "settings": {
+                        "generateCashCreditGrant": "ENABLED"
                       }
                     }
                   }
@@ -45987,6 +46591,7 @@
           "metadata",
           "netTotal",
           "sequenceAccountId",
+          "settings",
           "status",
           "totalTax"
         ],
@@ -46128,6 +46733,9 @@
               }
             ],
             "includeBeneficiaryAddressInPaymentDetails": true
+          },
+          "settings": {
+            "generateCashCreditGrant": "ENABLED"
           }
         },
         "properties": {
@@ -46271,6 +46879,9 @@
           },
           "merchantDetails": {
             "$ref": "#/components/schemas/InvoiceMerchantDetails"
+          },
+          "settings": {
+            "$ref": "#/components/schemas/CreditNoteSettings"
           }
         }
       },
@@ -46282,6 +46893,30 @@
           "FINAL",
           "SENT",
           "VOIDED"
+        ]
+      },
+      "CreditNoteSettings": {
+        "required": [
+          "generateCashCreditGrant"
+        ],
+        "type": "object",
+        "description": "Credit note settings",
+        "example": {
+          "generateCashCreditGrant": "ENABLED"
+        },
+        "properties": {
+          "generateCashCreditGrant": {
+            "description": "Whether to generate a cash credit grant when sending this credit note",
+            "$ref": "#/components/schemas/SettingPreference"
+          }
+        }
+      },
+      "SettingPreference": {
+        "type": "string",
+        "example": "ENABLED",
+        "enum": [
+          "ENABLED",
+          "DISABLED"
         ]
       },
       "CreateCreditNoteLineItemEndpointCreateCreditNoteLineItemRequestModel": {
@@ -46820,7 +47455,8 @@
               "purchaseOrderNumber": "PO123",
               "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
               "customerEmails": [
-                "customer@example.com"
+                "customer@example.com",
+                "customer.alias@example.com"
               ],
               "customerLegalCompanyName": "Facebook",
               "customerBillingAddress": {
@@ -46868,6 +47504,69 @@
                 "phoneNumber": "0800001066",
                 "email": "donald@example.com",
                 "taxId": "TAX60",
+                "iban": "GB33BUKB20201555555555",
+                "ukAccountDetails": {
+                  "sortCode": "000000",
+                  "accountNumber": "12345678"
+                },
+                "usAchDetails": {
+                  "accountNumber": "12345678",
+                  "accountName": "John Doe",
+                  "bankName": "Chase",
+                  "bankRoutingNumber": "123456789"
+                },
+                "usWireDetails": {
+                  "accountNumber": "12345678",
+                  "accountName": "John Doe",
+                  "bankName": "Chase",
+                  "bankRoutingNumber": "123456789",
+                  "swiftCode": "CHASUS33",
+                  "bankAddress": {
+                    "line1": "JP Morgan Chase",
+                    "town": "New York City",
+                    "state": "NY",
+                    "postcode": "10017",
+                    "country": "US"
+                  }
+                },
+                "caBankAccountDetails": {
+                  "transitNumber": "123",
+                  "institutionNumber": "12345",
+                  "accountNumber": "1234567"
+                },
+                "canadianInternationalDestination": {
+                  "legalName": "John Doe",
+                  "accountNumber": "12345678",
+                  "transitNumber": "12345",
+                  "bankName": "Chase",
+                  "bankAddress": {
+                    "line1": "JP Morgan Chase",
+                    "town": "New York City",
+                    "state": "NY",
+                    "postcode": "10017",
+                    "country": "US"
+                  },
+                  "institutionNumber": "123",
+                  "swiftCode": "CHASUS33",
+                  "intermediaryBank": {
+                    "bankName": "Chase",
+                    "bankAddress": {
+                      "line1": "JP Morgan Chase",
+                      "town": "New York City",
+                      "state": "NY",
+                      "postcode": "10017",
+                      "country": "US"
+                    },
+                    "swiftCode": "CHASUS33",
+                    "routingNumber": "123456789"
+                  }
+                },
+                "australianDestination": {
+                  "legalName": "John Doe",
+                  "accountNumber": "12345678",
+                  "swiftCode": "CHASUS33",
+                  "bsb": "123456"
+                },
                 "logoUrl": "logo",
                 "legalCompanyName": "The Merchant",
                 "primaryColour": "#000000",
@@ -46877,7 +47576,10 @@
                     "value": "label-value"
                   }
                 ],
-                "includeBeneficiaryAddressInPaymentDetails": false
+                "includeBeneficiaryAddressInPaymentDetails": true
+              },
+              "settings": {
+                "generateCashCreditGrant": "ENABLED"
               }
             }
           ],
@@ -46907,7 +47609,8 @@
                 "purchaseOrderNumber": "PO123",
                 "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
                 "customerEmails": [
-                  "customer@example.com"
+                  "customer@example.com",
+                  "customer.alias@example.com"
                 ],
                 "customerLegalCompanyName": "Facebook",
                 "customerBillingAddress": {
@@ -46955,6 +47658,69 @@
                   "phoneNumber": "0800001066",
                   "email": "donald@example.com",
                   "taxId": "TAX60",
+                  "iban": "GB33BUKB20201555555555",
+                  "ukAccountDetails": {
+                    "sortCode": "000000",
+                    "accountNumber": "12345678"
+                  },
+                  "usAchDetails": {
+                    "accountNumber": "12345678",
+                    "accountName": "John Doe",
+                    "bankName": "Chase",
+                    "bankRoutingNumber": "123456789"
+                  },
+                  "usWireDetails": {
+                    "accountNumber": "12345678",
+                    "accountName": "John Doe",
+                    "bankName": "Chase",
+                    "bankRoutingNumber": "123456789",
+                    "swiftCode": "CHASUS33",
+                    "bankAddress": {
+                      "line1": "JP Morgan Chase",
+                      "town": "New York City",
+                      "state": "NY",
+                      "postcode": "10017",
+                      "country": "US"
+                    }
+                  },
+                  "caBankAccountDetails": {
+                    "transitNumber": "123",
+                    "institutionNumber": "12345",
+                    "accountNumber": "1234567"
+                  },
+                  "canadianInternationalDestination": {
+                    "legalName": "John Doe",
+                    "accountNumber": "12345678",
+                    "transitNumber": "12345",
+                    "bankName": "Chase",
+                    "bankAddress": {
+                      "line1": "JP Morgan Chase",
+                      "town": "New York City",
+                      "state": "NY",
+                      "postcode": "10017",
+                      "country": "US"
+                    },
+                    "institutionNumber": "123",
+                    "swiftCode": "CHASUS33",
+                    "intermediaryBank": {
+                      "bankName": "Chase",
+                      "bankAddress": {
+                        "line1": "JP Morgan Chase",
+                        "town": "New York City",
+                        "state": "NY",
+                        "postcode": "10017",
+                        "country": "US"
+                      },
+                      "swiftCode": "CHASUS33",
+                      "routingNumber": "123456789"
+                    }
+                  },
+                  "australianDestination": {
+                    "legalName": "John Doe",
+                    "accountNumber": "12345678",
+                    "swiftCode": "CHASUS33",
+                    "bsb": "123456"
+                  },
                   "logoUrl": "logo",
                   "legalCompanyName": "The Merchant",
                   "primaryColour": "#000000",
@@ -46964,7 +47730,10 @@
                       "value": "label-value"
                     }
                   ],
-                  "includeBeneficiaryAddressInPaymentDetails": false
+                  "includeBeneficiaryAddressInPaymentDetails": true
+                },
+                "settings": {
+                  "generateCashCreditGrant": "ENABLED"
                 }
               }
             ],
@@ -47337,7 +48106,10 @@
               "value": "label-value"
             }
           ],
-          "customerTaxId": "TAX123"
+          "customerTaxId": "TAX123",
+          "settings": {
+            "generateCashCreditGrant": "ENABLED"
+          }
         },
         "properties": {
           "billingPeriodStart": {
@@ -47399,6 +48171,9 @@
             "type": "string",
             "description": "Customer's tax ID",
             "example": "TAX123"
+          },
+          "settings": {
+            "$ref": "#/components/schemas/CreditNoteSettings"
           }
         }
       },
