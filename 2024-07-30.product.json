@@ -15913,7 +15913,8 @@
                         "taxRateId": "179d1ab3-cc96-48e2-9310-067b0b42d47c",
                         "effectiveDate": "2023-01-01",
                         "expiryDate": "2023-01-31",
-                        "createdAt": "2022-10-07T14:12:08.826121Z"
+                        "createdAt": "2022-10-07T14:12:08.826121Z",
+                        "creditNoteId": "73086198-8752-4ec9-a99b-16209a32dc6c"
                       }
                     ],
                     "pagination": {
@@ -15941,7 +15942,8 @@
                           "taxRateId": "179d1ab3-cc96-48e2-9310-067b0b42d47c",
                           "effectiveDate": "2023-01-01",
                           "expiryDate": "2023-01-31",
-                          "createdAt": "2022-10-07T14:12:08.826121Z"
+                          "createdAt": "2022-10-07T14:12:08.826121Z",
+                          "creditNoteId": "73086198-8752-4ec9-a99b-16209a32dc6c"
                         }
                       ],
                       "pagination": {
@@ -16159,7 +16161,8 @@
                     "taxRateId": "179d1ab3-cc96-48e2-9310-067b0b42d47c",
                     "effectiveDate": "2023-01-01",
                     "expiryDate": "2023-01-31",
-                    "createdAt": "2022-10-07T14:12:08.826121Z"
+                    "createdAt": "2022-10-07T14:12:08.826121Z",
+                    "creditNoteId": "73086198-8752-4ec9-a99b-16209a32dc6c"
                   }
                 },
                 "examples": {
@@ -16178,7 +16181,8 @@
                       "taxRateId": "179d1ab3-cc96-48e2-9310-067b0b42d47c",
                       "effectiveDate": "2023-01-01",
                       "expiryDate": "2023-01-31",
-                      "createdAt": "2022-10-07T14:12:08.826121Z"
+                      "createdAt": "2022-10-07T14:12:08.826121Z",
+                      "creditNoteId": "73086198-8752-4ec9-a99b-16209a32dc6c"
                     }
                   }
                 }
@@ -41263,7 +41267,8 @@
               "taxRateId": "179d1ab3-cc96-48e2-9310-067b0b42d47c",
               "effectiveDate": "2023-01-01",
               "expiryDate": "2023-01-31",
-              "createdAt": "2022-10-07T14:12:08.826121Z"
+              "createdAt": "2022-10-07T14:12:08.826121Z",
+              "creditNoteId": "73086198-8752-4ec9-a99b-16209a32dc6c"
             }
           ],
           "pagination": {
@@ -41290,7 +41295,8 @@
                 "taxRateId": "179d1ab3-cc96-48e2-9310-067b0b42d47c",
                 "effectiveDate": "2023-01-01",
                 "expiryDate": "2023-01-31",
-                "createdAt": "2022-10-07T14:12:08.826121Z"
+                "createdAt": "2022-10-07T14:12:08.826121Z",
+                "creditNoteId": "73086198-8752-4ec9-a99b-16209a32dc6c"
               }
             ],
             "items": {
@@ -41328,7 +41334,8 @@
           "taxRateId": "179d1ab3-cc96-48e2-9310-067b0b42d47c",
           "effectiveDate": "2023-01-01",
           "expiryDate": "2023-01-31",
-          "createdAt": "2022-10-07T14:12:08.826121Z"
+          "createdAt": "2022-10-07T14:12:08.826121Z",
+          "creditNoteId": "73086198-8752-4ec9-a99b-16209a32dc6c"
         },
         "properties": {
           "id": {
@@ -41395,6 +41402,11 @@
             "type": "string",
             "description": "The created at",
             "example": "2022-10-07T14:12:08.826121Z"
+          },
+          "creditNoteId": {
+            "type": "string",
+            "description": "ID of the credit note that created this grant (if applicable)",
+            "example": "73086198-8752-4ec9-a99b-16209a32dc6c"
           }
         }
       },
@@ -41595,7 +41607,8 @@
           "taxRateId": "179d1ab3-cc96-48e2-9310-067b0b42d47c",
           "effectiveDate": "2023-01-01",
           "expiryDate": "2023-01-31",
-          "createdAt": "2022-10-07T14:12:08.826121Z"
+          "createdAt": "2022-10-07T14:12:08.826121Z",
+          "creditNoteId": "73086198-8752-4ec9-a99b-16209a32dc6c"
         },
         "properties": {
           "id": {
@@ -41662,6 +41675,11 @@
             "type": "string",
             "description": "The created at",
             "example": "2022-10-07T14:12:08.826121Z"
+          },
+          "creditNoteId": {
+            "type": "string",
+            "description": "ID of the credit note that created this grant (if applicable)",
+            "example": "73086198-8752-4ec9-a99b-16209a32dc6c"
           }
         }
       },
