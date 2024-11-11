@@ -7954,16 +7954,31 @@
           {
             "name": "service",
             "in": "path",
-            "description": "Integration service",
+            "description": "Integration to push the customer to",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "enum": [
+                "Amazon_Redshift",
+                "Google_BigQuery",
+                "Google_Sheets",
+                "HubSpot",
+                "NetSuite",
+                "QuickBooks_Online",
+                "Salesforce",
+                "Slack",
+                "Snowflake",
+                "Stripe",
+                "Xero",
+                "Avalara",
+                "Anrok"
+              ]
             }
           },
           {
             "name": "customerId",
             "in": "path",
-            "description": "Customer Id",
+            "description": "Sequence customer Id",
             "required": true,
             "schema": {
               "type": "string"
@@ -12370,7 +12385,26 @@
             "description": "The notification type to remove from this policy",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "enum": [
+                "CUSTOMER_CREATED",
+                "CUSTOMER_UPDATED",
+                "CUSTOMER_ARCHIVED",
+                "INVOICE_CREATED",
+                "INVOICE_ISSUED",
+                "INVOICE_UPDATED",
+                "INTEGRATION_SYNC_COMPLETED",
+                "INTEGRATION_WEBHOOK_HANDLED",
+                "MERCHANT_UPDATED",
+                "BILLING_SCHEDULE_CREATED",
+                "BILLING_SCHEDULE_UPDATED",
+                "BILLING_SCHEDULE_ARCHIVED",
+                "CREDIT_NOTE_CREATED",
+                "CREDIT_NOTE_UPDATED",
+                "CREDIT_NOTE_ISSUED",
+                "QUOTE_PUBLISHED",
+                "QUOTE_ACCEPTED"
+              ]
             }
           },
           {
@@ -16275,7 +16309,10 @@
             "description": "Sort column. Default: creation time.",
             "required": false,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "enum": [
+                "START_DATE"
+              ]
             }
           },
           {
