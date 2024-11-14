@@ -1297,6 +1297,9 @@
                       "email": "penny.smith@example.com",
                       "billingPreference": "NONE"
                     }
+                  ],
+                  "pushToIntegrations": [
+                    "Xero"
                   ]
                 }
               },
@@ -1350,6 +1353,9 @@
                         "email": "penny.smith@example.com",
                         "billingPreference": "NONE"
                       }
+                    ],
+                    "pushToIntegrations": [
+                      "Xero"
                     ]
                   }
                 }
@@ -1775,6 +1781,9 @@
                       "email": "penny.smith@example.com",
                       "billingPreference": "NONE"
                     }
+                  ],
+                  "pushToIntegrations": [
+                    "Xero"
                   ]
                 }
               },
@@ -1828,6 +1837,9 @@
                         "email": "penny.smith@example.com",
                         "billingPreference": "NONE"
                       }
+                    ],
+                    "pushToIntegrations": [
+                      "Xero"
                     ]
                   }
                 }
@@ -30175,6 +30187,9 @@
               "email": "penny.smith@example.com",
               "billingPreference": "NONE"
             }
+          ],
+          "pushToIntegrations": [
+            "Xero"
           ]
         },
         "properties": {
@@ -30259,6 +30274,16 @@
             "items": {
               "$ref": "#/components/schemas/ContactRequestModel"
             }
+          },
+          "pushToIntegrations": {
+            "type": "array",
+            "description": "Automatically create customer in these linked integrations",
+            "example": [
+              "Xero"
+            ],
+            "items": {
+              "$ref": "#/components/schemas/CreateOrUpdateCustomerRequestIntegration"
+            }
           }
         }
       },
@@ -30290,6 +30315,13 @@
             "$ref": "#/components/schemas/ContactBillingPreference"
           }
         }
+      },
+      "CreateOrUpdateCustomerRequestIntegration": {
+        "type": "string",
+        "example": "Xero",
+        "enum": [
+          "Xero"
+        ]
       },
       "ListCustomerResponse": {
         "required": [
