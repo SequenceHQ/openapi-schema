@@ -852,12 +852,14 @@
                       {
                         "service": "Xero",
                         "id": "2aaff66f-ef30-4599-b192-c168fd4cd226",
-                        "lastSynced": "2024-03-28T16:47:00Z"
+                        "lastSynced": "2024-03-28T16:47:00Z",
+                        "isPending": false
                       },
                       {
                         "service": "Stripe",
                         "id": "cus_OCtCxqQDgu1uX9",
-                        "lastSynced": "2024-03-28T16:47:00Z"
+                        "lastSynced": "2024-03-28T16:47:00Z",
+                        "isPending": false
                       }
                     ],
                     "taxStatus": "TAXED",
@@ -914,12 +916,14 @@
                         {
                           "service": "Xero",
                           "id": "2aaff66f-ef30-4599-b192-c168fd4cd226",
-                          "lastSynced": "2024-03-28T16:47:00Z"
+                          "lastSynced": "2024-03-28T16:47:00Z",
+                          "isPending": false
                         },
                         {
                           "service": "Stripe",
                           "id": "cus_OCtCxqQDgu1uX9",
-                          "lastSynced": "2024-03-28T16:47:00Z"
+                          "lastSynced": "2024-03-28T16:47:00Z",
+                          "isPending": false
                         }
                       ],
                       "taxStatus": "TAXED",
@@ -1115,12 +1119,14 @@
                           {
                             "service": "Xero",
                             "id": "2aaff66f-ef30-4599-b192-c168fd4cd226",
-                            "lastSynced": "2024-03-28T16:47:00Z"
+                            "lastSynced": "2024-03-28T16:47:00Z",
+                            "isPending": false
                           },
                           {
                             "service": "Stripe",
                             "id": "cus_OCtCxqQDgu1uX9",
-                            "lastSynced": "2024-03-28T16:47:00Z"
+                            "lastSynced": "2024-03-28T16:47:00Z",
+                            "isPending": false
                           }
                         ],
                         "taxStatus": "TAXED"
@@ -1175,12 +1181,14 @@
                             {
                               "service": "Xero",
                               "id": "2aaff66f-ef30-4599-b192-c168fd4cd226",
-                              "lastSynced": "2024-03-28T16:47:00Z"
+                              "lastSynced": "2024-03-28T16:47:00Z",
+                              "isPending": false
                             },
                             {
                               "service": "Stripe",
                               "id": "cus_OCtCxqQDgu1uX9",
-                              "lastSynced": "2024-03-28T16:47:00Z"
+                              "lastSynced": "2024-03-28T16:47:00Z",
+                              "isPending": false
                             }
                           ],
                           "taxStatus": "TAXED"
@@ -1408,12 +1416,14 @@
                       {
                         "service": "Xero",
                         "id": "2aaff66f-ef30-4599-b192-c168fd4cd226",
-                        "lastSynced": "2024-03-28T16:47:00Z"
+                        "lastSynced": "2024-03-28T16:47:00Z",
+                        "isPending": false
                       },
                       {
                         "service": "Stripe",
                         "id": "cus_OCtCxqQDgu1uX9",
-                        "lastSynced": "2024-03-28T16:47:00Z"
+                        "lastSynced": "2024-03-28T16:47:00Z",
+                        "isPending": false
                       }
                     ],
                     "taxStatus": "TAXED",
@@ -1470,12 +1480,14 @@
                         {
                           "service": "Xero",
                           "id": "2aaff66f-ef30-4599-b192-c168fd4cd226",
-                          "lastSynced": "2024-03-28T16:47:00Z"
+                          "lastSynced": "2024-03-28T16:47:00Z",
+                          "isPending": false
                         },
                         {
                           "service": "Stripe",
                           "id": "cus_OCtCxqQDgu1uX9",
-                          "lastSynced": "2024-03-28T16:47:00Z"
+                          "lastSynced": "2024-03-28T16:47:00Z",
+                          "isPending": false
                         }
                       ],
                       "taxStatus": "TAXED",
@@ -1597,12 +1609,14 @@
                       {
                         "service": "Xero",
                         "id": "2aaff66f-ef30-4599-b192-c168fd4cd226",
-                        "lastSynced": "2024-03-28T16:47:00Z"
+                        "lastSynced": "2024-03-28T16:47:00Z",
+                        "isPending": false
                       },
                       {
                         "service": "Stripe",
                         "id": "cus_OCtCxqQDgu1uX9",
-                        "lastSynced": "2024-03-28T16:47:00Z"
+                        "lastSynced": "2024-03-28T16:47:00Z",
+                        "isPending": false
                       }
                     ],
                     "taxStatus": "TAXED",
@@ -1659,12 +1673,14 @@
                         {
                           "service": "Xero",
                           "id": "2aaff66f-ef30-4599-b192-c168fd4cd226",
-                          "lastSynced": "2024-03-28T16:47:00Z"
+                          "lastSynced": "2024-03-28T16:47:00Z",
+                          "isPending": false
                         },
                         {
                           "service": "Stripe",
                           "id": "cus_OCtCxqQDgu1uX9",
-                          "lastSynced": "2024-03-28T16:47:00Z"
+                          "lastSynced": "2024-03-28T16:47:00Z",
+                          "isPending": false
                         }
                       ],
                       "taxStatus": "TAXED",
@@ -1892,12 +1908,14 @@
                       {
                         "service": "Xero",
                         "id": "2aaff66f-ef30-4599-b192-c168fd4cd226",
-                        "lastSynced": "2024-03-28T16:47:00Z"
+                        "lastSynced": "2024-03-28T16:47:00Z",
+                        "isPending": false
                       },
                       {
                         "service": "Stripe",
                         "id": "cus_OCtCxqQDgu1uX9",
-                        "lastSynced": "2024-03-28T16:47:00Z"
+                        "lastSynced": "2024-03-28T16:47:00Z",
+                        "isPending": false
                       }
                     ],
                     "taxStatus": "TAXED",
@@ -1954,12 +1972,14 @@
                         {
                           "service": "Xero",
                           "id": "2aaff66f-ef30-4599-b192-c168fd4cd226",
-                          "lastSynced": "2024-03-28T16:47:00Z"
+                          "lastSynced": "2024-03-28T16:47:00Z",
+                          "isPending": false
                         },
                         {
                           "service": "Stripe",
                           "id": "cus_OCtCxqQDgu1uX9",
-                          "lastSynced": "2024-03-28T16:47:00Z"
+                          "lastSynced": "2024-03-28T16:47:00Z",
+                          "isPending": false
                         }
                       ],
                       "taxStatus": "TAXED",
@@ -2990,12 +3010,14 @@
                       {
                         "service": "Xero",
                         "id": "ID",
-                        "lastSynced": "2022-06-28T16:47:00Z"
+                        "lastSynced": "2022-06-28T16:47:00Z",
+                        "isPending": false
                       },
                       {
                         "service": "Stripe",
                         "id": "cus_OCtCxqQDgu1uX9",
-                        "lastSynced": "2022-06-28T16:47:00Z"
+                        "lastSynced": "2022-06-28T16:47:00Z",
+                        "isPending": false
                       }
                     ],
                     "archivedAt": "2022-06-28T16:47:00Z",
@@ -3029,12 +3051,14 @@
                         {
                           "service": "Xero",
                           "id": "ID",
-                          "lastSynced": "2022-06-28T16:47:00Z"
+                          "lastSynced": "2022-06-28T16:47:00Z",
+                          "isPending": false
                         },
                         {
                           "service": "Stripe",
                           "id": "cus_OCtCxqQDgu1uX9",
-                          "lastSynced": "2022-06-28T16:47:00Z"
+                          "lastSynced": "2022-06-28T16:47:00Z",
+                          "isPending": false
                         }
                       ],
                       "archivedAt": "2022-06-28T16:47:00Z",
@@ -4167,7 +4191,8 @@
                         "integrationIds": [
                           {
                             "service": "Xero",
-                            "id": "123"
+                            "id": "123",
+                            "isPending": false
                           }
                         ],
                         "customMetricParameters": [
@@ -4211,7 +4236,8 @@
                           "integrationIds": [
                             {
                               "service": "Xero",
-                              "id": "123"
+                              "id": "123",
+                              "isPending": false
                             }
                           ],
                           "customMetricParameters": [
@@ -4646,7 +4672,8 @@
                     "integrationIds": [
                       {
                         "service": "Xero",
-                        "id": "123"
+                        "id": "123",
+                        "isPending": false
                       }
                     ],
                     "customMetricParameters": [
@@ -4723,7 +4750,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -4769,7 +4797,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -4813,7 +4842,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -4844,7 +4874,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -4875,7 +4906,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -4904,7 +4936,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -4933,7 +4966,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -5051,7 +5085,8 @@
                     "integrationIds": [
                       {
                         "service": "Xero",
-                        "id": "123"
+                        "id": "123",
+                        "isPending": false
                       }
                     ],
                     "customMetricParameters": [
@@ -5128,7 +5163,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -5174,7 +5210,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -5218,7 +5255,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -5249,7 +5287,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -5280,7 +5319,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -5309,7 +5349,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -5338,7 +5379,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -5775,7 +5817,8 @@
                     "integrationIds": [
                       {
                         "service": "Xero",
-                        "id": "123"
+                        "id": "123",
+                        "isPending": false
                       }
                     ],
                     "customMetricParameters": [
@@ -5852,7 +5895,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -5898,7 +5942,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -5942,7 +5987,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -5973,7 +6019,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -6004,7 +6051,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -6033,7 +6081,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -6062,7 +6111,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -6180,7 +6230,8 @@
                     "integrationIds": [
                       {
                         "service": "Xero",
-                        "id": "123"
+                        "id": "123",
+                        "isPending": false
                       }
                     ],
                     "customMetricParameters": [
@@ -6257,7 +6308,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -6303,7 +6355,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -6347,7 +6400,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -6378,7 +6432,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -6409,7 +6464,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -6438,7 +6494,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -6467,7 +6524,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -13062,7 +13120,8 @@
                         "integrationIds": [
                           {
                             "service": "Xero",
-                            "id": "123"
+                            "id": "123",
+                            "isPending": false
                           }
                         ],
                         "customMetricParameters": [
@@ -13111,7 +13170,8 @@
                           "integrationIds": [
                             {
                               "service": "Xero",
-                              "id": "123"
+                              "id": "123",
+                              "isPending": false
                             }
                           ],
                           "customMetricParameters": [
@@ -13551,7 +13611,8 @@
                     "integrationIds": [
                       {
                         "service": "Xero",
-                        "id": "123"
+                        "id": "123",
+                        "isPending": false
                       }
                     ],
                     "customMetricParameters": [
@@ -13629,7 +13690,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -13680,7 +13742,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -13725,7 +13788,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -13757,7 +13821,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -13789,7 +13854,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -13819,7 +13885,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -13849,7 +13916,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -13964,7 +14032,8 @@
                     "integrationIds": [
                       {
                         "service": "Xero",
-                        "id": "123"
+                        "id": "123",
+                        "isPending": false
                       }
                     ],
                     "customMetricParameters": [
@@ -14042,7 +14111,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -14093,7 +14163,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -14138,7 +14209,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -14170,7 +14242,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -14202,7 +14275,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -14232,7 +14306,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -14262,7 +14337,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -14394,7 +14470,8 @@
                     "integrationIds": [
                       {
                         "service": "Xero",
-                        "id": "123"
+                        "id": "123",
+                        "isPending": false
                       }
                     ],
                     "customMetricParameters": [
@@ -14472,7 +14549,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -14523,7 +14601,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -14568,7 +14647,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -14600,7 +14680,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -14632,7 +14713,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -14662,7 +14744,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -14692,7 +14775,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -14803,7 +14887,8 @@
                     "integrationIds": [
                       {
                         "service": "Xero",
-                        "id": "123"
+                        "id": "123",
+                        "isPending": false
                       }
                     ],
                     "customMetricParameters": [
@@ -14881,7 +14966,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -14932,7 +15018,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -14977,7 +15064,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -15009,7 +15097,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -15041,7 +15130,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -15071,7 +15161,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -15101,7 +15192,8 @@
                       "integrationIds": [
                         {
                           "service": "Xero",
-                          "id": "123"
+                          "id": "123",
+                          "isPending": false
                         }
                       ],
                       "customMetricParameters": [
@@ -16476,7 +16568,8 @@
                             "service": "Salesforce",
                             "id": "a0CQy00000Ipz5VMAR",
                             "lastSynced": "2024-08-14T17:14:17Z",
-                            "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                            "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view",
+                            "isPending": false
                           }
                         ],
                         "attachmentAssets": [
@@ -16596,7 +16689,8 @@
                               "service": "Salesforce",
                               "id": "a0CQy00000Ipz5VMAR",
                               "lastSynced": "2024-08-14T17:14:17Z",
-                              "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                              "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view",
+                              "isPending": false
                             }
                           ],
                           "attachmentAssets": [
@@ -16917,7 +17011,8 @@
                         "service": "Salesforce",
                         "id": "a0CQy00000Ipz5VMAR",
                         "lastSynced": "2024-08-14T17:14:17Z",
-                        "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                        "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view",
+                        "isPending": false
                       }
                     ],
                     "attachmentAssets": [
@@ -17028,7 +17123,8 @@
                           "service": "Salesforce",
                           "id": "a0CQy00000Ipz5VMAR",
                           "lastSynced": "2024-08-14T17:14:17Z",
-                          "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                          "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view",
+                          "isPending": false
                         }
                       ],
                       "attachmentAssets": [
@@ -17204,7 +17300,8 @@
                         "service": "Salesforce",
                         "id": "a0CQy00000Ipz5VMAR",
                         "lastSynced": "2024-08-14T17:14:17Z",
-                        "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                        "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view",
+                        "isPending": false
                       }
                     ],
                     "attachmentAssets": [
@@ -17315,7 +17412,8 @@
                           "service": "Salesforce",
                           "id": "a0CQy00000Ipz5VMAR",
                           "lastSynced": "2024-08-14T17:14:17Z",
-                          "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                          "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view",
+                          "isPending": false
                         }
                       ],
                       "attachmentAssets": [
@@ -17558,7 +17656,8 @@
                         "service": "Salesforce",
                         "id": "a0CQy00000Ipz5VMAR",
                         "lastSynced": "2024-08-14T17:14:17Z",
-                        "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                        "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view",
+                        "isPending": false
                       }
                     ],
                     "attachmentAssets": [
@@ -17669,7 +17768,8 @@
                           "service": "Salesforce",
                           "id": "a0CQy00000Ipz5VMAR",
                           "lastSynced": "2024-08-14T17:14:17Z",
-                          "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                          "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view",
+                          "isPending": false
                         }
                       ],
                       "attachmentAssets": [
@@ -17836,7 +17936,8 @@
                         "service": "Salesforce",
                         "id": "a0CQy00000Ipz5VMAR",
                         "lastSynced": "2024-08-14T17:14:17Z",
-                        "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                        "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view",
+                        "isPending": false
                       }
                     ],
                     "attachmentAssets": [
@@ -17947,7 +18048,8 @@
                           "service": "Salesforce",
                           "id": "a0CQy00000Ipz5VMAR",
                           "lastSynced": "2024-08-14T17:14:17Z",
-                          "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                          "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view",
+                          "isPending": false
                         }
                       ],
                       "attachmentAssets": [
@@ -18123,7 +18225,8 @@
                         "service": "Salesforce",
                         "id": "a0CQy00000Ipz5VMAR",
                         "lastSynced": "2024-08-14T17:14:17Z",
-                        "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                        "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view",
+                        "isPending": false
                       }
                     ],
                     "attachmentAssets": [
@@ -18234,7 +18337,8 @@
                           "service": "Salesforce",
                           "id": "a0CQy00000Ipz5VMAR",
                           "lastSynced": "2024-08-14T17:14:17Z",
-                          "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                          "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view",
+                          "isPending": false
                         }
                       ],
                       "attachmentAssets": [
@@ -29449,12 +29553,14 @@
             {
               "service": "Xero",
               "id": "2aaff66f-ef30-4599-b192-c168fd4cd226",
-              "lastSynced": "2024-03-28T16:47:00Z"
+              "lastSynced": "2024-03-28T16:47:00Z",
+              "isPending": false
             },
             {
               "service": "Stripe",
               "id": "cus_OCtCxqQDgu1uX9",
-              "lastSynced": "2024-03-28T16:47:00Z"
+              "lastSynced": "2024-03-28T16:47:00Z",
+              "isPending": false
             }
           ],
           "taxStatus": "TAXED",
@@ -29537,12 +29643,14 @@
               {
                 "service": "Xero",
                 "id": "2aaff66f-ef30-4599-b192-c168fd4cd226",
-                "lastSynced": "2024-03-28T16:47:00Z"
+                "lastSynced": "2024-03-28T16:47:00Z",
+                "isPending": false
               },
               {
                 "service": "Stripe",
                 "id": "cus_OCtCxqQDgu1uX9",
-                "lastSynced": "2024-03-28T16:47:00Z"
+                "lastSynced": "2024-03-28T16:47:00Z",
+                "isPending": false
               }
             ],
             "items": {
@@ -30017,13 +30125,15 @@
       "IntegrationId": {
         "required": [
           "id",
+          "isPending",
           "service"
         ],
         "type": "object",
         "example": {
           "service": "Xero",
           "id": "2aaff66f-ef30-4599-b192-c168fd4cd226",
-          "lastSynced": "2024-03-28T16:47:00Z"
+          "lastSynced": "2024-03-28T16:47:00Z",
+          "isPending": false
         },
         "properties": {
           "service": {
@@ -30036,6 +30146,10 @@
           "lastSynced": {
             "type": "string",
             "example": "2024-03-28T16:47:00Z"
+          },
+          "isPending": {
+            "type": "boolean",
+            "example": false
           }
         }
       },
@@ -30243,7 +30357,7 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/IntegrationId"
+              "$ref": "#/components/schemas/GenerateIntegrationIdRequest"
             }
           },
           "parentId": {
@@ -30284,6 +30398,26 @@
             "items": {
               "$ref": "#/components/schemas/CreateOrUpdateCustomerRequestIntegration"
             }
+          }
+        }
+      },
+      "GenerateIntegrationIdRequest": {
+        "required": [
+          "id",
+          "service"
+        ],
+        "type": "object",
+        "example": {
+          "service": "Xero",
+          "id": "123456789"
+        },
+        "properties": {
+          "service": {
+            "$ref": "#/components/schemas/IntegrationService"
+          },
+          "id": {
+            "type": "string",
+            "example": "123456789"
           }
         }
       },
@@ -30368,12 +30502,14 @@
                 {
                   "service": "Xero",
                   "id": "2aaff66f-ef30-4599-b192-c168fd4cd226",
-                  "lastSynced": "2024-03-28T16:47:00Z"
+                  "lastSynced": "2024-03-28T16:47:00Z",
+                  "isPending": false
                 },
                 {
                   "service": "Stripe",
                   "id": "cus_OCtCxqQDgu1uX9",
-                  "lastSynced": "2024-03-28T16:47:00Z"
+                  "lastSynced": "2024-03-28T16:47:00Z",
+                  "isPending": false
                 }
               ],
               "taxStatus": "TAXED"
@@ -30427,12 +30563,14 @@
                   {
                     "service": "Xero",
                     "id": "2aaff66f-ef30-4599-b192-c168fd4cd226",
-                    "lastSynced": "2024-03-28T16:47:00Z"
+                    "lastSynced": "2024-03-28T16:47:00Z",
+                    "isPending": false
                   },
                   {
                     "service": "Stripe",
                     "id": "cus_OCtCxqQDgu1uX9",
-                    "lastSynced": "2024-03-28T16:47:00Z"
+                    "lastSynced": "2024-03-28T16:47:00Z",
+                    "isPending": false
                   }
                 ],
                 "taxStatus": "TAXED"
@@ -30495,12 +30633,14 @@
             {
               "service": "Xero",
               "id": "2aaff66f-ef30-4599-b192-c168fd4cd226",
-              "lastSynced": "2024-03-28T16:47:00Z"
+              "lastSynced": "2024-03-28T16:47:00Z",
+              "isPending": false
             },
             {
               "service": "Stripe",
               "id": "cus_OCtCxqQDgu1uX9",
-              "lastSynced": "2024-03-28T16:47:00Z"
+              "lastSynced": "2024-03-28T16:47:00Z",
+              "isPending": false
             }
           ],
           "taxStatus": "TAXED"
@@ -30572,12 +30712,14 @@
               {
                 "service": "Xero",
                 "id": "2aaff66f-ef30-4599-b192-c168fd4cd226",
-                "lastSynced": "2024-03-28T16:47:00Z"
+                "lastSynced": "2024-03-28T16:47:00Z",
+                "isPending": false
               },
               {
                 "service": "Stripe",
                 "id": "cus_OCtCxqQDgu1uX9",
-                "lastSynced": "2024-03-28T16:47:00Z"
+                "lastSynced": "2024-03-28T16:47:00Z",
+                "isPending": false
               }
             ],
             "items": {
@@ -31142,12 +31284,14 @@
             {
               "service": "Xero",
               "id": "ID",
-              "lastSynced": "2022-06-28T16:47:00Z"
+              "lastSynced": "2022-06-28T16:47:00Z",
+              "isPending": false
             },
             {
               "service": "Stripe",
               "id": "cus_OCtCxqQDgu1uX9",
-              "lastSynced": "2022-06-28T16:47:00Z"
+              "lastSynced": "2022-06-28T16:47:00Z",
+              "isPending": false
             }
           ],
           "archivedAt": "2022-06-28T16:47:00Z",
@@ -31207,12 +31351,14 @@
               {
                 "service": "Xero",
                 "id": "ID",
-                "lastSynced": "2022-06-28T16:47:00Z"
+                "lastSynced": "2022-06-28T16:47:00Z",
+                "isPending": false
               },
               {
                 "service": "Stripe",
                 "id": "cus_OCtCxqQDgu1uX9",
-                "lastSynced": "2022-06-28T16:47:00Z"
+                "lastSynced": "2022-06-28T16:47:00Z",
+                "isPending": false
               }
             ],
             "items": {
@@ -31569,7 +31715,7 @@
           "IN_ADVANCE"
         ]
       },
-      "IntegrationId1": {
+      "GenerateIntegrationIdRequest1": {
         "required": [
           "id",
           "service"
@@ -31741,7 +31887,7 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/IntegrationId1"
+              "$ref": "#/components/schemas/GenerateIntegrationIdRequest1"
             }
           },
           "customMetricParameters": {
@@ -31963,7 +32109,7 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/IntegrationId1"
+              "$ref": "#/components/schemas/GenerateIntegrationIdRequest1"
             }
           },
           "customMetricParameters": {
@@ -32182,7 +32328,7 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/IntegrationId1"
+              "$ref": "#/components/schemas/GenerateIntegrationIdRequest1"
             }
           },
           "customMetricParameters": {
@@ -32311,7 +32457,7 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/IntegrationId1"
+              "$ref": "#/components/schemas/GenerateIntegrationIdRequest1"
             }
           },
           "customMetricParameters": {
@@ -32440,7 +32586,7 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/IntegrationId1"
+              "$ref": "#/components/schemas/GenerateIntegrationIdRequest1"
             }
           },
           "customMetricParameters": {
@@ -32553,7 +32699,7 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/IntegrationId1"
+              "$ref": "#/components/schemas/GenerateIntegrationIdRequest1"
             }
           },
           "customMetricParameters": {
@@ -32666,7 +32812,7 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/IntegrationId1"
+              "$ref": "#/components/schemas/GenerateIntegrationIdRequest1"
             }
           },
           "customMetricParameters": {
@@ -32681,6 +32827,32 @@
             "items": {
               "$ref": "#/components/schemas/PriceParameter"
             }
+          }
+        }
+      },
+      "IntegrationId1": {
+        "required": [
+          "id",
+          "isPending",
+          "service"
+        ],
+        "type": "object",
+        "example": {
+          "service": "Xero",
+          "id": "123",
+          "isPending": false
+        },
+        "properties": {
+          "service": {
+            "$ref": "#/components/schemas/IntegrationService"
+          },
+          "id": {
+            "type": "string",
+            "example": "123"
+          },
+          "isPending": {
+            "type": "boolean",
+            "example": false
           }
         }
       },
@@ -32740,7 +32912,8 @@
           "integrationIds": [
             {
               "service": "Xero",
-              "id": "123"
+              "id": "123",
+              "isPending": false
             }
           ],
           "customMetricParameters": [
@@ -32800,7 +32973,8 @@
             "example": [
               {
                 "service": "Xero",
-                "id": "123"
+                "id": "123",
+                "isPending": false
               }
             ],
             "items": {
@@ -32871,7 +33045,8 @@
           "integrationIds": [
             {
               "service": "Xero",
-              "id": "123"
+              "id": "123",
+              "isPending": false
             }
           ],
           "customMetricParameters": [
@@ -32928,7 +33103,8 @@
             "example": [
               {
                 "service": "Xero",
-                "id": "123"
+                "id": "123",
+                "isPending": false
               }
             ],
             "items": {
@@ -32997,7 +33173,8 @@
           "integrationIds": [
             {
               "service": "Xero",
-              "id": "123"
+              "id": "123",
+              "isPending": false
             }
           ],
           "customMetricParameters": [
@@ -33054,7 +33231,8 @@
             "example": [
               {
                 "service": "Xero",
-                "id": "123"
+                "id": "123",
+                "isPending": false
               }
             ],
             "items": {
@@ -33110,7 +33288,8 @@
           "integrationIds": [
             {
               "service": "Xero",
-              "id": "123"
+              "id": "123",
+              "isPending": false
             }
           ],
           "customMetricParameters": [
@@ -33167,7 +33346,8 @@
             "example": [
               {
                 "service": "Xero",
-                "id": "123"
+                "id": "123",
+                "isPending": false
               }
             ],
             "items": {
@@ -33223,7 +33403,8 @@
           "integrationIds": [
             {
               "service": "Xero",
-              "id": "123"
+              "id": "123",
+              "isPending": false
             }
           ],
           "customMetricParameters": [
@@ -33280,7 +33461,8 @@
             "example": [
               {
                 "service": "Xero",
-                "id": "123"
+                "id": "123",
+                "isPending": false
               }
             ],
             "items": {
@@ -33334,7 +33516,8 @@
           "integrationIds": [
             {
               "service": "Xero",
-              "id": "123"
+              "id": "123",
+              "isPending": false
             }
           ],
           "customMetricParameters": [
@@ -33391,7 +33574,8 @@
             "example": [
               {
                 "service": "Xero",
-                "id": "123"
+                "id": "123",
+                "isPending": false
               }
             ],
             "items": {
@@ -33445,7 +33629,8 @@
           "integrationIds": [
             {
               "service": "Xero",
-              "id": "123"
+              "id": "123",
+              "isPending": false
             }
           ],
           "customMetricParameters": [
@@ -33502,7 +33687,8 @@
             "example": [
               {
                 "service": "Xero",
-                "id": "123"
+                "id": "123",
+                "isPending": false
               }
             ],
             "items": {
@@ -33572,7 +33758,8 @@
               "integrationIds": [
                 {
                   "service": "Xero",
-                  "id": "123"
+                  "id": "123",
+                  "isPending": false
                 }
               ],
               "customMetricParameters": [
@@ -33634,7 +33821,8 @@
                 "integrationIds": [
                   {
                     "service": "Xero",
-                    "id": "123"
+                    "id": "123",
+                    "isPending": false
                   }
                 ],
                 "customMetricParameters": [
@@ -33709,7 +33897,8 @@
           "integrationIds": [
             {
               "service": "Xero",
-              "id": "123"
+              "id": "123",
+              "isPending": false
             }
           ],
           "customMetricParameters": [
@@ -33791,7 +33980,8 @@
             "example": [
               {
                 "service": "Xero",
-                "id": "123"
+                "id": "123",
+                "isPending": false
               }
             ],
             "items": {
@@ -38059,7 +38249,7 @@
           }
         }
       },
-      "IntegrationId2": {
+      "GenerateIntegrationIdRequest2": {
         "required": [
           "id",
           "service"
@@ -38207,7 +38397,7 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/IntegrationId2"
+              "$ref": "#/components/schemas/GenerateIntegrationIdRequest2"
             }
           },
           "customMetricParameters": {
@@ -38386,7 +38576,7 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/IntegrationId2"
+              "$ref": "#/components/schemas/GenerateIntegrationIdRequest2"
             }
           },
           "customMetricParameters": {
@@ -38573,7 +38763,7 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/IntegrationId2"
+              "$ref": "#/components/schemas/GenerateIntegrationIdRequest2"
             }
           },
           "customMetricParameters": {
@@ -38706,7 +38896,7 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/IntegrationId2"
+              "$ref": "#/components/schemas/GenerateIntegrationIdRequest2"
             }
           },
           "customMetricParameters": {
@@ -38839,7 +39029,7 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/IntegrationId2"
+              "$ref": "#/components/schemas/GenerateIntegrationIdRequest2"
             }
           },
           "customMetricParameters": {
@@ -38956,7 +39146,7 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/IntegrationId2"
+              "$ref": "#/components/schemas/GenerateIntegrationIdRequest2"
             }
           },
           "customMetricParameters": {
@@ -39073,7 +39263,7 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/IntegrationId2"
+              "$ref": "#/components/schemas/GenerateIntegrationIdRequest2"
             }
           },
           "customMetricParameters": {
@@ -39093,6 +39283,32 @@
             "type": "string",
             "description": "The list price ID, if this price variant was created from a list price",
             "example": "b4d7e884-e007-4183-8355-4771865c5100"
+          }
+        }
+      },
+      "IntegrationId2": {
+        "required": [
+          "id",
+          "isPending",
+          "service"
+        ],
+        "type": "object",
+        "example": {
+          "service": "Xero",
+          "id": "123",
+          "isPending": false
+        },
+        "properties": {
+          "service": {
+            "$ref": "#/components/schemas/IntegrationService"
+          },
+          "id": {
+            "type": "string",
+            "example": "123"
+          },
+          "isPending": {
+            "type": "boolean",
+            "example": false
           }
         }
       },
@@ -39147,7 +39363,8 @@
           "integrationIds": [
             {
               "service": "Xero",
-              "id": "123"
+              "id": "123",
+              "isPending": false
             }
           ],
           "customMetricParameters": [
@@ -39209,7 +39426,8 @@
             "example": [
               {
                 "service": "Xero",
-                "id": "123"
+                "id": "123",
+                "isPending": false
               }
             ],
             "items": {
@@ -39287,7 +39505,8 @@
           "integrationIds": [
             {
               "service": "Xero",
-              "id": "123"
+              "id": "123",
+              "isPending": false
             }
           ],
           "customMetricParameters": [
@@ -39345,7 +39564,8 @@
             "example": [
               {
                 "service": "Xero",
-                "id": "123"
+                "id": "123",
+                "isPending": false
               }
             ],
             "items": {
@@ -39418,7 +39638,8 @@
           "integrationIds": [
             {
               "service": "Xero",
-              "id": "123"
+              "id": "123",
+              "isPending": false
             }
           ],
           "customMetricParameters": [
@@ -39476,7 +39697,8 @@
             "example": [
               {
                 "service": "Xero",
-                "id": "123"
+                "id": "123",
+                "isPending": false
               }
             ],
             "items": {
@@ -39536,7 +39758,8 @@
           "integrationIds": [
             {
               "service": "Xero",
-              "id": "123"
+              "id": "123",
+              "isPending": false
             }
           ],
           "customMetricParameters": [
@@ -39594,7 +39817,8 @@
             "example": [
               {
                 "service": "Xero",
-                "id": "123"
+                "id": "123",
+                "isPending": false
               }
             ],
             "items": {
@@ -39654,7 +39878,8 @@
           "integrationIds": [
             {
               "service": "Xero",
-              "id": "123"
+              "id": "123",
+              "isPending": false
             }
           ],
           "customMetricParameters": [
@@ -39712,7 +39937,8 @@
             "example": [
               {
                 "service": "Xero",
-                "id": "123"
+                "id": "123",
+                "isPending": false
               }
             ],
             "items": {
@@ -39770,7 +39996,8 @@
           "integrationIds": [
             {
               "service": "Xero",
-              "id": "123"
+              "id": "123",
+              "isPending": false
             }
           ],
           "customMetricParameters": [
@@ -39828,7 +40055,8 @@
             "example": [
               {
                 "service": "Xero",
-                "id": "123"
+                "id": "123",
+                "isPending": false
               }
             ],
             "items": {
@@ -39886,7 +40114,8 @@
           "integrationIds": [
             {
               "service": "Xero",
-              "id": "123"
+              "id": "123",
+              "isPending": false
             }
           ],
           "customMetricParameters": [
@@ -39944,7 +40173,8 @@
             "example": [
               {
                 "service": "Xero",
-                "id": "123"
+                "id": "123",
+                "isPending": false
               }
             ],
             "items": {
@@ -40031,7 +40261,8 @@
               "integrationIds": [
                 {
                   "service": "Xero",
-                  "id": "123"
+                  "id": "123",
+                  "isPending": false
                 }
               ],
               "customMetricParameters": [
@@ -40094,7 +40325,8 @@
                 "integrationIds": [
                   {
                     "service": "Xero",
-                    "id": "123"
+                    "id": "123",
+                    "isPending": false
                   }
                 ],
                 "customMetricParameters": [
@@ -40169,7 +40401,8 @@
           "integrationIds": [
             {
               "service": "Xero",
-              "id": "123"
+              "id": "123",
+              "isPending": false
             }
           ],
           "customMetricParameters": [
@@ -40253,7 +40486,8 @@
             "example": [
               {
                 "service": "Xero",
-                "id": "123"
+                "id": "123",
+                "isPending": false
               }
             ],
             "items": {
@@ -42267,7 +42501,8 @@
               "service": "Salesforce",
               "id": "a0CQy00000Ipz5VMAR",
               "lastSynced": "2024-08-14T17:14:17Z",
-              "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+              "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view",
+              "isPending": false
             }
           ],
           "attachmentAssets": [
@@ -42465,7 +42700,8 @@
                 "service": "Salesforce",
                 "id": "a0CQy00000Ipz5VMAR",
                 "lastSynced": "2024-08-14T17:14:17Z",
-                "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view",
+                "isPending": false
               }
             ],
             "items": {
@@ -42995,7 +43231,8 @@
                   "service": "Salesforce",
                   "id": "a0CQy00000Ipz5VMAR",
                   "lastSynced": "2024-08-14T17:14:17Z",
-                  "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                  "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view",
+                  "isPending": false
                 }
               ],
               "attachmentAssets": [
@@ -43114,7 +43351,8 @@
                     "service": "Salesforce",
                     "id": "a0CQy00000Ipz5VMAR",
                     "lastSynced": "2024-08-14T17:14:17Z",
-                    "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view"
+                    "url": "https://sequence-b-dev-ed.develop.my.salesforce.com/lightning/r/sequence__Billing_Schedule__c/a0CQy00000Ipz5VMAR/view",
+                    "isPending": false
                   }
                 ],
                 "attachmentAssets": [
