@@ -12929,7 +12929,8 @@
                         "sequenceAccountId": "683fe518-60c8-429f-9320-8aa7efc20bcc",
                         "createdAt": "2022-06-28T16:47:00Z",
                         "updatedAt": "2022-06-28T16:47:00Z",
-                        "prices": []
+                        "prices": [],
+                        "taxCategoryName": "SaaS"
                       }
                     ],
                     "pagination": {
@@ -12951,7 +12952,8 @@
                           "sequenceAccountId": "683fe518-60c8-429f-9320-8aa7efc20bcc",
                           "createdAt": "2022-06-28T16:47:00Z",
                           "updatedAt": "2022-06-28T16:47:00Z",
-                          "prices": []
+                          "prices": [],
+                          "taxCategoryName": "SaaS"
                         }
                       ],
                       "pagination": {
@@ -38082,7 +38084,8 @@
               "sequenceAccountId": "683fe518-60c8-429f-9320-8aa7efc20bcc",
               "createdAt": "2022-06-28T16:47:00Z",
               "updatedAt": "2022-06-28T16:47:00Z",
-              "prices": []
+              "prices": [],
+              "taxCategoryName": "SaaS"
             }
           ],
           "pagination": {
@@ -38103,7 +38106,8 @@
                 "sequenceAccountId": "683fe518-60c8-429f-9320-8aa7efc20bcc",
                 "createdAt": "2022-06-28T16:47:00Z",
                 "updatedAt": "2022-06-28T16:47:00Z",
-                "prices": []
+                "prices": [],
+                "taxCategoryName": "SaaS"
               }
             ],
             "items": {
@@ -38133,7 +38137,8 @@
           "sequenceAccountId": "683fe518-60c8-429f-9320-8aa7efc20bcc",
           "createdAt": "2022-06-28T16:47:00Z",
           "updatedAt": "2022-06-28T16:47:00Z",
-          "prices": []
+          "prices": [],
+          "taxCategoryName": "SaaS"
         },
         "properties": {
           "id": {
@@ -38171,6 +38176,11 @@
             "description": "Prices",
             "example": [],
             "items": {}
+          },
+          "taxCategoryName": {
+            "type": "string",
+            "description": "The tax category associated with the product",
+            "example": "SaaS"
           }
         }
       },
