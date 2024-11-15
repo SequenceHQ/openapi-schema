@@ -32212,7 +32212,8 @@
         "example": "USE_MAXIMUM",
         "enum": [
           "USE_MAXIMUM",
-          "PRORATE_INCREMENTS"
+          "PRORATE_INCREMENTS",
+          "PRORATE_ALL_CHANGES"
         ]
       },
       "SeatUsageTier": {
