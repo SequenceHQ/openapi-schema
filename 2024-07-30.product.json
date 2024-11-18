@@ -10209,6 +10209,97 @@
       "servers": [],
       "parameters": []
     },
+    "/seat-events/{id}": {
+      "get": {
+        "tags": [
+          "Seat Events"
+        ],
+        "summary": "Get a seat event by ID",
+        "description": "Retrieve a seat event by its ID",
+        "operationId": "getSeatEventsById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Unique ID for this seat event",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-07-30"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SeatEvent",
+                  "example": {
+                    "id": "0184421a-8202-70ea-a729-30308a40bbf7",
+                    "customerEventId": "event-id-H4twuTWpYx1rkd8OMTki2hTUcZ",
+                    "customerAlias": "customer-id-2H4u5BBwBWsS5V2sroRFqJfTXpW",
+                    "seatType": "admin",
+                    "sequenceAccountId": "0184421e-a9cc-711b-af93-bf0511d4d833",
+                    "eventTimestamp": "2022-10-01T00:00:00Z",
+                    "total": 1
+                  }
+                },
+                "examples": {
+                  "SeatEvent": {
+                    "summary": "",
+                    "value": {
+                      "id": "0184421a-8202-70ea-a729-30308a40bbf7",
+                      "customerEventId": "event-id-H4twuTWpYx1rkd8OMTki2hTUcZ",
+                      "customerAlias": "customer-id-2H4u5BBwBWsS5V2sroRFqJfTXpW",
+                      "seatType": "admin",
+                      "sequenceAccountId": "0184421e-a9cc-711b-af93-bf0511d4d833",
+                      "eventTimestamp": "2022-10-01T00:00:00Z",
+                      "total": 1
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/seat-balances": {
       "get": {
         "tags": [
