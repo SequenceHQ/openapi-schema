@@ -6769,7 +6769,8 @@
                 "$ref": "#/components/schemas/CreateBillingScheduleSettingsEndpointCreateBillingScheduleSettingsRequestModel",
                 "example": {
                   "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                  "paymentProvider": "STRIPE"
+                  "paymentProvider": "STRIPE",
+                  "autoCharge": true
                 }
               },
               "examples": {
@@ -6777,7 +6778,8 @@
                   "summary": "",
                   "value": {
                     "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                    "paymentProvider": "STRIPE"
+                    "paymentProvider": "STRIPE",
+                    "autoCharge": true
                   }
                 }
               }
@@ -34225,7 +34227,8 @@
         "type": "object",
         "example": {
           "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "paymentProvider": "STRIPE"
+          "paymentProvider": "STRIPE",
+          "autoCharge": true
         },
         "properties": {
           "billingScheduleId": {
@@ -34236,6 +34239,11 @@
           "paymentProvider": {
             "description": "Payment provider",
             "$ref": "#/components/schemas/PaymentProvider"
+          },
+          "autoCharge": {
+            "type": "boolean",
+            "description": "Automatically collect this payment if payment details are available",
+            "example": true
           }
         }
       },
