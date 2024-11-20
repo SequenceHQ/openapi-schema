@@ -16854,7 +16854,8 @@
                   ],
                   "attachmentAssetIds": [
                     "5055cd17-d5e8-4286-bddf-79729ddabf51"
-                  ]
+                  ],
+                  "autoCharge": true
                 }
               },
               "examples": {
@@ -16926,7 +16927,8 @@
                     ],
                     "attachmentAssetIds": [
                       "5055cd17-d5e8-4286-bddf-79729ddabf51"
-                    ]
+                    ],
+                    "autoCharge": true
                   }
                 }
               }
@@ -42030,7 +42032,8 @@
           ],
           "attachmentAssetIds": [
             "5055cd17-d5e8-4286-bddf-79729ddabf51"
-          ]
+          ],
+          "autoCharge": true
         },
         "properties": {
           "customerId": {
@@ -42157,6 +42160,11 @@
             "items": {
               "type": "string"
             }
+          },
+          "autoCharge": {
+            "type": "boolean",
+            "description": "Automatically collect payments if payment details are available",
+            "example": true
           }
         }
       },
