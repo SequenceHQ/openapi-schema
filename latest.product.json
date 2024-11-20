@@ -12937,7 +12937,8 @@
                         "createdAt": "2022-06-28T16:47:00Z",
                         "updatedAt": "2022-06-28T16:47:00Z",
                         "prices": [],
-                        "taxCategoryName": "SaaS"
+                        "taxCategoryName": "SaaS",
+                        "recognitionMethod": "USAGE"
                       }
                     ],
                     "pagination": {
@@ -12960,7 +12961,8 @@
                           "createdAt": "2022-06-28T16:47:00Z",
                           "updatedAt": "2022-06-28T16:47:00Z",
                           "prices": [],
-                          "taxCategoryName": "SaaS"
+                          "taxCategoryName": "SaaS",
+                          "recognitionMethod": "USAGE"
                         }
                       ],
                       "pagination": {
@@ -38099,7 +38101,8 @@
               "createdAt": "2022-06-28T16:47:00Z",
               "updatedAt": "2022-06-28T16:47:00Z",
               "prices": [],
-              "taxCategoryName": "SaaS"
+              "taxCategoryName": "SaaS",
+              "recognitionMethod": "USAGE"
             }
           ],
           "pagination": {
@@ -38121,7 +38124,8 @@
                 "createdAt": "2022-06-28T16:47:00Z",
                 "updatedAt": "2022-06-28T16:47:00Z",
                 "prices": [],
-                "taxCategoryName": "SaaS"
+                "taxCategoryName": "SaaS",
+                "recognitionMethod": "USAGE"
               }
             ],
             "items": {
@@ -38140,6 +38144,7 @@
           "label",
           "name",
           "prices",
+          "recognitionMethod",
           "sequenceAccountId",
           "updatedAt"
         ],
@@ -38152,7 +38157,8 @@
           "createdAt": "2022-06-28T16:47:00Z",
           "updatedAt": "2022-06-28T16:47:00Z",
           "prices": [],
-          "taxCategoryName": "SaaS"
+          "taxCategoryName": "SaaS",
+          "recognitionMethod": "USAGE"
         },
         "properties": {
           "id": {
@@ -38195,8 +38201,21 @@
             "type": "string",
             "description": "The tax category associated with the product",
             "example": "SaaS"
+          },
+          "recognitionMethod": {
+            "description": "Indication of how revenue is recognised for this product",
+            "$ref": "#/components/schemas/RevenueRecognitionMethod"
           }
         }
+      },
+      "RevenueRecognitionMethod": {
+        "type": "string",
+        "example": "USAGE",
+        "enum": [
+          "STRAIGHT_LINE",
+          "USAGE",
+          "MILESTONE"
+        ]
       },
       "GraduatedPricingStructure1": {
         "required": [
