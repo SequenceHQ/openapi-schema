@@ -24563,7 +24563,8 @@
                         },
                         "settings": {
                           "generateCashCreditGrant": "ENABLED"
-                        }
+                        },
+                        "accountingDate": "2022-09-30"
                       }
                     ],
                     "pagination": {
@@ -24718,7 +24719,8 @@
                           },
                           "settings": {
                             "generateCashCreditGrant": "ENABLED"
-                          }
+                          },
+                          "accountingDate": "2022-09-30"
                         }
                       ],
                       "pagination": {
@@ -25010,7 +25012,8 @@
                     },
                     "settings": {
                       "generateCashCreditGrant": "ENABLED"
-                    }
+                    },
+                    "accountingDate": "2022-09-30"
                   }
                 },
                 "examples": {
@@ -25156,7 +25159,8 @@
                       },
                       "settings": {
                         "generateCashCreditGrant": "ENABLED"
-                      }
+                      },
+                      "accountingDate": "2022-09-30"
                     }
                   }
                 }
@@ -25969,7 +25973,8 @@
                     },
                     "settings": {
                       "generateCashCreditGrant": "ENABLED"
-                    }
+                    },
+                    "accountingDate": "2022-09-30"
                   }
                 },
                 "examples": {
@@ -26115,7 +26120,8 @@
                       },
                       "settings": {
                         "generateCashCreditGrant": "ENABLED"
-                      }
+                      },
+                      "accountingDate": "2022-09-30"
                     }
                   }
                 }
@@ -26409,7 +26415,8 @@
                     },
                     "settings": {
                       "generateCashCreditGrant": "ENABLED"
-                    }
+                    },
+                    "accountingDate": "2022-09-30"
                   }
                 },
                 "examples": {
@@ -26555,7 +26562,8 @@
                       },
                       "settings": {
                         "generateCashCreditGrant": "ENABLED"
-                      }
+                      },
+                      "accountingDate": "2022-09-30"
                     }
                   }
                 }
@@ -26762,7 +26770,8 @@
                     },
                     "settings": {
                       "generateCashCreditGrant": "ENABLED"
-                    }
+                    },
+                    "accountingDate": "2022-09-30"
                   }
                 },
                 "examples": {
@@ -26908,7 +26917,8 @@
                       },
                       "settings": {
                         "generateCashCreditGrant": "ENABLED"
-                      }
+                      },
+                      "accountingDate": "2022-09-30"
                     }
                   }
                 }
@@ -27703,7 +27713,8 @@
                     },
                     "settings": {
                       "generateCashCreditGrant": "ENABLED"
-                    }
+                    },
+                    "accountingDate": "2022-09-30"
                   }
                 },
                 "examples": {
@@ -27849,7 +27860,8 @@
                       },
                       "settings": {
                         "generateCashCreditGrant": "ENABLED"
-                      }
+                      },
+                      "accountingDate": "2022-09-30"
                     }
                   }
                 }
@@ -28060,7 +28072,8 @@
                     },
                     "settings": {
                       "generateCashCreditGrant": "ENABLED"
-                    }
+                    },
+                    "accountingDate": "2022-09-30"
                   }
                 },
                 "examples": {
@@ -28206,7 +28219,8 @@
                       },
                       "settings": {
                         "generateCashCreditGrant": "ENABLED"
-                      }
+                      },
+                      "accountingDate": "2022-09-30"
                     }
                   }
                 }
@@ -28417,7 +28431,8 @@
                     },
                     "settings": {
                       "generateCashCreditGrant": "ENABLED"
-                    }
+                    },
+                    "accountingDate": "2022-09-30"
                   }
                 },
                 "examples": {
@@ -28563,7 +28578,8 @@
                       },
                       "settings": {
                         "generateCashCreditGrant": "ENABLED"
-                      }
+                      },
+                      "accountingDate": "2022-09-30"
                     }
                   }
                 }
@@ -28774,7 +28790,8 @@
                     },
                     "settings": {
                       "generateCashCreditGrant": "ENABLED"
-                    }
+                    },
+                    "accountingDate": "2022-09-30"
                   }
                 },
                 "examples": {
@@ -28920,7 +28937,8 @@
                       },
                       "settings": {
                         "generateCashCreditGrant": "ENABLED"
-                      }
+                      },
+                      "accountingDate": "2022-09-30"
                     }
                   }
                 }
@@ -47081,7 +47099,8 @@
           },
           "settings": {
             "generateCashCreditGrant": "ENABLED"
-          }
+          },
+          "accountingDate": "2022-09-30"
         },
         "properties": {
           "id": {
@@ -47227,6 +47246,12 @@
           },
           "settings": {
             "$ref": "#/components/schemas/CreditNoteSettings"
+          },
+          "accountingDate": {
+            "type": "string",
+            "description": "Accounting date",
+            "format": "date",
+            "example": "2022-09-30"
           }
         }
       },
@@ -47925,7 +47950,8 @@
               },
               "settings": {
                 "generateCashCreditGrant": "ENABLED"
-              }
+              },
+              "accountingDate": "2022-09-30"
             }
           ],
           "pagination": {
@@ -48079,7 +48105,8 @@
                 },
                 "settings": {
                   "generateCashCreditGrant": "ENABLED"
-                }
+                },
+                "accountingDate": "2022-09-30"
               }
             ],
             "items": {
