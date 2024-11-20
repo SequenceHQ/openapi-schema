@@ -6793,22 +6793,24 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/CreateBillingScheduleSettingsEndpointProductCreateBillingScheduleSettingsResponseModel",
+                  "$ref": "#/components/schemas/BillingScheduleSettings",
                   "example": {
                     "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                     "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                     "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                    "paymentProvider": "STRIPE"
+                    "paymentProvider": "STRIPE",
+                    "autoCharge": true
                   }
                 },
                 "examples": {
-                  "CreateBillingScheduleSettingsEndpointProductCreateBillingScheduleSettingsResponseModel": {
+                  "BillingScheduleSettings": {
                     "summary": "",
                     "value": {
                       "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                       "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                       "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                      "paymentProvider": "STRIPE"
+                      "paymentProvider": "STRIPE",
+                      "autoCharge": true
                     }
                   }
                 }
@@ -6878,22 +6880,24 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GetBillingScheduleSettingsEndpointProductGetBillingScheduleSettingsResponseModel",
+                  "$ref": "#/components/schemas/BillingScheduleSettings",
                   "example": {
                     "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                     "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                     "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                    "paymentProvider": "STRIPE"
+                    "paymentProvider": "STRIPE",
+                    "autoCharge": true
                   }
                 },
                 "examples": {
-                  "GetBillingScheduleSettingsEndpointProductGetBillingScheduleSettingsResponseModel": {
+                  "BillingScheduleSettings": {
                     "summary": "",
                     "value": {
                       "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                       "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                       "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                      "paymentProvider": "STRIPE"
+                      "paymentProvider": "STRIPE",
+                      "autoCharge": true
                     }
                   }
                 }
@@ -6980,22 +6984,24 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/UpdateBillingScheduleSettingsEndpointProductUpdateBillingScheduleSettingsResponseModel",
+                  "$ref": "#/components/schemas/BillingScheduleSettings",
                   "example": {
                     "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                     "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                     "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                    "paymentProvider": "STRIPE"
+                    "paymentProvider": "STRIPE",
+                    "autoCharge": true
                   }
                 },
                 "examples": {
-                  "UpdateBillingScheduleSettingsEndpointProductUpdateBillingScheduleSettingsResponseModel": {
+                  "BillingScheduleSettings": {
                     "summary": "",
                     "value": {
                       "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                       "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                       "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                      "paymentProvider": "STRIPE"
+                      "paymentProvider": "STRIPE",
+                      "autoCharge": true
                     }
                   }
                 }
@@ -7061,22 +7067,24 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/DeleteBillingScheduleSettingsEndpointProductDeleteBillingScheduleSettingsResponseModel",
+                  "$ref": "#/components/schemas/BillingScheduleSettings",
                   "example": {
                     "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                     "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                     "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                    "paymentProvider": "STRIPE"
+                    "paymentProvider": "STRIPE",
+                    "autoCharge": true
                   }
                 },
                 "examples": {
-                  "DeleteBillingScheduleSettingsEndpointProductDeleteBillingScheduleSettingsResponseModel": {
+                  "BillingScheduleSettings": {
                     "summary": "",
                     "value": {
                       "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                       "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                       "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                      "paymentProvider": "STRIPE"
+                      "paymentProvider": "STRIPE",
+                      "autoCharge": true
                     }
                   }
                 }
@@ -7146,22 +7154,24 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GetBillingScheduleSettingsEndpointProductGetBillingScheduleSettingsResponseModel",
+                  "$ref": "#/components/schemas/BillingScheduleSettings",
                   "example": {
                     "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                     "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                     "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                    "paymentProvider": "STRIPE"
+                    "paymentProvider": "STRIPE",
+                    "autoCharge": true
                   }
                 },
                 "examples": {
-                  "GetBillingScheduleSettingsEndpointProductGetBillingScheduleSettingsResponseModel": {
+                  "BillingScheduleSettings": {
                     "summary": "",
                     "value": {
                       "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                       "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
                       "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-                      "paymentProvider": "STRIPE"
+                      "paymentProvider": "STRIPE",
+                      "autoCharge": true
                     }
                   }
                 }
@@ -34171,8 +34181,9 @@
           "NONE"
         ]
       },
-      "CreateBillingScheduleSettingsEndpointProductCreateBillingScheduleSettingsResponseModel": {
+      "BillingScheduleSettings": {
         "required": [
+          "autoCharge",
           "billingScheduleId",
           "id",
           "paymentProvider",
@@ -34183,7 +34194,8 @@
           "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
           "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "paymentProvider": "STRIPE"
+          "paymentProvider": "STRIPE",
+          "autoCharge": true
         },
         "properties": {
           "id": {
@@ -34204,42 +34216,11 @@
           "paymentProvider": {
             "description": "Payment provider",
             "$ref": "#/components/schemas/PaymentProvider"
-          }
-        }
-      },
-      "GetBillingScheduleSettingsEndpointProductGetBillingScheduleSettingsResponseModel": {
-        "required": [
-          "billingScheduleId",
-          "id",
-          "paymentProvider",
-          "sequenceAccountId"
-        ],
-        "type": "object",
-        "example": {
-          "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "paymentProvider": "STRIPE"
-        },
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "Unique payment provider ID.",
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
           },
-          "sequenceAccountId": {
-            "type": "string",
-            "description": "Unique Sequence Account ID.",
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
-          },
-          "billingScheduleId": {
-            "type": "string",
-            "description": "Unique payment provider ID.",
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
-          },
-          "paymentProvider": {
-            "description": "Payment provider",
-            "$ref": "#/components/schemas/PaymentProvider"
+          "autoCharge": {
+            "type": "boolean",
+            "description": "Automatically collect payments if payment details are available",
+            "example": true
           }
         }
       },
@@ -34252,78 +34233,6 @@
           "paymentProvider": "STRIPE"
         },
         "properties": {
-          "paymentProvider": {
-            "description": "Payment provider",
-            "$ref": "#/components/schemas/PaymentProvider"
-          }
-        }
-      },
-      "UpdateBillingScheduleSettingsEndpointProductUpdateBillingScheduleSettingsResponseModel": {
-        "required": [
-          "billingScheduleId",
-          "id",
-          "paymentProvider",
-          "sequenceAccountId"
-        ],
-        "type": "object",
-        "example": {
-          "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "paymentProvider": "STRIPE"
-        },
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "Unique payment provider ID.",
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
-          },
-          "sequenceAccountId": {
-            "type": "string",
-            "description": "Unique Sequence Account ID.",
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
-          },
-          "billingScheduleId": {
-            "type": "string",
-            "description": "Unique payment provider ID.",
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
-          },
-          "paymentProvider": {
-            "description": "Payment provider",
-            "$ref": "#/components/schemas/PaymentProvider"
-          }
-        }
-      },
-      "DeleteBillingScheduleSettingsEndpointProductDeleteBillingScheduleSettingsResponseModel": {
-        "required": [
-          "billingScheduleId",
-          "id",
-          "paymentProvider",
-          "sequenceAccountId"
-        ],
-        "type": "object",
-        "example": {
-          "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "sequenceAccountId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "billingScheduleId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
-          "paymentProvider": "STRIPE"
-        },
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "Unique payment provider ID.",
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
-          },
-          "sequenceAccountId": {
-            "type": "string",
-            "description": "Unique Sequence Account ID.",
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
-          },
-          "billingScheduleId": {
-            "type": "string",
-            "description": "Unique payment provider ID.",
-            "example": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730"
-          },
           "paymentProvider": {
             "description": "Payment provider",
             "$ref": "#/components/schemas/PaymentProvider"
