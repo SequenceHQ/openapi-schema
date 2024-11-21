@@ -29903,10 +29903,13 @@
           "NB",
           "NL",
           "NS",
+          "NT",
+          "NU",
           "ON",
           "PE",
           "QC",
-          "SK"
+          "SK",
+          "YT"
         ]
       },
       "CountryCode1": {
@@ -37169,10 +37172,13 @@
           "NB",
           "NL",
           "NS",
+          "NT",
+          "NU",
           "ON",
           "PE",
           "QC",
-          "SK"
+          "SK",
+          "YT"
         ]
       },
       "CreateTaxRegistrationEndpointProductCreateTaxRegistrationResponseModel": {
@@ -43693,10 +43699,13 @@
           "NB",
           "NL",
           "NS",
+          "NT",
+          "NU",
           "ON",
           "PE",
           "QC",
-          "SK"
+          "SK",
+          "YT"
         ]
       },
       "CountryCode2": {
