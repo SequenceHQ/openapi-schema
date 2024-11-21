@@ -6963,14 +6963,16 @@
               "schema": {
                 "$ref": "#/components/schemas/UpdateBillingScheduleSettingsEndpointUpdateBillingScheduleSettingsRequestModel",
                 "example": {
-                  "paymentProvider": "STRIPE"
+                  "paymentProvider": "STRIPE",
+                  "autoCharge": true
                 }
               },
               "examples": {
                 "UpdateBillingScheduleSettingsEndpointUpdateBillingScheduleSettingsRequestModel": {
                   "summary": "",
                   "value": {
-                    "paymentProvider": "STRIPE"
+                    "paymentProvider": "STRIPE",
+                    "autoCharge": true
                   }
                 }
               }
@@ -34250,12 +34252,18 @@
         ],
         "type": "object",
         "example": {
-          "paymentProvider": "STRIPE"
+          "paymentProvider": "STRIPE",
+          "autoCharge": true
         },
         "properties": {
           "paymentProvider": {
             "description": "Payment provider",
             "$ref": "#/components/schemas/PaymentProvider"
+          },
+          "autoCharge": {
+            "type": "boolean",
+            "description": "Automatically collect this payment if payment details are available",
+            "example": true
           }
         }
       },
