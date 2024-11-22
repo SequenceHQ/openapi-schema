@@ -15999,8 +15999,8 @@
         "tags": [
           "Credits"
         ],
-        "summary": "List all Credit Grants",
-        "description": "List all Credit Grants",
+        "summary": "List credit grants",
+        "description": "List all credit grants for this account",
         "operationId": "getCredits",
         "parameters": [
           {
@@ -16058,7 +16058,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ListCreditGrantEndpointProductListCreditGrantPaginatedResponseModel",
+                  "$ref": "#/components/schemas/ListCreditGrantEndpointResponseModel",
                   "example": {
                     "items": [
                       {
@@ -16086,7 +16086,7 @@
                   }
                 },
                 "examples": {
-                  "ListCreditGrantEndpointProductListCreditGrantPaginatedResponseModel": {
+                  "ListCreditGrantEndpointResponseModel": {
                     "summary": "",
                     "value": {
                       "items": [
@@ -16267,14 +16267,14 @@
         "tags": [
           "Credits"
         ],
-        "summary": "Get a Credit Grant by ID",
-        "description": "Get a Credit Grant by ID",
+        "summary": "Get a credit grant",
+        "description": "Get a credit grant by ID",
         "operationId": "getCreditsById",
         "parameters": [
           {
             "name": "id",
             "in": "path",
-            "description": "Credit Grant ID",
+            "description": "Credit grant ID",
             "required": true,
             "schema": {
               "type": "string"
@@ -16308,7 +16308,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GetCreditGrantEndpointProductGetCreditGrantResponseModel",
+                  "$ref": "#/components/schemas/CreditGrant",
                   "example": {
                     "id": "746fc7f2-8098-4fe7-953c-7d51c580a126",
                     "sequenceAccountId": "dce9ae85-d8d0-42b4-bcad-f221a64363c6",
@@ -16327,7 +16327,7 @@
                   }
                 },
                 "examples": {
-                  "GetCreditGrantEndpointProductGetCreditGrantResponseModel": {
+                  "CreditGrant": {
                     "summary": "",
                     "value": {
                       "id": "746fc7f2-8098-4fe7-953c-7d51c580a126",
@@ -41532,7 +41532,7 @@
           }
         }
       },
-      "ListCreditGrantEndpointProductListCreditGrantPaginatedResponseModel": {
+      "ListCreditGrantEndpointResponseModel": {
         "required": [
           "items",
           "pagination"
@@ -41566,7 +41566,7 @@
         "properties": {
           "items": {
             "type": "array",
-            "description": "CreditGrants",
+            "description": "Credit grants",
             "example": [
               {
                 "id": "746fc7f2-8098-4fe7-953c-7d51c580a126",
@@ -41586,113 +41586,11 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/ListCreditGrantEndpointProductListCreditGrantResponseModel"
+              "$ref": "#/components/schemas/CreditGrant"
             }
           },
           "pagination": {
             "$ref": "#/components/schemas/PaginationMeta"
-          }
-        }
-      },
-      "ListCreditGrantEndpointProductListCreditGrantResponseModel": {
-        "required": [
-          "amount",
-          "costOfCredit",
-          "createdAt",
-          "creditUnitType",
-          "currency",
-          "customerId",
-          "id",
-          "name",
-          "sequenceAccountId"
-        ],
-        "type": "object",
-        "example": {
-          "id": "746fc7f2-8098-4fe7-953c-7d51c580a126",
-          "sequenceAccountId": "dce9ae85-d8d0-42b4-bcad-f221a64363c6",
-          "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-          "name": "On-boarding Credits",
-          "creditUnitType": "CURRENCY",
-          "currency": "GBP",
-          "metricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
-          "amount": 10,
-          "costOfCredit": 10,
-          "taxRateId": "179d1ab3-cc96-48e2-9310-067b0b42d47c",
-          "effectiveDate": "2023-01-01",
-          "expiryDate": "2023-01-31",
-          "createdAt": "2022-10-07T14:12:08.826121Z",
-          "creditNoteId": "73086198-8752-4ec9-a99b-16209a32dc6c"
-        },
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "Credit Grant ID",
-            "example": "746fc7f2-8098-4fe7-953c-7d51c580a126"
-          },
-          "sequenceAccountId": {
-            "type": "string",
-            "description": "Sequence Account ID",
-            "example": "dce9ae85-d8d0-42b4-bcad-f221a64363c6"
-          },
-          "customerId": {
-            "type": "string",
-            "description": "The ID of the Customer Credit is granted to",
-            "example": "61b083e0-1faa-47ca-9aeb-6205da8f6c47"
-          },
-          "name": {
-            "type": "string",
-            "description": "Name of the Credit Grant",
-            "example": "On-boarding Credits"
-          },
-          "creditUnitType": {
-            "description": "Type of the Unit of Credit",
-            "$ref": "#/components/schemas/CreditUnitType"
-          },
-          "currency": {
-            "description": "Currency of Cash Credit (if CreditUnitType is CURRENCY)",
-            "$ref": "#/components/schemas/Currency"
-          },
-          "metricId": {
-            "type": "string",
-            "description": "Metric ID (if CreditUnitType is METRIC)",
-            "example": "f092246c-6b90-4106-bcca-304ccf06bf45"
-          },
-          "amount": {
-            "type": "number",
-            "description": "Amount of Units Granted",
-            "example": 10
-          },
-          "costOfCredit": {
-            "type": "number",
-            "description": "Cost of Credit Grant, to be Invoiced to the Customer",
-            "example": 10
-          },
-          "taxRateId": {
-            "type": "string",
-            "description": "Tax Rate ID for Credit Purchase",
-            "example": "179d1ab3-cc96-48e2-9310-067b0b42d47c"
-          },
-          "effectiveDate": {
-            "type": "string",
-            "description": "First Day Credit Grant can be consumed",
-            "format": "date",
-            "example": "2023-01-01"
-          },
-          "expiryDate": {
-            "type": "string",
-            "description": "Last Day Credit Grant can be consumed",
-            "format": "date",
-            "example": "2023-01-31"
-          },
-          "createdAt": {
-            "type": "string",
-            "description": "The created at",
-            "example": "2022-10-07T14:12:08.826121Z"
-          },
-          "creditNoteId": {
-            "type": "string",
-            "description": "ID of the credit note that created this grant (if applicable)",
-            "example": "73086198-8752-4ec9-a99b-16209a32dc6c"
           }
         }
       },
@@ -41864,108 +41762,6 @@
             "type": "string",
             "description": "The created at",
             "example": "2022-10-07T14:12:08.826121Z"
-          }
-        }
-      },
-      "GetCreditGrantEndpointProductGetCreditGrantResponseModel": {
-        "required": [
-          "amount",
-          "costOfCredit",
-          "createdAt",
-          "creditUnitType",
-          "currency",
-          "customerId",
-          "id",
-          "name",
-          "sequenceAccountId"
-        ],
-        "type": "object",
-        "example": {
-          "id": "746fc7f2-8098-4fe7-953c-7d51c580a126",
-          "sequenceAccountId": "dce9ae85-d8d0-42b4-bcad-f221a64363c6",
-          "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-          "name": "On-boarding Credits",
-          "creditUnitType": "CURRENCY",
-          "currency": "GBP",
-          "metricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
-          "amount": 10,
-          "costOfCredit": 10,
-          "taxRateId": "179d1ab3-cc96-48e2-9310-067b0b42d47c",
-          "effectiveDate": "2023-01-01",
-          "expiryDate": "2023-01-31",
-          "createdAt": "2022-10-07T14:12:08.826121Z",
-          "creditNoteId": "73086198-8752-4ec9-a99b-16209a32dc6c"
-        },
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "Credit Grant ID",
-            "example": "746fc7f2-8098-4fe7-953c-7d51c580a126"
-          },
-          "sequenceAccountId": {
-            "type": "string",
-            "description": "Sequence Account ID",
-            "example": "dce9ae85-d8d0-42b4-bcad-f221a64363c6"
-          },
-          "customerId": {
-            "type": "string",
-            "description": "The ID of the Customer Credit is granted to",
-            "example": "61b083e0-1faa-47ca-9aeb-6205da8f6c47"
-          },
-          "name": {
-            "type": "string",
-            "description": "Name of the Credit Grant",
-            "example": "On-boarding Credits"
-          },
-          "creditUnitType": {
-            "description": "Type of the Unit of Credit",
-            "$ref": "#/components/schemas/CreditUnitType"
-          },
-          "currency": {
-            "description": "Currency of Cash Credit (if CreditUnitType is CURRENCY)",
-            "$ref": "#/components/schemas/Currency"
-          },
-          "metricId": {
-            "type": "string",
-            "description": "Metric ID (if CreditUnitType is METRIC)",
-            "example": "f092246c-6b90-4106-bcca-304ccf06bf45"
-          },
-          "amount": {
-            "type": "number",
-            "description": "Amount of Units Granted",
-            "example": 10
-          },
-          "costOfCredit": {
-            "type": "number",
-            "description": "Cost of Credit Grant, to be Invoiced to the Customer",
-            "example": 10
-          },
-          "taxRateId": {
-            "type": "string",
-            "description": "Tax Rate ID for Credit Purchase",
-            "example": "179d1ab3-cc96-48e2-9310-067b0b42d47c"
-          },
-          "effectiveDate": {
-            "type": "string",
-            "description": "First Day Credit Grant can be consumed",
-            "format": "date",
-            "example": "2023-01-01"
-          },
-          "expiryDate": {
-            "type": "string",
-            "description": "Last Day Credit Grant can be consumed",
-            "format": "date",
-            "example": "2023-01-31"
-          },
-          "createdAt": {
-            "type": "string",
-            "description": "The created at",
-            "example": "2022-10-07T14:12:08.826121Z"
-          },
-          "creditNoteId": {
-            "type": "string",
-            "description": "ID of the credit note that created this grant (if applicable)",
-            "example": "73086198-8752-4ec9-a99b-16209a32dc6c"
           }
         }
       },
