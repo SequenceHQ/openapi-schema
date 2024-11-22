@@ -16075,7 +16075,14 @@
                         "effectiveDate": "2023-01-01",
                         "expiryDate": "2023-01-31",
                         "createdAt": "2022-10-07T14:12:08.826121Z",
-                        "creditNoteId": "73086198-8752-4ec9-a99b-16209a32dc6c"
+                        "creditNoteId": "73086198-8752-4ec9-a99b-16209a32dc6c",
+                        "integrationIds": [
+                          {
+                            "service": "Xero",
+                            "id": "74ed2615-4730-49ab-9445-74f31723a206",
+                            "isPending": false
+                          }
+                        ]
                       }
                     ],
                     "pagination": {
@@ -16104,7 +16111,14 @@
                           "effectiveDate": "2023-01-01",
                           "expiryDate": "2023-01-31",
                           "createdAt": "2022-10-07T14:12:08.826121Z",
-                          "creditNoteId": "73086198-8752-4ec9-a99b-16209a32dc6c"
+                          "creditNoteId": "73086198-8752-4ec9-a99b-16209a32dc6c",
+                          "integrationIds": [
+                            {
+                              "service": "Xero",
+                              "id": "74ed2615-4730-49ab-9445-74f31723a206",
+                              "isPending": false
+                            }
+                          ]
                         }
                       ],
                       "pagination": {
@@ -16220,7 +16234,14 @@
                     "costOfCredit": 10,
                     "effectiveDate": "2023-01-01",
                     "expiryDate": "2023-01-31",
-                    "createdAt": "2022-10-07T14:12:08.826121Z"
+                    "createdAt": "2022-10-07T14:12:08.826121Z",
+                    "integrationIds": [
+                      {
+                        "service": "Xero",
+                        "id": "74ed2615-4730-49ab-9445-74f31723a206",
+                        "isPending": false
+                      }
+                    ]
                   }
                 },
                 "examples": {
@@ -16238,7 +16259,14 @@
                       "costOfCredit": 10,
                       "effectiveDate": "2023-01-01",
                       "expiryDate": "2023-01-31",
-                      "createdAt": "2022-10-07T14:12:08.826121Z"
+                      "createdAt": "2022-10-07T14:12:08.826121Z",
+                      "integrationIds": [
+                        {
+                          "service": "Xero",
+                          "id": "74ed2615-4730-49ab-9445-74f31723a206",
+                          "isPending": false
+                        }
+                      ]
                     }
                   }
                 }
@@ -16323,7 +16351,14 @@
                     "effectiveDate": "2023-01-01",
                     "expiryDate": "2023-01-31",
                     "createdAt": "2022-10-07T14:12:08.826121Z",
-                    "creditNoteId": "73086198-8752-4ec9-a99b-16209a32dc6c"
+                    "creditNoteId": "73086198-8752-4ec9-a99b-16209a32dc6c",
+                    "integrationIds": [
+                      {
+                        "service": "Xero",
+                        "id": "74ed2615-4730-49ab-9445-74f31723a206",
+                        "isPending": false
+                      }
+                    ]
                   }
                 },
                 "examples": {
@@ -16343,7 +16378,14 @@
                       "effectiveDate": "2023-01-01",
                       "expiryDate": "2023-01-31",
                       "createdAt": "2022-10-07T14:12:08.826121Z",
-                      "creditNoteId": "73086198-8752-4ec9-a99b-16209a32dc6c"
+                      "creditNoteId": "73086198-8752-4ec9-a99b-16209a32dc6c",
+                      "integrationIds": [
+                        {
+                          "service": "Xero",
+                          "id": "74ed2615-4730-49ab-9445-74f31723a206",
+                          "isPending": false
+                        }
+                      ]
                     }
                   }
                 }
@@ -41554,7 +41596,14 @@
               "effectiveDate": "2023-01-01",
               "expiryDate": "2023-01-31",
               "createdAt": "2022-10-07T14:12:08.826121Z",
-              "creditNoteId": "73086198-8752-4ec9-a99b-16209a32dc6c"
+              "creditNoteId": "73086198-8752-4ec9-a99b-16209a32dc6c",
+              "integrationIds": [
+                {
+                  "service": "Xero",
+                  "id": "74ed2615-4730-49ab-9445-74f31723a206",
+                  "isPending": false
+                }
+              ]
             }
           ],
           "pagination": {
@@ -41582,7 +41631,14 @@
                 "effectiveDate": "2023-01-01",
                 "expiryDate": "2023-01-31",
                 "createdAt": "2022-10-07T14:12:08.826121Z",
-                "creditNoteId": "73086198-8752-4ec9-a99b-16209a32dc6c"
+                "creditNoteId": "73086198-8752-4ec9-a99b-16209a32dc6c",
+                "integrationIds": [
+                  {
+                    "service": "Xero",
+                    "id": "74ed2615-4730-49ab-9445-74f31723a206",
+                    "isPending": false
+                  }
+                ]
               }
             ],
             "items": {
@@ -41684,6 +41740,7 @@
           "creditUnitType",
           "customerId",
           "id",
+          "integrationIds",
           "name",
           "sequenceAccountId"
         ],
@@ -41700,7 +41757,14 @@
           "costOfCredit": 10,
           "effectiveDate": "2023-01-01",
           "expiryDate": "2023-01-31",
-          "createdAt": "2022-10-07T14:12:08.826121Z"
+          "createdAt": "2022-10-07T14:12:08.826121Z",
+          "integrationIds": [
+            {
+              "service": "Xero",
+              "id": "74ed2615-4730-49ab-9445-74f31723a206",
+              "isPending": false
+            }
+          ]
         },
         "properties": {
           "id": {
@@ -41762,6 +41826,20 @@
             "type": "string",
             "description": "The created at",
             "example": "2022-10-07T14:12:08.826121Z"
+          },
+          "integrationIds": {
+            "type": "array",
+            "description": "IDs in external integrations",
+            "example": [
+              {
+                "service": "Xero",
+                "id": "74ed2615-4730-49ab-9445-74f31723a206",
+                "isPending": false
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/IntegrationId2"
+            }
           }
         }
       },
