@@ -16191,7 +16191,8 @@
                   "amount": 10,
                   "costOfCredit": 10,
                   "effectiveDate": "2023-01-01",
-                  "expiryDate": "2023-01-31"
+                  "expiryDate": "2023-01-31",
+                  "createInvoice": true
                 }
               },
               "examples": {
@@ -16207,7 +16208,8 @@
                     "amount": 10,
                     "costOfCredit": 10,
                     "effectiveDate": "2023-01-01",
-                    "expiryDate": "2023-01-31"
+                    "expiryDate": "2023-01-31",
+                    "createInvoice": true
                   }
                 }
               }
@@ -41678,7 +41680,8 @@
           "amount": 10,
           "costOfCredit": 10,
           "effectiveDate": "2023-01-01",
-          "expiryDate": "2023-01-31"
+          "expiryDate": "2023-01-31",
+          "createInvoice": true
         },
         "properties": {
           "sequenceAccountId": {
@@ -41730,6 +41733,11 @@
             "description": "Last Day Credit Grant can be consumed",
             "format": "date",
             "example": "2023-01-31"
+          },
+          "createInvoice": {
+            "type": "boolean",
+            "description": "If true we will create an invoice to charge the customer for this grant",
+            "example": true
           }
         }
       },
