@@ -18445,6 +18445,212 @@
       "servers": [],
       "parameters": []
     },
+    "/billing-schedules/validate-taxes": {
+      "post": {
+        "tags": [
+          "Billing Schedules"
+        ],
+        "summary": "Validate taxes on a billing schedule",
+        "description": "Validate the tax strategy that will apply to the given billing schedule before it's created or updated.",
+        "operationId": "postBillingSchedulesValidateTaxes",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-07-30"
+              ]
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateBillingScheduleRequest",
+                "example": {
+                  "customerId": "cca32597-b6b0-4499-9669-128aef8702e4",
+                  "startDate": "2022-01-01",
+                  "endDate": "2022-12-01",
+                  "recurrenceDayOfMonth": 1,
+                  "taxRates": [
+                    {
+                      "priceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "taxRateId": "50c0d53b-8460-41e6-b4e9-a4e157fc1a64"
+                    }
+                  ],
+                  "autoIssueInvoices": false,
+                  "purchaseOrderNumber": "PO123",
+                  "paymentProvider": "STRIPE",
+                  "isDraft": false,
+                  "rollUpBilling": false,
+                  "phases": [
+                    {
+                      "priceIds": [
+                        "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                      ],
+                      "startDate": "2022-01-01",
+                      "endDate": "2022-06-30",
+                      "discounts": [
+                        {
+                          "restrictToPrices": [
+                            "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                          ],
+                          "type": "PERCENTAGE",
+                          "amount": 0.08,
+                          "message": "8% Discount",
+                          "separateLineItem": true
+                        }
+                      ],
+                      "minimums": [
+                        {
+                          "restrictToPrices": [
+                            "9fe9986b-e205-42b7-a58f-42845c91f03f"
+                          ],
+                          "amount": 100
+                        }
+                      ],
+                      "listPriceIds": [
+                        "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
+                      ]
+                    },
+                    {
+                      "priceIds": [],
+                      "startDate": "2022-07-01",
+                      "endDate": "2022-12-31",
+                      "discounts": [],
+                      "minimums": [
+                        {
+                          "restrictToPrices": [
+                            "9fe9986b-e205-42b7-a58f-42845c91f03f"
+                          ],
+                          "amount": 100
+                        }
+                      ],
+                      "listPriceIds": [
+                        "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
+                      ]
+                    }
+                  ],
+                  "attachmentAssetIds": [
+                    "5055cd17-d5e8-4286-bddf-79729ddabf51"
+                  ],
+                  "autoCharge": true
+                }
+              },
+              "examples": {
+                "CreateBillingScheduleRequest": {
+                  "summary": "",
+                  "value": {
+                    "customerId": "cca32597-b6b0-4499-9669-128aef8702e4",
+                    "startDate": "2022-01-01",
+                    "endDate": "2022-12-01",
+                    "recurrenceDayOfMonth": 1,
+                    "taxRates": [
+                      {
+                        "priceId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                        "taxRateId": "50c0d53b-8460-41e6-b4e9-a4e157fc1a64"
+                      }
+                    ],
+                    "autoIssueInvoices": false,
+                    "purchaseOrderNumber": "PO123",
+                    "paymentProvider": "STRIPE",
+                    "isDraft": false,
+                    "rollUpBilling": false,
+                    "phases": [
+                      {
+                        "priceIds": [
+                          "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                        ],
+                        "startDate": "2022-01-01",
+                        "endDate": "2022-06-30",
+                        "discounts": [
+                          {
+                            "restrictToPrices": [
+                              "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+                            ],
+                            "type": "PERCENTAGE",
+                            "amount": 0.08,
+                            "message": "8% Discount",
+                            "separateLineItem": true
+                          }
+                        ],
+                        "minimums": [
+                          {
+                            "restrictToPrices": [
+                              "9fe9986b-e205-42b7-a58f-42845c91f03f"
+                            ],
+                            "amount": 100
+                          }
+                        ],
+                        "listPriceIds": [
+                          "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
+                        ]
+                      },
+                      {
+                        "priceIds": [],
+                        "startDate": "2022-07-01",
+                        "endDate": "2022-12-31",
+                        "discounts": [],
+                        "minimums": [
+                          {
+                            "restrictToPrices": [
+                              "9fe9986b-e205-42b7-a58f-42845c91f03f"
+                            ],
+                            "amount": 100
+                          }
+                        ],
+                        "listPriceIds": [
+                          "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
+                        ]
+                      }
+                    ],
+                    "attachmentAssetIds": [
+                      "5055cd17-d5e8-4286-bddf-79729ddabf51"
+                    ],
+                    "autoCharge": true
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {}
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/invoices/render-settings": {
       "get": {
         "tags": [
