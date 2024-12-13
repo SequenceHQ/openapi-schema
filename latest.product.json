@@ -31997,6 +31997,7 @@
         "type": "string",
         "example": "MONTHLY",
         "enum": [
+          "ON_DEMAND",
           "ONE_TIME",
           "MONTHLY",
           "QUARTERLY",
