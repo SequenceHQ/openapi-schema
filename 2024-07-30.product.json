@@ -24556,6 +24556,293 @@
       "servers": [],
       "parameters": []
     },
+    "/invoices/{id}/draft": {
+      "post": {
+        "tags": [
+          "Invoices"
+        ],
+        "summary": "Convert upcoming invoice to draft",
+        "description": "Updates to DRAFT status and recalculates invoice",
+        "operationId": "postInvoicesByIdDraft",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Invoice Id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-07-30"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Invoice",
+                  "example": {
+                    "id": "ba37a392-7054-4dae-ab37-6fee9e23fe06",
+                    "sequenceAccountId": "af9b5988-1d7b-45f6-a188-326df5e59b24",
+                    "status": "DRAFT",
+                    "currency": "GBP",
+                    "invoiceNumber": "INV2",
+                    "dueDate": "2022-11-05",
+                    "purchaseOrderNumber": "PO123",
+                    "reference": "ref",
+                    "customerEmails": [
+                      "customer@example.com"
+                    ],
+                    "customerLegalCompanyName": "Facebook",
+                    "customerBillingAddress": {
+                      "line1": "Flat 1",
+                      "line2": "15 Yemen Road",
+                      "town": "Yemen",
+                      "state": "CA",
+                      "postcode": "YE1 2YE",
+                      "country": "YE"
+                    },
+                    "customerShippingAddress": {
+                      "line1": "742 Evergreen Terrace",
+                      "line2": "",
+                      "town": "Springfield",
+                      "state": "CA",
+                      "postcode": "12345",
+                      "country": "US"
+                    },
+                    "memo": "Thanks",
+                    "paymentOptions": [
+                      "BANK_TRANSFER"
+                    ],
+                    "billingPeriod": {
+                      "start": "2022-10-01",
+                      "endInclusive": "2022-10-30"
+                    },
+                    "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
+                    "totalTax": "2",
+                    "netTotal": "12",
+                    "grossTotal": "10",
+                    "metadata": [
+                      {
+                        "key": "example-label",
+                        "value": "label-value"
+                      }
+                    ],
+                    "paymentStatus": "UNPAID",
+                    "createdAt": "2022-10-30T00:00:00Z",
+                    "creditNoteIds": [
+                      "941272d1-f840-4e16-b698-0cd455c81e0e"
+                    ],
+                    "linkedServices": [
+                      {
+                        "externalId": "ID",
+                        "externalService": "Xero",
+                        "syncTime": "2022-06-28T16:47:00Z"
+                      }
+                    ],
+                    "merchantDetails": {
+                      "address": {
+                        "line1": "Flat 1",
+                        "line2": "123 Fake Street",
+                        "town": "New York",
+                        "state": "NY",
+                        "postcode": "AB1 2EF",
+                        "country": "US"
+                      },
+                      "phoneNumber": "0800001066",
+                      "email": "donald@example.com",
+                      "taxId": "TAX",
+                      "iban": "GB33BUKB20201555555555",
+                      "ukAccountDetails": {
+                        "sortCode": "123456",
+                        "accountNumber": "12345678"
+                      },
+                      "usAchDetails": {
+                        "accountNumber": "12345678",
+                        "accountName": "John Doe",
+                        "bankName": "Chase",
+                        "bankRoutingNumber": "123456789"
+                      },
+                      "usWireDetails": {
+                        "accountNumber": "12345678",
+                        "accountName": "John Doe",
+                        "bankName": "Chase",
+                        "bankRoutingNumber": "123456789",
+                        "swiftCode": "CHASUS33",
+                        "bankAddress": {
+                          "line1": "JP Morgan Chase",
+                          "town": "New York City",
+                          "state": "NY",
+                          "postcode": "10017",
+                          "country": "US"
+                        }
+                      },
+                      "legalCompanyName": "The Merchant",
+                      "customFields": [],
+                      "includeBeneficiaryAddressInPaymentDetails": false
+                    },
+                    "accountingDate": "2022-10-05",
+                    "customerTaxStatus": "TAXED",
+                    "renderSettings": {
+                      "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                    },
+                    "isCustomerArchived": false
+                  }
+                },
+                "examples": {
+                  "Invoice": {
+                    "summary": "",
+                    "value": {
+                      "id": "ba37a392-7054-4dae-ab37-6fee9e23fe06",
+                      "sequenceAccountId": "af9b5988-1d7b-45f6-a188-326df5e59b24",
+                      "status": "DRAFT",
+                      "currency": "GBP",
+                      "invoiceNumber": "INV2",
+                      "dueDate": "2022-11-05",
+                      "purchaseOrderNumber": "PO123",
+                      "reference": "ref",
+                      "customerEmails": [
+                        "customer@example.com"
+                      ],
+                      "customerLegalCompanyName": "Facebook",
+                      "customerBillingAddress": {
+                        "line1": "Flat 1",
+                        "line2": "15 Yemen Road",
+                        "town": "Yemen",
+                        "state": "CA",
+                        "postcode": "YE1 2YE",
+                        "country": "YE"
+                      },
+                      "customerShippingAddress": {
+                        "line1": "742 Evergreen Terrace",
+                        "line2": "",
+                        "town": "Springfield",
+                        "state": "CA",
+                        "postcode": "12345",
+                        "country": "US"
+                      },
+                      "memo": "Thanks",
+                      "paymentOptions": [
+                        "BANK_TRANSFER"
+                      ],
+                      "billingPeriod": {
+                        "start": "2022-10-01",
+                        "endInclusive": "2022-10-30"
+                      },
+                      "customerId": "b3c0cf23-6717-4cdc-b190-acf8aa6ccd8a",
+                      "totalTax": "2",
+                      "netTotal": "12",
+                      "grossTotal": "10",
+                      "metadata": [
+                        {
+                          "key": "example-label",
+                          "value": "label-value"
+                        }
+                      ],
+                      "paymentStatus": "UNPAID",
+                      "createdAt": "2022-10-30T00:00:00Z",
+                      "creditNoteIds": [
+                        "941272d1-f840-4e16-b698-0cd455c81e0e"
+                      ],
+                      "linkedServices": [
+                        {
+                          "externalId": "ID",
+                          "externalService": "Xero",
+                          "syncTime": "2022-06-28T16:47:00Z"
+                        }
+                      ],
+                      "merchantDetails": {
+                        "address": {
+                          "line1": "Flat 1",
+                          "line2": "123 Fake Street",
+                          "town": "New York",
+                          "state": "NY",
+                          "postcode": "AB1 2EF",
+                          "country": "US"
+                        },
+                        "phoneNumber": "0800001066",
+                        "email": "donald@example.com",
+                        "taxId": "TAX",
+                        "iban": "GB33BUKB20201555555555",
+                        "ukAccountDetails": {
+                          "sortCode": "123456",
+                          "accountNumber": "12345678"
+                        },
+                        "usAchDetails": {
+                          "accountNumber": "12345678",
+                          "accountName": "John Doe",
+                          "bankName": "Chase",
+                          "bankRoutingNumber": "123456789"
+                        },
+                        "usWireDetails": {
+                          "accountNumber": "12345678",
+                          "accountName": "John Doe",
+                          "bankName": "Chase",
+                          "bankRoutingNumber": "123456789",
+                          "swiftCode": "CHASUS33",
+                          "bankAddress": {
+                            "line1": "JP Morgan Chase",
+                            "town": "New York City",
+                            "state": "NY",
+                            "postcode": "10017",
+                            "country": "US"
+                          }
+                        },
+                        "legalCompanyName": "The Merchant",
+                        "customFields": [],
+                        "includeBeneficiaryAddressInPaymentDetails": false
+                      },
+                      "accountingDate": "2022-10-05",
+                      "customerTaxStatus": "TAXED",
+                      "renderSettings": {
+                        "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+                      },
+                      "isCustomerArchived": false
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/credit-notes": {
       "get": {
         "tags": [
