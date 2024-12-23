@@ -16625,7 +16625,8 @@
                                 "createdAt": "2022-06-28T16:47:00Z",
                                 "updatedAt": "2022-06-28T16:47:00Z"
                               }
-                            ]
+                            ],
+                            "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
                           }
                         ],
                         "archivedAt": "2022-06-28T16:47:00Z",
@@ -16746,7 +16747,8 @@
                                   "createdAt": "2022-06-28T16:47:00Z",
                                   "updatedAt": "2022-06-28T16:47:00Z"
                                 }
-                              ]
+                              ],
+                              "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
                             }
                           ],
                           "archivedAt": "2022-06-28T16:47:00Z",
@@ -17070,7 +17072,8 @@
                             "createdAt": "2022-06-28T16:47:00Z",
                             "updatedAt": "2022-06-28T16:47:00Z"
                           }
-                        ]
+                        ],
+                        "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
                       }
                     ],
                     "archivedAt": "2022-06-28T16:47:00Z",
@@ -17182,7 +17185,8 @@
                               "createdAt": "2022-06-28T16:47:00Z",
                               "updatedAt": "2022-06-28T16:47:00Z"
                             }
-                          ]
+                          ],
+                          "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
                         }
                       ],
                       "archivedAt": "2022-06-28T16:47:00Z",
@@ -17359,7 +17363,8 @@
                             "createdAt": "2022-06-28T16:47:00Z",
                             "updatedAt": "2022-06-28T16:47:00Z"
                           }
-                        ]
+                        ],
+                        "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
                       }
                     ],
                     "archivedAt": "2022-06-28T16:47:00Z",
@@ -17471,7 +17476,8 @@
                               "createdAt": "2022-06-28T16:47:00Z",
                               "updatedAt": "2022-06-28T16:47:00Z"
                             }
-                          ]
+                          ],
+                          "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
                         }
                       ],
                       "archivedAt": "2022-06-28T16:47:00Z",
@@ -17715,7 +17721,8 @@
                             "createdAt": "2022-06-28T16:47:00Z",
                             "updatedAt": "2022-06-28T16:47:00Z"
                           }
-                        ]
+                        ],
+                        "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
                       }
                     ],
                     "archivedAt": "2022-06-28T16:47:00Z",
@@ -17827,7 +17834,8 @@
                               "createdAt": "2022-06-28T16:47:00Z",
                               "updatedAt": "2022-06-28T16:47:00Z"
                             }
-                          ]
+                          ],
+                          "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
                         }
                       ],
                       "archivedAt": "2022-06-28T16:47:00Z",
@@ -17995,7 +18003,8 @@
                             "createdAt": "2022-06-28T16:47:00Z",
                             "updatedAt": "2022-06-28T16:47:00Z"
                           }
-                        ]
+                        ],
+                        "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
                       }
                     ],
                     "archivedAt": "2022-06-28T16:47:00Z",
@@ -18107,7 +18116,8 @@
                               "createdAt": "2022-06-28T16:47:00Z",
                               "updatedAt": "2022-06-28T16:47:00Z"
                             }
-                          ]
+                          ],
+                          "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
                         }
                       ],
                       "archivedAt": "2022-06-28T16:47:00Z",
@@ -18284,7 +18294,8 @@
                             "createdAt": "2022-06-28T16:47:00Z",
                             "updatedAt": "2022-06-28T16:47:00Z"
                           }
-                        ]
+                        ],
+                        "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
                       }
                     ],
                     "archivedAt": "2022-06-28T16:47:00Z",
@@ -18396,7 +18407,8 @@
                               "createdAt": "2022-06-28T16:47:00Z",
                               "updatedAt": "2022-06-28T16:47:00Z"
                             }
-                          ]
+                          ],
+                          "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
                         }
                       ],
                       "archivedAt": "2022-06-28T16:47:00Z",
@@ -42859,7 +42871,8 @@
                   "createdAt": "2022-06-28T16:47:00Z",
                   "updatedAt": "2022-06-28T16:47:00Z"
                 }
-              ]
+              ],
+              "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
             }
           ],
           "archivedAt": "2022-06-28T16:47:00Z",
@@ -43043,7 +43056,8 @@
                     "createdAt": "2022-06-28T16:47:00Z",
                     "updatedAt": "2022-06-28T16:47:00Z"
                   }
-                ]
+                ],
+                "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
               }
             ],
             "items": {
@@ -43117,6 +43131,7 @@
           "id",
           "minimums",
           "priceIds",
+          "recurrencePreference",
           "startDate"
         ],
         "type": "object",
@@ -43153,7 +43168,8 @@
               "createdAt": "2022-06-28T16:47:00Z",
               "updatedAt": "2022-06-28T16:47:00Z"
             }
-          ]
+          ],
+          "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
         },
         "properties": {
           "id": {
@@ -43230,6 +43246,9 @@
             "items": {
               "$ref": "#/components/schemas/Minimum"
             }
+          },
+          "recurrencePreference": {
+            "$ref": "#/components/schemas/PhaseRecurrencePreference"
           }
         }
       },
@@ -43304,6 +43323,14 @@
             "example": "2022-06-28T16:47:00Z"
           }
         }
+      },
+      "PhaseRecurrencePreference": {
+        "type": "string",
+        "example": "CONTINUE_FROM_PREVIOUS_PHASE",
+        "enum": [
+          "CONTINUE_FROM_PREVIOUS_PHASE",
+          "RESET"
+        ]
       },
       "AssetResponse": {
         "required": [
@@ -43589,7 +43616,8 @@
                       "createdAt": "2022-06-28T16:47:00Z",
                       "updatedAt": "2022-06-28T16:47:00Z"
                     }
-                  ]
+                  ],
+                  "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
                 }
               ],
               "archivedAt": "2022-06-28T16:47:00Z",
@@ -43709,7 +43737,8 @@
                         "createdAt": "2022-06-28T16:47:00Z",
                         "updatedAt": "2022-06-28T16:47:00Z"
                       }
-                    ]
+                    ],
+                    "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
                   }
                 ],
                 "archivedAt": "2022-06-28T16:47:00Z",
