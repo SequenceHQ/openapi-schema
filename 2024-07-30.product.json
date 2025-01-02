@@ -16880,7 +16880,8 @@
                       ],
                       "listPriceIds": [
                         "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
-                      ]
+                      ],
+                      "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
                     },
                     {
                       "priceIds": [],
@@ -16897,7 +16898,8 @@
                       ],
                       "listPriceIds": [
                         "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
-                      ]
+                      ],
+                      "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
                     }
                   ],
                   "attachmentAssetIds": [
@@ -16953,7 +16955,8 @@
                         ],
                         "listPriceIds": [
                           "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
-                        ]
+                        ],
+                        "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
                       },
                       {
                         "priceIds": [],
@@ -16970,7 +16973,8 @@
                         ],
                         "listPriceIds": [
                           "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
-                        ]
+                        ],
+                        "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
                       }
                     ],
                     "attachmentAssetIds": [
@@ -17588,7 +17592,8 @@
                       "startDate": "2022-01-01",
                       "endDate": "2022-12-01",
                       "discounts": [],
-                      "minimums": []
+                      "minimums": [],
+                      "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
                     }
                   ],
                   "attachmentAssetIds": [
@@ -17620,7 +17625,8 @@
                         "startDate": "2022-01-01",
                         "endDate": "2022-12-01",
                         "discounts": [],
-                        "minimums": []
+                        "minimums": [],
+                        "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
                       }
                     ],
                     "attachmentAssetIds": [
@@ -18537,7 +18543,8 @@
                       ],
                       "listPriceIds": [
                         "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
-                      ]
+                      ],
+                      "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
                     },
                     {
                       "priceIds": [],
@@ -18554,7 +18561,8 @@
                       ],
                       "listPriceIds": [
                         "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
-                      ]
+                      ],
+                      "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
                     }
                   ],
                   "attachmentAssetIds": [
@@ -18610,7 +18618,8 @@
                         ],
                         "listPriceIds": [
                           "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
-                        ]
+                        ],
+                        "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
                       },
                       {
                         "priceIds": [],
@@ -18627,7 +18636,8 @@
                         ],
                         "listPriceIds": [
                           "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
-                        ]
+                        ],
+                        "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
                       }
                     ],
                     "attachmentAssetIds": [
@@ -42412,7 +42422,8 @@
               ],
               "listPriceIds": [
                 "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
-              ]
+              ],
+              "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
             },
             {
               "priceIds": [],
@@ -42429,7 +42440,8 @@
               ],
               "listPriceIds": [
                 "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
-              ]
+              ],
+              "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
             }
           ],
           "attachmentAssetIds": [
@@ -42529,7 +42541,8 @@
                 ],
                 "listPriceIds": [
                   "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
-                ]
+                ],
+                "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
               },
               {
                 "priceIds": [],
@@ -42546,7 +42559,8 @@
                 ],
                 "listPriceIds": [
                   "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
-                ]
+                ],
+                "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
               }
             ],
             "items": {
@@ -42626,7 +42640,8 @@
           ],
           "listPriceIds": [
             "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
-          ]
+          ],
+          "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
         },
         "properties": {
           "priceIds": {
@@ -42693,6 +42708,10 @@
             "items": {
               "type": "string"
             }
+          },
+          "recurrencePreference": {
+            "description": "Phase recurrence preference",
+            "$ref": "#/components/schemas/PhaseRecurrencePreference"
           }
         }
       },
@@ -42773,6 +42792,14 @@
             "example": 100
           }
         }
+      },
+      "PhaseRecurrencePreference": {
+        "type": "string",
+        "example": "CONTINUE_FROM_PREVIOUS_PHASE",
+        "enum": [
+          "CONTINUE_FROM_PREVIOUS_PHASE",
+          "RESET"
+        ]
       },
       "BillingScheduleResponse": {
         "required": [
@@ -43324,14 +43351,6 @@
           }
         }
       },
-      "PhaseRecurrencePreference": {
-        "type": "string",
-        "example": "CONTINUE_FROM_PREVIOUS_PHASE",
-        "enum": [
-          "CONTINUE_FROM_PREVIOUS_PHASE",
-          "RESET"
-        ]
-      },
       "AssetResponse": {
         "required": [
           "createdAt",
@@ -43443,7 +43462,8 @@
               "startDate": "2022-01-01",
               "endDate": "2022-12-01",
               "discounts": [],
-              "minimums": []
+              "minimums": [],
+              "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
             }
           ],
           "attachmentAssetIds": [
@@ -43508,7 +43528,8 @@
                 "startDate": "2022-01-01",
                 "endDate": "2022-12-01",
                 "discounts": [],
-                "minimums": []
+                "minimums": [],
+                "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
               }
             ],
             "items": {
