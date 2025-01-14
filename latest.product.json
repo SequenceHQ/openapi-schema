@@ -16856,6 +16856,7 @@
                   "rollUpBilling": false,
                   "phases": [
                     {
+                      "name": "Trial Period",
                       "priceIds": [
                         "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                       ],
@@ -16931,6 +16932,7 @@
                     "rollUpBilling": false,
                     "phases": [
                       {
+                        "name": "Trial Period",
                         "priceIds": [
                           "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                         ],
@@ -18529,6 +18531,7 @@
                   "rollUpBilling": false,
                   "phases": [
                     {
+                      "name": "Trial Period",
                       "priceIds": [
                         "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                       ],
@@ -18604,6 +18607,7 @@
                     "rollUpBilling": false,
                     "phases": [
                       {
+                        "name": "Trial Period",
                         "priceIds": [
                           "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                         ],
@@ -42411,6 +42415,7 @@
           "rollUpBilling": false,
           "phases": [
             {
+              "name": "Trial Period",
               "priceIds": [
                 "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
               ],
@@ -42530,6 +42535,7 @@
             "description": "Phases",
             "example": [
               {
+                "name": "Trial Period",
                 "priceIds": [
                   "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
                 ],
@@ -42629,6 +42635,7 @@
         ],
         "type": "object",
         "example": {
+          "name": "Trial Period",
           "priceIds": [
             "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
           ],
@@ -42659,6 +42666,11 @@
           "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE"
         },
         "properties": {
+          "name": {
+            "type": "string",
+            "description": "Optional name for the Phase",
+            "example": "Trial Period"
+          },
           "priceIds": {
             "type": "array",
             "description": "The price IDs included in this phase",
