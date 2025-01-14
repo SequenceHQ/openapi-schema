@@ -16594,6 +16594,7 @@
                         "phases": [
                           {
                             "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                            "name": "Onboarding",
                             "createdAt": "2022-06-28T16:47:00Z",
                             "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                             "priceIds": [
@@ -16716,6 +16717,7 @@
                           "phases": [
                             {
                               "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                              "name": "Onboarding",
                               "createdAt": "2022-06-28T16:47:00Z",
                               "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                               "priceIds": [
@@ -17045,6 +17047,7 @@
                     "phases": [
                       {
                         "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                        "name": "Onboarding",
                         "createdAt": "2022-06-28T16:47:00Z",
                         "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                         "priceIds": [
@@ -17158,6 +17161,7 @@
                       "phases": [
                         {
                           "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                          "name": "Onboarding",
                           "createdAt": "2022-06-28T16:47:00Z",
                           "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                           "priceIds": [
@@ -17336,6 +17340,7 @@
                     "phases": [
                       {
                         "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                        "name": "Onboarding",
                         "createdAt": "2022-06-28T16:47:00Z",
                         "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                         "priceIds": [
@@ -17449,6 +17454,7 @@
                       "phases": [
                         {
                           "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                          "name": "Onboarding",
                           "createdAt": "2022-06-28T16:47:00Z",
                           "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                           "priceIds": [
@@ -17696,6 +17702,7 @@
                     "phases": [
                       {
                         "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                        "name": "Onboarding",
                         "createdAt": "2022-06-28T16:47:00Z",
                         "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                         "priceIds": [
@@ -17809,6 +17816,7 @@
                       "phases": [
                         {
                           "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                          "name": "Onboarding",
                           "createdAt": "2022-06-28T16:47:00Z",
                           "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                           "priceIds": [
@@ -17978,6 +17986,7 @@
                     "phases": [
                       {
                         "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                        "name": "Onboarding",
                         "createdAt": "2022-06-28T16:47:00Z",
                         "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                         "priceIds": [
@@ -18091,6 +18100,7 @@
                       "phases": [
                         {
                           "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                          "name": "Onboarding",
                           "createdAt": "2022-06-28T16:47:00Z",
                           "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                           "priceIds": [
@@ -18269,6 +18279,7 @@
                     "phases": [
                       {
                         "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                        "name": "Onboarding",
                         "createdAt": "2022-06-28T16:47:00Z",
                         "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                         "priceIds": [
@@ -18382,6 +18393,7 @@
                       "phases": [
                         {
                           "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                          "name": "Onboarding",
                           "createdAt": "2022-06-28T16:47:00Z",
                           "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                           "priceIds": [
@@ -30260,7 +30272,7 @@
             }
           },
           "taxStatus": {
-            "description": "Tax status applicable to customer. Can be one of TAXED, EXEMPT or REVERSE_CHARGED. The default is TAXED.",
+            "description": "Tax status applicable to customer. Can be one of TAXED, TAX_EXEMPT or REVERSE_CHARGED. The default is TAXED.",
             "$ref": "#/components/schemas/TaxStatus"
           },
           "contacts": {
@@ -30931,7 +30943,7 @@
             "example": "Example customer"
           },
           "taxStatus": {
-            "description": "Tax status applicable to customer. Can be one of TAXED, EXEMPT or REVERSE_CHARGED. The default is TAXED.",
+            "description": "Tax status applicable to customer. Can be one of TAXED, TAX_EXEMPT or REVERSE_CHARGED. The default is TAXED.",
             "$ref": "#/components/schemas/TaxStatus"
           },
           "customerAliases": {
@@ -31332,7 +31344,7 @@
             }
           },
           "taxStatus": {
-            "description": "Tax status applicable to customer. Can be one of TAXED, EXEMPT or REVERSE_CHARGED. The default is TAXED.",
+            "description": "Tax status applicable to customer. Can be one of TAXED, TAX_EXEMPT or REVERSE_CHARGED. The default is TAXED.",
             "$ref": "#/components/schemas/TaxStatus"
           }
         }
@@ -31986,7 +31998,7 @@
             }
           },
           "taxStatus": {
-            "description": "Tax status applicable to customer. Can be one of TAXED, EXEMPT or REVERSE_CHARGED. The default is TAXED.",
+            "description": "Tax status applicable to customer. Can be one of TAXED, TAX_EXEMPT or REVERSE_CHARGED. The default is TAXED.",
             "$ref": "#/components/schemas/TaxStatus"
           }
         }
@@ -32310,6 +32322,7 @@
           "ONE_TIME",
           "MONTHLY",
           "QUARTERLY",
+          "HALF_YEARLY",
           "YEARLY"
         ]
       },
@@ -32394,6 +32407,7 @@
         "enum": [
           "MONTHLY",
           "QUARTERLY",
+          "HALF_YEARLY",
           "YEARLY"
         ]
       },
@@ -38845,6 +38859,7 @@
         "enum": [
           "MONTHLY",
           "QUARTERLY",
+          "HALF_YEARLY",
           "YEARLY"
         ]
       },
@@ -42867,6 +42882,7 @@
           "phases": [
             {
               "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+              "name": "Onboarding",
               "createdAt": "2022-06-28T16:47:00Z",
               "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
               "priceIds": [
@@ -43052,6 +43068,7 @@
             "example": [
               {
                 "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                "name": "Onboarding",
                 "createdAt": "2022-06-28T16:47:00Z",
                 "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                 "priceIds": [
@@ -43164,6 +43181,7 @@
         "type": "object",
         "example": {
           "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+          "name": "Onboarding",
           "createdAt": "2022-06-28T16:47:00Z",
           "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
           "priceIds": [
@@ -43203,6 +43221,11 @@
             "type": "string",
             "description": "Phase ID",
             "example": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "example": "Onboarding"
           },
           "createdAt": {
             "type": "string",
@@ -43606,6 +43629,7 @@
               "phases": [
                 {
                   "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                  "name": "Onboarding",
                   "createdAt": "2022-06-28T16:47:00Z",
                   "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                   "priceIds": [
@@ -43727,6 +43751,7 @@
                 "phases": [
                   {
                     "id": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                    "name": "Onboarding",
                     "createdAt": "2022-06-28T16:47:00Z",
                     "billingScheduleId": "b102e007-f5d7-4b1a-8a1d-9a51135ae73b",
                     "priceIds": [
