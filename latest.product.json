@@ -24947,7 +24947,7 @@
           {
             "name": "creditNoteStatus",
             "in": "query",
-            "description": "Filter by credit note status. Options: DRAFT, FINAL, SENT, VOIDED",
+            "description": "Filter by credit note status. Options: DRAFT, FINAL, IN_PROGRESS, SENT, VOIDED",
             "required": false,
             "schema": {
               "type": "string"
@@ -47749,6 +47749,7 @@
         "enum": [
           "DRAFT",
           "FINAL",
+          "IN_PROGRESS",
           "SENT",
           "VOIDED"
         ]
