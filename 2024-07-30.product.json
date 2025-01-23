@@ -2930,6 +2930,7 @@
                           "fee": "25.00"
                         }
                       ],
+                      "prorateFlatFees": false,
                       "pricingType": "SEAT_BASED"
                     },
                     "billingFrequency": "MONTHLY",
@@ -3276,6 +3277,7 @@
                             "fee": "25.00"
                           }
                         ],
+                        "prorateFlatFees": false,
                         "pricingType": "SEAT_BASED"
                       },
                       "billingFrequency": "MONTHLY",
@@ -3697,6 +3699,7 @@
                             "fee": "25.00"
                           }
                         ],
+                        "prorateFlatFees": false,
                         "pricingType": "SEAT_BASED"
                       },
                       "billingFrequency": "MONTHLY",
@@ -4135,6 +4138,7 @@
                             "fee": "25.00"
                           }
                         ],
+                        "prorateFlatFees": false,
                         "pricingType": "SEAT_BASED"
                       },
                       "billingFrequency": "MONTHLY",
@@ -4552,6 +4556,7 @@
                             "fee": "25.00"
                           }
                         ],
+                        "prorateFlatFees": false,
                         "pricingType": "SEAT_BASED"
                       },
                       "billingFrequency": "MONTHLY",
@@ -9124,6 +9129,7 @@
                           "fee": "25.00"
                         }
                       ],
+                      "prorateFlatFees": false,
                       "pricingType": "SEAT_BASED"
                     },
                     "billingFrequency": "MONTHLY",
@@ -9462,6 +9468,7 @@
                             "fee": "25.00"
                           }
                         ],
+                        "prorateFlatFees": false,
                         "pricingType": "SEAT_BASED"
                       },
                       "billingFrequency": "MONTHLY",
@@ -9875,6 +9882,7 @@
                             "fee": "25.00"
                           }
                         ],
+                        "prorateFlatFees": false,
                         "pricingType": "SEAT_BASED"
                       },
                       "billingFrequency": "MONTHLY",
@@ -10269,6 +10277,7 @@
                           "fee": "25.00"
                         }
                       ],
+                      "prorateFlatFees": false,
                       "pricingType": "SEAT_BASED"
                     },
                     "billingFrequency": "MONTHLY",
@@ -10607,6 +10616,7 @@
                             "fee": "25.00"
                           }
                         ],
+                        "prorateFlatFees": false,
                         "pricingType": "SEAT_BASED"
                       },
                       "billingFrequency": "MONTHLY",
@@ -11020,6 +11030,7 @@
                             "fee": "25.00"
                           }
                         ],
+                        "prorateFlatFees": false,
                         "pricingType": "SEAT_BASED"
                       },
                       "billingFrequency": "MONTHLY",
@@ -32714,6 +32725,7 @@
               "fee": "25.00"
             }
           ],
+          "prorateFlatFees": false,
           "pricingType": "SEAT_BASED"
         },
         "properties": {
@@ -32757,6 +32769,11 @@
             "items": {
               "$ref": "#/components/schemas/SeatUsageTier"
             }
+          },
+          "prorateFlatFees": {
+            "type": "boolean",
+            "description": "If set any flat fees will be pro-rated if the invoice service period length does not match the billing frequency",
+            "example": false
           },
           "pricingType": {
             "description": "The type of pricing",
@@ -32833,6 +32850,7 @@
                 "fee": "25.00"
               }
             ],
+            "prorateFlatFees": false,
             "pricingType": "SEAT_BASED"
           },
           "billingFrequency": "MONTHLY",
@@ -33753,6 +33771,7 @@
                 "fee": "25.00"
               }
             ],
+            "prorateFlatFees": false,
             "pricingType": "SEAT_BASED"
           },
           "billingFrequency": "MONTHLY",
@@ -37984,6 +38003,7 @@
               "fee": "25.00"
             }
           ],
+          "prorateFlatFees": false,
           "pricingType": "SEAT_BASED"
         },
         "properties": {
@@ -38028,6 +38048,11 @@
               "$ref": "#/components/schemas/SeatUsageTier"
             }
           },
+          "prorateFlatFees": {
+            "type": "boolean",
+            "description": "If set any flat fees will be pro-rated if the invoice service period length does not match the billing frequency",
+            "example": false
+          },
           "pricingType": {
             "description": "The type of pricing",
             "$ref": "#/components/schemas/SeatBasedPricingType"
@@ -38068,6 +38093,7 @@
                 "fee": "25.00"
               }
             ],
+            "prorateFlatFees": false,
             "pricingType": "SEAT_BASED"
           },
           "billingFrequency": "MONTHLY",
@@ -38931,6 +38957,7 @@
                 "fee": "25.00"
               }
             ],
+            "prorateFlatFees": false,
             "pricingType": "SEAT_BASED"
           },
           "billingFrequency": "MONTHLY",
