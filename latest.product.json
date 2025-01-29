@@ -15014,7 +15014,8 @@
                                 "type": "PERCENTAGE",
                                 "amount": 0.15,
                                 "message": "15% Discount",
-                                "separateLineItem": true
+                                "separateLineItem": true,
+                                "seatDiscountType": "ALL_SEATS"
                               }
                             ],
                             "minimums": [
@@ -15137,7 +15138,8 @@
                                   "type": "PERCENTAGE",
                                   "amount": 0.15,
                                   "message": "15% Discount",
-                                  "separateLineItem": true
+                                  "separateLineItem": true,
+                                  "seatDiscountType": "ALL_SEATS"
                                 }
                               ],
                               "minimums": [
@@ -15274,7 +15276,8 @@
                           "type": "PERCENTAGE",
                           "amount": 0.08,
                           "message": "8% Discount",
-                          "separateLineItem": true
+                          "separateLineItem": true,
+                          "seatDiscountType": "ALL_SEATS"
                         }
                       ],
                       "minimums": [
@@ -15350,7 +15353,8 @@
                             "type": "PERCENTAGE",
                             "amount": 0.08,
                             "message": "8% Discount",
-                            "separateLineItem": true
+                            "separateLineItem": true,
+                            "seatDiscountType": "ALL_SEATS"
                           }
                         ],
                         "minimums": [
@@ -15469,7 +15473,8 @@
                             "type": "PERCENTAGE",
                             "amount": 0.15,
                             "message": "15% Discount",
-                            "separateLineItem": true
+                            "separateLineItem": true,
+                            "seatDiscountType": "ALL_SEATS"
                           }
                         ],
                         "minimums": [
@@ -15583,7 +15588,8 @@
                               "type": "PERCENTAGE",
                               "amount": 0.15,
                               "message": "15% Discount",
-                              "separateLineItem": true
+                              "separateLineItem": true,
+                              "seatDiscountType": "ALL_SEATS"
                             }
                           ],
                           "minimums": [
@@ -15762,7 +15768,8 @@
                             "type": "PERCENTAGE",
                             "amount": 0.15,
                             "message": "15% Discount",
-                            "separateLineItem": true
+                            "separateLineItem": true,
+                            "seatDiscountType": "ALL_SEATS"
                           }
                         ],
                         "minimums": [
@@ -15876,7 +15883,8 @@
                               "type": "PERCENTAGE",
                               "amount": 0.15,
                               "message": "15% Discount",
-                              "separateLineItem": true
+                              "separateLineItem": true,
+                              "seatDiscountType": "ALL_SEATS"
                             }
                           ],
                           "minimums": [
@@ -16124,7 +16132,8 @@
                             "type": "PERCENTAGE",
                             "amount": 0.15,
                             "message": "15% Discount",
-                            "separateLineItem": true
+                            "separateLineItem": true,
+                            "seatDiscountType": "ALL_SEATS"
                           }
                         ],
                         "minimums": [
@@ -16238,7 +16247,8 @@
                               "type": "PERCENTAGE",
                               "amount": 0.15,
                               "message": "15% Discount",
-                              "separateLineItem": true
+                              "separateLineItem": true,
+                              "seatDiscountType": "ALL_SEATS"
                             }
                           ],
                           "minimums": [
@@ -16408,7 +16418,8 @@
                             "type": "PERCENTAGE",
                             "amount": 0.15,
                             "message": "15% Discount",
-                            "separateLineItem": true
+                            "separateLineItem": true,
+                            "seatDiscountType": "ALL_SEATS"
                           }
                         ],
                         "minimums": [
@@ -16522,7 +16533,8 @@
                               "type": "PERCENTAGE",
                               "amount": 0.15,
                               "message": "15% Discount",
-                              "separateLineItem": true
+                              "separateLineItem": true,
+                              "seatDiscountType": "ALL_SEATS"
                             }
                           ],
                           "minimums": [
@@ -16701,7 +16713,8 @@
                             "type": "PERCENTAGE",
                             "amount": 0.15,
                             "message": "15% Discount",
-                            "separateLineItem": true
+                            "separateLineItem": true,
+                            "seatDiscountType": "ALL_SEATS"
                           }
                         ],
                         "minimums": [
@@ -16815,7 +16828,8 @@
                               "type": "PERCENTAGE",
                               "amount": 0.15,
                               "message": "15% Discount",
-                              "separateLineItem": true
+                              "separateLineItem": true,
+                              "seatDiscountType": "ALL_SEATS"
                             }
                           ],
                           "minimums": [
@@ -16949,7 +16963,8 @@
                           "type": "PERCENTAGE",
                           "amount": 0.08,
                           "message": "8% Discount",
-                          "separateLineItem": true
+                          "separateLineItem": true,
+                          "seatDiscountType": "ALL_SEATS"
                         }
                       ],
                       "minimums": [
@@ -17025,7 +17040,8 @@
                             "type": "PERCENTAGE",
                             "amount": 0.08,
                             "message": "8% Discount",
-                            "separateLineItem": true
+                            "separateLineItem": true,
+                            "seatDiscountType": "ALL_SEATS"
                           }
                         ],
                         "minimums": [
@@ -39610,7 +39626,8 @@
                   "type": "PERCENTAGE",
                   "amount": 0.08,
                   "message": "8% Discount",
-                  "separateLineItem": true
+                  "separateLineItem": true,
+                  "seatDiscountType": "ALL_SEATS"
                 }
               ],
               "minimums": [
@@ -39730,7 +39747,8 @@
                     "type": "PERCENTAGE",
                     "amount": 0.08,
                     "message": "8% Discount",
-                    "separateLineItem": true
+                    "separateLineItem": true,
+                    "seatDiscountType": "ALL_SEATS"
                   }
                 ],
                 "minimums": [
@@ -39838,7 +39856,8 @@
               "type": "PERCENTAGE",
               "amount": 0.08,
               "message": "8% Discount",
-              "separateLineItem": true
+              "separateLineItem": true,
+              "seatDiscountType": "ALL_SEATS"
             }
           ],
           "minimums": [
@@ -39893,7 +39912,8 @@
                 "type": "PERCENTAGE",
                 "amount": 0.08,
                 "message": "8% Discount",
-                "separateLineItem": true
+                "separateLineItem": true,
+                "seatDiscountType": "ALL_SEATS"
               }
             ],
             "items": {
@@ -39946,7 +39966,8 @@
           "type": "PERCENTAGE",
           "amount": 0.08,
           "message": "8% Discount",
-          "separateLineItem": true
+          "separateLineItem": true,
+          "seatDiscountType": "ALL_SEATS"
         },
         "properties": {
           "restrictToPrices": {
@@ -39977,8 +39998,21 @@
             "type": "boolean",
             "description": "If true the discount will show as a separate line item on an invoice",
             "example": true
+          },
+          "seatDiscountType": {
+            "description": "If any seat-based prices are included, the way the discount is applied to these",
+            "$ref": "#/components/schemas/SeatDiscountType"
           }
         }
+      },
+      "SeatDiscountType": {
+        "type": "string",
+        "example": "ALL_SEATS",
+        "enum": [
+          "INCLUDED_SEATS_ONLY",
+          "OVERAGE_SEATS_ONLY",
+          "ALL_SEATS"
+        ]
       },
       "MinimumRequest": {
         "required": [
@@ -40099,7 +40133,8 @@
                   "type": "PERCENTAGE",
                   "amount": 0.15,
                   "message": "15% Discount",
-                  "separateLineItem": true
+                  "separateLineItem": true,
+                  "seatDiscountType": "ALL_SEATS"
                 }
               ],
               "minimums": [
@@ -40285,7 +40320,8 @@
                     "type": "PERCENTAGE",
                     "amount": 0.15,
                     "message": "15% Discount",
-                    "separateLineItem": true
+                    "separateLineItem": true,
+                    "seatDiscountType": "ALL_SEATS"
                   }
                 ],
                 "minimums": [
@@ -40398,7 +40434,8 @@
               "type": "PERCENTAGE",
               "amount": 0.15,
               "message": "15% Discount",
-              "separateLineItem": true
+              "separateLineItem": true,
+              "seatDiscountType": "ALL_SEATS"
             }
           ],
           "minimums": [
@@ -40471,7 +40508,8 @@
                 "type": "PERCENTAGE",
                 "amount": 0.15,
                 "message": "15% Discount",
-                "separateLineItem": true
+                "separateLineItem": true,
+                "seatDiscountType": "ALL_SEATS"
               }
             ],
             "items": {
@@ -40846,7 +40884,8 @@
                       "type": "PERCENTAGE",
                       "amount": 0.15,
                       "message": "15% Discount",
-                      "separateLineItem": true
+                      "separateLineItem": true,
+                      "seatDiscountType": "ALL_SEATS"
                     }
                   ],
                   "minimums": [
@@ -40968,7 +41007,8 @@
                         "type": "PERCENTAGE",
                         "amount": 0.15,
                         "message": "15% Discount",
-                        "separateLineItem": true
+                        "separateLineItem": true,
+                        "seatDiscountType": "ALL_SEATS"
                       }
                     ],
                     "minimums": [
