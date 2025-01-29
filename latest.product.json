@@ -40000,7 +40000,7 @@
             "example": true
           },
           "seatDiscountType": {
-            "description": "If any seat-based prices are included, the way the discount is applied to these",
+            "description": "Determines how the discount is applied to any seat-based prices",
             "$ref": "#/components/schemas/SeatDiscountType"
           }
         }
