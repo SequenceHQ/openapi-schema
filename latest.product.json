@@ -14879,6 +14879,51 @@
             }
           },
           {
+            "name": "startingBefore",
+            "in": "query",
+            "description": "Filter by schedule starting before. Format: yyyy-MM-dd",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "startingAfter",
+            "in": "query",
+            "description": "Filter by schedule starting after. Format: yyyy-MM-dd",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "endingBefore",
+            "in": "query",
+            "description": "Filter by schedule ending before. Format: yyyy-MM-dd",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "endingAfter",
+            "in": "query",
+            "description": "Filter by schedule ending after. Format: yyyy-MM-dd",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "includeOpenEndedSchedules",
+            "in": "query",
+            "description": "Include open-ended schedules.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
             "name": "sortBy",
             "in": "query",
             "description": "Sort column. Default: creation time.",
