@@ -15379,8 +15379,18 @@
                         "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
                       ],
                       "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE",
-                      "phasePriceMetadata": [],
-                      "phaseListPriceMetadata": []
+                      "phasePriceMetadata": [
+                        {
+                          "priceId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                          "arrCalculation": "INCLUDE"
+                        }
+                      ],
+                      "phaseListPriceMetadata": [
+                        {
+                          "listPriceId": "45e16eb7-2170-4632-b04f-9ecd90b85b1e",
+                          "arrCalculation": "INCLUDE"
+                        }
+                      ]
                     }
                   ],
                   "attachmentAssetIds": [
@@ -15470,8 +15480,18 @@
                           "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
                         ],
                         "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE",
-                        "phasePriceMetadata": [],
-                        "phaseListPriceMetadata": []
+                        "phasePriceMetadata": [
+                          {
+                            "priceId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                            "arrCalculation": "INCLUDE"
+                          }
+                        ],
+                        "phaseListPriceMetadata": [
+                          {
+                            "listPriceId": "45e16eb7-2170-4632-b04f-9ecd90b85b1e",
+                            "arrCalculation": "INCLUDE"
+                          }
+                        ]
                       }
                     ],
                     "attachmentAssetIds": [
@@ -17184,8 +17204,18 @@
                         "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
                       ],
                       "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE",
-                      "phasePriceMetadata": [],
-                      "phaseListPriceMetadata": []
+                      "phasePriceMetadata": [
+                        {
+                          "priceId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                          "arrCalculation": "INCLUDE"
+                        }
+                      ],
+                      "phaseListPriceMetadata": [
+                        {
+                          "listPriceId": "45e16eb7-2170-4632-b04f-9ecd90b85b1e",
+                          "arrCalculation": "INCLUDE"
+                        }
+                      ]
                     }
                   ],
                   "attachmentAssetIds": [
@@ -17275,8 +17305,18 @@
                           "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
                         ],
                         "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE",
-                        "phasePriceMetadata": [],
-                        "phaseListPriceMetadata": []
+                        "phasePriceMetadata": [
+                          {
+                            "priceId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                            "arrCalculation": "INCLUDE"
+                          }
+                        ],
+                        "phaseListPriceMetadata": [
+                          {
+                            "listPriceId": "45e16eb7-2170-4632-b04f-9ecd90b85b1e",
+                            "arrCalculation": "INCLUDE"
+                          }
+                        ]
                       }
                     ],
                     "attachmentAssetIds": [
@@ -39875,8 +39915,18 @@
                 "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
               ],
               "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE",
-              "phasePriceMetadata": [],
-              "phaseListPriceMetadata": []
+              "phasePriceMetadata": [
+                {
+                  "priceId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                  "arrCalculation": "INCLUDE"
+                }
+              ],
+              "phaseListPriceMetadata": [
+                {
+                  "listPriceId": "45e16eb7-2170-4632-b04f-9ecd90b85b1e",
+                  "arrCalculation": "INCLUDE"
+                }
+              ]
             }
           ],
           "attachmentAssetIds": [
@@ -40010,8 +40060,18 @@
                   "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
                 ],
                 "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE",
-                "phasePriceMetadata": [],
-                "phaseListPriceMetadata": []
+                "phasePriceMetadata": [
+                  {
+                    "priceId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                    "arrCalculation": "INCLUDE"
+                  }
+                ],
+                "phaseListPriceMetadata": [
+                  {
+                    "listPriceId": "45e16eb7-2170-4632-b04f-9ecd90b85b1e",
+                    "arrCalculation": "INCLUDE"
+                  }
+                ]
               }
             ],
             "items": {
