@@ -15349,8 +15349,18 @@
                         "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
                       ],
                       "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE",
-                      "phasePriceMetadata": [],
-                      "phaseListPriceMetadata": []
+                      "phasePriceMetadata": [
+                        {
+                          "priceId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                          "arrCalculation": "INCLUDE"
+                        }
+                      ],
+                      "phaseListPriceMetadata": [
+                        {
+                          "listPriceId": "45e16eb7-2170-4632-b04f-9ecd90b85b1e",
+                          "arrCalculation": "INCLUDE"
+                        }
+                      ]
                     },
                     {
                       "priceIds": [],
@@ -15430,8 +15440,18 @@
                           "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
                         ],
                         "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE",
-                        "phasePriceMetadata": [],
-                        "phaseListPriceMetadata": []
+                        "phasePriceMetadata": [
+                          {
+                            "priceId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                            "arrCalculation": "INCLUDE"
+                          }
+                        ],
+                        "phaseListPriceMetadata": [
+                          {
+                            "listPriceId": "45e16eb7-2170-4632-b04f-9ecd90b85b1e",
+                            "arrCalculation": "INCLUDE"
+                          }
+                        ]
                       },
                       {
                         "priceIds": [],
@@ -17134,8 +17154,18 @@
                         "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
                       ],
                       "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE",
-                      "phasePriceMetadata": [],
-                      "phaseListPriceMetadata": []
+                      "phasePriceMetadata": [
+                        {
+                          "priceId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                          "arrCalculation": "INCLUDE"
+                        }
+                      ],
+                      "phaseListPriceMetadata": [
+                        {
+                          "listPriceId": "45e16eb7-2170-4632-b04f-9ecd90b85b1e",
+                          "arrCalculation": "INCLUDE"
+                        }
+                      ]
                     },
                     {
                       "priceIds": [],
@@ -17215,8 +17245,18 @@
                           "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
                         ],
                         "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE",
-                        "phasePriceMetadata": [],
-                        "phaseListPriceMetadata": []
+                        "phasePriceMetadata": [
+                          {
+                            "priceId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                            "arrCalculation": "INCLUDE"
+                          }
+                        ],
+                        "phaseListPriceMetadata": [
+                          {
+                            "listPriceId": "45e16eb7-2170-4632-b04f-9ecd90b85b1e",
+                            "arrCalculation": "INCLUDE"
+                          }
+                        ]
                       },
                       {
                         "priceIds": [],
@@ -39805,8 +39845,18 @@
                 "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
               ],
               "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE",
-              "phasePriceMetadata": [],
-              "phaseListPriceMetadata": []
+              "phasePriceMetadata": [
+                {
+                  "priceId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                  "arrCalculation": "INCLUDE"
+                }
+              ],
+              "phaseListPriceMetadata": [
+                {
+                  "listPriceId": "45e16eb7-2170-4632-b04f-9ecd90b85b1e",
+                  "arrCalculation": "INCLUDE"
+                }
+              ]
             },
             {
               "priceIds": [],
@@ -39930,8 +39980,18 @@
                   "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
                 ],
                 "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE",
-                "phasePriceMetadata": [],
-                "phaseListPriceMetadata": []
+                "phasePriceMetadata": [
+                  {
+                    "priceId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                    "arrCalculation": "INCLUDE"
+                  }
+                ],
+                "phaseListPriceMetadata": [
+                  {
+                    "listPriceId": "45e16eb7-2170-4632-b04f-9ecd90b85b1e",
+                    "arrCalculation": "INCLUDE"
+                  }
+                ]
               },
               {
                 "priceIds": [],
@@ -40043,8 +40103,18 @@
             "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
           ],
           "recurrencePreference": "CONTINUE_FROM_PREVIOUS_PHASE",
-          "phasePriceMetadata": [],
-          "phaseListPriceMetadata": []
+          "phasePriceMetadata": [
+            {
+              "priceId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+              "arrCalculation": "INCLUDE"
+            }
+          ],
+          "phaseListPriceMetadata": [
+            {
+              "listPriceId": "45e16eb7-2170-4632-b04f-9ecd90b85b1e",
+              "arrCalculation": "INCLUDE"
+            }
+          ]
         },
         "properties": {
           "name": {
@@ -40125,14 +40195,28 @@
           "phasePriceMetadata": {
             "type": "array",
             "description": "Additional metadata for the relationship between this phase and each price",
-            "example": [],
-            "items": {}
+            "example": [
+              {
+                "priceId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+                "arrCalculation": "INCLUDE"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/PhasePriceMetadata"
+            }
           },
           "phaseListPriceMetadata": {
             "type": "array",
             "description": "Additional metadata for the relationship between this phase and each list price",
-            "example": [],
-            "items": {}
+            "example": [
+              {
+                "listPriceId": "45e16eb7-2170-4632-b04f-9ecd90b85b1e",
+                "arrCalculation": "INCLUDE"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/PhaseListPriceMetadata"
+            }
           }
         }
       },
@@ -40235,6 +40319,54 @@
           "CONTINUE_FROM_PREVIOUS_PHASE",
           "RESET"
         ]
+      },
+      "PhasePriceMetadata": {
+        "required": [
+          "arrCalculation",
+          "priceId"
+        ],
+        "type": "object",
+        "example": {
+          "priceId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
+          "arrCalculation": "INCLUDE"
+        },
+        "properties": {
+          "priceId": {
+            "type": "string",
+            "example": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
+          },
+          "arrCalculation": {
+            "$ref": "#/components/schemas/ArrCalculation"
+          }
+        }
+      },
+      "ArrCalculation": {
+        "type": "string",
+        "example": "INCLUDE",
+        "enum": [
+          "INCLUDE",
+          "EXCLUDE"
+        ]
+      },
+      "PhaseListPriceMetadata": {
+        "required": [
+          "arrCalculation",
+          "listPriceId"
+        ],
+        "type": "object",
+        "example": {
+          "listPriceId": "45e16eb7-2170-4632-b04f-9ecd90b85b1e",
+          "arrCalculation": "INCLUDE"
+        },
+        "properties": {
+          "listPriceId": {
+            "type": "string",
+            "example": "45e16eb7-2170-4632-b04f-9ecd90b85b1e"
+          },
+          "arrCalculation": {
+            "$ref": "#/components/schemas/ArrCalculation"
+          }
+        }
       },
       "BillingScheduleResponse": {
         "required": [
@@ -40830,34 +40962,6 @@
           }
         }
       },
-      "PhasePriceMetadata": {
-        "required": [
-          "arrCalculation",
-          "priceId"
-        ],
-        "type": "object",
-        "example": {
-          "priceId": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8",
-          "arrCalculation": "INCLUDE"
-        },
-        "properties": {
-          "priceId": {
-            "type": "string",
-            "example": "6dc54805-0ac8-4f17-9341-4d3f2db9dcd8"
-          },
-          "arrCalculation": {
-            "$ref": "#/components/schemas/ArrCalculation"
-          }
-        }
-      },
-      "ArrCalculation": {
-        "type": "string",
-        "example": "INCLUDE",
-        "enum": [
-          "INCLUDE",
-          "EXCLUDE"
-        ]
-      },
       "AssetResponse": {
         "required": [
           "createdAt",
@@ -41082,26 +41186,6 @@
             "items": {
               "type": "string"
             }
-          }
-        }
-      },
-      "PhaseListPriceMetadata": {
-        "required": [
-          "arrCalculation",
-          "listPriceId"
-        ],
-        "type": "object",
-        "example": {
-          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
-          "arrCalculation": "INCLUDE"
-        },
-        "properties": {
-          "listPriceId": {
-            "type": "string",
-            "example": "b4d7e884-e007-4183-8355-4771865c5100"
-          },
-          "arrCalculation": {
-            "$ref": "#/components/schemas/ArrCalculation"
           }
         }
       },
