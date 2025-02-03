@@ -1829,6 +1829,7 @@
                     "id": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
                     "sequenceAccountId": "68233908-402a-43b4-8952-1c2ab0ef0b25",
                     "billingScheduleId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+                    "billingRunId": "9c5fdd27-1f7a-41e7-ab67-14f65272a853",
                     "status": "DRAFT",
                     "currency": "GBP",
                     "invoiceNumber": "INV00001",
@@ -1991,6 +1992,7 @@
                       "id": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
                       "sequenceAccountId": "68233908-402a-43b4-8952-1c2ab0ef0b25",
                       "billingScheduleId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+                      "billingRunId": "9c5fdd27-1f7a-41e7-ab67-14f65272a853",
                       "status": "DRAFT",
                       "currency": "GBP",
                       "invoiceNumber": "INV00001",
@@ -32706,6 +32708,7 @@
           "id": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
           "sequenceAccountId": "68233908-402a-43b4-8952-1c2ab0ef0b25",
           "billingScheduleId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+          "billingRunId": "9c5fdd27-1f7a-41e7-ab67-14f65272a853",
           "status": "DRAFT",
           "currency": "GBP",
           "invoiceNumber": "INV00001",
@@ -32875,6 +32878,11 @@
             "type": "string",
             "description": "Billing Schedule ID",
             "example": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+          },
+          "billingRunId": {
+            "type": "string",
+            "description": "Billing Run ID",
+            "example": "9c5fdd27-1f7a-41e7-ab67-14f65272a853"
           },
           "status": {
             "description": "Invoice status",
