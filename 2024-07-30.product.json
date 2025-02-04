@@ -1231,7 +1231,8 @@
                           }
                         ],
                         "revenueClassification": "EARNED",
-                        "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+                        "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+                        "productId": "dd55bf30-3b97-4644-a9fc-b15e0f59a110"
                       }
                     ],
                     "pagination": {
@@ -1274,7 +1275,8 @@
                             }
                           ],
                           "revenueClassification": "EARNED",
-                          "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+                          "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+                          "productId": "dd55bf30-3b97-4644-a9fc-b15e0f59a110"
                         }
                       ],
                       "pagination": {
@@ -1439,7 +1441,8 @@
                       }
                     ],
                     "revenueClassification": "EARNED",
-                    "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+                    "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+                    "productId": "dd55bf30-3b97-4644-a9fc-b15e0f59a110"
                   }
                 },
                 "examples": {
@@ -1473,7 +1476,8 @@
                         }
                       ],
                       "revenueClassification": "EARNED",
-                      "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+                      "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+                      "productId": "dd55bf30-3b97-4644-a9fc-b15e0f59a110"
                     }
                   }
                 }
@@ -3673,7 +3677,8 @@
                       }
                     ],
                     "revenueClassification": "EARNED",
-                    "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+                    "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+                    "productId": "dd55bf30-3b97-4644-a9fc-b15e0f59a110"
                   }
                 },
                 "examples": {
@@ -3707,7 +3712,8 @@
                         }
                       ],
                       "revenueClassification": "EARNED",
-                      "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+                      "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+                      "productId": "dd55bf30-3b97-4644-a9fc-b15e0f59a110"
                     }
                   }
                 }
@@ -3815,7 +3821,8 @@
                       }
                     ],
                     "revenueClassification": "EARNED",
-                    "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+                    "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+                    "productId": "dd55bf30-3b97-4644-a9fc-b15e0f59a110"
                   }
                 },
                 "examples": {
@@ -3849,7 +3856,8 @@
                         }
                       ],
                       "revenueClassification": "EARNED",
-                      "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+                      "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+                      "productId": "dd55bf30-3b97-4644-a9fc-b15e0f59a110"
                     }
                   }
                 }
@@ -32067,7 +32075,8 @@
             }
           ],
           "revenueClassification": "EARNED",
-          "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+          "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+          "productId": "dd55bf30-3b97-4644-a9fc-b15e0f59a110"
         },
         "properties": {
           "id": {
@@ -32173,6 +32182,11 @@
             "type": "string",
             "description": "Credit Grant ID",
             "example": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+          },
+          "productId": {
+            "type": "string",
+            "description": "Product ID",
+            "example": "dd55bf30-3b97-4644-a9fc-b15e0f59a110"
           }
         }
       },
@@ -33432,7 +33446,8 @@
                 }
               ],
               "revenueClassification": "EARNED",
-              "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+              "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+              "productId": "dd55bf30-3b97-4644-a9fc-b15e0f59a110"
             }
           ],
           "pagination": {
@@ -33474,7 +33489,8 @@
                   }
                 ],
                 "revenueClassification": "EARNED",
-                "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+                "creditGrantId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+                "productId": "dd55bf30-3b97-4644-a9fc-b15e0f59a110"
               }
             ],
             "items": {
