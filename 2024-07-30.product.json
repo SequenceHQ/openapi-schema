@@ -484,7 +484,8 @@
                         "renderSettings": {
                           "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                         },
-                        "isCustomerArchived": false
+                        "isCustomerArchived": false,
+                        "updatedAt": "2022-10-30T00:00:00Z"
                       }
                     ],
                     "pagination": {
@@ -604,7 +605,8 @@
                           "renderSettings": {
                             "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                           },
-                          "isCustomerArchived": false
+                          "isCustomerArchived": false,
+                          "updatedAt": "2022-10-30T00:00:00Z"
                         }
                       ],
                       "pagination": {
@@ -931,7 +933,8 @@
                     "renderSettings": {
                       "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                     },
-                    "isCustomerArchived": false
+                    "isCustomerArchived": false,
+                    "updatedAt": "2022-09-30T00:00:00Z"
                   }
                 },
                 "examples": {
@@ -1094,7 +1097,8 @@
                       "renderSettings": {
                         "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                       },
-                      "isCustomerArchived": false
+                      "isCustomerArchived": false,
+                      "updatedAt": "2022-09-30T00:00:00Z"
                     }
                   }
                 }
@@ -2472,7 +2476,8 @@
                     "renderSettings": {
                       "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                     },
-                    "isCustomerArchived": false
+                    "isCustomerArchived": false,
+                    "updatedAt": "2022-09-30T00:00:00Z"
                   }
                 },
                 "examples": {
@@ -2635,7 +2640,8 @@
                       "renderSettings": {
                         "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                       },
-                      "isCustomerArchived": false
+                      "isCustomerArchived": false,
+                      "updatedAt": "2022-09-30T00:00:00Z"
                     }
                   }
                 }
@@ -3343,7 +3349,8 @@
                     "renderSettings": {
                       "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                     },
-                    "isCustomerArchived": false
+                    "isCustomerArchived": false,
+                    "updatedAt": "2022-09-30T00:00:00Z"
                   }
                 },
                 "examples": {
@@ -3506,7 +3513,8 @@
                       "renderSettings": {
                         "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                       },
-                      "isCustomerArchived": false
+                      "isCustomerArchived": false,
+                      "updatedAt": "2022-09-30T00:00:00Z"
                     }
                   }
                 }
@@ -4336,7 +4344,8 @@
                     "renderSettings": {
                       "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                     },
-                    "isCustomerArchived": false
+                    "isCustomerArchived": false,
+                    "updatedAt": "2022-10-30T00:00:00Z"
                   }
                 },
                 "examples": {
@@ -4447,7 +4456,8 @@
                       "renderSettings": {
                         "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                       },
-                      "isCustomerArchived": false
+                      "isCustomerArchived": false,
+                      "updatedAt": "2022-10-30T00:00:00Z"
                     }
                   }
                 }
@@ -4623,7 +4633,8 @@
                     "renderSettings": {
                       "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                     },
-                    "isCustomerArchived": false
+                    "isCustomerArchived": false,
+                    "updatedAt": "2022-10-30T00:00:00Z"
                   }
                 },
                 "examples": {
@@ -4734,7 +4745,8 @@
                       "renderSettings": {
                         "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                       },
-                      "isCustomerArchived": false
+                      "isCustomerArchived": false,
+                      "updatedAt": "2022-10-30T00:00:00Z"
                     }
                   }
                 }
@@ -4910,7 +4922,8 @@
                     "renderSettings": {
                       "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                     },
-                    "isCustomerArchived": false
+                    "isCustomerArchived": false,
+                    "updatedAt": "2022-10-30T00:00:00Z"
                   }
                 },
                 "examples": {
@@ -5021,7 +5034,8 @@
                       "renderSettings": {
                         "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                       },
-                      "isCustomerArchived": false
+                      "isCustomerArchived": false,
+                      "updatedAt": "2022-10-30T00:00:00Z"
                     }
                   }
                 }
@@ -5197,7 +5211,8 @@
                     "renderSettings": {
                       "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                     },
-                    "isCustomerArchived": false
+                    "isCustomerArchived": false,
+                    "updatedAt": "2022-10-30T00:00:00Z"
                   }
                 },
                 "examples": {
@@ -5308,7 +5323,8 @@
                       "renderSettings": {
                         "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                       },
-                      "isCustomerArchived": false
+                      "isCustomerArchived": false,
+                      "updatedAt": "2022-10-30T00:00:00Z"
                     }
                   }
                 }
@@ -5505,7 +5521,8 @@
                     "renderSettings": {
                       "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                     },
-                    "isCustomerArchived": false
+                    "isCustomerArchived": false,
+                    "updatedAt": "2022-10-30T00:00:00Z"
                   }
                 },
                 "examples": {
@@ -5616,7 +5633,8 @@
                       "renderSettings": {
                         "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                       },
-                      "isCustomerArchived": false
+                      "isCustomerArchived": false,
+                      "updatedAt": "2022-10-30T00:00:00Z"
                     }
                   }
                 }
@@ -5792,7 +5810,8 @@
                     "renderSettings": {
                       "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                     },
-                    "isCustomerArchived": false
+                    "isCustomerArchived": false,
+                    "updatedAt": "2022-10-30T00:00:00Z"
                   }
                 },
                 "examples": {
@@ -5903,7 +5922,8 @@
                       "renderSettings": {
                         "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                       },
-                      "isCustomerArchived": false
+                      "isCustomerArchived": false,
+                      "updatedAt": "2022-10-30T00:00:00Z"
                     }
                   }
                 }
@@ -6079,7 +6099,8 @@
                     "renderSettings": {
                       "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                     },
-                    "isCustomerArchived": false
+                    "isCustomerArchived": false,
+                    "updatedAt": "2022-10-30T00:00:00Z"
                   }
                 },
                 "examples": {
@@ -6190,7 +6211,8 @@
                       "renderSettings": {
                         "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                       },
-                      "isCustomerArchived": false
+                      "isCustomerArchived": false,
+                      "updatedAt": "2022-10-30T00:00:00Z"
                     }
                   }
                 }
@@ -6436,7 +6458,8 @@
                     "renderSettings": {
                       "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                     },
-                    "isCustomerArchived": false
+                    "isCustomerArchived": false,
+                    "updatedAt": "2022-09-30T00:00:00Z"
                   }
                 },
                 "examples": {
@@ -6599,7 +6622,8 @@
                       "renderSettings": {
                         "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                       },
-                      "isCustomerArchived": false
+                      "isCustomerArchived": false,
+                      "updatedAt": "2022-09-30T00:00:00Z"
                     }
                   }
                 }
@@ -30934,7 +30958,8 @@
           "renderSettings",
           "sequenceAccountId",
           "status",
-          "totalTax"
+          "totalTax",
+          "updatedAt"
         ],
         "type": "object",
         "example": {
@@ -31094,7 +31119,8 @@
           "renderSettings": {
             "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
           },
-          "isCustomerArchived": false
+          "isCustomerArchived": false,
+          "updatedAt": "2022-09-30T00:00:00Z"
         },
         "properties": {
           "id": {
@@ -31292,6 +31318,11 @@
           "isCustomerArchived": {
             "type": "boolean",
             "example": false
+          },
+          "updatedAt": {
+            "type": "string",
+            "description": "Last updated time",
+            "example": "2022-09-30T00:00:00Z"
           }
         }
       },
@@ -33194,7 +33225,8 @@
               "renderSettings": {
                 "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
               },
-              "isCustomerArchived": false
+              "isCustomerArchived": false,
+              "updatedAt": "2022-10-30T00:00:00Z"
             }
           ],
           "pagination": {
@@ -33313,7 +33345,8 @@
                 "renderSettings": {
                   "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                 },
-                "isCustomerArchived": false
+                "isCustomerArchived": false,
+                "updatedAt": "2022-10-30T00:00:00Z"
               }
             ],
             "items": {
