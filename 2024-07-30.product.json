@@ -30157,6 +30157,15 @@
             }
           },
           {
+            "name": "customerIds",
+            "in": "query",
+            "description": "Filter seat balances by customer IDs. Max 100 IDs.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
             "name": "Sequence-Version",
             "in": "header",
             "description": "Use this header to select an API version",
