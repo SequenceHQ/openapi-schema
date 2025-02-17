@@ -8240,7 +8240,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/UpdateCustomerAliasEndpointProductUpdateCustomerAliasResponseModel",
+                  "$ref": "#/components/schemas/CustomerAliasResponseModel",
                   "example": {
                     "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
                     "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
@@ -8253,7 +8253,7 @@
                   }
                 },
                 "examples": {
-                  "UpdateCustomerAliasEndpointProductUpdateCustomerAliasResponseModel": {
+                  "CustomerAliasResponseModel": {
                     "summary": "",
                     "value": {
                       "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
@@ -8329,7 +8329,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/DeleteCustomerAliasEndpointProductDeleteCustomerAliasResponseModel",
+                  "$ref": "#/components/schemas/CustomerAliasResponseModel",
                   "example": {
                     "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
                     "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
@@ -8342,7 +8342,7 @@
                   }
                 },
                 "examples": {
-                  "DeleteCustomerAliasEndpointProductDeleteCustomerAliasResponseModel": {
+                  "CustomerAliasResponseModel": {
                     "summary": "",
                     "value": {
                       "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
@@ -8440,7 +8440,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ListCustomerAliasEndpointProductListCustomerAliasPaginatedResponseModel",
+                  "$ref": "#/components/schemas/ListCustomerAliasEndpointListCustomerAliasPaginatedResponseModel",
                   "example": {
                     "items": [
                       {
@@ -8462,7 +8462,7 @@
                   }
                 },
                 "examples": {
-                  "ListCustomerAliasEndpointProductListCustomerAliasPaginatedResponseModel": {
+                  "ListCustomerAliasEndpointListCustomerAliasPaginatedResponseModel": {
                     "summary": "",
                     "value": {
                       "items": [
@@ -8538,24 +8538,18 @@
               "schema": {
                 "$ref": "#/components/schemas/CreateCustomerAliasEndpointCreateCustomerAliasRequestModel",
                 "example": {
-                  "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
                   "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
                   "value": "external-customer-alias-123",
-                  "deletedAt": "2022-10-01T00:00:00Z",
-                  "label": "CRM ID",
-                  "archivedAt": "2022-10-01T00:00:00Z"
+                  "label": "CRM ID"
                 }
               },
               "examples": {
                 "CreateCustomerAliasEndpointCreateCustomerAliasRequestModel": {
                   "summary": "",
                   "value": {
-                    "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
                     "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
                     "value": "external-customer-alias-123",
-                    "deletedAt": "2022-10-01T00:00:00Z",
-                    "label": "CRM ID",
-                    "archivedAt": "2022-10-01T00:00:00Z"
+                    "label": "CRM ID"
                   }
                 }
               }
@@ -8569,7 +8563,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/CreateCustomerAliasEndpointProductCreateCustomerAliasResponseModel",
+                  "$ref": "#/components/schemas/CustomerAliasResponseModel",
                   "example": {
                     "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
                     "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
@@ -8582,7 +8576,7 @@
                   }
                 },
                 "examples": {
-                  "CreateCustomerAliasEndpointProductCreateCustomerAliasResponseModel": {
+                  "CustomerAliasResponseModel": {
                     "summary": "",
                     "value": {
                       "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
@@ -36607,7 +36601,7 @@
           }
         }
       },
-      "DeleteCustomerAliasEndpointProductDeleteCustomerAliasResponseModel": {
+      "CustomerAliasResponseModel": {
         "required": [
           "createdAt",
           "customerId",
@@ -36672,24 +36666,15 @@
       "CreateCustomerAliasEndpointCreateCustomerAliasRequestModel": {
         "required": [
           "customerId",
-          "sequenceAccountId",
           "value"
         ],
         "type": "object",
         "example": {
-          "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
           "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
           "value": "external-customer-alias-123",
-          "deletedAt": "2022-10-01T00:00:00Z",
-          "label": "CRM ID",
-          "archivedAt": "2022-10-01T00:00:00Z"
+          "label": "CRM ID"
         },
         "properties": {
-          "sequenceAccountId": {
-            "type": "string",
-            "description": "Sequence Account ID",
-            "example": "ec1479a2-6ba1-421f-a7de-0853a20d17a1"
-          },
           "customerId": {
             "type": "string",
             "description": "Customer ID",
@@ -36700,86 +36685,14 @@
             "description": "Alias value",
             "example": "external-customer-alias-123"
           },
-          "deletedAt": {
-            "type": "string",
-            "description": "Deleted At",
-            "example": "2022-10-01T00:00:00Z"
-          },
           "label": {
             "type": "string",
             "description": "Alias label",
             "example": "CRM ID"
-          },
-          "archivedAt": {
-            "type": "string",
-            "description": "Archived At",
-            "example": "2022-10-01T00:00:00Z"
           }
         }
       },
-      "CreateCustomerAliasEndpointProductCreateCustomerAliasResponseModel": {
-        "required": [
-          "createdAt",
-          "customerId",
-          "id",
-          "sequenceAccountId",
-          "value"
-        ],
-        "type": "object",
-        "example": {
-          "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
-          "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
-          "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
-          "value": "external-customer-alias-123",
-          "createdAt": "2022-10-01T00:00:00Z",
-          "deletedAt": "2022-10-01T00:00:00Z",
-          "label": "CRM ID",
-          "archivedAt": "2022-10-01T00:00:00Z"
-        },
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "Unique ID",
-            "example": "01849e70-0a0f-72ca-ba07-5557dd734d43"
-          },
-          "sequenceAccountId": {
-            "type": "string",
-            "description": "Sequence Account ID",
-            "example": "ec1479a2-6ba1-421f-a7de-0853a20d17a1"
-          },
-          "customerId": {
-            "type": "string",
-            "description": "Customer ID",
-            "example": "01849e70-703e-705a-b59a-d3fd575587e0"
-          },
-          "value": {
-            "type": "string",
-            "description": "Alias value",
-            "example": "external-customer-alias-123"
-          },
-          "createdAt": {
-            "type": "string",
-            "description": "Created At",
-            "example": "2022-10-01T00:00:00Z"
-          },
-          "deletedAt": {
-            "type": "string",
-            "description": "Deleted At",
-            "example": "2022-10-01T00:00:00Z"
-          },
-          "label": {
-            "type": "string",
-            "description": "Alias label",
-            "example": "CRM ID"
-          },
-          "archivedAt": {
-            "type": "string",
-            "description": "Archived At",
-            "example": "2022-10-01T00:00:00Z"
-          }
-        }
-      },
-      "ListCustomerAliasEndpointProductListCustomerAliasPaginatedResponseModel": {
+      "ListCustomerAliasEndpointListCustomerAliasPaginatedResponseModel": {
         "required": [
           "items",
           "pagination"
@@ -36807,7 +36720,7 @@
         "properties": {
           "items": {
             "type": "array",
-            "description": "CustomerAliass",
+            "description": "Customer Aliases",
             "example": [
               {
                 "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
@@ -36821,73 +36734,11 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/ListCustomerAliasEndpointProductListCustomerAliasResponseModel"
+              "$ref": "#/components/schemas/CustomerAliasResponseModel"
             }
           },
           "pagination": {
             "$ref": "#/components/schemas/PaginationMeta"
-          }
-        }
-      },
-      "ListCustomerAliasEndpointProductListCustomerAliasResponseModel": {
-        "required": [
-          "createdAt",
-          "customerId",
-          "id",
-          "sequenceAccountId",
-          "value"
-        ],
-        "type": "object",
-        "example": {
-          "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
-          "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
-          "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
-          "value": "external-customer-alias-123",
-          "createdAt": "2022-10-01T00:00:00Z",
-          "deletedAt": "2022-10-01T00:00:00Z",
-          "label": "CRM ID",
-          "archivedAt": "2022-10-01T00:00:00Z"
-        },
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "Unique ID",
-            "example": "01849e70-0a0f-72ca-ba07-5557dd734d43"
-          },
-          "sequenceAccountId": {
-            "type": "string",
-            "description": "Sequence Account ID",
-            "example": "ec1479a2-6ba1-421f-a7de-0853a20d17a1"
-          },
-          "customerId": {
-            "type": "string",
-            "description": "Customer ID",
-            "example": "01849e70-703e-705a-b59a-d3fd575587e0"
-          },
-          "value": {
-            "type": "string",
-            "description": "Alias value",
-            "example": "external-customer-alias-123"
-          },
-          "createdAt": {
-            "type": "string",
-            "description": "Created At",
-            "example": "2022-10-01T00:00:00Z"
-          },
-          "deletedAt": {
-            "type": "string",
-            "description": "Deleted At",
-            "example": "2022-10-01T00:00:00Z"
-          },
-          "label": {
-            "type": "string",
-            "description": "Alias label",
-            "example": "CRM ID"
-          },
-          "archivedAt": {
-            "type": "string",
-            "description": "Archived At",
-            "example": "2022-10-01T00:00:00Z"
           }
         }
       },
@@ -36901,68 +36752,6 @@
             "type": "string",
             "description": "Alias label",
             "example": "CRM ID"
-          }
-        }
-      },
-      "UpdateCustomerAliasEndpointProductUpdateCustomerAliasResponseModel": {
-        "required": [
-          "createdAt",
-          "customerId",
-          "id",
-          "sequenceAccountId",
-          "value"
-        ],
-        "type": "object",
-        "example": {
-          "id": "01849e70-0a0f-72ca-ba07-5557dd734d43",
-          "sequenceAccountId": "ec1479a2-6ba1-421f-a7de-0853a20d17a1",
-          "customerId": "01849e70-703e-705a-b59a-d3fd575587e0",
-          "value": "external-customer-alias-123",
-          "createdAt": "2022-10-01T00:00:00Z",
-          "deletedAt": "2022-10-01T00:00:00Z",
-          "label": "CRM ID",
-          "archivedAt": "2022-10-01T00:00:00Z"
-        },
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "Unique ID",
-            "example": "01849e70-0a0f-72ca-ba07-5557dd734d43"
-          },
-          "sequenceAccountId": {
-            "type": "string",
-            "description": "Sequence Account ID",
-            "example": "ec1479a2-6ba1-421f-a7de-0853a20d17a1"
-          },
-          "customerId": {
-            "type": "string",
-            "description": "Customer ID",
-            "example": "01849e70-703e-705a-b59a-d3fd575587e0"
-          },
-          "value": {
-            "type": "string",
-            "description": "Alias value",
-            "example": "external-customer-alias-123"
-          },
-          "createdAt": {
-            "type": "string",
-            "description": "Created At",
-            "example": "2022-10-01T00:00:00Z"
-          },
-          "deletedAt": {
-            "type": "string",
-            "description": "Deleted At",
-            "example": "2022-10-01T00:00:00Z"
-          },
-          "label": {
-            "type": "string",
-            "description": "Alias label",
-            "example": "CRM ID"
-          },
-          "archivedAt": {
-            "type": "string",
-            "description": "Archived At",
-            "example": "2022-10-01T00:00:00Z"
           }
         }
       },
