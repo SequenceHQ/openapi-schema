@@ -8422,6 +8422,15 @@
             }
           },
           {
+            "name": "value",
+            "in": "query",
+            "description": "Filter customer aliases by value",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
             "name": "Sequence-Version",
             "in": "header",
             "description": "Use this header to select an API version",
