@@ -15899,6 +15899,59 @@
       "servers": [],
       "parameters": []
     },
+    "/invoices/reconcile-with-integration": {
+      "post": {
+        "tags": [
+          "Invoices"
+        ],
+        "summary": "Reconcile invoices with Xero",
+        "description": "Reconcile invoice properties between our system and integration",
+        "operationId": "postInvoicesReconcileWithIntegration",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-07-30"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted",
+            "content": {}
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/credit-notes": {
       "get": {
         "tags": [
