@@ -6103,6 +6103,193 @@
       "servers": [],
       "parameters": []
     },
+    "/quotes": {
+      "get": {
+        "tags": [
+          "Quotes"
+        ],
+        "summary": "List quotes",
+        "description": "List all of your quotes",
+        "operationId": "getQuotes",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Maximum number of objects to return per-page. Must be between 1 and 100 (inclusive).",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "after",
+            "in": "query",
+            "description": "Pagination offset. To page through items, omit this parameter to retrieve the first page, and then successively use the value you get from `pagination.after` or `pagination.before` to retrieve each page.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "before",
+            "in": "query",
+            "description": "Pagination offset. To page through items, omit this parameter to retrieve the first page, and then successively use the value you get from `pagination.next` or `pagination.previous` to retrieve each page.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "customerId",
+            "in": "query",
+            "description": "Filter by customer id.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "includeArchived",
+            "in": "query",
+            "description": "Include archived quotes in results",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "description": "Filter by quote status.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "createdBy",
+            "in": "query",
+            "description": "Filter by quote owner.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-07-30"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ListQuoteEndpointListQuotePaginatedResponseModel",
+                  "example": {
+                    "items": [
+                      {
+                        "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+                        "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                        "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+                        "quoteNumber": "Q00001",
+                        "title": "My quote",
+                        "currency": "GBP",
+                        "status": "DRAFT",
+                        "dealType": "NEW_BUSINESS",
+                        "preliminaryBillingStartDate": "2022-10-01",
+                        "expiresAt": "2022-10-01",
+                        "publishedAt": "2022-06-28T16:47:00Z",
+                        "acceptedAt": "2022-06-28T16:47:00Z",
+                        "executedAt": "2022-06-28T16:47:00Z",
+                        "createdAt": "2022-06-28T16:47:00Z",
+                        "updatedAt": "2022-06-28T16:47:00Z",
+                        "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+                        "expiryDays": 30,
+                        "archivedAt": "2022-06-28T16:47:00Z",
+                        "isExpired": false
+                      }
+                    ],
+                    "pagination": {
+                      "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
+                      "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
+                      "totalResultSize": 10
+                    }
+                  }
+                },
+                "examples": {
+                  "ListQuoteEndpointListQuotePaginatedResponseModel": {
+                    "summary": "",
+                    "value": {
+                      "items": [
+                        {
+                          "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+                          "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                          "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+                          "quoteNumber": "Q00001",
+                          "title": "My quote",
+                          "currency": "GBP",
+                          "status": "DRAFT",
+                          "dealType": "NEW_BUSINESS",
+                          "preliminaryBillingStartDate": "2022-10-01",
+                          "expiresAt": "2022-10-01",
+                          "publishedAt": "2022-06-28T16:47:00Z",
+                          "acceptedAt": "2022-06-28T16:47:00Z",
+                          "executedAt": "2022-06-28T16:47:00Z",
+                          "createdAt": "2022-06-28T16:47:00Z",
+                          "updatedAt": "2022-06-28T16:47:00Z",
+                          "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+                          "expiryDays": 30,
+                          "archivedAt": "2022-06-28T16:47:00Z",
+                          "isExpired": false
+                        }
+                      ],
+                      "pagination": {
+                        "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
+                        "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
+                        "totalResultSize": 10
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/products": {
       "get": {
         "tags": [
@@ -36179,6 +36366,227 @@
         "example": "SEAT_BASED",
         "enum": [
           "SEAT_BASED"
+        ]
+      },
+      "ListQuoteEndpointListQuotePaginatedResponseModel": {
+        "required": [
+          "items",
+          "pagination"
+        ],
+        "type": "object",
+        "example": {
+          "items": [
+            {
+              "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+              "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+              "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+              "quoteNumber": "Q00001",
+              "title": "My quote",
+              "currency": "GBP",
+              "status": "DRAFT",
+              "dealType": "NEW_BUSINESS",
+              "preliminaryBillingStartDate": "2022-10-01",
+              "expiresAt": "2022-10-01",
+              "publishedAt": "2022-06-28T16:47:00Z",
+              "acceptedAt": "2022-06-28T16:47:00Z",
+              "executedAt": "2022-06-28T16:47:00Z",
+              "createdAt": "2022-06-28T16:47:00Z",
+              "updatedAt": "2022-06-28T16:47:00Z",
+              "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+              "expiryDays": 30,
+              "archivedAt": "2022-06-28T16:47:00Z",
+              "isExpired": false
+            }
+          ],
+          "pagination": {
+            "after": "MDE4NDUyNjYtNmQ2NC03N2M4LTlhZGYtNDQ4N2Q5NGQxNDU3",
+            "before": "MDE4NDQyMWUtYTljYy03MTFiLWFmOTMtYmYwNTExZDRkODMz",
+            "totalResultSize": 10
+          }
+        },
+        "properties": {
+          "items": {
+            "type": "array",
+            "description": "Quotes",
+            "example": [
+              {
+                "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+                "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+                "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+                "quoteNumber": "Q00001",
+                "title": "My quote",
+                "currency": "GBP",
+                "status": "DRAFT",
+                "dealType": "NEW_BUSINESS",
+                "preliminaryBillingStartDate": "2022-10-01",
+                "expiresAt": "2022-10-01",
+                "publishedAt": "2022-06-28T16:47:00Z",
+                "acceptedAt": "2022-06-28T16:47:00Z",
+                "executedAt": "2022-06-28T16:47:00Z",
+                "createdAt": "2022-06-28T16:47:00Z",
+                "updatedAt": "2022-06-28T16:47:00Z",
+                "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+                "expiryDays": 30,
+                "archivedAt": "2022-06-28T16:47:00Z",
+                "isExpired": false
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/ListQuoteEndpointListQuoteResponseModel"
+            }
+          },
+          "pagination": {
+            "$ref": "#/components/schemas/PaginationMeta"
+          }
+        }
+      },
+      "ListQuoteEndpointListQuoteResponseModel": {
+        "required": [
+          "createdAt",
+          "createdBy",
+          "id",
+          "isExpired",
+          "quoteNumber",
+          "status",
+          "updatedAt"
+        ],
+        "type": "object",
+        "example": {
+          "id": "678ca125-8bc3-478f-9a96-6ba73605cf1e",
+          "createdBy": "4ffd439e-32e5-4046-bb40-3cb81f40e5da",
+          "customerId": "377bf97b-ca1d-4538-be06-4022afa6bde3",
+          "quoteNumber": "Q00001",
+          "title": "My quote",
+          "currency": "GBP",
+          "status": "DRAFT",
+          "dealType": "NEW_BUSINESS",
+          "preliminaryBillingStartDate": "2022-10-01",
+          "expiresAt": "2022-10-01",
+          "publishedAt": "2022-06-28T16:47:00Z",
+          "acceptedAt": "2022-06-28T16:47:00Z",
+          "executedAt": "2022-06-28T16:47:00Z",
+          "createdAt": "2022-06-28T16:47:00Z",
+          "updatedAt": "2022-06-28T16:47:00Z",
+          "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
+          "expiryDays": 30,
+          "archivedAt": "2022-06-28T16:47:00Z",
+          "isExpired": false
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Quote ID",
+            "example": "678ca125-8bc3-478f-9a96-6ba73605cf1e"
+          },
+          "createdBy": {
+            "type": "string",
+            "description": "The Sequence User to which this Quote belongs",
+            "example": "4ffd439e-32e5-4046-bb40-3cb81f40e5da"
+          },
+          "customerId": {
+            "type": "string",
+            "description": "Customer ID",
+            "example": "377bf97b-ca1d-4538-be06-4022afa6bde3"
+          },
+          "quoteNumber": {
+            "type": "string",
+            "description": "An alpha-numeric value that identifies the quote. Leave blank for an auto-generated incrementing quote number.",
+            "example": "Q00001"
+          },
+          "title": {
+            "type": "string",
+            "description": "The quote title",
+            "example": "My quote"
+          },
+          "currency": {
+            "description": "Quote currency",
+            "$ref": "#/components/schemas/Currency"
+          },
+          "status": {
+            "description": "The status of the quote",
+            "$ref": "#/components/schemas/QuoteStatus"
+          },
+          "dealType": {
+            "description": "Quote deal type",
+            "$ref": "#/components/schemas/QuoteDealType"
+          },
+          "preliminaryBillingStartDate": {
+            "type": "string",
+            "description": "Preliminary start date of contract",
+            "format": "date",
+            "example": "2022-10-01"
+          },
+          "expiresAt": {
+            "type": "string",
+            "description": "Date when quote expires",
+            "format": "date",
+            "example": "2022-10-01"
+          },
+          "publishedAt": {
+            "type": "string",
+            "description": "Date when quote was published",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "acceptedAt": {
+            "type": "string",
+            "description": "Date when quote was accepted",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "executedAt": {
+            "type": "string",
+            "description": "Date when quote was executed",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "Created at",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "updatedAt": {
+            "type": "string",
+            "description": "Updated at",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "billingScheduleId": {
+            "type": "string",
+            "description": "Billing schedule ID associated with this quote, if executed",
+            "example": "08a76ddb-230e-4700-a5e2-70f6edaf7d50"
+          },
+          "expiryDays": {
+            "type": "integer",
+            "description": "Number of days after publishing in which quote will expire",
+            "format": "int32",
+            "example": 30
+          },
+          "archivedAt": {
+            "type": "string",
+            "description": "Date and time the quote was archived",
+            "example": "2022-06-28T16:47:00Z"
+          },
+          "isExpired": {
+            "type": "boolean",
+            "description": "True if the quote expiry date has passed",
+            "example": false
+          }
+        }
+      },
+      "QuoteStatus": {
+        "type": "string",
+        "example": "DRAFT",
+        "enum": [
+          "DRAFT",
+          "PUBLISHED",
+          "READY_TO_SIGN",
+          "ACCEPTED",
+          "EXECUTED"
+        ]
+      },
+      "QuoteDealType": {
+        "type": "string",
+        "example": "NEW_BUSINESS",
+        "enum": [
+          "NEW_BUSINESS",
+          "RENEWAL"
         ]
       },
       "Stable20240509ProductRequest": {
