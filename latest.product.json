@@ -3293,8 +3293,8 @@
         "tags": [
           "Credits"
         ],
-        "summary": "Create a new CreditGrant",
-        "description": "Create a new CreditGrant",
+        "summary": "Create a new credit grant",
+        "description": "Create a new credit grant",
         "operationId": "postCredits",
         "parameters": [
           {
@@ -3323,11 +3323,11 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateCreditGrantEndpointCreateCreditGrantRequestModel",
+                "$ref": "#/components/schemas/CreateCreditGrantRequest",
                 "example": {
                   "sequenceAccountId": "dce9ae85-d8d0-42b4-bcad-f221a64363c6",
                   "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-                  "name": "On-boarding Credits",
+                  "name": "Onboarding Credits",
                   "creditUnitType": "CURRENCY",
                   "currency": "GBP",
                   "metricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
@@ -3339,12 +3339,12 @@
                 }
               },
               "examples": {
-                "CreateCreditGrantEndpointCreateCreditGrantRequestModel": {
+                "CreateCreditGrantRequest": {
                   "summary": "",
                   "value": {
                     "sequenceAccountId": "dce9ae85-d8d0-42b4-bcad-f221a64363c6",
                     "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-                    "name": "On-boarding Credits",
+                    "name": "Onboarding Credits",
                     "creditUnitType": "CURRENCY",
                     "currency": "GBP",
                     "metricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
@@ -3366,12 +3366,12 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/CreateCreditGrantEndpointProductCreateCreditGrantResponseModel",
+                  "$ref": "#/components/schemas/CreditGrantResponse",
                   "example": {
                     "id": "746fc7f2-8098-4fe7-953c-7d51c580a126",
                     "sequenceAccountId": "dce9ae85-d8d0-42b4-bcad-f221a64363c6",
                     "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-                    "name": "On-boarding Credits",
+                    "name": "Onboarding Credits",
                     "creditUnitType": "CURRENCY",
                     "currency": "GBP",
                     "metricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
@@ -3390,13 +3390,13 @@
                   }
                 },
                 "examples": {
-                  "CreateCreditGrantEndpointProductCreateCreditGrantResponseModel": {
+                  "CreditGrantResponse": {
                     "summary": "",
                     "value": {
                       "id": "746fc7f2-8098-4fe7-953c-7d51c580a126",
                       "sequenceAccountId": "dce9ae85-d8d0-42b4-bcad-f221a64363c6",
                       "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-                      "name": "On-boarding Credits",
+                      "name": "Onboarding Credits",
                       "creditUnitType": "CURRENCY",
                       "currency": "GBP",
                       "metricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
@@ -33915,12 +33915,12 @@
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/ListCreditGrantsForCustomerEndpointCreditGrantResponse"
+              "$ref": "#/components/schemas/ListCreditGrantsForCustomerEndpointCreditGrantResponseItem"
             }
           }
         }
       },
-      "ListCreditGrantsForCustomerEndpointCreditGrantResponse": {
+      "ListCreditGrantsForCustomerEndpointCreditGrantResponseItem": {
         "required": [
           "balance",
           "grantAmount",
@@ -34433,7 +34433,7 @@
           "METRIC"
         ]
       },
-      "CreateCreditGrantEndpointCreateCreditGrantRequestModel": {
+      "CreateCreditGrantRequest": {
         "required": [
           "amount",
           "creditUnitType",
@@ -34446,7 +34446,7 @@
         "example": {
           "sequenceAccountId": "dce9ae85-d8d0-42b4-bcad-f221a64363c6",
           "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-          "name": "On-boarding Credits",
+          "name": "Onboarding Credits",
           "creditUnitType": "CURRENCY",
           "currency": "GBP",
           "metricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
@@ -34459,51 +34459,51 @@
         "properties": {
           "sequenceAccountId": {
             "type": "string",
-            "description": "Sequence Account ID",
+            "description": "Sequence account ID",
             "example": "dce9ae85-d8d0-42b4-bcad-f221a64363c6"
           },
           "customerId": {
             "type": "string",
-            "description": "The ID of the Customer Credit is granted to",
+            "description": "The ID of the customer credit is granted to",
             "example": "61b083e0-1faa-47ca-9aeb-6205da8f6c47"
           },
           "name": {
             "type": "string",
-            "description": "Name of the Credit Grant",
-            "example": "On-boarding Credits"
+            "description": "Name of the credit grant",
+            "example": "Onboarding Credits"
           },
           "creditUnitType": {
-            "description": "Type of the Unit of Credit",
+            "description": "Type of the unit of credit",
             "$ref": "#/components/schemas/CreditUnitType"
           },
           "currency": {
-            "description": "Currency of Cash Credit (if CreditUnitType is CURRENCY)",
+            "description": "Currency of cash credit (if creditUnitType is CURRENCY)",
             "$ref": "#/components/schemas/Currency"
           },
           "metricId": {
             "type": "string",
-            "description": "Metric ID (if CreditUnitType is METRIC)",
+            "description": "Metric ID (if creditUnitType is METRIC)",
             "example": "f092246c-6b90-4106-bcca-304ccf06bf45"
           },
           "amount": {
             "type": "number",
-            "description": "Amount of Units Granted",
+            "description": "Amount of units granted",
             "example": 10
           },
           "costOfCredit": {
             "type": "number",
-            "description": "Cost of Credit Grant, to be Invoiced to the Customer",
+            "description": "Cost of credit grant, to be invoiced to the customer",
             "example": 10
           },
           "effectiveDate": {
             "type": "string",
-            "description": "First Day Credit Grant can be consumed",
+            "description": "First day credit grant can be consumed",
             "format": "date",
             "example": "2023-01-01"
           },
           "expiryDate": {
             "type": "string",
-            "description": "Last Day Credit Grant can be consumed",
+            "description": "Last day credit grant can be consumed",
             "format": "date",
             "example": "2023-01-31"
           },
@@ -34514,7 +34514,7 @@
           }
         }
       },
-      "CreateCreditGrantEndpointProductCreateCreditGrantResponseModel": {
+      "CreditGrantResponse": {
         "required": [
           "amount",
           "createdAt",
@@ -34530,7 +34530,7 @@
           "id": "746fc7f2-8098-4fe7-953c-7d51c580a126",
           "sequenceAccountId": "dce9ae85-d8d0-42b4-bcad-f221a64363c6",
           "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-          "name": "On-boarding Credits",
+          "name": "Onboarding Credits",
           "creditUnitType": "CURRENCY",
           "currency": "GBP",
           "metricId": "f092246c-6b90-4106-bcca-304ccf06bf45",
@@ -34550,62 +34550,62 @@
         "properties": {
           "id": {
             "type": "string",
-            "description": "Credit Grant ID",
+            "description": "Credit grant ID",
             "example": "746fc7f2-8098-4fe7-953c-7d51c580a126"
           },
           "sequenceAccountId": {
             "type": "string",
-            "description": "Sequence Account ID",
+            "description": "Sequence account ID",
             "example": "dce9ae85-d8d0-42b4-bcad-f221a64363c6"
           },
           "customerId": {
             "type": "string",
-            "description": "The ID of the Customer Credit is granted to",
+            "description": "The ID of the customer credit is granted to",
             "example": "61b083e0-1faa-47ca-9aeb-6205da8f6c47"
           },
           "name": {
             "type": "string",
-            "description": "Name of the Credit Grant",
-            "example": "On-boarding Credits"
+            "description": "Name of the credit grant",
+            "example": "Onboarding Credits"
           },
           "creditUnitType": {
-            "description": "Type of the Unit of Credit",
+            "description": "Type of the unit of credit",
             "$ref": "#/components/schemas/CreditUnitType"
           },
           "currency": {
-            "description": "Currency of Cash Credit (if CreditUnitType is CURRENCY)",
+            "description": "Currency of cash credit (if creditUnitType is CURRENCY)",
             "$ref": "#/components/schemas/Currency"
           },
           "metricId": {
             "type": "string",
-            "description": "Metric ID (if CreditUnitType is METRIC)",
+            "description": "Metric ID (if creditUnitType is METRIC)",
             "example": "f092246c-6b90-4106-bcca-304ccf06bf45"
           },
           "amount": {
             "type": "number",
-            "description": "Amount of Units Granted",
+            "description": "Amount of units granted",
             "example": 10
           },
           "costOfCredit": {
             "type": "number",
-            "description": "Cost of Credit Grant, to be Invoiced to the Customer",
+            "description": "Cost of credit grant, to be invoiced to the customer",
             "example": 10
           },
           "effectiveDate": {
             "type": "string",
-            "description": "First Day Credit Grant can be consumed",
+            "description": "First day credit grant can be consumed",
             "format": "date",
             "example": "2023-01-01"
           },
           "expiryDate": {
             "type": "string",
-            "description": "Last Day Credit Grant can be consumed",
+            "description": "Last day credit grant can be consumed",
             "format": "date",
             "example": "2023-01-31"
           },
           "createdAt": {
             "type": "string",
-            "description": "The created at",
+            "description": "The creation timestamp",
             "example": "2022-10-07T14:12:08.826121Z"
           },
           "integrationIds": {
