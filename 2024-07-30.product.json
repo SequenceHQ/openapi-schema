@@ -2397,7 +2397,7 @@
         "tags": [
           "Discounts"
         ],
-        "summary": "list all discounts",
+        "summary": "List all discounts",
         "description": "List all discounts for Sequence account",
         "operationId": "getDiscounts",
         "parameters": [
