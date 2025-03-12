@@ -2397,8 +2397,8 @@
         "tags": [
           "Discounts"
         ],
-        "summary": "List all Discounts",
-        "description": "List all Discounts",
+        "summary": "list all discounts",
+        "description": "List all discounts for Sequence account",
         "operationId": "getDiscounts",
         "parameters": [
           {
@@ -2456,7 +2456,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ListDiscountEndpointProductListDiscountPaginatedResponseModel",
+                  "$ref": "#/components/schemas/ListDiscountEndpointResponseModel",
                   "example": {
                     "items": [
                       {
@@ -2474,7 +2474,8 @@
                         "validFrom": "2023-01-01",
                         "validTo": "2023-01-31",
                         "createdAt": "2022-06-28T16:47:00Z",
-                        "updatedAt": "2022-06-28T16:47:00Z"
+                        "updatedAt": "2022-06-28T16:47:00Z",
+                        "seatDiscountType": "ALL_SEATS"
                       }
                     ],
                     "pagination": {
@@ -2485,7 +2486,7 @@
                   }
                 },
                 "examples": {
-                  "ListDiscountEndpointProductListDiscountPaginatedResponseModel": {
+                  "ListDiscountEndpointResponseModel": {
                     "summary": "",
                     "value": {
                       "items": [
@@ -2504,7 +2505,8 @@
                           "validFrom": "2023-01-01",
                           "validTo": "2023-01-31",
                           "createdAt": "2022-06-28T16:47:00Z",
-                          "updatedAt": "2022-06-28T16:47:00Z"
+                          "updatedAt": "2022-06-28T16:47:00Z",
+                          "seatDiscountType": "ALL_SEATS"
                         }
                       ],
                       "pagination": {
@@ -2540,8 +2542,8 @@
         "tags": [
           "Discounts"
         ],
-        "summary": "Get a Discount by ID",
-        "description": "Get a Discount by ID",
+        "summary": "Get a discount by ID",
+        "description": "Get a discount by ID",
         "operationId": "getDiscountsById",
         "parameters": [
           {
@@ -2581,7 +2583,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GetDiscountEndpointProductGetDiscountResponseModel",
+                  "$ref": "#/components/schemas/Discount",
                   "example": {
                     "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
                     "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
@@ -2597,11 +2599,12 @@
                     "validFrom": "2023-01-01",
                     "validTo": "2023-01-31",
                     "createdAt": "2022-06-28T16:47:00Z",
-                    "updatedAt": "2022-06-28T16:47:00Z"
+                    "updatedAt": "2022-06-28T16:47:00Z",
+                    "seatDiscountType": "ALL_SEATS"
                   }
                 },
                 "examples": {
-                  "GetDiscountEndpointProductGetDiscountResponseModel": {
+                  "Discount": {
                     "summary": "",
                     "value": {
                       "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
@@ -2618,7 +2621,8 @@
                       "validFrom": "2023-01-01",
                       "validTo": "2023-01-31",
                       "createdAt": "2022-06-28T16:47:00Z",
-                      "updatedAt": "2022-06-28T16:47:00Z"
+                      "updatedAt": "2022-06-28T16:47:00Z",
+                      "seatDiscountType": "ALL_SEATS"
                     }
                   }
                 }
@@ -2643,8 +2647,8 @@
         "tags": [
           "Discounts"
         ],
-        "summary": "Update a Discount",
-        "description": "Update a Discount",
+        "summary": "Update a discount",
+        "description": "Update a discount",
         "operationId": "putDiscountsById",
         "parameters": [
           {
@@ -2723,7 +2727,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/UpdateDiscountEndpointProductUpdateDiscountResponseModel",
+                  "$ref": "#/components/schemas/Discount",
                   "example": {
                     "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
                     "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
@@ -2739,11 +2743,12 @@
                     "validFrom": "2023-01-01",
                     "validTo": "2023-01-31",
                     "createdAt": "2022-06-28T16:47:00Z",
-                    "updatedAt": "2022-06-28T16:47:00Z"
+                    "updatedAt": "2022-06-28T16:47:00Z",
+                    "seatDiscountType": "ALL_SEATS"
                   }
                 },
                 "examples": {
-                  "UpdateDiscountEndpointProductUpdateDiscountResponseModel": {
+                  "Discount": {
                     "summary": "",
                     "value": {
                       "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
@@ -2760,7 +2765,8 @@
                       "validFrom": "2023-01-01",
                       "validTo": "2023-01-31",
                       "createdAt": "2022-06-28T16:47:00Z",
-                      "updatedAt": "2022-06-28T16:47:00Z"
+                      "updatedAt": "2022-06-28T16:47:00Z",
+                      "seatDiscountType": "ALL_SEATS"
                     }
                   }
                 }
@@ -2785,8 +2791,8 @@
         "tags": [
           "Discounts"
         ],
-        "summary": "Delete a Discount",
-        "description": "Delete a Discount",
+        "summary": "Delete a discount",
+        "description": "Delete a discount",
         "operationId": "deleteDiscountsById",
         "parameters": [
           {
@@ -2826,7 +2832,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/DeleteDiscountEndpointProductDeleteDiscountResponseModel",
+                  "$ref": "#/components/schemas/Discount",
                   "example": {
                     "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
                     "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
@@ -2842,11 +2848,12 @@
                     "validFrom": "2023-01-01",
                     "validTo": "2023-01-31",
                     "createdAt": "2022-06-28T16:47:00Z",
-                    "updatedAt": "2022-06-28T16:47:00Z"
+                    "updatedAt": "2022-06-28T16:47:00Z",
+                    "seatDiscountType": "ALL_SEATS"
                   }
                 },
                 "examples": {
-                  "DeleteDiscountEndpointProductDeleteDiscountResponseModel": {
+                  "Discount": {
                     "summary": "",
                     "value": {
                       "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
@@ -2863,7 +2870,8 @@
                       "validFrom": "2023-01-01",
                       "validTo": "2023-01-31",
                       "createdAt": "2022-06-28T16:47:00Z",
-                      "updatedAt": "2022-06-28T16:47:00Z"
+                      "updatedAt": "2022-06-28T16:47:00Z",
+                      "seatDiscountType": "ALL_SEATS"
                     }
                   }
                 }
@@ -33320,7 +33328,7 @@
           }
         }
       },
-      "ListDiscountEndpointProductListDiscountPaginatedResponseModel": {
+      "ListDiscountEndpointResponseModel": {
         "required": [
           "items",
           "pagination"
@@ -33343,7 +33351,8 @@
               "validFrom": "2023-01-01",
               "validTo": "2023-01-31",
               "createdAt": "2022-06-28T16:47:00Z",
-              "updatedAt": "2022-06-28T16:47:00Z"
+              "updatedAt": "2022-06-28T16:47:00Z",
+              "seatDiscountType": "ALL_SEATS"
             }
           ],
           "pagination": {
@@ -33372,11 +33381,12 @@
                 "validFrom": "2023-01-01",
                 "validTo": "2023-01-31",
                 "createdAt": "2022-06-28T16:47:00Z",
-                "updatedAt": "2022-06-28T16:47:00Z"
+                "updatedAt": "2022-06-28T16:47:00Z",
+                "seatDiscountType": "ALL_SEATS"
               }
             ],
             "items": {
-              "$ref": "#/components/schemas/ListDiscountEndpointProductListDiscountResponseModel"
+              "$ref": "#/components/schemas/Discount"
             }
           },
           "pagination": {
@@ -33384,7 +33394,7 @@
           }
         }
       },
-      "ListDiscountEndpointProductListDiscountResponseModel": {
+      "Discount": {
         "required": [
           "amount",
           "billingScheduleId",
@@ -33393,6 +33403,7 @@
           "id",
           "message",
           "priceIds",
+          "seatDiscountType",
           "separateLineItem",
           "sequenceAccountId",
           "updatedAt"
@@ -33413,7 +33424,8 @@
           "validFrom": "2023-01-01",
           "validTo": "2023-01-31",
           "createdAt": "2022-06-28T16:47:00Z",
-          "updatedAt": "2022-06-28T16:47:00Z"
+          "updatedAt": "2022-06-28T16:47:00Z",
+          "seatDiscountType": "ALL_SEATS"
         },
         "properties": {
           "id": {
@@ -33486,6 +33498,10 @@
             "type": "string",
             "description": "Updated At",
             "example": "2022-06-28T16:47:00Z"
+          },
+          "seatDiscountType": {
+            "description": "Determines how the discount is applied to any seat-based prices",
+            "$ref": "#/components/schemas/SeatDiscountType"
           }
         }
       },
@@ -33497,110 +33513,14 @@
           "NOMINAL"
         ]
       },
-      "GetDiscountEndpointProductGetDiscountResponseModel": {
-        "required": [
-          "amount",
-          "billingScheduleId",
-          "createdAt",
-          "discountCalculationType",
-          "id",
-          "message",
-          "priceIds",
-          "separateLineItem",
-          "sequenceAccountId",
-          "updatedAt"
-        ],
-        "type": "object",
-        "example": {
-          "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
-          "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
-          "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
-          "phaseId": "220e1878-b70a-4dfd-9c55-7651424b12d6",
-          "priceIds": [
-            "e007e884-5100-4183-8355-4771865cb4d7"
-          ],
-          "separateLineItem": false,
-          "amount": 25,
-          "discountCalculationType": "PERCENTAGE",
-          "message": "Loyalty Discount",
-          "validFrom": "2023-01-01",
-          "validTo": "2023-01-31",
-          "createdAt": "2022-06-28T16:47:00Z",
-          "updatedAt": "2022-06-28T16:47:00Z"
-        },
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "Discount ID",
-            "example": "d58bf2e3-7a5d-4900-8457-2521c6880f7d"
-          },
-          "sequenceAccountId": {
-            "type": "string",
-            "description": "The Sequence Account to which this Discount belongs",
-            "example": "1986c663-9ee9-4811-bfbf-57d2ad666096"
-          },
-          "billingScheduleId": {
-            "type": "string",
-            "description": "Billing Schedule ID",
-            "example": "08a76ddb-230e-4700-a5e2-70f6edaf7d50"
-          },
-          "phaseId": {
-            "type": "string",
-            "description": "Phase ID",
-            "example": "220e1878-b70a-4dfd-9c55-7651424b12d6"
-          },
-          "priceIds": {
-            "type": "array",
-            "description": "Price IDs this discount applies to. If not populated, the discount applies to all prices on the billing schedule",
-            "example": [
-              "e007e884-5100-4183-8355-4771865cb4d7"
-            ],
-            "items": {
-              "type": "string"
-            }
-          },
-          "separateLineItem": {
-            "type": "boolean",
-            "description": "Indicates whether the discount should appear as a separate line item in the invoice",
-            "example": false
-          },
-          "amount": {
-            "type": "number",
-            "description": "Amount to be reduced",
-            "example": 25
-          },
-          "discountCalculationType": {
-            "description": "Indicates whether the discount amount is percentage or nominal",
-            "$ref": "#/components/schemas/DiscountCalculationType"
-          },
-          "message": {
-            "type": "string",
-            "description": "Message to appear on the Invoice",
-            "example": "Loyalty Discount"
-          },
-          "validFrom": {
-            "type": "string",
-            "description": "First Day Discount is Valid",
-            "format": "date",
-            "example": "2023-01-01"
-          },
-          "validTo": {
-            "type": "string",
-            "description": "Last Day Discount is Valid",
-            "format": "date",
-            "example": "2023-01-31"
-          },
-          "createdAt": {
-            "type": "string",
-            "description": "Created at",
-            "example": "2022-06-28T16:47:00Z"
-          },
-          "updatedAt": {
-            "type": "string",
-            "description": "Updated At",
-            "example": "2022-06-28T16:47:00Z"
-          }
-        }
+      "SeatDiscountType": {
+        "type": "string",
+        "example": "ALL_SEATS",
+        "enum": [
+          "INCLUDED_SEATS_ONLY",
+          "OVERAGE_SEATS_ONLY",
+          "ALL_SEATS"
+        ]
       },
       "UpdateDiscountEndpointUpdateDiscountRequestModel": {
         "required": [
@@ -33670,216 +33590,6 @@
             "description": "Last Day Discount is Valid",
             "format": "date",
             "example": "2023-01-31"
-          }
-        }
-      },
-      "UpdateDiscountEndpointProductUpdateDiscountResponseModel": {
-        "required": [
-          "amount",
-          "billingScheduleId",
-          "createdAt",
-          "discountCalculationType",
-          "id",
-          "message",
-          "priceIds",
-          "separateLineItem",
-          "sequenceAccountId",
-          "updatedAt"
-        ],
-        "type": "object",
-        "example": {
-          "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
-          "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
-          "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
-          "phaseId": "220e1878-b70a-4dfd-9c55-7651424b12d6",
-          "priceIds": [
-            "e007e884-5100-4183-8355-4771865cb4d7"
-          ],
-          "separateLineItem": false,
-          "amount": 25,
-          "discountCalculationType": "PERCENTAGE",
-          "message": "Loyalty Discount",
-          "validFrom": "2023-01-01",
-          "validTo": "2023-01-31",
-          "createdAt": "2022-06-28T16:47:00Z",
-          "updatedAt": "2022-06-28T16:47:00Z"
-        },
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "Discount ID",
-            "example": "d58bf2e3-7a5d-4900-8457-2521c6880f7d"
-          },
-          "sequenceAccountId": {
-            "type": "string",
-            "description": "The Sequence Account to which this Discount belongs",
-            "example": "1986c663-9ee9-4811-bfbf-57d2ad666096"
-          },
-          "billingScheduleId": {
-            "type": "string",
-            "description": "Billing Schedule ID",
-            "example": "08a76ddb-230e-4700-a5e2-70f6edaf7d50"
-          },
-          "phaseId": {
-            "type": "string",
-            "description": "Phase ID",
-            "example": "220e1878-b70a-4dfd-9c55-7651424b12d6"
-          },
-          "priceIds": {
-            "type": "array",
-            "description": "Price IDs this discount applies to. If not populated, the discount applies to all prices on the billing schedule",
-            "example": [
-              "e007e884-5100-4183-8355-4771865cb4d7"
-            ],
-            "items": {
-              "type": "string"
-            }
-          },
-          "separateLineItem": {
-            "type": "boolean",
-            "description": "Indicates whether the discount should appear as a separate line item in the invoice",
-            "example": false
-          },
-          "amount": {
-            "type": "number",
-            "description": "Amount to be reduced",
-            "example": 25
-          },
-          "discountCalculationType": {
-            "description": "Indicates whether the discount amount is percentage or nominal",
-            "$ref": "#/components/schemas/DiscountCalculationType"
-          },
-          "message": {
-            "type": "string",
-            "description": "Message to appear on the Invoice",
-            "example": "Loyalty Discount"
-          },
-          "validFrom": {
-            "type": "string",
-            "description": "First Day Discount is Valid",
-            "format": "date",
-            "example": "2023-01-01"
-          },
-          "validTo": {
-            "type": "string",
-            "description": "Last Day Discount is Valid",
-            "format": "date",
-            "example": "2023-01-31"
-          },
-          "createdAt": {
-            "type": "string",
-            "description": "Created at",
-            "example": "2022-06-28T16:47:00Z"
-          },
-          "updatedAt": {
-            "type": "string",
-            "description": "Updated At",
-            "example": "2022-06-28T16:47:00Z"
-          }
-        }
-      },
-      "DeleteDiscountEndpointProductDeleteDiscountResponseModel": {
-        "required": [
-          "amount",
-          "billingScheduleId",
-          "createdAt",
-          "discountCalculationType",
-          "id",
-          "message",
-          "priceIds",
-          "separateLineItem",
-          "sequenceAccountId",
-          "updatedAt"
-        ],
-        "type": "object",
-        "example": {
-          "id": "d58bf2e3-7a5d-4900-8457-2521c6880f7d",
-          "sequenceAccountId": "1986c663-9ee9-4811-bfbf-57d2ad666096",
-          "billingScheduleId": "08a76ddb-230e-4700-a5e2-70f6edaf7d50",
-          "phaseId": "220e1878-b70a-4dfd-9c55-7651424b12d6",
-          "priceIds": [
-            "e007e884-5100-4183-8355-4771865cb4d7"
-          ],
-          "separateLineItem": false,
-          "amount": 25,
-          "discountCalculationType": "PERCENTAGE",
-          "message": "Loyalty Discount",
-          "validFrom": "2023-01-01",
-          "validTo": "2023-01-31",
-          "createdAt": "2022-06-28T16:47:00Z",
-          "updatedAt": "2022-06-28T16:47:00Z"
-        },
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "Discount ID",
-            "example": "d58bf2e3-7a5d-4900-8457-2521c6880f7d"
-          },
-          "sequenceAccountId": {
-            "type": "string",
-            "description": "The Sequence Account to which this Discount belongs",
-            "example": "1986c663-9ee9-4811-bfbf-57d2ad666096"
-          },
-          "billingScheduleId": {
-            "type": "string",
-            "description": "Billing Schedule ID",
-            "example": "08a76ddb-230e-4700-a5e2-70f6edaf7d50"
-          },
-          "phaseId": {
-            "type": "string",
-            "description": "Phase ID",
-            "example": "220e1878-b70a-4dfd-9c55-7651424b12d6"
-          },
-          "priceIds": {
-            "type": "array",
-            "description": "Price IDs this discount applies to. If not populated, the discount applies to all prices on the billing schedule",
-            "example": [
-              "e007e884-5100-4183-8355-4771865cb4d7"
-            ],
-            "items": {
-              "type": "string"
-            }
-          },
-          "separateLineItem": {
-            "type": "boolean",
-            "description": "Indicates whether the discount should appear as a separate line item in the invoice",
-            "example": false
-          },
-          "amount": {
-            "type": "number",
-            "description": "Amount to be reduced",
-            "example": 25
-          },
-          "discountCalculationType": {
-            "description": "Indicates whether the discount amount is percentage or nominal",
-            "$ref": "#/components/schemas/DiscountCalculationType"
-          },
-          "message": {
-            "type": "string",
-            "description": "Message to appear on the Invoice",
-            "example": "Loyalty Discount"
-          },
-          "validFrom": {
-            "type": "string",
-            "description": "First Day Discount is Valid",
-            "format": "date",
-            "example": "2023-01-01"
-          },
-          "validTo": {
-            "type": "string",
-            "description": "Last Day Discount is Valid",
-            "format": "date",
-            "example": "2023-01-31"
-          },
-          "createdAt": {
-            "type": "string",
-            "description": "Created at",
-            "example": "2022-06-28T16:47:00Z"
-          },
-          "updatedAt": {
-            "type": "string",
-            "description": "Updated At",
-            "example": "2022-06-28T16:47:00Z"
           }
         }
       },
@@ -35131,15 +34841,6 @@
             "$ref": "#/components/schemas/SeatDiscountType"
           }
         }
-      },
-      "SeatDiscountType": {
-        "type": "string",
-        "example": "ALL_SEATS",
-        "enum": [
-          "INCLUDED_SEATS_ONLY",
-          "OVERAGE_SEATS_ONLY",
-          "ALL_SEATS"
-        ]
       },
       "MinimumRequest": {
         "required": [
