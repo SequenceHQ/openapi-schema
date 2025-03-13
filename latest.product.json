@@ -3562,6 +3562,130 @@
       "servers": [],
       "parameters": []
     },
+    "/credit-transactions": {
+      "post": {
+        "tags": [
+          "Credits"
+        ],
+        "summary": "Create a new credit transaction",
+        "description": "Create a new credit transaction",
+        "operationId": "postCreditTransactions",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "On-Behalf-Of",
+            "in": "header",
+            "description": "The Sequence account that this request is made on behalf of.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-07-30"
+              ]
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCreditTransactionEndpointCreateCreditTransactionRequestModel",
+                "example": {
+                  "grantId": "746fc7f2-8098-4fe7-953c-7d51c580a126",
+                  "reason": "Refund",
+                  "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                  "billingRunId": "cbe82021-90bb-47cc-a665-eda41ec4ee5b",
+                  "type": "DEBIT",
+                  "amount": "10"
+                }
+              },
+              "examples": {
+                "CreateCreditTransactionEndpointCreateCreditTransactionRequestModel": {
+                  "summary": "",
+                  "value": {
+                    "grantId": "746fc7f2-8098-4fe7-953c-7d51c580a126",
+                    "reason": "Refund",
+                    "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                    "billingRunId": "cbe82021-90bb-47cc-a665-eda41ec4ee5b",
+                    "type": "DEBIT",
+                    "amount": "10"
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreditTransaction",
+                  "example": {
+                    "id": "4a1da26e-4f4a-4607-9597-9652138afcf1",
+                    "grantId": "746fc7f2-8098-4fe7-953c-7d51c580a126",
+                    "reason": "Refund",
+                    "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                    "billingRunId": "cbe82021-90bb-47cc-a665-eda41ec4ee5b",
+                    "type": "DEBIT",
+                    "amount": "10",
+                    "createdAt": "2022-10-07T14:12:08.826121Z"
+                  }
+                },
+                "examples": {
+                  "CreditTransaction": {
+                    "summary": "",
+                    "value": {
+                      "id": "4a1da26e-4f4a-4607-9597-9652138afcf1",
+                      "grantId": "746fc7f2-8098-4fe7-953c-7d51c580a126",
+                      "reason": "Refund",
+                      "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+                      "billingRunId": "cbe82021-90bb-47cc-a665-eda41ec4ee5b",
+                      "type": "DEBIT",
+                      "amount": "10",
+                      "createdAt": "2022-10-07T14:12:08.826121Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/billing-schedules": {
       "get": {
         "tags": [
@@ -34331,6 +34455,54 @@
             "items": {
               "$ref": "#/components/schemas/IntegrationId"
             }
+          }
+        }
+      },
+      "CreateCreditTransactionEndpointCreateCreditTransactionRequestModel": {
+        "required": [
+          "amount",
+          "grantId",
+          "type"
+        ],
+        "type": "object",
+        "example": {
+          "grantId": "746fc7f2-8098-4fe7-953c-7d51c580a126",
+          "reason": "Refund",
+          "invoiceId": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+          "billingRunId": "cbe82021-90bb-47cc-a665-eda41ec4ee5b",
+          "type": "DEBIT",
+          "amount": "10"
+        },
+        "properties": {
+          "grantId": {
+            "type": "string",
+            "description": "Credit Grant ID",
+            "example": "746fc7f2-8098-4fe7-953c-7d51c580a126"
+          },
+          "reason": {
+            "type": "string",
+            "description": "Transaction Reason",
+            "example": "Refund"
+          },
+          "invoiceId": {
+            "type": "string",
+            "description": "Invoice ID where Credit was consumed",
+            "example": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9"
+          },
+          "billingRunId": {
+            "type": "string",
+            "description": "Billing Run ID where Credit was consumed",
+            "example": "cbe82021-90bb-47cc-a665-eda41ec4ee5b"
+          },
+          "type": {
+            "type": "string",
+            "description": "Credit Transaction Type",
+            "example": "DEBIT"
+          },
+          "amount": {
+            "type": "string",
+            "description": "Number of units added or consumer",
+            "example": "10"
           }
         }
       },
