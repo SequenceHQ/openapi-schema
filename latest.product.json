@@ -39638,7 +39638,7 @@
           },
           "contacts": {
             "type": "array",
-            "description": "Contacts to create for this customer. This will replace all existing contacts for this customer.",
+            "description": "Contacts to create for this customer. This will replace all existing contacts for this customer. Needs atleast one Contact with a billing preference of 'PRIMARY'",
             "example": [
               {
                 "name": "John Smith",
