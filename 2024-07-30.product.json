@@ -9556,7 +9556,8 @@
                         "updatedAt": "2022-06-28T16:47:00Z",
                         "archivedAt": "2023-06-28T16:47:00Z"
                       }
-                    ]
+                    ],
+                    "status": "ACTIVE"
                   }
                 },
                 "examples": {
@@ -9620,7 +9621,8 @@
                           "updatedAt": "2022-06-28T16:47:00Z",
                           "archivedAt": "2023-06-28T16:47:00Z"
                         }
-                      ]
+                      ],
+                      "status": "ACTIVE"
                     }
                   }
                 }
@@ -9991,7 +9993,8 @@
                   ],
                   "pushToIntegrations": [
                     "Xero"
-                  ]
+                  ],
+                  "status": "ACTIVE"
                 }
               },
               "examples": {
@@ -10047,7 +10050,8 @@
                     ],
                     "pushToIntegrations": [
                       "Xero"
-                    ]
+                    ],
+                    "status": "ACTIVE"
                   }
                 }
               }
@@ -10120,7 +10124,8 @@
                         "updatedAt": "2022-06-28T16:47:00Z",
                         "archivedAt": "2023-06-28T16:47:00Z"
                       }
-                    ]
+                    ],
+                    "status": "ACTIVE"
                   }
                 },
                 "examples": {
@@ -10184,7 +10189,8 @@
                           "updatedAt": "2022-06-28T16:47:00Z",
                           "archivedAt": "2023-06-28T16:47:00Z"
                         }
-                      ]
+                      ],
+                      "status": "ACTIVE"
                     }
                   }
                 }
@@ -10313,7 +10319,8 @@
                         "updatedAt": "2022-06-28T16:47:00Z",
                         "archivedAt": "2023-06-28T16:47:00Z"
                       }
-                    ]
+                    ],
+                    "status": "ACTIVE"
                   }
                 },
                 "examples": {
@@ -10377,7 +10384,8 @@
                           "updatedAt": "2022-06-28T16:47:00Z",
                           "archivedAt": "2023-06-28T16:47:00Z"
                         }
-                      ]
+                      ],
+                      "status": "ACTIVE"
                     }
                   }
                 }
@@ -10483,7 +10491,8 @@
                   ],
                   "pushToIntegrations": [
                     "Xero"
-                  ]
+                  ],
+                  "status": "ACTIVE"
                 }
               },
               "examples": {
@@ -10539,7 +10548,8 @@
                     ],
                     "pushToIntegrations": [
                       "Xero"
-                    ]
+                    ],
+                    "status": "ACTIVE"
                   }
                 }
               }
@@ -10612,7 +10622,8 @@
                         "updatedAt": "2022-06-28T16:47:00Z",
                         "archivedAt": "2023-06-28T16:47:00Z"
                       }
-                    ]
+                    ],
+                    "status": "ACTIVE"
                   }
                 },
                 "examples": {
@@ -10676,7 +10687,8 @@
                           "updatedAt": "2022-06-28T16:47:00Z",
                           "archivedAt": "2023-06-28T16:47:00Z"
                         }
-                      ]
+                      ],
+                      "status": "ACTIVE"
                     }
                   }
                 }
@@ -38800,6 +38812,7 @@
           "integrationIds",
           "legalName",
           "organizations",
+          "status",
           "taxStatus"
         ],
         "type": "object",
@@ -38861,7 +38874,8 @@
               "updatedAt": "2022-06-28T16:47:00Z",
               "archivedAt": "2023-06-28T16:47:00Z"
             }
-          ]
+          ],
+          "status": "ACTIVE"
         },
         "properties": {
           "id": {
@@ -38965,6 +38979,10 @@
             "items": {
               "$ref": "#/components/schemas/Contact"
             }
+          },
+          "status": {
+            "description": "Customer status:\n- DRAFT means the customer has been extracted from a contract and has not yet been approved. It cannot be used while it is in DRAFT.\n- ACTIVE is the default state when a customer is created via API or dashboard.",
+            "$ref": "#/components/schemas/CustomerStatus"
           }
         }
       },
@@ -39517,6 +39535,14 @@
           "NONE"
         ]
       },
+      "CustomerStatus": {
+        "type": "string",
+        "example": "ACTIVE",
+        "enum": [
+          "DRAFT",
+          "ACTIVE"
+        ]
+      },
       "CreateOrUpdateCustomerRequest": {
         "required": [
           "address",
@@ -39575,7 +39601,8 @@
           ],
           "pushToIntegrations": [
             "Xero"
-          ]
+          ],
+          "status": "ACTIVE"
         },
         "properties": {
           "legalName": {
@@ -39669,6 +39696,10 @@
             "items": {
               "$ref": "#/components/schemas/CreateOrUpdateCustomerRequestIntegration"
             }
+          },
+          "status": {
+            "description": "Customer status:\n- DRAFT means the customer has been extracted from a contract and has not yet been approved. It cannot be used while it is in DRAFT.\n- ACTIVE is the default state when a customer is created via API or dashboard.",
+            "$ref": "#/components/schemas/CustomerStatus"
           }
         }
       },
