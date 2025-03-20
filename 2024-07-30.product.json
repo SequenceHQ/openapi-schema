@@ -30903,7 +30903,8 @@
         "enum": [
           "STRAIGHT_LINE",
           "USAGE",
-          "MILESTONE"
+          "MILESTONE",
+          "POINT_IN_TIME"
         ]
       },
       "PaginationMeta": {
