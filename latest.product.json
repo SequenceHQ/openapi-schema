@@ -41536,9 +41536,7 @@
           "eventProperties": {
             "type": "object",
             "description": "Event properties. These can be referenced by a usage metric.",
-            "additionalProperties": {
-              "type": "object"
-            }
+            "additionalProperties": {}
           }
         }
       },
@@ -41599,9 +41597,7 @@
           "eventProperties": {
             "type": "object",
             "description": "Event properties. These can be referenced by a usage metric.",
-            "additionalProperties": {
-              "type": "object"
-            }
+            "additionalProperties": {}
           }
         }
       },
@@ -41810,9 +41806,7 @@
           },
           "propertyFilters": {
             "type": "object",
-            "additionalProperties": {
-              "type": "object"
-            }
+            "additionalProperties": {}
           },
           "caseSensitive": {
             "type": "boolean",
