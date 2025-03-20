@@ -295,7 +295,8 @@
                         "usageCalculationPeriod": {
                           "frequency": "MONTHLY",
                           "interval": 1
-                        }
+                        },
+                        "status": "ACTIVE"
                       }
                     ],
                     "pagination": {
@@ -341,7 +342,8 @@
                               "value": "10"
                             }
                           ],
-                          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                          "status": "ACTIVE"
                         }
                       ],
                       "pagination": {
@@ -449,7 +451,8 @@
                   "usageCalculationPeriod": {
                     "frequency": "MONTHLY",
                     "interval": 1
-                  }
+                  },
+                  "status": "ACTIVE"
                 },
                 "oneOf": [
                   {
@@ -524,7 +527,8 @@
                     "usageCalculationPeriod": {
                       "frequency": "MONTHLY",
                       "interval": 1
-                    }
+                    },
+                    "status": "ACTIVE"
                   }
                 },
                 "VolumePriceRequest": {
@@ -568,7 +572,8 @@
                         "value": "10"
                       }
                     ],
-                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                    "status": "ACTIVE"
                   }
                 },
                 "SeatBasedPriceRequest": {
@@ -611,7 +616,8 @@
                         "value": "10"
                       }
                     ],
-                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                    "status": "ACTIVE"
                   }
                 },
                 "PackagePriceRequest": {
@@ -640,7 +646,8 @@
                         "value": "10"
                       }
                     ],
-                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                    "status": "ACTIVE"
                   }
                 },
                 "LinearPriceRequest": {
@@ -669,7 +676,8 @@
                         "value": "10"
                       }
                     ],
-                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                    "status": "ACTIVE"
                   }
                 },
                 "FixedPriceRequest": {
@@ -696,7 +704,8 @@
                         "value": "10"
                       }
                     ],
-                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                    "status": "ACTIVE"
                   }
                 },
                 "OneTimePriceRequest": {
@@ -723,7 +732,8 @@
                         "value": "10"
                       }
                     ],
-                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                    "status": "ACTIVE"
                   }
                 }
               }
@@ -787,7 +797,8 @@
                     "usageCalculationPeriod": {
                       "frequency": "MONTHLY",
                       "interval": 1
-                    }
+                    },
+                    "status": "ACTIVE"
                   },
                   "oneOf": [
                     {
@@ -866,7 +877,8 @@
                       "usageCalculationPeriod": {
                         "frequency": "MONTHLY",
                         "interval": 1
-                      }
+                      },
+                      "status": "ACTIVE"
                     }
                   },
                   "VolumePriceResponse": {
@@ -914,7 +926,8 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
                     }
                   },
                   "SeatBasedPriceResponse": {
@@ -961,7 +974,8 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
                     }
                   },
                   "PackagePriceResponse": {
@@ -994,7 +1008,8 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
                     }
                   },
                   "LinearPriceResponse": {
@@ -1027,7 +1042,8 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
                     }
                   },
                   "FixedPriceResponse": {
@@ -1058,7 +1074,8 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
                     }
                   },
                   "OneTimePriceResponse": {
@@ -1089,7 +1106,8 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
                     }
                   }
                 }
@@ -1209,7 +1227,8 @@
                     "usageCalculationPeriod": {
                       "frequency": "MONTHLY",
                       "interval": 1
-                    }
+                    },
+                    "status": "ACTIVE"
                   },
                   "oneOf": [
                     {
@@ -1288,7 +1307,8 @@
                       "usageCalculationPeriod": {
                         "frequency": "MONTHLY",
                         "interval": 1
-                      }
+                      },
+                      "status": "ACTIVE"
                     }
                   },
                   "VolumePriceResponse": {
@@ -1336,7 +1356,8 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
                     }
                   },
                   "SeatBasedPriceResponse": {
@@ -1383,7 +1404,8 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
                     }
                   },
                   "PackagePriceResponse": {
@@ -1416,7 +1438,8 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
                     }
                   },
                   "LinearPriceResponse": {
@@ -1449,7 +1472,8 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
                     }
                   },
                   "FixedPriceResponse": {
@@ -1480,7 +1504,8 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
                     }
                   },
                   "OneTimePriceResponse": {
@@ -1511,7 +1536,8 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
                     }
                   }
                 }
@@ -1577,14 +1603,16 @@
               "schema": {
                 "$ref": "#/components/schemas/UpdatePriceEndpointUpdatePriceRequestModel",
                 "example": {
-                  "name": "Demo Product"
+                  "name": "Demo Product",
+                  "status": "ACTIVE"
                 }
               },
               "examples": {
                 "UpdatePriceEndpointUpdatePriceRequestModel": {
                   "summary": "",
                   "value": {
-                    "name": "Demo Product"
+                    "name": "Demo Product",
+                    "status": "ACTIVE"
                   }
                 }
               }
@@ -1648,7 +1676,8 @@
                     "usageCalculationPeriod": {
                       "frequency": "MONTHLY",
                       "interval": 1
-                    }
+                    },
+                    "status": "ACTIVE"
                   },
                   "oneOf": [
                     {
@@ -1727,7 +1756,8 @@
                       "usageCalculationPeriod": {
                         "frequency": "MONTHLY",
                         "interval": 1
-                      }
+                      },
+                      "status": "ACTIVE"
                     }
                   },
                   "VolumePriceResponse": {
@@ -1775,7 +1805,8 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
                     }
                   },
                   "SeatBasedPriceResponse": {
@@ -1822,7 +1853,8 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
                     }
                   },
                   "PackagePriceResponse": {
@@ -1855,7 +1887,8 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
                     }
                   },
                   "LinearPriceResponse": {
@@ -1888,7 +1921,8 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
                     }
                   },
                   "FixedPriceResponse": {
@@ -1919,7 +1953,8 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
                     }
                   },
                   "OneTimePriceResponse": {
@@ -1950,7 +1985,8 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
                     }
                   }
                 }
@@ -2066,7 +2102,8 @@
                     "usageCalculationPeriod": {
                       "frequency": "MONTHLY",
                       "interval": 1
-                    }
+                    },
+                    "status": "ACTIVE"
                   },
                   "oneOf": [
                     {
@@ -2145,7 +2182,8 @@
                       "usageCalculationPeriod": {
                         "frequency": "MONTHLY",
                         "interval": 1
-                      }
+                      },
+                      "status": "ACTIVE"
                     }
                   },
                   "VolumePriceResponse": {
@@ -2193,7 +2231,8 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
                     }
                   },
                   "SeatBasedPriceResponse": {
@@ -2240,7 +2279,8 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
                     }
                   },
                   "PackagePriceResponse": {
@@ -2273,7 +2313,8 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
                     }
                   },
                   "LinearPriceResponse": {
@@ -2306,7 +2347,8 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
                     }
                   },
                   "FixedPriceResponse": {
@@ -2337,7 +2379,8 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
                     }
                   },
                   "OneTimePriceResponse": {
@@ -2368,7 +2411,8 @@
                           "value": "10"
                         }
                       ],
-                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
                     }
                   }
                 }
@@ -3905,7 +3949,8 @@
                                 "value": "10"
                               }
                             ],
-                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                            "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                            "status": "ACTIVE"
                           }
                         ],
                         "createdAt": "2022-06-28T16:47:00Z",
@@ -4036,7 +4081,8 @@
                                   "value": "10"
                                 }
                               ],
-                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                              "status": "ACTIVE"
                             }
                           ],
                           "createdAt": "2022-06-28T16:47:00Z",
@@ -4426,7 +4472,8 @@
                             "value": "10"
                           }
                         ],
-                        "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                        "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                        "status": "ACTIVE"
                       }
                     ],
                     "createdAt": "2022-06-28T16:47:00Z",
@@ -4548,7 +4595,8 @@
                               "value": "10"
                             }
                           ],
-                          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                          "status": "ACTIVE"
                         }
                       ],
                       "createdAt": "2022-06-28T16:47:00Z",
@@ -4735,7 +4783,8 @@
                             "value": "10"
                           }
                         ],
-                        "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                        "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                        "status": "ACTIVE"
                       }
                     ],
                     "createdAt": "2022-06-28T16:47:00Z",
@@ -4857,7 +4906,8 @@
                               "value": "10"
                             }
                           ],
-                          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                          "status": "ACTIVE"
                         }
                       ],
                       "createdAt": "2022-06-28T16:47:00Z",
@@ -5143,7 +5193,8 @@
                             "value": "10"
                           }
                         ],
-                        "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                        "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                        "status": "ACTIVE"
                       }
                     ],
                     "createdAt": "2022-06-28T16:47:00Z",
@@ -5265,7 +5316,8 @@
                               "value": "10"
                             }
                           ],
-                          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                          "status": "ACTIVE"
                         }
                       ],
                       "createdAt": "2022-06-28T16:47:00Z",
@@ -5443,7 +5495,8 @@
                             "value": "10"
                           }
                         ],
-                        "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                        "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                        "status": "ACTIVE"
                       }
                     ],
                     "createdAt": "2022-06-28T16:47:00Z",
@@ -5565,7 +5618,8 @@
                               "value": "10"
                             }
                           ],
-                          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                          "status": "ACTIVE"
                         }
                       ],
                       "createdAt": "2022-06-28T16:47:00Z",
@@ -5752,7 +5806,8 @@
                             "value": "10"
                           }
                         ],
-                        "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                        "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                        "status": "ACTIVE"
                       }
                     ],
                     "createdAt": "2022-06-28T16:47:00Z",
@@ -5874,7 +5929,8 @@
                               "value": "10"
                             }
                           ],
-                          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                          "status": "ACTIVE"
                         }
                       ],
                       "createdAt": "2022-06-28T16:47:00Z",
@@ -31157,6 +31213,14 @@
           "YEARLY"
         ]
       },
+      "PriceStatus": {
+        "type": "string",
+        "example": "ACTIVE",
+        "enum": [
+          "DRAFT",
+          "ACTIVE"
+        ]
+      },
       "GraduatedPriceRequest": {
         "required": [
           "billingFrequency",
@@ -31214,7 +31278,8 @@
           "usageCalculationPeriod": {
             "frequency": "MONTHLY",
             "interval": 1
-          }
+          },
+          "status": "ACTIVE"
         },
         "properties": {
           "productId": {
@@ -31275,6 +31340,10 @@
           },
           "usageCalculationPeriod": {
             "$ref": "#/components/schemas/UsageCalculationPeriod"
+          },
+          "status": {
+            "description": "Price status:\n- DRAFT means the price has been extracted from a contract and has not yet been approved. It cannot be used while it is in DRAFT.\n- ACTIVE is the default state when a price is created via API or dashboard.",
+            "$ref": "#/components/schemas/PriceStatus"
           }
         }
       },
@@ -31440,7 +31509,8 @@
               "value": "10"
             }
           ],
-          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+          "status": "ACTIVE"
         },
         "properties": {
           "productId": {
@@ -31498,6 +31568,10 @@
             "type": "string",
             "description": "The list price ID, if this price variant was created from a list price",
             "example": "b4d7e884-e007-4183-8355-4771865c5100"
+          },
+          "status": {
+            "description": "Price status:\n- DRAFT means the price has been extracted from a contract and has not yet been approved. It cannot be used while it is in DRAFT.\n- ACTIVE is the default state when a price is created via API or dashboard.",
+            "$ref": "#/components/schemas/PriceStatus"
           }
         }
       },
@@ -31671,7 +31745,8 @@
               "value": "10"
             }
           ],
-          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+          "status": "ACTIVE"
         },
         "properties": {
           "productId": {
@@ -31729,6 +31804,10 @@
             "type": "string",
             "description": "The list price ID, if this price variant was created from a list price",
             "example": "b4d7e884-e007-4183-8355-4771865c5100"
+          },
+          "status": {
+            "description": "Price status:\n- DRAFT means the price has been extracted from a contract and has not yet been approved. It cannot be used while it is in DRAFT.\n- ACTIVE is the default state when a price is created via API or dashboard.",
+            "$ref": "#/components/schemas/PriceStatus"
           }
         }
       },
@@ -31804,7 +31883,8 @@
               "value": "10"
             }
           ],
-          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+          "status": "ACTIVE"
         },
         "properties": {
           "productId": {
@@ -31862,6 +31942,10 @@
             "type": "string",
             "description": "The list price ID, if this price variant was created from a list price",
             "example": "b4d7e884-e007-4183-8355-4771865c5100"
+          },
+          "status": {
+            "description": "Price status:\n- DRAFT means the price has been extracted from a contract and has not yet been approved. It cannot be used while it is in DRAFT.\n- ACTIVE is the default state when a price is created via API or dashboard.",
+            "$ref": "#/components/schemas/PriceStatus"
           }
         }
       },
@@ -31937,7 +32021,8 @@
               "value": "10"
             }
           ],
-          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+          "status": "ACTIVE"
         },
         "properties": {
           "productId": {
@@ -31995,6 +32080,10 @@
             "type": "string",
             "description": "The list price ID, if this price variant was created from a list price",
             "example": "b4d7e884-e007-4183-8355-4771865c5100"
+          },
+          "status": {
+            "description": "Price status:\n- DRAFT means the price has been extracted from a contract and has not yet been approved. It cannot be used while it is in DRAFT.\n- ACTIVE is the default state when a price is created via API or dashboard.",
+            "$ref": "#/components/schemas/PriceStatus"
           }
         }
       },
@@ -32054,7 +32143,8 @@
               "value": "10"
             }
           ],
-          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+          "status": "ACTIVE"
         },
         "properties": {
           "productId": {
@@ -32112,6 +32202,10 @@
             "type": "string",
             "description": "The list price ID, if this price variant was created from a list price",
             "example": "b4d7e884-e007-4183-8355-4771865c5100"
+          },
+          "status": {
+            "description": "Price status:\n- DRAFT means the price has been extracted from a contract and has not yet been approved. It cannot be used while it is in DRAFT.\n- ACTIVE is the default state when a price is created via API or dashboard.",
+            "$ref": "#/components/schemas/PriceStatus"
           }
         }
       },
@@ -32171,7 +32265,8 @@
               "value": "10"
             }
           ],
-          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+          "status": "ACTIVE"
         },
         "properties": {
           "productId": {
@@ -32229,6 +32324,10 @@
             "type": "string",
             "description": "The list price ID, if this price variant was created from a list price",
             "example": "b4d7e884-e007-4183-8355-4771865c5100"
+          },
+          "status": {
+            "description": "Price status:\n- DRAFT means the price has been extracted from a contract and has not yet been approved. It cannot be used while it is in DRAFT.\n- ACTIVE is the default state when a price is created via API or dashboard.",
+            "$ref": "#/components/schemas/PriceStatus"
           }
         }
       },
@@ -32269,6 +32368,7 @@
           "integrationIds",
           "name",
           "productId",
+          "status",
           "structure"
         ],
         "type": "object",
@@ -32323,7 +32423,8 @@
           "usageCalculationPeriod": {
             "frequency": "MONTHLY",
             "interval": 1
-          }
+          },
+          "status": "ACTIVE"
         },
         "properties": {
           "id": {
@@ -32400,6 +32501,10 @@
           },
           "usageCalculationPeriod": {
             "$ref": "#/components/schemas/UsageCalculationPeriod"
+          },
+          "status": {
+            "description": "Price status:\n- DRAFT means the price has been extracted from a contract and has not yet been approved. It cannot be used while it is in DRAFT.\n- ACTIVE is the default state when a price is created via API or dashboard.",
+            "$ref": "#/components/schemas/PriceStatus"
           }
         }
       },
@@ -32414,6 +32519,7 @@
           "integrationIds",
           "name",
           "productId",
+          "status",
           "structure"
         ],
         "type": "object",
@@ -32461,7 +32567,8 @@
               "value": "10"
             }
           ],
-          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+          "status": "ACTIVE"
         },
         "properties": {
           "id": {
@@ -32535,6 +32642,10 @@
             "type": "string",
             "description": "The list price ID, if this price variant was created from a list price",
             "example": "b4d7e884-e007-4183-8355-4771865c5100"
+          },
+          "status": {
+            "description": "Price status:\n- DRAFT means the price has been extracted from a contract and has not yet been approved. It cannot be used while it is in DRAFT.\n- ACTIVE is the default state when a price is created via API or dashboard.",
+            "$ref": "#/components/schemas/PriceStatus"
           }
         }
       },
@@ -32549,6 +32660,7 @@
           "integrationIds",
           "name",
           "productId",
+          "status",
           "structure"
         ],
         "type": "object",
@@ -32595,7 +32707,8 @@
               "value": "10"
             }
           ],
-          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+          "status": "ACTIVE"
         },
         "properties": {
           "id": {
@@ -32669,6 +32782,10 @@
             "type": "string",
             "description": "The list price ID, if this price variant was created from a list price",
             "example": "b4d7e884-e007-4183-8355-4771865c5100"
+          },
+          "status": {
+            "description": "Price status:\n- DRAFT means the price has been extracted from a contract and has not yet been approved. It cannot be used while it is in DRAFT.\n- ACTIVE is the default state when a price is created via API or dashboard.",
+            "$ref": "#/components/schemas/PriceStatus"
           }
         }
       },
@@ -32683,6 +32800,7 @@
           "integrationIds",
           "name",
           "productId",
+          "status",
           "structure"
         ],
         "type": "object",
@@ -32715,7 +32833,8 @@
               "value": "10"
             }
           ],
-          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+          "status": "ACTIVE"
         },
         "properties": {
           "id": {
@@ -32789,6 +32908,10 @@
             "type": "string",
             "description": "The list price ID, if this price variant was created from a list price",
             "example": "b4d7e884-e007-4183-8355-4771865c5100"
+          },
+          "status": {
+            "description": "Price status:\n- DRAFT means the price has been extracted from a contract and has not yet been approved. It cannot be used while it is in DRAFT.\n- ACTIVE is the default state when a price is created via API or dashboard.",
+            "$ref": "#/components/schemas/PriceStatus"
           }
         }
       },
@@ -32803,6 +32926,7 @@
           "integrationIds",
           "name",
           "productId",
+          "status",
           "structure"
         ],
         "type": "object",
@@ -32835,7 +32959,8 @@
               "value": "10"
             }
           ],
-          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+          "status": "ACTIVE"
         },
         "properties": {
           "id": {
@@ -32909,6 +33034,10 @@
             "type": "string",
             "description": "The list price ID, if this price variant was created from a list price",
             "example": "b4d7e884-e007-4183-8355-4771865c5100"
+          },
+          "status": {
+            "description": "Price status:\n- DRAFT means the price has been extracted from a contract and has not yet been approved. It cannot be used while it is in DRAFT.\n- ACTIVE is the default state when a price is created via API or dashboard.",
+            "$ref": "#/components/schemas/PriceStatus"
           }
         }
       },
@@ -32923,6 +33052,7 @@
           "integrationIds",
           "name",
           "productId",
+          "status",
           "structure"
         ],
         "type": "object",
@@ -32953,7 +33083,8 @@
               "value": "10"
             }
           ],
-          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+          "status": "ACTIVE"
         },
         "properties": {
           "id": {
@@ -33027,6 +33158,10 @@
             "type": "string",
             "description": "The list price ID, if this price variant was created from a list price",
             "example": "b4d7e884-e007-4183-8355-4771865c5100"
+          },
+          "status": {
+            "description": "Price status:\n- DRAFT means the price has been extracted from a contract and has not yet been approved. It cannot be used while it is in DRAFT.\n- ACTIVE is the default state when a price is created via API or dashboard.",
+            "$ref": "#/components/schemas/PriceStatus"
           }
         }
       },
@@ -33041,6 +33176,7 @@
           "integrationIds",
           "name",
           "productId",
+          "status",
           "structure"
         ],
         "type": "object",
@@ -33071,7 +33207,8 @@
               "value": "10"
             }
           ],
-          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+          "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+          "status": "ACTIVE"
         },
         "properties": {
           "id": {
@@ -33145,6 +33282,10 @@
             "type": "string",
             "description": "The list price ID, if this price variant was created from a list price",
             "example": "b4d7e884-e007-4183-8355-4771865c5100"
+          },
+          "status": {
+            "description": "Price status:\n- DRAFT means the price has been extracted from a contract and has not yet been approved. It cannot be used while it is in DRAFT.\n- ACTIVE is the default state when a price is created via API or dashboard.",
+            "$ref": "#/components/schemas/PriceStatus"
           }
         }
       },
@@ -33154,13 +33295,18 @@
         ],
         "type": "object",
         "example": {
-          "name": "Demo Product"
+          "name": "Demo Product",
+          "status": "ACTIVE"
         },
         "properties": {
           "name": {
             "type": "string",
             "description": "The customer-facing name of this Price",
             "example": "Demo Product"
+          },
+          "status": {
+            "description": "Price status:\n- DRAFT means the price has been extracted from a contract and has not yet been approved. It cannot be used while it is in DRAFT.\n- ACTIVE is the default state when a price is created via API or dashboard.",
+            "$ref": "#/components/schemas/PriceStatus"
           }
         }
       },
@@ -33222,7 +33368,8 @@
               "usageCalculationPeriod": {
                 "frequency": "MONTHLY",
                 "interval": 1
-              }
+              },
+              "status": "ACTIVE"
             }
           ],
           "pagination": {
@@ -33286,7 +33433,8 @@
                 "usageCalculationPeriod": {
                   "frequency": "MONTHLY",
                   "interval": 1
-                }
+                },
+                "status": "ACTIVE"
               }
             ],
             "items": {
@@ -33309,6 +33457,7 @@
           "integrationIds",
           "name",
           "productId",
+          "status",
           "structure"
         ],
         "type": "object",
@@ -33362,7 +33511,8 @@
           "usageCalculationPeriod": {
             "frequency": "MONTHLY",
             "interval": 1
-          }
+          },
+          "status": "ACTIVE"
         },
         "properties": {
           "id": {
@@ -33461,6 +33611,10 @@
           },
           "usageCalculationPeriod": {
             "$ref": "#/components/schemas/UsageCalculationPeriod"
+          },
+          "status": {
+            "description": "Price status:\n- DRAFT means the price has been extracted from a contract and has not yet been approved. It cannot be used while it is in DRAFT.\n- ACTIVE is the default state when a price is created via API or dashboard.",
+            "$ref": "#/components/schemas/PriceStatus"
           }
         }
       },
@@ -35168,7 +35322,8 @@
                   "value": "10"
                 }
               ],
-              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+              "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+              "status": "ACTIVE"
             }
           ],
           "createdAt": "2022-06-28T16:47:00Z",
@@ -35343,7 +35498,8 @@
                     "value": "10"
                   }
                 ],
-                "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                "status": "ACTIVE"
               }
             ],
             "items": {
@@ -35987,7 +36143,8 @@
                       "value": "10"
                     }
                   ],
-                  "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                  "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                  "status": "ACTIVE"
                 }
               ],
               "createdAt": "2022-06-28T16:47:00Z",
@@ -36117,7 +36274,8 @@
                         "value": "10"
                       }
                     ],
-                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100"
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                    "status": "ACTIVE"
                   }
                 ],
                 "createdAt": "2022-06-28T16:47:00Z",
