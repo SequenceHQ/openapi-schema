@@ -17909,7 +17909,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GetInvoiceEndpointProductGetInvoiceResponseModel",
+                  "$ref": "#/components/schemas/InvoiceResponse",
                   "example": {
                     "id": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
                     "sequenceAccountId": "68233908-402a-43b4-8952-1c2ab0ef0b25",
@@ -18071,7 +18071,7 @@
                   }
                 },
                 "examples": {
-                  "GetInvoiceEndpointProductGetInvoiceResponseModel": {
+                  "InvoiceResponse": {
                     "summary": "",
                     "value": {
                       "id": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
@@ -18243,6 +18243,10 @@
           },
           "401": {
             "description": "Unauthorized",
+            "content": {}
+          },
+          "404": {
+            "description": "Not Found",
             "content": {}
           },
           "500": {
@@ -46359,393 +46363,6 @@
           }
         }
       },
-      "GetInvoiceEndpointProductGetInvoiceResponseModel": {
-        "required": [
-          "accountingDate",
-          "createdAt",
-          "creditNoteIds",
-          "currency",
-          "customerBillingAddress",
-          "customerEmails",
-          "customerId",
-          "customerLegalCompanyName",
-          "customerShippingAddress",
-          "grossTotal",
-          "id",
-          "isCustomerArchived",
-          "linkedServices",
-          "metadata",
-          "netTotal",
-          "paymentStatus",
-          "renderSettings",
-          "sequenceAccountId",
-          "status",
-          "totalTax"
-        ],
-        "type": "object",
-        "example": {
-          "id": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
-          "sequenceAccountId": "68233908-402a-43b4-8952-1c2ab0ef0b25",
-          "billingScheduleId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
-          "billingRunId": "9c5fdd27-1f7a-41e7-ab67-14f65272a853",
-          "status": "DRAFT",
-          "currency": "GBP",
-          "invoiceNumber": "INV00001",
-          "issueDate": "2022-09-15",
-          "dueDate": "2022-09-30",
-          "purchaseOrderNumber": "PO123",
-          "reference": "ref",
-          "customerEmails": [
-            "customer.user.a@example.com",
-            "customer.user.b@example.com"
-          ],
-          "customerLegalCompanyName": "Facebook",
-          "customerBillingAddress": {
-            "line1": "Flat 1",
-            "line2": "15 Yemen Road",
-            "town": "Yemen",
-            "state": "CA",
-            "postcode": "YE1 2YE",
-            "country": "YE"
-          },
-          "customerShippingAddress": {
-            "line1": "742 Evergreen Terrace",
-            "town": "Springfield",
-            "state": "CA",
-            "postcode": "12345",
-            "country": "US"
-          },
-          "memo": "Thanks",
-          "paymentOptions": [
-            "BANK_TRANSFER"
-          ],
-          "billingPeriod": {
-            "start": "2022-10-01",
-            "endInclusive": "2022-10-30"
-          },
-          "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
-          "totalTax": "2.50",
-          "netTotal": "51.20",
-          "grossTotal": "101.23",
-          "metadata": [
-            {
-              "key": "example-label",
-              "value": "label-value"
-            }
-          ],
-          "customerTaxId": "TAX123",
-          "paymentStatus": "UNPAID",
-          "createdAt": "2022-10-30T00:00:00Z",
-          "creditNoteIds": [
-            "af60cab3-812d-4250-a051-0fb7133a00c7"
-          ],
-          "linkedServices": [
-            {
-              "externalId": "123",
-              "externalService": "Xero",
-              "syncTime": "2022-06-28T16:47:00Z"
-            }
-          ],
-          "merchantDetails": {
-            "address": {
-              "line1": "The White House",
-              "line2": "1600 Pennsylvania Avenue",
-              "town": "Washington, D.C.",
-              "state": "CA",
-              "postcode": "20500",
-              "country": "US"
-            },
-            "phoneNumber": "0800001066",
-            "email": "finance@example.com",
-            "taxId": "TAX60",
-            "iban": "GB33BUKB20201555555555",
-            "ukAccountDetails": {
-              "sortCode": "000000",
-              "accountNumber": "12345678"
-            },
-            "usAchDetails": {
-              "accountNumber": "12345678",
-              "accountName": "John Doe",
-              "bankName": "Chase",
-              "bankRoutingNumber": "123456789"
-            },
-            "usWireDetails": {
-              "accountNumber": "12345678",
-              "accountName": "John Doe",
-              "bankName": "Chase",
-              "bankRoutingNumber": "123456789",
-              "swiftCode": "CHASUS33",
-              "bankAddress": {
-                "line1": "JP Morgan Chase",
-                "town": "New York City",
-                "state": "NY",
-                "postcode": "10017",
-                "country": "US"
-              }
-            },
-            "caBankAccountDetails": {
-              "transitNumber": "123",
-              "institutionNumber": "12345",
-              "accountNumber": "1234567"
-            },
-            "canadianInternationalDestination": {
-              "legalName": "John Doe",
-              "accountNumber": "12345678",
-              "transitNumber": "12345",
-              "bankName": "Chase",
-              "bankAddress": {
-                "line1": "JP Morgan Chase",
-                "town": "New York City",
-                "state": "NY",
-                "postcode": "10017",
-                "country": "US"
-              },
-              "institutionNumber": "123",
-              "swiftCode": "CHASUS33",
-              "intermediaryBank": {
-                "bankName": "Chase",
-                "bankAddress": {
-                  "line1": "JP Morgan Chase",
-                  "town": "New York City",
-                  "state": "NY",
-                  "postcode": "10017",
-                  "country": "US"
-                },
-                "swiftCode": "CHASUS33",
-                "routingNumber": "123456789"
-              }
-            },
-            "australianDestination": {
-              "legalName": "John Doe",
-              "accountNumber": "12345678",
-              "swiftCode": "CHASUS33",
-              "bsb": "123456"
-            },
-            "logoUrl": "logo",
-            "legalCompanyName": "The Merchant",
-            "primaryColour": "#000000",
-            "customFields": [
-              {
-                "key": "example-label",
-                "value": "label-value"
-              }
-            ],
-            "includeBeneficiaryAddressInPaymentDetails": false
-          },
-          "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
-          "dunningStatus": "SCHEDULED",
-          "accountingDate": "2022-09-30",
-          "calculatedAt": "2022-09-30T00:00:00Z",
-          "customerTaxStatus": "TAXED",
-          "renderSettings": {
-            "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
-          },
-          "isCustomerArchived": false
-        },
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "Invoice ID",
-            "example": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9"
-          },
-          "sequenceAccountId": {
-            "type": "string",
-            "description": "Sequence Account ID",
-            "example": "68233908-402a-43b4-8952-1c2ab0ef0b25"
-          },
-          "billingScheduleId": {
-            "type": "string",
-            "description": "Billing Schedule ID",
-            "example": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
-          },
-          "billingRunId": {
-            "type": "string",
-            "description": "Billing Run ID",
-            "example": "9c5fdd27-1f7a-41e7-ab67-14f65272a853"
-          },
-          "status": {
-            "description": "Invoice status",
-            "$ref": "#/components/schemas/InvoiceStatus"
-          },
-          "currency": {
-            "description": "Invoice currency",
-            "$ref": "#/components/schemas/Currency"
-          },
-          "invoiceNumber": {
-            "type": "string",
-            "description": "Invoice number",
-            "example": "INV00001"
-          },
-          "issueDate": {
-            "type": "string",
-            "description": "Issue date",
-            "format": "date",
-            "example": "2022-09-15"
-          },
-          "dueDate": {
-            "type": "string",
-            "description": "Due date",
-            "format": "date",
-            "example": "2022-09-30"
-          },
-          "purchaseOrderNumber": {
-            "type": "string",
-            "description": "Purchase order number",
-            "example": "PO123"
-          },
-          "reference": {
-            "type": "string",
-            "description": "Reference",
-            "example": "ref"
-          },
-          "customerEmails": {
-            "type": "array",
-            "description": "Customer email addresses, used for sending the Invoice if provided",
-            "example": [
-              "customer.user.a@example.com",
-              "customer.user.b@example.com"
-            ],
-            "items": {
-              "type": "string"
-            }
-          },
-          "customerLegalCompanyName": {
-            "type": "string",
-            "description": "Customer's legal company name",
-            "example": "Facebook"
-          },
-          "customerBillingAddress": {
-            "$ref": "#/components/schemas/Address1"
-          },
-          "customerShippingAddress": {
-            "$ref": "#/components/schemas/Address1"
-          },
-          "memo": {
-            "type": "string",
-            "description": "Invoice memo",
-            "example": "Thanks"
-          },
-          "paymentOptions": {
-            "type": "array",
-            "description": "Invoice payment options",
-            "example": [
-              "BANK_TRANSFER"
-            ],
-            "items": {
-              "$ref": "#/components/schemas/InvoicePaymentOption"
-            }
-          },
-          "billingPeriod": {
-            "$ref": "#/components/schemas/InclusiveDateRange"
-          },
-          "customerId": {
-            "type": "string",
-            "description": "The ID of the Customer this invoice is linked to",
-            "example": "61b083e0-1faa-47ca-9aeb-6205da8f6c47"
-          },
-          "totalTax": {
-            "type": "string",
-            "description": "Total tax, in decimal format of the Invoice's currency",
-            "example": "2.50"
-          },
-          "netTotal": {
-            "type": "string",
-            "description": "Net total, in decimal format of the Invoice's currency",
-            "example": "51.20"
-          },
-          "grossTotal": {
-            "type": "string",
-            "description": "Gross total, in decimal format of the Invoice's currency",
-            "example": "101.23"
-          },
-          "metadata": {
-            "type": "array",
-            "description": "Mapping of key-value pairs to attach to the Invoice. These are not interpreted by Sequence; they are present for your use alone.",
-            "example": [
-              {
-                "key": "example-label",
-                "value": "label-value"
-              }
-            ],
-            "items": {
-              "$ref": "#/components/schemas/KeyValuePair"
-            }
-          },
-          "customerTaxId": {
-            "type": "string",
-            "description": "Customer's tax ID",
-            "example": "TAX123"
-          },
-          "paymentStatus": {
-            "description": "Invoice payment status",
-            "$ref": "#/components/schemas/InvoicePaymentStatus"
-          },
-          "createdAt": {
-            "type": "string",
-            "description": "Creation time",
-            "example": "2022-10-30T00:00:00Z"
-          },
-          "creditNoteIds": {
-            "type": "array",
-            "description": "IDs of linked credit notes (if any)",
-            "example": [
-              "af60cab3-812d-4250-a051-0fb7133a00c7"
-            ],
-            "items": {
-              "type": "string"
-            }
-          },
-          "linkedServices": {
-            "type": "array",
-            "description": "External services which are linked to this invoice",
-            "example": [
-              {
-                "externalId": "123",
-                "externalService": "Xero",
-                "syncTime": "2022-06-28T16:47:00Z"
-              }
-            ],
-            "items": {
-              "$ref": "#/components/schemas/LinkInfo"
-            }
-          },
-          "merchantDetails": {
-            "$ref": "#/components/schemas/InvoiceMerchantDetails"
-          },
-          "creditBalances": {
-            "type": "string",
-            "description": "Credit balances",
-            "example": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)"
-          },
-          "dunningStatus": {
-            "description": "Dunning status",
-            "$ref": "#/components/schemas/InvoiceDunningStatus"
-          },
-          "accountingDate": {
-            "type": "string",
-            "description": "Accounting date",
-            "format": "date",
-            "example": "2022-09-30"
-          },
-          "calculatedAt": {
-            "type": "string",
-            "description": "Time this invoice was last calculated (applicable for invoices generated by billing engine only)",
-            "example": "2022-09-30T00:00:00Z"
-          },
-          "customerTaxStatus": {
-            "description": "Customer tax status",
-            "$ref": "#/components/schemas/TaxStatus"
-          },
-          "renderSettings": {
-            "$ref": "#/components/schemas/InvoiceRenderSettingsInlineAggregate"
-          },
-          "isCustomerArchived": {
-            "type": "boolean",
-            "description": "isCustomerArchived",
-            "example": false
-          }
-        }
-      },
       "ListInvoiceEndpointListInvoicePaginatedResponseModel": {
         "required": [
           "items",
@@ -49515,6 +49132,393 @@
             "type": "string",
             "description": "Gross total",
             "example": "101.23"
+          }
+        }
+      },
+      "InvoiceResponse": {
+        "required": [
+          "accountingDate",
+          "createdAt",
+          "creditNoteIds",
+          "currency",
+          "customerBillingAddress",
+          "customerEmails",
+          "customerId",
+          "customerLegalCompanyName",
+          "customerShippingAddress",
+          "grossTotal",
+          "id",
+          "isCustomerArchived",
+          "linkedServices",
+          "metadata",
+          "netTotal",
+          "paymentStatus",
+          "renderSettings",
+          "sequenceAccountId",
+          "status",
+          "totalTax"
+        ],
+        "type": "object",
+        "example": {
+          "id": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
+          "sequenceAccountId": "68233908-402a-43b4-8952-1c2ab0ef0b25",
+          "billingScheduleId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+          "billingRunId": "9c5fdd27-1f7a-41e7-ab67-14f65272a853",
+          "status": "DRAFT",
+          "currency": "GBP",
+          "invoiceNumber": "INV00001",
+          "issueDate": "2022-09-15",
+          "dueDate": "2022-09-30",
+          "purchaseOrderNumber": "PO123",
+          "reference": "ref",
+          "customerEmails": [
+            "customer.user.a@example.com",
+            "customer.user.b@example.com"
+          ],
+          "customerLegalCompanyName": "Facebook",
+          "customerBillingAddress": {
+            "line1": "Flat 1",
+            "line2": "15 Yemen Road",
+            "town": "Yemen",
+            "state": "CA",
+            "postcode": "YE1 2YE",
+            "country": "YE"
+          },
+          "customerShippingAddress": {
+            "line1": "742 Evergreen Terrace",
+            "town": "Springfield",
+            "state": "CA",
+            "postcode": "12345",
+            "country": "US"
+          },
+          "memo": "Thanks",
+          "paymentOptions": [
+            "BANK_TRANSFER"
+          ],
+          "billingPeriod": {
+            "start": "2022-10-01",
+            "endInclusive": "2022-10-30"
+          },
+          "customerId": "61b083e0-1faa-47ca-9aeb-6205da8f6c47",
+          "totalTax": "2.50",
+          "netTotal": "51.20",
+          "grossTotal": "101.23",
+          "metadata": [
+            {
+              "key": "example-label",
+              "value": "label-value"
+            }
+          ],
+          "customerTaxId": "TAX123",
+          "paymentStatus": "UNPAID",
+          "createdAt": "2022-10-30T00:00:00Z",
+          "creditNoteIds": [
+            "af60cab3-812d-4250-a051-0fb7133a00c7"
+          ],
+          "linkedServices": [
+            {
+              "externalId": "123",
+              "externalService": "Xero",
+              "syncTime": "2022-06-28T16:47:00Z"
+            }
+          ],
+          "merchantDetails": {
+            "address": {
+              "line1": "The White House",
+              "line2": "1600 Pennsylvania Avenue",
+              "town": "Washington, D.C.",
+              "state": "CA",
+              "postcode": "20500",
+              "country": "US"
+            },
+            "phoneNumber": "0800001066",
+            "email": "finance@example.com",
+            "taxId": "TAX60",
+            "iban": "GB33BUKB20201555555555",
+            "ukAccountDetails": {
+              "sortCode": "000000",
+              "accountNumber": "12345678"
+            },
+            "usAchDetails": {
+              "accountNumber": "12345678",
+              "accountName": "John Doe",
+              "bankName": "Chase",
+              "bankRoutingNumber": "123456789"
+            },
+            "usWireDetails": {
+              "accountNumber": "12345678",
+              "accountName": "John Doe",
+              "bankName": "Chase",
+              "bankRoutingNumber": "123456789",
+              "swiftCode": "CHASUS33",
+              "bankAddress": {
+                "line1": "JP Morgan Chase",
+                "town": "New York City",
+                "state": "NY",
+                "postcode": "10017",
+                "country": "US"
+              }
+            },
+            "caBankAccountDetails": {
+              "transitNumber": "123",
+              "institutionNumber": "12345",
+              "accountNumber": "1234567"
+            },
+            "canadianInternationalDestination": {
+              "legalName": "John Doe",
+              "accountNumber": "12345678",
+              "transitNumber": "12345",
+              "bankName": "Chase",
+              "bankAddress": {
+                "line1": "JP Morgan Chase",
+                "town": "New York City",
+                "state": "NY",
+                "postcode": "10017",
+                "country": "US"
+              },
+              "institutionNumber": "123",
+              "swiftCode": "CHASUS33",
+              "intermediaryBank": {
+                "bankName": "Chase",
+                "bankAddress": {
+                  "line1": "JP Morgan Chase",
+                  "town": "New York City",
+                  "state": "NY",
+                  "postcode": "10017",
+                  "country": "US"
+                },
+                "swiftCode": "CHASUS33",
+                "routingNumber": "123456789"
+              }
+            },
+            "australianDestination": {
+              "legalName": "John Doe",
+              "accountNumber": "12345678",
+              "swiftCode": "CHASUS33",
+              "bsb": "123456"
+            },
+            "logoUrl": "logo",
+            "legalCompanyName": "The Merchant",
+            "primaryColour": "#000000",
+            "customFields": [
+              {
+                "key": "example-label",
+                "value": "label-value"
+              }
+            ],
+            "includeBeneficiaryAddressInPaymentDetails": false
+          },
+          "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
+          "dunningStatus": "SCHEDULED",
+          "accountingDate": "2022-09-30",
+          "calculatedAt": "2022-09-30T00:00:00Z",
+          "customerTaxStatus": "TAXED",
+          "renderSettings": {
+            "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
+          },
+          "isCustomerArchived": false
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Invoice ID",
+            "example": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9"
+          },
+          "sequenceAccountId": {
+            "type": "string",
+            "description": "Sequence Account ID",
+            "example": "68233908-402a-43b4-8952-1c2ab0ef0b25"
+          },
+          "billingScheduleId": {
+            "type": "string",
+            "description": "Billing Schedule ID",
+            "example": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95"
+          },
+          "billingRunId": {
+            "type": "string",
+            "description": "Billing Run ID",
+            "example": "9c5fdd27-1f7a-41e7-ab67-14f65272a853"
+          },
+          "status": {
+            "description": "Invoice status",
+            "$ref": "#/components/schemas/InvoiceStatus"
+          },
+          "currency": {
+            "description": "Invoice currency",
+            "$ref": "#/components/schemas/Currency"
+          },
+          "invoiceNumber": {
+            "type": "string",
+            "description": "Invoice number",
+            "example": "INV00001"
+          },
+          "issueDate": {
+            "type": "string",
+            "description": "Issue date",
+            "format": "date",
+            "example": "2022-09-15"
+          },
+          "dueDate": {
+            "type": "string",
+            "description": "Due date",
+            "format": "date",
+            "example": "2022-09-30"
+          },
+          "purchaseOrderNumber": {
+            "type": "string",
+            "description": "Purchase order number",
+            "example": "PO123"
+          },
+          "reference": {
+            "type": "string",
+            "description": "Reference",
+            "example": "ref"
+          },
+          "customerEmails": {
+            "type": "array",
+            "description": "Customer email addresses, used for sending the Invoice if provided",
+            "example": [
+              "customer.user.a@example.com",
+              "customer.user.b@example.com"
+            ],
+            "items": {
+              "type": "string"
+            }
+          },
+          "customerLegalCompanyName": {
+            "type": "string",
+            "description": "Customer's legal company name",
+            "example": "Facebook"
+          },
+          "customerBillingAddress": {
+            "$ref": "#/components/schemas/Address1"
+          },
+          "customerShippingAddress": {
+            "$ref": "#/components/schemas/Address1"
+          },
+          "memo": {
+            "type": "string",
+            "description": "Invoice memo",
+            "example": "Thanks"
+          },
+          "paymentOptions": {
+            "type": "array",
+            "description": "Invoice payment options",
+            "example": [
+              "BANK_TRANSFER"
+            ],
+            "items": {
+              "$ref": "#/components/schemas/InvoicePaymentOption"
+            }
+          },
+          "billingPeriod": {
+            "$ref": "#/components/schemas/InclusiveDateRange"
+          },
+          "customerId": {
+            "type": "string",
+            "description": "The ID of the Customer this invoice is linked to",
+            "example": "61b083e0-1faa-47ca-9aeb-6205da8f6c47"
+          },
+          "totalTax": {
+            "type": "string",
+            "description": "Total tax, in decimal format of the Invoice's currency",
+            "example": "2.50"
+          },
+          "netTotal": {
+            "type": "string",
+            "description": "Net total, in decimal format of the Invoice's currency",
+            "example": "51.20"
+          },
+          "grossTotal": {
+            "type": "string",
+            "description": "Gross total, in decimal format of the Invoice's currency",
+            "example": "101.23"
+          },
+          "metadata": {
+            "type": "array",
+            "description": "Mapping of key-value pairs to attach to the Invoice. These are not interpreted by Sequence; they are present for your use alone.",
+            "example": [
+              {
+                "key": "example-label",
+                "value": "label-value"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/KeyValuePair"
+            }
+          },
+          "customerTaxId": {
+            "type": "string",
+            "description": "Customer's tax ID",
+            "example": "TAX123"
+          },
+          "paymentStatus": {
+            "description": "Invoice payment status",
+            "$ref": "#/components/schemas/InvoicePaymentStatus"
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "Creation time",
+            "example": "2022-10-30T00:00:00Z"
+          },
+          "creditNoteIds": {
+            "type": "array",
+            "description": "IDs of linked credit notes (if any)",
+            "example": [
+              "af60cab3-812d-4250-a051-0fb7133a00c7"
+            ],
+            "items": {
+              "type": "string"
+            }
+          },
+          "linkedServices": {
+            "type": "array",
+            "description": "External services which are linked to this invoice",
+            "example": [
+              {
+                "externalId": "123",
+                "externalService": "Xero",
+                "syncTime": "2022-06-28T16:47:00Z"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/LinkInfo"
+            }
+          },
+          "merchantDetails": {
+            "$ref": "#/components/schemas/InvoiceMerchantDetails"
+          },
+          "creditBalances": {
+            "type": "string",
+            "description": "Credit balances",
+            "example": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)"
+          },
+          "dunningStatus": {
+            "description": "Dunning status",
+            "$ref": "#/components/schemas/InvoiceDunningStatus"
+          },
+          "accountingDate": {
+            "type": "string",
+            "description": "Accounting date",
+            "format": "date",
+            "example": "2022-09-30"
+          },
+          "calculatedAt": {
+            "type": "string",
+            "description": "Time this invoice was last calculated (applicable for invoices generated by billing engine only)",
+            "example": "2022-09-30T00:00:00Z"
+          },
+          "customerTaxStatus": {
+            "description": "Customer tax status",
+            "$ref": "#/components/schemas/TaxStatus"
+          },
+          "renderSettings": {
+            "$ref": "#/components/schemas/InvoiceRenderSettingsInlineAggregate"
+          },
+          "isCustomerArchived": {
+            "type": "boolean",
+            "description": "isCustomerArchived",
+            "example": false
           }
         }
       },
