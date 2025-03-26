@@ -16094,8 +16094,8 @@
         "tags": [
           "Invoice Settings"
         ],
-        "summary": "Create a new Invoice Render Settings",
-        "description": "Create a new Invoice Render Settings",
+        "summary": "Get or create Invoice Render Settings",
+        "description": "Returns invoice render settings or creates new settings if they do not exist",
         "operationId": "getInvoicesRenderSettings",
         "parameters": [
           {
