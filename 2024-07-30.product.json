@@ -16092,7 +16092,7 @@
     "/invoices/render-settings": {
       "get": {
         "tags": [
-          "Settings"
+          "Invoice Settings"
         ],
         "summary": "Create a new Invoice Render Settings",
         "description": "Create a new Invoice Render Settings",
@@ -16164,7 +16164,7 @@
     "/invoices/render-settings/{id}": {
       "put": {
         "tags": [
-          "Settings"
+          "Invoice Settings"
         ],
         "summary": "Update an Invoice Render Settings",
         "description": "Update an Invoice Render Settings",
