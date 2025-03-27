@@ -13189,7 +13189,7 @@
             "description": "Filter events by customer alias",
             "required": false,
             "schema": {
-              "type": "string"
+              "type": "array"
             }
           },
           {
