@@ -2436,6 +2436,457 @@
       "servers": [],
       "parameters": []
     },
+    "/prices/{id}/usage-metric": {
+      "put": {
+        "tags": [
+          "Prices"
+        ],
+        "summary": "Update a Price Usage Metric",
+        "description": "Update a Price Usage Metric",
+        "operationId": "putPricesByIdUsageMetric",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Unique Price ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-07-30"
+              ]
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePriceUsageMetricEndpointUpdatePriceUsageMetricRequestModel",
+                "example": {
+                  "usageMetricId": "0f4d4c94-8632-4a94-986c-c87143e03f42"
+                }
+              },
+              "examples": {
+                "UpdatePriceUsageMetricEndpointUpdatePriceUsageMetricRequestModel": {
+                  "summary": "",
+                  "value": {
+                    "usageMetricId": "0f4d4c94-8632-4a94-986c-c87143e03f42"
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "example": {
+                    "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                    "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
+                    "name": "Demo Product",
+                    "currency": "GBP",
+                    "structure": {
+                      "tiers": [
+                        {
+                          "upperBound": "200",
+                          "price": "1.00",
+                          "fee": "50.00",
+                          "isPricePercentage": false
+                        },
+                        {
+                          "upperBound": "400",
+                          "price": "0.75",
+                          "fee": "25.00",
+                          "isPricePercentage": false
+                        },
+                        {
+                          "price": "0.50",
+                          "fee": "0.00",
+                          "isPricePercentage": false
+                        }
+                      ],
+                      "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                      "usageCalculationMode": "BILLING_PERIOD",
+                      "pricingType": "GRADUATED"
+                    },
+                    "billingFrequency": "MONTHLY",
+                    "billingType": "IN_ARREARS",
+                    "createdAt": "2022-06-28T16:47:00Z",
+                    "updatedAt": "2022-06-28T16:47:00Z",
+                    "integrationIds": [
+                      {
+                        "service": "Xero",
+                        "id": "123",
+                        "isPending": false
+                      }
+                    ],
+                    "customMetricParameters": [
+                      {
+                        "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                        "value": "10"
+                      }
+                    ],
+                    "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                    "usageCalculationPeriod": {
+                      "frequency": "MONTHLY",
+                      "interval": 1
+                    },
+                    "status": "ACTIVE"
+                  },
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/OneTimePriceResponse"
+                    },
+                    {
+                      "$ref": "#/components/schemas/FixedPriceResponse"
+                    },
+                    {
+                      "$ref": "#/components/schemas/LinearPriceResponse"
+                    },
+                    {
+                      "$ref": "#/components/schemas/PackagePriceResponse"
+                    },
+                    {
+                      "$ref": "#/components/schemas/SeatBasedPriceResponse"
+                    },
+                    {
+                      "$ref": "#/components/schemas/GraduatedPriceResponse"
+                    },
+                    {
+                      "$ref": "#/components/schemas/VolumePriceResponse"
+                    }
+                  ]
+                },
+                "examples": {
+                  "GraduatedPriceResponse": {
+                    "summary": "",
+                    "value": {
+                      "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
+                      "name": "Demo Product",
+                      "currency": "GBP",
+                      "structure": {
+                        "tiers": [
+                          {
+                            "upperBound": "200",
+                            "price": "1.00",
+                            "fee": "50.00",
+                            "isPricePercentage": false
+                          },
+                          {
+                            "upperBound": "400",
+                            "price": "0.75",
+                            "fee": "25.00",
+                            "isPricePercentage": false
+                          },
+                          {
+                            "price": "0.50",
+                            "fee": "0.00",
+                            "isPricePercentage": false
+                          }
+                        ],
+                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                        "usageCalculationMode": "BILLING_PERIOD",
+                        "pricingType": "GRADUATED"
+                      },
+                      "billingFrequency": "MONTHLY",
+                      "billingType": "IN_ARREARS",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "updatedAt": "2022-06-28T16:47:00Z",
+                      "integrationIds": [
+                        {
+                          "service": "Xero",
+                          "id": "123",
+                          "isPending": false
+                        }
+                      ],
+                      "customMetricParameters": [
+                        {
+                          "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                          "value": "10"
+                        }
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "usageCalculationPeriod": {
+                        "frequency": "MONTHLY",
+                        "interval": 1
+                      },
+                      "status": "ACTIVE"
+                    }
+                  },
+                  "VolumePriceResponse": {
+                    "summary": "",
+                    "value": {
+                      "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
+                      "name": "Demo Product",
+                      "currency": "GBP",
+                      "structure": {
+                        "tiers": [
+                          {
+                            "upperBound": "100",
+                            "price": "1.00",
+                            "fee": "50.00",
+                            "isPricePercentage": true,
+                            "maxPrice": "10",
+                            "minPrice": "5"
+                          },
+                          {
+                            "price": "0.75",
+                            "fee": "25.00",
+                            "isPricePercentage": true,
+                            "maxPrice": "10",
+                            "minPrice": "5"
+                          }
+                        ],
+                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                        "pricingType": "VOLUME"
+                      },
+                      "billingFrequency": "MONTHLY",
+                      "billingType": "IN_ARREARS",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "updatedAt": "2022-06-28T16:47:00Z",
+                      "integrationIds": [
+                        {
+                          "service": "Xero",
+                          "id": "123",
+                          "isPending": false
+                        }
+                      ],
+                      "customMetricParameters": [
+                        {
+                          "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                          "value": "10"
+                        }
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
+                    }
+                  },
+                  "SeatBasedPriceResponse": {
+                    "summary": "",
+                    "value": {
+                      "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
+                      "name": "Demo Product",
+                      "currency": "GBP",
+                      "structure": {
+                        "seatMetricId": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                        "pricePerSeat": "0.25",
+                        "prorationStrategy": "USE_MAXIMUM",
+                        "contractedMinimumSeats": 10,
+                        "overagesBillingFrequency": "YEARLY",
+                        "tiers": [
+                          {
+                            "upperBound": "100",
+                            "price": "1.00",
+                            "fee": "50.00"
+                          },
+                          {
+                            "price": "0.75",
+                            "fee": "25.00"
+                          }
+                        ],
+                        "prorateFlatFees": false,
+                        "pricingType": "SEAT_BASED"
+                      },
+                      "billingFrequency": "MONTHLY",
+                      "billingType": "IN_ARREARS",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "updatedAt": "2022-06-28T16:47:00Z",
+                      "integrationIds": [
+                        {
+                          "service": "Xero",
+                          "id": "123",
+                          "isPending": false
+                        }
+                      ],
+                      "customMetricParameters": [
+                        {
+                          "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                          "value": "10"
+                        }
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
+                    }
+                  },
+                  "PackagePriceResponse": {
+                    "summary": "",
+                    "value": {
+                      "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
+                      "name": "Demo Product",
+                      "currency": "GBP",
+                      "structure": {
+                        "packageSize": "50",
+                        "pricePerPackage": "2.00",
+                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                        "pricingType": "PACKAGE"
+                      },
+                      "billingFrequency": "MONTHLY",
+                      "billingType": "IN_ARREARS",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "updatedAt": "2022-06-28T16:47:00Z",
+                      "integrationIds": [
+                        {
+                          "service": "Xero",
+                          "id": "123",
+                          "isPending": false
+                        }
+                      ],
+                      "customMetricParameters": [
+                        {
+                          "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                          "value": "10"
+                        }
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
+                    }
+                  },
+                  "LinearPriceResponse": {
+                    "summary": "",
+                    "value": {
+                      "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
+                      "name": "Demo Product",
+                      "currency": "GBP",
+                      "structure": {
+                        "pricePerUnit": "0.25",
+                        "usageMetricId": "04c62961-04ba-48e6-b985-758bb7d3e712",
+                        "isPricePercentage": false,
+                        "pricingType": "LINEAR"
+                      },
+                      "billingFrequency": "MONTHLY",
+                      "billingType": "IN_ARREARS",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "updatedAt": "2022-06-28T16:47:00Z",
+                      "integrationIds": [
+                        {
+                          "service": "Xero",
+                          "id": "123",
+                          "isPending": false
+                        }
+                      ],
+                      "customMetricParameters": [
+                        {
+                          "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                          "value": "10"
+                        }
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
+                    }
+                  },
+                  "FixedPriceResponse": {
+                    "summary": "",
+                    "value": {
+                      "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
+                      "name": "Demo Product",
+                      "currency": "GBP",
+                      "structure": {
+                        "price": "20.00",
+                        "pricingType": "FIXED"
+                      },
+                      "billingFrequency": "MONTHLY",
+                      "billingType": "IN_ARREARS",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "updatedAt": "2022-06-28T16:47:00Z",
+                      "integrationIds": [
+                        {
+                          "service": "Xero",
+                          "id": "123",
+                          "isPending": false
+                        }
+                      ],
+                      "customMetricParameters": [
+                        {
+                          "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                          "value": "10"
+                        }
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
+                    }
+                  },
+                  "OneTimePriceResponse": {
+                    "summary": "",
+                    "value": {
+                      "id": "bc61d4b8-e9d6-4f4a-9bcf-f5dae874c730",
+                      "productId": "d07037d5-3e31-4c3a-a360-e58555e2bf44",
+                      "name": "Demo Product",
+                      "currency": "GBP",
+                      "structure": {
+                        "price": "150.00",
+                        "pricingType": "ONE_TIME"
+                      },
+                      "billingFrequency": "MONTHLY",
+                      "billingType": "IN_ARREARS",
+                      "createdAt": "2022-06-28T16:47:00Z",
+                      "updatedAt": "2022-06-28T16:47:00Z",
+                      "integrationIds": [
+                        {
+                          "service": "Xero",
+                          "id": "123",
+                          "isPending": false
+                        }
+                      ],
+                      "customMetricParameters": [
+                        {
+                          "parameterId": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                          "value": "10"
+                        }
+                      ],
+                      "listPriceId": "b4d7e884-e007-4183-8355-4771865c5100",
+                      "status": "ACTIVE"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/discounts": {
       "get": {
         "tags": [
@@ -34017,6 +34468,22 @@
           "status": {
             "description": "Price status:\n- DRAFT means the price has been extracted from a contract and has not yet been approved. It cannot be used while it is in DRAFT.\n- ACTIVE is the default state when a price is created via API or dashboard.",
             "$ref": "#/components/schemas/PriceStatus"
+          }
+        }
+      },
+      "UpdatePriceUsageMetricEndpointUpdatePriceUsageMetricRequestModel": {
+        "required": [
+          "usageMetricId"
+        ],
+        "type": "object",
+        "example": {
+          "usageMetricId": "0f4d4c94-8632-4a94-986c-c87143e03f42"
+        },
+        "properties": {
+          "usageMetricId": {
+            "type": "string",
+            "description": "The usage metric ID of this Price",
+            "example": "0f4d4c94-8632-4a94-986c-c87143e03f42"
           }
         }
       },
