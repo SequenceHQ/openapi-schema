@@ -41849,7 +41849,9 @@
         "example": "INTEGER",
         "enum": [
           "INTEGER",
-          "POSITIVE_INTEGER"
+          "POSITIVE_INTEGER",
+          "NUMBER",
+          "POSITIVE_NUMBER"
         ]
       },
       "GetUsageMetricEndpointProductGetUsageMetricResponseModel": {
