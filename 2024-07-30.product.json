@@ -23569,7 +23569,7 @@
         "tags": [
           "Invoices"
         ],
-        "summary": "Reconcile invoices with Xero",
+        "summary": "Reconcile invoices with external integration",
         "description": "Reconcile invoice properties between our system and integration",
         "operationId": "postInvoicesReconcileWithIntegration",
         "parameters": [
