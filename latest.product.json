@@ -17572,7 +17572,10 @@
                   ],
                   "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
                   "billingRunId": "53ff21c8-4872-46c4-83bf-517d54876945",
-                  "accountingDate": "2022-09-30"
+                  "accountingDate": "2022-09-30",
+                  "attachmentAssetIds": [
+                    "99874519-25ce-46ff-8823-093115aa7222"
+                  ]
                 }
               },
               "examples": {
@@ -17621,7 +17624,10 @@
                     ],
                     "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
                     "billingRunId": "53ff21c8-4872-46c4-83bf-517d54876945",
-                    "accountingDate": "2022-09-30"
+                    "accountingDate": "2022-09-30",
+                    "attachmentAssetIds": [
+                      "99874519-25ce-46ff-8823-093115aa7222"
+                    ]
                   }
                 }
               }
@@ -18850,7 +18856,19 @@
                     "renderSettings": {
                       "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                     },
-                    "isCustomerArchived": false
+                    "isCustomerArchived": false,
+                    "attachmentAssets": [
+                      {
+                        "id": "4b36a61e-425e-4640-aa26-6224c577b613",
+                        "createdBy": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                        "type": "DOCUMENT",
+                        "format": "PDF",
+                        "fileName": "my-document.pdf",
+                        "fileSizeBytes": 12345,
+                        "url": "https://assets.sequencehq.com/6cedbb5e-4f77-4217-b8d4-020e7e4d33c9/documents/4B36A61E-425E-4640-AA26-6224C577B613.pdf",
+                        "createdAt": "2022-06-28T16:47:00Z"
+                      }
+                    ]
                   }
                 },
                 "examples": {
@@ -19013,7 +19031,19 @@
                       "renderSettings": {
                         "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                       },
-                      "isCustomerArchived": false
+                      "isCustomerArchived": false,
+                      "attachmentAssets": [
+                        {
+                          "id": "4b36a61e-425e-4640-aa26-6224c577b613",
+                          "createdBy": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                          "type": "DOCUMENT",
+                          "format": "PDF",
+                          "fileName": "my-document.pdf",
+                          "fileSizeBytes": 12345,
+                          "url": "https://assets.sequencehq.com/6cedbb5e-4f77-4217-b8d4-020e7e4d33c9/documents/4B36A61E-425E-4640-AA26-6224C577B613.pdf",
+                          "createdAt": "2022-06-28T16:47:00Z"
+                        }
+                      ]
                     }
                   }
                 }
@@ -19122,7 +19152,10 @@
                   ],
                   "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
                   "billingRunId": "53ff21c8-4872-46c4-83bf-517d54876945",
-                  "accountingDate": "2022-09-30"
+                  "accountingDate": "2022-09-30",
+                  "attachmentAssetIds": [
+                    "99874519-25ce-46ff-8823-093115aa7222"
+                  ]
                 }
               },
               "examples": {
@@ -19168,7 +19201,10 @@
                     ],
                     "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
                     "billingRunId": "53ff21c8-4872-46c4-83bf-517d54876945",
-                    "accountingDate": "2022-09-30"
+                    "accountingDate": "2022-09-30",
+                    "attachmentAssetIds": [
+                      "99874519-25ce-46ff-8823-093115aa7222"
+                    ]
                   }
                 }
               }
@@ -19995,7 +20031,10 @@
                   ],
                   "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
                   "billingRunId": "53ff21c8-4872-46c4-83bf-517d54876945",
-                  "accountingDate": "2022-09-30"
+                  "accountingDate": "2022-09-30",
+                  "attachmentAssetIds": [
+                    "99874519-25ce-46ff-8823-093115aa7222"
+                  ]
                 }
               },
               "examples": {
@@ -20041,7 +20080,10 @@
                     ],
                     "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
                     "billingRunId": "53ff21c8-4872-46c4-83bf-517d54876945",
-                    "accountingDate": "2022-09-30"
+                    "accountingDate": "2022-09-30",
+                    "attachmentAssetIds": [
+                      "99874519-25ce-46ff-8823-093115aa7222"
+                    ]
                   }
                 }
               }
@@ -44953,7 +44995,10 @@
           ],
           "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
           "billingRunId": "53ff21c8-4872-46c4-83bf-517d54876945",
-          "accountingDate": "2022-09-30"
+          "accountingDate": "2022-09-30",
+          "attachmentAssetIds": [
+            "99874519-25ce-46ff-8823-093115aa7222"
+          ]
         },
         "properties": {
           "billingScheduleId": {
@@ -45054,6 +45099,16 @@
             "description": "Accounting date",
             "format": "date",
             "example": "2022-09-30"
+          },
+          "attachmentAssetIds": {
+            "type": "array",
+            "description": "Attachment asset IDs",
+            "example": [
+              "99874519-25ce-46ff-8823-093115aa7222"
+            ],
+            "items": {
+              "type": "string"
+            }
           }
         }
       },
@@ -47684,7 +47739,10 @@
           ],
           "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
           "billingRunId": "53ff21c8-4872-46c4-83bf-517d54876945",
-          "accountingDate": "2022-09-30"
+          "accountingDate": "2022-09-30",
+          "attachmentAssetIds": [
+            "99874519-25ce-46ff-8823-093115aa7222"
+          ]
         },
         "properties": {
           "dueDate": {
@@ -47771,6 +47829,16 @@
             "description": "Accounting date",
             "format": "date",
             "example": "2022-09-30"
+          },
+          "attachmentAssetIds": {
+            "type": "array",
+            "description": "Attachment asset IDs",
+            "example": [
+              "99874519-25ce-46ff-8823-093115aa7222"
+            ],
+            "items": {
+              "type": "string"
+            }
           }
         }
       },
@@ -47859,7 +47927,10 @@
           ],
           "creditBalances": "Verification 2 credit balance: 7/7 (expiring on 4 May 2023)",
           "billingRunId": "53ff21c8-4872-46c4-83bf-517d54876945",
-          "accountingDate": "2022-09-30"
+          "accountingDate": "2022-09-30",
+          "attachmentAssetIds": [
+            "99874519-25ce-46ff-8823-093115aa7222"
+          ]
         },
         "properties": {
           "dueDate": {
@@ -47946,6 +48017,16 @@
             "description": "Accounting date",
             "format": "date",
             "example": "2022-09-30"
+          },
+          "attachmentAssetIds": {
+            "type": "array",
+            "description": "Attachment asset IDs",
+            "example": [
+              "99874519-25ce-46ff-8823-093115aa7222"
+            ],
+            "items": {
+              "type": "string"
+            }
           }
         }
       },
@@ -50199,7 +50280,19 @@
           "renderSettings": {
             "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
           },
-          "isCustomerArchived": false
+          "isCustomerArchived": false,
+          "attachmentAssets": [
+            {
+              "id": "4b36a61e-425e-4640-aa26-6224c577b613",
+              "createdBy": "94703530-1293-479b-bd37-ccad42fd9c8b",
+              "type": "DOCUMENT",
+              "format": "PDF",
+              "fileName": "my-document.pdf",
+              "fileSizeBytes": 12345,
+              "url": "https://assets.sequencehq.com/6cedbb5e-4f77-4217-b8d4-020e7e4d33c9/documents/4B36A61E-425E-4640-AA26-6224C577B613.pdf",
+              "createdAt": "2022-06-28T16:47:00Z"
+            }
+          ]
         },
         "properties": {
           "id": {
@@ -50402,8 +50495,108 @@
             "type": "boolean",
             "description": "isCustomerArchived",
             "example": false
+          },
+          "attachmentAssets": {
+            "type": "array",
+            "description": "Assets attached to this invoice",
+            "example": [
+              {
+                "id": "4b36a61e-425e-4640-aa26-6224c577b613",
+                "createdBy": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                "type": "DOCUMENT",
+                "format": "PDF",
+                "fileName": "my-document.pdf",
+                "fileSizeBytes": 12345,
+                "url": "https://assets.sequencehq.com/6cedbb5e-4f77-4217-b8d4-020e7e4d33c9/documents/4B36A61E-425E-4640-AA26-6224C577B613.pdf",
+                "createdAt": "2022-06-28T16:47:00Z"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/AssetResponse1"
+            }
           }
         }
+      },
+      "AssetResponse1": {
+        "required": [
+          "createdAt",
+          "createdBy",
+          "fileName",
+          "fileSizeBytes",
+          "format",
+          "id",
+          "type",
+          "url"
+        ],
+        "type": "object",
+        "example": {
+          "id": "4b36a61e-425e-4640-aa26-6224c577b613",
+          "createdBy": "94703530-1293-479b-bd37-ccad42fd9c8b",
+          "type": "DOCUMENT",
+          "format": "PDF",
+          "fileName": "my-document.pdf",
+          "fileSizeBytes": 12345,
+          "url": "https://assets.sequencehq.com/6cedbb5e-4f77-4217-b8d4-020e7e4d33c9/documents/4B36A61E-425E-4640-AA26-6224C577B613.pdf",
+          "createdAt": "2022-06-28T16:47:00Z"
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique ID",
+            "example": "4b36a61e-425e-4640-aa26-6224c577b613"
+          },
+          "createdBy": {
+            "type": "string",
+            "description": "The Sequence user who created this asset",
+            "example": "94703530-1293-479b-bd37-ccad42fd9c8b"
+          },
+          "type": {
+            "description": "Either image or document",
+            "$ref": "#/components/schemas/AssetType1"
+          },
+          "format": {
+            "description": "Identifies the intended data format. Allowed formats are: jpg, jpeg, png, and pdf",
+            "$ref": "#/components/schemas/AssetFormat1"
+          },
+          "fileName": {
+            "type": "string",
+            "description": "Filename of the uploaded file",
+            "example": "my-document.pdf"
+          },
+          "fileSizeBytes": {
+            "type": "integer",
+            "description": "Size of the uploaded file in bytes",
+            "format": "int32",
+            "example": 12345
+          },
+          "url": {
+            "type": "string",
+            "description": "URL to download the asset",
+            "example": "https://assets.sequencehq.com/6cedbb5e-4f77-4217-b8d4-020e7e4d33c9/documents/4B36A61E-425E-4640-AA26-6224C577B613.pdf"
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "Creation timestamp. Formatted as an ISO 8601 timestamp.",
+            "example": "2022-06-28T16:47:00Z"
+          }
+        }
+      },
+      "AssetType1": {
+        "type": "string",
+        "example": "DOCUMENT",
+        "enum": [
+          "IMAGE",
+          "DOCUMENT"
+        ]
+      },
+      "AssetFormat1": {
+        "type": "string",
+        "example": "PDF",
+        "enum": [
+          "JPEG",
+          "PNG",
+          "PDF"
+        ]
       },
       "CreateNotificationPolicyRequest": {
         "required": [
