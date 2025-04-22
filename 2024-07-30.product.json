@@ -19254,11 +19254,12 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Invoice",
+                  "$ref": "#/components/schemas/InvoiceResponse",
                   "example": {
                     "id": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
                     "sequenceAccountId": "68233908-402a-43b4-8952-1c2ab0ef0b25",
                     "billingScheduleId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+                    "billingRunId": "9c5fdd27-1f7a-41e7-ab67-14f65272a853",
                     "status": "DRAFT",
                     "currency": "GBP",
                     "invoiceNumber": "INV00001",
@@ -19307,6 +19308,7 @@
                     "customerTaxId": "TAX123",
                     "paymentStatus": "UNPAID",
                     "createdAt": "2022-10-30T00:00:00Z",
+                    "updatedAt": "2022-10-30T00:00:00Z",
                     "creditNoteIds": [
                       "af60cab3-812d-4250-a051-0fb7133a00c7"
                     ],
@@ -19413,16 +19415,28 @@
                       "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                     },
                     "isCustomerArchived": false,
-                    "updatedAt": "2022-09-30T00:00:00Z"
+                    "attachmentAssets": [
+                      {
+                        "id": "4b36a61e-425e-4640-aa26-6224c577b613",
+                        "createdBy": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                        "type": "DOCUMENT",
+                        "format": "PDF",
+                        "fileName": "my-document.pdf",
+                        "fileSizeBytes": 12345,
+                        "url": "https://assets.sequencehq.com/6cedbb5e-4f77-4217-b8d4-020e7e4d33c9/documents/4B36A61E-425E-4640-AA26-6224C577B613.pdf",
+                        "createdAt": "2022-06-28T16:47:00Z"
+                      }
+                    ]
                   }
                 },
                 "examples": {
-                  "Invoice": {
+                  "InvoiceResponse": {
                     "summary": "",
                     "value": {
                       "id": "6cedbb5e-4f77-4217-b8d4-020e7e4d33c9",
                       "sequenceAccountId": "68233908-402a-43b4-8952-1c2ab0ef0b25",
                       "billingScheduleId": "fe2fcd0b-4c53-45c7-b2ae-b6c1a7d21e95",
+                      "billingRunId": "9c5fdd27-1f7a-41e7-ab67-14f65272a853",
                       "status": "DRAFT",
                       "currency": "GBP",
                       "invoiceNumber": "INV00001",
@@ -19471,6 +19485,7 @@
                       "customerTaxId": "TAX123",
                       "paymentStatus": "UNPAID",
                       "createdAt": "2022-10-30T00:00:00Z",
+                      "updatedAt": "2022-10-30T00:00:00Z",
                       "creditNoteIds": [
                         "af60cab3-812d-4250-a051-0fb7133a00c7"
                       ],
@@ -19577,7 +19592,18 @@
                         "paymentLinkDisplay": "HIDE_PAYMENT_LINK"
                       },
                       "isCustomerArchived": false,
-                      "updatedAt": "2022-09-30T00:00:00Z"
+                      "attachmentAssets": [
+                        {
+                          "id": "4b36a61e-425e-4640-aa26-6224c577b613",
+                          "createdBy": "94703530-1293-479b-bd37-ccad42fd9c8b",
+                          "type": "DOCUMENT",
+                          "format": "PDF",
+                          "fileName": "my-document.pdf",
+                          "fileSizeBytes": 12345,
+                          "url": "https://assets.sequencehq.com/6cedbb5e-4f77-4217-b8d4-020e7e4d33c9/documents/4B36A61E-425E-4640-AA26-6224C577B613.pdf",
+                          "createdAt": "2022-06-28T16:47:00Z"
+                        }
+                      ]
                     }
                   }
                 }
