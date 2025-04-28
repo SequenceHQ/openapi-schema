@@ -35519,7 +35519,8 @@
           "Stripe",
           "Xero",
           "Avalara",
-          "Anrok"
+          "Anrok",
+          "Attio"
         ]
       },
       "PriceParameter": {
