@@ -1655,6 +1655,68 @@
       "servers": [],
       "parameters": []
     },
+    "/quotes/{id}/download": {
+      "get": {
+        "tags": [
+          "Quotes"
+        ],
+        "summary": "Download quote PDF",
+        "description": "Download the PDF for the latest published variant of a quote",
+        "operationId": "getQuotesByIdDownload",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Quote Id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-07-30"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {}
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/usage-metrics": {
       "get": {
         "tags": [
