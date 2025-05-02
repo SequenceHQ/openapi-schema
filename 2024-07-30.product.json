@@ -42848,7 +42848,8 @@
         "example": "IMAGE",
         "enum": [
           "IMAGE",
-          "DOCUMENT"
+          "DOCUMENT",
+          "BINARY"
         ]
       },
       "AssetFormat": {
@@ -42857,7 +42858,19 @@
         "enum": [
           "JPEG",
           "PNG",
-          "PDF"
+          "PDF",
+          "CSV",
+          "TXT",
+          "RTF",
+          "MD",
+          "XLS",
+          "XLSX",
+          "XLSM",
+          "DOC",
+          "DOCX",
+          "ZIP",
+          "ODT",
+          "ODS"
         ]
       },
       "UpdateBillingScheduleRequest": {
@@ -45828,7 +45841,8 @@
         "example": "DOCUMENT",
         "enum": [
           "IMAGE",
-          "DOCUMENT"
+          "DOCUMENT",
+          "BINARY"
         ]
       },
       "AssetFormat1": {
@@ -45837,7 +45851,19 @@
         "enum": [
           "JPEG",
           "PNG",
-          "PDF"
+          "PDF",
+          "CSV",
+          "TXT",
+          "RTF",
+          "MD",
+          "XLS",
+          "XLSX",
+          "XLSM",
+          "DOC",
+          "DOCX",
+          "ZIP",
+          "ODT",
+          "ODS"
         ]
       },
       "Stable20240101CreateOrUpdateLineItem": {
