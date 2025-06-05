@@ -15541,7 +15541,7 @@
           "Prices"
         ],
         "summary": "Update a Price Usage Metric",
-        "description": "Update a Price Usage Metric",
+        "description": "Update a Price's Usage Metric ID or Seat Type ID. Is useful for providing support with changing a metric for an active schedule.",
         "operationId": "putPricesByIdUsageMetric",
         "parameters": [
           {
@@ -43611,9 +43611,6 @@
         }
       },
       "UpdatePriceUsageMetricEndpointUpdatePriceUsageMetricRequestModel": {
-        "required": [
-          "usageMetricId"
-        ],
         "type": "object",
         "example": {
           "usageMetricId": "0f4d4c94-8632-4a94-986c-c87143e03f42"
@@ -43621,7 +43618,7 @@
         "properties": {
           "usageMetricId": {
             "type": "string",
-            "description": "The usage metric ID of this Price",
+            "description": "The new usage metric ID of this Price (only for usage-based prices)",
             "example": "0f4d4c94-8632-4a94-986c-c87143e03f42"
           }
         }
