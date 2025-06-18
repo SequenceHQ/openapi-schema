@@ -4060,7 +4060,8 @@
                 "example": {
                   "title": "Users",
                   "description": "Charges for users",
-                  "taxCategoryId": "28227c88-6dba-455f-9b30-b9c76957e610"
+                  "taxCategoryId": "28227c88-6dba-455f-9b30-b9c76957e610",
+                  "index": 10
                 }
               },
               "examples": {
@@ -4069,7 +4070,8 @@
                   "value": {
                     "title": "Users",
                     "description": "Charges for users",
-                    "taxCategoryId": "28227c88-6dba-455f-9b30-b9c76957e610"
+                    "taxCategoryId": "28227c88-6dba-455f-9b30-b9c76957e610",
+                    "index": 10
                   }
                 }
               }
@@ -35239,7 +35241,8 @@
         "example": {
           "title": "Users",
           "description": "Charges for users",
-          "taxCategoryId": "28227c88-6dba-455f-9b30-b9c76957e610"
+          "taxCategoryId": "28227c88-6dba-455f-9b30-b9c76957e610",
+          "index": 10
         },
         "properties": {
           "title": {
@@ -35256,6 +35259,11 @@
             "type": "string",
             "description": "The tax category for all line items in this line item group",
             "example": "28227c88-6dba-455f-9b30-b9c76957e610"
+          },
+          "index": {
+            "type": "integer",
+            "description": "Index (for maintaining order)",
+            "example": 10
           }
         }
       },
