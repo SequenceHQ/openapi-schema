@@ -28238,71 +28238,6 @@
       "servers": [],
       "parameters": []
     },
-    "/sequence-accounts/invite": {
-      "post": {
-        "tags": [
-          "Invites"
-        ],
-        "summary": "Invite a user to Sequence",
-        "description": "Invite a user to your Sequence account",
-        "operationId": "postSequenceAccountsInvite",
-        "parameters": [
-          {
-            "name": "Sequence-Version",
-            "in": "header",
-            "description": "Use this header to select an API version",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "enum": [
-                "2024-07-30"
-              ]
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CreateStytchInviteRequest",
-                "example": {
-                  "email": "user@test.com"
-                }
-              },
-              "examples": {
-                "CreateStytchInviteRequest": {
-                  "summary": "",
-                  "value": {
-                    "email": "user@test.com"
-                  }
-                }
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "201": {
-            "description": "Created",
-            "content": {}
-          },
-          "400": {
-            "description": "Bad Request",
-            "content": {}
-          },
-          "401": {
-            "description": "Unauthorized",
-            "content": {}
-          },
-          "500": {
-            "description": "Internal Server Error",
-            "content": {}
-          }
-        }
-      },
-      "servers": [],
-      "parameters": []
-    },
     "/notifications/policies": {
       "get": {
         "tags": [
@@ -49754,21 +49689,6 @@
           },
           "pagination": {
             "$ref": "#/components/schemas/PaginationResponse"
-          }
-        }
-      },
-      "CreateStytchInviteRequest": {
-        "required": [
-          "email"
-        ],
-        "type": "object",
-        "example": {
-          "email": "user@test.com"
-        },
-        "properties": {
-          "email": {
-            "type": "string",
-            "example": "user@test.com"
           }
         }
       },
