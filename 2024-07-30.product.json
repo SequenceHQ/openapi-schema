@@ -2331,7 +2331,8 @@
                   "accountingDate": "2022-09-30",
                   "attachmentAssetIds": [
                     "99874519-25ce-46ff-8823-093115aa7222"
-                  ]
+                  ],
+                  "currency": "GBP"
                 }
               },
               "examples": {
@@ -2380,7 +2381,8 @@
                     "accountingDate": "2022-09-30",
                     "attachmentAssetIds": [
                       "99874519-25ce-46ff-8823-093115aa7222"
-                    ]
+                    ],
+                    "currency": "GBP"
                   }
                 }
               }
@@ -35247,7 +35249,8 @@
           "accountingDate": "2022-09-30",
           "attachmentAssetIds": [
             "99874519-25ce-46ff-8823-093115aa7222"
-          ]
+          ],
+          "currency": "GBP"
         },
         "properties": {
           "dueDate": {
@@ -35344,6 +35347,10 @@
             "items": {
               "type": "string"
             }
+          },
+          "currency": {
+            "description": "Invoice currency. Can only be updated while invoice status is DRAFT.",
+            "$ref": "#/components/schemas/Currency"
           }
         }
       },
