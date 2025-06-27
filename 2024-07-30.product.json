@@ -1746,7 +1746,13 @@
                 "example": {
                   "title": "Users",
                   "description": "Charges for users",
-                  "taxCategoryId": "28227c88-6dba-455f-9b30-b9c76957e610"
+                  "taxCategoryId": "28227c88-6dba-455f-9b30-b9c76957e610",
+                  "revenueRecognitionMethod": "STRAIGHT_LINE",
+                  "revenueClassification": "EARNED",
+                  "servicePeriod": {
+                    "start": "2022-10-20",
+                    "endInclusive": "2022-10-24"
+                  }
                 }
               },
               "examples": {
@@ -1755,7 +1761,13 @@
                   "value": {
                     "title": "Users",
                     "description": "Charges for users",
-                    "taxCategoryId": "28227c88-6dba-455f-9b30-b9c76957e610"
+                    "taxCategoryId": "28227c88-6dba-455f-9b30-b9c76957e610",
+                    "revenueRecognitionMethod": "STRAIGHT_LINE",
+                    "revenueClassification": "EARNED",
+                    "servicePeriod": {
+                      "start": "2022-10-20",
+                      "endInclusive": "2022-10-24"
+                    }
                   }
                 }
               }
@@ -4063,6 +4075,12 @@
                   "title": "Users",
                   "description": "Charges for users",
                   "taxCategoryId": "28227c88-6dba-455f-9b30-b9c76957e610",
+                  "revenueRecognitionMethod": "STRAIGHT_LINE",
+                  "revenueClassification": "EARNED",
+                  "servicePeriod": {
+                    "start": "2022-10-20",
+                    "endInclusive": "2022-10-24"
+                  },
                   "index": 10
                 }
               },
@@ -4073,6 +4091,12 @@
                     "title": "Users",
                     "description": "Charges for users",
                     "taxCategoryId": "28227c88-6dba-455f-9b30-b9c76957e610",
+                    "revenueRecognitionMethod": "STRAIGHT_LINE",
+                    "revenueClassification": "EARNED",
+                    "servicePeriod": {
+                      "start": "2022-10-20",
+                      "endInclusive": "2022-10-24"
+                    },
                     "index": 10
                   }
                 }
@@ -33784,7 +33808,13 @@
         "example": {
           "title": "Users",
           "description": "Charges for users",
-          "taxCategoryId": "28227c88-6dba-455f-9b30-b9c76957e610"
+          "taxCategoryId": "28227c88-6dba-455f-9b30-b9c76957e610",
+          "revenueRecognitionMethod": "STRAIGHT_LINE",
+          "revenueClassification": "EARNED",
+          "servicePeriod": {
+            "start": "2022-10-20",
+            "endInclusive": "2022-10-24"
+          }
         },
         "properties": {
           "title": {
@@ -33801,6 +33831,17 @@
             "type": "string",
             "description": "The tax category for all line items in this line item group",
             "example": "28227c88-6dba-455f-9b30-b9c76957e610"
+          },
+          "revenueRecognitionMethod": {
+            "description": "The revenue recognition method for all line items in this line item group",
+            "$ref": "#/components/schemas/RevenueRecognitionMethod"
+          },
+          "revenueClassification": {
+            "description": "The revenue classification for all line items in this line item group",
+            "$ref": "#/components/schemas/RevenueClassification"
+          },
+          "servicePeriod": {
+            "$ref": "#/components/schemas/InclusiveDateRange"
           }
         }
       },
@@ -35179,6 +35220,12 @@
           "title": "Users",
           "description": "Charges for users",
           "taxCategoryId": "28227c88-6dba-455f-9b30-b9c76957e610",
+          "revenueRecognitionMethod": "STRAIGHT_LINE",
+          "revenueClassification": "EARNED",
+          "servicePeriod": {
+            "start": "2022-10-20",
+            "endInclusive": "2022-10-24"
+          },
           "index": 10
         },
         "properties": {
@@ -35196,6 +35243,17 @@
             "type": "string",
             "description": "The tax category for all line items in this line item group",
             "example": "28227c88-6dba-455f-9b30-b9c76957e610"
+          },
+          "revenueRecognitionMethod": {
+            "description": "The revenue recognition method for all line items in this line item group",
+            "$ref": "#/components/schemas/RevenueRecognitionMethod"
+          },
+          "revenueClassification": {
+            "description": "The revenue classification for all line items in this line item group",
+            "$ref": "#/components/schemas/RevenueClassification"
+          },
+          "servicePeriod": {
+            "$ref": "#/components/schemas/InclusiveDateRange"
           },
           "index": {
             "type": "integer",
