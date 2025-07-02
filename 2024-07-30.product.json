@@ -358,6 +358,15 @@
             }
           },
           {
+            "name": "search",
+            "in": "query",
+            "description": "Search invoices by invoice number (partial, case-insensitive match)",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
             "name": "Sequence-Version",
             "in": "header",
             "description": "Use this header to select an API version",
