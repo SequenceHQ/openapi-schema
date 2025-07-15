@@ -18359,6 +18359,15 @@
             }
           },
           {
+            "name": "invoiceNumber",
+            "in": "query",
+            "description": "Filter by invoice number",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
             "name": "Sequence-Version",
             "in": "header",
             "description": "Use this header to select an API version",
