@@ -38630,6 +38630,7 @@
         "example": "PNG",
         "enum": [
           "JPEG",
+          "JPG",
           "PNG",
           "PDF",
           "CSV",
@@ -47032,6 +47033,7 @@
         "example": "PDF",
         "enum": [
           "JPEG",
+          "JPG",
           "PNG",
           "PDF",
           "CSV",
