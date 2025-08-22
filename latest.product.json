@@ -2646,7 +2646,103 @@
                           "83da2ca4-49c7-4d81-9c9a-ba5be11768b0",
                           "c0901c87-e1a9-48e9-9e2f-9e05c402dcea"
                         ],
-                        "state": "active"
+                        "state": "active",
+                        "roles": [
+                          {
+                            "roleName": "financeUser",
+                            "permissions": [
+                              {
+                                "resource": "org.customer",
+                                "actions": [
+                                  "create",
+                                  "read",
+                                  "update",
+                                  "delete",
+                                  "archive"
+                                ]
+                              },
+                              {
+                                "resource": "org.billingSchedule",
+                                "actions": [
+                                  "create",
+                                  "read",
+                                  "update",
+                                  "delete",
+                                  "archive",
+                                  "start"
+                                ]
+                              },
+                              {
+                                "resource": "org.product",
+                                "actions": [
+                                  "create",
+                                  "read",
+                                  "update",
+                                  "delete",
+                                  "archive"
+                                ]
+                              },
+                              {
+                                "resource": "org.quote",
+                                "actions": [
+                                  "read",
+                                  "execute"
+                                ]
+                              },
+                              {
+                                "resource": "org.invoice",
+                                "actions": [
+                                  "create",
+                                  "read",
+                                  "update",
+                                  "delete",
+                                  "archive",
+                                  "finalize",
+                                  "send"
+                                ]
+                              },
+                              {
+                                "resource": "org.creditNote",
+                                "actions": [
+                                  "create",
+                                  "read",
+                                  "update",
+                                  "delete",
+                                  "archive"
+                                ]
+                              },
+                              {
+                                "resource": "org.usage",
+                                "actions": [
+                                  "read"
+                                ]
+                              },
+                              {
+                                "resource": "org.revenueRecognition",
+                                "actions": [
+                                  "create",
+                                  "read",
+                                  "update",
+                                  "delete",
+                                  "archive"
+                                ]
+                              },
+                              {
+                                "resource": "org.settings",
+                                "actions": [
+                                  "read",
+                                  "invite"
+                                ]
+                              },
+                              {
+                                "resource": "org.integration",
+                                "actions": [
+                                  "read"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ],
                     "pagination": {
@@ -2668,7 +2764,103 @@
                             "83da2ca4-49c7-4d81-9c9a-ba5be11768b0",
                             "c0901c87-e1a9-48e9-9e2f-9e05c402dcea"
                           ],
-                          "state": "active"
+                          "state": "active",
+                          "roles": [
+                            {
+                              "roleName": "financeUser",
+                              "permissions": [
+                                {
+                                  "resource": "org.customer",
+                                  "actions": [
+                                    "create",
+                                    "read",
+                                    "update",
+                                    "delete",
+                                    "archive"
+                                  ]
+                                },
+                                {
+                                  "resource": "org.billingSchedule",
+                                  "actions": [
+                                    "create",
+                                    "read",
+                                    "update",
+                                    "delete",
+                                    "archive",
+                                    "start"
+                                  ]
+                                },
+                                {
+                                  "resource": "org.product",
+                                  "actions": [
+                                    "create",
+                                    "read",
+                                    "update",
+                                    "delete",
+                                    "archive"
+                                  ]
+                                },
+                                {
+                                  "resource": "org.quote",
+                                  "actions": [
+                                    "read",
+                                    "execute"
+                                  ]
+                                },
+                                {
+                                  "resource": "org.invoice",
+                                  "actions": [
+                                    "create",
+                                    "read",
+                                    "update",
+                                    "delete",
+                                    "archive",
+                                    "finalize",
+                                    "send"
+                                  ]
+                                },
+                                {
+                                  "resource": "org.creditNote",
+                                  "actions": [
+                                    "create",
+                                    "read",
+                                    "update",
+                                    "delete",
+                                    "archive"
+                                  ]
+                                },
+                                {
+                                  "resource": "org.usage",
+                                  "actions": [
+                                    "read"
+                                  ]
+                                },
+                                {
+                                  "resource": "org.revenueRecognition",
+                                  "actions": [
+                                    "create",
+                                    "read",
+                                    "update",
+                                    "delete",
+                                    "archive"
+                                  ]
+                                },
+                                {
+                                  "resource": "org.settings",
+                                  "actions": [
+                                    "read",
+                                    "invite"
+                                  ]
+                                },
+                                {
+                                  "resource": "org.integration",
+                                  "actions": [
+                                    "read"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
                         }
                       ],
                       "pagination": {
@@ -2752,7 +2944,103 @@
                     "sequenceAccountIds": [
                       "724c4f93-8606-4a38-bfbf-50a7045e4eaa"
                     ],
-                    "state": "active"
+                    "state": "active",
+                    "roles": [
+                      {
+                        "roleName": "financeUser",
+                        "permissions": [
+                          {
+                            "resource": "org.customer",
+                            "actions": [
+                              "create",
+                              "read",
+                              "update",
+                              "delete",
+                              "archive"
+                            ]
+                          },
+                          {
+                            "resource": "org.billingSchedule",
+                            "actions": [
+                              "create",
+                              "read",
+                              "update",
+                              "delete",
+                              "archive",
+                              "start"
+                            ]
+                          },
+                          {
+                            "resource": "org.product",
+                            "actions": [
+                              "create",
+                              "read",
+                              "update",
+                              "delete",
+                              "archive"
+                            ]
+                          },
+                          {
+                            "resource": "org.quote",
+                            "actions": [
+                              "read",
+                              "execute"
+                            ]
+                          },
+                          {
+                            "resource": "org.invoice",
+                            "actions": [
+                              "create",
+                              "read",
+                              "update",
+                              "delete",
+                              "archive",
+                              "finalize",
+                              "send"
+                            ]
+                          },
+                          {
+                            "resource": "org.creditNote",
+                            "actions": [
+                              "create",
+                              "read",
+                              "update",
+                              "delete",
+                              "archive"
+                            ]
+                          },
+                          {
+                            "resource": "org.usage",
+                            "actions": [
+                              "read"
+                            ]
+                          },
+                          {
+                            "resource": "org.revenueRecognition",
+                            "actions": [
+                              "create",
+                              "read",
+                              "update",
+                              "delete",
+                              "archive"
+                            ]
+                          },
+                          {
+                            "resource": "org.settings",
+                            "actions": [
+                              "read",
+                              "invite"
+                            ]
+                          },
+                          {
+                            "resource": "org.integration",
+                            "actions": [
+                              "read"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
                   }
                 },
                 "examples": {
@@ -2764,7 +3052,103 @@
                       "sequenceAccountIds": [
                         "724c4f93-8606-4a38-bfbf-50a7045e4eaa"
                       ],
-                      "state": "active"
+                      "state": "active",
+                      "roles": [
+                        {
+                          "roleName": "financeUser",
+                          "permissions": [
+                            {
+                              "resource": "org.customer",
+                              "actions": [
+                                "create",
+                                "read",
+                                "update",
+                                "delete",
+                                "archive"
+                              ]
+                            },
+                            {
+                              "resource": "org.billingSchedule",
+                              "actions": [
+                                "create",
+                                "read",
+                                "update",
+                                "delete",
+                                "archive",
+                                "start"
+                              ]
+                            },
+                            {
+                              "resource": "org.product",
+                              "actions": [
+                                "create",
+                                "read",
+                                "update",
+                                "delete",
+                                "archive"
+                              ]
+                            },
+                            {
+                              "resource": "org.quote",
+                              "actions": [
+                                "read",
+                                "execute"
+                              ]
+                            },
+                            {
+                              "resource": "org.invoice",
+                              "actions": [
+                                "create",
+                                "read",
+                                "update",
+                                "delete",
+                                "archive",
+                                "finalize",
+                                "send"
+                              ]
+                            },
+                            {
+                              "resource": "org.creditNote",
+                              "actions": [
+                                "create",
+                                "read",
+                                "update",
+                                "delete",
+                                "archive"
+                              ]
+                            },
+                            {
+                              "resource": "org.usage",
+                              "actions": [
+                                "read"
+                              ]
+                            },
+                            {
+                              "resource": "org.revenueRecognition",
+                              "actions": [
+                                "create",
+                                "read",
+                                "update",
+                                "delete",
+                                "archive"
+                              ]
+                            },
+                            {
+                              "resource": "org.settings",
+                              "actions": [
+                                "read",
+                                "invite"
+                              ]
+                            },
+                            {
+                              "resource": "org.integration",
+                              "actions": [
+                                "read"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     }
                   }
                 }
@@ -2837,7 +3221,103 @@
                     "sequenceAccountIds": [
                       "724c4f93-8606-4a38-bfbf-50a7045e4eaa"
                     ],
-                    "state": "deleted"
+                    "state": "deleted",
+                    "roles": [
+                      {
+                        "roleName": "financeUser",
+                        "permissions": [
+                          {
+                            "resource": "org.customer",
+                            "actions": [
+                              "create",
+                              "read",
+                              "update",
+                              "delete",
+                              "archive"
+                            ]
+                          },
+                          {
+                            "resource": "org.billingSchedule",
+                            "actions": [
+                              "create",
+                              "read",
+                              "update",
+                              "delete",
+                              "archive",
+                              "start"
+                            ]
+                          },
+                          {
+                            "resource": "org.product",
+                            "actions": [
+                              "create",
+                              "read",
+                              "update",
+                              "delete",
+                              "archive"
+                            ]
+                          },
+                          {
+                            "resource": "org.quote",
+                            "actions": [
+                              "read",
+                              "execute"
+                            ]
+                          },
+                          {
+                            "resource": "org.invoice",
+                            "actions": [
+                              "create",
+                              "read",
+                              "update",
+                              "delete",
+                              "archive",
+                              "finalize",
+                              "send"
+                            ]
+                          },
+                          {
+                            "resource": "org.creditNote",
+                            "actions": [
+                              "create",
+                              "read",
+                              "update",
+                              "delete",
+                              "archive"
+                            ]
+                          },
+                          {
+                            "resource": "org.usage",
+                            "actions": [
+                              "read"
+                            ]
+                          },
+                          {
+                            "resource": "org.revenueRecognition",
+                            "actions": [
+                              "create",
+                              "read",
+                              "update",
+                              "delete",
+                              "archive"
+                            ]
+                          },
+                          {
+                            "resource": "org.settings",
+                            "actions": [
+                              "read",
+                              "invite"
+                            ]
+                          },
+                          {
+                            "resource": "org.integration",
+                            "actions": [
+                              "read"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
                   }
                 },
                 "examples": {
@@ -2849,7 +3329,103 @@
                       "sequenceAccountIds": [
                         "724c4f93-8606-4a38-bfbf-50a7045e4eaa"
                       ],
-                      "state": "deleted"
+                      "state": "deleted",
+                      "roles": [
+                        {
+                          "roleName": "financeUser",
+                          "permissions": [
+                            {
+                              "resource": "org.customer",
+                              "actions": [
+                                "create",
+                                "read",
+                                "update",
+                                "delete",
+                                "archive"
+                              ]
+                            },
+                            {
+                              "resource": "org.billingSchedule",
+                              "actions": [
+                                "create",
+                                "read",
+                                "update",
+                                "delete",
+                                "archive",
+                                "start"
+                              ]
+                            },
+                            {
+                              "resource": "org.product",
+                              "actions": [
+                                "create",
+                                "read",
+                                "update",
+                                "delete",
+                                "archive"
+                              ]
+                            },
+                            {
+                              "resource": "org.quote",
+                              "actions": [
+                                "read",
+                                "execute"
+                              ]
+                            },
+                            {
+                              "resource": "org.invoice",
+                              "actions": [
+                                "create",
+                                "read",
+                                "update",
+                                "delete",
+                                "archive",
+                                "finalize",
+                                "send"
+                              ]
+                            },
+                            {
+                              "resource": "org.creditNote",
+                              "actions": [
+                                "create",
+                                "read",
+                                "update",
+                                "delete",
+                                "archive"
+                              ]
+                            },
+                            {
+                              "resource": "org.usage",
+                              "actions": [
+                                "read"
+                              ]
+                            },
+                            {
+                              "resource": "org.revenueRecognition",
+                              "actions": [
+                                "create",
+                                "read",
+                                "update",
+                                "delete",
+                                "archive"
+                              ]
+                            },
+                            {
+                              "resource": "org.settings",
+                              "actions": [
+                                "read",
+                                "invite"
+                              ]
+                            },
+                            {
+                              "resource": "org.integration",
+                              "actions": [
+                                "read"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     }
                   }
                 }
@@ -34025,7 +34601,103 @@
                 "83da2ca4-49c7-4d81-9c9a-ba5be11768b0",
                 "c0901c87-e1a9-48e9-9e2f-9e05c402dcea"
               ],
-              "state": "active"
+              "state": "active",
+              "roles": [
+                {
+                  "roleName": "financeUser",
+                  "permissions": [
+                    {
+                      "resource": "org.customer",
+                      "actions": [
+                        "create",
+                        "read",
+                        "update",
+                        "delete",
+                        "archive"
+                      ]
+                    },
+                    {
+                      "resource": "org.billingSchedule",
+                      "actions": [
+                        "create",
+                        "read",
+                        "update",
+                        "delete",
+                        "archive",
+                        "start"
+                      ]
+                    },
+                    {
+                      "resource": "org.product",
+                      "actions": [
+                        "create",
+                        "read",
+                        "update",
+                        "delete",
+                        "archive"
+                      ]
+                    },
+                    {
+                      "resource": "org.quote",
+                      "actions": [
+                        "read",
+                        "execute"
+                      ]
+                    },
+                    {
+                      "resource": "org.invoice",
+                      "actions": [
+                        "create",
+                        "read",
+                        "update",
+                        "delete",
+                        "archive",
+                        "finalize",
+                        "send"
+                      ]
+                    },
+                    {
+                      "resource": "org.creditNote",
+                      "actions": [
+                        "create",
+                        "read",
+                        "update",
+                        "delete",
+                        "archive"
+                      ]
+                    },
+                    {
+                      "resource": "org.usage",
+                      "actions": [
+                        "read"
+                      ]
+                    },
+                    {
+                      "resource": "org.revenueRecognition",
+                      "actions": [
+                        "create",
+                        "read",
+                        "update",
+                        "delete",
+                        "archive"
+                      ]
+                    },
+                    {
+                      "resource": "org.settings",
+                      "actions": [
+                        "read",
+                        "invite"
+                      ]
+                    },
+                    {
+                      "resource": "org.integration",
+                      "actions": [
+                        "read"
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "pagination": {
@@ -34046,7 +34718,103 @@
                   "83da2ca4-49c7-4d81-9c9a-ba5be11768b0",
                   "c0901c87-e1a9-48e9-9e2f-9e05c402dcea"
                 ],
-                "state": "active"
+                "state": "active",
+                "roles": [
+                  {
+                    "roleName": "financeUser",
+                    "permissions": [
+                      {
+                        "resource": "org.customer",
+                        "actions": [
+                          "create",
+                          "read",
+                          "update",
+                          "delete",
+                          "archive"
+                        ]
+                      },
+                      {
+                        "resource": "org.billingSchedule",
+                        "actions": [
+                          "create",
+                          "read",
+                          "update",
+                          "delete",
+                          "archive",
+                          "start"
+                        ]
+                      },
+                      {
+                        "resource": "org.product",
+                        "actions": [
+                          "create",
+                          "read",
+                          "update",
+                          "delete",
+                          "archive"
+                        ]
+                      },
+                      {
+                        "resource": "org.quote",
+                        "actions": [
+                          "read",
+                          "execute"
+                        ]
+                      },
+                      {
+                        "resource": "org.invoice",
+                        "actions": [
+                          "create",
+                          "read",
+                          "update",
+                          "delete",
+                          "archive",
+                          "finalize",
+                          "send"
+                        ]
+                      },
+                      {
+                        "resource": "org.creditNote",
+                        "actions": [
+                          "create",
+                          "read",
+                          "update",
+                          "delete",
+                          "archive"
+                        ]
+                      },
+                      {
+                        "resource": "org.usage",
+                        "actions": [
+                          "read"
+                        ]
+                      },
+                      {
+                        "resource": "org.revenueRecognition",
+                        "actions": [
+                          "create",
+                          "read",
+                          "update",
+                          "delete",
+                          "archive"
+                        ]
+                      },
+                      {
+                        "resource": "org.settings",
+                        "actions": [
+                          "read",
+                          "invite"
+                        ]
+                      },
+                      {
+                        "resource": "org.integration",
+                        "actions": [
+                          "read"
+                        ]
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "items": {
@@ -34062,6 +34830,7 @@
         "required": [
           "email",
           "id",
+          "roles",
           "sequenceAccountIds",
           "state"
         ],
@@ -34073,7 +34842,103 @@
             "83da2ca4-49c7-4d81-9c9a-ba5be11768b0",
             "c0901c87-e1a9-48e9-9e2f-9e05c402dcea"
           ],
-          "state": "active"
+          "state": "active",
+          "roles": [
+            {
+              "roleName": "financeUser",
+              "permissions": [
+                {
+                  "resource": "org.customer",
+                  "actions": [
+                    "create",
+                    "read",
+                    "update",
+                    "delete",
+                    "archive"
+                  ]
+                },
+                {
+                  "resource": "org.billingSchedule",
+                  "actions": [
+                    "create",
+                    "read",
+                    "update",
+                    "delete",
+                    "archive",
+                    "start"
+                  ]
+                },
+                {
+                  "resource": "org.product",
+                  "actions": [
+                    "create",
+                    "read",
+                    "update",
+                    "delete",
+                    "archive"
+                  ]
+                },
+                {
+                  "resource": "org.quote",
+                  "actions": [
+                    "read",
+                    "execute"
+                  ]
+                },
+                {
+                  "resource": "org.invoice",
+                  "actions": [
+                    "create",
+                    "read",
+                    "update",
+                    "delete",
+                    "archive",
+                    "finalize",
+                    "send"
+                  ]
+                },
+                {
+                  "resource": "org.creditNote",
+                  "actions": [
+                    "create",
+                    "read",
+                    "update",
+                    "delete",
+                    "archive"
+                  ]
+                },
+                {
+                  "resource": "org.usage",
+                  "actions": [
+                    "read"
+                  ]
+                },
+                {
+                  "resource": "org.revenueRecognition",
+                  "actions": [
+                    "create",
+                    "read",
+                    "update",
+                    "delete",
+                    "archive"
+                  ]
+                },
+                {
+                  "resource": "org.settings",
+                  "actions": [
+                    "read",
+                    "invite"
+                  ]
+                },
+                {
+                  "resource": "org.integration",
+                  "actions": [
+                    "read"
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "properties": {
           "id": {
@@ -34101,8 +34966,214 @@
             "type": "string",
             "description": "The state of this user.",
             "example": "active"
+          },
+          "roles": {
+            "type": "array",
+            "description": "The roles assigned to this user for the current Sequence account.",
+            "example": [
+              {
+                "roleName": "financeUser",
+                "permissions": [
+                  {
+                    "resource": "org.customer",
+                    "actions": [
+                      "create",
+                      "read",
+                      "update",
+                      "delete",
+                      "archive"
+                    ]
+                  },
+                  {
+                    "resource": "org.billingSchedule",
+                    "actions": [
+                      "create",
+                      "read",
+                      "update",
+                      "delete",
+                      "archive",
+                      "start"
+                    ]
+                  },
+                  {
+                    "resource": "org.product",
+                    "actions": [
+                      "create",
+                      "read",
+                      "update",
+                      "delete",
+                      "archive"
+                    ]
+                  },
+                  {
+                    "resource": "org.quote",
+                    "actions": [
+                      "read",
+                      "execute"
+                    ]
+                  },
+                  {
+                    "resource": "org.invoice",
+                    "actions": [
+                      "create",
+                      "read",
+                      "update",
+                      "delete",
+                      "archive",
+                      "finalize",
+                      "send"
+                    ]
+                  },
+                  {
+                    "resource": "org.creditNote",
+                    "actions": [
+                      "create",
+                      "read",
+                      "update",
+                      "delete",
+                      "archive"
+                    ]
+                  },
+                  {
+                    "resource": "org.usage",
+                    "actions": [
+                      "read"
+                    ]
+                  },
+                  {
+                    "resource": "org.revenueRecognition",
+                    "actions": [
+                      "create",
+                      "read",
+                      "update",
+                      "delete",
+                      "archive"
+                    ]
+                  },
+                  {
+                    "resource": "org.settings",
+                    "actions": [
+                      "read",
+                      "invite"
+                    ]
+                  },
+                  {
+                    "resource": "org.integration",
+                    "actions": [
+                      "read"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/Role"
+            }
           }
         }
+      },
+      "Role": {
+        "type": "object",
+        "example": {
+          "roleName": "financeUser",
+          "permissions": [
+            {
+              "resource": "org.customer",
+              "actions": [
+                "create",
+                "read",
+                "update",
+                "delete",
+                "archive"
+              ]
+            },
+            {
+              "resource": "org.billingSchedule",
+              "actions": [
+                "create",
+                "read",
+                "update",
+                "delete",
+                "archive",
+                "start"
+              ]
+            },
+            {
+              "resource": "org.product",
+              "actions": [
+                "create",
+                "read",
+                "update",
+                "delete",
+                "archive"
+              ]
+            },
+            {
+              "resource": "org.quote",
+              "actions": [
+                "read",
+                "execute"
+              ]
+            },
+            {
+              "resource": "org.invoice",
+              "actions": [
+                "create",
+                "read",
+                "update",
+                "delete",
+                "archive",
+                "finalize",
+                "send"
+              ]
+            },
+            {
+              "resource": "org.creditNote",
+              "actions": [
+                "create",
+                "read",
+                "update",
+                "delete",
+                "archive"
+              ]
+            },
+            {
+              "resource": "org.usage",
+              "actions": [
+                "read"
+              ]
+            },
+            {
+              "resource": "org.revenueRecognition",
+              "actions": [
+                "create",
+                "read",
+                "update",
+                "delete",
+                "archive"
+              ]
+            },
+            {
+              "resource": "org.settings",
+              "actions": [
+                "read",
+                "invite"
+              ]
+            },
+            {
+              "resource": "org.integration",
+              "actions": [
+                "read"
+              ]
+            }
+          ]
+        },
+        "enum": [
+          "{\"roleName\":\"admin\",\"permissions\":[{\"resource\":\"org.customer\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\"]},{\"resource\":\"org.billingSchedule\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\",\"start\"]},{\"resource\":\"org.product\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\"]},{\"resource\":\"org.invoice\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\",\"finalize\",\"send\"]},{\"resource\":\"org.creditNote\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\",\"finalize\",\"send\"]},{\"resource\":\"org.quote\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\",\"publish\",\"accept\",\"execute\"]},{\"resource\":\"org.revenueRecognition\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\"]},{\"resource\":\"org.usage\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\"]},{\"resource\":\"org.settings\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\",\"invite\"]},{\"resource\":\"org.integration\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\"]}]}",
+          "{\"roleName\":\"financeUser\",\"permissions\":[{\"resource\":\"org.customer\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\"]},{\"resource\":\"org.billingSchedule\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\",\"start\"]},{\"resource\":\"org.product\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\"]},{\"resource\":\"org.quote\",\"actions\":[\"read\",\"execute\"]},{\"resource\":\"org.invoice\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\",\"finalize\",\"send\"]},{\"resource\":\"org.creditNote\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\"]},{\"resource\":\"org.usage\",\"actions\":[\"read\"]},{\"resource\":\"org.revenueRecognition\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\"]},{\"resource\":\"org.settings\",\"actions\":[\"read\",\"invite\"]},{\"resource\":\"org.integration\",\"actions\":[\"read\"]}]}",
+          "{\"roleName\":\"salesUser\",\"permissions\":[{\"resource\":\"org.customer\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\"]},{\"resource\":\"org.billingSchedule\",\"actions\":[\"read\"]},{\"resource\":\"org.quote\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\",\"publish\",\"accept\"]},{\"resource\":\"org.invoice\",\"actions\":[\"read\"]},{\"resource\":\"org.creditNote\",\"actions\":[\"read\"]},{\"resource\":\"org.usage\",\"actions\":[\"read\"]},{\"resource\":\"org.revenueRecognition\",\"actions\":[\"read\"]},{\"resource\":\"org.settings\",\"actions\":[\"read\",\"invite\"]},{\"resource\":\"org.integration\",\"actions\":[\"read\"]}]}",
+          "{\"roleName\":\"readOnlyUser\",\"permissions\":[{\"resource\":\"org.customer\",\"actions\":[\"read\"]},{\"resource\":\"org.billingSchedule\",\"actions\":[\"read\"]},{\"resource\":\"org.product\",\"actions\":[\"read\"]},{\"resource\":\"org.quote\",\"actions\":[\"read\"]},{\"resource\":\"org.invoice\",\"actions\":[\"read\"]},{\"resource\":\"org.creditNote\",\"actions\":[\"read\"]},{\"resource\":\"org.usage\",\"actions\":[\"read\"]},{\"resource\":\"org.revenueRecognition\",\"actions\":[\"read\"]},{\"resource\":\"org.settings\",\"actions\":[\"read\"]},{\"resource\":\"org.integration\",\"actions\":[\"read\"]}]}"
+        ]
       },
       "PaginationResponse": {
         "type": "object",
