@@ -18118,7 +18118,8 @@
                             "createdAt": "2022-06-28T16:47:00Z"
                           }
                         ],
-                        "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a"
+                        "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
+                        "defaultDueDateDays": 30
                       }
                     ],
                     "pagination": {
@@ -18251,7 +18252,8 @@
                               "createdAt": "2022-06-28T16:47:00Z"
                             }
                           ],
-                          "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a"
+                          "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
+                          "defaultDueDateDays": 30
                         }
                       ],
                       "pagination": {
@@ -18409,7 +18411,8 @@
                   "attachmentAssetIds": [
                     "5055cd17-d5e8-4286-bddf-79729ddabf51"
                   ],
-                  "autoCharge": true
+                  "autoCharge": true,
+                  "defaultDueDateDays": 30
                 }
               },
               "examples": {
@@ -18510,7 +18513,8 @@
                     "attachmentAssetIds": [
                       "5055cd17-d5e8-4286-bddf-79729ddabf51"
                     ],
-                    "autoCharge": true
+                    "autoCharge": true,
+                    "defaultDueDateDays": 30
                   }
                 }
               }
@@ -18643,7 +18647,8 @@
                         "createdAt": "2022-06-28T16:47:00Z"
                       }
                     ],
-                    "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a"
+                    "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
+                    "defaultDueDateDays": 30
                   }
                 },
                 "examples": {
@@ -18767,7 +18772,8 @@
                           "createdAt": "2022-06-28T16:47:00Z"
                         }
                       ],
-                      "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a"
+                      "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
+                      "defaultDueDateDays": 30
                     }
                   }
                 }
@@ -18956,7 +18962,8 @@
                         "createdAt": "2022-06-28T16:47:00Z"
                       }
                     ],
-                    "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a"
+                    "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
+                    "defaultDueDateDays": 30
                   }
                 },
                 "examples": {
@@ -19080,7 +19087,8 @@
                           "createdAt": "2022-06-28T16:47:00Z"
                         }
                       ],
-                      "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a"
+                      "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
+                      "defaultDueDateDays": 30
                     }
                   }
                 }
@@ -19187,7 +19195,8 @@
                   ],
                   "attachmentAssetIds": [
                     "5055cd17-d5e8-4286-bddf-79729ddabf51"
-                  ]
+                  ],
+                  "defaultDueDateDays": 30
                 }
               },
               "examples": {
@@ -19235,7 +19244,8 @@
                     ],
                     "attachmentAssetIds": [
                       "5055cd17-d5e8-4286-bddf-79729ddabf51"
-                    ]
+                    ],
+                    "defaultDueDateDays": 30
                   }
                 }
               }
@@ -19368,7 +19378,8 @@
                         "createdAt": "2022-06-28T16:47:00Z"
                       }
                     ],
-                    "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a"
+                    "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
+                    "defaultDueDateDays": 30
                   }
                 },
                 "examples": {
@@ -19492,7 +19503,8 @@
                           "createdAt": "2022-06-28T16:47:00Z"
                         }
                       ],
-                      "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a"
+                      "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
+                      "defaultDueDateDays": 30
                     }
                   }
                 }
@@ -19672,7 +19684,8 @@
                         "createdAt": "2022-06-28T16:47:00Z"
                       }
                     ],
-                    "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a"
+                    "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
+                    "defaultDueDateDays": 30
                   }
                 },
                 "examples": {
@@ -19796,7 +19809,8 @@
                           "createdAt": "2022-06-28T16:47:00Z"
                         }
                       ],
-                      "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a"
+                      "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
+                      "defaultDueDateDays": 30
                     }
                   }
                 }
@@ -19985,7 +19999,8 @@
                         "createdAt": "2022-06-28T16:47:00Z"
                       }
                     ],
-                    "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a"
+                    "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
+                    "defaultDueDateDays": 30
                   }
                 },
                 "examples": {
@@ -20109,7 +20124,8 @@
                           "createdAt": "2022-06-28T16:47:00Z"
                         }
                       ],
-                      "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a"
+                      "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
+                      "defaultDueDateDays": 30
                     }
                   }
                 }
@@ -20319,7 +20335,8 @@
                         "createdAt": "2022-06-28T16:47:00Z"
                       }
                     ],
-                    "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a"
+                    "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
+                    "defaultDueDateDays": 30
                   }
                 },
                 "examples": {
@@ -20443,7 +20460,8 @@
                           "createdAt": "2022-06-28T16:47:00Z"
                         }
                       ],
-                      "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a"
+                      "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
+                      "defaultDueDateDays": 30
                     }
                   }
                 }
@@ -20598,7 +20616,8 @@
                   "attachmentAssetIds": [
                     "5055cd17-d5e8-4286-bddf-79729ddabf51"
                   ],
-                  "autoCharge": true
+                  "autoCharge": true,
+                  "defaultDueDateDays": 30
                 }
               },
               "examples": {
@@ -20699,7 +20718,8 @@
                     "attachmentAssetIds": [
                       "5055cd17-d5e8-4286-bddf-79729ddabf51"
                     ],
-                    "autoCharge": true
+                    "autoCharge": true,
+                    "defaultDueDateDays": 30
                   }
                 }
               }
@@ -45578,7 +45598,8 @@
           "attachmentAssetIds": [
             "5055cd17-d5e8-4286-bddf-79729ddabf51"
           ],
-          "autoCharge": true
+          "autoCharge": true,
+          "defaultDueDateDays": 30
         },
         "properties": {
           "customerId": {
@@ -45738,6 +45759,11 @@
             "type": "boolean",
             "description": "Automatically collect payments if payment details are available",
             "example": true
+          },
+          "defaultDueDateDays": {
+            "type": "integer",
+            "description": "Default number of days between invoice issue date and due date",
+            "example": 30
           }
         }
       },
@@ -46191,7 +46217,8 @@
               "createdAt": "2022-06-28T16:47:00Z"
             }
           ],
-          "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a"
+          "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
+          "defaultDueDateDays": 30
         },
         "properties": {
           "id": {
@@ -46417,6 +46444,11 @@
             "type": "string",
             "description": "Optional ID of the contract used to create this billing schedule",
             "example": "0194d091-f65b-7b98-b75f-a923aa0f5b1a"
+          },
+          "defaultDueDateDays": {
+            "type": "integer",
+            "description": "Default number of days between invoice issue date and due date",
+            "example": 30
           }
         }
       },
@@ -46870,7 +46902,8 @@
           ],
           "attachmentAssetIds": [
             "5055cd17-d5e8-4286-bddf-79729ddabf51"
-          ]
+          ],
+          "defaultDueDateDays": 30
         },
         "properties": {
           "startDate": {
@@ -46962,6 +46995,11 @@
             "items": {
               "type": "string"
             }
+          },
+          "defaultDueDateDays": {
+            "type": "integer",
+            "description": "Default number of days between invoice issue date and due date",
+            "example": 30
           }
         }
       },
@@ -47091,7 +47129,8 @@
                   "createdAt": "2022-06-28T16:47:00Z"
                 }
               ],
-              "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a"
+              "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
+              "defaultDueDateDays": 30
             }
           ],
           "pagination": {
@@ -47223,7 +47262,8 @@
                     "createdAt": "2022-06-28T16:47:00Z"
                   }
                 ],
-                "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a"
+                "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
+                "defaultDueDateDays": 30
               }
             ],
             "items": {
