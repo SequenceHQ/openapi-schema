@@ -2947,6 +2947,76 @@
                     "state": "active",
                     "roles": [
                       {
+                        "roleName": "salesUser",
+                        "permissions": [
+                          {
+                            "resource": "org.customer",
+                            "actions": [
+                              "create",
+                              "read",
+                              "update",
+                              "delete",
+                              "archive"
+                            ]
+                          },
+                          {
+                            "resource": "org.billingSchedule",
+                            "actions": [
+                              "read"
+                            ]
+                          },
+                          {
+                            "resource": "org.quote",
+                            "actions": [
+                              "create",
+                              "read",
+                              "update",
+                              "delete",
+                              "archive",
+                              "publish",
+                              "accept"
+                            ]
+                          },
+                          {
+                            "resource": "org.invoice",
+                            "actions": [
+                              "read"
+                            ]
+                          },
+                          {
+                            "resource": "org.creditNote",
+                            "actions": [
+                              "read"
+                            ]
+                          },
+                          {
+                            "resource": "org.usage",
+                            "actions": [
+                              "read"
+                            ]
+                          },
+                          {
+                            "resource": "org.revenueRecognition",
+                            "actions": [
+                              "read"
+                            ]
+                          },
+                          {
+                            "resource": "org.settings",
+                            "actions": [
+                              "read",
+                              "invite"
+                            ]
+                          },
+                          {
+                            "resource": "org.integration",
+                            "actions": [
+                              "read"
+                            ]
+                          }
+                        ]
+                      },
+                      {
                         "roleName": "financeUser",
                         "permissions": [
                           {
@@ -3054,6 +3124,76 @@
                       ],
                       "state": "active",
                       "roles": [
+                        {
+                          "roleName": "salesUser",
+                          "permissions": [
+                            {
+                              "resource": "org.customer",
+                              "actions": [
+                                "create",
+                                "read",
+                                "update",
+                                "delete",
+                                "archive"
+                              ]
+                            },
+                            {
+                              "resource": "org.billingSchedule",
+                              "actions": [
+                                "read"
+                              ]
+                            },
+                            {
+                              "resource": "org.quote",
+                              "actions": [
+                                "create",
+                                "read",
+                                "update",
+                                "delete",
+                                "archive",
+                                "publish",
+                                "accept"
+                              ]
+                            },
+                            {
+                              "resource": "org.invoice",
+                              "actions": [
+                                "read"
+                              ]
+                            },
+                            {
+                              "resource": "org.creditNote",
+                              "actions": [
+                                "read"
+                              ]
+                            },
+                            {
+                              "resource": "org.usage",
+                              "actions": [
+                                "read"
+                              ]
+                            },
+                            {
+                              "resource": "org.revenueRecognition",
+                              "actions": [
+                                "read"
+                              ]
+                            },
+                            {
+                              "resource": "org.settings",
+                              "actions": [
+                                "read",
+                                "invite"
+                              ]
+                            },
+                            {
+                              "resource": "org.integration",
+                              "actions": [
+                                "read"
+                              ]
+                            }
+                          ]
+                        },
                         {
                           "roleName": "financeUser",
                           "permissions": [
@@ -3224,6 +3364,76 @@
                     "state": "deleted",
                     "roles": [
                       {
+                        "roleName": "salesUser",
+                        "permissions": [
+                          {
+                            "resource": "org.customer",
+                            "actions": [
+                              "create",
+                              "read",
+                              "update",
+                              "delete",
+                              "archive"
+                            ]
+                          },
+                          {
+                            "resource": "org.billingSchedule",
+                            "actions": [
+                              "read"
+                            ]
+                          },
+                          {
+                            "resource": "org.quote",
+                            "actions": [
+                              "create",
+                              "read",
+                              "update",
+                              "delete",
+                              "archive",
+                              "publish",
+                              "accept"
+                            ]
+                          },
+                          {
+                            "resource": "org.invoice",
+                            "actions": [
+                              "read"
+                            ]
+                          },
+                          {
+                            "resource": "org.creditNote",
+                            "actions": [
+                              "read"
+                            ]
+                          },
+                          {
+                            "resource": "org.usage",
+                            "actions": [
+                              "read"
+                            ]
+                          },
+                          {
+                            "resource": "org.revenueRecognition",
+                            "actions": [
+                              "read"
+                            ]
+                          },
+                          {
+                            "resource": "org.settings",
+                            "actions": [
+                              "read",
+                              "invite"
+                            ]
+                          },
+                          {
+                            "resource": "org.integration",
+                            "actions": [
+                              "read"
+                            ]
+                          }
+                        ]
+                      },
+                      {
                         "roleName": "financeUser",
                         "permissions": [
                           {
@@ -3331,6 +3541,76 @@
                       ],
                       "state": "deleted",
                       "roles": [
+                        {
+                          "roleName": "salesUser",
+                          "permissions": [
+                            {
+                              "resource": "org.customer",
+                              "actions": [
+                                "create",
+                                "read",
+                                "update",
+                                "delete",
+                                "archive"
+                              ]
+                            },
+                            {
+                              "resource": "org.billingSchedule",
+                              "actions": [
+                                "read"
+                              ]
+                            },
+                            {
+                              "resource": "org.quote",
+                              "actions": [
+                                "create",
+                                "read",
+                                "update",
+                                "delete",
+                                "archive",
+                                "publish",
+                                "accept"
+                              ]
+                            },
+                            {
+                              "resource": "org.invoice",
+                              "actions": [
+                                "read"
+                              ]
+                            },
+                            {
+                              "resource": "org.creditNote",
+                              "actions": [
+                                "read"
+                              ]
+                            },
+                            {
+                              "resource": "org.usage",
+                              "actions": [
+                                "read"
+                              ]
+                            },
+                            {
+                              "resource": "org.revenueRecognition",
+                              "actions": [
+                                "read"
+                              ]
+                            },
+                            {
+                              "resource": "org.settings",
+                              "actions": [
+                                "read",
+                                "invite"
+                              ]
+                            },
+                            {
+                              "resource": "org.integration",
+                              "actions": [
+                                "read"
+                              ]
+                            }
+                          ]
+                        },
                         {
                           "roleName": "financeUser",
                           "permissions": [
