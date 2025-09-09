@@ -11834,7 +11834,7 @@
           "Invoices"
         ],
         "summary": "Delete an Invoice",
-        "description": "Delete an Invoice. NB. You can only delete a draft invoice. If you want to correct an invoice you have already finalised, you should void it instead. If you want to correct an invoice you have already sent, you should create a credit note. ",
+        "description": "Delete an Invoice. NB. You can only delete a draft or in-progress invoice. If you want to correct an invoice you have already finalised, you should void it instead. If you want to correct an invoice you have already sent, you should create a credit note. ",
         "operationId": "deleteInvoicesById",
         "parameters": [
           {
