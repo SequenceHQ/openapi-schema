@@ -25072,7 +25072,8 @@
                           }
                         ],
                         "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
-                        "defaultDueDateDays": 30
+                        "defaultDueDateDays": 30,
+                        "memo": "Example Billing Schedule"
                       }
                     ],
                     "pagination": {
@@ -25206,7 +25207,8 @@
                             }
                           ],
                           "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
-                          "defaultDueDateDays": 30
+                          "defaultDueDateDays": 30,
+                          "memo": "Example Billing Schedule"
                         }
                       ],
                       "pagination": {
@@ -25365,7 +25367,8 @@
                     "5055cd17-d5e8-4286-bddf-79729ddabf51"
                   ],
                   "autoCharge": true,
-                  "defaultDueDateDays": 30
+                  "defaultDueDateDays": 30,
+                  "memo": "Example Billing Schedule"
                 }
               },
               "examples": {
@@ -25467,7 +25470,8 @@
                       "5055cd17-d5e8-4286-bddf-79729ddabf51"
                     ],
                     "autoCharge": true,
-                    "defaultDueDateDays": 30
+                    "defaultDueDateDays": 30,
+                    "memo": "Example Billing Schedule"
                   }
                 }
               }
@@ -25601,7 +25605,8 @@
                       }
                     ],
                     "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
-                    "defaultDueDateDays": 30
+                    "defaultDueDateDays": 30,
+                    "memo": "Example Billing Schedule"
                   }
                 },
                 "examples": {
@@ -25726,7 +25731,8 @@
                         }
                       ],
                       "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
-                      "defaultDueDateDays": 30
+                      "defaultDueDateDays": 30,
+                      "memo": "Example Billing Schedule"
                     }
                   }
                 }
@@ -25916,7 +25922,8 @@
                       }
                     ],
                     "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
-                    "defaultDueDateDays": 30
+                    "defaultDueDateDays": 30,
+                    "memo": "Example Billing Schedule"
                   }
                 },
                 "examples": {
@@ -26041,7 +26048,8 @@
                         }
                       ],
                       "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
-                      "defaultDueDateDays": 30
+                      "defaultDueDateDays": 30,
+                      "memo": "Example Billing Schedule"
                     }
                   }
                 }
@@ -26149,7 +26157,8 @@
                   "attachmentAssetIds": [
                     "5055cd17-d5e8-4286-bddf-79729ddabf51"
                   ],
-                  "defaultDueDateDays": 30
+                  "defaultDueDateDays": 30,
+                  "memo": "Example Billing Schedule"
                 }
               },
               "examples": {
@@ -26198,7 +26207,8 @@
                     "attachmentAssetIds": [
                       "5055cd17-d5e8-4286-bddf-79729ddabf51"
                     ],
-                    "defaultDueDateDays": 30
+                    "defaultDueDateDays": 30,
+                    "memo": "Example Billing Schedule"
                   }
                 }
               }
@@ -26332,7 +26342,8 @@
                       }
                     ],
                     "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
-                    "defaultDueDateDays": 30
+                    "defaultDueDateDays": 30,
+                    "memo": "Example Billing Schedule"
                   }
                 },
                 "examples": {
@@ -26457,7 +26468,8 @@
                         }
                       ],
                       "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
-                      "defaultDueDateDays": 30
+                      "defaultDueDateDays": 30,
+                      "memo": "Example Billing Schedule"
                     }
                   }
                 }
@@ -26638,7 +26650,8 @@
                       }
                     ],
                     "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
-                    "defaultDueDateDays": 30
+                    "defaultDueDateDays": 30,
+                    "memo": "Example Billing Schedule"
                   }
                 },
                 "examples": {
@@ -26763,7 +26776,8 @@
                         }
                       ],
                       "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
-                      "defaultDueDateDays": 30
+                      "defaultDueDateDays": 30,
+                      "memo": "Example Billing Schedule"
                     }
                   }
                 }
@@ -26953,7 +26967,8 @@
                       }
                     ],
                     "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
-                    "defaultDueDateDays": 30
+                    "defaultDueDateDays": 30,
+                    "memo": "Example Billing Schedule"
                   }
                 },
                 "examples": {
@@ -27078,7 +27093,8 @@
                         }
                       ],
                       "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
-                      "defaultDueDateDays": 30
+                      "defaultDueDateDays": 30,
+                      "memo": "Example Billing Schedule"
                     }
                   }
                 }
@@ -27289,7 +27305,8 @@
                       }
                     ],
                     "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
-                    "defaultDueDateDays": 30
+                    "defaultDueDateDays": 30,
+                    "memo": "Example Billing Schedule"
                   }
                 },
                 "examples": {
@@ -27414,7 +27431,8 @@
                         }
                       ],
                       "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
-                      "defaultDueDateDays": 30
+                      "defaultDueDateDays": 30,
+                      "memo": "Example Billing Schedule"
                     }
                   }
                 }
@@ -27570,7 +27588,8 @@
                     "5055cd17-d5e8-4286-bddf-79729ddabf51"
                   ],
                   "autoCharge": true,
-                  "defaultDueDateDays": 30
+                  "defaultDueDateDays": 30,
+                  "memo": "Example Billing Schedule"
                 }
               },
               "examples": {
@@ -27672,7 +27691,8 @@
                       "5055cd17-d5e8-4286-bddf-79729ddabf51"
                     ],
                     "autoCharge": true,
-                    "defaultDueDateDays": 30
+                    "defaultDueDateDays": 30,
+                    "memo": "Example Billing Schedule"
                   }
                 }
               }
@@ -48243,7 +48263,8 @@
             "5055cd17-d5e8-4286-bddf-79729ddabf51"
           ],
           "autoCharge": true,
-          "defaultDueDateDays": 30
+          "defaultDueDateDays": 30,
+          "memo": "Example Billing Schedule"
         },
         "properties": {
           "customerId": {
@@ -48406,8 +48427,13 @@
           },
           "defaultDueDateDays": {
             "type": "integer",
-            "description": "Default number of days between invoice issue date and due date",
+            "description": "Default number of days between invoice issue date and due date. Overrides any invoice level set default due date",
             "example": 30
+          },
+          "memo": {
+            "type": "string",
+            "description": "Billing schedule memo. Overrides any invoice level set memo",
+            "example": "Example Billing Schedule"
           }
         }
       },
@@ -48862,7 +48888,8 @@
             }
           ],
           "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
-          "defaultDueDateDays": 30
+          "defaultDueDateDays": 30,
+          "memo": "Example Billing Schedule"
         },
         "properties": {
           "id": {
@@ -49093,6 +49120,11 @@
             "type": "integer",
             "description": "Default number of days between invoice issue date and due date",
             "example": 30
+          },
+          "memo": {
+            "type": "string",
+            "description": "Billing schedule memo",
+            "example": "Example Billing Schedule"
           }
         }
       },
@@ -49547,7 +49579,8 @@
           "attachmentAssetIds": [
             "5055cd17-d5e8-4286-bddf-79729ddabf51"
           ],
-          "defaultDueDateDays": 30
+          "defaultDueDateDays": 30,
+          "memo": "Example Billing Schedule"
         },
         "properties": {
           "startDate": {
@@ -49642,8 +49675,13 @@
           },
           "defaultDueDateDays": {
             "type": "integer",
-            "description": "Default number of days between invoice issue date and due date",
+            "description": "Default number of days between invoice issue date and due date. Overrides any invoice level set default due date",
             "example": 30
+          },
+          "memo": {
+            "type": "string",
+            "description": "Billing schedule memo. Overrides any invoice level set memo",
+            "example": "Example Billing Schedule"
           }
         }
       },
@@ -49774,7 +49812,8 @@
                 }
               ],
               "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
-              "defaultDueDateDays": 30
+              "defaultDueDateDays": 30,
+              "memo": "Example Billing Schedule"
             }
           ],
           "pagination": {
@@ -49907,7 +49946,8 @@
                   }
                 ],
                 "contractId": "0194d091-f65b-7b98-b75f-a923aa0f5b1a",
-                "defaultDueDateDays": 30
+                "defaultDueDateDays": 30,
+                "memo": "Example Billing Schedule"
               }
             ],
             "items": {
