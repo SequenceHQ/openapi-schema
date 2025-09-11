@@ -4871,6 +4871,12 @@
                             ]
                           },
                           {
+                            "resource": "org.product",
+                            "actions": [
+                              "read"
+                            ]
+                          },
+                          {
                             "resource": "org.quote",
                             "actions": [
                               "create",
@@ -5044,6 +5050,12 @@
                             },
                             {
                               "resource": "org.billing",
+                              "actions": [
+                                "read"
+                              ]
+                            },
+                            {
+                              "resource": "org.product",
                               "actions": [
                                 "read"
                               ]
@@ -5288,6 +5300,12 @@
                             ]
                           },
                           {
+                            "resource": "org.product",
+                            "actions": [
+                              "read"
+                            ]
+                          },
+                          {
                             "resource": "org.quote",
                             "actions": [
                               "create",
@@ -5461,6 +5479,12 @@
                             },
                             {
                               "resource": "org.billing",
+                              "actions": [
+                                "read"
+                              ]
+                            },
+                            {
+                              "resource": "org.product",
                               "actions": [
                                 "read"
                               ]
@@ -35859,7 +35883,7 @@
         "enum": [
           "{\"roleName\":\"admin\",\"permissions\":[{\"resource\":\"org.customer\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\"]},{\"resource\":\"org.billing\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\",\"start\"]},{\"resource\":\"org.product\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\"]},{\"resource\":\"org.invoice\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\",\"finalize\",\"send\"]},{\"resource\":\"org.creditNote\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\",\"finalize\",\"send\"]},{\"resource\":\"org.quote\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\",\"publish\",\"accept\",\"execute\"]},{\"resource\":\"org.revenueRecognition\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\"]},{\"resource\":\"org.usage\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\"]},{\"resource\":\"org.settings\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\",\"invite\"]},{\"resource\":\"org.integration\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\"]}]}",
           "{\"roleName\":\"financeUser\",\"permissions\":[{\"resource\":\"org.customer\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\"]},{\"resource\":\"org.billing\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\",\"start\"]},{\"resource\":\"org.product\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\"]},{\"resource\":\"org.quote\",\"actions\":[\"read\",\"execute\"]},{\"resource\":\"org.invoice\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\",\"finalize\",\"send\"]},{\"resource\":\"org.creditNote\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\"]},{\"resource\":\"org.usage\",\"actions\":[\"read\"]},{\"resource\":\"org.revenueRecognition\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\"]},{\"resource\":\"org.settings\",\"actions\":[\"read\",\"invite\"]},{\"resource\":\"org.integration\",\"actions\":[\"read\"]}]}",
-          "{\"roleName\":\"salesUser\",\"permissions\":[{\"resource\":\"org.customer\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\"]},{\"resource\":\"org.billing\",\"actions\":[\"read\"]},{\"resource\":\"org.quote\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\",\"publish\",\"accept\"]},{\"resource\":\"org.invoice\",\"actions\":[\"read\"]},{\"resource\":\"org.creditNote\",\"actions\":[\"read\"]},{\"resource\":\"org.usage\",\"actions\":[\"read\"]},{\"resource\":\"org.revenueRecognition\",\"actions\":[\"read\"]},{\"resource\":\"org.settings\",\"actions\":[\"read\",\"invite\"]},{\"resource\":\"org.integration\",\"actions\":[\"read\"]}]}",
+          "{\"roleName\":\"salesUser\",\"permissions\":[{\"resource\":\"org.customer\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\"]},{\"resource\":\"org.billing\",\"actions\":[\"read\"]},{\"resource\":\"org.product\",\"actions\":[\"read\"]},{\"resource\":\"org.quote\",\"actions\":[\"create\",\"read\",\"update\",\"delete\",\"archive\",\"publish\",\"accept\"]},{\"resource\":\"org.invoice\",\"actions\":[\"read\"]},{\"resource\":\"org.creditNote\",\"actions\":[\"read\"]},{\"resource\":\"org.usage\",\"actions\":[\"read\"]},{\"resource\":\"org.revenueRecognition\",\"actions\":[\"read\"]},{\"resource\":\"org.settings\",\"actions\":[\"read\",\"invite\"]},{\"resource\":\"org.integration\",\"actions\":[\"read\"]}]}",
           "{\"roleName\":\"readOnlyUser\",\"permissions\":[{\"resource\":\"org.customer\",\"actions\":[\"read\"]},{\"resource\":\"org.billing\",\"actions\":[\"read\"]},{\"resource\":\"org.product\",\"actions\":[\"read\"]},{\"resource\":\"org.quote\",\"actions\":[\"read\"]},{\"resource\":\"org.invoice\",\"actions\":[\"read\"]},{\"resource\":\"org.creditNote\",\"actions\":[\"read\"]},{\"resource\":\"org.usage\",\"actions\":[\"read\"]},{\"resource\":\"org.revenueRecognition\",\"actions\":[\"read\"]},{\"resource\":\"org.settings\",\"actions\":[\"read\"]},{\"resource\":\"org.integration\",\"actions\":[\"read\"]}]}"
         ]
       },
