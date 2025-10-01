@@ -26662,6 +26662,10 @@
                             "swiftCode": "CHASUS33",
                             "bsb": "123456"
                           },
+                          "swedishBankgiroDestination": {
+                            "bankgiroNumber": "123-4567",
+                            "accountName": "12345678"
+                          },
                           "logoUrl": "logo",
                           "legalCompanyName": "The Merchant",
                           "primaryColour": "#000000",
@@ -26817,6 +26821,10 @@
                               "accountNumber": "12345678",
                               "swiftCode": "CHASUS33",
                               "bsb": "123456"
+                            },
+                            "swedishBankgiroDestination": {
+                              "bankgiroNumber": "123-4567",
+                              "accountName": "12345678"
                             },
                             "logoUrl": "logo",
                             "legalCompanyName": "The Merchant",
@@ -27111,6 +27119,10 @@
                         "swiftCode": "CHASUS33",
                         "bsb": "123456"
                       },
+                      "swedishBankgiroDestination": {
+                        "bankgiroNumber": "123-4567",
+                        "accountName": "12345678"
+                      },
                       "logoUrl": "logo",
                       "legalCompanyName": "The Merchant",
                       "primaryColour": "#000000",
@@ -27257,6 +27269,10 @@
                           "accountNumber": "12345678",
                           "swiftCode": "CHASUS33",
                           "bsb": "123456"
+                        },
+                        "swedishBankgiroDestination": {
+                          "bankgiroNumber": "123-4567",
+                          "accountName": "12345678"
                         },
                         "logoUrl": "logo",
                         "legalCompanyName": "The Merchant",
@@ -28072,6 +28088,10 @@
                         "swiftCode": "CHASUS33",
                         "bsb": "123456"
                       },
+                      "swedishBankgiroDestination": {
+                        "bankgiroNumber": "123-4567",
+                        "accountName": "12345678"
+                      },
                       "logoUrl": "logo",
                       "legalCompanyName": "The Merchant",
                       "primaryColour": "#000000",
@@ -28218,6 +28238,10 @@
                           "accountNumber": "12345678",
                           "swiftCode": "CHASUS33",
                           "bsb": "123456"
+                        },
+                        "swedishBankgiroDestination": {
+                          "bankgiroNumber": "123-4567",
+                          "accountName": "12345678"
                         },
                         "logoUrl": "logo",
                         "legalCompanyName": "The Merchant",
@@ -28514,6 +28538,10 @@
                         "swiftCode": "CHASUS33",
                         "bsb": "123456"
                       },
+                      "swedishBankgiroDestination": {
+                        "bankgiroNumber": "123-4567",
+                        "accountName": "12345678"
+                      },
                       "logoUrl": "logo",
                       "legalCompanyName": "The Merchant",
                       "primaryColour": "#000000",
@@ -28660,6 +28688,10 @@
                           "accountNumber": "12345678",
                           "swiftCode": "CHASUS33",
                           "bsb": "123456"
+                        },
+                        "swedishBankgiroDestination": {
+                          "bankgiroNumber": "123-4567",
+                          "accountName": "12345678"
                         },
                         "logoUrl": "logo",
                         "legalCompanyName": "The Merchant",
@@ -28869,6 +28901,10 @@
                         "swiftCode": "CHASUS33",
                         "bsb": "123456"
                       },
+                      "swedishBankgiroDestination": {
+                        "bankgiroNumber": "123-4567",
+                        "accountName": "12345678"
+                      },
                       "logoUrl": "logo",
                       "legalCompanyName": "The Merchant",
                       "primaryColour": "#000000",
@@ -29015,6 +29051,10 @@
                           "accountNumber": "12345678",
                           "swiftCode": "CHASUS33",
                           "bsb": "123456"
+                        },
+                        "swedishBankgiroDestination": {
+                          "bankgiroNumber": "123-4567",
+                          "accountName": "12345678"
                         },
                         "logoUrl": "logo",
                         "legalCompanyName": "The Merchant",
@@ -29812,6 +29852,10 @@
                         "swiftCode": "CHASUS33",
                         "bsb": "123456"
                       },
+                      "swedishBankgiroDestination": {
+                        "bankgiroNumber": "123-4567",
+                        "accountName": "12345678"
+                      },
                       "logoUrl": "logo",
                       "legalCompanyName": "The Merchant",
                       "primaryColour": "#000000",
@@ -29958,6 +30002,10 @@
                           "accountNumber": "12345678",
                           "swiftCode": "CHASUS33",
                           "bsb": "123456"
+                        },
+                        "swedishBankgiroDestination": {
+                          "bankgiroNumber": "123-4567",
+                          "accountName": "12345678"
                         },
                         "logoUrl": "logo",
                         "legalCompanyName": "The Merchant",
@@ -30171,6 +30219,10 @@
                         "swiftCode": "CHASUS33",
                         "bsb": "123456"
                       },
+                      "swedishBankgiroDestination": {
+                        "bankgiroNumber": "123-4567",
+                        "accountName": "12345678"
+                      },
                       "logoUrl": "logo",
                       "legalCompanyName": "The Merchant",
                       "primaryColour": "#000000",
@@ -30317,6 +30369,10 @@
                           "accountNumber": "12345678",
                           "swiftCode": "CHASUS33",
                           "bsb": "123456"
+                        },
+                        "swedishBankgiroDestination": {
+                          "bankgiroNumber": "123-4567",
+                          "accountName": "12345678"
                         },
                         "logoUrl": "logo",
                         "legalCompanyName": "The Merchant",
@@ -30530,6 +30586,10 @@
                         "swiftCode": "CHASUS33",
                         "bsb": "123456"
                       },
+                      "swedishBankgiroDestination": {
+                        "bankgiroNumber": "123-4567",
+                        "accountName": "12345678"
+                      },
                       "logoUrl": "logo",
                       "legalCompanyName": "The Merchant",
                       "primaryColour": "#000000",
@@ -30676,6 +30736,10 @@
                           "accountNumber": "12345678",
                           "swiftCode": "CHASUS33",
                           "bsb": "123456"
+                        },
+                        "swedishBankgiroDestination": {
+                          "bankgiroNumber": "123-4567",
+                          "accountName": "12345678"
                         },
                         "logoUrl": "logo",
                         "legalCompanyName": "The Merchant",
@@ -30889,6 +30953,10 @@
                         "swiftCode": "CHASUS33",
                         "bsb": "123456"
                       },
+                      "swedishBankgiroDestination": {
+                        "bankgiroNumber": "123-4567",
+                        "accountName": "12345678"
+                      },
                       "logoUrl": "logo",
                       "legalCompanyName": "The Merchant",
                       "primaryColour": "#000000",
@@ -31035,6 +31103,10 @@
                           "accountNumber": "12345678",
                           "swiftCode": "CHASUS33",
                           "bsb": "123456"
+                        },
+                        "swedishBankgiroDestination": {
+                          "bankgiroNumber": "123-4567",
+                          "accountName": "12345678"
                         },
                         "logoUrl": "logo",
                         "legalCompanyName": "The Merchant",
@@ -51289,6 +51361,10 @@
               "swiftCode": "CHASUS33",
               "bsb": "123456"
             },
+            "swedishBankgiroDestination": {
+              "bankgiroNumber": "123-4567",
+              "accountName": "12345678"
+            },
             "logoUrl": "logo",
             "legalCompanyName": "The Merchant",
             "primaryColour": "#000000",
@@ -51468,6 +51544,30 @@
           "SENT",
           "VOIDED"
         ]
+      },
+      "SwedishBankgiroDestination": {
+        "required": [
+          "accountName",
+          "bankgiroNumber"
+        ],
+        "type": "object",
+        "description": "Merchant's Swedish Bankgiro account details, for receiving payment by Swedish Bankgiro",
+        "example": {
+          "bankgiroNumber": "123-4567",
+          "accountName": "12345678"
+        },
+        "properties": {
+          "bankgiroNumber": {
+            "type": "string",
+            "description": "Swedish Bankgiro number. 7-8 digits, formatted as 123-4567 or 1234-5678.",
+            "example": "123-4567"
+          },
+          "accountName": {
+            "type": "string",
+            "description": "Account holder name",
+            "example": "12345678"
+          }
+        }
       },
       "CreditNoteSettings": {
         "required": [
@@ -52141,6 +52241,10 @@
                   "swiftCode": "CHASUS33",
                   "bsb": "123456"
                 },
+                "swedishBankgiroDestination": {
+                  "bankgiroNumber": "123-4567",
+                  "accountName": "12345678"
+                },
                 "logoUrl": "logo",
                 "legalCompanyName": "The Merchant",
                 "primaryColour": "#000000",
@@ -52295,6 +52399,10 @@
                     "accountNumber": "12345678",
                     "swiftCode": "CHASUS33",
                     "bsb": "123456"
+                  },
+                  "swedishBankgiroDestination": {
+                    "bankgiroNumber": "123-4567",
+                    "accountName": "12345678"
                   },
                   "logoUrl": "logo",
                   "legalCompanyName": "The Merchant",
