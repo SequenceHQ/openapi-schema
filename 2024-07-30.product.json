@@ -26514,6 +26514,15 @@
             }
           },
           {
+            "name": "searchCreditNoteNumber",
+            "in": "query",
+            "description": "Search credit notes by credit note number (partial, case-insensitive match)",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
             "name": "Sequence-Version",
             "in": "header",
             "description": "Use this header to select an API version",
