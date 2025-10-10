@@ -31155,6 +31155,111 @@
       "servers": [],
       "parameters": []
     },
+    "/invoices/{id}/currency-conversions": {
+      "get": {
+        "tags": [
+          "Invoices"
+        ],
+        "summary": "List Currency Conversions for an Invoice",
+        "description": "Lists all currency conversions for a specific invoice.\nCurrency conversions are automatically created for invoices that require regulatory\ncompliance (e.g., UK VAT requiring GBP conversion for foreign currency invoices).",
+        "operationId": "getInvoicesByIdCurrencyConversions",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Invoice ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Your [API credentials](/reference/authentication). Eg. `Basic {credentials}`.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Sequence-Version",
+            "in": "header",
+            "description": "Use this header to select an API version",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "2024-07-30"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InvoiceCurrencyConversionsListResponse",
+                  "example": {
+                    "conversions": [
+                      {
+                        "id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+                        "invoiceId": "f1e2d3c4-b5a6-4978-8e9f-0a1b2c3d4e5f",
+                        "currency": "GBP",
+                        "totalTax": 20,
+                        "netTotal": 100,
+                        "grossTotal": 120,
+                        "exchangeRate": 0.79,
+                        "updatedAt": "2024-01-15T10:30:00Z"
+                      }
+                    ]
+                  }
+                },
+                "examples": {
+                  "InvoiceCurrencyConversionsListResponse": {
+                    "summary": "",
+                    "value": {
+                      "conversions": [
+                        {
+                          "id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+                          "invoiceId": "f1e2d3c4-b5a6-4978-8e9f-0a1b2c3d4e5f",
+                          "currency": "GBP",
+                          "totalTax": 20,
+                          "netTotal": 100,
+                          "grossTotal": 120,
+                          "exchangeRate": 0.79,
+                          "updatedAt": "2024-01-15T10:30:00Z"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {}
+          }
+        }
+      },
+      "servers": [],
+      "parameters": []
+    },
     "/sequence-accounts/{id}": {
       "get": {
         "tags": [
@@ -53156,6 +53261,111 @@
             "type": "string",
             "description": "Gross total",
             "example": "101.23"
+          }
+        }
+      },
+      "InvoiceCurrencyConversionsListResponse": {
+        "required": [
+          "conversions"
+        ],
+        "type": "object",
+        "example": {
+          "conversions": [
+            {
+              "id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+              "invoiceId": "f1e2d3c4-b5a6-4978-8e9f-0a1b2c3d4e5f",
+              "currency": "GBP",
+              "totalTax": 20,
+              "netTotal": 100,
+              "grossTotal": 120,
+              "exchangeRate": 0.79,
+              "updatedAt": "2024-01-15T10:30:00Z"
+            }
+          ]
+        },
+        "properties": {
+          "conversions": {
+            "type": "array",
+            "description": "List of currency conversions for the invoice",
+            "example": [
+              {
+                "id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+                "invoiceId": "f1e2d3c4-b5a6-4978-8e9f-0a1b2c3d4e5f",
+                "currency": "GBP",
+                "totalTax": 20,
+                "netTotal": 100,
+                "grossTotal": 120,
+                "exchangeRate": 0.79,
+                "updatedAt": "2024-01-15T10:30:00Z"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/InvoiceCurrencyConversionResponse"
+            }
+          }
+        }
+      },
+      "InvoiceCurrencyConversionResponse": {
+        "required": [
+          "currency",
+          "exchangeRate",
+          "grossTotal",
+          "id",
+          "invoiceId",
+          "netTotal",
+          "totalTax",
+          "updatedAt"
+        ],
+        "type": "object",
+        "example": {
+          "id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+          "invoiceId": "f1e2d3c4-b5a6-4978-8e9f-0a1b2c3d4e5f",
+          "currency": "GBP",
+          "totalTax": 20,
+          "netTotal": 100,
+          "grossTotal": 120,
+          "exchangeRate": 0.79,
+          "updatedAt": "2024-01-15T10:30:00Z"
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "The unique identifier for the currency conversion",
+            "example": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d"
+          },
+          "invoiceId": {
+            "type": "string",
+            "description": "The invoice this conversion belongs to",
+            "example": "f1e2d3c4-b5a6-4978-8e9f-0a1b2c3d4e5f"
+          },
+          "currency": {
+            "description": "The target currency for the conversion",
+            "$ref": "#/components/schemas/Currency"
+          },
+          "totalTax": {
+            "type": "number",
+            "description": "The total tax amount in the converted currency",
+            "example": 20
+          },
+          "netTotal": {
+            "type": "number",
+            "description": "The net total amount in the converted currency",
+            "example": 100
+          },
+          "grossTotal": {
+            "type": "number",
+            "description": "The gross total amount in the converted currency",
+            "example": 120
+          },
+          "exchangeRate": {
+            "type": "number",
+            "description": "The exchange rate used for the conversion",
+            "example": 0.79
+          },
+          "updatedAt": {
+            "type": "string",
+            "description": "The last update timestamp",
+            "example": "2024-01-15T10:30:00Z"
           }
         }
       },
