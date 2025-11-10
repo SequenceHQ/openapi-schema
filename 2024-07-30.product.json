@@ -27427,7 +27427,11 @@
                             "key": "Xero",
                             "value": "123"
                           }
-                        ]
+                        ],
+                        "servicePeriod": {
+                          "start": "2025-10-01",
+                          "endInclusive": "2025-10-30"
+                        }
                       }
                     ],
                     "pagination": {
@@ -27463,7 +27467,11 @@
                               "key": "Xero",
                               "value": "123"
                             }
-                          ]
+                          ],
+                          "servicePeriod": {
+                            "start": "2025-10-01",
+                            "endInclusive": "2025-10-30"
+                          }
                         }
                       ],
                       "pagination": {
@@ -27550,7 +27558,11 @@
                       "key": "Xero",
                       "value": "123"
                     }
-                  ]
+                  ],
+                  "servicePeriod": {
+                    "start": "2025-10-01",
+                    "endInclusive": "2025-10-30"
+                  }
                 }
               },
               "examples": {
@@ -27571,7 +27583,11 @@
                         "key": "Xero",
                         "value": "123"
                       }
-                    ]
+                    ],
+                    "servicePeriod": {
+                      "start": "2025-10-01",
+                      "endInclusive": "2025-10-30"
+                    }
                   }
                 }
               }
@@ -27607,7 +27623,11 @@
                         "key": "Xero",
                         "value": "123"
                       }
-                    ]
+                    ],
+                    "servicePeriod": {
+                      "start": "2025-10-01",
+                      "endInclusive": "2025-10-30"
+                    }
                   }
                 },
                 "examples": {
@@ -27634,7 +27654,11 @@
                           "key": "Xero",
                           "value": "123"
                         }
-                      ]
+                      ],
+                      "servicePeriod": {
+                        "start": "2025-10-01",
+                        "endInclusive": "2025-10-30"
+                      }
                     }
                   }
                 }
@@ -29169,7 +29193,11 @@
                       "key": "Xero",
                       "value": "123"
                     }
-                  ]
+                  ],
+                  "servicePeriod": {
+                    "start": "2025-10-01",
+                    "endInclusive": "2025-10-30"
+                  }
                 }
               },
               "examples": {
@@ -29187,7 +29215,11 @@
                         "key": "Xero",
                         "value": "123"
                       }
-                    ]
+                    ],
+                    "servicePeriod": {
+                      "start": "2025-10-01",
+                      "endInclusive": "2025-10-30"
+                    }
                   }
                 }
               }
@@ -29223,7 +29255,11 @@
                         "key": "Xero",
                         "value": "123"
                       }
-                    ]
+                    ],
+                    "servicePeriod": {
+                      "start": "2025-10-01",
+                      "endInclusive": "2025-10-30"
+                    }
                   }
                 },
                 "examples": {
@@ -29250,7 +29286,11 @@
                           "key": "Xero",
                           "value": "123"
                         }
-                      ]
+                      ],
+                      "servicePeriod": {
+                        "start": "2025-10-01",
+                        "endInclusive": "2025-10-30"
+                      }
                     }
                   }
                 }
@@ -51733,7 +51773,11 @@
               "key": "Xero",
               "value": "123"
             }
-          ]
+          ],
+          "servicePeriod": {
+            "start": "2025-10-01",
+            "endInclusive": "2025-10-30"
+          }
         },
         "properties": {
           "creditNoteId": {
@@ -51792,6 +51836,9 @@
             "items": {
               "$ref": "#/components/schemas/IntegrationExternalIdentifier"
             }
+          },
+          "servicePeriod": {
+            "$ref": "#/components/schemas/InclusiveDateRange"
           }
         }
       },
@@ -51832,7 +51879,11 @@
               "key": "Xero",
               "value": "123"
             }
-          ]
+          ],
+          "servicePeriod": {
+            "start": "2025-10-01",
+            "endInclusive": "2025-10-30"
+          }
         },
         "properties": {
           "id": {
@@ -51921,6 +51972,9 @@
             "items": {
               "$ref": "#/components/schemas/IntegrationExternalIdentifier"
             }
+          },
+          "servicePeriod": {
+            "$ref": "#/components/schemas/InclusiveDateRange"
           }
         }
       },
@@ -52696,7 +52750,11 @@
                   "key": "Xero",
                   "value": "123"
                 }
-              ]
+              ],
+              "servicePeriod": {
+                "start": "2025-10-01",
+                "endInclusive": "2025-10-30"
+              }
             }
           ],
           "pagination": {
@@ -52731,7 +52789,11 @@
                     "key": "Xero",
                     "value": "123"
                   }
-                ]
+                ],
+                "servicePeriod": {
+                  "start": "2025-10-01",
+                  "endInclusive": "2025-10-30"
+                }
               }
             ],
             "items": {
@@ -52780,7 +52842,11 @@
               "key": "Xero",
               "value": "123"
             }
-          ]
+          ],
+          "servicePeriod": {
+            "start": "2025-10-01",
+            "endInclusive": "2025-10-30"
+          }
         },
         "properties": {
           "id": {
@@ -52869,6 +52935,9 @@
             "items": {
               "$ref": "#/components/schemas/IntegrationExternalIdentifier"
             }
+          },
+          "servicePeriod": {
+            "$ref": "#/components/schemas/InclusiveDateRange"
           }
         }
       },
@@ -52997,7 +53066,11 @@
               "key": "Xero",
               "value": "123"
             }
-          ]
+          ],
+          "servicePeriod": {
+            "start": "2025-10-01",
+            "endInclusive": "2025-10-30"
+          }
         },
         "properties": {
           "title": {
@@ -53041,6 +53114,9 @@
             "items": {
               "$ref": "#/components/schemas/IntegrationExternalIdentifier"
             }
+          },
+          "servicePeriod": {
+            "$ref": "#/components/schemas/InclusiveDateRange"
           }
         }
       },
@@ -53081,7 +53157,11 @@
               "key": "Xero",
               "value": "123"
             }
-          ]
+          ],
+          "servicePeriod": {
+            "start": "2025-10-01",
+            "endInclusive": "2025-10-30"
+          }
         },
         "properties": {
           "id": {
@@ -53170,6 +53250,9 @@
             "items": {
               "$ref": "#/components/schemas/IntegrationExternalIdentifier"
             }
+          },
+          "servicePeriod": {
+            "$ref": "#/components/schemas/InclusiveDateRange"
           }
         }
       },
